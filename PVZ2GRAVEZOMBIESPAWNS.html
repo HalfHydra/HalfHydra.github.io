@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body style="background-repeat: no-repeat;">
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+	</style>
+    <p2>Event Settings: </p2>
+    <p> Wave Number:
+    <input type="text" id="wavenumber" style="width: 2%" value="">
+    </p>
+    <p> Event Number:
+    <input type="text" id="eventnumber" style="width: 2%" value="">
+    </p>
+    <p> Additional Plantfood:
+    <input type="text" id="plantfood" style="width: 2%" value="0">
+    </p>
+    <p> WaveStartMessage:
+    <input type="text" id="message" style="width: 9%" value="[WARNING_GRAVESTONE_SPAWN]">
+    </p>
+    <p> ZombieSpawnWaitTime:
+    <input type="text" id="waittime" style="width: 2%" value="1">
+    </p>
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/goldtile.png">
+     <input type="checkbox" id="goldtile" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/flame_spreader_trap.png">
+     <input type="checkbox" id="flame_spreader_trap" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/boulder_trap_falling_forward.png">
+     <input type="checkbox" id="boulder_trap_falling_forward" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/crater.png">
+     <input type="checkbox" id="crater" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/bombegranateseeds.png">
+     <input type="checkbox" id="bombegranateseeds" style="width: 1%" value="">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/planttarget_squid.png">
+     <input type="checkbox" id="planttarget_squid" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/zombiepotion_speed.png">
+     <input type="checkbox" id="zombiepotion_speed" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/zombiepotion_toughness.png">
+     <input type="checkbox" id="zombiepotion_toughness" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/backpack.png">
+     <input type="checkbox" id="backpack" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/tent.png">
+     <input type="checkbox" id="tent" style="width: 1%" value="">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/surfboard.png">
+     <input type="checkbox" id="surfboard" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/speaker.png">
+     <input type="checkbox" id="speaker" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/slider_down.png">
+     <input type="checkbox" id="slider_down" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/slider_up.png">
+     <input type="checkbox" id="slider_up" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/slider_down_modern.png">
+     <input type="checkbox" id="slider_down_modern" style="width: 1%" value="">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/slider_up_modern.png">
+     <input type="checkbox" id="slider_up_modern" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_tutorial.png">
+     <input type="checkbox" id="gravestone_tutorial" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_egypt.png">
+     <input type="checkbox" id="gravestone_egypt" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_dark.png">
+     <input type="checkbox" id="gravestone_dark" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestonePlantfoodOnDestruction.png">
+     <input type="checkbox" id="gravestonePlantfoodOnDestruction" style="width: 1%" value="">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/gravestoneSunOnDestruction.png">
+     <input type="checkbox" id="gravestoneSunOnDestruction" style="width: 1%" value="">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy.png" style="width: 50px; height: 78px">
+     <input type="text" id="mummy" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="mummy_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_armor2.png" style="width: 45px; height: 78px">
+     <input type="text" id="mummy_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="mummy_armor4" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_flag.png" style="width: 50px; height: 78px">
+     <input type="text" id="mummy_flag" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="mummy_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/ra.png" style="width: 63px; height: 65px">
+     <input type="text" id="ra" style="width: 3%" value="0">
+     <!--
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/camel_segment.png" style="width: 50px; height: 78px">
+     <input type="text" id="camel_segment" style="width: 3%" value="0">
+     -->
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/camel_onehump.png" style="width: 50px; height: 78px">
+     <input type="text" id="camel_onehump" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/camel_twohump.png" style="width: 50px; height: 78px">
+     <input type="text" id="camel_twohump" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/camel_manyhump.png" style="width: 50px; height: 78px">
+     <input type="text" id="camel_manyhump" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/explorer.png" style="width: 63px; height: 78px">
+     <input type="text" id="explorer" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/explorer_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="explorer_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tomb_raiser.png" style="width: 63px; height: 78px">
+     <input type="text" id="tomb_raiser" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pharaoh.png" style="width: 63px; height: 78px">
+     <input type="text" id="pharaoh" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/egypt_imp.png" style="width: 53px; height: 53px">
+     <input type="text" id="egypt_imp" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/egypt_gargantuar.png" style="width: 56px; height: 78px">
+     <input type="text" id="egypt_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate.png" style="width: 50px; height: 78px">
+     <input type="text" id="pirate" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="pirate_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_armor2.png" style="width: 40px; height: 78px">
+     <input type="text" id="pirate_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="pirate_armor4" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_flag.png" style="width: 58px; height: 78px">
+     <input type="text" id="pirate_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="pirate_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/swashbuckler.png" style="width: 50px; height: 78px">
+     <input type="text" id="swashbuckler" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/seagull.png" style="width: 50px; height: 78px">
+     <input type="text" id="seagull" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pelican.png" style="width: 63px; height: 78px">
+     <input type="text" id="pelican" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/barrelroller.png" style="width: 63px; height: 65px">
+     <input type="text" id="barrelroller" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_imp.png" style="width: 38px; height: 48px">
+     <input type="text" id="pirate_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cannon.png" style="width: 63px; height: 50px">
+     <input type="text" id="cannon" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_captain.png" style="width: 63px; height: 78px">
+     <input type="text" id="pirate_captain" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/pirate_gargantuar.png" style="width: 60px; height: 78px">
+     <input type="text" id="pirate_gargantuar" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy.png" style="width: 50px; height: 78px">
+     <input type="text" id="cowboy" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_armor1.png" style="width: 45px; height: 78px">
+     <input type="text" id="cowboy_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_armor2.png" style="width: 45px; height: 78px">
+     <input type="text" id="cowboy_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="cowboy_armor4" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_flag.png" style="width: 57px; height: 78px">
+     <input type="text" id="cowboy_flag" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="cowboy_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/prospector.png" style="width: 63px; height: 78px">
+     <input type="text" id="prospector" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/piano.png" style="width: 63px; height: 78px">
+     <input type="text" id="piano" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/poncho.png" style="width: 63px; height: 78px">
+     <input type="text" id="poncho" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/poncho_no_plate.png" style="width: 63px; height: 78px">
+     <input type="text" id="poncho_no_plate" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/poncho_plate.png" style="width: 63px; height: 78px">
+     <input type="text" id="poncho_plate" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/chicken_farmer.png" style="width: 50px; height: 78px">
+     <input type="text" id="chicken_farmer" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/chicken.png" style="width: 33px; height: 48px">
+     <input type="text" id="chicken" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/west_bull.png" style="width: 63px; height: 78px">
+     <input type="text" id="west_bull" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/west_bull_veteran.png" style="width: 63px; height: 63px">
+     <input type="text" id="west_bull_veteran" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/west_bullrider.png" style="width: 40px; height: 58px">
+     <input type="text" id="west_bullrider" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/cowboy_gargantuar.png" style="width: 55px; height: 78px">
+     <input type="text" id="cowboy_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future.png" style="width: 45px; height: 78px">
+     <input type="text" id="future" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_armor1.png" style="width: 35px; height: 78px">
+     <input type="text" id="future_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_armor2.png" style="width: 45px; height: 78px">
+     <input type="text" id="future_armor2" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="future_armor4" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_flag.png" style="width: 50px; height: 78px">
+     <input type="text" id="future_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="future_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_jetpack.png" style="width: 58px; height: 78px">
+     <input type="text" id="future_jetpack" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_jetpack_disco.png" style="width: 58px; height: 78px">
+     <input type="text" id="future_jetpack_disco" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_jetpack_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="future_jetpack_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_protector.png" style="width: 38px; height: 78px">
+     <input type="text" id="future_protector" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/mech_cone.png" style="width: 63px; height: 78px">
+     <input type="text" id="mech_cone" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_imp.png" style="width: 43px; height: 53px">
+     <input type="text" id="future_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/disco_mech.png" style="width: 63px; height: 68px">
+     <input type="text" id="disco_mech" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/football_mech.png" style="width: 63px; height: 73px">
+     <input type="text" id="football_mech" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/future_gargantuar.png" style="width: 63px; height: 78px">
+     <input type="text" id="future_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark.png" style="width: 45px; height: 78px">
+     <input type="text" id="dark" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="dark_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_armor2.png" style="width: 45px; height: 78px">
+     <input type="text" id="dark_armor2" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_armor3.png" style="width: 45px; height: 78px">
+     <input type="text" id="dark_armor3" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_flag.png" style="width: 55px; height: 78px">
+     <input type="text" id="dark_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_imp.png" style="width: 43px; height: 58px">
+     <input type="text" id="dark_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_juggler.png" style="width: 50px; height: 78px">
+     <input type="text" id="dark_juggler" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_wizard.png" style="width: 58px; height: 78px">
+     <input type="text" id="dark_wizard" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_king.png" style="width: 63px; height: 78px">
+     <input type="text" id="dark_king" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_imp_dragon.png" style="width: 43px; height: 58px">
+     <input type="text" id="dark_imp_dragon" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dark_gargantuar.png" style="width: 52px; height: 78px">
+     <input type="text" id="dark_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach.png" style="width: 45px; height: 78px">
+     <input type="text" id="beach" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="beach_armor1" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_armor2.png" style="width: 40px; height: 78px">
+     <input type="text" id="beach_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_fem.png" style="width: 45px; height: 78px">
+     <input type="text" id="beach_fem" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_fem_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="beach_fem_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_fem_armor2.png" style="width: 40px; height: 78px">
+     <input type="text" id="beach_fem_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_flag.png" style="width: 53px; height: 78px">
+     <input type="text" id="beach_flag" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_snorkel.png" style="width: 50px; height: 78px">
+     <input type="text" id="beach_snorkel" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_surfer.png" style="width: 53px; height: 78px">
+     <input type="text" id="beach_surfer" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_imp.png" style="width: 48px; height: 43px">
+     <input type="text" id="beach_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_octopus.png" style="width: 58px; height: 78px">
+     <input type="text" id="beach_octopus" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_fisherman.png" style="width: 58px; height: 70px">
+     <input type="text" id="beach_fisherman" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/beach_gargantuar.png" style="width: 56px; height: 78px">
+     <input type="text" id="beach_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage.png" style="width: 55px; height: 78px">
+     <input type="text" id="iceage" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_armor1.png" style="width: 50px; height: 78px">
+     <input type="text" id="iceage_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_armor2.png" style="width: 50px; height: 78px">
+     <input type="text" id="iceage_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_armor3.png" style="width: 50px; height: 78px">
+     <input type="text" id="iceage_armor3" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_flag.png" style="width: 55px; height: 78px">
+     <input type="text" id="iceage_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_hunter.png" style="width: 63px; height: 78px">
+     <input type="text" id="iceage_hunter" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_dodo.png" style="width: 58px; height: 78px">
+     <input type="text" id="iceage_dodo" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_imp.png" style="width: 43px; height: 58px">
+     <input type="text" id="iceage_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_troglobite.png" style="width: 58px; height: 78px">
+     <input type="text" id="iceage_troglobite" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_troglobite_2block.png" style="width: 58px; height: 78px">
+     <input type="text" id="iceage_troglobite_2block" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_troglobite_1block.png" style="width: 58px; height: 78px">
+     <input type="text" id="iceage_troglobite_1block" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_weaselhoarder.png" style="width: 50px; height: 78px">
+     <input type="text" id="iceage_weaselhoarder" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_weasel.png" style="width: 33px; height: 48px">
+     <input type="text" id="iceage_weasel" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/iceage_gargantuar.png" style="width: 55px; height: 78px">
+     <input type="text" id="iceage_gargantuar" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_armor1.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_armor2.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_flag.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_excavator.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_excavator" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_jane.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_jane" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_lostpilot.png" style="width: 55px; height: 78px">
+     <input type="text" id="lostcity_lostpilot" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_imp.png" style="width: 33px; height: 48px">
+     <input type="text" id="lostcity_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_bug.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_bug" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_bug_armor1.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_bug_armor1" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_bug_armor2.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_bug_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_impporter.png" style="width: 53px; height: 62px">
+     <input type="text" id="lostcity_impporter" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_relichunter.png" style="width: 55px; height: 78px">
+     <input type="text" id="lostcity_relichunter" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_crystalskull.png" style="width: 50px; height: 78px">
+     <input type="text" id="lostcity_crystalskull" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/lostcity_gargantuar.png" style="width: 58px; height: 78px">
+     <input type="text" id="lostcity_gargantuar" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_armor1.png" style="width: 45px; height: 78px">
+     <input type="text" id="eighties_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_armor2.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_flag.png" style="width: 58px; height: 78px">
+     <input type="text" id="eighties_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_punk.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_punk" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_glitter.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_glitter" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_mc.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_mc" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_imp.png" style="width: 38px; height: 58px">
+     <input type="text" id="eighties_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_breakdancer.png" style="width: 55px; height: 78px">
+     <input type="text" id="eighties_breakdancer" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_arcade.png" style="width: 58px; height: 78px">
+     <input type="text" id="eighties_arcade" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_8bit.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_8bit" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_8bit_armor1.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_8bit_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_8bit_armor2.png" style="width: 50px; height: 78px">
+     <input type="text" id="eighties_8bit_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_boombox.png" style="width: 55px; height: 78px">
+     <input type="text" id="eighties_boombox" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/eighties_gargantuar.png" style="width: 58px; height: 78px">
+     <input type="text" id="eighties_gargantuar" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino.png" style="width: 50px; height: 78px">
+     <input type="text" id="dino" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="dino_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_armor2.png" style="width: 40px; height: 78px">
+     <input type="text" id="dino_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_armor3.png" style="width: 40px; height: 78px">
+     <input type="text" id="dino_armor3" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="dino_armor4" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_flag.png" style="width: 50px; height: 78px">
+     <input type="text" id="dino_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="dino_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_imp.png" style="width: 38px; height: 48px">
+     <input type="text" id="dino_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_bully.png" style="width: 63px; height: 70px">
+     <input type="text" id="dino_bully" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_bully_veteran.png" style="width: 63px; height: 70px">
+     <input type="text" id="dino_bully_veteran" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/dino_gargantuar.png" style="width: 58px; height: 70px">
+     <input type="text" id="dino_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial.png" style="width: 50px; height: 78px">
+     <input type="text" id="tutorial" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="tutorial_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_armor2.png" style="width: 50px; height: 78px">
+     <input type="text" id="tutorial_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="tutorial_armor4" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_flag.png" style="width: 53px; height: 78px">
+     <input type="text" id="tutorial_flag" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_flag_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="tutorial_flag_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_imp.png" style="width: 38px; height: 48px">
+     <input type="text" id="tutorial_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/tutorial_gargantuar.png" style="width: 53px; height: 78px">
+     <input type="text" id="tutorial_gargantuar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/modern_newspaper.png" style="width: 63px; height: 78px">
+     <input type="text" id="modern_newspaper" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/newspaper_veteran.png" style="width: 63px; height: 78px">
+     <input type="text" id="newspaper_veteran" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/modern_balloon.png" style="width: 50px; height: 78px">
+     <input type="text" id="modern_balloon" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/modern_allstar.png" style="width: 63px; height: 78px">
+     <input type="text" id="modern_allstar" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/modern_superfanimp.png" style="width: 63px; height: 78px">
+     <input type="text" id="modern_superfanimp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/treasureyeti.png" style="width: 55px; height: 78px">
+     <input type="text" id="treasureyeti" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/vase_gargantuar.png" style="width: 53px; height: 78px">
+     <input type="text" id="vase_gargantuar" style="width: 3%" value="0">
+    <p> </p>
+    <button onclick="CompileLevelXML()">Finished</button>
+    <p> </p>
+    <button onclick="ShowArrays()">Toggle Seperate Arrays</button>
+    <p> </p>
+    <p> <textarea id="xml" rows="20" cols="50"></textarea> 
+    <textarea id="gravestonearray" rows="10" cols="50"></textarea>
+    </p>
+    <textarea id="output" rows="10" cols="50"></textarea> 
+
+        <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 47;
+        document.getElementById('xml').style.display = "none";
+        document.getElementById('gravestonearray').style.display = "none";      
+        document.getElementById('output').style.display = "none";	
+        document.getElementById("xml").value = "";
+        document.getElementById("gravestonearray").value = "";
+        document.getElementById("output").value = "";
+		//document.getElementById("output").value = "###Don't forget to add### \"RTID\(Gravestones\@CurrentLevel\)\"\n\n";
+        //document.getElementById("xml").value += "\{\n            \"aliases\"\: \[\n                \"Gravestones\"\n            \],\n            \"objclass\"\: \"GravestoneProperties\",\n            \"objdata\"\: \{\n                \"ForceSpawnData\"\: \[\n";
+function toggleoutputvisibility() {
+        var display = document.getElementById('output').style.display;
+        if(display == "none")
+              document.getElementById('output').style.display = "block";
+     }
+     function ShowArrays() {
+        var display = document.getElementById('xml').style.display;
+        if(display == "none") {
+        document.getElementById('xml').style.display = "block";
+        document.getElementById('gravestonearray').style.display = "block"; 
+    }
+    if(display == "block") {
+        document.getElementById('xml').style.display = "none";
+        document.getElementById('gravestonearray').style.display = "none"; 
+    }
+     }
+        function CompileLevelXML() {
+        //var wavenumber = document.getElementById("wavenumber").value;
+        //var eventnumber = document.getElementById("eventnumber").value;
+        //var soundid = document.getElementById("soundid").value;
+        //var effectid = document.getElementById("effectid").value;
+        //var gravestonearray = document.getElementById("gravestonearray").value;
+        //var xml = document.getElementById("xml").value;
+        //document.getElementById('xml').style.display = "none";
+    //var str = document.getElementById("xml").value;
+    document.getElementById("output").value += "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "GraveSpawnEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
+        toggleoutputvisibility();
+        //document.getElementById("output").value += str;
+        DoShitWithItemInputs();
+        DoShitWithZombieInputs()
+        document.getElementById("output").value += "        \{\n            \"aliases\"\: [\n                \"Wave" + document.getElementById("wavenumber").value + "GraveSpawnEvent" + document.getElementById("eventnumber").value + "\"\n            \],\n            \"objclass\"\: \"SpawnZombiesFromGridItemSpawnerProps\",\n            \"objdata\"\: \{\n                \"AdditionalPlantfood\"\: \"" + document.getElementById("plantfood").value + "\",\n                \"GridTypes\"\: \[\n" + document.getElementById("gravestonearray").value + "\n                \],\n                \"WaveStartMessage\"\: \"" + document.getElementById("message").value + "\",\n                \"ZombieSpawnWaitTime\"\: " + document.getElementById("waittime").value + ",\n                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
+		}
+
+        function DoShitWithItemInputs() {
+        var goldtile = document.getElementById("goldtile");
+        var flame_spreader_trap = document.getElementById("flame_spreader_trap");
+        var boulder_trap_falling_forward = document.getElementById("boulder_trap_falling_forward");
+        var crater = document.getElementById("crater");
+        var bombegranateseeds = document.getElementById("bombegranateseeds");
+        var planttarget_squid = document.getElementById("planttarget_squid");
+        var zombiepotion_speed = document.getElementById("zombiepotion_speed");
+        var zombiepotion_toughness = document.getElementById("zombiepotion_toughness");
+        var backpack = document.getElementById("backpack");
+        var tent = document.getElementById("tent");
+        var surfboard = document.getElementById("surfboard");
+        var speaker = document.getElementById("speaker");
+        var slider_down = document.getElementById("slider_down");
+        var slider_up = document.getElementById("slider_up");
+        var slider_down_modern = document.getElementById("slider_down_modern");
+        var slider_up_modern = document.getElementById("slider_up_modern");
+        var gravestone_tutorial = document.getElementById("gravestone_tutorial");
+        var gravestone_egypt = document.getElementById("gravestone_egypt");
+        var gravestone_dark = document.getElementById("gravestone_dark");
+        var gravestonePlantfoodOnDestruction = document.getElementById("gravestonePlantfoodOnDestruction");
+        var gravestoneSunOnDestruction = document.getElementById("gravestoneSunOnDestruction");
+        var next = "                        \"Type\"\: \"RTID\("
+        var after = "\@GridItemTypes\)\"";
+        if(goldtile.checked == true){
+            console.log(document.getElementById("gravestonearray").value);
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "goldtile" + after;
+        }
+        if(flame_spreader_trap.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "flame_spreader_trap" + after;
+        }
+        if(boulder_trap_falling_forward.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "boulder_trap_falling_forward" + after;
+        }
+        if(crater.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "crater" + after;
+        }
+        if(bombegranateseeds.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "bombegranateseeds" + after;
+        }
+        if(planttarget_squid.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "planttarget_squid" + after;
+        }
+        if(zombiepotion_speed.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "zombiepotion_speed" + after;
+        }
+        if(zombiepotion_toughness.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "zombiepotion_toughness" + after;
+        }
+        if(backpack.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "backpack" + after;
+        }
+        if(tent.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "tent" + after;
+        }
+        if(surfboard.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "surfboard" + after;
+        }
+        if(speaker.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "speaker" + after;
+        }
+        if(slider_down.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "slider_down" + after;
+        }
+        if(slider_up.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "slider_up" + after;
+        }
+        if(slider_down_modern.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "slider_down_modern" + after;
+        }
+        if(slider_up_modern.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "slider_up_modern" + after;
+        }
+        if(gravestone_tutorial.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestone_tutorial" + after;
+        }
+        if(gravestone_egypt.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestone_egypt" + after;
+        }
+        if(gravestone_dark.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestone_dark" + after;
+        }
+        if(gravestonePlantfoodOnDestruction.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestonePlantfoodOnDestruction" + after;
+        }
+        if(gravestoneSunOnDestruction.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestoneSunOnDestruction" + after;
+        }
+        }
+        function DoShitWithZombieInputs() {
+        var mummy = document.getElementById("mummy").value;
+        var mummy_armor1 = document.getElementById("mummy_armor1").value;
+        var mummy_armor2 = document.getElementById("mummy_armor2").value;
+        var mummy_armor4 = document.getElementById("mummy_armor4").value;
+        var mummy_flag = document.getElementById("mummy_flag").value;
+        var mummy_flag_veteran = document.getElementById("mummy_flag_veteran").value;
+        var ra = document.getElementById("ra").value;
+        var camel_onehump = document.getElementById("camel_onehump").value;
+        var camel_twohump = document.getElementById("camel_twohump").value;
+        var camel_manyhump = document.getElementById("camel_manyhump").value;
+        var explorer = document.getElementById("explorer").value;
+        var explorer_veteran = document.getElementById("explorer_veteran").value;
+        var tomb_raiser = document.getElementById("tomb_raiser").value;
+        var pharaoh = document.getElementById("pharaoh").value;
+        var egypt_imp = document.getElementById("egypt_imp").value;
+        var egypt_gargantuar = document.getElementById("egypt_gargantuar").value;
+        var pirate = document.getElementById("pirate").value;
+        var pirate_armor1 = document.getElementById("pirate_armor1").value;
+        var pirate_armor2 = document.getElementById("pirate_armor2").value;
+        var pirate_armor4 = document.getElementById("pirate_armor4").value;
+        var pirate_flag = document.getElementById("pirate_flag").value;
+        var pirate_flag_veteran = document.getElementById("pirate_flag_veteran").value;
+        var swashbuckler = document.getElementById("swashbuckler").value;
+        var seagull = document.getElementById("seagull").value;
+        var pelican = document.getElementById("pelican").value;
+        var barrelroller = document.getElementById("barrelroller").value;
+        var pirate_imp = document.getElementById("pirate_imp").value;
+        var cannon = document.getElementById("cannon").value;
+        var pirate_captain = document.getElementById("pirate_captain").value;
+        var pirate_gargantuar = document.getElementById("pirate_gargantuar").value;
+        var cowboy = document.getElementById("cowboy").value;
+        var cowboy_armor1 = document.getElementById("cowboy_armor1").value;
+        var cowboy_armor2 = document.getElementById("cowboy_armor2").value;
+        var cowboy_armor4 = document.getElementById("cowboy_armor4").value;
+        var cowboy_flag = document.getElementById("cowboy_flag").value;
+        var cowboy_flag_veteran = document.getElementById("cowboy_flag_veteran").value;
+        var prospector = document.getElementById("prospector").value;
+        var piano = document.getElementById("piano").value;
+        var poncho = document.getElementById("poncho").value;
+        var poncho_no_plate = document.getElementById("poncho_no_plate").value;
+        var poncho_plate = document.getElementById("poncho_plate").value;
+        var chicken_farmer = document.getElementById("chicken_farmer").value;
+        var chicken = document.getElementById("chicken").value;
+        var west_bull = document.getElementById("west_bull").value;
+        var west_bull_veteran = document.getElementById("west_bull_veteran").value;
+        var west_bullrider = document.getElementById("west_bullrider").value;
+        var cowboy_gargantuar = document.getElementById("cowboy_gargantuar").value;
+        var future = document.getElementById("future").value;
+        var future_armor1 = document.getElementById("future_armor1").value;
+        var future_armor2 = document.getElementById("future_armor2").value;
+        var future_armor4 = document.getElementById("future_armor4").value;
+        var future_flag = document.getElementById("future_flag").value;
+        var future_flag_veteran = document.getElementById("future_flag_veteran").value;
+        var future_jetpack = document.getElementById("future_jetpack").value;
+        var future_jetpack_disco = document.getElementById("future_jetpack_disco").value;
+        var future_jetpack_veteran = document.getElementById("future_jetpack_veteran").value;
+        var future_protector = document.getElementById("future_protector").value;
+        var mech_cone = document.getElementById("mech_cone").value;
+        var future_imp = document.getElementById("future_imp").value;
+        var disco_mech = document.getElementById("disco_mech").value;
+        var football_mech = document.getElementById("football_mech").value;
+        var future_gargantuar = document.getElementById("future_gargantuar").value;
+        var dark = document.getElementById("dark").value;
+        var dark_armor1 = document.getElementById("dark_armor1").value;
+        var dark_armor2 = document.getElementById("dark_armor2").value;
+        var dark_armor3 = document.getElementById("dark_armor3").value;
+        var dark_flag = document.getElementById("dark_flag").value;
+        var dark_imp = document.getElementById("dark_imp").value;
+        var dark_juggler = document.getElementById("dark_juggler").value;
+        var dark_wizard = document.getElementById("dark_wizard").value;
+        var dark_king = document.getElementById("dark_king").value;
+        var dark_imp_dragon = document.getElementById("dark_imp_dragon").value;
+        var dark_gargantuar = document.getElementById("dark_gargantuar").value;
+        var beach = document.getElementById("beach").value;
+        var beach_armor1 = document.getElementById("beach_armor1").value;
+        var beach_armor2 = document.getElementById("beach_armor2").value;
+        var beach_fem = document.getElementById("beach_fem").value;
+        var beach_fem_armor1 = document.getElementById("beach_fem_armor1").value;
+        var beach_fem_armor2 = document.getElementById("beach_fem_armor2").value;
+        var beach_flag = document.getElementById("beach_flag").value;
+        var beach_snorkel = document.getElementById("beach_snorkel").value;
+        var beach_surfer = document.getElementById("beach_surfer").value;
+        var beach_imp = document.getElementById("beach_imp").value;
+        var beach_octopus = document.getElementById("beach_octopus").value;
+        var beach_fisherman = document.getElementById("beach_fisherman").value;
+        var beach_gargantuar = document.getElementById("beach_gargantuar").value;
+        var iceage = document.getElementById("iceage").value;
+        var iceage_armor1 = document.getElementById("iceage_armor1").value;
+        var iceage_armor2 = document.getElementById("iceage_armor2").value;
+        var iceage_armor3 = document.getElementById("iceage_armor3").value;
+        var iceage_flag = document.getElementById("iceage_flag").value;
+        var iceage_hunter = document.getElementById("iceage_hunter").value;
+        var iceage_dodo = document.getElementById("iceage_dodo").value;
+        var iceage_imp = document.getElementById("iceage_imp").value;
+        var iceage_troglobite = document.getElementById("iceage_troglobite").value;
+        var iceage_troglobite_2block = document.getElementById("iceage_troglobite_2block").value;
+        var iceage_troglobite_1block = document.getElementById("iceage_troglobite_1block").value;
+        var iceage_weaselhoarder = document.getElementById("iceage_weaselhoarder").value;
+        var iceage_weasel = document.getElementById("iceage_weasel").value;
+        var iceage_gargantuar = document.getElementById("iceage_gargantuar").value;
+        var lostcity = document.getElementById("lostcity").value;
+        var lostcity_armor1 = document.getElementById("lostcity_armor1").value;
+        var lostcity_armor2 = document.getElementById("lostcity_armor2").value;
+        var lostcity_flag = document.getElementById("lostcity_flag").value;
+        var lostcity_excavator = document.getElementById("lostcity_excavator").value;
+        var lostcity_jane = document.getElementById("lostcity_jane").value;
+        var lostcity_lostpilot = document.getElementById("lostcity_lostpilot").value;
+        var lostcity_imp = document.getElementById("lostcity_imp").value;
+        var lostcity_bug = document.getElementById("lostcity_bug").value;
+        var lostcity_bug_armor1 = document.getElementById("lostcity_bug_armor1").value;
+        var lostcity_bug_armor2 = document.getElementById("lostcity_bug_armor2").value;
+        var lostcity_impporter = document.getElementById("lostcity_impporter").value;
+        var lostcity_relichunter = document.getElementById("lostcity_relichunter").value;
+        var lostcity_crystalskull = document.getElementById("lostcity_crystalskull").value;
+        var lostcity_gargantuar = document.getElementById("lostcity_gargantuar").value;
+        var eighties = document.getElementById("eighties").value;
+        var eighties_armor1 = document.getElementById("eighties_armor1").value;
+        var eighties_armor2 = document.getElementById("eighties_armor2").value;
+        var eighties_flag = document.getElementById("eighties_flag").value;
+        var eighties_punk = document.getElementById("eighties_punk").value;
+        var eighties_glitter = document.getElementById("eighties_glitter").value;
+        var eighties_mc = document.getElementById("eighties_mc").value;
+        var eighties_imp = document.getElementById("eighties_imp").value;
+        var eighties_breakdancer = document.getElementById("eighties_breakdancer").value;
+        var eighties_arcade = document.getElementById("eighties_arcade").value;
+        var eighties_8bit = document.getElementById("eighties_8bit").value;
+        var eighties_8bit_armor1 = document.getElementById("eighties_8bit_armor1").value;
+        var eighties_8bit_armor2 = document.getElementById("eighties_8bit_armor2").value;
+        var eighties_boombox = document.getElementById("eighties_boombox").value;
+        var eighties_gargantuar = document.getElementById("eighties_gargantuar").value;
+        var dino = document.getElementById("dino").value;
+        var dino_armor1 = document.getElementById("dino_armor1").value;
+        var dino_armor2 = document.getElementById("dino_armor2").value;
+        var dino_armor3 = document.getElementById("dino_armor3").value;
+        var dino_armor4 = document.getElementById("dino_armor4").value;
+        var dino_flag = document.getElementById("dino_flag").value;
+        var dino_flag_veteran = document.getElementById("dino_flag_veteran").value;
+        var dino_imp = document.getElementById("dino_imp").value;
+        var dino_bully = document.getElementById("dino_bully").value;
+        var dino_bully_veteran = document.getElementById("dino_bully_veteran").value;
+        var dino_gargantuar = document.getElementById("dino_gargantuar").value;
+        var tutorial = document.getElementById("tutorial").value;
+        var tutorial_armor1 = document.getElementById("tutorial_armor1").value;
+        var tutorial_armor2 = document.getElementById("tutorial_armor2").value;
+        var tutorial_armor4 = document.getElementById("tutorial_armor4").value;
+        var tutorial_flag = document.getElementById("tutorial_flag").value;
+        var tutorial_flag_veteran = document.getElementById("tutorial_flag_veteran").value;
+        var tutorial_imp = document.getElementById("tutorial_imp").value;
+        var tutorial_gargantuar = document.getElementById("tutorial_gargantuar").value;
+        var modern_newspaper = document.getElementById("modern_newspaper").value;
+        var newspaper_veteran = document.getElementById("newspaper_veteran").value;
+        var modern_balloon = document.getElementById("modern_balloon").value;
+        var modern_allstar = document.getElementById("modern_allstar").value;
+        var modern_superfanimp = document.getElementById("modern_superfanimp").value;
+        var treasureyeti = document.getElementById("treasureyeti").value;
+        var vase_gargantuar = document.getElementById("vase_gargantuar").value;
+        var next = "                    \{\n                        \"Type\"\: \"RTID\("
+        var after = "\@GridItemTypes\)\"\n                    \}";
+        if(mummy != 0){
+            for(x=0; x < mummy; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy" + after;
+        }
+        }
+        if(mummy_armor1 != 0){
+            for(x=0; x < mummy_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy_armor1" + after;
+        }
+        }
+        if(mummy_armor2 != 0){
+            for(x=0; x < mummy_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy_armor2" + after;
+        }
+        }
+        if(mummy_armor4 != 0){
+            for(x=0; x < mummy_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy_armor4" + after;
+        }
+        }
+        if(mummy_flag != 0){
+            for(x=0; x < mummy_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy_flag" + after;
+        }
+        }
+        if(mummy_flag_veteran != 0){
+            for(x=0; x < mummy_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy_flag_veteran" + after;
+        }
+        }
+        if(ra != 0){
+            for(x=0; x < ra; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "ra" + after;
+        }
+        }
+        if(camel_onehump != 0){
+            for(x=0; x < camel_onehump; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "camel_onehump" + after;
+        }
+        }
+        if(camel_twohump != 0){
+            for(x=0; x < camel_twohump; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "camel_twohump" + after;
+        }
+        }
+        if(camel_manyhump != 0){
+            for(x=0; x < camel_manyhump; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "camel_manyhump" + after;
+        }
+        }
+        if(explorer != 0){
+            for(x=0; x < explorer; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "explorer" + after;
+        }
+        }
+        if(explorer_veteran != 0){
+            for(x=0; x < explorer_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "explorer_veteran" + after;
+        }
+        }
+        if(tomb_raiser != 0){
+            for(x=0; x < tomb_raiser; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tomb_raiser" + after;
+        }
+        }
+        if(pharaoh != 0){
+            for(x=0; x < pharaoh; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pharaoh" + after;
+        }
+        }
+        if(egypt_imp != 0){
+            for(x=0; x < egypt_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "egypt_imp" + after;
+        }
+        }
+        if(egypt_gargantuar != 0){
+            for(x=0; x < egypt_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "egypt_gargantuar" + after;
+        }
+        }
+        if(pirate != 0){
+            for(x=0; x < pirate; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate" + after;
+        }
+        }
+        if(pirate_armor1 != 0){
+            for(x=0; x < pirate_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_armor1" + after;
+        }
+        }
+        if(pirate_armor2 != 0){
+            for(x=0; x < pirate_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_armor2" + after;
+        }
+        }
+        if(pirate_armor4 != 0){
+            for(x=0; x < pirate_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_armor4" + after;
+        }
+        }
+        if(pirate_flag != 0){
+            for(x=0; x < pirate_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_flag" + after;
+        }
+        }
+        if(pirate_flag_veteran != 0){
+            for(x=0; x < pirate_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_flag_veteran" + after;
+        }
+        }
+        if(swashbuckler != 0){
+            for(x=0; x < swashbuckler; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "swashbuckler" + after;
+        }
+        }
+        if(seagull != 0){
+            for(x=0; x < seagull; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "seagull" + after;
+        }
+        }
+        if(pelican != 0){
+            for(x=0; x < pelican; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pelican" + after;
+        }
+        }
+        if(barrelroller != 0){
+            for(x=0; x < barrelroller; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "barrelroller" + after;
+        }
+        }
+        if(pirate_imp != 0){
+            for(x=0; x < pirate_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_imp" + after;
+        }
+        }
+        if(cannon != 0){
+            for(x=0; x < cannon; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cannon" + after;
+        }
+    }    
+        if(pirate_captain != 0){
+            for(x=0; x < pirate_captain; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_captain" + after;
+        }
+    }
+        if(pirate_gargantuar != 0){
+            for(x=0; x < pirate_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "pirate_gargantuar" + after;
+        }
+    }
+    if(cowboy != 0){
+            for(x=0; x < cowboy; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy" + after;
+        }
+    }
+    if(cowboy_armor1 != 0){
+            for(x=0; x < cowboy_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_armor1" + after;
+        }
+    }
+    if(cowboy_armor2 != 0){
+            for(x=0; x < cowboy_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_armor2" + after;
+        }
+    }
+    if(cowboy_armor4 != 0){
+            for(x=0; x < cowboy_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_armor4" + after;
+        }
+    }
+    if(cowboy_flag != 0){
+            for(x=0; x < cowboy_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_flag" + after;
+        }
+    }
+    if(cowboy_flag_veteran != 0){
+            for(x=0; x < cowboy_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_flag_veteran" + after;
+        }
+    }
+    if(prospector != 0){
+            for(x=0; x < prospector; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "prospector" + after;
+        }
+    }
+    if(piano != 0){
+            for(x=0; x < piano; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "piano" + after;
+        }
+    }
+    if(poncho != 0){
+            for(x=0; x < poncho; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "poncho" + after;
+        }
+    }
+    if(poncho_no_plate != 0){
+            for(x=0; x < poncho_no_plate; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "poncho_no_plate" + after;
+        }
+    }
+    if(poncho_plate != 0){
+            for(x=0; x < poncho_plate; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "poncho_plate" + after;
+        }
+    }
+    if(chicken_farmer != 0){
+            for(x=0; x < chicken_farmer; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "chicken_farmer" + after;
+        }
+    }
+    if(chicken != 0){
+            for(x=0; x < chicken; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "chicken" + after;
+        }
+    }
+    if(west_bull != 0){
+            for(x=0; x < west_bull; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "west_bull" + after;
+        }
+    }
+    if(west_bull_veteran != 0){
+            for(x=0; x < west_bull_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "west_bull_veteran" + after;
+        }
+    }
+    if(west_bullrider != 0){
+            for(x=0; x < west_bullrider; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "west_bullrider" + after;
+        }
+    }
+    if(cowboy_gargantuar != 0){
+            for(x=0; x < cowboy_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "cowboy_gargantuar" + after;
+        }
+    }
+    if(future != 0){
+            for(x=0; x < future; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future" + after;
+        }
+    }
+    if(future_armor1 != 0){
+            for(x=0; x < future_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_armor1" + after;
+        }
+    }
+    if(future_armor2 != 0){
+            for(x=0; x < future_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_armor2" + after;
+        }
+    }
+    if(future_armor4 != 0){
+            for(x=0; x < future_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_armor4" + after;
+        }
+    }
+    if(future_flag != 0){
+            for(x=0; x < future_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_flag" + after;
+        }
+    }
+    if(future_flag_veteran != 0){
+            for(x=0; x < future_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_flag_veteran" + after;
+        }
+    }
+    if(future_jetpack != 0){
+            for(x=0; x < future_jetpack; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_jetpack" + after;
+        }
+    }
+    if(future_jetpack_disco != 0){
+            for(x=0; x < future_jetpack_disco; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_jetpack_disco" + after;
+        }
+    }
+    if(future_jetpack_veteran != 0){
+            for(x=0; x < future_jetpack_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_jetpack_veteran" + after;
+        }
+    }
+    if(future_protector != 0){
+            for(x=0; x < future_protector; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_protector" + after;
+        }
+    }
+    if(mech_cone != 0){
+            for(x=0; x < mech_cone; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mech_cone" + after;
+        }
+    }
+    if(future_imp != 0){
+            for(x=0; x < future_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_imp" + after;
+        }
+    }
+    if(disco_mech != 0){
+            for(x=0; x < disco_mech; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "disco_mech" + after;
+        }
+    }
+    if(football_mech != 0){
+            for(x=0; x < football_mech; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "football_mech" + after;
+        }
+    }
+    if(future_gargantuar != 0){
+            for(x=0; x < future_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "future_gargantuar" + after;
+        }
+    }
+    if(dark != 0){
+            for(x=0; x < dark; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark" + after;
+        }
+    }
+    if(dark_armor1 != 0){
+            for(x=0; x < dark_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_armor1" + after;
+        }
+    }
+    if(dark_armor2 != 0){
+            for(x=0; x < dark_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_armor2" + after;
+        }
+    }
+    if(dark_armor3 != 0){
+            for(x=0; x < dark_armor3; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_armor3" + after;
+        }
+    }
+    if(dark_flag != 0){
+            for(x=0; x < dark_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_flag" + after;
+        }
+    }
+    if(dark_imp != 0){
+            for(x=0; x < dark_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_imp" + after;
+        }
+    }
+    if(dark_juggler != 0){
+            for(x=0; x < dark_juggler; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_juggler" + after;
+        }
+    }
+    if(dark_wizard != 0){
+            for(x=0; x < dark_wizard; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_wizard" + after;
+        }
+    }
+    if(dark_king != 0){
+            for(x=0; x < dark_king; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_king" + after;
+        }
+    }
+    if(dark_imp_dragon != 0){
+            for(x=0; x < dark_imp_dragon; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_imp_dragon" + after;
+        }
+    }
+    if(dark_gargantuar != 0){
+            for(x=0; x < dark_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dark_gargantuar" + after;
+        }
+    }
+    if(beach != 0){
+            for(x=0; x < beach; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach" + after;
+        }
+    }
+    if(beach_armor1 != 0){
+            for(x=0; x < beach_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_armor1" + after;
+        }
+    }
+    if(beach_armor2 != 0){
+            for(x=0; x < beach_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_armor2" + after;
+        }
+    }
+    if(beach_fem != 0){
+            for(x=0; x < beach_fem; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_fem" + after;
+        }
+    }
+    if(beach_fem_armor1 != 0){
+            for(x=0; x < beach_fem_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_fem_armor1" + after;
+        }
+    }
+    if(beach_fem_armor2 != 0){
+            for(x=0; x < beach_fem_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_fem_armor2" + after;
+        }
+    }
+    if(beach_flag != 0){
+            for(x=0; x < beach_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_flag" + after;
+        }
+    }
+    if(beach_snorkel != 0){
+            for(x=0; x < beach_snorkel; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_snorkel" + after;
+        }
+    }
+    if(beach_surfer != 0){
+            for(x=0; x < beach_surfer; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_surfer" + after;
+        }
+    }
+    if(beach_imp != 0){
+            for(x=0; x < beach_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_imp" + after;
+        }
+    }
+    if(beach_octopus != 0){
+            for(x=0; x < beach_octopus; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_octopus" + after;
+        }
+    }
+    if(beach_fisherman != 0){
+            for(x=0; x < beach_fisherman; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_fisherman" + after;
+        }
+    }
+    if(beach_gargantuar != 0){
+            for(x=0; x < beach_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "beach_gargantuar" + after;
+        }
+    }
+    if(iceage != 0){
+            for(x=0; x < iceage; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage" + after;
+        }
+    }
+    if(iceage_armor1 != 0){
+            for(x=0; x < iceage_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_armor1" + after;
+        }
+    }
+    if(iceage_armor2 != 0){
+            for(x=0; x < iceage_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_armor2" + after;
+        }
+    }
+    if(iceage_armor3 != 0){
+            for(x=0; x < iceage_armor3; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_armor3" + after;
+        }
+    }
+    if(iceage_flag != 0){
+            for(x=0; x < iceage_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_flag" + after;
+        }
+    }
+    if(iceage_hunter != 0){
+            for(x=0; x < iceage_hunter; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_hunter" + after;
+        }
+    }
+    if(iceage_dodo != 0){
+            for(x=0; x < iceage_dodo; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_dodo" + after;
+        }
+    }
+    if(iceage_imp != 0){
+            for(x=0; x < iceage_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_imp" + after;
+        }
+    }
+    if(iceage_troglobite != 0){
+            for(x=0; x < iceage_troglobite; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_troglobite" + after;
+        }
+    }
+    if(iceage_troglobite_2block != 0){
+            for(x=0; x < iceage_troglobite_2block; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_troglobite_2block" + after;
+        }
+    }
+    if(iceage_troglobite_1block != 0){
+            for(x=0; x < iceage_troglobite_1block; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_troglobite_1block" + after;
+        }
+    }
+    if(iceage_weaselhoarder != 0){
+            for(x=0; x < iceage_weaselhoarder; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_weaselhoarder" + after;
+        }
+    }
+    if(iceage_weasel != 0){
+            for(x=0; x < iceage_weasel; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_weasel" + after;
+        }
+    }
+    if(iceage_gargantuar != 0){
+            for(x=0; x < iceage_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "iceage_gargantuar" + after;
+        }
+    }
+    if(lostcity != 0){
+            for(x=0; x < lostcity; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity" + after;
+        }
+    }
+    if(lostcity_armor1 != 0){
+            for(x=0; x < lostcity_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_armor1" + after;
+        }
+    }
+    if(lostcity_armor2 != 0){
+            for(x=0; x < lostcity_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_armor2" + after;
+        }
+    }
+    if(lostcity_flag != 0){
+            for(x=0; x < lostcity_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_flag" + after;
+        }
+    }
+    if(lostcity_excavator != 0){
+            for(x=0; x < lostcity_excavator; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_excavator" + after;
+        }
+    }
+    if(lostcity_jane != 0){
+            for(x=0; x < lostcity_jane; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_jane" + after;
+        }
+    }
+    if(lostcity_lostpilot != 0){
+            for(x=0; x < lostcity_lostpilot; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_lostpilot" + after;
+        }
+    }
+    if(lostcity_imp != 0){
+            for(x=0; x < lostcity_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_imp" + after;
+        }
+    }
+    if(lostcity_bug != 0){
+            for(x=0; x < lostcity_bug; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_bug" + after;
+        }
+    }
+    if(lostcity_bug_armor1 != 0){
+            for(x=0; x < lostcity_bug_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_bug_armor1" + after;
+        }
+    }
+    if(lostcity_bug_armor2 != 0){
+            for(x=0; x < lostcity_bug_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_bug_armor2" + after;
+        }
+    }
+    if(lostcity_impporter != 0){
+            for(x=0; x < lostcity_impporter; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_impporter" + after;
+        }
+    }
+    if(lostcity_relichunter != 0){
+            for(x=0; x < lostcity_relichunter; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_relichunter" + after;
+        }
+    }
+    if(lostcity_crystalskull != 0){
+            for(x=0; x < lostcity_crystalskull; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_crystalskull" + after;
+        }
+    }
+    if(lostcity_gargantuar != 0){
+            for(x=0; x < lostcity_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "lostcity_gargantuar" + after;
+        }
+    }
+    if(eighties != 0){
+            for(x=0; x < eighties; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties" + after;
+        }
+    }
+    if(eighties_armor1 != 0){
+            for(x=0; x < eighties_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_armor1" + after;
+        }
+    }
+    if(eighties_armor2 != 0){
+            for(x=0; x < eighties_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_armor2" + after;
+        }
+    }
+    if(eighties_flag != 0){
+            for(x=0; x < eighties_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_flag" + after;
+        }
+    }
+    if(eighties_punk != 0){
+            for(x=0; x < eighties_punk; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_punk" + after;
+        }
+    }
+    if(eighties_glitter != 0){
+            for(x=0; x < eighties_glitter; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_glitter" + after;
+        }
+    }
+    if(eighties_mc != 0){
+            for(x=0; x < eighties_mc; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_mc" + after;
+        }
+    }
+    if(eighties_imp != 0){
+            for(x=0; x < eighties_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_imp" + after;
+        }
+    }
+    if(eighties_breakdancer != 0){
+            for(x=0; x < eighties_breakdancer; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_breakdancer" + after;
+        }
+    }
+    if(eighties_arcade != 0){
+            for(x=0; x < eighties_arcade; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_arcade" + after;
+        }
+    }
+    if(eighties_8bit != 0){
+            for(x=0; x < eighties_8bit; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_8bit" + after;
+        }
+    }
+    if(eighties_8bit_armor1 != 0){
+            for(x=0; x < eighties_8bit_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_8bit_armor1" + after;
+        }
+    }
+    if(eighties_8bit_armor2 != 0){
+            for(x=0; x < eighties_8bit_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_8bit_armor2" + after;
+        }
+    }
+    if(eighties_boombox != 0){
+            for(x=0; x < eighties_boombox; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_boombox" + after;
+        }
+    }
+    if(eighties_gargantuar != 0){
+            for(x=0; x < eighties_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "eighties_gargantuar" + after;
+        }
+    }
+    if(dino != 0){
+            for(x=0; x < dino; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino" + after;
+        }
+    }
+    if(dino_armor1 != 0){
+            for(x=0; x < dino_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_armor1" + after;
+        }
+    }
+    if(dino_armor2 != 0){
+            for(x=0; x < dino_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_armor2" + after;
+        }
+    }
+    if(dino_armor3 != 0){
+            for(x=0; x < dino_armor3; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_armor3" + after;
+        }
+    }
+    if(dino_armor4 != 0){
+            for(x=0; x < dino_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_armor4" + after;
+        }
+    }
+    if(dino_flag != 0){
+            for(x=0; x < dino_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_flag" + after;
+        }
+    }
+    if(dino_flag_veteran != 0){
+            for(x=0; x < dino_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_flag_veteran" + after;
+        }
+    }
+    if(dino_imp != 0){
+            for(x=0; x < dino_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_imp" + after;
+        }
+    }
+    if(dino_bully != 0){
+            for(x=0; x < dino_bully; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_bully" + after;
+        }
+    }
+    if(dino_bully_veteran != 0){
+            for(x=0; x < dino_bully_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_bully_veteran" + after;
+        }
+    }
+    if(dino_gargantuar != 0){
+            for(x=0; x < dino_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "dino_gargantuar" + after;
+        }
+    }
+    if(tutorial != 0){
+            for(x=0; x < tutorial; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial" + after;
+        }
+    }
+    if(tutorial_armor1 != 0){
+            for(x=0; x < tutorial_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_armor1" + after;
+        }
+    }
+    if(tutorial_armor2 != 0){
+            for(x=0; x < tutorial_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_armor2" + after;
+        }
+    }
+    if(tutorial_armor4 != 0){
+            for(x=0; x < tutorial_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_armor4" + after;
+        }
+    }
+    if(tutorial_flag != 0){
+            for(x=0; x < tutorial_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_flag" + after;
+        }
+    }
+    if(tutorial_flag_veteran != 0){
+            for(x=0; x < tutorial_flag_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_flag_veteran" + after;
+        }
+    }
+    if(tutorial_imp != 0){
+            for(x=0; x < tutorial_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_imp" + after;
+        }
+    }
+    if(tutorial_gargantuar != 0){
+            for(x=0; x < tutorial_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "tutorial_gargantuar" + after;
+        }
+    }
+    if(modern_newspaper != 0){
+            for(x=0; x < modern_newspaper; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "modern_newspaper" + after;
+        }
+    }
+    if(newspaper_veteran != 0){
+            for(x=0; x < newspaper_veteran; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "newspaper_veteran" + after;
+        }
+    }
+    if(modern_balloon != 0){
+            for(x=0; x < modern_balloon; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "modern_balloon" + after;
+        }
+    }
+    if(modern_allstar != 0){
+            for(x=0; x < modern_allstar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "modern_allstar" + after;
+        }
+    }
+    if(modern_superfanimp != 0){
+            for(x=0; x < modern_superfanimp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "modern_superfanimp" + after;
+        }
+    }
+    if(treasureyeti != 0){
+            for(x=0; x < treasureyeti; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "treasureyeti" + after;
+        }
+    }
+    if(vase_gargantuar != 0){
+            for(x=0; x < vase_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "vase_gargantuar" + after;
+        }
+    }
+        }
+//Asuki says Hai!
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body></html>
