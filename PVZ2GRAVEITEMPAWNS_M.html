@@ -85,6 +85,9 @@ textarea {
     <textarea id="output" rows="10" cols="50"></textarea> 
 
         <script type="text/javascript">
+            document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
         var version = 1.0;
         var eraser = 47;
         document.getElementById('xml').style.display = "none";
@@ -119,7 +122,7 @@ textarea {
                 mouseOverSprite.style.visibility ="hidden";
             }
         }
-        document.addEventListener("touchend",mouseClickFunction);
+        document.addEventListener("touchstart",mouseClickFunction);
         function mouseClickFunction(e){
             if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
             {
@@ -141,7 +144,7 @@ textarea {
                 newImg.style.top = targetRect.y+"px";
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
-                newImg.addEventListener("touchend",function(){
+                newImg.addEventListener("touchstart",function(){
                 if(selectedSpriteId == eraser){
 
              			 victim = "\n                    \{\n                        \"mX\"\: " + x + ",\n                        \"mY\"\: " + y + "\n                    \}";
@@ -313,9 +316,6 @@ function toggleoutputvisibility() {
             document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestoneSunOnDestruction + next + "gravestoneSunOnDestruction" + after;
         }
         }
-        document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
-});
 //Asuki says Hai!
     </script>
     <style>
