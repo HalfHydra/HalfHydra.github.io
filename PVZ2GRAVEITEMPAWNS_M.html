@@ -124,7 +124,7 @@ textarea {
         }
         document.addEventListener("touchstart",mouseClickFunction);
         function mouseClickFunction(e){
-            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
+            if(e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
             {
 
                 var targetRect = e.target.getBoundingClientRect();
