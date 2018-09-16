@@ -717,7 +717,7 @@ function toggleoutputvisibility() {
         var treasureyeti = document.getElementById("treasureyeti").value;
         var vase_gargantuar = document.getElementById("vase_gargantuar").value;
         var next = "                    \{\n                        \"Type\"\: \"RTID\("
-        var after = "\@GridItemTypes\)\"\n                    \}";
+        var after = "\@ZombieTypes\)\"\n                    \}";
         if(mummy != 0){
             for(x=0; x < mummy; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "mummy" + after;

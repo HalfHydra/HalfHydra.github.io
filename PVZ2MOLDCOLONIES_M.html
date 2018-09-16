@@ -39,7 +39,7 @@ textarea {
             mouseOverSprite.style.zIndex = "-1";
         document.body.insertBefore(mouseOverSprite,document.body.firstChild);
         //document.getElementById("xml").value += "\{\n            \"aliases\"\: \[\n                \"Gravestones\"\n            \],\n            \"objclass\"\: \"GravestoneProperties\",\n            \"objdata\"\: \{\n                \"ForceSpawnData\"\: \[\n";
-        document.addEventListener("mousemove",mouseMoveFunction);
+        document.addEventListener("touchmove",mouseMoveFunction);
         var lastGridId = null;
 
         function mouseMoveFunction(e){
@@ -59,7 +59,7 @@ textarea {
                 mouseOverSprite.style.visibility ="hidden";
             }
         }
-        document.addEventListener("click",mouseClickFunction);
+        document.addEventListener("touchstart",mouseClickFunction);
         function mouseClickFunction(e){
             if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
             {
@@ -83,7 +83,7 @@ textarea {
                 newImg.style.top = targetRect.y+"px";
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
-                newImg.addEventListener("click",function(){
+                newImg.addEventListener("touchstart",function(){
                 if(selectedSpriteId == eraser){
                     console.log(e.target.id);
                     var victim = array.indexOf(e.target.id); 
@@ -459,6 +459,9 @@ if(m8x4 != -1){
     document.getElementById("gravestonearray").value += "        },"     
 }
         }
+        document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
 //Asuki says Hai!
     </script>
     <style>
