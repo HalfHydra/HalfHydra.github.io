@@ -63,7 +63,7 @@ textarea {
             mouseOverSprite.style.zIndex = "-1";
         document.body.insertBefore(mouseOverSprite,document.body.firstChild);
         document.getElementById("xml").value += "\{\n            \"aliases\"\: \[\n                \"Gravestones\"\n            \],\n            \"objclass\"\: \"GravestoneProperties\",\n            \"objdata\"\: \{\n                \"ForceSpawnData\"\: \[\n";
-        document.addEventListener("mousemove",mouseMoveFunction);
+        document.addEventListener("touchmove",mouseMoveFunction);
         var lastGridId = null;
 
         function mouseMoveFunction(e){
