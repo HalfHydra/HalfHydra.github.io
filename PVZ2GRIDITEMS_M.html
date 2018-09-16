@@ -105,7 +105,7 @@ textarea {
                 newImg.style.top = targetRect.y+"px";
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
-                newImg.addEventListener("click",function(){
+                newImg.addEventListener("touchstart",function(){
                 if(selectedSpriteId == eraser){
 
              			 victim = "\n                    {\n                        \"GridX\"\: " + x + ",\n                        \"GridY\"\: " + y + ",\n                        \"TypeName\"\: \""+ this.src.substring(this.src.lastIndexOf('/')+1).split('.')[0] + "\"\n                    }";
