@@ -191,7 +191,7 @@ textarea {
         var array = new Array();
         document.getElementById('output').style.display = "none";   
         document.getElementById("xml").value = "";
-        document.getElementById("output").value = "###Don't forget to add### \"RTID\(Gravestones\@CurrentLevel\)\"\n\n";
+        document.getElementById("output").value = "###Don't forget to add### \"RTID\(FrozenPlantPlacement\@CurrentLevel\)\"\n\n";
         var mouseOverSprite = document.createElement("img");
             mouseOverSprite.style.display="block";
             mouseOverSprite.style.position = "absolute";
@@ -330,7 +330,7 @@ function toggleoutputvisibility() {
         function CompileLevelXML() {
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
-        document.getElementById("output").value = "        \{\n            \"aliases\"\: \[\n                \"FrozenPlantPlacement\"\n            \],\n            \"objclass\"\: \"InitialPlantProperties\",\n            \"objdata\"\: {\n                \"InitialPlantPlacements\"\: \[\n"
+        document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"FrozenPlantPlacement\"\n            \],\n            \"objclass\"\: \"InitialPlantProperties\",\n            \"objdata\"\: {\n                \"InitialPlantPlacements\"\: \[\n"
         document.getElementById("output").value += str;
         document.getElementById("output").value += "\n                \]\n            \}\n        \},";
         console.log(allAddedItems);
