@@ -2,13 +2,13 @@
 <html style="margin: 0px;height: 100%;width: 100%;">
 	<head>  <meta charset="UTF-8"> <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 <style>
-@font-face { font-family: btd5; src: url('./Font/Oetztype.ttf'); } 
+@font-face { font-family: btd5; src: url('./Font/Oetztype.ttF'); } 
 .modal {
 	display: none;
 	z-index: 1;
 	padding: 0;
 	margin-top: 10px;
-	margin-left: -100px;
+	/*margin-left: -100px;*/
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0,0);
 }
@@ -20,7 +20,7 @@
 	padding-top: 0px;
 	padding: 1px;
 	border: 1px solid #888;
-	width: 800px;
+	width: 590px;
 	height: 450px;
 
 }
@@ -231,28 +231,45 @@
  	 top: 50%;
   	 transform: translate(-50%, -50%);
 	}
+	table, th, td {
+    border: 3px solid #436FA8;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Calibri;
+		color: white;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+}
+th, td {
+    padding: 10px;
+}
+tr {
+    background-color: #385D8D
+    color: white;
+}
 		</style>
 	</head>
 	<body bgcolor="#5A8FD5"  style="width:750px; height:100px;">
 		<!--<img src="./Images/UI/benbtn.png" style="position: absolute;top: 0;padding: 7px;right: 0%;border:0;margin-left: auto;margin-right: auto;" onclick="advancedmode()">-->
 						<div class="content">
-							<div id="modal" class="modal">	<div style="max-width: 800px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">	<div style="max-width: 800px; overflow:scroll;background-color: #436FA8;" id="bg" class="modal-content">	
-					<span class="close" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 25px; height: 25px;"></img></span>
-					<div class="maps">
-					</div>
-				</div></div></div>
-						<div style="width: 750px;height: 530px;">
-							<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 230px;margin-top: 10px;">
+						<div style="width: 750px;height: 590px;">
+							<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 290px;margin-top: 10px;">
+							<p style="background:#4A75B2;width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge ID:
+							<input type="text" id="id" style="background-color: #436FA8;width: 50px;" oninput="changeid()" value="ID">
+							</p>
 							<p style="background:#4A75B2;width: 500px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Name:
-							<input type="text" id="name" style="background-color: #436FA8;width: 300px;" value="Name">
+							<input type="text" id="name" style="background-color: #436FA8;width: 300px;" oninput="changename()" value="Name">
 							</p>
 							<p style="background:#4A75B2;width: 545px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Description:
-							<input type="text" id="description" style="background-color: #436FA8;width: 300px;" value="Description">
+							<input type="text" id="description" style="background-color: #436FA8;width: 300px;" oninput="changedescription()" value="Description">
 							</p>
 							<p style="background:#4A75B2;width: 212px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Rank.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Rank Required:
-							<input type="text" id="rank" style="background-color: #436FA8;width: 30px;" value="20">
+							<input type="text" id="rank" style="background-color: #436FA8;width: 30px;" oninput="changerank()" value="20">
 							</p>
-							<p style="background:#4A75B2;width: 167px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Save.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Save: <input type="checkbox" id="CanSave" style="vertical-align:middle" onclick=""></p>
+							<p style="background:#4A75B2;width: 167px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Save.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Save: <input type="checkbox" id="CanSave" oninput="changesave()" style="vertical-align:middle" onclick=""></p>
 						</div>
 						
 							<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 300px;margin-top: 10px;">
@@ -273,20 +290,25 @@
 								</select>
 								</p>
 								<p style="width: 252px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Cash.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Cash:
-								<input type="text" id="startcash" style="width: 75px" value="DEFAULT">
+								<input type="text" id="startcash" oninput="changestartcash()" style="width: 75px" value="DEFAULT">
 								</p>
 								<p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Health.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Lives:
-								<input type="text" id="startlives" style="width: 75px" value="DEFAULT">
+								<input type="text" id="startlives" oninput="changestartlives()" style="width: 75px" value="DEFAULT">
 								</p>
 								<p style="width: 238px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/StartRound.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Start Round:
-								<input type="text" id="startround" style="width: 75px" value="1">
+								<input type="text" id="startround" oninput="changestartround()" style="width: 75px" value="1">
 								</p>
 								<p style="width: 228px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Timer.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;End Round:
-								<input type="text" id="endround" style="width: 75px" value="DEFAULT">
+								<input type="text" id="endround" oninput="changetargetround()" style="width: 75px" value="DEFAULT">
 								</p>
 							</div>
 						</div>
 					</div>
+					<div id="modal" class="modal">	<div style="max-width: 800px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">	<div style="max-width: 800px; overflow:scroll;background-color: #436FA8;margin-top: 30px;" id="bg" class="modal-content">	
+					<span class="close" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 25px; height: 25px;"></img></span>
+					<div class="maps">
+					</div>
+				</div></div></div>
 						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 370px;margin-top: 30px;">
 						<p style="width: 155px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Towers: </p>
 						<div style="margin-left: 7px;" id = "towers">
@@ -304,56 +326,80 @@
 						<p style="width: 280px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Speciality Buildings: </p>
 						<div style="margin-left: 7px;" id = "specialties"></div>
 					</div>
-					<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 260px;margin-top: 10px;">
+					<div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 680px;margin-top: 10px;"><!-- was 680 -->
 						<p style="width: 245px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
-						<input type="text" id="maxmonkeys" style="width: 30px " value="-1">
+						<input type="text" id="maxmonkeys" style="width: 30px " oninput="updatemaxmonkeys()" value="-1">
 						<img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of towers you can have placed at once.')">
 						</p>
 						<p style="width: 310px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max of Each Monkey:
-						<input type="text" id="maxeachmonkeys" style="width: 30px" value="-1">
+						<input type="text" id="maxeachmonkeys" style="width: 30px" oninput="updatemaxeachmonkeys()" value="-1">
 						<img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of each tower you can place.')"></p>
 						<p style="width: 135px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Inventory:
 						<div style="margin-left: 7px;" id ="inventory"></div>
-						</p>
+						
+						<p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Preplaced Towers: <div style="margin-left: 7px;" id ="preplacetower"></div>
+						<table id="Entries" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;"><tbody>
+  <tr>
+    <th>Type name</th>
+    <th>Type image</th>
+    <th>Upgrades</th> 
+    <th>Position</th>
+    <th>X</th>
+  </tr></tbody>
+</table>
 					</div>
-					<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 745px;margin-top: 10px;">
-						<p style="background:#4A75B2;width: 260px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Cash.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Earn Money: <input type="checkbox" checked id="CanEarnMoney" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Deflation mode. This disables all possible ways to earn money that aren\'t related to towers.')"></p>
+					<div id="moneysection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 400px;margin-top: 10px;">
+						<p style="background:#4A75B2;width: 260px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Cash.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Earn Money: <input oninput="changecanearnmoney()" type="checkbox" checked id="CanEarnMoney" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Deflation mode. This disables all possible ways to earn money that aren\'t related to towers.')"></p>
 						<p style="width: 320px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 15px;margin-left: 7px;" ><img src="./Images/UI/Cash.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Money Per Round:
-								<input type="text" id="MoneyPerRound" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in certain random missions and Deflation mode. This is used to change the amount of money you recieve at the end of round, you can also disable it with 0. It will not increase with the progressing rounds.')">
+								<input oninput="updatemoneyperround()" type="text" id="MoneyPerRound" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in certain random missions and Deflation mode. This is used to change the amount of money you recieve at the end of round, you can also disable it with 0. It will not increase with the progressing rounds.')">
 						</p>
 						<p style="width: 290px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;" ><img src="./Images/UI/Cash.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Price Modifier:
-								<input type="text" id="PriceModifier" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value.')">
+								<input oninput="updatepricemod()" type="text" id="PriceModifier" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value.')">
 						</p>
 						<p style="width: 340px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/CashPerPop.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Per Pop Modifier:
-						<input type="text" id="CashPerPopModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is not used anywhere (Double Cash is seperate). It changes the amount of cash you get from popping a bloon.')">
+						<input oninput="updatecashperpopmod()" type="text" id="CashPerPopModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is not used anywhere (Double Cash is seperate). It changes the amount of cash you get from popping a bloon.')">
 						</p>
 						<p style="width: 300px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Sell.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Sell Price Modifier:
-								<input type="text" id="SellPriceModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value. Default value is 0.8. I think it overrides the lab upgrade.')">
+								<input oninput="updatesellpricemod()" type="text" id="SellPriceModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value. Default value is 0.8. I think it overrides the lab upgrade.')">
 						</p>
-						<p style="background:#4A75B2;width: 310px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Up.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Towers Auto Upgrade: <input type="checkbox" id="TowersAutoUpgrade" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Fast Upgrades mission. This upgrades towers on the path with the most upgrades once per round.')"></p>
-						<p style="background:#4A75B2;width: 495px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Consume Most Expensive Tower Rounds: <input type="text" id="ConsumeMostExpensiveTowerRounds" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Wizard Lord special mission. This absorbs the most expensive tower at the end of X rounds.')"></p>
-						<p style="background:#4A75B2;width: 355px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Free Towers Second Round: <input type="checkbox" id="FreeTowersSecondRound" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the MixNMatch event. This gives 1 of the next tower in the order every second round.')"></p>
+						<p style="background:#4A75B2;width: 305px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Crucible.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Round Modifiers: <button style="vertical-align:middle" onclick="addcashroundmod()">Add</button>
+						<table id="Entries2" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;"><tbody>
+  <tr>
+    <th>Round</th>
+    <th>Modifier</th>
+    <th>X</th>
+  </tr></tbody>
+</table>
+					</div>
+						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 240px;margin-top: 15px;">
+						<p style="background:#4A75B2;width: 310px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Up.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Towers Auto Upgrade: <input oninput="changeautoupgrade()" type="checkbox" id="TowersAutoUpgrade" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Fast Upgrades mission. This upgrades towers on the path with the most upgrades once per round.')"></p>
+						<p style="background:#4A75B2;width: 495px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Consume Most Expensive Tower Rounds: <input oninput="updateconsumetowers()" type="text" id="ConsumeMostExpensiveTowerRounds" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Wizard Lord special mission. This absorbs the most expensive tower at the end of X rounds.')"></p>
+						<p style="background:#4A75B2;width: 355px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Free Towers Second Round: <input oninput="changefreetower()" type="checkbox" id="FreeTowersSecondRound" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the MixNMatch event. This gives 1 of the next tower in the order every second round. WARNING! This disables all towers from being placed if they aren\'t in your inventory!')"></p>
 						<p style="width: 270px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Timer.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Tower Lifespan:
-						<input type="text" id="TowerLifespan" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('Used in Short Lived special mission. Disables selling and instead makes towers disappear after a given time. This can be used to essentially disable selling.')">
+						<input oninput="updatetowerlifespan()" type="text" id="TowerLifespan" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('Used in Short Lived special mission. Disables selling and instead makes towers disappear after a given time. This can be used to essentially disable selling.')">
 						</p>
-						<p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Crucible.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Water to Crucible: <input type="checkbox" id="WaterToCrucible" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Crucible event. This changes anything on the map that is defined as water into a crucible spot. Unknown if crashes.')"></p>
-						<p style="width: 280px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Timer:
-						<input type="text" id="LoseLivesTimer" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This enables the No Escape gimmick and is configured by the other \'Lose Lives\' options.')">
+					</div>
+						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 60px;margin-top: 10px;">
+						<p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Crucible.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Water to Crucible: <input oninput="changewatertocrucible()" type="checkbox" id="WaterToCrucible" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Crucible event. This changes anything on the map that is defined as water into a crucible spot. Unknown if crashes.')"></p>
+					</div>
+						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 170px;margin-top: 10px;">
+						<p style="width: 285px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Timer:
+						<input oninput="updateloselivestimer()" type="text" id="LoseLivesTimer" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This enables the No Escape gimmick and is configured by the other \'Lose Lives\' options.')">
 						</p>
 						<p style="width: 300px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Amount:
-						<input type="text" id="LoseLivesAmount" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is how many lives are lost every time the LoseLivesTimer reaches it time.')">
+						<input oninput="updateloselivesamount()" type="text" id="LoseLivesAmount" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is how many lives are lost every time the LoseLivesTimer reaches it time.')">
 						</p>
 						<p style="width: 345px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Grace Period:
-						<input type="text" id="LoseLivesGracePeriod" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is the amount of time before the Lose Lives Timer begins running.')">
+						<input oninput="updateloselivesgraceperiod()" type="text" id="LoseLivesGracePeriod" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is the amount of time before the Lose Lives Timer begins running.')">
 						</p>
 					</div>
 					<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 365px;margin-top: 10px;">
-						<p style="background:#4A75B2;width: 320px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/StartRound.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Pause Between Rounds: <input type="checkbox" checked id="PauseBetweenRounds" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Apocalypse mode. This forces the autoplay of rounds while still giving end of round cash.')"></p>
+						<p style="background:#4A75B2;width: 320px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/StartRound.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Pause Between Rounds: <input oninput="changeroundpause()" type="checkbox" checked id="PauseBetweenRounds" style="vertical-align:middle" oninput="changeroundpause()" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Apocalypse mode. This forces the autoplay of rounds while still giving end of round cash.')"></p>
 						<p style="width: 240px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/RoundStep.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Round Step:
-						<input type="text" id="RoundStep" style="width: 50px" value="1.0"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('I\'m not sure where this used, but it increases/decreases(?) the amount of rounds that actually progress. For example a RoundStep value of 2.0 (starting at round 1) will run rounds 1, 3, 5, 7, etc...and a RoundStep value of 10.0 (starting at round 1) will run rounds 1, 10, 20,...etc. It calls the round 10 \'round 2\' in the Game UI at the Round: X/X portion.')">
+						<input oninput="changeroundstep()" type="text" id="RoundStep" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('I\'m not sure where this used, but it increases/decreases(?) the amount of rounds that actually progress. For example a RoundStep value of 2.0 (starting at round 1) will run rounds 1, 3, 5, 7, etc...and a RoundStep value of 10.0 (starting at round 1) will run rounds 1, 10, 20,...etc. It calls the round 10 \'round 2\' in the Game UI at the Round: X/X portion.')">
 					    </p>
 					    <p style="width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Speed.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Speed Modifier:
-						<input type="text" id="SpeedModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. It is used to change the bloon speed. It starts at 0 and anything you make it will increase it, it\'s not a percentage where 1.25 will make it 25% faster, it is 0.25 that makes it 25% faster. Values: Easy = 0, Medium = 0.05, Hard = 0.125, Impoppable = 0.25.')">
+						<input oninput="updatespeedmod()" type="text" id="SpeedModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. It is used to change the bloon speed. It starts at 0 and anything you make it will increase it, it\'s not a percentage where 1.25 will make it 25% faster, it is 0.25 that makes it 25% faster. Values: Easy = 0, Medium = 0.05, Hard = 0.125, Impoppable = 0.25.')">
 					    </p>
 						<p style="width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/Bloon/Red_Camo.png" style="width: 23px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Bloons Forced Camo: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Covert Pops. It forces any bloons specified to be camo whenever they spawn. Click on a bloon to light it up, and the ones that are already consisting of gray colors will have a gray border to show they are enabled.')"></p>
 						<div style="margin-left: 7px;" id = "bloons">
@@ -367,14 +413,12 @@
 							<div id ='sliders'></div>
 						</div> </div> </div>
 						<p> </p>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 50px;margin-top: 10px;">
-						<button style="margin-left: 7px;margin-top: 10px;" onclick="finished()">Finished</button>
-						<textarea style="margin-top: 20px;" id="output" rows="25" cols="73"></textarea> 
-					</div>
 				</div>
-					<p> </p>
-						<script>
-var map = "monkey_lane";
+				<div>
+				<button style="z-index: 2;position: fixed; float:left; left:0%; top:0%;" onclick="download()">Download JSON</button>
+				<textarea style="position: fixed; float:left; left:0%; top:0%;margin-top: 35px" id="output" rows="60" cols="41"></textarea> 
+							</div>
+						<script type="text/javascript">
 var mapnames = ["monkey_lane", "bloom", "present_delivery", "rabbit_holes", "snowy_backyard", "sprint_track", "express_shipping", "checkers", "skull_peak", "lobby", "3_times_around", "grotto", "patch", "hedge_maze", "fireworks", "brick_wall", "z_factor", "maze", "frozen_lake", "roswell", "space_truckin", "walk_in_the_park", "ancient_tomb", "hearthside", "six_feet", "river_rapids", "wattle_trees", "pyramids", "dune_sea", "lava_fields", "ice_flow", "country_road", "jungle", "workshop", "bloon_of_clubs", "archipelago", "crop_circles", "slalom", "stream", "dock_side", "villageshore", "trick_or_treat", "battle_knot","candyland","crypt_keeper", "long_range", "water_hazard", "rink_revenge", "challenger_deep", "scorched_earth", "u_turn","the_great_divide","the_eye","one_direction", "lightning_scar","go_with_the_flow","mount_magma","siege","double_double_crossover","tunnels","castle","against_the_clock","drag_strip","canyon","treetops","runway","down_the_drain","benguela","web","forestpath","tar_pit","main_street","radioactive"];
 var towernames = ["DartMonkey", "TackTower", "SniperMonkey", "BoomerangThrower", "NinjaMonkey", "BombTower", "IceTower", "GlueGunner", "MonkeyBuccaneer", "MonkeyAce", "SuperMonkey", "MonkeyApprentice", "MonkeyVillage", "BananaFarm", "MortarTower", "DartlingGun", "SpikeFactory", "HeliPilot", "MonkeyEngineer", "Bloonchipper", "MonkeySub","AngrySquirrel","BananaFarmer","BeeKeeper","BloonberryBush","BloonsdayDevice","MeerkatSpy","Radadactyl","SuperMonkeyStorm","TribalTurtle"];
 var agentnames = ["AngrySquirrel","BananaFarmer","BeeKeeper","BloonberryBush","BloonsdayDevice","MeerkatSpy","Radadactyl","SuperMonkeyStorm","TribalTurtle"];
@@ -392,6 +436,13 @@ var NumBuildBlocks = 0;
 var BuildNums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 var NumCamoBloons = 0;
 var CamoBloons = [0,0,0,0,0,0,0,0,0,0,0];
+var NumPrePlacements = 0;
+var rowcountpp = 1;
+var ppdata = [];
+var crmdata = [];
+var NumCRMS = 0;
+var total = 0;
+var total2 = 0;
 //End Values
 var modal = document.getElementById('modal');
 var modal2 = document.getElementById('modal2');
@@ -401,16 +452,16 @@ let challenge = {
 	Rules:{
 		BlockedLabUpgrades:[],
 		BlockedSpecialties:[],
-		BloonLevelOffsets:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		BloonLevelOffsets:[0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 		CanSave:false,
+		CanEarnMoney:true,
 		LockedTowers:[],
 		LockedUpgrades:[],
 		MaxNumberOfEachTower:-1,
 		MaxNumberOfTotalTowers:-1,
-		ConsumeMostExpensiveTowerRounds:2,
-		FreeTowersSecondRound:false,
 		TowerLifespan:-1,
 		BloonsForcedCamo:[],
+		CashRoundModifiers:[],
 		Reward:{
 			Tokens:0,
 			MonkeyMoney:50,
@@ -420,23 +471,22 @@ let challenge = {
 
 		},
 		TargetRound:65	
-
 	},
 	Setup:{
+		Towers:[],
 		Inventory:[],
 		Health:150,
 		Money:650,
 		StartRound:1
 	},
+	nk_id:0,
 	nk_description:"",
 	nk_mode:1,
 	nk_rank_required:20,
 	nk_title:"",
-	nk_track:"",
-
+	nk_track:"monkey_lane",
 }
-document.getElementById('output').style.display = "none";
-
+finished();
 function advancedmode(){
 	window.location.replace('BTD5 Challenge Editor.html');
 }
@@ -454,6 +504,7 @@ window.addEventListener('load',()=>{
 	makeSliders();
 	makeBloons();
 	makeInventory();
+	makePreplace();
 });
 
 let makeSliders = ()=>{
@@ -481,7 +532,6 @@ let makeSliders = ()=>{
 		output.appendChild(newBloon);
 		let br = document.createElement('br');
 		output.appendChild(br);
-
 	});	
 }
 let makeMaps = ()=>{
@@ -491,8 +541,7 @@ let makeMaps = ()=>{
 		let newMap = document.createElement('img');
 		newMap.className = 'mapIcon';
 		newMap.src = `./Images/Tracks/${m}_thumb.jpg`;
-		if(i % 3 == 0){
-			console.log("hi");
+		if(i % 2 == 0){
 		newMap.style.marginLeft = "30px";
 		}
 			newMap.addEventListener('click',function(){
@@ -526,6 +575,19 @@ let makeTowers = ()=>{
 		output.appendChild(newTower);
 	});	
 }
+let makePreplace = ()=>{
+	let output = document.getElementById('preplacetower');
+	towernames.forEach((t,i)=>{
+		if(i == 28) return;
+		let newTower = document.createElement('img');
+		newTower.className = 'towerIcon';
+		newTower.src = `./Images/Towers/${t}.png`
+			newTower.addEventListener('click',function(){
+				preplacetower(this);
+			});
+		output.appendChild(newTower);
+	});	
+}
 let makeUpgrades = ()=>{
 	let output = document.getElementById('locks');
 	towernames.forEach((u,i)=>{
@@ -536,7 +598,7 @@ let makeUpgrades = ()=>{
 		newTower.className = 'towerIcon';
 		newTower.src = `./Images/Towers/${u}.png`
 			newTower.addEventListener('click',function(){
-				upgradelock(this);
+				//upgradelock(this);
 			});
 		output.appendChild(newTower);
 		let newText = document.createElement('div');
@@ -618,6 +680,7 @@ function changemap(selected){
 	let map = [...selected.parentNode.children].indexOf(selected);
 	document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + mapnames[map] + "_thumb.jpg";
 	challenge.nk_track = mapnames[map];
+	finished();
 }
 
 function locktower(selected){
@@ -638,6 +701,7 @@ function changebloon(newvalue, selected){
 	var min = selected.min;
 	selected.parentNode.children[pos+1].src = "./Images/Bloon/" + bloonsname[newvalue - min] + ".png";
 	challenge.Rules.BloonLevelOffsets[type] = Number(newvalue); 
+	finished();
 }
 
 function makelocktowerarray(){
@@ -646,9 +710,14 @@ function makelocktowerarray(){
 	for(var i=0; i<towernames.length;i++){
 		if(LockedTowerNums[i] == 1){
 			challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i];
+			if(i > 20){
+				NumLockedTowers++;
+				challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i] + "Pro";
+			}
 			NumLockedTowers++;
 		}
 	}
+	finished();
 }
 
 function forcecamobloon(selected){
@@ -679,6 +748,7 @@ function camobloonarray(){
 			NumCamoBloons++;
 		}
 	}
+	finished();
 }
 
 function lablock(selected){
@@ -713,6 +783,7 @@ function makebuildingarray(){
 			NumBuildBlocks++;
 		}
 	}
+	finished();
 }
 
 function makelabarray(){
@@ -724,7 +795,10 @@ function makelabarray(){
 			NumLabBlocks++;
 		}
 	}
+	finished();
 }
+
+
 
 function upgradelock(selected){
 	let towerid = [...selected.parentNode.children].indexOf(selected);
@@ -748,6 +822,208 @@ function upgradelock(selected){
 		]
 	});
 	selected.children[1].innerText = left + "/" + right;
+	finished();
+}
+var entrytable = document.getElementById("Entries");
+var entrytable2 = document.getElementById("Entries2");
+function preplacetower(selected){
+	var towerid = [...selected.parentNode.children].indexOf(selected);
+	var limit = prompt("Please enter upgrades of the tower", "X/X");
+    var left = parseInt(limit.substring(0,1));
+    var right = parseInt(limit.substring(2));
+    var limit2 = prompt("Please enter the position of the tower seperated by a comma", "X,X");
+    var ybreak = limit2.indexOf(',');
+    var xcord = parseFloat(limit2.substr(0,ybreak));
+    var ycord = parseFloat(limit2.substr(ybreak + 1));
+	if(!left){
+		left = 4;
+	}
+	if(!right){
+		right = 4;
+	}
+	var type = towernames[towerid];
+	ppdata[NumPrePlacements] = [type,[xcord,ycord],[left,right]];
+	challenge.Setup.Towers.push({
+		Position:[
+			ppdata[NumPrePlacements][1][0],
+			ppdata[NumPrePlacements][1][1]
+		],
+		Type:ppdata[NumPrePlacements][0],
+		Upgrades:[
+			ppdata[NumPrePlacements][2][0],
+			ppdata[NumPrePlacements][2][1]
+		]
+	});
+	NumPrePlacements++;
+    rowcountpp = 1;
+	for(var i = 0; i<1;i++){
+		var type2 = ppdata[i][0];
+    	var xcord2 = ppdata[i][1][0];
+    	var ycord2 = ppdata[i][1][1];
+		var newrow = entrytable.insertRow(-1);
+            var typecell = newrow.insertCell(0);
+            typecell.innerHTML = type;
+            var typeimg = newrow.insertCell(1);
+            typeimg.innerHTML = "";
+            var img = document.createElement('img');
+            img.src = "./Images/Towers/" + type + ".png";
+            img.height = 71;
+            img.width = 62;
+            typeimg.appendChild(img);
+        	var upgrades= newrow.insertCell(2);
+            upgrades.innerHTML = left + "/" + right;
+            var position= newrow.insertCell(3);
+            position.innerHTML = limit2;
+            var xbutton = newrow.insertCell(4);
+            xbutton.innerHTML = "";
+            xbutton.id = total + 1;
+            var img2 = document.createElement('img');
+            img2.src = "./Images/UI/exitbtn.png";
+            img2.height = 30;
+            img2.width = 30;
+            xbutton.appendChild(img2);
+            xbutton.addEventListener('click',function(){
+			removeentry(this);
+		});
+            var p1 = document.getElementById('towersection').style.height.indexOf('p');
+            var p2 = document.getElementById('towersection').style.height.substring(0, p1);
+            var p3 = parseInt(p2);
+            var p4 = p3 + 98;
+            document.getElementById('towersection').style.height = p4 + "px";
+	}
+	total++;
+	finished();
+}
+
+function addcashroundmod(selected){
+	var round = prompt("Please enter the round which the modifier will start being active from:", "0");
+    var mod = prompt("Please enter the cash modifier in decimal form", "0.0");
+    round = parseFloat(round);
+    mod = parseFloat(mod);
+	crmdata[NumCRMS] = [round,mod];
+	challenge.Rules.CashRoundModifiers.push({
+		Round:round,
+		Mod:mod
+	});
+	NumCRMS++;
+	for(var i = 0; i<1;i++){
+		var newrow = entrytable2.insertRow(-1);
+        	var round2= newrow.insertCell(0);
+            round2.innerHTML = round;
+        	var mod2= newrow.insertCell(1);
+            mod2.innerHTML = mod;
+            var xbutton = newrow.insertCell(2);
+            xbutton.innerHTML = "";
+            xbutton.id = total2 + 1;
+            var img2 = document.createElement('img');
+            img2.src = "./Images/UI/exitbtn.png";
+            img2.height = 30;
+            img2.width = 30;
+            xbutton.appendChild(img2);
+            xbutton.addEventListener('click',function(){
+			removeentry2(this);
+		});
+            var p1 = document.getElementById('moneysection').style.height.indexOf('p');
+            var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
+            var p3 = parseInt(p2);
+            var p4 = p3 + 57;
+            document.getElementById('moneysection').style.height = p4 + "px";
+	}
+	total2++;
+	finished();
+}
+
+function makethetowers(){
+	challenge.Setup.Towers = [];
+	for(var i = 0; i < NumPrePlacements; i++){
+	if(ppdata[i] != null){
+	challenge.Setup.Towers.push({
+		Position:[
+			ppdata[i][1][0],
+			ppdata[i][1][1]
+		],
+		Type:ppdata[i][0],
+		Upgrades:[
+			ppdata[i][2][0],
+			ppdata[i][2][1]
+		]
+	});
+}
+}
+}
+
+function removeentry(t){
+	ppdata[t.id - 1] = null;
+	makethetowers();
+	NumPrePlacements--;
+	document.getElementById('Entries').deleteRow(t.parentNode.rowIndex);
+	var p1 = document.getElementById('towersection').style.height.indexOf('p');
+    var p2 = document.getElementById('towersection').style.height.substring(0, p1);
+    var p3 = parseInt(p2);
+    var p4 = p3 - 98;
+    document.getElementById('towersection').style.height = p4 + "px";
+	finished();
+}
+
+function removeentry2(t){
+	crmdata[t.id - 1] = null;
+	makethecrms();
+	NumCRMS--;
+	document.getElementById('Entries2').deleteRow(t.parentNode.rowIndex);
+	var p1 = document.getElementById('moneysection').style.height.indexOf('p');
+    var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
+    var p3 = parseInt(p2);
+    var p4 = p3 - 57;
+    document.getElementById('moneysection').style.height = p4 + "px";
+	finished();
+}
+
+function makethecrms(){
+	challenge.Rules.CashRoundModifiers = [];
+	for(var i = 0; i < NumCRMS; i++){
+	if(crmdata[i] != null){
+	challenge.Rules.CashRoundModifiers.push({
+		Round:crmdata[i][0],
+		Mod:crmdata[i][1]
+	});
+}
+}
+}
+
+function buildpreplace(){
+	rowcountpp = 1;
+	for(var i = 0; i<NumPrePlacements;i++){
+	var newrow = entrytable.insertRow(rowcountpp);
+            var typecell = newrow.insertCell(0);
+            typecell.innerHTML = type;
+            var typeimg = newrow.insertCell(1);
+            typeimg.innerHTML = "";
+            var img = document.createElement('img');
+            img.src = "./" + type + ".png";
+            img.height = 71;
+            img.width = 62;
+            typeimg.appendChild(img);
+        	var position= newrow.insertCell(2);
+            position.innerHTML = pos;
+        	var upgrades= newrow.insertCell(3);
+            leftside.innerHTML = left + "/" + right;
+            rowcountpp++;
+	}
+	var newrow = entrytable.insertRow(rowcountpp);
+            var typecell = newrow.insertCell(0);
+            typecell.innerHTML = type;
+            var typeimg = newrow.insertCell(1);
+            typeimg.innerHTML = "";
+            var img = document.createElement('img');
+            img.src = "./" + type + ".png";
+            img.height = 71;
+            img.width = 62;
+            typeimg.appendChild(img);
+        var position= newrow.insertCell(2);
+            position.innerHTML = pos;
+        var upgrades= newrow.insertCell(3);
+            leftside.innerHTML = left + "/" + right;
+            rowcountpp++;
 }
 
 function changegiven(selected){
@@ -765,21 +1041,33 @@ function changegiven(selected){
 		Type:type
 	})
 	selected.children[1].innerText = limit;
+	finished();
 }
-
-function updatedata(){
+function changeid(){
+	challenge.nk_id = document.getElementById('id').value;
+	finished();
+}
+function changename(){
 	challenge.nk_title = document.getElementById('name').value;
+	finished();
+}
+function changerank(){
 	challenge.nk_rank_required = document.getElementById('rank').value;
+	finished();
+}
+function changedescription() {
 	challenge.nk_description =document.getElementById('description').value;
-	if(challenge.nk_track == ""){
-	challenge.nk_track = "monkey_lane";
-	}
-	var cash = document.getElementById('startcash').value;
-	if(cash == "DEFAULT"){
+	finished();
+}
+function changestartcash(){
+	if(document.getElementById('startcash').value == "DEFAULT"){
 		challenge.Setup.Money = 650;
 	} else {
-		challenge.Setup.Money = document.getElementById('startcash').value;
+		challenge.Setup.Money = parseInt(document.getElementById('startcash').value);
 	}
+	finished();
+}
+function changestartlives(){
 	if(document.getElementById("startlives").value == "DEFAULT") {
 		switch(challenge.nk_mode){
 			case 0:
@@ -802,11 +1090,73 @@ function updatedata(){
 				break;
 		}
 	} else {
-		challenge.Setup.Health = document.getElementById("startlives").value;
+		challenge.Setup.Health = parseInt(document.getElementById("startlives").value);
 	}
-	challenge.Setup.StartRound = document.getElementById('startround').value;
+	finished();
+}
+function changestartround(){
+	challenge.Setup.StartRound = parseInt(document.getElementById('startround').value);
+	finished();
+}
+function changesave(){
 	var cb = document.getElementById('CanSave');
 	challenge.Rules.CanSave = cb.checked;
+	finished();
+}
+function changecanearnmoney(){
+	var cb = document.getElementById('CanEarnMoney');
+	if(cb.checked){
+		delete challenge.Rules.CanEarnMoney;
+	} else {
+		challenge.Rules.CanEarnMoney = false;
+	}
+	finished();
+}
+function changeautoupgrade(){
+	var cb = document.getElementById('TowersAutoUpgrade');
+	if(cb.checked){
+		challenge.Rules.TowersAutoUpgrade = true;
+	} else {
+		delete challenge.Rules.TowersAutoUpgrade;
+	}
+	finished();
+}
+function changefreetower(){
+	var cb = document.getElementById('FreeTowersSecondRound');
+	if(cb.checked){
+		challenge.Rules.FreeTowersSecondRound = true;
+	} else {
+		delete challenge.Rules.FreeTowersSecondRound;
+	}
+	finished();
+}
+function changeroundstep(){
+	if(document.getElementById('RoundStep').value == "DEFAULT"){
+		delete challenge.Rules.RoundStep;
+	} else {
+		challenge.Rules.RoundStep = parseFloat(document.getElementById('RoundStep').value);
+	}
+	finished();
+}
+function changewatertocrucible(){
+	var cb = document.getElementById('WaterToCrucible');
+	if(cb.checked){
+		challenge.Rules.WaterToCrucible = true;
+	} else {
+		delete challenge.Rules.WaterToCrucible;
+	}
+	finished();
+}
+function changeroundpause(){
+	var cb = document.getElementById('PauseBetweenRounds');
+	if(cb.checked){
+		challenge.Rules.PauseBetweenRounds = true;
+	} else {
+		delete challenge.Rules.PauseBetweenRounds;
+	}
+	finished();
+}
+function changetargetround(){
 	if(document.getElementById("endround").value == "DEFAULT"){
 		challenge.nk_mode = Number(challenge.nk_mode);
 		let TargetRound;
@@ -832,62 +1182,123 @@ function updatedata(){
 		}
 		challenge.Rules.TargetRound = TargetRound;
 	} else {
-		challenge.Rules.TargetRound = document.getElementById("endround").value;
+		challenge.Rules.TargetRound = parseInt(document.getElementById("endround").value);
 	}
-	challenge.Rules.MaxNumberOfTotalTowers = document.getElementById("maxmonkeys").value;
-	challenge.Rules.MaxNumberOfEachTower = document.getElementById("maxeachmonkeys").value;
+	finished();
+}
+function updatemaxmonkeys(){
+	challenge.Rules.MaxNumberOfTotalTowers = parseInt(document.getElementById("maxmonkeys").value);
+	finished();
+}
+function updatemaxeachmonkeys(){
+	challenge.Rules.MaxNumberOfEachTower = parseInt(document.getElementById("maxeachmonkeys").value);
+	finished();
+}
+function updatetowerlifespan(){
 	if(document.getElementById('TowerLifespan').value == "NONE"){
 		delete challenge.Rules.TowerLifespan;
 	} else {
-		challenge.Rules.TowerLifespan = document.getElementById('TowerLifespan').value;
+		challenge.Rules.TowerLifespan = parseInt(document.getElementById('TowerLifespan').value);
 	}
-	if(document.getElementById('ConsumeMostExpensiveTowerRounds').value == "NONE"){
+	finished();
+}
+function updateconsumetowers(){
+		if(document.getElementById('ConsumeMostExpensiveTowerRounds').value == "NONE"){
 		delete challenge.Rules.ConsumeMostExpensiveTowerRounds;
 	} else {
-		challenge.Rules.ConsumeMostExpensiveTowerRounds = document.getElementById('ConsumeMostExpensiveTowerRounds').value;
+		challenge.Rules.ConsumeMostExpensiveTowerRounds = parseInt(document.getElementById('ConsumeMostExpensiveTowerRounds').value);
 	}
+	finished();
+}
+function updatemoneyperround(){
 	if(document.getElementById('MoneyPerRound').value == "DEFAULT"){
 		delete challenge.Rules.MoneyPerRound;
 	} else {
-		challenge.Rules.MoneyPerRound = document.getElementById('MoneyPerRound').value;
+		challenge.Rules.MoneyPerRound = parseInt(document.getElementById('MoneyPerRound').value);
 	}
-	if(document.getElementById('PriceModifier').value == "DEFAULT"){
-		delete challenge.Rules.PriceModifier;
-	} else {
-		challenge.Rules.PriceModifier = document.getElementById('PriceModifier').value;
-	}
+	finished();
+}
+function updatespeedmod(){
 	if(document.getElementById('SpeedModifier').value == "NONE"){
 		delete challenge.Rules.SpeedModifier;
 	} else {
-		challenge.Rules.SpeedModifier = document.getElementById('SpeedModifier').value;
+		challenge.Rules.SpeedModifier = parseFloat(document.getElementById('SpeedModifier').value);
 	}
+	finished();
+}
+function updatepricemod(){
+	if(document.getElementById('PriceModifier').value == "DEFAULT"){
+		delete challenge.Rules.PriceModifier;
+	} else {
+		challenge.Rules.PriceModifier = parseFloat(document.getElementById('PriceModifier').value);
+	}
+	finished();
+}
+function updatecashperpopmod(){
+	if(document.getElementById('CashPerPopModifier').value == "NONE"){
+		delete challenge.Rules.CashPerPopModifier;
+	} else {
+		challenge.Rules.CashPerPopModifier = parseFloat(document.getElementById('CashPerPopModifier').value);
+	}
+	finished();
+}
+function updateloselivestimer(){
 	if(document.getElementById('LoseLivesTimer').value == "NONE"){
 		delete challenge.Rules.LoseLivesTimer;
 	} else {
-		challenge.Rules.LoseLivesTimer = document.getElementById('LoseLivesTimer').value;
+		challenge.Rules.LoseLivesTimer = parseInt(document.getElementById('LoseLivesTimer').value);
 	}
+	finished();
+}
+function updateloselivesamount(){
 	if(document.getElementById('LoseLivesAmount').value == "NONE"){
 		delete challenge.Rules.LoseLivesAmount;
 	} else {
-		challenge.Rules.LoseLivesAmount = document.getElementById('LoseLivesAmount').value;
+		challenge.Rules.LoseLivesAmount = parseInt(document.getElementById('LoseLivesAmount').value);
 	}
+	finished();
+
+}
+function updateloselivesgraceperiod(){
 	if(document.getElementById('LoseLivesGracePeriod').value == "NONE"){
 		delete challenge.Rules.LoseLivesGracePeriod;
 	} else {
-		challenge.Rules.LoseLivesGracePeriod = document.getElementById('LoseLivesGracePeriod').value;
+		challenge.Rules.LoseLivesGracePeriod = parseInt(document.getElementById('LoseLivesGracePeriod').value);
 	}
+	finished();
+}
+function updatesellpricemod(){
 	if(document.getElementById('SellPriceModifier').value == "NONE"){
 		delete challenge.Rules.SellPriceModifier;
 	} else {
-		challenge.Rules.SellPriceModifier = document.getElementById('SellPriceModifier').value;
+		challenge.Rules.SellPriceModifier = parseFloat(document.getElementById('SellPriceModifier').value);
 	}
+	finished();
 }
-//what in the unholy fuck was this
 function finished(){
-	document.getElementById('output').style.display = "block";
-	updatedata();
 	document.getElementById('output').innerHTML = JSON.stringify(challenge,null,2);
 }
+function download(data) {
+			var data = document.getElementById('output').innerHTML;
+			var filename = document.getElementById('id').value + " - " + document.getElementById('name').value;
+			var type = "text";
+            var a = document.createElement("a"),
+              file = new Blob([data], {type: type});
+            if (window.navigator.msSaveOrOpenBlob) // IE10+
+              window.navigator.msSaveOrOpenBlob(file, filename);
+            else { // Others
+              var url = URL.createObjectURL(file);
+              a.href = url;
+              a.download = filename;
+              document.body.appendChild(a);
+              a.click();
+              setTimeout(function() {
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);  
+              }, 0); 
+            }
+          }
+
 </script>
 	</body>
 	</head>
