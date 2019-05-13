@@ -4,6 +4,7 @@ html {
   background-size: auto 100vh;
   background-position: top;
   background-repeat: no-repeat;
+  background-color: #000;
 }
 body {
   padding-top: 50px;
@@ -21,6 +22,36 @@ p {
   font-family: p5;
   font-size: 25px;
   color: yellow;
+  text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+}
+
+h1 {
+  text-align: center;
+  font-family: p5;
+  font-size: 20px;
+  color: white;
+  text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navbar {
