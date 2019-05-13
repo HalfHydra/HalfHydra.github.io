@@ -1,7 +1,7 @@
 @font-face { font-family: p5; src: url('../Font/PersonifiedUXRegular.ttf'); } 
 @font-face { font-family: p5_2; src: url('../Font/p5hatty.ttf'); } 
 html {
-  background-image: url('../Images/background.png');
+  background-image: url('../Images/background.jpg');
   background-size: auto 100vh;
   background-position: top;
   background-repeat: no-repeat;
