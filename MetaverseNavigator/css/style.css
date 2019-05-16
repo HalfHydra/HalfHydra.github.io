@@ -175,6 +175,50 @@ h2 {
   animation-timing-function: linear;
 }
 
+.transition {
+  animation: scrollBanner 5.1s;
+      -webkit-animation: scrollBanner 4.8s;
+      width:100%; height:100%;
+}
+@keyframes scrollBanner {
+     0% {
+        left: -250px;
+    }
+    27% {
+        left: 55%;
+    }
+    90% {
+      left: 55%;
+      opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+.headanim {
+  animation: headanim 5.0s;
+      -webkit-animation: headanim 5.0s;
+}
+@keyframes headanim {
+     0% {
+        opacity:0;
+    }
+    21%{
+      opacity: 0;
+    }
+    22% {
+        opacity:1;
+    }
+    90% {
+      opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes tiltBounce {
   0% {
     transform: scale(1) rotate(-7deg);
