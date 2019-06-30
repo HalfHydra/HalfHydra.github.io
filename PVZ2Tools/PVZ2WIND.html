@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body background="./PVZ2GRIDITEMS_files/bg.png" style="background-repeat: no-repeat;">
+    <div id="gridDiv"><div style="width: 400px; height: 51px;margin-top: 0px;"><canvas id="0x0" style="width: 395px; height: 51px; outline: rgba(0, 0, 0, 0.2) solid 0.5px;"></canvas></div><div style="width: 390px; height: 51px;margin-top: 0px;"><canvas id="1x0" style="width: 390px; height: 51px; outline: rgba(0, 0, 0, 0.2) solid 0.5px;"></canvas></div><div style="width: 60px; height: 51px;margin-top: 0px;"><canvas id="2x0" style="width: 390px; height: 51px; outline: rgba(0, 0, 0, 0.2) solid 0.5px;"></canvas></div><div style="width: 60px; height: 51px;margin-top: 0px;"><canvas id="3x0" style="width: 390px; height: 51px; outline: rgba(0, 0, 0, 0.2) solid 0.5px;"></canvas></div><div style="width: 490px; height: 51px;margin-top: 0px;"><canvas id="4x0" style="width: 390px; height: 51px; outline: rgba(0, 0, 0, 0.2) solid 0.5px;"></canvas><img src="./PVZ2GRIDITEMS_files/trash.png" id="47" onclick="resetboard()" style="margin-left: 15px;" width="50px" height="50px"></div>
+</style></div>
+    <div style="margin-top: 15px">
+        <img src="./PVZ2GRIDITEMS_files/wind.png" id="1" onclick="selectSprite(event)" style="outline: blue solid 0.5px;" width="400px" height="40px">
+
+    </div>
+    <p2>Event Settings: </p2>
+    <p> Wave Number:
+    <input type="text" id="wavenumber" style="width: 20px" value="">
+    </p>
+    <p> Event Number:
+    <input type="text" id="eventnumber" style="width: 20px" value="">
+    </p>
+<div>
+    <div style="margin-top: 15px">
+        <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
+    </p></div>
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+	</style>
+    <textarea id="xml" rows="20" cols="50"></textarea> 
+     <p> </p>
+    <button onclick="CompileLevelXML()">Finished</button>
+     <p> </p>
+    <textarea id="output" rows="10" cols="50"></textarea> 
+        <script type="text/javascript">
+        var version = 1.0;
+        var eraser = 47;
+        var countimages = 0;
+        document.getElementById('xml').style.display = "none";
+        document.getElementById('output').style.display = "none";	
+        document.getElementById("xml").value = "";
+        var mouseOverSprite = document.createElement("img");
+            mouseOverSprite.style.display="block";
+            mouseOverSprite.style.position = "absolute";
+            mouseOverSprite.style.zIndex = "-1";
+        document.body.insertBefore(mouseOverSprite,document.body.firstChild);
+        document.addEventListener("mousemove",mouseMoveFunction);
+        var lastGridId = null;
+
+        function mouseMoveFunction(e){
+            var p1 = document.getElementById("p1");
+            if(e.target.nodeName == "CANVAS"){
+                p1.innerHTML = " Grid ID: "+e.target.id
+
+                if(e.target.id == lastGridId){
+                    return;
+                }
+                lastGridId = e.target.id;
+                mouseOverSprite.style.visibility ="visible";
+                mouseOverSprite.style.top = e.target.offsetTop+"px";
+                mouseOverSprite.style.left = e.target.offsetLeft+"px";
+            }
+            else{
+                mouseOverSprite.style.visibility ="hidden";
+            }
+        }
+        document.addEventListener("click",mouseClickFunction);
+        function mouseClickFunction(e){
+            if(mouseOverSprite.style.visibility == "visible" && e.target.nodeName == "CANVAS"  && selectedSpriteId != eraser)
+            {
+
+                var targetRect = e.target.getBoundingClientRect();
+                var a = e.target.id;
+                console.log(a);
+                var x = a.charAt(0);
+                console.log(x);
+                var b = e.target.id;
+                console.log(b);
+                var y = b.charAt(2);
+                console.log(y);
+                document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + "                    {\n                        \"Direction\"\: \"right\",\n                        \"Row\"\: " + x + "\n                    }";
+                var newImg = document.createElement("img");
+                newImg.id = "delete";
+                newImg.src = mouseOverSprite.src;
+                newImg.style.position = "absolute";
+                newImg.style.left = targetRect.x+"px";
+                newImg.style.top = targetRect.y+"px";
+                newImg.style.zIndex = -1;
+                newImg.className = "newImg";
+                document.body.appendChild(newImg);
+                countimages++;
+                if(allAddedItems[e.target.id]==null)
+                    allAddedItems[e.target.id] = new Array(newImg);
+                else
+                    allAddedItems[e.target.id].push(newImg); 
+            }
+        }
+        var allAddedItems = new Array();
+        var selectedSpriteId = 1;
+        document.getElementById(selectedSpriteId).style.outline=".5px solid blue";
+        mouseOverSprite.src = document.getElementById(selectedSpriteId).src;
+
+        function selectSprite(e){
+            document.getElementById(selectedSpriteId).style.outline="";
+            e.currentTarget.style.outline = ".5px solid blue";
+            selectedSpriteId = e.currentTarget.id;
+            mouseOverSprite.src = e.currentTarget.src;
+            var canvases = document.getElementsByClassName('newImg');
+            if(selectedSpriteId == eraser){
+            	mouseOverSprite.style.pointerEvents="none";
+            	//document.getElementById('gridDiv').style.pointerEvents="none";
+            	for(i=0;i<canvases.length;i++){
+            		canvases[i].style.zIndex=1;
+            	}
+            } else {
+            	mouseOverSprite.style.pointerEvents="";
+            	for(i=0;i<canvases.length;i++){
+            		canvases[i].style.zIndex=-1;
+            	}
+            }
+        }
+        function resetboard() {
+            document.getElementById("xml").value = "";
+            for(var i = 0; i<countimages; i++){
+                document.getElementById("delete").remove();
+            }
+        }
+function toggleoutputvisibility() {
+        var display = document.getElementById('output').style.display;
+        if(display == "none")
+              document.getElementById('output').style.display = "block";
+     }
+        function CompileLevelXML() {
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
+    document.getElementById("output").value = "###Don't forget to add### \"RTID\(\"Wave" + document.getElementById("wavenumber").value + "FrostWindEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n\n";
+        document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"Wave" + document.getElementById("wavenumber").value + "FrostWindEvent" + document.getElementById("eventnumber").value +"\"\n            \],\n            \"objclass\"\: \"FrostWindWaveActionProps\",\n            \"objdata\"\: \{\n                \"Winds\"\: \[\n";
+        document.getElementById("output").value += str;
+        document.getElementById("output").value += "\n                \]\n            \}\n        \},";
+        console.log(allAddedItems);
+		}
+//Asuki says Hai!
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body></html>
