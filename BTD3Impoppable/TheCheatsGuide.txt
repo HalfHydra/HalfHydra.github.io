@@ -1,0 +1,56 @@
+Standard Edition
+
+1 = Dart Monkey
+2 = Tack Shooter
+3 = Boomerang
+4 = Spike O Pult
+5 = Ice
+6 = Bomb
+7 = Beacon
+8 = Super Monkey
+9 = Launch Super Monkey Storm
+I = Road Spikes
+O = Monkey Glue
+P = Pineapple
+Escape = Go out of tower options
+Up Arrow = FPS to 60 (Max)
+Down Arrow = Default FPS (40)
+Left Arrow = -5 To FPS
+Right Arrow = +5 To FPS
+
+
+Cheats Edition (Also Includes Standard)
+
+Q = Add $100
+W = Add $1000
+E = Add $10000
+R = Add $99999
+T = Add 1 Life
+Y = Add 10 Lives
+U = Add 100 Lives 
+N = End Round
+M = Track Selection Menu
+B = Add 99999 Lives
+Z = Easy Difficulty
+X = Medium Difficulty
+C = Hard Difficulty
+V = Impoppable Difficulty
+L = -0.1 to Bloon Speed
+; = Medium Bloon Speed (Easy = 0, Medium = 0.1, Hard = 0.25, Impoppable = 0.45)
+' = +0.1 to Bloon Speed
+A = TRACK 1
+S = TRACK 2
+D = TRACK 3
+F = TRACK 4
+G = TRACK 5
+H = TRACK 6
+J = TRACK 7
+K = TRACK 8
+Shift = Remove Bloons From Play Area
+Delete = Remove Towers From Play Area
+Up Arrow = FPS to 60 (Max)
+Down Arrow = Default FPS (40)
+Left Arrow = -5 To FPS
+Right Arrow = +5 To FPS
+ 
+
