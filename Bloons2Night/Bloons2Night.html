@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  		<link rel="stylesheet" href="css/style.css">
+      <!--<link rel="apple-touch-icon" href="./Images/apple-touch-icon.png"/>-->
+</head>
+<body>
+
+<audio id="music" preload="auto">
+	<source src="sound/BeneathTheMask.ogg" controls></source>
+</audio>
+  <script src='script/jquery.min.js'></script>
+
+<div id="main" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;">
+							<p> Bloons 2: Night Edition </p>
+							<!--<h1 style="color: #FF0505"> If you have recieved this link, you were probably given it by mistake. </h1>-->
+							<h1> Planned to be a mod that remakes Bloons 2 with new levels and redesigned textures for night. Only Popping Fields is finished levelwise and the graphics are finished. The aiming guide is now free and there will be plenty of solutions and skips. You can also use the Increase FPS button on the map screen. Make sure to allow flash. </h1>
+			</div>
+</div>
+
+<div id="normal" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+<div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-align: center;">
+              <embed id="swf" src="Bloons2Night011.swf" width="700px" height="539px">
+  </div>
+</div>
+
+<div id="normalguide" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+<div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-align: center;">
+              <p> Bug List </p>
+              <h1> -Solutions may not work properly. </h1>
+</div>
+</div>
+
+<div id="goback" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;" onclick="goback();">
+      <img src="./Images/Reverse.png" style="width: 100px; height: 100px;transform: scale(0.75, 0.75);margin-left: 35px;margin-top: 2px;"> </img>
+      <h2 style="position: absolute; left: 50%;margin-top: -85px;color:white;margin-left: -5vh;">Go Back</h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -178px;margin-top: -55px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Takes your back to where you came from. </h2>
+  </div>
+</div>
+
+    <script  src="js/index.js"></script>
+    <script>
+
+    function goback() {
+    	window.location.href = "../index.html";
+    }
+    </script>
+</body>
+</html>
