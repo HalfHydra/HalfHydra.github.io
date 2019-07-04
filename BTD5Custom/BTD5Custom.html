@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  		<link rel="stylesheet" href="css/style.css">
+      <!--<link rel="apple-touch-icon" href="./Images/apple-touch-icon.png"/>-->
+</head>
+<body>
+
+<audio id="music" preload="auto">
+	<source src="sound/BeneathTheMask.ogg" controls></source>
+</audio>
+  <script src='script/jquery.min.js'></script>
+
+<div id="main" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;">
+							<p> Phase Portals- BTD5 Flash Custom Track </p>
+							<!--<h1 style="color: #FF0505"> If you have recieved this link, you were probably given it by mistake. </h1>-->
+							<h1> This track from mobile needed restoration work for aspect ratio difference of 16:9 to 5:4. This is an older version of BTD5 and has the map on the bottom left of the first page of maps. </h1>
+			</div>
+</div>
+
+<div id="normal" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+<div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-align: center;">
+              <embed id="swf" src="PhasePortals.swf" width="700px" height="539px">
+  </div>
+</div>
+
+
+<div id="goback" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;" onclick="goback();">
+      <img src="./Images/Reverse.png" style="width: 100px; height: 100px;transform: scale(0.75, 0.75);margin-left: 35px;margin-top: 2px;"> </img>
+      <h2 style="position: absolute; left: 50%;margin-top: -85px;color:white;margin-left: -5vh;">Go Back</h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -178px;margin-top: -55px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Takes your back to where you came from. </h2>
+  </div>
+</div>
+
+    <script  src="js/index.js"></script>
+    <script>
+
+    function goback() {
+    	window.location.href = "../index.html";
+    }
+    </script>
+</body>
+</html>
