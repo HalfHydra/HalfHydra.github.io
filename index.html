@@ -11,19 +11,37 @@
 <audio id="daggersound">
   <source src="./Sound/dagger.wav" type="audio/wav">
     </audio>    
-<!--<div class ="fadeout" id="loading" style="width:100%; height:100%;display:block;background-color: #9BE9FE;">
-    <p style= "left:35%;margin: 0;position: absolute; max-width: 250px;max-height: 250px;top: 50%;transform: translate(0%,-50%); font-size: 50px;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;">Loading</p><img class="transition" src="./Images/takeyourheart2.gif" style= "left:-250px;margin: 0;position: absolute; max-width: 150px;max-height: 150px;top: 50%;transform: translate(0%,-50%);">
-      <!--<h1 id="headanim" class="headanim" style="width:350px;height:250px;transform: translate(-40%,-10%);position: absolute;left: 40%;top:50%;font-size: 50px;font-family:'Luckiest Guy';margin: 0;display: inline-block;color: white;">Download</h1>--><!--<h2 id="bottomanim" class="bottomanim" style="text-align: center;width:750px;height:25px;transform: translate(-50%,-50%);position: absolute;left: 50%;display:inline-block;top:90%;font-size: 25px; font: 25px p5, sans-serif;margin: 0;display: inline-block;color: #FF0505;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;">Loading site assets...</h2></img>
-  </div>-->
   <h3>
   <div class ="fadeout" id="loading" style="width:100%; height:100%;display:block;background-color: #9BE9FE;background-image: url('./Images/UI/background_day.jpg');background-position: center;background-repeat: no-repeat;background-size: auto 100%">
+        <div class="transitionmonthyear" id="M/Y" style="/*outline:5px solid white;*/width: 450px;height:156px;top:1%;left:1%;position:absolute;">
+        <img id="20XX" src="./Images/UI/20XX.png" style="position: absolute;top:20px;left: 170px;">
+        <img id="Bar" src="./Images/UI/BarB.png" style="position: absolute;width: 120px;height:120px;top:10px;left: 110px;transform: rotate(-15deg);z-index: 1;">
+        <img id="MonthNum" src="./Images/UI/8.png" style="position: absolute;z-index: 3;width: 180px;height:180px;top:-13px;">
+        </div>
     <img id="dagger" class="transitiondagger" src="./Images/UI/dagger.png" style= "z-index: 1;width: 275px; height: 136px;position: absolute;margin-left:-100px;">
     <img id="right3" class="transitionright3" src="./Images/UI/20.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="right3day" class="transitionright3" src="./Images/UI/MondayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;">
     <img id="right2" class="transitionright2" src="./Images/UI/19.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="right2day" class="transitionright2" src="./Images/UI/SundayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;">
     <img id="right1" class="transitionright1" src="./Images/UI/18.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
-    <img id="center" class="transitioncenter" src="./Images/UI/17.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="right1day" class="transitionright1" src="./Images/UI/SaturdayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;z-index: 999;">
+    <img id="center" class="transitioncenter" src="./Images/UI/Loading/MonkasAce.gif" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="centerday" class="transitioncenter" src="./Images/UI/FridayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;">
     <img id="left1" class="transitionleft1" src="./Images/UI/16.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="left1day" class="transitionleft1" src="./Images/UI/ThursdayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;">
     <img id="left2" class="transitionleft2" src="./Images/UI/15.png" style= "width: 200px; height: 200px;position: absolute;margin-left:-100px;">
+        <img id="left2day" class="transitionleft2" src="./Images/UI/WednesdayB.png" style="position: absolute;margin-top:180px;margin-left: -90px;width:190px;height: 70px;">
+        <div class="transitioncat" id="itsbedoclock" style="width:775px;left:5%;height:200px;bottom:5%;position: absolute;opacity: 0;">
+        <img src="./Images/UI/Morgana.png" style="outline:9px solid gray;width: 225px; height: 225px;transform: scale(0.8, 0.8);position: absolute;z-index:0;">
+        <img src="./Images/UI/DialogueBox.png" style="width: 555px; height: 150px;margin-left:150px;margin-top:60px;position: absolute;z-index: 0;">
+        <h3 style="z-index: 1;color:black;margin-left: 205px;transform: rotate(-15deg);margin-top:23px;font-family: p5;font-size: 24px;"> Morgana </h3>
+        <h3 style="z-index: 1;color:white;margin-left: 245px;transform: rotate(-1deg);margin-top:82px;font-family: p5;font-size: 20px;"> It's Bed-O-Clock, you best be sleeping... </h3>
+        </div>
+        <div id="currenttime" class="transitionclock" style="/*outline:5px solid white;*/width:450px;height:200px;right:1%;top:1%;position: absolute;text-align: right;opacity:0;"> 
+            <img id="hour" class="clockdouble" src="" style="position: absolute;">
+            <img id="minutes1" src="" style="margin-left: -300px;margin-top:-10px;position: absolute;">
+            <img id="minutes2" src="" style="margin-left: -220px;margin-top:-10px;position: absolute;">
+        </div>
   </div>
 </h3>
 
@@ -326,52 +344,105 @@
     	}
     }
     setTimeout(function(){ daggersound.play();  },3000);
-    var daggersound = document.getElementById("daggersound");
+  var daggersound = document.getElementById("daggersound");
   var months = [31,28,31,30,31,30,31,31,30,31,30,31];
   var d = new Date();
-  d.setDate(d.getDate() - 1)
+  d.setDate(d.getDate() - 1);
   var num1 = d.getDate();
-  //var num1 = 1;
+    //num1 = 31;
   var month = d.getMonth();
-  //var month = 2;
-  console.log("Today's Number: " + num1);
+    var day = d.getDay();
+    //var day = 0;
+  //month = 2;
+    var ostopwatch = d.getMinutes();
+    var realtime = ostopwatch++;
+    var oclock = d.getHours();
+    //oclock = 10;
+
+    //The Clock
+    document.getElementById("hour").src = "./Images/UI/" + oclock + ".png";
+    document.getElementById("MonthNum").src = "./Images/UI/" + (month + 1) + ".png";
+    //Check if there is a change in the month
+    var future = new Date();
+    future.setDate(d.getDate() + 1);
+    var futureday = future.getDate();
+    futureday--;
+    if(futureday == 0){
+        setTimeout(function(){  document.getElementById("MonthNum").src = "./Images/UI/" + (d.getMonth() + 2) + ".png"
+        if(document.getElementById("MonthNum").src == "./Images/UI/13.png"){ document.getElementById("MonthNum").src ="./Images/UI/1.png"  }  },2800);
+    }
+    //document.getElementById("minutes1").src = "./Images/UI/" + realtime.charAt(0) + ".png";
+    //document.getElementById("minutes2").src = "./Images/UI/" + realtime.charAt(1) + ".png";
+    //I'm on a plane and I can't look up how do to this ^ in Javascript (I don't know charAt but Javascript)
+    //Note: Find a way to addEventListener a time change in order to make it update. Should act like an Update() function
+    if(realtime > 59){
+        console.log("wait...that's illegal");
+    } else if(realtime > 49){
+        document.getElementById("minutes1").src = "./Images/UI/5.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + (realtime - 50) + ".png";
+    } else if(realtime > 39){
+        document.getElementById("minutes1").src = "./Images/UI/4.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + (realtime - 40) + ".png";
+    } else if(realtime > 29){
+        document.getElementById("minutes1").src = "./Images/UI/3.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + (realtime - 30) + ".png";
+    } else if(realtime > 19){
+        document.getElementById("minutes1").src = "./Images/UI/2.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + (realtime - 20) + ".png";
+    } else if(realtime > 9){
+        document.getElementById("minutes1").src = "./Images/UI/1.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + (realtime - 10) + ".png";
+    } else if(realtime < 10){
+        document.getElementById("minutes1").src = "./Images/UI/0.png";
+        document.getElementById("minutes2").src = "./Images/UI/" + realtime + ".png";
+    }
+    if(oclock < 10){
+        document.getElementById("hour").classList.remove('clockdouble');
+        document.getElementById("hour").classList.add('clocksingle');
+    }
+
+  //Day of the Month
   var string = "./Images/UI/" + num1 + ".png";
   var stringp1 = "./Images/UI/" + (num1 + 1) + ".png";
   var stringp2 = "./Images/UI/" + (num1 + 2) + ".png";
   var stringp3 = "./Images/UI/" + (num1 + 3) + ".png";
   var stringm1 = "./Images/UI/" + (num1 - 1) + ".png";
   var stringm2 = "./Images/UI/" + (num1 - 2) + ".png";
+    var daysinmonth;
+    var stringp1;
+    var stringp2;
+    var stringp3;
   if(num1 == 1){
-    var daysinmonth = months[month-1];
+    daysinmonth = months[month-1];
     stringm1 = "./Images/UI/" + daysinmonth + ".png";
     stringm2 = "./Images/UI/" + (daysinmonth - 1) + ".png";
   }
   if(num1 == 2){
-    var daysinmonth = months[month-1];
+    daysinmonth = months[month-1];
     stringm1 = "./Images/UI/" + 1 + ".png";
     stringm2 = "./Images/UI/" + daysinmonth + ".png";
   }
   if(num1 == 31){
-    var stringp1 = "./Images/UI/" + 1 + ".png";
-    var stringp2 = "./Images/UI/" + 2 + ".png";
-    var stringp3 = "./Images/UI/" + 3 + ".png";
+    stringp1 = "./Images/UI/" + 1 + ".png";
+    stringp2 = "./Images/UI/" + 2 + ".png";
+    stringp3 = "./Images/UI/" + 3 + ".png";
   }
   if(num1 == 30){
     if(month == 3 || month == 5 || month == 8 || month == 10){
-    var stringp1 = "./Images/UI/" + 1 + ".png";
-    var stringp2 = "./Images/UI/" + 2 + ".png";
-    var stringp3 = "./Images/UI/" + 3 + ".png";
+    stringp1 = "./Images/UI/" + 1 + ".png";
+    stringp2 = "./Images/UI/" + 2 + ".png";
+    stringp3 = "./Images/UI/" + 3 + ".png";
     } else {
-      var stringp1 = "./Images/UI/" + 31 + ".png";
-    var stringp2 = "./Images/UI/" + 1 + ".png";
-    var stringp3 = "./Images/UI/" + 2 + ".png";
+    stringp1 = "./Images/UI/" + 31 + ".png";
+    stringp2 = "./Images/UI/" + 1 + ".png";
+    stringp3 = "./Images/UI/" + 2 + ".png";
     }
   }
   if(num1 == 28){
     if(month == 1){
-    var stringp1 = "./Images/UI/" + 1 + ".png";
-    var stringp2 = "./Images/UI/" + 2 + ".png";
-    var stringp3 = "./Images/UI/" + 3 + ".png";
+    stringp1 = "./Images/UI/" + 1 + ".png";
+    stringp2 = "./Images/UI/" + 2 + ".png";
+    stringp3 = "./Images/UI/" + 3 + ".png";
     }
   }
   document.getElementById("center").src = string;
@@ -380,10 +451,53 @@
   document.getElementById("right3").src = stringp3;
   document.getElementById("left1").src = stringm1;
   document.getElementById("left2").src = stringm2;
+
+    //Fix Dagger Positioning
   if(num1 < 10){
     document.getElementById("dagger").classList.remove('transitiondagger');
     document.getElementById("dagger").classList.add('transitiondaggersingle');
   }
+    if(month > 10){
+        document.getElementById("Bar").style.left = "110px";
+    } else {
+        document.getElementById("Bar").style.left = "90px";
+    }
+
+    //Weekdays
+    var dayinnumber = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("left2day").src = "./Images/UI/" + dayinnumber[day-2] + "B.png";
+    document.getElementById("left1day").src = "./Images/UI/" + dayinnumber[day-1] + "B.png";
+    if((day-1) == -1){
+        document.getElementById("left1day").src = "./Images/UI/" + dayinnumber[6] + "B.png";
+        document.getElementById("left2day").src = "./Images/UI/" + dayinnumber[5] + "B.png";
+    }
+    if((day-2) == -1){
+        document.getElementById("left2day").src = "./Images/UI/" + dayinnumber[6] + "B.png";
+    }
+    document.getElementById("centerday").src = "./Images/UI/" + dayinnumber[day] + "B.png";
+    document.getElementById("right1day").src = "./Images/UI/" + dayinnumber[day+1] + "B.png";
+    document.getElementById("right2day").src = "./Images/UI/" + dayinnumber[day+2] + "B.png";
+    document.getElementById("right3day").src = "./Images/UI/" + dayinnumber[day+3] + "B.png";
+    if((day+3) == 7){
+        document.getElementById("right3day").src = "./Images/UI/" + dayinnumber[0] + "B.png";
+    }
+    if((day+3) == 8){
+        document.getElementById("right2day").src = "./Images/UI/" + dayinnumber[0] + "B.png";
+        document.getElementById("right3day").src = "./Images/UI/" + dayinnumber[1] + "B.png";
+    }
+    if((day+3) == 9){
+        document.getElementById("right1day").src = "./Images/UI/" + dayinnumber[0] + "B.png";
+        document.getElementById("right2day").src = "./Images/UI/" + dayinnumber[1] + "B.png";
+        document.getElementById("right3day").src = "./Images/UI/" + dayinnumber[2] + "B.png";
+    }
+
+    //Is it Bed O Clock?
+    if(oclock < 6 || oclock > 21){
+        document.getElementById("itsbedoclock").style.visibility = "visible";
+    } else {
+        document.getElementById("itsbedoclock").style.visibility = "hidden";
+        //document.getElementById("itsbedoclock").style.visibility = "visible";
+    }
 
     </script>
 
