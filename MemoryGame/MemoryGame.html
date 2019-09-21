@@ -43,23 +43,12 @@
 		replace.addEventListener('click',function(){
 				changeCard(inside2, twentyfour2);
 			});
-		console.log(inside + "| <-- inside | twentyfour -> | " + twentyfour)
 		div.appendChild(replace);
 		}
 		output.appendChild(div);
 		
 	}
-		/*for(var twentyfour = 0; twentyfour<24;twentyfour++){
-			for(var inside = 0; inside<12; inside++){
-
-			}
-		}*/
 	}
-
-	function changeCard2(selected){
-	let card = [...selected.parentNode.children].indexOf(selected);
-	document.getElementById("card1").src = "\.\/Cards\/" + card + ".png";
-}
 
 	function changeCard(cardid, placeid) {
 		let name = 'card' + placeid;
