@@ -326,6 +326,7 @@
     <script>
     //setTimeout(function(){ document.getElementById("html").style.classList.remove('htmlp1');
     //document.getElementById("html").style.classList.add('htmlp2'); },5000);
+    var isMobile = false;
     document.getElementById('loading').style.visibility = "visible";
     document.getElementById('main').style.display = "none";
     setTimeout(function(){ document.getElementById('loading').style.visibility = "hidden" 
@@ -356,7 +357,10 @@
     	}
     }
     function anniversary() {
-      if(annon == false){
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      isMobile = true;
+      }
+      if(annon == false && isMobile == false){
         document.getElementById("html").style.overflow = "hidden";
       document.getElementById("blackbar").classList.add("annanim");
       setTimeout(function(){ 
@@ -376,6 +380,19 @@
       console.log("Happy Anniversary!");
 
       setTimeout(function(){ document.getElementById("blackbar").parentNode.removeChild(document.getElementById("blackbar")); document.getElementById("html").style.overflow = "auto"   },3000);
+      }
+      if(isMobile == true){
+        document.getElementById("html").style.backgroundImage = "url(./Images/Anniversary/Infinite7.gif)";
+        document.getElementById("html").style.backgroundSize = "auto 15vh";
+        document.getElementById("starbtn").style.visibility = "hidden" 
+        document.getElementById("descriptiontext").innerHTML = "Happy 1st Anniversary! This was more of an excuse to let me have fun with styling this. Yes, the background is a crappy gif I threw together in like 10 minutes."
+        document.getElementById("headerdiv").style.backgroundImage = "url(./Images/Anniversary/t_BrickPatternAnniversary.png)";
+        setTimeout(function(){ annopening.play();  },500);
+      setTimeout(function(){ annloop.play();  },2292);
+      document.getElementById("AnnLoop").loop = true;
+      document.getElementById("AnnOpening").loop = false;
+      document.getElementById("AnnOpening").volume = 0.5;
+      document.getElementById("AnnLoop").volume = 0.5;
       }
     }
     document.getElementById("html").style.overflow = "auto"
