@@ -394,7 +394,7 @@
                 <p style="background:#4A75B2;width: 205px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Buttons/Restart.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Allow Retries:
                     <input type="checkbox" id="CanRetry" oninput="changeretry()" style="vertical-align:middle" onclick="">
                 </p>
-                <p style="background:#4A75B2;width: 155px; height: 50px;margin-top: -87px;margin-left: 328px;">&nbsp;Change Editor &nbsp;Layout: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('All this does is make the challenge JSON appear on the left side, but for some phones and small windows it will block the actual settings, hence this button to revert to that if you prefer watching your text update as you go.')"></p><img src="./Images/UI/Buttons/SwapLayout.png" style="width: 75px; height: 75px;vertical-align:middle;margin-top: -100px;margin-left: 500px;" class="inline" onclick="changelayout()"></p>
+                <p style="background:#4A75B2;width: 155px; height: 50px;margin-top: -87px;margin-left: 328px;">&nbsp;Change Editor &nbsp;Layout: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('All this does is make the challenge JSON appear on the left side, but for some phones and small windows it will block the actual settings, hence this button to change to that if you prefer watching your text update as you go.')"></p><img src="./Images/UI/Buttons/SwapLayout.png" style="width: 75px; height: 75px;vertical-align:middle;margin-top: -100px;margin-left: 500px;" class="inline" onclick="changelayout()"></p>
             </div>
 
             <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 300px;margin-top: 10px;">
@@ -404,16 +404,17 @@
                     <div class="bottom-right"> <img id="changemapgear" src="./Images/Tracks/track_gear.png" style="position:relative;left: 30px;top: 20px;width: 270px; height: 200px;" onclick="selectmap()"></div>
                 </div>
                 <div style="display: inline-block;width: 308px; height: 270px;margin-left: 7px;">
-                    <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: -35px;margin-top: 18px;position: absolute;" class="inline" align="top" onclick="promptinfo('The reason why it says \'Not Impoppable\' is because Impoppable was not in the game when the random challenges were added, therefore making it not work for challenges. It acts rather strangely.')">
+                    <!--<img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('The reason why it says \'Not Impoppable\' is because Impoppable was not in the game when the random challenges were added, therefore making it not work for challenges. It acts rather strangely.')">-->
                     <p><img src="./Images/UI/Buttons/GameMode.png" style="width: 30px; height: 30px;line-height:35px;margin-top: 0px;vertical-align:middle" class="inline" align="top">&nbsp;Game Mode:
                         <select id="gamemode" name="type" onchange="changegamemode(value)">
                             <option value="0">Easy</option>
                             <option value="1">Medium</option>
                             <option value="2">Hard</option>
-                            <option value="3">Not Impoppable?</option>
+                            <option value="3">Impoppable?</option>
                             <option value="4">Deflation</option>
                             <option value="5">Apocalypse</option>
                         </select>
+                        <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('The reason why it says \'Impoppable?\' is because Impoppable was not in the game when the random challenges were added, therefore making it not work for challenges. It acts rather strangely.')">
                     </p>
                     <p style="width: 252px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Cash:
                         <input type="text" id="startcash" oninput="changestartcash()" style="width: 75px" value="DEFAULT">
@@ -697,12 +698,11 @@
                     BlockedSpecialties: [],
                     BloonLevelOffsets: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                     CanSave: false,
-                    CanEarnMoney: true,
+                    PauseBetweenRounds:true,
                     LockedTowers: [],
                     LockedUpgrades: [],
                     MaxNumberOfEachTower: -1,
                     MaxNumberOfTotalTowers: -1,
-                    TowerLifespan: -1,
                     AllowContinueOnGameOver: false,
                     AllowRetryOnGameOver: false,
                     BloonsForcedCamo: [],
@@ -1167,6 +1167,7 @@
                 var ybreak = limit2.indexOf(',');
                 var xcord = parseFloat(limit2.substr(0, ybreak));
                 var ycord = parseFloat(limit2.substr(ybreak + 1));
+                if(isNaN(left) == false && isNaN(right) == false && isNaN(xcord) == false && isNaN(ycord) == false){
                 if (!left) {
                     left = 4;
                 }
@@ -1226,7 +1227,11 @@
                     document.getElementById('towersection').style.height = p4 + "px";
                 }
                 total++;
+
                 finished();
+            	} else {
+            		alert('The tower was not added because one of those values was not formatted correctly or not a number.');
+            	}
             }
 
             function addcashroundmod(selected) {
@@ -1234,6 +1239,7 @@
                 var mod = prompt("Please enter the cash modifier in decimal form", "0.0");
                 round = parseFloat(round);
                 mod = parseFloat(mod);
+                if(isNaN(round) == false && isNaN(mod) == false){
                 crmdata[NumCRMS] = [round, mod];
                 challenge.Rules.CashRoundModifiers.push({
                     Round: round,
@@ -1265,6 +1271,9 @@
                 }
                 total2++;
                 finished();
+            	} else {
+            		alert('That cash round modifier was not added one of the values was not formatted correctly or was not a number.')
+            	}
             }
 
             function makethetowers() {
