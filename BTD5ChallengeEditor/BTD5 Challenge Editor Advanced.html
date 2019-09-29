@@ -1,1463 +1,1706 @@
 <!DOCTYPE html>
 <html style="margin: 0px;height: 100%;width: 100%;">
-	<head>  <meta charset="UTF-8"> <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-<style>
-@font-face { font-family: btd5; src: url('./Font/Oetztype.ttf'); } 
-@font-face { font-family: arialreg; src: url('./Font/arialreg.ttf'); } 
-@font-face { font-family: LiberationSans; src: url('./Font/LiberationSans.ttf'); } 
-.modal {
-	display: none;
-	z-index: 1;
-	padding: 0;
-	margin-top: 10px;
-	/*margin-left: -100px;*/
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0);
-}
-.modal-content {
-	background-image: url("");
-	background-color: #fefefe;
-	margin: auto;
-	z-index: 1;
-	padding-top: 0px;
-	padding: 1px;
-	border: 1px solid #888;
-	width: 590px;
-	height: 450px;
 
-}
-.close {
-	position:absolute;
-	padding: 0px;
-	color: #aaaaaa;
-	width: 40px;
-	height: 40px;
-	font-weight: bold;
-}
-.close:hover,
-.close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-.modal2 {
-	display: none;
-	z-index: 1;
-	padding: 0;
-	position: sticky;
-	top: 50%;
-	left:50%;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0);
-}
-.modal-content2 {
-	background-image: url("");
-	background-color: #fefefe;
-	margin: auto;
-	z-index: 1;
-	padding-top: 0px;
-	padding: 1px;
-	border: 1px solid #888;
-	width: 500px;
-	height: 450px;
-}
-.close2 {
-	position:absolute;
-	padding: 0px;
-	color: #aaaaaa;
-	float: right;
-	width: 40px;
-	height: 40px;
-	font-weight: bold;
-}
-.close2:hover,
-.close2:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-.container {
-	position: relative;
-	text-align: center;
-	color: white;
-	display:inline-block
-}
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-shadow:
-	-1px -1px 0 #000,
-	1px -1px 0 #000,
-	-1px 1px 0 #000,
-	1px 1px 0 #000;
-	font-size: 24px;
-}
-.slider {
-    -webkit-appearance: none;
-    width: 350px;
-    height: 15px;
-    border-radius: 5px;
-    background: #38200F;
-    outline: none;
-    margin-top: -1px;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 23px;
-    height: 24px;
-    border: 0;
-    margin-top: -1px;
-    background: url('./Images/UI/sliderbtn.png');
-    cursor: pointer;
-}
-.slider::-moz-range-thumb {
-    width: 23px;
-    height: 24px;
-    border: 0;
-    background: url('./Images/UI/sliderbtn.png');
-    cursor: pointer;
-}
-.transition {
-	animation: scrollBanner 5.1s;
-      -webkit-animation: scrollBanner 4.8s;
-      width:100%; height:100%;
-}
-.fadeout {
-	animation: fadeout 5.1s;
-      -webkit-animation: fadeout 5.0s;
-}
-.headanim {
-	animation: headanim 5.0s;
-      -webkit-animation: headanim 5.0s;
-}
-.bottomanim {
-	animation: bottomanim 5.0s;
-      -webkit-animation: bottomanim 5.0s;
-}
-@keyframes scrollBanner {
-     0% {
-        left: -250px;
-    }
-    27% {
-        left: 55%;
-    }
-    90% {
-    	left: 55%;
-    	opacity: 1;
-    }
-    100% {
-        left: 100%;
-        opacity: 0;
-    }
-}
-@keyframes bottomanim {
-    0% {
-        opacity:0;
-    }
-    21%{
-    	opacity: 0;
-    }
-    22% {
-        opacity:1;
-    }
-    90% {
-    	opacity:1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes headanim {
-     0% {
-        opacity:0;
-    }
-    21%{
-    	opacity: 0;
-    }
-    22% {
-        opacity:1;
-    }
-    90% {
-    	opacity:1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes fadeout {
-     0% {
-        opacity: 1;
-    }
-    95% {
-    	opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-	p {
-		font-family: btd5;
-		color: white;
-		text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-			background: #4A75B2;
-			border-radius:7px;
-    		border:2px solid #5A8FD5;
-	}
-	input {
-		text-align-last:center;
-		background-color: #436FA8;
-		font-family: btd5;
-		color: white;
-		text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-			border-radius:5px;
-			border-color: #2B466A;
-	}
-	select {
-		text-align-last:center;
-		background-color: #436FA8;
-		font-family: btd5;
-		color: white;
-		text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-			border-radius:5px;
-			border-color: #2B466A;
-	}
-	option {
-
-	}
-	button {
-		text-align-last:center;
-		background-color: #66AAFF;
-		font-family: btd5;
-		color: white;
-		text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-		font-size: 18px;
-		border-radius:8px;
-	}
-	input[type='checkbox'] {
-    -webkit-appearance:none;
-    width:30px;
-    height:30px;
-    background:#34547F;
-    border-radius:5px;
-    border:2px solid #2B466A;
-	}
-	input[type='checkbox']:checked {
-    	background: url('./Images/UI/Checked.png');
-    	background-size: 25px 25px;
-	}
-	body {
-		margin:0 auto; 
-	}
-	.towerIcon {
-		width:62px;
-		height:71px;
-
-	}
-	.mapIcon {
-		width:250px;
-		height:180px;
-	}
-	.bloonIcon {
-		width: 47px;
-		height: 63px;
-	}
-	.camoBloonIcon {
-		width: 47px;
-		height: 63px;
-		filter: grayscale(100%);
-	}
-	.specialtyIcon {
-		width:135px;
-		height:93px;
-
-	}
-	.inline {
-		display:inline-block;
-	}
-	.content {
-  	margin:0px auto;
-  	width: 590px;
-     right: 0;
-     left: 0;
-	}
-	.bottom-right {
-  	position: absolute;
-  	bottom: 8px;
-  	right: 16px;
-	}
-	.center {
- 	 position: absolute;
-  	 left: 50%;
- 	 top: 50%;
-  	 transform: translate(-50%, -50%);
-	}
-	table, th, td {
-    border: 3px solid #436FA8;
-    border-collapse: collapse;
-    text-align: center;
-    font-family: Calibri;
-		color: white;
-		text-shadow:
-			-1px -1px 0 #000,
-			1px -1px 0 #000,
-			-1px 1px 0 #000,
-			1px 1px 0 #000;
-}
-th, td {
-    padding: 10px;
-}
-tr {
-    background-color: #385D8D
-    color: white;
-}
-		</style>
-		</head>
-	</img>
-	<div class ="fadeout" id="loading" style="width:100%; height:100%;display:block;background-color: #9BE9FE;">
-		<img class="transition" src="./Images/UI/Loading/MonkasAce.gif" style= "left:-250px;margin: 0;position: absolute; max-width: 250px;max-height: 250px;top: 50%;transform: translate(0%,-50%);"><h1 id="headanim" class="headanim" style="width:350px;height:250px;transform: translate(-40%,-10%);position: absolute;left: 40%;top:50%;font-size: 50px;font-family:'Luckiest Guy';margin: 0;display: inline-block;color: white;">Step 1 of 8</h1><h2 id="bottomanim" class="bottomanim" style="text-align: center;width:750px;height:25px;transform: translate(-50%,-50%);position: absolute;left: 50%;display:inline-block;top:90%;font-size: 25px; font: 25px arial, sans-serif;margin: 0;display: inline-block;color: #82B8C6;">Unleashing Monkey Sun God</h2></img>
-	</div>
-	<body bgcolor="#5A8FD5"  style="width:100%; height:100%">
-		<!--<img src="./Images/UI/benbtn.png" style="position: absolute;top: 0;padding: 7px;right: 0%;border:0;margin-left: auto;margin-right: auto;" onclick="advancedmode()">-->
-						<div id="main" class="content" style="visibility: hidden;display:none;">
-						<div style="width: 750px;height: 704px;">
-							<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 404px;margin-top: 10px;">
-							<p style="background:#4A75B2;width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge ID:
-							<input type="text" id="id" style="background-color: #436FA8;width: 50px;" oninput="changeid()" value="ID"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('This doesn\'t do anything but add one anyway to help manage your challenges if you make multiple.')">
-							</p>
-							<p style="background:#4A75B2;width: 530px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Name:
-							<input type="text" id="name" style="background-color: #436FA8;width: 300px;" oninput="changename()" value="Name"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard name will not work. You need to add a LOC_MIS_[ID]_NAME title to \'English.xml\'.')">
-							</p>
-							<p style="background:#4A75B2;width: 578px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Description:
-							<input type="text" id="description" style="background-color: #436FA8;width: 300px;" oninput="changedescription()" value="Description"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard description will not work. You need to add a LOC_MIS_[ID]_DESC title to \'English.xml\'.')">
-							</p>
-							<p style="background:#4A75B2;width: 212px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RankRequired.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Rank Required:
-							<input type="text" id="rank" style="background-color: #436FA8;width: 30px;" oninput="changerank()" value="20">
-							</p>
-							<p style="background:#4A75B2;width: 167px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Save.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Save: <input type="checkbox" id="CanSave" oninput="changesave()" style="vertical-align:middle" onclick=""></p>
-						<p style="background:#4A75B2;width: 230px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Buttons/Continue.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Allow Continues: <input type="checkbox" id="CanContinue" oninput="changecontinue()" style="vertical-align:middle" onclick=""></p>
-						<p style="background:#4A75B2;width: 205px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Buttons/Restart.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Allow Retries: <input type="checkbox" id="CanRetry" oninput="changeretry()" style="vertical-align:middle" onclick=""></p>
-						<p style="background:#4A75B2;width: 155px; height: 50px;margin-top: -87px;margin-left: 328px;">&nbsp;Change Editor &nbsp;Layout: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('All this does is make the challenge JSON appear on the left side, but for some phones and small windows it will block the actual settings, hence this button to revert to that if you prefer watching your text update as you go.')"></p><img src="./Images/UI/Buttons/SwapLayout.png" style="width: 75px; height: 75px;vertical-align:middle;margin-top: -100px;margin-left: 500px;" class="inline" onclick="changelayout()"></p>
-							</div>
-						
-							<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 300px;margin-top: 10px;">
-							<div style="display: inline-block; vertical-align: top; top: 10px;position:relative">
-								<!--<img id="changemapgear" src="./Images/Tracks/track_gear.png" class="bottom-right" style="width: 270px; height: 200px;" onclick="selectmap()">-->
-								<img id="changemapbtn" src="./Images/Tracks/monkey_lane_thumb.jpg"  style="width: 250px; height: 180px;margin-top: 40px;margin-left: 7px;border: 7px solid #4A75B2;border-radius:15px;" onclick="selectmap()">
-								<div class="bottom-right"> <img id="changemapgear" src="./Images/Tracks/track_gear.png"style="position:relative;left: 30px;top: 20px;width: 270px; height: 200px;" onclick="selectmap()"></div>
-							</div>
-							<div style="display: inline-block;width: 308px; height: 270px;margin-left: 7px;">
-								<p><img src="./Images/UI/Buttons/GameMode.png" style="width: 30px; height: 30px;line-height:35px;margin-top: 0px;vertical-align:middle" class="inline" align="top">&nbsp;Game Mode:
-								<select id="gamemode" name="type" onchange="changegamemode(value)">
-									<option value="0">Easy</option>
-									<option value="1">Medium</option>
-									<option value="2">Hard</option>
-									<option value="3">Not Impoppable?</option>
-									<option value="4">Deflation</option>
-									<option value="5">Apocalypse</option>
-								</select>
-								</p>
-								<p style="width: 252px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Cash:
-								<input type="text" id="startcash" oninput="changestartcash()" style="width: 75px" value="DEFAULT">
-								</p>
-								<p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Lives.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Lives:
-								<input type="text" id="startlives" oninput="changestartlives()" style="width: 75px" value="DEFAULT">
-								</p>
-								<p style="width: 238px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Play.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Start Round:
-								<input type="text" id="startround" oninput="changestartround()" style="width: 75px" value="1">
-								</p>
-								<p style="width: 228px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Race.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;End Round:
-								<input type="text" id="endround" oninput="changetargetround()" style="width: 75px" value="DEFAULT">
-								</p>
-							</div>
-						</div>
-					</div>
-					<div id="modal" class="modal">	<div style="max-width: 800px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">	<div style="max-width: 800px; overflow:scroll;background-color: #436FA8;margin-top: 30px;" id="bg" class="modal-content">	
-					<span class="close" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 35px; height: 35px;"></img></span>
-					<div class="maps">
-					</div>
-				</div></div></div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 370px;margin-top: 30px;">
-						<p style="width: 155px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Towers: </p>
-						<div style="margin-left: 7px;" id = "towers">
-						</div>
-					</div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 295px;margin-top: 10px;">
-							<p style="width: 170px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Upgrades: </p>
-							<div style="margin-left: 7px;" id ="locks"></div>
-						</div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 145px;margin-top: 10px;">
-						<p style="width: 227px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Lab Upgrades: </p>
-						<div style="margin-left: 7px;" id = "labUpgrades"></div>
-					</div>
-					<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 555px;margin-top: 10px;">
-						<p style="width: 280px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Speciality Buildings: </p>
-						<div style="margin-left: 7px;" id = "specialties"></div>
-					</div>
-					<div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 680px;margin-top: 10px;"><!-- was 680 -->
-						<p style="width: 245px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
-						<input type="text" id="maxmonkeys" style="width: 30px " oninput="updatemaxmonkeys()" value="-1">
-						<img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of towers you can have placed at once.')">
-						</p>
-						<p style="width: 310px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max of Each Monkey:
-						<input type="text" id="maxeachmonkeys" style="width: 30px" oninput="updatemaxeachmonkeys()" value="-1">
-						<img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of each tower you can place.')"></p>
-						<p style="width: 135px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Insta.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Inventory:
-						<div style="margin-left: 7px;" id ="inventory"></div>
-						
-						<p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Preplaced Towers: <div style="margin-left: 7px;" id ="preplacetower"></div>
-						<table id="Entries" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;"><tbody>
-  <tr>
-    <th>Type name</th>
-    <th>Type image</th>
-    <th>Upgrades</th> 
-    <th>Position</th>
-    <th>X</th>
-  </tr></tbody>
-</table>
-					</div>
-					<div id="moneysection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 400px;margin-top: 10px;">
-						<p style="background:#4A75B2;width: 260px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Earn Money: <input oninput="changecanearnmoney()" type="checkbox" checked id="CanEarnMoney" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Deflation mode. This disables all possible ways to earn money that aren\'t related to towers.')"></p>
-						<p style="width: 320px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 15px;margin-left: 7px;" ><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Money Per Round:
-								<input oninput="updatemoneyperround()" type="text" id="MoneyPerRound" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in certain random missions and Deflation mode. This is used to change the amount of money you recieve at the end of round, you can also disable it with 0. It will not increase with the progressing rounds.')">
-						</p>
-						<p style="width: 290px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;" ><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Price Modifier:
-								<input oninput="updatepricemod()" type="text" id="PriceModifier" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value.')">
-						</p>
-						<p style="width: 340px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Per Pop Modifier:
-						<input oninput="updatecashperpopmod()" type="text" id="CashPerPopModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is not used anywhere (Double Cash is seperate). It changes the amount of cash you get from popping a bloon.')">
-						</p>
-						<p style="width: 300px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/SellPriceModifier.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Sell Price Modifier:
-								<input oninput="updatesellpricemod()" type="text" id="SellPriceModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value. Default value is 0.8. I think it overrides the lab upgrade.')">
-						</p>
-						<p style="background:#4A75B2;width: 305px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Round Modifiers: <button style="vertical-align:middle" onclick="addcashroundmod()">Add</button>
-						<table id="Entries2" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;"><tbody>
-  <tr>
-    <th>Round</th>
-    <th>Modifier</th>
-    <th>X</th>
-  </tr></tbody>
-</table>
-					</div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 240px;margin-top: 15px;">
-						<p style="background:#4A75B2;width: 310px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Up.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Towers Auto Upgrade: <input oninput="changeautoupgrade()" type="checkbox" id="TowersAutoUpgrade" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Fast Upgrades mission. This upgrades towers on the path with the most upgrades once per round.')"></p>
-						<p style="background:#4A75B2;width: 495px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Consume Most Expensive Tower Rounds: <input oninput="updateconsumetowers()" type="text" id="ConsumeMostExpensiveTowerRounds" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Wizard Lord special mission. This absorbs the most expensive tower at the end of X rounds.')"></p>
-						<p style="background:#4A75B2;width: 355px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Free Towers Second Round: <input oninput="changefreetower()" type="checkbox" id="FreeTowersSecondRound" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the MixNMatch event. This gives 1 of the next tower in the order every second round. WARNING! This disables all towers from being placed if they aren\'t in your inventory!')"></p>
-						<p style="width: 270px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Timer.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Tower Lifespan:
-						<input oninput="updatetowerlifespan()" type="text" id="TowerLifespan" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('Used in Short Lived special mission. Disables selling and instead makes towers disappear after a given time. This can be used to essentially disable selling.')">
-						</p>
-					</div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 60px;margin-top: 10px;">
-						<p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Crucible.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Water to Crucible: <input oninput="changewatertocrucible()" type="checkbox" id="WaterToCrucible" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Crucible event. This changes anything on the map that is defined as water into a crucible spot. Unknown if crashes.')"></p>
-					</div>
-						<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 170px;margin-top: 10px;">
-						<p style="width: 285px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Timer:
-						<input oninput="updateloselivestimer()" type="text" id="LoseLivesTimer" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This enables the No Escape gimmick and is configured by the other \'Lose Lives\' options.')">
-						</p>
-						<p style="width: 300px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Amount:
-						<input oninput="updateloselivesamount()" type="text" id="LoseLivesAmount" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is how many lives are lost every time the LoseLivesTimer reaches it time.')">
-						</p>
-						<p style="width: 345px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Grace Period:
-						<input oninput="updateloselivesgraceperiod()" type="text" id="LoseLivesGracePeriod" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is the amount of time before the Lose Lives Timer begins running.')">
-						</p>
-					</div>
-					<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 365px;margin-top: 10px;">
-						<p style="background:#4A75B2;width: 320px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/PauseBetweenRounds.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Pause Between Rounds: <input oninput="changeroundpause()" type="checkbox" checked id="PauseBetweenRounds" style="vertical-align:middle" oninput="changeroundpause()" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Apocalypse mode. This forces the autoplay of rounds while still giving end of round cash.')"></p>
-						<p style="width: 240px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RoundStep.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Round Step:
-						<input oninput="changeroundstep()" type="text" id="RoundStep" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('I\'m not sure where this used, but it increases/decreases(?) the amount of rounds that actually progress. For example a RoundStep value of 2.0 (starting at round 1) will run rounds 1, 3, 5, 7, etc...and a RoundStep value of 10.0 (starting at round 1) will run rounds 1, 10, 20,...etc. It calls the round 10 \'round 2\' in the Game UI at the Round: X/X portion.')">
-					    </p>
-					    <p style="width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/BloonSpeed.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Speed Modifier:
-						<input oninput="updatespeedmod()" type="text" id="SpeedModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. It is used to change the bloon speed. It starts at 0 and anything you make it will increase it, it\'s not a percentage where 1.25 will make it 25% faster, it is 0.25 that makes it 25% faster. Values: Easy = 0, Medium = 0.05, Hard = 0.125, Impoppable = 0.25.')">
-					    </p>
-						<p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/BloonsForcedCamo.png" style="width: 28px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Bloons Forced Camo: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Covert Pops. It forces any bloons specified to be camo whenever they spawn. Click on a bloon to light it up, and the ones that are already consisting of gray colors will have a gray border to show they are enabled.')"></p>
-						<div style="margin-left: 7px;" id = "bloons">
-						</div>
-					
-						<p style="width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"> 
-						<img src="./Images/Bloon/Red.png" style="width: 23px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;<button style="vertical-align:middle" onclick="bloonranks()">Change Bloon Ranks</button>
-						</p>
-						<div id="mobile">
-				<button style="z-index: 2;position: relative;margin-top: 15px;" onclick="download()">Download JSON</button>
-				<textarea style="position: relative; margin-top: 15px;display: block;" id="output_m" rows="60" cols="70"></textarea> 
-							</div>
-						<div id="modal2" class="modal2">	<div style="max-width: 500px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">	<div style="max-width: 500px; overflow:scroll;background-color: #436FA8;" id="bg" class="modal-content2">  
-							<span class="close2" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 25px; height: 25px;"></img></span>
-							<div id ='sliders'></div>
-						</div> </div> </div>
-						<p> </p>
-				</div>
-				<div id="desktop">
-				<button style="z-index: 2;position: fixed; float:left; left:0%; top:0%;" onclick="download()">Download JSON</button>
-				<textarea style="position: fixed; float:left; left:0%; top:0%;margin-top: 35px" id="output" rows="60" cols="41"></textarea> 
-							</div>
-						<script type="text/javascript">
-var mapnames = ["monkey_lane", "bloom", "present_delivery", "rabbit_holes", "snowy_backyard", "sprint_track", "express_shipping", "checkers", "skull_peak", "lobby", "3_times_around", "grotto", "patch", "hedge_maze", "fireworks", "brick_wall", "z_factor", "maze", "frozen_lake", "roswell", "space_truckin", "walk_in_the_park", "ancient_tomb", "hearthside", "six_feet", "river_rapids", "wattle_trees", "pyramids", "dune_sea", "lava_fields", "ice_flow", "country_road", "jungle", "workshop", "bloon_of_clubs", "archipelago", "crop_circles", "slalom", "stream", "dock_side", "villageshore", "trick_or_treat", "battle_knot","candyland","crypt_keeper", "long_range", "water_hazard", "rink_revenge", "challenger_deep", "scorched_earth", "u_turn","the_great_divide","the_eye","one_direction", "lightning_scar","go_with_the_flow","mount_magma","siege","double_double_crossover","tunnels","castle","against_the_clock","drag_strip","canyon","treetops","runway","down_the_drain","benguela","web","forestpath","tar_pit","main_street","radioactive"];
-var towernames = ["DartMonkey", "TackTower", "SniperMonkey", "BoomerangThrower", "NinjaMonkey", "BombTower", "IceTower", "GlueGunner", "MonkeyBuccaneer", "MonkeyAce", "SuperMonkey", "MonkeyApprentice", "MonkeyVillage", "BananaFarm", "MortarTower", "DartlingGun", "SpikeFactory", "HeliPilot", "MonkeyEngineer", "Bloonchipper", "MonkeySub","AngrySquirrel","BananaFarmer","BeeKeeper","BloonberryBush","BloonsdayDevice","MeerkatSpy","Radadactyl","SuperMonkeyStorm","TribalTurtle"];
-var agentnames = ["AngrySquirrel","BananaFarmer","BeeKeeper","BloonberryBush","BloonsdayDevice","MeerkatSpy","Radadactyl","SuperMonkeyStorm","TribalTurtle"];
-var LockedTowerNums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-var NumLockedTowers = 0;
-var LockedUpgradeIds = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-var NumUpgradeLocks = 0;
-var labnames = ["AbilityCooldown","AttackSpeed","BigBloonSabotage","DoublePierce","SellAmount","StartingCash","StartingLives"];
-var LabNums = [0,0,0,0,0,0,0];
-var NumLabBlocks = 0;
-var bloonsname = ["Red","Blue","Green","Yellow","Pink","Black", "White","Lead","Zebra","Rainbow","Ceramic","Golden","MOAB","BFB","ZOMG"];
-var camobloonsname = ["Red","Blue","Green","Yellow","Pink","Black", "White","Lead","Zebra","Rainbow","Ceramic"];
-var buildingnames = ["AcePrivateHangar", "AlsCustomChippers", "BombingRange", "BoomerangDojo", "DartlingAmmoDump", "DartTrainingFacility", "EngineersWorkshop", "GlueSupplyDepot", "HeloHangar", "IceFortress", "MageSpire", "MortarEmplacement", "NinjaAcademy", "PirateCove", "RifleRange", "SpikesRUs", "SubConstructionYard", "SuperMonkeyLair", "TackResearchCenter"];
-var NumBuildBlocks = 0;
-var BuildNums = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-var NumCamoBloons = 0;
-var CamoBloons = [0,0,0,0,0,0,0,0,0,0,0];
-var NumPrePlacements = 0;
-var rowcountpp = 1;
-var ppdata = [];
-var crmdata = [];
-var NumCRMS = 0;
-var total = 0;
-var total2 = 0;
-//End Values
-var modal = document.getElementById('modal');
-var modal2 = document.getElementById('modal2');
-var span = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close2")[0];
-setTimeout(function(){ document.getElementById('loading').style.visibility = "hidden" 
-document.getElementById('loading').style.display = "none"  },5000);
-setTimeout(function(){document.getElementById('main').style.visibility = "visible";
-document.getElementById('main').style.display = "block";},5000);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 2 of 8";  },3000);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 3 of 8";  },3200);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 4 of 8";  },3400);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 5 of 8";  },3600);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 6 of 8";  },3800);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 7 of 8";  },4000);
-setTimeout(function(){ document.getElementById('headanim').innerHTML = "Step 8 of 8";  },4500);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Unleashing Monkey Sun God... - downloading";  },2200);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Downloading New Content - downloading";  },2500);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Downloading New Content - 0.00% - 0/248";  },2600);
-var perc = 0;
-for(var j=2600;j<3600;j=j+10){
-	perc = perc + 0.01;
-	var average = perc * 248;
-	var p2 = perc * 100;
-	var p3 = p2.toPrecision(3);
-	var a = average.toPrecision(3);
-	console.log("setTimeout(function(){  document.getElementById(\'bottomanim\').innerHTML = \"Downloading New Content - " + p3 + "% - " + a + "/248\";  }," + j +");");
-}
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 1.00% - 2/248";  },2601);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 2.00% - 5/248";  },2610);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 3.00% - 7/248";  },2620);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 27.0% - 67/248";  },2860);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 37.0% - 92/248";  },2960);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 44.0% - 109/248";  },3030);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 75.0% - 186/248";  },3340);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 95.0% - 236/248";  },3540);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 99.0% - 246/248";  },3580);
-setTimeout(function(){  document.getElementById('bottomanim').innerHTML = "Downloading New Content - 100% - 248/248";  },3590);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Training Monkeys... - downloading";  },3600);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Collecting Bananas... - downloading";  },3800);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Preparing Darts... - downloading";  },4000);
-setTimeout(function(){ document.getElementById('bottomanim').innerHTML = "Taking a Break - finished";  },4500);
-let challenge = {
-	Rules:{
-		BlockedLabUpgrades:[],
-		BlockedSpecialties:[],
-		BloonLevelOffsets:[0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-		CanSave:false,
-		CanEarnMoney:true,
-		LockedTowers:[],
-		LockedUpgrades:[],
-		MaxNumberOfEachTower:-1,
-		MaxNumberOfTotalTowers:-1,
-		TowerLifespan:-1,
-		AllowContinueOnGameOver:true,
-		AllowRetryOnGameOver:true,
-		BloonsForcedCamo:[],
-		CashRoundModifiers:[],
-		Reward:{
-			Tokens:0,
-			MonkeyMoney:50,
-			MonkeyMoneyMultiplier:1,
-			XP:0,
-			XPMutliplier:1
-
-		},
-		TargetRound:65	
-	},
-	Setup:{
-		Towers:[],
-		Inventory:[],
-		Health:150,
-		Money:650,
-		StartRound:1
-	},
-	nk_id:0,
-	nk_description:"",
-	nk_mode:1,
-	nk_rank_required:20,
-	nk_title:"",
-	nk_track:"monkey_lane",
-}
-finished();
-function advancedmode(){
-	window.location.replace('BTD5 Challenge Editor.html');
-}
-var toggle = 0;
-document.getElementById('desktop').style.display = "none";
-document.getElementById('mobile').style.display = "block";
-function changelayout(){
-	if(toggle == 0){
-		document.getElementById('desktop').style.display = "block";
-		document.getElementById('mobile').style.display = "none";
-		toggle++;
-	} else if(toggle == 1){
-		document.getElementById('desktop').style.display = "none";
-		document.getElementById('mobile').style.display = "block";
-		toggle--;
-	}
-}
-
-function promptinfo(info){
-	alert(info);
-}
-
-window.addEventListener('load',()=>{
-	makeMaps();
-	makeTowers();
-	makeUpgrades();
-	makeLabUpgrades();
-	makeBuildings();
-	makeSliders();
-	makeBloons();
-	makeInventory();
-	makePreplace();
-});
-
-let makeSliders = ()=>{
-	let output = document.getElementById('sliders');
-	bloonsname.forEach((s,i)=>{
-		if(i == 11) return;
-		let newBloon = document.createElement('img');
-		newBloon.className = 'bloonIcon';
-		newBloon.src = `./Images/Bloon/${s}.png`
-		newBloon.style.marginLeft = "30px";
-		output.appendChild(newBloon);
-		let newSlider = document.createElement('input');
-		newSlider.className='slider';
-		newSlider.value = 0;
-		newSlider.type = 'range';
-		newSlider.min = 0-i;
-		newSlider.max = 14-i;
-		newSlider.addEventListener('input',function(){
-			changebloon(this.value,this);
-		});
-		output.appendChild(newSlider);
-		newBloon = document.createElement('img');
-		newBloon.className = 'bloonIcon';
-		newBloon.src = `./Images/Bloon/${s}.png`
-		output.appendChild(newBloon);
-		let br = document.createElement('br');
-		output.appendChild(br);
-	});	
-}
-let makeMaps = ()=>{
-	let i = 0
-	let output = document.querySelector('.maps');
-	mapnames.forEach(m=>{
-		let newMap = document.createElement('img');
-		newMap.className = 'mapIcon';
-		newMap.src = `./Images/Tracks/${m}_thumb.jpg`;
-		if(i % 2 == 0){
-		newMap.style.marginLeft = "55px";
-		}
-			newMap.addEventListener('click',function(){
-				changemap(this);
-			});
-		output.appendChild(newMap);
-		i++;
-	});	
-}
-let makeBloons = ()=>{
-	let output = document.getElementById('bloons');
-	camobloonsname.forEach(t=>{
-		let newBloon = document.createElement('img');
-		newBloon.className = 'camoBloonIcon';
-		newBloon.src = `./Images/Bloon/${t}_Camo.png`
-			newBloon.addEventListener('click',function(){
-				forcecamobloon(this);
-			});
-		output.appendChild(newBloon);
-	});	
-}
-let makeTowers = ()=>{
-	let output = document.getElementById('towers');
-	towernames.forEach(t=>{
-		let newTower = document.createElement('img');
-		newTower.className = 'towerIcon';
-		newTower.src = `./Images/Towers/${t}.png`
-			newTower.addEventListener('click',function(){
-				locktower(this);
-			});
-		output.appendChild(newTower);
-	});	
-}
-let makePreplace = ()=>{
-	let output = document.getElementById('preplacetower');
-	towernames.forEach((t,i)=>{
-		if(i == 28) return;
-		let newTower = document.createElement('img');
-		newTower.className = 'towerIcon';
-		newTower.src = `./Images/Towers/${t}.png`
-			newTower.addEventListener('click',function(){
-				preplacetower(this);
-			});
-		output.appendChild(newTower);
-	});	
-}
-let makeUpgrades = ()=>{
-	let output = document.getElementById('locks');
-	towernames.forEach((u,i)=>{
-		if(i > 20) return;
-		let newContainer = document.createElement('div');
-		newContainer.className = 'container';
-		let newTower = document.createElement('img');
-		newTower.className = 'towerIcon';
-		newTower.src = `./Images/Towers/${u}.png`
-			newTower.addEventListener('click',function(){
-				//upgradelock(this);
-			});
-		output.appendChild(newTower);
-		let newText = document.createElement('div');
-		newText.className = 'centered';
-		newText.innerText = '4/4';
-		newContainer.appendChild(newTower);
-		newContainer.appendChild(newText);
-		newContainer.addEventListener('click',function(){
-			upgradelock(this);
-		});
-		output.appendChild(newContainer);
-	});	
-}
-let makeInventory = ()=>{
-	let output = document.getElementById('inventory');
-	agentnames.forEach((u,i)=>{
-		let newContainer = document.createElement('div');
-		newContainer.className = 'container';
-		let newTower = document.createElement('img');
-		newTower.className = 'towerIcon';
-		newTower.src = `./Images/Towers/${u}.png`
-			newTower.addEventListener('click',function(){
-				//changegiven(this);
-			});
-		output.appendChild(newTower);
-		let newText = document.createElement('div');
-		newText.className = 'centered';
-		newText.innerText = '0';
-		newContainer.appendChild(newTower);
-		newContainer.appendChild(newText);
-		newContainer.addEventListener('click',function(){
-			changegiven(this);
-		});
-		output.appendChild(newContainer);
-	});	
-}
-let makeLabUpgrades = ()=>{
-	let output = document.getElementById('labUpgrades');
-	labnames.forEach(l=>{
-		let newLab = document.createElement('img');
-		newLab.className = 'towerIcon';
-		newLab.src = `./Images/Lab/${l}.png`;
-			newLab.addEventListener('click',function(){
-				lablock(this);
-			});
-		output.appendChild(newLab);
-	});	
-}
-let makeBuildings = ()=>{
-	let output = document.getElementById('specialties');
-	buildingnames.forEach(t=>{
-		let newBuilding = document.createElement('img');
-		newBuilding.className = 'specialtyIcon';
-		newBuilding.src = `./Images/Buildings/${t}.png`;
-			newBuilding.addEventListener('click',function(){
-				buildingblock(this);
-			});
-		output.appendChild(newBuilding);
-	});	
-}
-function selectmap() {
-	modal.style.display = "block";
-}
-function bloonranks() {
-	modal2.style.display = "block";
-}
-span.onclick = function() {
-	modal.style.display = "none";
-}
-span2.onclick = function() {
-	modal2.style.display = "none";
-}
-
-function changegamemode(value){
-	challenge.nk_mode = value;
-	finished();
-}
-
-function changemap(selected){
-	let map = [...selected.parentNode.children].indexOf(selected);
-	document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + mapnames[map] + "_thumb.jpg";
-	challenge.nk_track = mapnames[map];
-	finished();
-}
-
-function locktower(selected){
-	let towerid = [...selected.parentNode.children].indexOf(selected);
-	if(LockedTowerNums[towerid] == 0){
-		selected.style.filter = "grayscale(100%)";
-		LockedTowerNums[towerid] = 1;
-	} else if(LockedTowerNums[towerid] == 1){
-		selected.style.filter = "grayscale(0%)";
-		LockedTowerNums[towerid] = 0;
-	}
-	makelocktowerarray();
-}
-
-function changebloon(newvalue, selected){
-	let type = Math.floor([...selected.parentNode.children].indexOf(selected)/4);
-	let pos = [...selected.parentNode.children].indexOf(selected);
-	var min = selected.min;
-	selected.parentNode.children[pos+1].src = "./Images/Bloon/" + bloonsname[newvalue - min] + ".png";
-	challenge.Rules.BloonLevelOffsets[type] = Number(newvalue); 
-	finished();
-}
-
-function makelocktowerarray(){
-	challenge.Rules.LockedTowers = [];
-	NumLockedTowers = 0;
-	for(var i=0; i<towernames.length;i++){
-		if(LockedTowerNums[i] == 1){
-			challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i];
-			if(i > 20){
-				NumLockedTowers++;
-				challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i] + "Pro";
-			}
-			NumLockedTowers++;
-		}
-	}
-	finished();
-}
-
-function forcecamobloon(selected){
-	let labid = [...selected.parentNode.children].indexOf(selected);
-	if(CamoBloons[labid] == 0){
-		CamoBloons[labid] = 1;
-		selected.style.filter = "grayscale(0%)";
-		if(labid == 5 || labid == 7 || labid == 8){
-		selected.style.outline = "lightgray solid 2.5px";
-		}
-       // e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
-	} else if(CamoBloons[labid] == 1){
-		CamoBloons[labid] = 0;
-		selected.style.filter = "grayscale(100%)";
-		if(labid == 5 || labid == 7 || labid == 8){
-		selected.style.outline = "lightgray solid 0px";
-		}
-	}
-	camobloonarray();
-}
-
-function camobloonarray(){
-	NumCamoBloons = 0;
-	challenge.Rules.BloonsForcedCamo = [];
-	for(var i = 0; i<camobloonsname.length; i++){
-		if(CamoBloons[i] == 1){
-			challenge.Rules.BloonsForcedCamo[NumCamoBloons] = camobloonsname[i];
-			NumCamoBloons++;
-		}
-	}
-	finished();
-}
-
-function lablock(selected){
-	let labid = [...selected.parentNode.children].indexOf(selected);
-	if(LabNums[labid] == 0){
-		LabNums[labid] = 1;
-		selected.style.filter = "grayscale(100%)";
-	} else if(LabNums[labid] == 1){
-		LabNums[labid] = 0;
-		selected.style.filter = "grayscale(0%)";
-	}
-	makelabarray();
-}
-function buildingblock(selected){
-	let buildid = [...selected.parentNode.children].indexOf(selected);
-	if(BuildNums[buildid] == 0){
-		BuildNums[buildid] = 1;
-		selected.style.filter = "grayscale(100%)";
-	} else if(BuildNums[buildid] == 1){
-		BuildNums[buildid] = 0;
-		selected.style.filter = "grayscale(0%)";
-	}
-	makebuildingarray();
-}
-
-function makebuildingarray(){
-	NumBuildBlocks = 0;
-	challenge.Rules.BlockedSpecialties = [];
-	for(var i = 0; i<buildingnames.length; i++){
-		if(BuildNums[i] == 1){
-			challenge.Rules.BlockedSpecialties[NumBuildBlocks] = buildingnames[i];
-			NumBuildBlocks++;
-		}
-	}
-	finished();
-}
-
-function makelabarray(){
-	NumLabBlocks = 0;
-	challenge.Rules.BlockedLabUpgrades = [];
-	for(var i = 0; i<labnames.length; i++){
-		if(LabNums[i] == 1){
-			challenge.Rules.BlockedLabUpgrades[NumLabBlocks] = labnames[i];
-			NumLabBlocks++;
-		}
-	}
-	finished();
-}
-
-
-
-function upgradelock(selected){
-	let towerid = [...selected.parentNode.children].indexOf(selected);
-	var limit = prompt("Please enter the amount of upgrades you can buy on both sides seperated by a slash", "X/X");
-    var left = limit.substring(0,1);
-    var right = limit.substring(2);
-	if(!left){
-		left = 4;
-	}
-	if(!right){
-		right = 4;
-	}
-	left = parseInt(left);
-	right = parseInt(right);
-	let type = towernames[towerid];
-	let found = challenge.Rules.LockedUpgrades.find(u=>u.Type === type);
-       	if(found) found.Upgrades = [left,right];
-	else challenge.Rules.LockedUpgrades.push({
-		Type:type,
-		Upgrades:[
-			left,
-			right
-		]
-	});
-	selected.children[1].innerText = left + "/" + right;
-	finished();
-}
-var entrytable = document.getElementById("Entries");
-var entrytable2 = document.getElementById("Entries2");
-function preplacetower(selected){
-	var towerid = [...selected.parentNode.children].indexOf(selected);
-	var limit = prompt("Please enter upgrades of the tower", "X/X");
-    var left = parseInt(limit.substring(0,1));
-    var right = parseInt(limit.substring(2));
-    var limit2 = prompt("Please enter the position of the tower seperated by a comma", "X,X");
-    var ybreak = limit2.indexOf(',');
-    var xcord = parseFloat(limit2.substr(0,ybreak));
-    var ycord = parseFloat(limit2.substr(ybreak + 1));
-	if(!left){
-		left = 4;
-	}
-	if(!right){
-		right = 4;
-	}
-	var type = towernames[towerid];
-	ppdata[NumPrePlacements] = [type,[xcord,ycord],[left,right]];
-	challenge.Setup.Towers.push({
-		Position:[
-			ppdata[NumPrePlacements][1][0],
-			ppdata[NumPrePlacements][1][1]
-		],
-		Type:ppdata[NumPrePlacements][0],
-		Upgrades:[
-			ppdata[NumPrePlacements][2][0],
-			ppdata[NumPrePlacements][2][1]
-		]
-	});
-	NumPrePlacements++;
-    rowcountpp = 1;
-	for(var i = 0; i<1;i++){
-		var type2 = ppdata[i][0];
-    	var xcord2 = ppdata[i][1][0];
-    	var ycord2 = ppdata[i][1][1];
-		var newrow = entrytable.insertRow(-1);
-            var typecell = newrow.insertCell(0);
-            typecell.innerHTML = type;
-            var typeimg = newrow.insertCell(1);
-            typeimg.innerHTML = "";
-            var img = document.createElement('img');
-            img.src = "./Images/Towers/" + type + ".png";
-            img.height = 71;
-            img.width = 62;
-            typeimg.appendChild(img);
-        	var upgrades= newrow.insertCell(2);
-            upgrades.innerHTML = left + "/" + right;
-            var position= newrow.insertCell(3);
-            position.innerHTML = limit2;
-            var xbutton = newrow.insertCell(4);
-            xbutton.innerHTML = "";
-            xbutton.id = total + 1;
-            var img2 = document.createElement('img');
-            img2.src = "./Images/UI/exitbtn.png";
-            img2.height = 30;
-            img2.width = 30;
-            xbutton.appendChild(img2);
-            xbutton.addEventListener('click',function(){
-			removeentry(this);
-		});
-            var p1 = document.getElementById('towersection').style.height.indexOf('p');
-            var p2 = document.getElementById('towersection').style.height.substring(0, p1);
-            var p3 = parseInt(p2);
-            var p4 = p3 + 98;
-            document.getElementById('towersection').style.height = p4 + "px";
-	}
-	total++;
-	finished();
-}
-
-function addcashroundmod(selected){
-	var round = prompt("Please enter the round which the modifier will start being active from:", "0");
-    var mod = prompt("Please enter the cash modifier in decimal form", "0.0");
-    round = parseFloat(round);
-    mod = parseFloat(mod);
-	crmdata[NumCRMS] = [round,mod];
-	challenge.Rules.CashRoundModifiers.push({
-		Round:round,
-		Mod:mod
-	});
-	NumCRMS++;
-	for(var i = 0; i<1;i++){
-		var newrow = entrytable2.insertRow(-1);
-        	var round2= newrow.insertCell(0);
-            round2.innerHTML = round;
-        	var mod2= newrow.insertCell(1);
-            mod2.innerHTML = mod;
-            var xbutton = newrow.insertCell(2);
-            xbutton.innerHTML = "";
-            xbutton.id = total2 + 1;
-            var img2 = document.createElement('img');
-            img2.src = "./Images/UI/exitbtn.png";
-            img2.height = 30;
-            img2.width = 30;
-            xbutton.appendChild(img2);
-            xbutton.addEventListener('click',function(){
-			removeentry2(this);
-		});
-            var p1 = document.getElementById('moneysection').style.height.indexOf('p');
-            var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
-            var p3 = parseInt(p2);
-            var p4 = p3 + 57;
-            document.getElementById('moneysection').style.height = p4 + "px";
-	}
-	total2++;
-	finished();
-}
-
-function makethetowers(){
-	challenge.Setup.Towers = [];
-	for(var i = 0; i < NumPrePlacements; i++){
-	if(ppdata[i] != null){
-	challenge.Setup.Towers.push({
-		Position:[
-			ppdata[i][1][0],
-			ppdata[i][1][1]
-		],
-		Type:ppdata[i][0],
-		Upgrades:[
-			ppdata[i][2][0],
-			ppdata[i][2][1]
-		]
-	});
-}
-}
-}
-
-function removeentry(t){
-	ppdata[t.id - 1] = null;
-	makethetowers();
-	NumPrePlacements--;
-	document.getElementById('Entries').deleteRow(t.parentNode.rowIndex);
-	var p1 = document.getElementById('towersection').style.height.indexOf('p');
-    var p2 = document.getElementById('towersection').style.height.substring(0, p1);
-    var p3 = parseInt(p2);
-    var p4 = p3 - 98;
-    document.getElementById('towersection').style.height = p4 + "px";
-	finished();
-}
-
-function removeentry2(t){
-	crmdata[t.id - 1] = null;
-	makethecrms();
-	NumCRMS--;
-	document.getElementById('Entries2').deleteRow(t.parentNode.rowIndex);
-	var p1 = document.getElementById('moneysection').style.height.indexOf('p');
-    var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
-    var p3 = parseInt(p2);
-    var p4 = p3 - 57;
-    document.getElementById('moneysection').style.height = p4 + "px";
-	finished();
-}
-
-function makethecrms(){
-	challenge.Rules.CashRoundModifiers = [];
-	for(var i = 0; i < NumCRMS; i++){
-	if(crmdata[i] != null){
-	challenge.Rules.CashRoundModifiers.push({
-		Round:crmdata[i][0],
-		Mod:crmdata[i][1]
-	});
-}
-}
-}
-
-function buildpreplace(){
-	rowcountpp = 1;
-	for(var i = 0; i<NumPrePlacements;i++){
-	var newrow = entrytable.insertRow(rowcountpp);
-            var typecell = newrow.insertCell(0);
-            typecell.innerHTML = type;
-            var typeimg = newrow.insertCell(1);
-            typeimg.innerHTML = "";
-            var img = document.createElement('img');
-            img.src = "./" + type + ".png";
-            img.height = 71;
-            img.width = 62;
-            typeimg.appendChild(img);
-        	var position= newrow.insertCell(2);
-            position.innerHTML = pos;
-        	var upgrades= newrow.insertCell(3);
-            leftside.innerHTML = left + "/" + right;
-            rowcountpp++;
-	}
-	var newrow = entrytable.insertRow(rowcountpp);
-            var typecell = newrow.insertCell(0);
-            typecell.innerHTML = type;
-            var typeimg = newrow.insertCell(1);
-            typeimg.innerHTML = "";
-            var img = document.createElement('img');
-            img.src = "./" + type + ".png";
-            img.height = 71;
-            img.width = 62;
-            typeimg.appendChild(img);
-        var position= newrow.insertCell(2);
-            position.innerHTML = pos;
-        var upgrades= newrow.insertCell(3);
-            leftside.innerHTML = left + "/" + right;
-            rowcountpp++;
-}
-
-function changegiven(selected){
-	let towerid = [...selected.parentNode.children].indexOf(selected);
-	var limit = prompt("Please enter the amount of this tower to be given", "1");
-	if(!limit){
-		limit = "0";
-	}
-	limit = parseInt(limit);
-	let type = agentnames[towerid];
-	let found = challenge.Setup.Inventory.find(u=>u.Type === type);
-       	if(found) found.Amount = limit;
-	else challenge.Setup.Inventory.push({
-		Amount:limit,
-		Type:type
-	})
-	selected.children[1].innerText = limit;
-	finished();
-}
-function changeid(){
-	challenge.nk_id = document.getElementById('id').value;
-	finished();
-}
-function changename(){
-	challenge.nk_title = document.getElementById('name').value;
-	finished();
-}
-function changerank(){
-	challenge.nk_rank_required = document.getElementById('rank').value;
-	finished();
-}
-function changedescription() {
-	challenge.nk_description =document.getElementById('description').value;
-	finished();
-}
-function changestartcash(){
-	if(document.getElementById('startcash').value == "DEFAULT"){
-		challenge.Setup.Money = 650;
-	} else {
-		challenge.Setup.Money = parseInt(document.getElementById('startcash').value);
-	}
-	finished();
-}
-function changestartlives(){
-	if(document.getElementById("startlives").value == "DEFAULT") {
-		switch(challenge.nk_mode){
-			case 0:
-				challenge.Setup.Health = 200;
-				break;
-			case 1:
-				challenge.Setup.Health = 150;
-				break;
-			case 2:
-				challenge.Setup.Health = 100;
-				break;
-			case 3: 
-				challenge.Setup.Health = 1;
-				break;
-			case 4:
-				challenge.Setup.Health = 100;
-				break;
-			case 5:
-				challenge.Setup.Health = 100;
-				break;
-		}
-	} else {
-		challenge.Setup.Health = parseInt(document.getElementById("startlives").value);
-	}
-	finished();
-}
-function changestartround(){
-	challenge.Setup.StartRound = parseInt(document.getElementById('startround').value);
-	finished();
-}
-function changesave(){
-	var cb = document.getElementById('CanSave');
-	challenge.Rules.CanSave = cb.checked;
-	finished();
-}
-function changecontinue(){
-	var cb = document.getElementById('CanContinue');
-	challenge.Rules.AllowContinueOnGameOver = cb.checked;
-	finished();
-}
-function changeretry(){
-	var cb = document.getElementById('CanRetry');
-	challenge.Rules.AllowRetryOnGameOver = cb.checked;
-	finished();
-}
-function changecanearnmoney(){
-	var cb = document.getElementById('CanEarnMoney');
-	if(cb.checked){
-		delete challenge.Rules.CanEarnMoney;
-	} else {
-		challenge.Rules.CanEarnMoney = false;
-	}
-	finished();
-}
-function changeautoupgrade(){
-	var cb = document.getElementById('TowersAutoUpgrade');
-	if(cb.checked){
-		challenge.Rules.TowersAutoUpgrade = true;
-	} else {
-		delete challenge.Rules.TowersAutoUpgrade;
-	}
-	finished();
-}
-function changefreetower(){
-	var cb = document.getElementById('FreeTowersSecondRound');
-	if(cb.checked){
-		challenge.Rules.FreeTowersSecondRound = true;
-	} else {
-		delete challenge.Rules.FreeTowersSecondRound;
-	}
-	finished();
-}
-function changeroundstep(){
-	if(document.getElementById('RoundStep').value == "DEFAULT"){
-		delete challenge.Rules.RoundStep;
-	} else {
-		challenge.Rules.RoundStep = parseFloat(document.getElementById('RoundStep').value);
-	}
-	finished();
-}
-function changewatertocrucible(){
-	var cb = document.getElementById('WaterToCrucible');
-	if(cb.checked){
-		challenge.Rules.WaterToCrucible = true;
-	} else {
-		delete challenge.Rules.WaterToCrucible;
-	}
-	finished();
-}
-function changeroundpause(){
-	var cb = document.getElementById('PauseBetweenRounds');
-	if(cb.checked){
-		challenge.Rules.PauseBetweenRounds = true;
-	} else {
-		delete challenge.Rules.PauseBetweenRounds;
-	}
-	finished();
-}
-function changetargetround(){
-	if(document.getElementById("endround").value == "DEFAULT"){
-		challenge.nk_mode = Number(challenge.nk_mode);
-		let TargetRound;
-		switch(challenge.nk_mode){
-			case 0:
-				TargetRound = 50;
-				break;
-			case 1:
-				TargetRound = 65;
-				break;
-			case 2:
-				TargetRound = 85;
-				break;
-			case 3: 
-				TargetRound = 85;
-				break;
-			case 4:
-				TargetRound = -1;
-				break;
-			case 5:
-				TargetRound = -1;
-				break;
-		}
-		challenge.Rules.TargetRound = TargetRound;
-	} else {
-		challenge.Rules.TargetRound = parseInt(document.getElementById("endround").value);
-	}
-	finished();
-}
-function updatemaxmonkeys(){
-	challenge.Rules.MaxNumberOfTotalTowers = parseInt(document.getElementById("maxmonkeys").value);
-	finished();
-}
-function updatemaxeachmonkeys(){
-	challenge.Rules.MaxNumberOfEachTower = parseInt(document.getElementById("maxeachmonkeys").value);
-	finished();
-}
-function updatetowerlifespan(){
-	if(document.getElementById('TowerLifespan').value == "NONE"){
-		delete challenge.Rules.TowerLifespan;
-	} else {
-		challenge.Rules.TowerLifespan = parseInt(document.getElementById('TowerLifespan').value);
-	}
-	finished();
-}
-function updateconsumetowers(){
-		if(document.getElementById('ConsumeMostExpensiveTowerRounds').value == "NONE"){
-		delete challenge.Rules.ConsumeMostExpensiveTowerRounds;
-	} else {
-		challenge.Rules.ConsumeMostExpensiveTowerRounds = parseInt(document.getElementById('ConsumeMostExpensiveTowerRounds').value);
-	}
-	finished();
-}
-function updatemoneyperround(){
-	if(document.getElementById('MoneyPerRound').value == "DEFAULT"){
-		delete challenge.Rules.MoneyPerRound;
-	} else {
-		challenge.Rules.MoneyPerRound = parseInt(document.getElementById('MoneyPerRound').value);
-	}
-	finished();
-}
-function updatespeedmod(){
-	if(document.getElementById('SpeedModifier').value == "NONE"){
-		delete challenge.Rules.SpeedModifier;
-	} else {
-		challenge.Rules.SpeedModifier = parseFloat(document.getElementById('SpeedModifier').value);
-	}
-	finished();
-}
-function updatepricemod(){
-	if(document.getElementById('PriceModifier').value == "DEFAULT"){
-		delete challenge.Rules.PriceModifier;
-	} else {
-		challenge.Rules.PriceModifier = parseFloat(document.getElementById('PriceModifier').value);
-	}
-	finished();
-}
-function updatecashperpopmod(){
-	if(document.getElementById('CashPerPopModifier').value == "NONE"){
-		delete challenge.Rules.CashPerPopModifier;
-	} else {
-		challenge.Rules.CashPerPopModifier = parseFloat(document.getElementById('CashPerPopModifier').value);
-	}
-	finished();
-}
-function updateloselivestimer(){
-	if(document.getElementById('LoseLivesTimer').value == "NONE"){
-		delete challenge.Rules.LoseLivesTimer;
-	} else {
-		challenge.Rules.LoseLivesTimer = parseInt(document.getElementById('LoseLivesTimer').value);
-	}
-	finished();
-}
-function updateloselivesamount(){
-	if(document.getElementById('LoseLivesAmount').value == "NONE"){
-		delete challenge.Rules.LoseLivesAmount;
-	} else {
-		challenge.Rules.LoseLivesAmount = parseInt(document.getElementById('LoseLivesAmount').value);
-	}
-	finished();
-
-}
-function updateloselivesgraceperiod(){
-	if(document.getElementById('LoseLivesGracePeriod').value == "NONE"){
-		delete challenge.Rules.LoseLivesGracePeriod;
-	} else {
-		challenge.Rules.LoseLivesGracePeriod = parseInt(document.getElementById('LoseLivesGracePeriod').value);
-	}
-	finished();
-}
-function updatesellpricemod(){
-	if(document.getElementById('SellPriceModifier').value == "NONE"){
-		delete challenge.Rules.SellPriceModifier;
-	} else {
-		challenge.Rules.SellPriceModifier = parseFloat(document.getElementById('SellPriceModifier').value);
-	}
-	finished();
-}
-function finished(){
-	document.getElementById('output').innerHTML = JSON.stringify(challenge,null,2);
-	document.getElementById('output_m').innerHTML = JSON.stringify(challenge,null,2);
-}
-function download(data) {
-			var data = document.getElementById('output').innerHTML;
-			var filename = document.getElementById('id').value + " - " + document.getElementById('name').value;
-			var type = "text";
-            var a = document.createElement("a"),
-              file = new Blob([data], {type: type});
-            if (window.navigator.msSaveOrOpenBlob) // IE10+
-              window.navigator.msSaveOrOpenBlob(file, filename);
-            else { // Others
-              var url = URL.createObjectURL(file);
-              a.href = url;
-              a.download = filename;
-              document.body.appendChild(a);
-              a.click();
-              setTimeout(function() {
-                document.body.removeChild(a);
-                window.URL.revokeObjectURL(url);  
-              }, 0); 
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: btd5;
+            src: url('./Font/Oetztype.ttf');
+        }
+        
+        @font-face {
+            font-family: arialreg;
+            src: url('./Font/arialreg.ttf');
+        }
+        
+        @font-face {
+            font-family: LiberationSans;
+            src: url('./Font/LiberationSans.ttf');
+        }
+        
+        .modal {
+            display: none;
+            z-index: 1;
+            padding: 0;
+            margin-top: 10px;
+            /*margin-left: -100px;*/
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .modal-content {
+            background-image: url("");
+            background-color: #fefefe;
+            margin: auto;
+            z-index: 1;
+            padding-top: 0px;
+            padding: 1px;
+            border: 1px solid #888;
+            width: 590px;
+            height: 450px;
+        }
+        
+        .close {
+            position: absolute;
+            padding: 0px;
+            color: #aaaaaa;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal2 {
+            display: none;
+            z-index: 1;
+            padding: 0;
+            position: sticky;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .modal-content2 {
+            background-image: url("");
+            background-color: #fefefe;
+            margin: auto;
+            z-index: 1;
+            padding-top: 0px;
+            padding: 1px;
+            border: 1px solid #888;
+            width: 500px;
+            height: 450px;
+        }
+        
+        .close2 {
+            position: absolute;
+            padding: 0px;
+            color: #aaaaaa;
+            float: right;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+        }
+        
+        .close2:hover,
+        .close2:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            display: inline-block
+        }
+        
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 24px;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            width: 350px;
+            height: 15px;
+            border-radius: 5px;
+            background: #38200F;
+            outline: none;
+            margin-top: -1px;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 23px;
+            height: 24px;
+            border: 0;
+            margin-top: -1px;
+            background: url('./Images/UI/sliderbtn.png');
+            cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 23px;
+            height: 24px;
+            border: 0;
+            background: url('./Images/UI/sliderbtn.png');
+            cursor: pointer;
+        }
+        
+        .transition {
+            animation: scrollBanner 5.1s;
+            -webkit-animation: scrollBanner 4.8s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .fadeout {
+            animation: fadeout 5.1s;
+            -webkit-animation: fadeout 5.0s;
+        }
+        
+        .headanim {
+            animation: headanim 5.0s;
+            -webkit-animation: headanim 5.0s;
+        }
+        
+        .bottomanim {
+            animation: bottomanim 5.0s;
+            -webkit-animation: bottomanim 5.0s;
+        }
+        
+        @keyframes scrollBanner {
+            0% {
+                left: -250px;
             }
-          }
+            27% {
+                left: 55%;
+            }
+            90% {
+                left: 55%;
+                opacity: 1;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes bottomanim {
+            0% {
+                opacity: 0;
+            }
+            21% {
+                opacity: 0;
+            }
+            22% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes headanim {
+            0% {
+                opacity: 0;
+            }
+            21% {
+                opacity: 0;
+            }
+            22% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes fadeout {
+            0% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        p {
+            font-family: btd5;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            background: #4A75B2;
+            border-radius: 7px;
+            border: 2px solid #5A8FD5;
+        }
+        
+        input {
+            text-align-last: center;
+            background-color: #436FA8;
+            font-family: btd5;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            border-radius: 5px;
+            border-color: #2B466A;
+        }
+        
+        select {
+            text-align-last: center;
+            background-color: #436FA8;
+            font-family: btd5;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            border-radius: 5px;
+            border-color: #2B466A;
+        }
+        
+        option {}
+        
+        button {
+            text-align-last: center;
+            background-color: #66AAFF;
+            font-family: btd5;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        
+        input[type='checkbox'] {
+            -webkit-appearance: none;
+            width: 30px;
+            height: 30px;
+            background: #34547F;
+            border-radius: 5px;
+            border: 2px solid #2B466A;
+        }
+        
+        input[type='checkbox']:checked {
+            background: url('./Images/UI/Checked.png');
+            background-size: 25px 25px;
+        }
+        
+        body {
+            margin: 0 auto;
+        }
+        
+        .towerIcon {
+            width: 62px;
+            height: 71px;
+        }
+        
+        .mapIcon {
+            width: 250px;
+            height: 180px;
+        }
+        
+        .bloonIcon {
+            width: 47px;
+            height: 63px;
+        }
+        
+        .camoBloonIcon {
+            width: 47px;
+            height: 63px;
+            /*filter: grayscale(100%);*/
+        }
+        
+        .specialtyIcon {
+            width: 135px;
+            height: 93px;
+        }
+        
+        .inline {
+            display: inline-block;
+        }
+        
+        .content {
+            margin: 0px auto;
+            width: 590px;
+            right: 0;
+            left: 0;
+        }
+        
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+        
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        table,
+        th,
+        td {
+            border: 3px solid #436FA8;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Calibri;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+        }
+        
+        tr {
+            background-color: #385D8D color: white;
+        }
+    </style>
+</head>
+</img>
+<div class="fadeout" id="loading" style="width:100%; height:100%;display:block;background-color: #9BE9FE;">
+    <img class="transition" src="./Images/UI/Loading/MonkasAce.gif" style="left:-250px;margin: 0;position: absolute; max-width: 250px;max-height: 250px;top: 50%;transform: translate(0%,-50%);">
+    <h1 id="headanim" class="headanim" style="width:350px;height:250px;transform: translate(-40%,-10%);position: absolute;left: 40%;top:50%;font-size: 50px;font-family:'Luckiest Guy';margin: 0;display: inline-block;color: white;">Step 1 of 8</h1>
+    <h2 id="bottomanim" class="bottomanim" style="text-align: center;width:750px;height:25px;transform: translate(-50%,-50%);position: absolute;left: 50%;display:inline-block;top:90%;font-size: 25px; font: 25px arial, sans-serif;margin: 0;display: inline-block;color: #82B8C6;">Unleashing Monkey Sun God</h2></img>
+</div>
 
-</script>
-	</body>
-	</head>
+<body id="thebody" bgcolor="#5A8FD5" style="width:100%; height:100%">
+    <!--<img src="./Images/UI/benbtn.png" style="position: absolute;top: 0;padding: 7px;right: 0%;border:0;margin-left: auto;margin-right: auto;" onclick="advancedmode()">-->
+    <div id="main" class="content" style="visibility: hidden;display:none;">
+        <div style="width: 750px;height: 704px;">
+            <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 404px;margin-top: 10px;">
+                <p style="background:#4A75B2;width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge ID:
+                    <input type="text" id="id" style="background-color: #436FA8;width: 50px;" oninput="changeid()" value="ID"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('This doesn\'t do anything but add one anyway to help manage your challenges if you make multiple.')">
+                </p>
+                <p style="background:#4A75B2;width: 530px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Name:
+                    <input type="text" id="name" style="background-color: #436FA8;width: 300px;" oninput="changename()" value="Name"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard name will not work. You need to add a LOC_MIS_[ID]_NAME title to \'English.xml\'.')">
+                </p>
+                <p style="background:#4A75B2;width: 578px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Description:
+                    <input type="text" id="description" style="background-color: #436FA8;width: 300px;" oninput="changedescription()" value="Description"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard description will not work. You need to add a LOC_MIS_[ID]_DESC title to \'English.xml\'.')">
+                </p>
+                <p style="background:#4A75B2;width: 212px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RankRequired.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Rank Required:
+                    <input type="text" id="rank" style="background-color: #436FA8;width: 30px;" oninput="changerank()" value="20">
+                </p>
+                <p style="background:#4A75B2;width: 167px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Save.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Save:
+                    <input type="checkbox" id="CanSave" oninput="changesave()" style="vertical-align:middle" onclick="">
+                </p>
+                <p style="background:#4A75B2;width: 230px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Buttons/Continue.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Allow Continues:
+                    <input type="checkbox" id="CanContinue" oninput="changecontinue()" style="vertical-align:middle" onclick="">
+                </p>
+                <p style="background:#4A75B2;width: 205px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Buttons/Restart.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Allow Retries:
+                    <input type="checkbox" id="CanRetry" oninput="changeretry()" style="vertical-align:middle" onclick="">
+                </p>
+                <p style="background:#4A75B2;width: 155px; height: 50px;margin-top: -87px;margin-left: 328px;">&nbsp;Change Editor &nbsp;Layout: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('All this does is make the challenge JSON appear on the left side, but for some phones and small windows it will block the actual settings, hence this button to revert to that if you prefer watching your text update as you go.')"></p><img src="./Images/UI/Buttons/SwapLayout.png" style="width: 75px; height: 75px;vertical-align:middle;margin-top: -100px;margin-left: 500px;" class="inline" onclick="changelayout()"></p>
+            </div>
+
+            <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 300px;margin-top: 10px;">
+                <div style="display: inline-block; vertical-align: top; top: 10px;position:relative">
+                    <!--<img id="changemapgear" src="./Images/Tracks/track_gear.png" class="bottom-right" style="width: 270px; height: 200px;" onclick="selectmap()">-->
+                    <img id="changemapbtn" src="./Images/Tracks/monkey_lane_thumb.jpg" style="width: 250px; height: 180px;margin-top: 40px;margin-left: 7px;border: 7px solid #4A75B2;border-radius:15px;" onclick="selectmap()">
+                    <div class="bottom-right"> <img id="changemapgear" src="./Images/Tracks/track_gear.png" style="position:relative;left: 30px;top: 20px;width: 270px; height: 200px;" onclick="selectmap()"></div>
+                </div>
+                <div style="display: inline-block;width: 308px; height: 270px;margin-left: 7px;">
+                    <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: -35px;margin-top: 18px;position: absolute;" class="inline" align="top" onclick="promptinfo('The reason why it says \'Not Impoppable\' is because Impoppable was not in the game when the random challenges were added, therefore making it not work for challenges. It acts rather strangely.')">
+                    <p><img src="./Images/UI/Buttons/GameMode.png" style="width: 30px; height: 30px;line-height:35px;margin-top: 0px;vertical-align:middle" class="inline" align="top">&nbsp;Game Mode:
+                        <select id="gamemode" name="type" onchange="changegamemode(value)">
+                            <option value="0">Easy</option>
+                            <option value="1">Medium</option>
+                            <option value="2">Hard</option>
+                            <option value="3">Not Impoppable?</option>
+                            <option value="4">Deflation</option>
+                            <option value="5">Apocalypse</option>
+                        </select>
+                    </p>
+                    <p style="width: 252px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Cash:
+                        <input type="text" id="startcash" oninput="changestartcash()" style="width: 75px" value="DEFAULT">
+                    </p>
+                    <p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Lives.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Lives:
+                        <input type="text" id="startlives" oninput="changestartlives()" style="width: 75px" value="DEFAULT">
+                    </p>
+                    <p style="width: 238px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Play.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Start Round:
+                        <input type="text" id="startround" oninput="changestartround()" style="width: 75px" value="1">
+                    </p>
+                    <p style="width: 228px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Race.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;End Round:
+                        <input type="text" id="endround" oninput="changetargetround()" style="width: 75px" value="DEFAULT">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div style="max-width: 800px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">
+                <div style="max-width: 800px; overflow:scroll;background-color: #436FA8;margin-top: 30px;overflow-x: hidden;" id="bg" class="modal-content">
+                    <span class="close" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 35px; height: 35px;"></img></span>
+                    <div class="maps">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 370px;margin-top: 30px;">
+            <p style="width: 155px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Towers: </p>
+            <div style="margin-left: 7px;" id="towers">
+            </div>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 295px;margin-top: 10px;">
+            <p style="width: 170px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Upgrades: </p>
+            <div style="margin-left: 7px;" id="locks"></div>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 145px;margin-top: 10px;">
+            <p style="width: 227px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Lab Upgrades: </p>
+            <div style="margin-left: 7px;" id="labUpgrades"></div>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 555px;margin-top: 10px;">
+            <p style="width: 280px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Speciality Buildings: </p>
+            <div style="margin-left: 7px;" id="specialties"></div>
+        </div>
+        <div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 680px;margin-top: 10px;">
+            <!-- was 680 -->
+            <p style="width: 245px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
+                <input type="text" id="maxmonkeys" style="width: 30px " oninput="updatemaxmonkeys()" value="-1">
+                <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of towers you can have placed at once.')">
+            </p>
+            <p style="width: 310px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max of Each Monkey:
+                <input type="text" id="maxeachmonkeys" style="width: 30px" oninput="updatemaxeachmonkeys()" value="-1">
+                <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of each tower you can place.')"></p>
+            <p style="width: 135px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Insta.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Inventory:
+                <div style="margin-left: 7px;" id="inventory"></div>
+
+                <p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Preplaced Towers:
+                    <div style="margin-left: 7px;" id="preplacetower"></div>
+                    <table id="Entries" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;">
+                        <tbody>
+                            <tr>
+                                <th>Type name</th>
+                                <th>Type image</th>
+                                <th>Upgrades</th>
+                                <th>Position</th>
+                                <th>X</th>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+        <div id="moneysection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 400px;margin-top: 10px;">
+            <p style="background:#4A75B2;width: 260px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Earn Money:
+                <input oninput="changecanearnmoney()" type="checkbox" checked id="CanEarnMoney" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Deflation mode. This disables all possible ways to earn money that aren\'t related to towers.')"></p>
+            <p style="width: 320px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 15px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Money Per Round:
+                <input oninput="updatemoneyperround()" type="text" id="MoneyPerRound" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in a special mission. This is used to change the amount of money you recieve at the end of round, it essentially adds to the regular value. A value of 100 will add to the default 100 + round number. A value of -100 will give you the round number.')">
+            </p>
+            <p style="width: 290px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Price Modifier:
+                <input oninput="updatepricemod()" type="text" id="PriceModifier" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value.')">
+            </p>
+            <p style="width: 340px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Per Pop Modifier:
+                <input oninput="updatecashperpopmod()" type="text" id="CashPerPopModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Mastery mode and it multiplies the amount of cash you get from popping a bloon.')">
+            </p>
+            <p style="width: 300px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/SellPriceModifier.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Sell Price Modifier:
+                <input oninput="updatesellpricemod()" type="text" id="SellPriceModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value. Default value is 0.8. I think it overrides the lab upgrade.')">
+            </p>
+            <p style="background:#4A75B2;width: 305px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Round Modifiers:
+                <button style="vertical-align:middle" onclick="addcashroundmod()">Add</button>
+                <table id="Entries2" style="font-family:btd5;font-size:16px;color: white;padding: 10px;border-spacing: 5px;margin-left: 7px;">
+                    <tbody>
+                        <tr>
+                            <th>Round</th>
+                            <th>Modifier</th>
+                            <th>X</th>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 240px;margin-top: 15px;">
+            <p style="background:#4A75B2;width: 310px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Up.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Towers Auto Upgrade:
+                <input oninput="changeautoupgrade()" type="checkbox" id="TowersAutoUpgrade" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Fast Upgrades mission. This upgrades towers on the path with the most upgrades once per round.')"></p>
+            <p style="background:#4A75B2;width: 495px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Consume Most Expensive Tower Rounds:
+                <input oninput="updateconsumetowers()" type="text" id="ConsumeMostExpensiveTowerRounds" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Wizard Lord special mission. This absorbs the most expensive tower at the end of X rounds.')"></p>
+            <p style="background:#4A75B2;width: 355px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Free Towers Second Round:
+                <input oninput="changefreetower()" type="checkbox" id="FreeTowersSecondRound" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the MixNMatch event. This gives 1 of the next tower in the order every second round. WARNING! This disables all towers from being placed if they aren\'t in your inventory!')"></p>
+            <p style="width: 270px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Timer.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Tower Lifespan:
+                <input oninput="updatetowerlifespan()" type="text" id="TowerLifespan" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('Used in Short Lived special mission. Disables selling and instead makes towers disappear after a given time. This can be used to essentially disable selling.')">
+            </p>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 60px;margin-top: 10px;">
+            <p style="background:#4A75B2;width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Crucible.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Water to Crucible:
+                <input oninput="changewatertocrucible()" type="checkbox" id="WaterToCrucible" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the Crucible event. This changes anything on the map that is defined as water into a crucible spot.')"></p>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 170px;margin-top: 10px;">
+            <p style="width: 285px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Timer:
+                <input oninput="updateloselivestimer()" type="text" id="LoseLivesTimer" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This enables the No Escape gimmick and is configured by the other \'Lose Lives\' options.')">
+            </p>
+            <p style="width: 300px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Amount:
+                <input oninput="updateloselivesamount()" type="text" id="LoseLivesAmount" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is how many lives are lost every time the LoseLivesTimer reaches it time.')">
+            </p>
+            <p style="width: 345px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Grace Period:
+                <input oninput="updateloselivesgraceperiod()" type="text" id="LoseLivesGracePeriod" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is the amount of time before the Lose Lives Timer begins running.')">
+            </p>
+        </div>
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 365px;margin-top: 10px;">
+            <p style="background:#4A75B2;width: 320px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/PauseBetweenRounds.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Pause Between Rounds:
+                <input oninput="changeroundpause()" type="checkbox" checked id="PauseBetweenRounds" style="vertical-align:middle" oninput="changeroundpause()" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Apocalypse mode. This forces the autoplay of rounds while still giving end of round cash.')"></p>
+            <p style="width: 240px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RoundStep.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Round Step:
+                <input oninput="changeroundstep()" type="text" id="RoundStep" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('I\'m not sure where this used, but it increases/decreases(?) the amount of rounds that actually progress. For example a RoundStep value of 2.0 (starting at round 1) will run rounds 1, 3, 5, 7, etc...and a RoundStep value of 10.0 (starting at round 1) will run rounds 1, 11, 21,...etc. It calls the round 11 \'round 2\' in the Game UI at the Round: X/X portion.')">
+            </p>
+            <p style="width: 275px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/BloonSpeed.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Speed Modifier:
+                <input oninput="updatespeedmod()" type="text" id="SpeedModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. It is used to change the bloon speed. It starts at 0 and anything you make it will increase it, it\'s not a percentage where 1.25 will make it 25% faster, it is 0.25 that makes it 25% faster. Values: Easy = 0, Medium = 0.05, Hard = 0.125, Impoppable = 0.25.')">
+            </p>
+            <p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/BloonsForcedCamo.png" style="width: 28px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Bloons Forced Camo: <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Covert Pops. It forces any bloons specified to be camo whenever they spawn. Click on a bloon to turn it into it\'s camo sprite, indicating it will always spawn in it\'s camo form.')"></p>
+            <div style="margin-left: 7px;" id="bloons">
+            </div>
+
+            <p style="width: 252px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;">
+                <img src="./Images/Bloon/Red.png" style="width: 23px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;
+                <button style="vertical-align:middle" onclick="bloonranks()">Change Bloon Ranks</button>
+            </p>
+            <div id="modal2" class="modal2">
+                <div style="max-width: 504px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">
+                    <div style="max-width: 505px; overflow:scroll;background-color: #436FA8;overflow-x:hidden;" id="bg" class="modal-content2">
+                        <span class="close2" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 25px; height: 25px;"></img></span>
+                        <div id='sliders'></div>
+                    </div>
+                </div>
+            </div>
+            <p> </p>
+
+            <div id="mobile">
+                <button style="z-index: 2;position: relative;display:block;margin-top: 15px;" onclick="download()">Download JSON</button>
+                <textarea style="position: relative; margin-top: 15px;display: block;" id="output_m" rows="60" cols="70"></textarea>
+            </div>
+        </div>
+        <div id="desktop">
+            <button style="z-index: 2;position: fixed; float:left; left:0%; top:0%;" onclick="download()">Download JSON</button>
+            <textarea style="position: fixed; float:left; left:0%; top:0%;margin-top: 35px" id="output" rows="60" cols="41"></textarea>
+        </div>
+        <script type="text/javascript">
+            var mapnames = ["monkey_lane", "oasis", "bloom", "present_delivery", "rabbit_holes", "snowy_backyard", "sprint_track", "express_shipping", "checkers", "skull_peak", "lobby", "3_times_around", "grotto", "patch", "hedge_maze", "fireworks", "alpine_lake", "brick_wall", "z_factor", "maze", "frozen_lake", "roswell", "space_truckin", "head_in_the_clouds", "flooded_lane", "walk_in_the_park", "ancient_tomb", "hearthside", "six_feet", "river_rapids", "wattle_trees", "pyramids", "dune_sea", "lava_fields", "ice_flow", "country_road", "haunted_swamp", "jungle", "south_coast", "workshop", "bloon_of_clubs", "archipelago", "crop_circles", "slalom", "stream", "dock_side", "villageshore", "trick_or_treat", "battle_knot", "candyland", "crypt_keeper", "long_range", "water_hazard", "rink_revenge", "challenger_deep", "scorched_earth", "u_turn", "unfairshare", "the_great_divide", "the_eye", "one_direction", "lightning_scar", "go_with_the_flow", "mount_magma", "dollar", "siege", "double_double_crossover", "tunnels", "castle", "against_the_clock", "drag_strip", "canyon", "treetops", "runway", "spidermap", "down_the_drain", "benguela", "web", "forestpath", "tar_pit", "main_street", "radioactive", "bloonvasion", "no_escape", "the_crucible", "monkey_town"];
+            var towernames = ["DartMonkey", "TackTower", "SniperMonkey", "BoomerangThrower", "NinjaMonkey", "BombTower", "IceTower", "GlueGunner", "MonkeyBuccaneer", "MonkeyAce", "SuperMonkey", "MonkeyApprentice", "MonkeyVillage", "BananaFarm", "MortarTower", "DartlingGun", "SpikeFactory", "HeliPilot", "MonkeyEngineer", "Bloonchipper", "MonkeySub", "AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle"];
+            var agentnames = ["AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle"];
+            var LockedTowerNums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var NumLockedTowers = 0;
+            var LockedUpgradeIds = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var NumUpgradeLocks = 0;
+            var labnames = ["AbilityCooldown", "AttackSpeed", "BigBloonSabotage", "DoublePierce", "SellAmount", "StartingCash", "StartingLives"];
+            var LabNums = [0, 0, 0, 0, 0, 0, 0];
+            var NumLabBlocks = 0;
+            var bloonsname = ["Red", "Blue", "Green", "Yellow", "Pink", "Black", "White", "Lead", "Zebra", "Rainbow", "Ceramic", "Golden", "MOAB", "BFB", "ZOMG"];
+            var camobloonsname = ["Red", "Blue", "Green", "Yellow", "Pink", "Black", "White", "Lead", "Zebra", "Rainbow", "Ceramic"];
+            var buildingnames = ["AcePrivateHangar", "AlsCustomChippers", "BombingRange", "BoomerangDojo", "DartlingAmmoDump", "DartTrainingFacility", "EngineersWorkshop", "GlueSupplyDepot", "HeloHangar", "IceFortress", "MageSpire", "MortarEmplacement", "NinjaAcademy", "PirateCove", "RifleRange", "SpikesRUs", "SubConstructionYard", "SuperMonkeyLair", "TackResearchCenter"];
+            var NumBuildBlocks = 0;
+            var BuildNums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var NumCamoBloons = 0;
+            var CamoBloons = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var NumPrePlacements = 0;
+            var rowcountpp = 1;
+            var ppdata = [];
+            var crmdata = [];
+            var NumCRMS = 0;
+            var total = 0;
+            var total2 = 0;
+            //End Values
+            var modal = document.getElementById('modal');
+            var modal2 = document.getElementById('modal2');
+            var span = document.getElementsByClassName("close")[0];
+            var span2 = document.getElementsByClassName("close2")[0];
+            document.getElementById("thebody").style.overflowX = "hidden";
+            setTimeout(function() {
+                document.getElementById('loading').style.visibility = "hidden"
+                document.getElementById('loading').style.display = "none"
+            }, 5000);
+            setTimeout(function() {
+                document.getElementById('main').style.visibility = "visible";
+                document.getElementById('main').style.display = "block";
+            }, 5000);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 2 of 8";
+            }, 3000);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 3 of 8";
+            }, 3200);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 4 of 8";
+            }, 3400);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 5 of 8";
+            }, 3600);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 6 of 8";
+            }, 3800);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 7 of 8";
+            }, 4000);
+            setTimeout(function() {
+                document.getElementById('headanim').innerHTML = "Step 8 of 8";
+            }, 4500);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Unleashing Monkey Sun God... - downloading";
+            }, 2200);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - downloading";
+            }, 2500);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 0.00% - 0/248";
+            }, 2600);
+            /*var perc = 0;
+            for(var j=2600;j<3600;j=j+10){
+            	perc = perc + 0.01;
+            	var average = perc * 248;
+            	var p2 = perc * 100;
+            	var p3 = p2.toPrecision(3);
+            	var a = average.toPrecision(3);
+            	console.log("setTimeout(function(){  document.getElementById(\'bottomanim\').innerHTML = \"Downloading New Content - " + p3 + "% - " + a + "/248\";  }," + j +");");
+            }*/
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 1.00% - 2/248";
+            }, 2601);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 2.00% - 5/248";
+            }, 2610);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 3.00% - 7/248";
+            }, 2620);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 27.0% - 67/248";
+            }, 2860);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 37.0% - 92/248";
+            }, 2960);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 44.0% - 109/248";
+            }, 3030);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 75.0% - 186/248";
+            }, 3340);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 95.0% - 236/248";
+            }, 3540);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 99.0% - 246/248";
+            }, 3580);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Downloading New Content - 100% - 248/248";
+            }, 3590);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Training Monkeys... - downloading";
+            }, 3600);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Collecting Bananas... - downloading";
+            }, 3800);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Preparing Darts... - downloading";
+            }, 4000);
+            setTimeout(function() {
+                document.getElementById('bottomanim').innerHTML = "Taking a Break - finished";
+            }, 4500);
+            let challenge = {
+                Rules: {
+                    BlockedLabUpgrades: [],
+                    BlockedSpecialties: [],
+                    BloonLevelOffsets: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    CanSave: false,
+                    CanEarnMoney: true,
+                    LockedTowers: [],
+                    LockedUpgrades: [],
+                    MaxNumberOfEachTower: -1,
+                    MaxNumberOfTotalTowers: -1,
+                    TowerLifespan: -1,
+                    AllowContinueOnGameOver: false,
+                    AllowRetryOnGameOver: false,
+                    BloonsForcedCamo: [],
+                    CashRoundModifiers: [],
+                    Reward: {
+                        Tokens: 0,
+                        MonkeyMoney: 50,
+                        MonkeyMoneyMultiplier: 1,
+                        XP: 0,
+                        XPMutliplier: 1
+
+                    },
+                    TargetRound: 50
+                },
+                Setup: {
+                    Towers: [],
+                    Inventory: [],
+                    Health: 150,
+                    Money: 650,
+                    StartRound: 1
+                },
+                nk_id: 0,
+                nk_description: "",
+                nk_mode: 0,
+                nk_rank_required: 20,
+                nk_title: "",
+                nk_track: "monkey_lane",
+            }
+            finished();
+
+            function advancedmode() {
+                window.location.replace('BTD5 Challenge Editor.html');
+            }
+            var toggle = 0;
+            document.getElementById('desktop').style.display = "none";
+            document.getElementById('mobile').style.display = "block";
+
+            function changelayout() {
+                if (toggle == 0) {
+                    document.getElementById('desktop').style.display = "block";
+                    document.getElementById('mobile').style.display = "none";
+                    toggle++;
+                } else if (toggle == 1) {
+                    document.getElementById('desktop').style.display = "none";
+                    document.getElementById('mobile').style.display = "block";
+                    toggle--;
+                }
+            }
+
+            function promptinfo(info) {
+                alert(info);
+            }
+
+            window.addEventListener('load', () => {
+                makeMaps();
+                makeTowers();
+                makeUpgrades();
+                makeLabUpgrades();
+                makeBuildings();
+                makeSliders();
+                makeBloons();
+                makeInventory();
+                makePreplace();
+            });
+
+            let makeSliders = () => {
+                let output = document.getElementById('sliders');
+                bloonsname.forEach((s, i) => {
+                    if (i == 11) return;
+                    let newBloon = document.createElement('img');
+                    newBloon.className = 'bloonIcon';
+                    newBloon.src = `./Images/Bloon/${s}.png`
+                    newBloon.style.marginLeft = "30px";
+                    output.appendChild(newBloon);
+                    let newSlider = document.createElement('input');
+                    newSlider.className = 'slider';
+                    newSlider.value = 0;
+                    newSlider.type = 'range';
+                    newSlider.min = 0 - i;
+                    newSlider.max = 14 - i;
+                    newSlider.addEventListener('input', function() {
+                        changebloon(this.value, this);
+                    });
+                    output.appendChild(newSlider);
+                    newBloon = document.createElement('img');
+                    newBloon.className = 'bloonIcon';
+                    newBloon.src = `./Images/Bloon/${s}.png`
+                    output.appendChild(newBloon);
+                    let br = document.createElement('br');
+                    output.appendChild(br);
+                });
+            }
+            let makeMaps = () => {
+                let i = 0
+                let output = document.querySelector('.maps');
+                mapnames.forEach(m => {
+                    let newMap = document.createElement('img');
+                    newMap.className = 'mapIcon';
+                    newMap.src = `./Images/Tracks/${m}_thumb.jpg`;
+                    newMap.style.width = "175px";
+                    newMap.style.height = "126px";
+                    if (i % 3 == 0) {
+                        newMap.style.marginLeft = "40px";
+                    }
+                    newMap.addEventListener('click', function() {
+                        changemap(this);
+                    });
+                    output.appendChild(newMap);
+                    i++;
+                });
+            }
+            let makeBloons = () => {
+                let output = document.getElementById('bloons');
+                camobloonsname.forEach(t => {
+                    let newBloon = document.createElement('img');
+                    newBloon.className = 'camoBloonIcon';
+                    newBloon.src = `./Images/Bloon/${t}.png`
+                    newBloon.addEventListener('click', function() {
+                        forcecamobloon(this);
+                    });
+                    output.appendChild(newBloon);
+                });
+            }
+            let makeTowers = () => {
+                let output = document.getElementById('towers');
+                towernames.forEach(t => {
+                    let newTower = document.createElement('img');
+                    newTower.className = 'towerIcon';
+                    newTower.src = `./Images/Towers/${t}.png`
+                    newTower.addEventListener('click', function() {
+                        locktower(this);
+                    });
+                    output.appendChild(newTower);
+                });
+            }
+            let makePreplace = () => {
+                let output = document.getElementById('preplacetower');
+                towernames.forEach((t, i) => {
+                    if (i == 28) return;
+                    let newTower = document.createElement('img');
+                    newTower.className = 'towerIcon';
+                    newTower.src = `./Images/Towers/${t}.png`
+                    newTower.addEventListener('click', function() {
+                        preplacetower(this);
+                    });
+                    output.appendChild(newTower);
+                });
+            }
+            let makeUpgrades = () => {
+                let output = document.getElementById('locks');
+                towernames.forEach((u, i) => {
+                    if (i > 20) return;
+                    let newContainer = document.createElement('div');
+                    newContainer.className = 'container';
+                    let newTower = document.createElement('img');
+                    newTower.className = 'towerIcon';
+                    newTower.src = `./Images/Towers/${u}.png`
+                    newTower.addEventListener('click', function() {
+                        //upgradelock(this);
+                    });
+                    output.appendChild(newTower);
+                    let newText = document.createElement('div');
+                    newText.className = 'centered';
+                    newText.innerText = '4/4';
+                    newContainer.appendChild(newTower);
+                    newContainer.appendChild(newText);
+                    newContainer.addEventListener('click', function() {
+                        upgradelock(this);
+                    });
+                    output.appendChild(newContainer);
+                });
+            }
+            let makeInventory = () => {
+                let output = document.getElementById('inventory');
+                agentnames.forEach((u, i) => {
+                    let newContainer = document.createElement('div');
+                    newContainer.className = 'container';
+                    let newTower = document.createElement('img');
+                    newTower.className = 'towerIcon';
+                    newTower.src = `./Images/Towers/${u}.png`
+                    newTower.addEventListener('click', function() {
+                        //changegiven(this);
+                    });
+                    output.appendChild(newTower);
+                    let newText = document.createElement('div');
+                    newText.className = 'centered';
+                    newText.innerText = '0';
+                    newContainer.appendChild(newTower);
+                    newContainer.appendChild(newText);
+                    newContainer.addEventListener('click', function() {
+                        changegiven(this);
+                    });
+                    output.appendChild(newContainer);
+                });
+            }
+            let makeLabUpgrades = () => {
+                let output = document.getElementById('labUpgrades');
+                labnames.forEach(l => {
+                    let newLab = document.createElement('img');
+                    newLab.className = 'towerIcon';
+                    newLab.src = `./Images/Lab/${l}.png`;
+                    newLab.addEventListener('click', function() {
+                        lablock(this);
+                    });
+                    output.appendChild(newLab);
+                });
+            }
+            let makeBuildings = () => {
+                let output = document.getElementById('specialties');
+                buildingnames.forEach(t => {
+                    let newBuilding = document.createElement('img');
+                    newBuilding.className = 'specialtyIcon';
+                    newBuilding.src = `./Images/Buildings/${t}.png`;
+                    newBuilding.addEventListener('click', function() {
+                        buildingblock(this);
+                    });
+                    output.appendChild(newBuilding);
+                });
+            }
+
+            function selectmap() {
+                modal.style.display = "block";
+            }
+
+            function bloonranks() {
+                modal2.style.display = "block";
+            }
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            span2.onclick = function() {
+                modal2.style.display = "none";
+            }
+
+            function changegamemode(value) {
+                challenge.nk_mode = parseInt(value);
+                if (isNaN(parseInt(document.getElementById('startlives').value)) == true) {
+                    switch (challenge.nk_mode) {
+                        case 0:
+                            challenge.Setup.Health = 200;
+                            break;
+                        case 1:
+                            challenge.Setup.Health = 150;
+                            break;
+                        case 2:
+                            challenge.Setup.Health = 100;
+                            break;
+                        case 3:
+                            challenge.Setup.Health = 1;
+                            break;
+                        case 4:
+                            challenge.Setup.Health = 100;
+                            break;
+                        case 5:
+                            challenge.Setup.Health = 100;
+                            break;
+                    }
+                }
+                if (isNaN(parseInt(document.getElementById('endround').value)) == true) {
+                    challenge.nk_mode = Number(challenge.nk_mode);
+                    let TargetRound;
+                    switch (challenge.nk_mode) {
+                        case 0:
+                            TargetRound = 50;
+                            break;
+                        case 1:
+                            TargetRound = 65;
+                            break;
+                        case 2:
+                            TargetRound = 85;
+                            break;
+                        case 3:
+                            TargetRound = 85;
+                            break;
+                        case 4:
+                            TargetRound = -1;
+                            break;
+                        case 5:
+                            TargetRound = -1;
+                            break;
+                    }
+                    challenge.Rules.TargetRound = TargetRound;
+                }
+                finished();
+            }
+
+            function changemap(selected) {
+                let map = [...selected.parentNode.children].indexOf(selected);
+                document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + mapnames[map] + "_thumb.jpg";
+                challenge.nk_track = mapnames[map];
+                finished();
+            }
+
+            function locktower(selected) {
+                let towerid = [...selected.parentNode.children].indexOf(selected);
+                if (LockedTowerNums[towerid] == 0) {
+                    selected.style.filter = "grayscale(100%)";
+                    LockedTowerNums[towerid] = 1;
+                } else if (LockedTowerNums[towerid] == 1) {
+                    selected.style.filter = "grayscale(0%)";
+                    LockedTowerNums[towerid] = 0;
+                }
+                makelocktowerarray();
+            }
+
+            function changebloon(newvalue, selected) {
+                let type = Math.floor([...selected.parentNode.children].indexOf(selected) / 4);
+                let pos = [...selected.parentNode.children].indexOf(selected);
+                var min = selected.min;
+                selected.parentNode.children[pos + 1].src = "./Images/Bloon/" + bloonsname[newvalue - min] + ".png";
+                challenge.Rules.BloonLevelOffsets[type] = Number(newvalue);
+                finished();
+            }
+
+            function makelocktowerarray() {
+                challenge.Rules.LockedTowers = [];
+                NumLockedTowers = 0;
+                for (var i = 0; i < towernames.length; i++) {
+                    if (LockedTowerNums[i] == 1) {
+                        challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i];
+                        if (i > 20) {
+                            NumLockedTowers++;
+                            challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i] + "Pro";
+                        }
+                        NumLockedTowers++;
+                    }
+                }
+                finished();
+            }
+
+            /*function forcecamobloon(selected) {
+                let labid = [...selected.parentNode.children].indexOf(selected);
+                if (CamoBloons[labid] == 0) {
+                    CamoBloons[labid] = 1;
+                    selected.style.filter = "grayscale(0%)";
+                    if (labid == 5 || labid == 7 || labid == 8) {
+                        selected.style.outline = "lightgray solid 2.5px";
+                    }
+                    // e.target.style.outline = "rgb(0, 255, 255) solid 2.5px";
+                } else if (CamoBloons[labid] == 1) {
+                    CamoBloons[labid] = 0;
+                    selected.style.filter = "grayscale(100%)";
+                    if (labid == 5 || labid == 7 || labid == 8) {
+                        selected.style.outline = "lightgray solid 0px";
+                    }
+                }
+                camobloonarray();
+            }*/
+            function forcecamobloon(selected) {
+                let labid = [...selected.parentNode.children].indexOf(selected);
+                if (CamoBloons[labid] == 0) {
+                    CamoBloons[labid] = 1;
+                    selected.src = "./Images/Bloon/" + bloonsname[labid] + "_Camo.png"
+                } else if (CamoBloons[labid] == 1) {
+                    CamoBloons[labid] = 0;
+                    selected.src = "./Images/Bloon/" + bloonsname[labid] + ".png"
+                }
+                camobloonarray();
+            }
+
+            function camobloonarray() {
+                NumCamoBloons = 0;
+                challenge.Rules.BloonsForcedCamo = [];
+                for (var i = 0; i < camobloonsname.length; i++) {
+                    if (CamoBloons[i] == 1) {
+                        challenge.Rules.BloonsForcedCamo[NumCamoBloons] = camobloonsname[i];
+                        NumCamoBloons++;
+                    }
+                }
+                finished();
+            }
+
+            function lablock(selected) {
+                let labid = [...selected.parentNode.children].indexOf(selected);
+                if (LabNums[labid] == 0) {
+                    LabNums[labid] = 1;
+                    selected.style.filter = "grayscale(100%)";
+                } else if (LabNums[labid] == 1) {
+                    LabNums[labid] = 0;
+                    selected.style.filter = "grayscale(0%)";
+                }
+                makelabarray();
+            }
+
+            function buildingblock(selected) {
+                let buildid = [...selected.parentNode.children].indexOf(selected);
+                if (BuildNums[buildid] == 0) {
+                    BuildNums[buildid] = 1;
+                    selected.style.filter = "grayscale(100%)";
+                } else if (BuildNums[buildid] == 1) {
+                    BuildNums[buildid] = 0;
+                    selected.style.filter = "grayscale(0%)";
+                }
+                makebuildingarray();
+            }
+
+            function makebuildingarray() {
+                NumBuildBlocks = 0;
+                challenge.Rules.BlockedSpecialties = [];
+                for (var i = 0; i < buildingnames.length; i++) {
+                    if (BuildNums[i] == 1) {
+                        challenge.Rules.BlockedSpecialties[NumBuildBlocks] = buildingnames[i];
+                        NumBuildBlocks++;
+                    }
+                }
+                finished();
+            }
+
+            function makelabarray() {
+                NumLabBlocks = 0;
+                challenge.Rules.BlockedLabUpgrades = [];
+                for (var i = 0; i < labnames.length; i++) {
+                    if (LabNums[i] == 1) {
+                        challenge.Rules.BlockedLabUpgrades[NumLabBlocks] = labnames[i];
+                        NumLabBlocks++;
+                    }
+                }
+                finished();
+            }
+
+            function upgradelock(selected) {
+                let towerid = [...selected.parentNode.children].indexOf(selected);
+                var limit = prompt("Please enter the amount of upgrades you can buy on both sides seperated by a slash", "X/X");
+                var divider = limit.indexOf('/');
+                var left = limit.substring(0, divider);
+                var right = limit.substring(divider + 1);
+                if(isNaN(left) == false && isNaN(right) == false){
+                if (!left) {
+                    left = 4;
+                }
+                if (!right) {
+                    right = 4;
+                }
+                left = parseInt(left);
+                right = parseInt(right);
+                let type = towernames[towerid];
+                let found = challenge.Rules.LockedUpgrades.find(u => u.Type === type);
+                if (found) found.Upgrades = [left, right];
+                else challenge.Rules.LockedUpgrades.push({
+                    Type: type,
+                    Upgrades: [
+                        left,
+                        right
+                    ]
+                });
+                selected.children[1].innerText = left + "/" + right;
+                finished();
+            	} else {
+            		alert("That change was not added because one of the values was not a number.");
+            	}
+            }
+            var entrytable = document.getElementById("Entries");
+            var entrytable2 = document.getElementById("Entries2");
+
+            function preplacetower(selected) {
+                var towerid = [...selected.parentNode.children].indexOf(selected);
+                var limit = prompt("Please enter upgrades of the tower", "X/X");
+                var left = parseInt(limit.substring(0, 1));
+                var right = parseInt(limit.substring(2));
+                var limit2 = prompt("Please enter the position of the tower seperated by a comma", "X,X");
+                var ybreak = limit2.indexOf(',');
+                var xcord = parseFloat(limit2.substr(0, ybreak));
+                var ycord = parseFloat(limit2.substr(ybreak + 1));
+                if (!left) {
+                    left = 4;
+                }
+                if (!right) {
+                    right = 4;
+                }
+                var type = towernames[towerid];
+                ppdata[NumPrePlacements] = [type, [xcord, ycord],
+                    [left, right]
+                ];
+                challenge.Setup.Towers.push({
+                    Position: [
+                        ppdata[NumPrePlacements][1][0],
+                        ppdata[NumPrePlacements][1][1]
+                    ],
+                    Type: ppdata[NumPrePlacements][0],
+                    Upgrades: [
+                        ppdata[NumPrePlacements][2][0],
+                        ppdata[NumPrePlacements][2][1]
+                    ]
+                });
+                NumPrePlacements++;
+                rowcountpp = 1;
+                for (var i = 0; i < 1; i++) {
+                    var type2 = ppdata[i][0];
+                    var xcord2 = ppdata[i][1][0];
+                    var ycord2 = ppdata[i][1][1];
+                    var newrow = entrytable.insertRow(-1);
+                    var typecell = newrow.insertCell(0);
+                    typecell.innerHTML = type;
+                    var typeimg = newrow.insertCell(1);
+                    typeimg.innerHTML = "";
+                    var img = document.createElement('img');
+                    img.src = "./Images/Towers/" + type + ".png";
+                    img.height = 71;
+                    img.width = 62;
+                    typeimg.appendChild(img);
+                    var upgrades = newrow.insertCell(2);
+                    upgrades.innerHTML = left + "/" + right;
+                    var position = newrow.insertCell(3);
+                    position.innerHTML = limit2;
+                    var xbutton = newrow.insertCell(4);
+                    xbutton.innerHTML = "";
+                    xbutton.id = total + 1;
+                    var img2 = document.createElement('img');
+                    img2.src = "./Images/UI/exitbtn.png";
+                    img2.height = 30;
+                    img2.width = 30;
+                    xbutton.appendChild(img2);
+                    xbutton.addEventListener('click', function() {
+                        removeentry(this);
+                    });
+                    var p1 = document.getElementById('towersection').style.height.indexOf('p');
+                    var p2 = document.getElementById('towersection').style.height.substring(0, p1);
+                    var p3 = parseInt(p2);
+                    var p4 = p3 + 98;
+                    document.getElementById('towersection').style.height = p4 + "px";
+                }
+                total++;
+                finished();
+            }
+
+            function addcashroundmod(selected) {
+                var round = prompt("Please enter the round which the modifier will start being active from:", "0");
+                var mod = prompt("Please enter the cash modifier in decimal form", "0.0");
+                round = parseFloat(round);
+                mod = parseFloat(mod);
+                crmdata[NumCRMS] = [round, mod];
+                challenge.Rules.CashRoundModifiers.push({
+                    Round: round,
+                    Mod: mod
+                });
+                NumCRMS++;
+                for (var i = 0; i < 1; i++) {
+                    var newrow = entrytable2.insertRow(-1);
+                    var round2 = newrow.insertCell(0);
+                    round2.innerHTML = round;
+                    var mod2 = newrow.insertCell(1);
+                    mod2.innerHTML = mod;
+                    var xbutton = newrow.insertCell(2);
+                    xbutton.innerHTML = "";
+                    xbutton.id = total2 + 1;
+                    var img2 = document.createElement('img');
+                    img2.src = "./Images/UI/exitbtn.png";
+                    img2.height = 30;
+                    img2.width = 30;
+                    xbutton.appendChild(img2);
+                    xbutton.addEventListener('click', function() {
+                        removeentry2(this);
+                    });
+                    var p1 = document.getElementById('moneysection').style.height.indexOf('p');
+                    var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
+                    var p3 = parseInt(p2);
+                    var p4 = p3 + 57;
+                    document.getElementById('moneysection').style.height = p4 + "px";
+                }
+                total2++;
+                finished();
+            }
+
+            function makethetowers() {
+                challenge.Setup.Towers = [];
+                for (var i = 0; i < NumPrePlacements; i++) {
+                    if (ppdata[i] != null) {
+                        challenge.Setup.Towers.push({
+                            Position: [
+                                ppdata[i][1][0],
+                                ppdata[i][1][1]
+                            ],
+                            Type: ppdata[i][0],
+                            Upgrades: [
+                                ppdata[i][2][0],
+                                ppdata[i][2][1]
+                            ]
+                        });
+                    }
+                }
+            }
+
+            function removeentry(t) {
+                ppdata[t.id - 1] = null;
+                makethetowers();
+                NumPrePlacements--;
+                document.getElementById('Entries').deleteRow(t.parentNode.rowIndex);
+                var p1 = document.getElementById('towersection').style.height.indexOf('p');
+                var p2 = document.getElementById('towersection').style.height.substring(0, p1);
+                var p3 = parseInt(p2);
+                var p4 = p3 - 98;
+                document.getElementById('towersection').style.height = p4 + "px";
+                finished();
+            }
+
+            function removeentry2(t) {
+                crmdata[t.id - 1] = null;
+                makethecrms();
+                NumCRMS--;
+                document.getElementById('Entries2').deleteRow(t.parentNode.rowIndex);
+                var p1 = document.getElementById('moneysection').style.height.indexOf('p');
+                var p2 = document.getElementById('moneysection').style.height.substring(0, p1);
+                var p3 = parseInt(p2);
+                var p4 = p3 - 57;
+                document.getElementById('moneysection').style.height = p4 + "px";
+                finished();
+            }
+
+            function makethecrms() {
+                challenge.Rules.CashRoundModifiers = [];
+                for (var i = 0; i < NumCRMS; i++) {
+                    if (crmdata[i] != null) {
+                        challenge.Rules.CashRoundModifiers.push({
+                            Round: crmdata[i][0],
+                            Mod: crmdata[i][1]
+                        });
+                    }
+                }
+            }
+
+            function buildpreplace() {
+                rowcountpp = 1;
+                for (var i = 0; i < NumPrePlacements; i++) {
+                    var newrow = entrytable.insertRow(rowcountpp);
+                    var typecell = newrow.insertCell(0);
+                    typecell.innerHTML = type;
+                    var typeimg = newrow.insertCell(1);
+                    typeimg.innerHTML = "";
+                    var img = document.createElement('img');
+                    img.src = "./" + type + ".png";
+                    img.height = 71;
+                    img.width = 62;
+                    typeimg.appendChild(img);
+                    var position = newrow.insertCell(2);
+                    position.innerHTML = pos;
+                    var upgrades = newrow.insertCell(3);
+                    leftside.innerHTML = left + "/" + right;
+                    rowcountpp++;
+                }
+                var newrow = entrytable.insertRow(rowcountpp);
+                var typecell = newrow.insertCell(0);
+                typecell.innerHTML = type;
+                var typeimg = newrow.insertCell(1);
+                typeimg.innerHTML = "";
+                var img = document.createElement('img');
+                img.src = "./" + type + ".png";
+                img.height = 71;
+                img.width = 62;
+                typeimg.appendChild(img);
+                var position = newrow.insertCell(2);
+                position.innerHTML = pos;
+                var upgrades = newrow.insertCell(3);
+                leftside.innerHTML = left + "/" + right;
+                rowcountpp++;
+            }
+
+            function changegiven(selected) {
+                let towerid = [...selected.parentNode.children].indexOf(selected);
+                var limit = prompt("Please enter the amount of this tower to be given", "1");
+                if (!limit) {
+                    limit = "0";
+                }
+                limit = parseInt(limit);
+                let type = agentnames[towerid];
+                let found = challenge.Setup.Inventory.find(u => u.Type === type);
+                if (found) found.Amount = limit;
+                else challenge.Setup.Inventory.push({
+                    Amount: limit,
+                    Type: type
+                })
+                selected.children[1].innerText = limit;
+                finished();
+            }
+
+            function changeid() {
+                challenge.nk_id = document.getElementById('id').value;
+                finished();
+            }
+
+            function changename() {
+                challenge.nk_title = document.getElementById('name').value;
+                finished();
+            }
+
+            function changerank() {
+                if (isNaN(parseInt(document.getElementById('rank').value)) == true) {
+                    delete challenge.nk_rank_required;
+                } else {
+                    challenge.nk_rank_required = parseInt(document.getElementById('rank').value);
+                }
+                finished();
+            }
+
+            function changedescription() {
+                challenge.nk_description = document.getElementById('description').value;
+                finished();
+            }
+
+            function changestartcash() {
+                if (isNaN(parseInt(document.getElementById('startcash').value)) == true) {
+                    challenge.Setup.Money = 650;
+                } else {
+                    challenge.Setup.Money = parseInt(document.getElementById('startcash').value);
+                }
+                finished();
+            }
+
+            function changestartlives() {
+                if (isNaN(parseInt(document.getElementById('startlives').value)) == true) {
+                    switch (challenge.nk_mode) {
+                        case 0:
+                            challenge.Setup.Health = 200;
+                            break;
+                        case 1:
+                            challenge.Setup.Health = 150;
+                            break;
+                        case 2:
+                            challenge.Setup.Health = 100;
+                            break;
+                        case 3:
+                            challenge.Setup.Health = 1;
+                            break;
+                        case 4:
+                            challenge.Setup.Health = 100;
+                            break;
+                        case 5:
+                            challenge.Setup.Health = 100;
+                            break;
+                    }
+                } else {
+                    challenge.Setup.Health = parseInt(document.getElementById("startlives").value);
+                }
+                finished();
+            }
+
+            function changestartround() {
+                if (isNaN(parseInt(document.getElementById('startround').value)) == true) {
+                    challenge.Setup.StartRound = 1;
+                } else {
+                    challenge.Setup.StartRound = parseInt(document.getElementById('startround').value);
+                }
+                finished();
+            }
+
+            function changesave() {
+                var cb = document.getElementById('CanSave');
+                challenge.Rules.CanSave = cb.checked;
+                finished();
+            }
+
+            function changecontinue() {
+                var cb = document.getElementById('CanContinue');
+                challenge.Rules.AllowContinueOnGameOver = cb.checked;
+                finished();
+            }
+
+            function changeretry() {
+                var cb = document.getElementById('CanRetry');
+                challenge.Rules.AllowRetryOnGameOver = cb.checked;
+                finished();
+            }
+
+            function changecanearnmoney() {
+                var cb = document.getElementById('CanEarnMoney');
+                if (cb.checked) {
+                    delete challenge.Rules.CanEarnMoney;
+                } else {
+                    challenge.Rules.CanEarnMoney = false;
+                }
+                finished();
+            }
+
+            function changeautoupgrade() {
+                var cb = document.getElementById('TowersAutoUpgrade');
+                if (cb.checked) {
+                    challenge.Rules.TowersAutoUpgrade = true;
+                } else {
+                    delete challenge.Rules.TowersAutoUpgrade;
+                }
+                finished();
+            }
+
+            function changefreetower() {
+                var cb = document.getElementById('FreeTowersSecondRound');
+                if (cb.checked) {
+                    challenge.Rules.FreeTowersSecondRound = true;
+                } else {
+                    delete challenge.Rules.FreeTowersSecondRound;
+                }
+                finished();
+            }
+
+            function changeroundstep() {
+                if (isNaN(parseFloat(document.getElementById('RoundStep').value)) == true) {
+                    delete challenge.Rules.RoundStep;
+                } else {
+                    challenge.Rules.RoundStep = parseFloat(document.getElementById('RoundStep').value);
+                }
+                finished();
+            }
+
+            function changewatertocrucible() {
+                var cb = document.getElementById('WaterToCrucible');
+                if (cb.checked) {
+                    challenge.Rules.WaterToCrucible = true;
+                } else {
+                    delete challenge.Rules.WaterToCrucible;
+                }
+                finished();
+            }
+
+            function changeroundpause() {
+                var cb = document.getElementById('PauseBetweenRounds');
+                if (cb.checked) {
+                    challenge.Rules.PauseBetweenRounds = true;
+                } else {
+                    delete challenge.Rules.PauseBetweenRounds;
+                }
+                finished();
+            }
+
+            function changetargetround() {
+                if (isNaN(parseInt(document.getElementById('endround').value)) == true) {
+                    challenge.nk_mode = Number(challenge.nk_mode);
+                    let TargetRound;
+                    switch (challenge.nk_mode) {
+                        case 0:
+                            TargetRound = 50;
+                            break;
+                        case 1:
+                            TargetRound = 65;
+                            break;
+                        case 2:
+                            TargetRound = 85;
+                            break;
+                        case 3:
+                            TargetRound = 85;
+                            break;
+                        case 4:
+                            TargetRound = -1;
+                            break;
+                        case 5:
+                            TargetRound = -1;
+                            break;
+                    }
+                    challenge.Rules.TargetRound = TargetRound;
+                } else {
+                    challenge.Rules.TargetRound = parseInt(document.getElementById("endround").value);
+                }
+                finished();
+            }
+
+            function updatemaxmonkeys() {
+                if (isNaN(parseInt(document.getElementById('maxmonkeys').value)) == false) {
+                    challenge.Rules.MaxNumberOfTotalTowers = parseInt(document.getElementById("maxmonkeys").value);
+                } else {
+                    challenge.Rules.MaxNumberOfTotalTowers = -1;
+                }
+                finished();
+            }
+
+            function updatemaxeachmonkeys() {
+                if (isNaN(parseInt(document.getElementById('maxeachmonkeys').value)) == false) {
+                    challenge.Rules.MaxNumberOfEachTower = parseInt(document.getElementById("maxeachmonkeys").value);
+                } else {
+                    challenge.Rules.MaxNumberOfEachTower = -1;
+                }
+                finished();
+            }
+
+            function updatetowerlifespan() {
+                if (isNaN(parseInt(document.getElementById('TowerLifespan').value)) == true) {
+                    delete challenge.Rules.TowerLifespan;
+                } else {
+                    challenge.Rules.TowerLifespan = parseInt(document.getElementById('TowerLifespan').value);
+                }
+                finished();
+            }
+
+            function updateconsumetowers() {
+                if (isNaN(parseInt(document.getElementById('ConsumeMostExpensiveTowerRounds').value)) == true) {
+                    delete challenge.Rules.ConsumeMostExpensiveTowerRounds;
+                } else {
+                    challenge.Rules.ConsumeMostExpensiveTowerRounds = parseInt(document.getElementById('ConsumeMostExpensiveTowerRounds').value);
+                }
+                finished();
+            }
+
+            function updatemoneyperround() {
+                if (document.getElementById('MoneyPerRound').value == "DEFAULT") {
+                    delete challenge.Rules.MoneyPerRound;
+                } else if (isNaN(parseInt(document.getElementById('MoneyPerRound').value)) == true) {
+                    delete challenge.Rules.MoneyPerRound;
+                } else {
+                    challenge.Rules.MoneyPerRound = parseInt(document.getElementById('MoneyPerRound').value);
+                }
+                finished();
+            }
+
+            function updatespeedmod() {
+                if (isNaN(parseFloat(document.getElementById('SpeedModifier').value)) == true) {
+                    delete challenge.Rules.SpeedModifier;
+                } else {
+                    challenge.Rules.SpeedModifier = parseFloat(document.getElementById('SpeedModifier').value);
+                }
+                finished();
+            }
+
+            function updatepricemod() {
+                if (document.getElementById('PriceModifier').value == "DEFAULT") {
+                    delete challenge.Rules.PriceModifier;
+                } else if (isNaN(parseInt(document.getElementById('PriceModifier').value)) == true) {
+                    delete challenge.Rules.PriceModifier;
+                } else {
+                    challenge.Rules.PriceModifier = parseFloat(document.getElementById('PriceModifier').value);
+                }
+                finished();
+            }
+
+            function updatecashperpopmod() {
+                if (document.getElementById('CashPerPopModifier').value == "NONE") {
+                    delete challenge.Rules.CashPerPopModifier;
+                } else if (isNaN(parseInt(document.getElementById('CashPerPopModifier').value)) == true) {
+                    delete challenge.Rules.CashPerPopModifier;
+                } else {
+                    challenge.Rules.CashPerPopModifier = parseFloat(document.getElementById('CashPerPopModifier').value);
+                }
+                finished();
+            }
+
+            function updateloselivestimer() {
+                if (isNaN(parseInt(document.getElementById('LoseLivesTimer').value)) == true) {
+                    delete challenge.Rules.LoseLivesTimer;
+                } else {
+                    challenge.Rules.LoseLivesTimer = parseInt(document.getElementById('LoseLivesTimer').value);
+                }
+                finished();
+            }
+
+            function updateloselivesamount() {
+                if (isNaN(parseInt(document.getElementById('LoseLivesAmount').value)) == true) {
+                    delete challenge.Rules.LoseLivesAmount;
+                } else {
+                    challenge.Rules.LoseLivesAmount = parseInt(document.getElementById('LoseLivesAmount').value);
+                }
+                finished();
+
+            }
+
+            function updateloselivesgraceperiod() {
+                if (isNaN(parseInt(document.getElementById('LoseLivesGracePeriod').value)) == true) {
+                    delete challenge.Rules.LoseLivesGracePeriod;
+                } else {
+                    challenge.Rules.LoseLivesGracePeriod = parseInt(document.getElementById('LoseLivesGracePeriod').value);
+                }
+                finished();
+            }
+
+            function updatesellpricemod() {
+                if (document.getElementById('SellPriceModifier').value == "NONE") {
+                    delete challenge.Rules.SellPriceModifier;
+                } else if (isNaN(parseInt(document.getElementById('SellPriceModifier').value)) == true) {
+                    delete challenge.Rules.SellPriceModifier;
+                } else {
+                    challenge.Rules.SellPriceModifier = parseFloat(document.getElementById('SellPriceModifier').value);
+                }
+                finished();
+            }
+
+            function finished() {
+                document.getElementById('output').innerHTML = JSON.stringify(challenge, null, 2);
+                document.getElementById('output_m').innerHTML = JSON.stringify(challenge, null, 2);
+            }
+
+            function download(data) {
+                var data = document.getElementById('output').innerHTML;
+                var filename = document.getElementById('id').value + " - " + document.getElementById('name').value;
+                var type = "text";
+                var a = document.createElement("a"),
+                    file = new Blob([data], {
+                        type: type
+                    });
+                if (window.navigator.msSaveOrOpenBlob) // IE10+
+                    window.navigator.msSaveOrOpenBlob(file, filename);
+                else { // Others
+                    var url = URL.createObjectURL(file);
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    setTimeout(function() {
+                        document.body.removeChild(a);
+                        window.URL.revokeObjectURL(url);
+                    }, 0);
+                }
+            }
+        </script>
+</body>
+</head>
+
 </html>
