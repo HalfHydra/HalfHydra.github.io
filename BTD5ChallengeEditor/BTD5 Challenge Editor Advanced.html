@@ -1160,8 +1160,9 @@
             function preplacetower(selected) {
                 var towerid = [...selected.parentNode.children].indexOf(selected);
                 var limit = prompt("Please enter upgrades of the tower", "X/X");
-                var left = parseInt(limit.substring(0, 1));
-                var right = parseInt(limit.substring(2));
+                var divider = limit.indexOf('/');
+                var left = parseInt(limit.substring(0, divider));
+                var right = parseInt(limit.substring(divider + 1));
                 var limit2 = prompt("Please enter the position of the tower seperated by a comma", "X,X");
                 var ybreak = limit2.indexOf(',');
                 var xcord = parseFloat(limit2.substr(0, ybreak));
