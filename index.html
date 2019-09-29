@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html" class="htmlp1" lang="en">
+<html id="html" lang="en" style="overflow-x:hidden;overflow-y:scroll;">
 
 <head>
   <meta charset="UTF-8">
@@ -54,12 +54,12 @@
 
 
 
-<body style="width:100%; height:100%;">
+<body id="thebody" style="width:100%; height:auto;position:absolute;">
 
 
 <div id="main" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
-  <img id="starbtn"src="./Images/Anniversary/StarBtn2.png" class="" style="position: absolute;top: 0;padding: 0px;right: 0%;border:0;margin-left: auto;margin-right: auto;width: 100px;height:100px;" onclick="anniversary()">
-  <img id="blackbar" src="./Images/Anniversary/Transition.png" style="z-index: 9999;overflow: hidden;visibility: hidden;position: absolute; transform: scale(1, 1);transform: translateY(-110%)">
+  <img id="starbtn"src="./Images/Anniversary/StarBtn2.png" class="" style="position: fixed;top: 0;padding: 0px;right: 0px;border:0;margin-left: auto;margin-right: auto;width: 100px;height:100px;" onclick="anniversary()">
+  <img id="blackbar" src="./Images/Anniversary/Transition.png" style="z-index: 9999;overflow-y: hidden;display:none;position: absolute; transform: scale(1, 1);transform: translateY(-110%)">
 
 
 
@@ -68,16 +68,6 @@
 							<!--<h1 style="color: #FF0505"> If you have recieved this link, you were probably given it by mistake. </h1>-->
 							<h1 id="descriptiontext"> This is a place I host a bunch of my tools and other miscellaneous stuff.  </h1>
 			</div>
-
-  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/grasstile.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      2px 2px 0 #000;" onclick="showpvz2();">
-      <img src="./Images/Bloomerang2.png" style="width: 100px; height: 93px;transform: scale(1.0, 1.0);margin-left: 5px;margin-left: 30px;margin-top: 30px;margin-bottom: 30px;"> </img>
-      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -5vh;color: lightgreen">PVZ2 Tools (Portal)</h2>
-      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Portal of all the tools used to assist in PVZ2 level creation. </h2>
-  </div>
 <!--
   <a href="./Bloons2Night/Bloons2Night.html">
   <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
@@ -102,19 +92,8 @@
       <h2 style="position: absolute; left: 50%;margin-left: -148px;margin-top: -92px;width: 380px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Soundtracks I've compiled and/or ripped. </h2>
   </div>
   </a>
-
-  <a href="./BTD3Impoppable/BTD3Impoppable.html">
-  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      2px 2px 0 #000;" onclick="showmusic();">
-      <img src="./Images/Mastery.png" style="width: 100px; height: 100px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
-      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -150px;color: lightblue">Bloons TD 3: Impoppable and Cheat Codes</h2>
-      <h2 style="position: absolute; left: 50%;margin-left: -148px;margin-top: -92px;width: 380px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> An edit of a flash game to include an insanely hard mode, and some cheats if you would like to use them. </h2>
-  </div>
-  </a>
-
+-->
+<!--
   <a href="./Altitude/Altitude.html">
   <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
       -2px -2px 0 #000,
@@ -139,27 +118,49 @@
   </div>
   </a>
 -->
-  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      2px 2px 0 #000;" onclick="showmetanav();">
-      <img src="./Images/Metaverse_Navigator.png" style="width: 100px; height: 100px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
-      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -50px;color: #FF0505">Metaverse Navigator</h2>
-      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Storage of documents useful during the missions. </h2>
-  </div>
-
 <a href="./BTD5ChallengeEditor/BTD5 Challenge Editor Advanced.html">
-  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern3.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
       -2px -2px 0 #000,
       2px -2px 0 #000,
       -2px 2px 0 #000,
       2px 2px 0 #000;">
       <img src="./Images/benbtn.png" style="width: 100px; height: 100px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
       <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -100px;color: cyan">BTD5 Challenge JSON Generator</h2>
-      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> BTD5 Challenge Editor inspired by BTD6 Challenge Editor. Made for use with mobile only. </h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> BTD5 Challenge Editor inspired by BTD6 Challenge Editor. Made for use with mobile/steam only. </h2>
   </div>
 </a>
+
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern4.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;" onclick="showmetanav();">
+      <img src="./Images/Metaverse_Navigator.png" style="width: 100px; height: 100px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -50px;color: #FF0505">Metaverse Navigator</h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Storage of documents useful during the game missions. </h2>
+  </div>
+
+  <a href="./BTD3Impoppable/BTD3Impoppable.html">
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern6.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;" onclick="showmusic();">
+      <img src="./Images/Mastery.png" style="width: 100px; height: 100px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -150px;color: lightblue">Bloons TD 3: Impoppable and Cheat Codes</h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -148px;margin-top: -92px;width: 380px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> An edit of a flash game to include an insanely hard mode, and some cheats if you would like to use them. </h2>
+  </div>
+  </a>
+
+  <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/grasstile.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;" onclick="showpvz2();">
+      <img src="./Images/Bloomerang2.png" style="width: 100px; height: 93px;transform: scale(1.0, 1.0);margin-left: 5px;margin-left: 30px;margin-top: 30px;margin-bottom: 30px;"> </img>
+      <h2 style="position: absolute; left: 50%;margin-top: -128px;color:white;margin-left: -15vh;color: lightgreen">[OVERHAUL SOON] PVZ2 Tools (Portal)</h2>
+      <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -92px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Portal of all the tools used to assist in PVZ2 level creation. </h2>
+  </div>
 <!--
 <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/t_BrickPattern.png');background-size: auto 20vh;background-repeat: repeat;background-color: #000;">
 							<p> About </p>
@@ -329,6 +330,7 @@
     var isMobile = false;
     document.getElementById('loading').style.visibility = "visible";
     document.getElementById('main').style.display = "none";
+    //document.getElementById("html").style.overflowY = "scroll";
     setTimeout(function(){ document.getElementById('loading').style.visibility = "hidden" 
     document.getElementById('loading').style.display = "none"  },5000);
     setTimeout(function(){document.getElementById('main').style.visibility = "visible";
@@ -361,12 +363,15 @@
       isMobile = true;
       }
       if(annon == false && isMobile == false){
-        document.getElementById("html").style.overflow = "hidden";
+        //document.getElementById("thebody").style.right = "10px";
+        //document.getElementById("thebody").style.marginRight = "12px";
+        document.getElementById("html").style.overflowX = "hidden";
       document.getElementById("blackbar").classList.add("annanim");
+      document.getElementById("blackbar").style.display = "block";
       setTimeout(function(){ 
         document.getElementById("html").style.backgroundImage = "url(./Images/Anniversary/Infinite7.gif)";
         document.getElementById("html").style.backgroundSize = "auto 15vh";
-        document.getElementById("starbtn").style.visibility = "hidden" 
+        document.getElementById("starbtn").style.visibility = "hidden"; 
         document.getElementById("descriptiontext").innerHTML = "Happy 1st Anniversary! This was more of an excuse to let me have fun with styling this. Yes, the background is a crappy gif I threw together in like 10 minutes."
         document.getElementById("headerdiv").style.backgroundImage = "url(./Images/Anniversary/t_BrickPatternAnniversary.png)";
         },1000);
@@ -379,7 +384,8 @@
       annon = true;
       console.log("Happy Anniversary!");
 
-      setTimeout(function(){ document.getElementById("blackbar").parentNode.removeChild(document.getElementById("blackbar")); document.getElementById("html").style.overflow = "auto"   },3000);
+      setTimeout(function(){ document.getElementById("blackbar").parentNode.removeChild(document.getElementById("blackbar")); document.getElementById("html").style.overflow = "auto"
+         },1700);
       }
       if(isMobile == true){
         document.getElementById("html").style.backgroundImage = "url(./Images/Anniversary/Infinite7.gif)";
