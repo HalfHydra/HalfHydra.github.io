@@ -17,6 +17,9 @@
 <audio id="AnnOpening">
   <source src="./Sound/AnnOpening.wav" type="audio/wav">
     </audio>   
+<audio id="PersonaOpening">
+  <source src="./Sound/Phantom.mp3" type="audio/mpeg">
+    </audio>   
   <h3>
 
   <div class ="fadeout" id="loading" style="width:100%; height:100%;display:block;background-color: #9BE9FE;background-image: url('./Images/UI/background_day.jpg');background-position: center;background-repeat: no-repeat;background-size: auto 100%">
@@ -58,7 +61,8 @@
 
 
 <div id="main" style="width: 750px;height: 100%;margin-left: auto;margin-right: auto;">
-  <img id="starbtn"src="./Images/Anniversary/StarBtn2.png" class="" style="position: fixed;top: 0;padding: 0px;right: 0px;border:0;margin-left: auto;margin-right: auto;width: 100px;height:100px;" onclick="anniversary()">
+  <!--<img id="starbtn"src="./Images/Anniversary/StarBtn2.png" class="" style="position: fixed;top: 0;padding: 0px;right: 0px;border:0;margin-left: auto;margin-right: auto;width: 100px;height:100px;" onclick="anniversary()">-->
+  <img id="starbtn"src="./Images/Persona5/StarBtn2.png" class="" style="position: fixed;top: 0;padding: 0px;right: 0px;border:0;margin-left: auto;margin-right: auto;width: 100px;height:100px;" onclick="persona()">
   <img id="blackbar" src="./Images/Anniversary/Transition.png" style="z-index: 9999;overflow-y: hidden;display:none;position: absolute; transform: scale(1, 1);transform: translateY(-110%)">
 
 
@@ -401,12 +405,49 @@
       document.getElementById("AnnLoop").volume = 0.5;
       }
     }
+    function persona() {
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      isMobile = true;
+      }
+      if(annon == false && isMobile == false){
+        //document.getElementById("thebody").style.right = "10px";
+        //document.getElementById("thebody").style.marginRight = "12px";
+        document.getElementById("html").style.overflowX = "hidden";
+      document.getElementById("blackbar").classList.add("annanim");
+      document.getElementById("blackbar").style.display = "block";
+      setTimeout(function(){ 
+        document.getElementById("html").style.backgroundImage = "url(./Images/Persona5/Infinity.gif)";
+        document.getElementById("html").style.backgroundSize = "auto 15vh";
+        document.getElementById("starbtn").style.visibility = "hidden"; 
+        document.getElementById("descriptiontext").innerHTML = "This theme was fun to make haha. Not much else to say. At least I put more effort into the background gif this time. IN order to get audio to play on the page, you have to click on something on the page. It's good for things like annoying ads but bad when you want to make background music or something.";
+        document.getElementById("headerdiv").style.backgroundImage = "url(./Images/Persona5/t_BrickPatternPersona.png)";
+        },1000);
+      setTimeout(function(){ personaopening.play();  },1500);
+      document.getElementById("PersonaOpening").loop = false;
+      document.getElementById("PersonaOpening").volume = 0.3;
+      annon = true;
+      setTimeout(function(){ document.getElementById("blackbar").parentNode.removeChild(document.getElementById("blackbar")); document.getElementById("html").style.overflow = "auto"
+         },1700);
+      }
+      if(isMobile == true){
+        document.getElementById("html").style.backgroundImage = "url(./Images/Persona5/Infinity.gif)";
+        document.getElementById("html").style.backgroundSize = "auto 15vh";
+        document.getElementById("starbtn").style.visibility = "hidden" 
+        document.getElementById("descriptiontext").innerHTML = "This theme was fun to make haha. Not much else to say. At least I put more effort into the background gif this time. IN order to get audio to play on the page, you have to click on something on the page. It's good for things like annoying ads but bad when you want to make background music or something.";
+        document.getElementById("headerdiv").style.backgroundImage = "url(./Images/Persona5/t_BrickPatternPersona.png)";
+        setTimeout(function(){ personaopening.play();  },500);
+      document.getElementById("PersonaOpening").loop = false;
+      document.getElementById("PersonaOpening").volume = 0.3;
+      }
+    }
     document.getElementById("html").style.overflow = "auto"
     var annon = false;
     setTimeout(function(){ daggersound.play();  },3000);
     var annopening = document.getElementById("AnnOpening");
      var annloop = document.getElementById("AnnLoop");
+     var personaopening = document.getElementById("PersonaOpening");
   var daggersound = document.getElementById("daggersound");
+  document.getElementById("daggersound").volume = 0.5;
   var months = [31,28,31,30,31,30,31,31,30,31,30,31];
   var d = new Date();
   d.setDate(d.getDate() - 1);
