@@ -123,6 +123,7 @@ background-color: red;
 
             window.onload = function() {
                 setTimeout(function() {
+                    document.getElementById('bottomanim').className = "bottomanim";
                 timeout();
                 }, 3000);
                 console.log(quotes.length);
@@ -132,10 +133,16 @@ background-color: red;
                 setTimeout(function () {
                     if(a < quotes.length-1){
                     a++;
-                document.getElementById('bottomanim').innerHTML = quotes[a];
+                    document.getElementById('bottomanim').innerHTML = quotes[a];
+                    document.getElementById('bottomanim').style.className = null; 
+                    document.getElementById('bottomanim').offsetWidth;
+                    document.getElementById('bottomanim').style.className = "bottomanim";
                 } else {
                     a = 0
                     document.getElementById('bottomanim').innerHTML = quotes[a];
+                    document.getElementById('bottomanim').style.className = null; 
+                    document.getElementById('bottomanim').offsetWidth;
+                    document.getElementById('bottomanim').style.className = "bottomanim";
                 }
                 timeout();
                 }, 4999);
