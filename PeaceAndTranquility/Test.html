@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html style="">
+<head>
+    <meta charset="UTF-8">
+    <style>
+ @font-face {
+            font-family: CurseCasual;
+            src: url('./Curse Casual.ttf');
+        }
+
+body {
+  animation: 10000ms linear infinite color-change;
+  overflow: hidden;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  12.5% {
+    background-color: #D1009F;
+  }
+  25% {
+    background-color: purple;
+  }
+  35.5% {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: lightgreen;
+  }
+  65.5% {
+    background-color: #FFFA57;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+background-color: red;
+  }
+}
+        
+        .transition {
+            animation: scrollBanner 1.4s;
+            -webkit-animation: scrollBanner 1.4s;
+            max-width: 430px;max-height: 593px;
+            transform-origin: top left;
+        }
+
+        .fadein {
+            animation: fadein 1.4s;
+            -webkit-animation: fadein 1.4s;
+        }
+        
+        
+        .bottomanim {
+            animation: bottomanim 5.0s infinite;
+            -webkit-animation: bottomanim 5.0s infinite;
+        }
+        
+        @keyframes scrollBanner {
+            0% {
+                opacity: 0.5;
+                transform: scale(0, 0) translate(-50%,-50%);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1, 1) translate(-50%,-50%);
+            }
+        }
+        
+        @keyframes bottomanim {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+                margin-top: 0px;
+            }
+            70% {
+                opacity: 1;
+                margin-top: 0px;
+            }
+            90% {
+                opacity: 0;
+                margin-top: -100px;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        } 
+    </style>
+</head>
+<audio id="Song">
+  <source src="./Song.mp3" type="audio/mpeg">
+</audio> 
+    <h2 id="bottomanim" class="" style="text-align: center;width:750px;height:25px;transform: translate(-50%,-50%);position: absolute;left: 50%;display:inline-block;top:90%;font-size: 25px; font: 50px CurseCasual, sans-serif;margin: 0;display: inline-block;color: white;margin-top: 200px;z-index: 1;">No one is around to help.</h2></img>
+
+<body id="thebody" bgcolor="#5A8FD5" style="width:100%; height:100%;">
+    <img class="transition" src="./Images/HatKid.gif" style="position: fixed; max-width: 430px;max-height: 593px;top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);display: block;
+    margin-left: auto;
+    margin-right: auto">
+    <div id="main" class="content" style="visibility: hidden;display:none;">
+            <p> </p>
+        </div>
+        <script type="text/javascript">
+             setTimeout(function() {
+            document.getElementById('bottomanim').className = "bottomanim";
+            }, 3000);
+            var quotes = ['No one is around to help','Life is hard, life is stressful', 'I need peace and tranquility', 'I don\'t have to prove myself to anyone','undefined','NaN','I have to live my life for me','People do stupid things when they are panicked','The only way to get things done is to do them'];
+            var a = 0;
+
+            window.onload = function() {
+                setTimeout(function() {
+                timeout();
+                }, 3000);
+                console.log(quotes.length);
+            };
+
+            function timeout() {
+                setTimeout(function () {
+                    if(a < quotes.length-1){
+                    a++;
+                document.getElementById('bottomanim').innerHTML = quotes[a];
+                } else {
+                    a = 0
+                    document.getElementById('bottomanim').innerHTML = quotes[a];
+                }
+                timeout();
+                }, 4999);
+            }
+
+            setTimeout(function(){ Song.play();  },1500);
+            
+        </script>
+</body>
+</head>
+
+</html>
