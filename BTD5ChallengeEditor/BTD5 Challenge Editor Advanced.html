@@ -376,6 +376,8 @@
                 <p style="background:#4A75B2;width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge ID:
                     <input type="text" id="id" style="background-color: #436FA8;width: 50px;" oninput="changeid()" value="ID"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('This doesn\'t do anything but add one anyway to help manage your challenges if you make multiple.')">
                 </p>
+                   <input type="checkbox" id="IsExpansion" oninput="changeexpansion()" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('This toggles some important features in the editor specifically for BTD5 Expansion by K1d_5h31d0n.')">
+                </p>
                 <p style="background:#4A75B2;width: 530px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Name:
                     <input type="text" id="name" style="background-color: #436FA8;width: 300px;" oninput="changename()" value="Name"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard name will not work. You need to add a LOC_MIS_[ID]_NAME title to \'English.xml\'.')">
                 </p>
@@ -435,17 +437,17 @@
             <div style="max-width: 800px;top: -1000px;display: block;margin-left: auto;margin-right: auto;" id="class">
                 <div style="max-width: 800px; overflow:scroll;background-color: #436FA8;margin-top: 30px;overflow-x: hidden;" id="bg" class="modal-content">
                     <span class="close" style="width: 25px; height: 25px;"><img src="./Images/UI/exitbtn.png" style="width: 35px; height: 35px;"></img></span>
-                    <div class="maps">
+                    <div id="maps" class="maps">
                     </div>
                 </div>
             </div>
         </div>
-        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 370px;margin-top: 30px;">
+        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 445px;margin-top: 30px;">
             <p style="width: 155px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Towers: </p>
             <div style="margin-left: 7px;" id="towers">
             </div>
         </div>
-        <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 295px;margin-top: 10px;">
+        <div id="upgradelocks" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 295px;margin-top: 10px;">
             <p style="width: 170px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Lock Upgrades: </p>
             <div style="margin-left: 7px;" id="locks"></div>
         </div>
@@ -457,7 +459,7 @@
             <p style="width: 280px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Lock.png" style="width: 25px; height: 25px;vertical-align:middle" class="inline" align="top">&nbsp;Disable Speciality Buildings: </p>
             <div style="margin-left: 7px;" id="specialties"></div>
         </div>
-        <div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 680px;margin-top: 10px;">
+        <div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 820px;margin-top: 10px;">
             <!-- was 680 -->
             <p style="width: 245px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
                 <input type="text" id="maxmonkeys" style="width: 30px " oninput="updatemaxmonkeys()" value="-1">
@@ -574,9 +576,12 @@
         </div>
         <script type="text/javascript">
             var mapnames = ["monkey_lane", "oasis", "bloom", "present_delivery", "rabbit_holes", "snowy_backyard", "sprint_track", "express_shipping", "checkers", "skull_peak", "lobby", "3_times_around", "grotto", "patch", "hedge_maze", "fireworks", "alpine_lake", "brick_wall", "z_factor", "maze", "frozen_lake", "roswell", "space_truckin", "head_in_the_clouds", "flooded_lane", "walk_in_the_park", "ancient_tomb", "hearthside", "six_feet", "river_rapids", "wattle_trees", "pyramids", "dune_sea", "lava_fields", "ice_flow", "country_road", "haunted_swamp", "jungle", "south_coast", "workshop", "bloon_of_clubs", "archipelago", "crop_circles", "slalom", "stream", "dock_side", "villageshore", "trick_or_treat", "battle_knot", "candyland", "crypt_keeper", "long_range", "water_hazard", "rink_revenge", "challenger_deep", "scorched_earth", "u_turn", "unfairshare", "the_great_divide", "the_eye", "one_direction", "lightning_scar", "go_with_the_flow", "mount_magma", "dollar", "siege", "double_double_crossover", "tunnels", "castle", "against_the_clock", "drag_strip", "canyon", "treetops", "runway", "spidermap", "down_the_drain", "benguela", "web", "forestpath", "tar_pit", "main_street", "radioactive", "bloonvasion", "no_escape", "the_crucible", "monkey_town"];
-            var towernames = ["DartMonkey", "TackTower", "SniperMonkey", "BoomerangThrower", "NinjaMonkey", "BombTower", "IceTower", "GlueGunner", "MonkeyBuccaneer", "MonkeyAce", "SuperMonkey", "MonkeyApprentice", "MonkeyVillage", "BananaFarm", "MortarTower", "DartlingGun", "SpikeFactory", "HeliPilot", "MonkeyEngineer", "Bloonchipper", "MonkeySub", "AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle"];
-            var agentnames = ["AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle"];
-            var LockedTowerNums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var expmapnames = ["ascension","blade","blastapopoulos_inferno","bloon_dunes","bloonprint_hideout","bloonraker","blue_laser","blue_sky","cactus_creek","circuit_board","clifftop","concrete_alley","consecrated_ground","cubism","daisy_chain","dark_forest","desert_path","direct_assault","dirt_raceway","dragon","dreadbloon_cave","emberspike_depths","factory","farm_yard","firecracker","forgotten_garden","frozen_streams","ghostly_coast","gigapops","grasslands","grassy_pass","high_tech","IMPOSSIBLER OF DOOMER","interdimensional","jolly_roger","lava_lake","moaby_dick","monkey_cake","monkey_heart","monkey_temple","monkeys_in_space","muddy_road","offside","organ","original","pool_party","pool_table","portal_testing_lab","proving_ground","river","riverside","sandy_spiral","snow_monkey","split_eruption","stag_beetle","subterranean_sewers","sweet_tooth","tannenbaum","treasure_trove","triangle_of_insanity","vortex_storm","water_tap","white_moab"];
+            var combmapnames = ["ascension","blade","blastapopoulos_inferno","bloon_dunes","bloonprint_hideout","bloonraker","blue_laser","blue_sky","cactus_creek","circuit_board","clifftop","concrete_alley","consecrated_ground","cubism","daisy_chain","dark_forest","desert_path","direct_assault","dirt_raceway","dragon","dreadbloon_cave","emberspike_depths","factory","farm_yard","firecracker","forgotten_garden","frozen_streams","ghostly_coast","gigapops","grasslands","grassy_pass","high_tech","IMPOSSIBLER OF DOOMER","interdimensional","jolly_roger","lava_lake","moaby_dick","monkey_cake","monkey_heart","monkey_temple","monkeys_in_space","muddy_road","offside","organ","original","pool_party","pool_table","portal_testing_lab","proving_ground","river","riverside","sandy_spiral","snow_monkey","split_eruption","stag_beetle","subterranean_sewers","sweet_tooth","tannenbaum","treasure_trove","triangle_of_insanity","vortex_storm","water_tap","white_moab","monkey_lane", "oasis", "bloom", "present_delivery", "rabbit_holes", "snowy_backyard", "sprint_track", "express_shipping", "checkers", "skull_peak", "lobby", "3_times_around", "grotto", "patch", "hedge_maze", "fireworks", "alpine_lake", "brick_wall", "z_factor", "maze", "frozen_lake", "roswell", "space_truckin", "head_in_the_clouds", "flooded_lane", "walk_in_the_park", "ancient_tomb", "hearthside", "six_feet", "river_rapids", "wattle_trees", "pyramids", "dune_sea", "lava_fields", "ice_flow", "country_road", "haunted_swamp", "jungle", "south_coast", "workshop", "bloon_of_clubs", "archipelago", "crop_circles", "slalom", "stream", "dock_side", "villageshore", "trick_or_treat", "battle_knot", "candyland", "crypt_keeper", "long_range", "water_hazard", "rink_revenge", "challenger_deep", "scorched_earth", "u_turn", "unfairshare", "the_great_divide", "the_eye", "one_direction", "lightning_scar", "go_with_the_flow", "mount_magma", "dollar", "siege", "double_double_crossover", "tunnels", "castle", "against_the_clock", "drag_strip", "canyon", "treetops", "runway", "spidermap", "down_the_drain", "benguela", "web", "forestpath", "tar_pit", "main_street", "radioactive", "bloonvasion", "no_escape", "the_crucible", "monkey_town"];
+            var towernames = ["DartMonkey", "TackTower", "SniperMonkey", "BoomerangThrower", "NinjaMonkey", "BombTower", "IceTower", "GlueGunner", "MonkeyBuccaneer", "MonkeyAce", "SuperMonkey", "MonkeyApprentice", "MonkeyVillage", "BananaFarm", "MortarTower", "DartlingGun", "SpikeFactory", "HeliPilot", "MonkeyEngineer", "Bloonchipper", "MonkeySub", "AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle","Pontoon","PortableLake","AngrySquirrelPro", "BananaFarmerPro", "BeeKeeperPro", "BloonberryBushPro", "BloonsdayDevicePro", "MeerkatSpyPro", "RadadactylPro", "SuperMonkeyStormPro", "TribalTurtlePro","PontoonPro"];
+            var agentnames = ["AngrySquirrel", "BananaFarmer", "BeeKeeper", "BloonberryBush", "BloonsdayDevice", "MeerkatSpy", "Radadactyl", "SuperMonkeyStorm", "TribalTurtle","Pontoon","PortableLake"];
+            var exptowernames = ["AngrySquirrelPro", "BananaFarmerPro", "BeeKeeperPro", "BloonberryBushPro", "BloonsdayDevicePro", "MeerkatSpyPro", "RadadactylPro", "SuperMonkeyStormPro", "TribalTurtlePro","PontoonPro"]
+            var LockedTowerNums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
             var NumLockedTowers = 0;
             var LockedUpgradeIds = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
             var NumUpgradeLocks = 0;
@@ -597,6 +602,7 @@
             var NumCRMS = 0;
             var total = 0;
             var total2 = 0;
+            var expansiontoggle = false;
             //End Values
             var modal = document.getElementById('modal');
             var modal2 = document.getElementById('modal2');
@@ -767,6 +773,47 @@
                 makeInventory();
                 makePreplace();
             });
+            function changeexpansion(){
+            	if(expansiontoggle == false){
+            		expansiontoggle = true;
+            		//Maps
+            		var e = document.querySelector('.maps'); 
+        			var child = e.lastElementChild;  
+        			while (child) { 
+            		e.removeChild(child); 
+            		child = e.lastElementChild; 
+            		}
+            		makeMapsExpansion();
+            		makeMaps();
+            		//Locked Towers
+            		var f = document.getElementById('locks'); 
+        			child = f.lastElementChild;  
+        			while (child) { 
+            		f.removeChild(child); 
+            		child = f.lastElementChild; 
+            		}
+            		document.getElementById("upgradelocks").style.height = "445px";
+            		makeUpgrades();
+            	} else if(expansiontoggle == true){
+            		//Maps
+            		expansiontoggle = false;
+            		var e = document.querySelector('.maps'); 
+        			var child = e.lastElementChild;  
+        			while (child) { 
+            		e.removeChild(child); 
+            		child = e.lastElementChild; 
+            		}
+            		makeMaps();
+            		var f = document.getElementById('locks'); 
+        			child = f.lastElementChild;  
+        			while (child) { 
+            		f.removeChild(child); 
+            		child = f.lastElementChild; 
+            		}
+            		document.getElementById("upgradelocks").style.height = "295px";
+            		makeUpgrades();
+            	}
+            }
 
             let makeSliders = () => {
                 let output = document.getElementById('sliders');
@@ -796,7 +843,8 @@
                 });
             }
             let makeMaps = () => {
-                let i = 0
+            	let i = expansiontoggle ? expmapnames.length % 3 : 0;
+                //let i = expmapnames.length % 3;
                 let output = document.querySelector('.maps');
                 mapnames.forEach(m => {
                     let newMap = document.createElement('img');
@@ -854,7 +902,7 @@
             let makeUpgrades = () => {
                 let output = document.getElementById('locks');
                 towernames.forEach((u, i) => {
-                    if (i > 20) return;
+                    if (i > 20 && expansiontoggle == false) return;
                     let newContainer = document.createElement('div');
                     newContainer.className = 'container';
                     let newTower = document.createElement('img');
@@ -920,6 +968,26 @@
                         buildingblock(this);
                     });
                     output.appendChild(newBuilding);
+                });
+            }
+
+            let makeMapsExpansion = () => {
+                let i = 0
+                let output = document.querySelector('.maps');
+                expmapnames.forEach(m => {
+                    let newMap = document.createElement('img');
+                    newMap.className = 'mapIcon';
+                    newMap.src = `./Images/Tracks/Expansion/${m}_thumb.jpg`;
+                    newMap.style.width = "175px";
+                    newMap.style.height = "126px";
+                    if (i % 3 == 0) {
+                        newMap.style.marginLeft = "40px";
+                    }
+                    newMap.addEventListener('click', function() {
+                        changemap(this);
+                    });
+                    output.appendChild(newMap);
+                    i++;
                 });
             }
 
@@ -991,8 +1059,17 @@
 
             function changemap(selected) {
                 let map = [...selected.parentNode.children].indexOf(selected);
-                document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + mapnames[map] + "_thumb.jpg";
+                if(expansiontoggle){
+                	if(map > 62){
+                document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + combmapnames[map] + "_thumb.jpg";
+            	} else{ 
+            		document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/Expansion\/" + combmapnames[map] + "_thumb.jpg";
+            	}
+                challenge.nk_track = combmapnames[map];
+            	} else {
+            		document.getElementById("changemapbtn").src = "\.\/Images\/Tracks\/" + mapnames[map] + "_thumb.jpg";
                 challenge.nk_track = mapnames[map];
+            	}
                 finished();
             }
 
@@ -1023,10 +1100,10 @@
                 for (var i = 0; i < towernames.length; i++) {
                     if (LockedTowerNums[i] == 1) {
                         challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i];
-                        if (i > 20) {
+                        /*if (i > 20) {
                             NumLockedTowers++;
                             challenge.Rules.LockedTowers[NumLockedTowers] = towernames[i] + "Pro";
-                        }
+                        }*/
                         NumLockedTowers++;
                     }
                 }
