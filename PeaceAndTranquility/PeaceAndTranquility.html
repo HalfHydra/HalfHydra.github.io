@@ -54,8 +54,8 @@ background-color: red;
         
         
         .bottomanim {
-            animation: bottomanim 5.0s infinite;
-            -webkit-animation: bottomanim 5.0s infinite;
+            animation: bottomanim 5.0s;
+            -webkit-animation: bottomanim 5.0s;
         }
         
         @keyframes scrollBanner {
@@ -129,20 +129,22 @@ background-color: red;
                 console.log(quotes.length);
             };
 
+            var q = document.getElementById("bottomanim");
             function timeout() {
                 setTimeout(function () {
                     if(a < quotes.length-1){
                     a++;
-                    document.getElementById('bottomanim').innerHTML = quotes[a];
-                    document.getElementById('bottomanim').style.className = null; 
-                    document.getElementById('bottomanim').offsetWidth;
-                    document.getElementById('bottomanim').style.className = "bottomanim";
+                    console.log('loop1');
+                    q.innerHTML = quotes[a];
+                    q.classList.remove("bottomanim");
+                    void q.offsetWidth;
+                    q.classList.add("bottomanim");
                 } else {
                     a = 0
-                    document.getElementById('bottomanim').innerHTML = quotes[a];
-                    document.getElementById('bottomanim').style.className = null; 
-                    document.getElementById('bottomanim').offsetWidth;
-                    document.getElementById('bottomanim').style.className = "bottomanim";
+                    q.innerHTML = quotes[a];
+                    q.classList.remove("bottomanim");
+                    void q.offsetWidth;
+                    q.classList.add("bottomanim");
                 }
                 timeout();
                 }, 4999);
