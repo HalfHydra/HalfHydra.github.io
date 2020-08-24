@@ -37,6 +37,13 @@
         <img src="./PVZ2GRIDITEMS_files/gravestoneSunOnDestruction.png" id="13" onclick="selectSprite(event)">
 
     </div>
+    <div>
+<img src="./PVZ2GRIDITEMS_files/gravestone_pirate.png" id="11" onclick="selectSprite(event)">
+<img src="./PVZ2GRIDITEMS_files/gravestone_cowboy.png" id="2" onclick="selectSprite(event)">
+<img src="./PVZ2GRIDITEMS_files/gravestone_future.png" id="3" onclick="selectSprite(event)">
+<img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png" id="12" onclick="selectSprite(event)">
+<img src="./PVZ2GRIDITEMS_files/gravestone_lostcity.png" id="13" onclick="selectSprite(event)">
+    </div>
 <div>
     <div style="margin-top: 15px">
         <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
@@ -160,6 +167,7 @@ function toggleoutputvisibility() {
               document.getElementById('output').style.display = "block";
      }
         function CompileLevelXML() {
+    document.getElementById("output").value = "###Don't forget to add### \"RTID\(Gravestones\@CurrentLevel\)\"\n\n";
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
         document.getElementById("output").value += str;
