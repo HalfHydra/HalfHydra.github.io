@@ -74,6 +74,16 @@ textarea {
      <p> </p>
      <img src="./PVZ2GRIDITEMS_files/gravestoneSunOnDestruction.png">
      <input type="text" id="gravestoneSunOnDestruction" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_pirate.png">
+     <input type="text" id="gravestone_pirate" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_cowboy.png">
+     <input type="text" id="gravestone_cowboy" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_future.png">
+     <input type="text" id="gravestone_future" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png">
+     <input type="text" id="gravestone_iceage" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_lostcity.png">
+     <input type="text" id="gravestone_lostcity" style="width: 3%" value="">
     <p> </p>
     <button onclick="CompileLevelXML()">Finished</button>
     <p> </p>
@@ -246,6 +256,11 @@ function toggleoutputvisibility() {
         var gravestone_dark = document.getElementById("gravestone_dark").value;
         var gravestonePlantfoodOnDestruction = document.getElementById("gravestonePlantfoodOnDestruction").value;
         var gravestoneSunOnDestruction = document.getElementById("gravestoneSunOnDestruction").value;
+        var gravestone_pirate = document.getElementById("gravestone_pirate").value;
+        var gravestone_cowboy = document.getElementById("gravestone_cowboy").value;
+        var gravestone_future = document.getElementById("gravestone_future").value;
+        var gravestone_iceage = document.getElementById("gravestone_iceage").value;
+        var gravestone_lostcity = document.getElementById("gravestone_lostcity").value;
         var before = "                    \{\n                        \"Count\"\: ";
         var next = ",\n                        \"Type\"\: \"RTID\("
         var after = "\@GridItemTypes\)\"\n                    \}";
@@ -313,8 +328,23 @@ function toggleoutputvisibility() {
         if(gravestoneSunOnDestruction != 0){
             document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestoneSunOnDestruction + next + "gravestoneSunOnDestruction" + after;
         }
+        if(gravestone_pirate != 0){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_pirate + next + "gravestone_pirate" + after;
         }
-//Asuki says Hai!
+        if(gravestone_cowboy != 0){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_cowboy + next + "gravestone_cowboy" + after;
+        }
+        if(gravestone_future != 0){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_future + next + "gravestone_future" + after;
+        }
+        if(gravestone_iceage != 0){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_iceage + next + "gravestone_iceage" + after;
+        }
+        if(gravestone_lostcity != 0){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_lostcity + next + "gravestone_lostcity" + after;
+        }
+        }
+
     </script>
     <style>
         p {
