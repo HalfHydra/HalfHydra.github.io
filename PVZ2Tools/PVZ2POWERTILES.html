@@ -184,6 +184,7 @@ function toggleoutputvisibility() {
               document.getElementById('output').style.display = "block";
      }
         function CompileLevelXML() {
+            document.getElementById("output").value = "###Don't forget to add### \"RTID\(FutureLinkedTileGroups\@CurrentLevel\)\"\n\n";
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
         document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"FutureLinkedTileGroups\"\n            \],\n            \"objclass\"\: \"PowerTileProperties\",\n            \"objdata\"\: \{\n                \"LinkedTiles\"\: \[\n";
