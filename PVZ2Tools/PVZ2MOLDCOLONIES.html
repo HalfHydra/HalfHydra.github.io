@@ -152,7 +152,7 @@ function toggleoutputvisibility() {
     }
      }
         function CompileLevelXML() {
-        document.getElementById("gravestonearray").value += "###Don't forget to add to ChallengeModule### \"RTID\(DoNotPlantBeforeLine\@CurrentLevel\)\"\n";
+        document.getElementById("gravestonearray").value = "###Don't forget to add to ChallengeModule### \"RTID\(DoNotPlantBeforeLine\@CurrentLevel\)\"\n";
         document.getElementById("gravestonearray").value += "        \{\n            \"aliases\"\: \[\n                \"DoNotPlantBeforeLine\"\n            \],\n            \"objclass\"\: \"MoldColonyChallengeProps\",\n            \"objdata\"\: {\n                \"Locations\"\: \"RTID\(MoldColonies\@CurrentLevel\)\"\n            \}\n        \},\n";
         toggleoutputvisibility();
         DoShitWithItemInputs();
