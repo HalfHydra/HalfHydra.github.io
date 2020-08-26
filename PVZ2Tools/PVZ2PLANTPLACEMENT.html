@@ -328,6 +328,7 @@ function toggleoutputvisibility() {
               document.getElementById('output').style.display = "block";
         }
         function CompileLevelXML() {
+    document.getElementById("output").value = "###Don't forget to add### \"RTID\(FrozenPlantPlacement\@CurrentLevel\)\"\n\n";
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
         document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"FrozenPlantPlacement\"\n            \],\n            \"objclass\"\: \"InitialPlantProperties\",\n            \"objdata\"\: {\n                \"InitialPlantPlacements\"\: \[\n"
