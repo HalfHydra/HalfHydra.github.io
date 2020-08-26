@@ -666,6 +666,9 @@ textarea {
 <input type="text" id="feastivus_troglobite_1block" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/feastivus_gargantuar.png" style="width: 50px; height: 78px">
 <input type="text" id="feastivus_gargantuar" style="width: 3%" value="0">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/holiday_gargantuar.png" style="width: 50px; height: 78px">
+<input type="text" id="holiday_gargantuar" style="width: 3%" value="0">
+
 
 
 
@@ -682,17 +685,17 @@ textarea {
 <input type="text" id="general_treadmill_phase2" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/general_treadmill_phase3.png" style="width: 50px; height: 78px">
 <input type="text" id="general_treadmill_phase3" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase1.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase1.png" style="width: 80px; height: 78px">
 <input type="text" id="general_zmech_phase1" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase2.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase2.png" style="width: 80px; height: 78px">
 <input type="text" id="general_zmech_phase2" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase3.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_zmech_phase3.png" style="width: 80px; height: 78px">
 <input type="text" id="general_zmech_phase3" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase1.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase1.png" style="width: 40px; height: 78px">
 <input type="text" id="general_caesar_phase1" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase2.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase2.png" style="width: 40px; height: 78px">
 <input type="text" id="general_caesar_phase2" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase3.png" style="width: 50px; height: 78px">
+<img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase3.png" style="width: 40px; height: 78px">
 <input type="text" id="general_caesar_phase3" style="width: 3%" value="0">
     <p> </p>
     <button onclick="CompileLevelXML()">Finished</button>
@@ -1165,6 +1168,7 @@ var feastivus_troglobite = document.getElementById("feastivus_troglobite").value
 var feastivus_troglobite_2block = document.getElementById("feastivus_troglobite_2block").value;
 var feastivus_troglobite_1block = document.getElementById("feastivus_troglobite_1block").value;
 var feastivus_gargantuar = document.getElementById("feastivus_gargantuar").value;
+var holiday_gargantuar = document.getElementById("holiday_gargantuar").value;
 
 
 
@@ -2519,6 +2523,11 @@ if(feastivus_troglobite_1block != 0){
 if(feastivus_gargantuar != 0){
             for(x=0; x < feastivus_gargantuar; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "feastivus_gargantuar" + after;
+        }
+    }
+if(holiday_gargantuar != 0){
+            for(x=0; x < holiday_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "holiday_gargantuar" + after;
         }
     }
 
