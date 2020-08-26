@@ -411,9 +411,28 @@ textarea {
      <input type="text" id="modern_allstar" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/modern_superfanimp.png" style="width: 63px; height: 78px">
      <input type="text" id="modern_superfanimp" style="width: 3%" value="0">
+
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman.png" style="width: 50px; height: 78px">
+     <input type="text" id="roman" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_armor1.png" style="width: 40px; height: 78px">
+     <input type="text" id="roman_armor1" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_armor2.png" style="width: 45px; height: 78px">
+     <input type="text" id="roman_armor2" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_armor3.png" style="width: 45px; height: 78px">
+     <input type="text" id="roman_armor3" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_armor4.png" style="width: 50px; height: 78px">
+     <input type="text" id="roman_armor4" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_flag.png" style="width: 50px; height: 78px">
+     <input type="text" id="roman_flag" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_imp.png" style="width: 53px; height: 53px">
+     <input type="text" id="roman_imp" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/packets_zombies/roman_gargantuar.png" style="width: 56px; height: 78px">
+     <input type="text" id="roman_gargantuar" style="width: 3%" value="0">
+
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/treasureyeti.png" style="width: 55px; height: 78px">
      <input type="text" id="treasureyeti" style="width: 3%" value="0">
-     <p> </p>
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/vase_gargantuar.png" style="width: 53px; height: 78px">
      <input type="text" id="vase_gargantuar" style="width: 3%" value="0">
     <p> </p>
@@ -717,6 +736,16 @@ function toggleoutputvisibility() {
         var modern_balloon = document.getElementById("modern_balloon").value;
         var modern_allstar = document.getElementById("modern_allstar").value;
         var modern_superfanimp = document.getElementById("modern_superfanimp").value;
+
+        var roman = document.getElementById("roman").value;
+        var roman_armor1 = document.getElementById("roman_armor1").value;
+        var roman_armor2 = document.getElementById("roman_armor2").value;
+        var roman_armor3 = document.getElementById("roman_armor3").value;
+        var roman_armor4 = document.getElementById("roman_armor4").value;
+        var roman_flag = document.getElementById("roman_flag").value;
+        var roman_imp = document.getElementById("roman_imp").value;
+        var roman_gargantuar = document.getElementById("roman_gargantuar").value;
+
         var treasureyeti = document.getElementById("treasureyeti").value;
         var vase_gargantuar = document.getElementById("vase_gargantuar").value;
         var next = "                    \{\n                        \"Type\"\: \"RTID\("
@@ -1491,6 +1520,50 @@ function toggleoutputvisibility() {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "modern_superfanimp" + after;
         }
     }
+
+
+    if(roman != 0){
+            for(x=0; x < roman; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman" + after;
+        }
+    }
+    if(roman_armor1 != 0){
+            for(x=0; x < roman_armor1; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_armor1" + after;
+        }
+    }
+    if(roman_armor2 != 0){
+            for(x=0; x < roman_armor2; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_armor2" + after;
+        }
+    }
+    if(roman_armor3 != 0){
+            for(x=0; x < roman_armor3; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_armor3" + after;
+        }
+    }
+    if(roman_armor4 != 0){
+            for(x=0; x < roman_armor4; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_armor4" + after;
+        }
+    }
+    if(roman_flag != 0){
+            for(x=0; x < roman_flag; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_flag" + after;
+        }
+    }
+    if(roman_imp != 0){
+            for(x=0; x < roman_imp; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_imp" + after;
+        }
+    }
+    if(roman_gargantuar != 0){
+            for(x=0; x < roman_gargantuar; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_gargantuar" + after;
+        }
+    }
+
+
     if(treasureyeti != 0){
             for(x=0; x < treasureyeti; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "treasureyeti" + after;
