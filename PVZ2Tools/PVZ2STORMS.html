@@ -421,7 +421,7 @@ function toggleoutputvisibility() {
         //var xml = document.getElementById("xml").value;
         //document.getElementById('xml').style.display = "none";
     //var str = document.getElementById("xml").value;
-        document.getElementById("output").value += "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "StormEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
+        document.getElementById("output").value = "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "StormEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
         toggleoutputvisibility();
         //document.getElementById("output").value += str;
         DoShitWithZombieInputs();
@@ -444,6 +444,7 @@ function toggleoutputvisibility() {
         }
 
         function DoShitWithZombieInputs() {
+        document.getElementById("xml").value = "";
         var mummy = document.getElementById("mummy").value;
         var mummy_armor1 = document.getElementById("mummy_armor1").value;
         var mummy_armor2 = document.getElementById("mummy_armor2").value;
