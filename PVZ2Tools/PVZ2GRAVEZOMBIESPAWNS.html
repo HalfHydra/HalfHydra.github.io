@@ -454,6 +454,7 @@ function toggleoutputvisibility() {
     }
      }
         function CompileLevelXML() {
+
         //var wavenumber = document.getElementById("wavenumber").value;
         //var eventnumber = document.getElementById("eventnumber").value;
         //var soundid = document.getElementById("soundid").value;
@@ -462,15 +463,16 @@ function toggleoutputvisibility() {
         //var xml = document.getElementById("xml").value;
         //document.getElementById('xml').style.display = "none";
     //var str = document.getElementById("xml").value;
-    document.getElementById("output").value += "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "GraveSpawnEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
+        document.getElementById("output").value = "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "GraveSpawnEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
         toggleoutputvisibility();
         //document.getElementById("output").value += str;
         DoShitWithItemInputs();
-        DoShitWithZombieInputs()
+        DoShitWithZombieInputs();
         document.getElementById("output").value += "        \{\n            \"aliases\"\: [\n                \"Wave" + document.getElementById("wavenumber").value + "GraveSpawnEvent" + document.getElementById("eventnumber").value + "\"\n            \],\n            \"objclass\"\: \"SpawnZombiesFromGridItemSpawnerProps\",\n            \"objdata\"\: \{\n                \"AdditionalPlantfood\"\: \"" + document.getElementById("plantfood").value + "\",\n                \"GridTypes\"\: \[\n" + document.getElementById("gravestonearray").value + "\n                \],\n                \"WaveStartMessage\"\: \"" + document.getElementById("message").value + "\",\n                \"ZombieSpawnWaitTime\"\: " + document.getElementById("waittime").value + ",\n                \"Zombies\"\: \[\n" + document.getElementById("xml").value + "\n                \]\n            \}\n        \},";
 		}
 
         function DoShitWithItemInputs() {
+        document.getElementById("gravestonearray").value = "";
         var goldtile = document.getElementById("goldtile");
         var flame_spreader_trap = document.getElementById("flame_spreader_trap");
         var boulder_trap_falling_forward = document.getElementById("boulder_trap_falling_forward");
@@ -560,6 +562,7 @@ function toggleoutputvisibility() {
         }
         }
         function DoShitWithZombieInputs() {
+        document.getElementById("xml").value = "";
         var mummy = document.getElementById("mummy").value;
         var mummy_armor1 = document.getElementById("mummy_armor1").value;
         var mummy_armor2 = document.getElementById("mummy_armor2").value;
