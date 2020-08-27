@@ -4,94 +4,108 @@
 textarea {
  width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+@font-face {
+            font-family: pvz2;
+            src: url('./PVZ2GRIDITEMS_files/pvz2.ttf');
+            }
 	</style>
-    <p2>Event Settings: </p2>
-    <p> Wave Number:
-    <input type="text" id="wavenumber" style="width: 2%" value="">
+    <div style="background-image:url('./PVZ2GRIDITEMS_files/SettingsPattern.png');border-radius:5px;border:2px solid #2B466A; width: 420px; height: 250px;margin-top: 10px;">
+    <p2 style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 28px;">Event Settings: </p2>
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Wave Number:
+    <input type="text" id="wavenumber" style="width: 5%" value="">
     </p>
-    <p> Event Number:
-    <input type="text" id="eventnumber" style="width: 2%" value="">
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Event Number:
+    <input type="text" id="eventnumber" style="width: 5%" value="">
     </p>
-    <p> Additional Plantfood:
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Additional Plantfood:
     <input type="text" id="plantfood" style="width: 2%" value="0">
     </p>
-    <p> WaveStartMessage:
-    <input type="text" id="message" style="width: 9%" value="[WARNING_GRAVESTONE_SPAWN]">
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> WaveStartMessage:
+    <input type="text" id="message" style="width: 230px" value="[WARNING_GRAVESTONE_SPAWN]">
     </p>
-    <p> ZombieSpawnWaitTime:
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> ZombieSpawnWaitTime:
     <input type="text" id="waittime" style="width: 2%" value="1">
     </p>
+</div>
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/goldtile.png">
-     <input type="checkbox" id="goldtile" style="width: 1%" value="">
+     <div style="background-image:url('./PVZ2GRIDITEMS_files/InfoPattern.png');border-radius:5px;border:2px solid #2B466A; width: 420px; height: 500px;margin-top: 10px;">
+     <img src="./PVZ2GRIDITEMS_files/goldtile.png" style="margin-top:10px;margin-left:10px">
+     <input type="checkbox" id="goldtile" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/flame_spreader_trap.png">
-     <input type="checkbox" id="flame_spreader_trap" style="width: 1%" value="">
+     <input type="checkbox" id="flame_spreader_trap" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/boulder_trap_falling_forward.png">
-     <input type="checkbox" id="boulder_trap_falling_forward" style="width: 1%" value="">
+     <input type="checkbox" id="boulder_trap_falling_forward" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/crater.png">
-     <input type="checkbox" id="crater" style="width: 1%" value="">
+     <input type="checkbox" id="crater" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/bombegranateseeds.png">
-     <input type="checkbox" id="bombegranateseeds" style="width: 1%" value="">
+     <input type="checkbox" id="bombegranateseeds" style="width: 20px" value="">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/planttarget_squid.png">
-     <input type="checkbox" id="planttarget_squid" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/planttarget_squid.png" style="margin-left:10px">
+     <input type="checkbox" id="planttarget_squid" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/zombiepotion_speed.png">
-     <input type="checkbox" id="zombiepotion_speed" style="width: 1%" value="">
+     <input type="checkbox" id="zombiepotion_speed" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/zombiepotion_toughness.png">
-     <input type="checkbox" id="zombiepotion_toughness" style="width: 1%" value="">
+     <input type="checkbox" id="zombiepotion_toughness" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/backpack.png">
-     <input type="checkbox" id="backpack" style="width: 1%" value="">
+     <input type="checkbox" id="backpack" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/tent.png">
-     <input type="checkbox" id="tent" style="width: 1%" value="">
+     <input type="checkbox" id="tent" style="width: 20px" value="">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/surfboard.png">
-     <input type="checkbox" id="surfboard" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/surfboard.png" style="margin-left:10px">
+     <input type="checkbox" id="surfboard" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/speaker.png">
-     <input type="checkbox" id="speaker" style="width: 1%" value="">
+     <input type="checkbox" id="speaker" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/roman_healer_staff.png">
-     <input type="checkbox" id="roman_healer_staff" style="width: 1%" value="">
+     <input type="checkbox" id="roman_healer_staff" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/slider_down.png">
-     <input type="checkbox" id="slider_down" style="width: 1%" value="">
+     <input type="checkbox" id="slider_down" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/slider_up.png">
-     <input type="checkbox" id="slider_up" style="width: 1%" value="">
+     <input type="checkbox" id="slider_up" style="width: 20px" value="">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/slider_down_modern.png">
-     <input type="checkbox" id="slider_down_modern" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/slider_down_modern.png" style="margin-left:10px">
+     <input type="checkbox" id="slider_down_modern" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/slider_up_modern.png">
-     <input type="checkbox" id="slider_up_modern" style="width: 1%" value="">
+     <input type="checkbox" id="slider_up_modern" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_tutorial.png">
-     <input type="checkbox" id="gravestone_tutorial" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_tutorial" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_egypt.png">
-     <input type="checkbox" id="gravestone_egypt" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_egypt" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_dark.png">
-     <input type="checkbox" id="gravestone_dark" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_dark" style="width: 20px" value="">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/gravestonePlantfoodOnDestruction.png">
-     <input type="checkbox" id="gravestonePlantfoodOnDestruction" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestonePlantfoodOnDestruction.png" style="margin-left:10px">
+     <input type="checkbox" id="gravestonePlantfoodOnDestruction" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestoneSunOnDestruction.png">
-     <input type="checkbox" id="gravestoneSunOnDestruction" style="width: 1%" value="">
+     <input type="checkbox" id="gravestoneSunOnDestruction" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_pirate.png">
-     <input type="checkbox" id="gravestone_pirate" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_pirate" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_cowboy.png">
-     <input type="checkbox" id="gravestone_cowboy" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_cowboy" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_future.png">
-     <input type="checkbox" id="gravestone_future" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_future" style="width: 20px" value="">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png">
-     <input type="checkbox" id="gravestone_iceage" style="width: 1%" value="">
+     <img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png" style="margin-left:10px">
+     <input type="checkbox" id="gravestone_iceage" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/gravestone_lostcity.png">
-     <input type="checkbox" id="gravestone_lostcity" style="width: 1%" value="">
-     <img src="./PVZ2GRIDITEMS_files/boosttile.png">
-     <input type="checkbox" id="boosttile" style="width: 1%" value="">
-     <img src="./PVZ2GRIDITEMS_files/boosttile3.png">
-     <input type="checkbox" id="boosttile3" style="width: 1%" value="">
-     <img src="./PVZ2GRIDITEMS_files/boosttile5.png">
-     <input type="checkbox" id="boosttile5" style="width: 1%" value="">
+     <input type="checkbox" id="gravestone_lostcity" style="width: 20px" value="">
+     <img src="./PVZ2GRIDITEMS_files/score_2x_tile.png">
+     <input type="checkbox" id="score_2x_tile" style="width: 20px" value="">
+     <img src="./PVZ2GRIDITEMS_files/score_3x_tile.png">
+     <input type="checkbox" id="score_3x_tile" style="width: 20px" value="">
+     <img src="./PVZ2GRIDITEMS_files/score_5x_tile.png">
+     <input type="checkbox" id="score_5x_tile" style="width: 20px" value="">
      <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/boosttile.png"  style="margin-left:10px">
+     <input type="checkbox" id="boosttile" style="width: 20px" value="">
+     <img src="./PVZ2GRIDITEMS_files/boosttile3.png">
+     <input type="checkbox" id="boosttile3" style="width: 20px" value="">
+     <img src="./PVZ2GRIDITEMS_files/boosttile5.png">
+     <input type="checkbox" id="boosttile5" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/boosttile10.png">
-     <input type="checkbox" id="boosttile10" style="width: 1%" value="">
+     <input type="checkbox" id="boosttile10" style="width: 20px" value="">
      <img src="./PVZ2GRIDITEMS_files/boosttile1000.png">
-     <input type="checkbox" id="boosttile1000" style="width: 1%" value="">
+     <input type="checkbox" id="boosttile1000" style="width: 20px" value="">
+</div>
      <p> </p>
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy.png" style="width: 50px; height: 78px">
      <input type="text" id="mummy" style="width: 3%" value="0">
@@ -754,6 +768,10 @@ function toggleoutputvisibility() {
         var gravestone_future = document.getElementById("gravestone_future");
         var gravestone_iceage = document.getElementById("gravestone_iceage");
         var gravestone_lostcity = document.getElementById("gravestone_lostcity");
+        var score_2x_tile = document.getElementById("score_2x_tile");
+var score_3x_tile = document.getElementById("score_3x_tile");
+var score_5x_tile = document.getElementById("score_5x_tile");
+
         var boosttile = document.getElementById("boosttile");
         var boosttile3 = document.getElementById("boosttile3");
         var boosttile5 = document.getElementById("boosttile5");
@@ -843,6 +861,16 @@ function toggleoutputvisibility() {
         if(gravestone_lostcity.checked == true){
             document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "gravestone_lostcity" + after;
         }
+        if(score_2x_tile.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "score_2x_tile" + after;
+        }
+if(score_3x_tile.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "score_3x_tile" + after;
+        }
+if(score_5x_tile.checked == true){
+            document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "score_5x_tile" + after;
+        }
+
         if(boosttile.checked == true){
             document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("\"") ? ",\n" : "") + next + "boosttile" + after;
         }
