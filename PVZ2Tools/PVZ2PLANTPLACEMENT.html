@@ -214,6 +214,8 @@ textarea {
                 mouseOverSprite.style.visibility ="visible";
                 mouseOverSprite.style.top = e.target.offsetTop+"px";
                 mouseOverSprite.style.left = e.target.offsetLeft+"px";
+                mouseOverSprite.style.width = "44px";
+                mouseOverSprite.style.height = "51px";
             }
             else{
                 mouseOverSprite.style.visibility ="hidden";
@@ -245,6 +247,8 @@ textarea {
                 newImg.style.position = "absolute";
                 newImg.style.left = targetRect.x+"px";
                 newImg.style.top = targetRect.y+"px";
+                newImg.style.width = "44px";
+                newImg.style.height = "51px";
                 newImg.style.zIndex = -1;
                 newImg.className = "newImg";
                 if(icecubed.checked == true){
