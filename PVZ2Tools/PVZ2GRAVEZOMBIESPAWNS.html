@@ -520,8 +520,6 @@ textarea {
 <input type="text" id="spring_imp" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/spring_imp_af.png" style="width: 50px; height: 78px">
 <input type="text" id="spring_imp_af" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/spring_camel_segment.png" style="width: 50px; height: 78px">
-<input type="text" id="spring_camel_segment" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/spring_camel_onehump.png" style="width: 50px; height: 78px">
 <input type="text" id="spring_camel_onehump" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/spring_camel_twohump.png" style="width: 50px; height: 78px">
@@ -651,8 +649,6 @@ textarea {
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/feastivus_poncho.png" style="width: 50px; height: 78px">
 <input type="text" id="feastivus_poncho" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/feastivus_camel_segment.png" style="width: 50px; height: 78px">
-<input type="text" id="feastivus_camel_segment" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/feastivus_camel_onehump.png" style="width: 50px; height: 78px">
 <input type="text" id="feastivus_camel_onehump" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/feastivus_camel_twohump.png" style="width: 50px; height: 78px">
 <input type="text" id="feastivus_camel_twohump" style="width: 3%" value="0">
@@ -1095,7 +1091,6 @@ var spring_armor2 = document.getElementById("spring_armor2").value;
 var spring_flag = document.getElementById("spring_flag").value;
 var spring_imp = document.getElementById("spring_imp").value;
 var spring_imp_af = document.getElementById("spring_imp_af").value;
-var spring_camel_segment = document.getElementById("spring_camel_segment").value;
 var spring_camel_onehump = document.getElementById("spring_camel_onehump").value;
 var spring_camel_twohump = document.getElementById("spring_camel_twohump").value;
 var spring_camel_manyhump = document.getElementById("spring_camel_manyhump").value;
@@ -1160,7 +1155,6 @@ var holiday_imp = document.getElementById("holiday_imp").value;
 var feastivus_piano = document.getElementById("feastivus_piano").value;
 var feastivus_swashbuckler = document.getElementById("feastivus_swashbuckler").value;
 var feastivus_poncho = document.getElementById("feastivus_poncho").value;
-var feastivus_camel_segment = document.getElementById("feastivus_camel_segment").value;
 var feastivus_camel_onehump = document.getElementById("feastivus_camel_onehump").value;
 var feastivus_camel_twohump = document.getElementById("feastivus_camel_twohump").value;
 var feastivus_camel_manyhump = document.getElementById("feastivus_camel_manyhump").value;
@@ -2160,11 +2154,6 @@ if(spring_imp_af != 0){
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "spring_imp_af" + after;
         }
     }
-if(spring_camel_segment != 0){
-            for(x=0; x < spring_camel_segment; x++) {
-            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "spring_camel_segment" + after;
-        }
-    }
 if(spring_camel_onehump != 0){
             for(x=0; x < spring_camel_onehump; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "spring_camel_onehump" + after;
@@ -2483,11 +2472,6 @@ if(feastivus_swashbuckler != 0){
 if(feastivus_poncho != 0){
             for(x=0; x < feastivus_poncho; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "feastivus_poncho" + after;
-        }
-    }
-if(feastivus_camel_segment != 0){
-            for(x=0; x < feastivus_camel_segment; x++) {
-            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "feastivus_camel_segment" + after;
         }
     }
 if(feastivus_camel_onehump != 0){
