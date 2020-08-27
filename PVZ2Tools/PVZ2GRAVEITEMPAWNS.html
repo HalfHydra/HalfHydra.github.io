@@ -6,85 +6,115 @@
         <img src="./PVZ2GRIDITEMS_files/gravestone_dark.png" id="1" onclick="selectSprite(event)" style="outline: blue solid 0.5px;">
     </div>
 <div>
-    <div style="margin-top: 15px">
+    <div style="margin-top: 15px;">
         <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
     </p></div>
+
     <style type="text/css">
 textarea {
  width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+@font-face {
+            font-family: pvz2;
+            src: url('./PVZ2GRIDITEMS_files/pvz2.ttf');
+            }
 	</style>
-    <p2>Event Settings: </p2>
-    <p> Wave Number:
+
+    <div style="background-image:url('./PVZ2GRIDITEMS_files/SettingsPattern.png');border-radius:5px;border:2px solid #2B466A; width: 550px; height: 195px;margin-top: 10px;">
+    <p2 style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 28px;">Event Settings: </p2>
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Wave Number:
     <input type="text" id="wavenumber" style="width: 5%" value="">
     </p>
-    <p> Event Number:
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Event Number:
     <input type="text" id="eventnumber" style="width: 5%" value="">
     </p>
-    <p> SpawnEffectAnimID:
-    <input type="text" id="effectid" style="width: 26%" value="POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT">
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> SpawnEffectAnimID:
+    <input type="text" id="effectid" style="width: 380px" value="POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT">
     </p>
-    <p> SpawnSoundID:
-    <input type="text" id="soundid" style="width: 19%" value="Play_Zomb_Egypt_TombRaiser_Grave_Rise">
+    <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> SpawnSoundID:
+    <input type="text" id="soundid" style="width: 265px" value="Play_Zomb_Egypt_TombRaiser_Grave_Rise">
     </p>
+</div>
+     <div style="background-image:url('./PVZ2GRIDITEMS_files/InfoPattern.png');border-radius:5px;border:2px solid #2B466A; width: 420px; height: 525px;margin-top: 10px;">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/goldtile.png">
-     <input type="text" id="goldtile" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/goldtile.png" style="margin-left: 30px">
+     <input type="text" id="goldtile" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/flame_spreader_trap.png">
-     <input type="text" id="flame_spreader_trap" style="width: 3%" value="">
+     <input type="text" id="flame_spreader_trap" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/boulder_trap_falling_forward.png">
-     <input type="text" id="boulder_trap_falling_forward" style="width: 3%" value="">
+     <input type="text" id="boulder_trap_falling_forward" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/crater.png">
-     <input type="text" id="crater" style="width: 3%" value="">
+     <input type="text" id="crater" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/bombegranateseeds.png">
-     <input type="text" id="bombegranateseeds" style="width: 3%" value="">
+     <input type="text" id="bombegranateseeds" style="width: 3%" value="0">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/planttarget_squid.png">
-     <input type="text" id="planttarget_squid" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/planttarget_squid.png" style="margin-left: 30px">
+     <input type="text" id="planttarget_squid" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/zombiepotion_speed.png">
-     <input type="text" id="zombiepotion_speed" style="width: 3%" value="">
+     <input type="text" id="zombiepotion_speed" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/zombiepotion_toughness.png">
-     <input type="text" id="zombiepotion_toughness" style="width: 3%" value="">
+     <input type="text" id="zombiepotion_toughness" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/backpack.png">
-     <input type="text" id="backpack" style="width: 3%" value="">
+     <input type="text" id="backpack" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/tent.png">
-     <input type="text" id="tent" style="width: 3%" value="">
+     <input type="text" id="tent" style="width: 3%" value="0">
      <p> </p>
-     <img src="./PVZ2GRIDITEMS_files/surfboard.png">
-     <input type="text" id="surfboard" style="width: 3%" value="">
+     <img src="./PVZ2GRIDITEMS_files/surfboard.png" style="margin-left: 30px">
+     <input type="text" id="surfboard" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/speaker.png">
-     <input type="text" id="speaker" style="width: 3%" value="">
+     <input type="text" id="speaker" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/roman_healer_staff.png">
+     <input type="text" id="roman_healer_staff" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/slider_down.png">
-     <input type="text" id="slider_down" style="width: 3%" value="">
+     <input type="text" id="slider_down" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/slider_up.png">
-     <input type="text" id="slider_up" style="width: 3%" value="">
-     <img src="./PVZ2GRIDITEMS_files/slider_down_modern.png">
-     <input type="text" id="slider_down_modern" style="width: 3%" value="">
+     <input type="text" id="slider_up" style="width: 3%" value="0">
      <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/slider_down_modern.png" style="margin-left: 30px">
+     <input type="text" id="slider_down_modern" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/slider_up_modern.png">
-     <input type="text" id="slider_up_modern" style="width: 3%" value="">
+     <input type="text" id="slider_up_modern" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_tutorial.png">
-     <input type="text" id="gravestone_tutorial" style="width: 3%" value="">
+     <input type="text" id="gravestone_tutorial" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_egypt.png">
-     <input type="text" id="gravestone_egypt" style="width: 3%" value="">
+     <input type="text" id="gravestone_egypt" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_dark.png">
-     <input type="text" id="gravestone_dark" style="width: 3%" value="">
-     <img src="./PVZ2GRIDITEMS_files/gravestonePlantfoodOnDestruction.png">
-     <input type="text" id="gravestonePlantfoodOnDestruction" style="width: 3%" value="">
+     <input type="text" id="gravestone_dark" style="width: 3%" value="0">
      <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/gravestonePlantfoodOnDestruction.png" style="margin-left: 30px">
+     <input type="text" id="gravestonePlantfoodOnDestruction" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestoneSunOnDestruction.png">
-     <input type="text" id="gravestoneSunOnDestruction" style="width: 3%" value="">
+     <input type="text" id="gravestoneSunOnDestruction" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_pirate.png">
-     <input type="text" id="gravestone_pirate" style="width: 3%" value="">
+     <input type="text" id="gravestone_pirate" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_cowboy.png">
-     <input type="text" id="gravestone_cowboy" style="width: 3%" value="">
+     <input type="text" id="gravestone_cowboy" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_future.png">
-     <input type="text" id="gravestone_future" style="width: 3%" value="">
-     <img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png">
-     <input type="text" id="gravestone_iceage" style="width: 3%" value="">
+     <input type="text" id="gravestone_future" style="width: 3%" value="0">
+     <p> </p>
+     <img src="./PVZ2GRIDITEMS_files/gravestone_iceage.png" style="margin-left: 30px">
+     <input type="text" id="gravestone_iceage" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/gravestone_lostcity.png">
-     <input type="text" id="gravestone_lostcity" style="width: 3%" value="">
+     <input type="text" id="gravestone_lostcity" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/score_2x_tile.png">
+     <input type="text" id="score_2x_tile" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/score_3x_tile.png">
+     <input type="text" id="score_3x_tile" style="width: 3%" value="0">
+     <img src="./PVZ2GRIDITEMS_files/score_5x_tile.png">
+     <input type="text" id="score_5x_tile" style="width: 3%" value="0">
     <p> </p>
+    <img src="./PVZ2GRIDITEMS_files/boosttile.png" style="margin-left: 30px">
+    <input type="text" id="boosttile" style="width: 3%" value="0">
+    <img src="./PVZ2GRIDITEMS_files/boosttile3.png">
+    <input type="text" id="boosttile3" style="width: 3%" value="0">
+    <img src="./PVZ2GRIDITEMS_files/boosttile5.png">
+    <input type="text" id="boosttile5" style="width: 3%" value="0">
+    <img src="./PVZ2GRIDITEMS_files/boosttile10.png">
+    <input type="text" id="boosttile10" style="width: 3%" value="0">
+    <img src="./PVZ2GRIDITEMS_files/boosttile1000.png">
+    <input type="text" id="boosttile1000" style="width: 3%" value="0">
+    <p> </p>
+</div>
     <button onclick="CompileLevelXML()">Finished</button>
     <p> </p>
     <button onclick="ShowArrays()">Toggle Seperate Arrays</button>
@@ -226,7 +256,7 @@ function toggleoutputvisibility() {
         //var xml = document.getElementById("xml").value;
         //document.getElementById('xml').style.display = "none";
     //var str = document.getElementById("xml").value;
-    document.getElementById("output").value += "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "GravestoneEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
+    document.getElementById("output").value = "###Don't forget to add### \"RTID\(Wave" + document.getElementById("wavenumber").value + "GravestoneEvent" + document.getElementById("eventnumber").value + "\@CurrentLevel\)\"\n";
     toggleoutputvisibility();
         //document.getElementById("output").value += str;
         DoShitWithItemInputs();
@@ -235,6 +265,7 @@ function toggleoutputvisibility() {
 		}
 
         function DoShitWithItemInputs() {
+        document.getElementById('gravestonearray').value = "";
         var goldtile = document.getElementById("goldtile").value;
         var flame_spreader_trap = document.getElementById("flame_spreader_trap").value;
         var boulder_trap_falling_forward = document.getElementById("boulder_trap_falling_forward").value;
@@ -261,6 +292,16 @@ function toggleoutputvisibility() {
         var gravestone_future = document.getElementById("gravestone_future").value;
         var gravestone_iceage = document.getElementById("gravestone_iceage").value;
         var gravestone_lostcity = document.getElementById("gravestone_lostcity").value;
+        var roman_healer_staff = document.getElementById("roman_healer_staff").value;
+var score_2x_tile = document.getElementById("score_2x_tile").value;
+var score_3x_tile = document.getElementById("score_3x_tile").value;
+var score_5x_tile = document.getElementById("score_5x_tile").value;
+var boosttile = document.getElementById("boosttile").value;
+var boosttile3 = document.getElementById("boosttile3").value;
+var boosttile5 = document.getElementById("boosttile5").value;
+var boosttile10 = document.getElementById("boosttile10").value;
+var boosttile1000 = document.getElementById("boosttile1000").value;
+
         var before = "                    \{\n                        \"Count\"\: ";
         var next = ",\n                        \"Type\"\: \"RTID\("
         var after = "\@GridItemTypes\)\"\n                    \}";
@@ -343,6 +384,52 @@ function toggleoutputvisibility() {
         if(gravestone_lostcity != 0){
             document.getElementById("gravestonearray").value += (document.getElementById("gravestonearray").value.endsWith("}") ? ",\n" : "") + before + gravestone_lostcity + next + "gravestone_lostcity" + after;
         }
+        if(roman_healer_staff != 0){
+            for(x=0; x < roman_healer_staff; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "roman_healer_staff" + after;
+        }
+    }
+if(score_2x_tile != 0){
+            for(x=0; x < score_2x_tile; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "score_2x_tile" + after;
+        }
+    }
+if(score_3x_tile != 0){
+            for(x=0; x < score_3x_tile; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "score_3x_tile" + after;
+        }
+    }
+if(score_5x_tile != 0){
+            for(x=0; x < score_5x_tile; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "score_5x_tile" + after;
+        }
+    }
+if(boosttile != 0){
+            for(x=0; x < boosttile; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "boosttile" + after;
+        }
+    }
+if(boosttile3 != 0){
+            for(x=0; x < boosttile3; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "boosttile3" + after;
+        }
+    }
+if(boosttile5 != 0){
+            for(x=0; x < boosttile5; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "boosttile5" + after;
+        }
+    }
+if(boosttile10 != 0){
+            for(x=0; x < boosttile10; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "boosttile10" + after;
+        }
+    }
+if(boosttile1000 != 0){
+            for(x=0; x < boosttile1000; x++) {
+            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "boosttile1000" + after;
+        }
+    }
+
         }
 
     </script>
