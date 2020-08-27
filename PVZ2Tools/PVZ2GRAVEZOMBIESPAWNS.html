@@ -8,8 +8,22 @@ textarea {
             font-family: pvz2;
             src: url('./PVZ2GRIDITEMS_files/pvz2.ttf');
             }
+
+#topclass {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 	</style>
-    <div style="background-image:url('./PVZ2GRIDITEMS_files/SettingsPattern.png');border-radius:5px;border:2px solid #2B466A; width: 420px; height: 250px;margin-top: 10px;">
+     <img src="./PVZ2GRIDITEMS_files/top.png" style="position: fixed;bottom: 20px;right: 30px;cursor: pointer;width: 100px;height: 100px;" onclick="gototop()">
+    <div style="background-image:url('./PVZ2GRIDITEMS_files/SettingsPattern.png');border-radius:5px;border:2px solid #2B466A; width: 420px; height: 250px;margin-top: 10px;padding-top: 5px;">
     <p2 style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 28px;">Event Settings: </p2>
     <p style="margin-top:5px;margin-left: 10px;font-family: pvz2;font-size: 20px;"> Wave Number:
     <input type="text" id="wavenumber" style="width: 5%" value="">
@@ -107,6 +121,16 @@ textarea {
      <input type="checkbox" id="boosttile1000" style="width: 20px" value="">
 </div>
      <p> </p>
+    <button onclick="CompileLevelXML()">Finished</button>
+    <p> </p>
+    <button onclick="ShowArrays()">Toggle Seperate Arrays</button>
+    <p> </p>
+    <p> <textarea id="xml" rows="20" cols="50"></textarea> 
+    <textarea id="gravestonearray" rows="10" cols="50"></textarea>
+    </p>
+    <textarea id="output" rows="10" cols="50"></textarea> 
+     <p> </p> 
+     <div style="background-image:url('./PVZ2GRIDITEMS_files/InfoPattern.png');border-radius:5px;border:2px solid #2B466A; width: 520px; height: 4700px;margin-top: 10px;padding-top:10px;padding-left:10px">
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy.png" style="width: 50px; height: 78px">
      <input type="text" id="mummy" style="width: 3%" value="0">
      <img src="./PVZ2GRIDITEMS_files/packets_zombies/mummy_armor1.png" style="width: 40px; height: 78px">
@@ -684,15 +708,7 @@ textarea {
 <input type="text" id="general_caesar_phase2" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/general_caesar_phase3.png" style="width: 40px; height: 78px">
 <input type="text" id="general_caesar_phase3" style="width: 3%" value="0">
-    <p> </p>
-    <button onclick="CompileLevelXML()">Finished</button>
-    <p> </p>
-    <button onclick="ShowArrays()">Toggle Seperate Arrays</button>
-    <p> </p>
-    <p> <textarea id="xml" rows="20" cols="50"></textarea> 
-    <textarea id="gravestonearray" rows="10" cols="50"></textarea>
-    </p>
-    <textarea id="output" rows="10" cols="50"></textarea> 
+</div>
 
         <script type="text/javascript">
         var version = 1.0;
@@ -705,6 +721,12 @@ textarea {
         document.getElementById("output").value = "";
 		//document.getElementById("output").value = "###Don't forget to add### \"RTID\(Gravestones\@CurrentLevel\)\"\n\n";
         //document.getElementById("xml").value += "\{\n            \"aliases\"\: \[\n                \"Gravestones\"\n            \],\n            \"objclass\"\: \"GravestoneProperties\",\n            \"objdata\"\: \{\n                \"ForceSpawnData\"\: \[\n";
+
+        function gototop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 function toggleoutputvisibility() {
         var display = document.getElementById('output').style.display;
         if(display == "none")
