@@ -18,13 +18,15 @@ textarea {
  width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 	</style>
-    <textarea id="xml" rows="20" cols="50"></textarea> 
      <p> </p>
+    <button onclick="ShowArrays()">Toggle Seperate Arrays</button>
+    <p> </p>
     <button onclick="CompileLevelXML()">Finished</button>
+     <p> </p>
+     <textarea id="xml" rows="20" cols="50"></textarea> 
      <p> </p>
     <textarea id="output" rows="10" cols="50"></textarea> 
         <script type="text/javascript">
-        var version = 1.0;
         var eraser = 47;
         var powertile_alpha = 6;
         var powertile_beta = 2;
@@ -32,6 +34,7 @@ textarea {
         var powertile_delta = 4;
         var powertile_epsilon = 5;
         document.getElementById('output').style.display = "none";	
+        document.getElementById('xml').style.display = "none";   
         document.getElementById("xml").value = "";
 		document.getElementById("output").value = "###Don't forget to add### \"RTID\(FutureLinkedTileGroups\@CurrentLevel\)\"\n\n";
         var mouseOverSprite = document.createElement("img");
@@ -182,13 +185,19 @@ function ShowArrays() {
         var display = document.getElementById('xml').style.display;
         if(display == "none") {
         document.getElementById('xml').style.display = "block";
+        }
+        if(display == "block") {
+        document.getElementById('xml').style.display = "none";
+        }
     }
 function toggleoutputvisibility() {
         var display = document.getElementById('output').style.display;
         if(display == "none")
               document.getElementById('output').style.display = "block";
-     }
-        function CompileLevelXML() {
+}
+
+
+function CompileLevelXML() {
             document.getElementById("output").value = "###Don't forget to add### \"RTID\(FutureLinkedTileGroups\@CurrentLevel\)\"\n\n";
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
@@ -197,7 +206,7 @@ function toggleoutputvisibility() {
         document.getElementById("output").value += "\n                \]\n            \}\n        \},";
         console.log(allAddedItems);
 		}
-//Asuki says Hai!
+    
     </script>
     <style>
         p {
