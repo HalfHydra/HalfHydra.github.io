@@ -559,10 +559,7 @@ textarea {
 <input type="text" id="summer_flag" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/summer_bug.png" style="width: 50px; height: 78px">
 <input type="text" id="summer_bug" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/summer_bug_armor1.png" style="width: 50px; height: 78px">
-<input type="text" id="summer_bug_armor1" style="width: 3%" value="0">
-<img src="./PVZ2GRIDITEMS_files/packets_zombies/summer_bug_armor2.png" style="width: 50px; height: 78px">
-<input type="text" id="summer_bug_armor2" style="width: 3%" value="0">
+
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/summer_imp.png" style="width: 50px; height: 78px">
 <input type="text" id="summer_imp" style="width: 3%" value="0">
 <img src="./PVZ2GRIDITEMS_files/packets_zombies/summer_gargantuar.png" style="width: 50px; height: 78px">
@@ -1093,8 +1090,7 @@ var summer_armor1 = document.getElementById("summer_armor1").value;
 var summer_armor2 = document.getElementById("summer_armor2").value;
 var summer_flag = document.getElementById("summer_flag").value;
 var summer_bug = document.getElementById("summer_bug").value;
-var summer_bug_armor1 = document.getElementById("summer_bug_armor1").value;
-var summer_bug_armor2 = document.getElementById("summer_bug_armor2").value;
+
 var summer_imp = document.getElementById("summer_imp").value;
 var summer_gargantuar = document.getElementById("summer_gargantuar").value;
 var bighead = document.getElementById("bighead").value;
@@ -2218,16 +2214,7 @@ if(summer_bug != 0){
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "summer_bug" + after;
         }
     }
-if(summer_bug_armor1 != 0){
-            for(x=0; x < summer_bug_armor1; x++) {
-            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "summer_bug_armor1" + after;
-        }
-    }
-if(summer_bug_armor2 != 0){
-            for(x=0; x < summer_bug_armor2; x++) {
-            document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "summer_bug_armor2" + after;
-        }
-    }
+
 if(summer_imp != 0){
             for(x=0; x < summer_imp; x++) {
             document.getElementById("xml").value += (document.getElementById("xml").value.endsWith("}") ? ",\n" : "") + next + "summer_imp" + after;
