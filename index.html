@@ -216,8 +216,11 @@
       <img src="./Images/Reverse.png" style="width: 100px; height: 100px;transform: scale(0.75, 0.75);margin-left: 35px;margin-top: 2px;"> </img>
       <h2 style="position: absolute; left: 50%;margin-top: -85px;color:white;margin-left: -5vh;">Go Back</h2>
       <h2 style="position: absolute; left: 50%;margin-left: -178px;margin-top: -55px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> Takes your back to where you came from. </h2>
+      <img src="./Images/listview.png" style="width: 100px; height: 100px;transform: scale(0.75, 0.75);margin-left: 420px;margin-top: 2px;" onclick="listview()"> </img>
+      <img src="./Images/gridview.png" style="width: 100px; height: 100px;transform: scale(0.75, 0.75);margin-left: -20px;margin-top: 2px;" onclick="gridview()"> </img>
   </div>
 
+<div id="listview">
 <a href="./PVZ2Tools/PVZ2GRIDITEMS.html" target="_blank">
   <div style="background:#FF0505;border-radius:5px;border:2px solid #2B466A; width: 100%; height: 100%;margin-top: 40px;background-image: url('./Images/grasstile.png');background-repeat: repeat;background-color: #000;text-shadow:
       -2px -2px 0 #000,
@@ -313,6 +316,37 @@
       <h2 style="position: absolute; left: 50%;margin-left: -128px;margin-top: -122px;width: 340px;font-size: 18px;line-height: 1.15;color:white;font-family: p5;"> This tool helps you make frost wind wave events.</h2>
   </div>
   </a>
+</div>
+<div id="gridview">
+<a href="./PVZ2Tools/PVZ2GRIDITEMS.html" target="_blank">
+
+<img src="./Images/tool1.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 115px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+
+<a href="./PVZ2Tools/PVZ2GRAVEITEMPAWNS.html" target="_blank">
+<img src="./Images/tool2.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+  </a>
+  <a href="./PVZ2Tools/PVZ2GRAVEZOMBIESPAWNS.html" target="_blank">
+<img src="./Images/tool3.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+<a href="./PVZ2Tools/PVZ2MOLDCOLONIES.html" target="_blank">
+<img src="./Images/tool4.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 115px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+<a href="./PVZ2Tools/PVZ2PLANTPLACEMENT.html" target="_blank">
+<img src="./Images/tool5.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+<a href="./PVZ2Tools/PVZ2POWERTILES.html" target="_blank">
+<img src="./Images/tool6.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+<a href="./PVZ2Tools/PVZ2STORMS.html" target="_blank">
+<img src="./Images/tool7.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 115px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+<a href="./PVZ2Tools/PVZ2WIND.html" target="_blank">
+<img src="./Images/tool8.png" style="width: 150px; height: 150px;transform: scale(1.0, 1.0);margin-left: 35px;margin-top: 30px;margin-bottom: 30px;"> </img>
+</a>
+
+</div>
+
 
 </div>
 
@@ -367,6 +401,18 @@
 
     document.getElementById("pvz2").style.display = "none";
     document.getElementById("metanav").style.display = "none";
+    var dontgoback = 0;
+    function listview() {
+      document.getElementById("gridview").style.display = "none";
+      document.getElementById("listview").style.display = "block";
+      dontgoback = 1;
+    }
+    function gridview() {
+      document.getElementById("listview").style.display = "none";
+      document.getElementById("gridview").style.display = "block";
+      dontgoback = 1;
+    }
+
     function showpvz2() {
     	document.getElementById("main").style.display = "none";
     	document.getElementById("pvz2").style.display = "block";
@@ -377,9 +423,14 @@
     }
 
     function goback() {
+      if(dontgoback == 0){
     	document.getElementById("main").style.display = "block";
     	document.getElementById("pvz2").style.display = "none";
     	document.getElementById("metanav").style.display = "none";
+      }
+      if(dontgoback == 1){
+        dontgoback = 0;
+      }
     }
 
     function proceed() {
