@@ -11,10 +11,10 @@
                 "LevelNumber": 14,
                 "Loot": "RTID(DefaultLoot@LevelModules)",
                 "Modules": [
-                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(StandardIntro@CurrentLevel)",
                     "RTID(DefaultSunDropper@LevelModules)",
                     "RTID(ZombiesDeadWinCon@LevelModules)",
-                    "RTID(IceageMowers@LevelModules)",
+                    "RTID(IceageMower@LevelModules)",
                     "RTID(SeedBank@CurrentLevel)",
                     "RTID(ChallengeModule@CurrentLevel)",
                     "RTID(DefaultZombieWinCondition@LevelModules)",
