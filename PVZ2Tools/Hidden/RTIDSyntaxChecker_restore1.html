@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<body background="../Images/InfoPattern.png">
+</style>
+<div>
+    <div style="margin-top: 15px">
+        <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
+    </p></div>
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; font-size: 20px; font-weight: bold;
+}
+	</style>
+  </select>
+
+    <p> Input JSON: </p>
+    <textarea id="xml" rows="20" cols="50"></textarea> 
+    <textarea id="log" rows="20" cols="50"></textarea> 
+     <p> </p>
+    <button onclick="seperateDataBanks()">Add Sword Skill</button>
+    <p> </p>
+    <!--<textarea id="output" rows="20" cols="50"></textarea> -->
+    <p> Modules List: </p>
+    <textarea id="moduleslist" rows="20" style="width: 215px"></textarea>
+    <textarea id="modulesloclist" rows="20" style="width: 215px"></textarea>
+    <textarea id="modulesrtidlist" rows="20" style="width: 325px"></textarea>   
+    <p> Objects List: </p>
+    <textarea id="objectslist" rows="20" style="width: 215px"></textarea> 
+    <p> Zombies RTID List: </p>
+    <textarea id="zombiesrtidlist" rows="20" style="width: 325px"></textarea> 
+    <p> Zombies List: </p>
+    <textarea id="zombieslist" rows="20" style="width: 215px"></textarea> 
+    <p> Zombies Location List: </p>
+    <textarea id="zombiesloclist" rows="20" style="width: 215px"></textarea> 
+    <script type="text/javascript">
+
+    document.getElementById("xml").value = "";
+
+    var modules = [];
+    var modulesloc = [];
+    var objects = [];
+    var wavesandevents = [];
+    var zombies = [];
+    var zombiesloc = [];
+    var zombiesrtid = [];
+    var levelmodules = ["TutorialStage","JoustStage","JoustDarkMowers","TutorialMowers","EgyptTutorialMowers","HeroesStage","RiftStage","RiftPirateStage","RiftStageZcorp","RiftStageScore","FrontLawnStage","FrontLawnMowers","EgyptStage","EgyptStageNoPowerUps","EgyptMowers","PirateStage","PirateMowers","WestStage","WestMowers","FutureStage","FutureMowers","DarkStage","DarkMowers","BeachStage","BeachStageNoPowerUps","BeachMowers","LostCityStage","LostCityStageNoPowerUps","LostCityNightsStage","LostCityMowers","IceageStage","IceageStageNoPowerUps","IceageMowers","IceageZombossMowers","EightiesStage","MusicalJams","EightiesMowers","EightiesZombossMowers","DinoStage","DinoMowers","ModernStage","ModernStageNoPowerUps","ModernMowers","StandardIntro","StandardRiftIntro","ZombossIntro","EightiesZombossIntro","LevelOfTheDayIntro","BeghouledIntro","BeghouledRiftIntro","DefaultSeedBank","ZombiesDeadWinCon","TutorialPeashooterDeath","DangerRoomModule","LevelOfTheDayModule","DefaultZombieWinCondition","JoustZombieWinCondition","FadeWithMessageFailureOutro","ZombiesAteYourBrainsOutro","VictoryOutro","ZombossVictoryOutro","LevelOfTheDayOutro","SaveMowers","SunBombs","SpeedyZombies","IntroCinemaModule","DefaultLoot","WhackLoot","NoLoot","DangerRoomLoot","DefaultLootTable","SpawnGravestoneZombiesOnFlagWaves","RevertedSunDropper","RevertedWaveManagerProperties","DefaultNotifications","LeprechaunCoinOverride","VaseBreakerFlow","VaseBreakerArcade","BeghouledArcade","CoreLoopRewardsLevelModule","LevelGenSandstorm_1Wave","LevelGenSandstorm_2Waves","LevelGenSandstorm_3Waves","LevelGenSandstorm_4Waves","LevelGenSandstorm_5Waves","LevelGenSandstorm_6Waves","LevelGenGravestoneEvent","LevelGenRaidingParty_1Wave","LevelGenRaidingParty_2Waves","LevelGenRaidingParty_3Waves","LevelGenRaidingParty_4Waves","LevelGenSpiderRain_1Wave","LevelGenSpiderRain_2Waves","LevelGenSpiderRain_3Waves","LevelGenSpiderRain_4Waves","LevelGenSpiderRain_5Waves","LevelGenParachuteRain_1Wave","LevelGenParachuteRain_2Waves","LevelGenParachuteRain_3Waves","LevelGenParachuteRain_4Waves","LevelGenParachuteRain_5Waves","LevelGenFreezingWind","LevelGenFreezingWind_2to4Lanes","LevelGenFreezingWind_3Lanes","LevelGenDinos","LevelGenPortals","LevelGenPlanks","LevelGenPlanks_2to5","LevelGenPlanks_2to3","LevelGenTide","LevelGenJams","LevelGenGravestones","LevelGenRailcarts","LevelGenPowerTiles","LevelGenPlantIceBlocks","LevelGenZombieIceBlocks","LevelGenIceFloes","LevelGenKiddiePools","LevelGenTraps","TrapsPattern1","TrapsPattern2","LevelGenGoldTiles","GoldTilesPattern1","GoldTilesPattern2","GoldTilesPattern3","GoldTilesPattern4","GoldTilesPattern5","GoldTilesPattern6","GoldTilesPattern7","GoldTilesPattern8","GoldTilesPattern9","GoldTilesPattern10","GoldTilesPattern11","GoldTilesPattern12","GoldTilesPattern13","GoldTilesPattern14","LevelGenMoldChallenge","LevelGenZombieDistanceChallenge","LevelGenProtectThePlantsChallenge","DefaultSecurityGourds","JoustOutro","RiftOutro","DefaultPointOfLoss","JoustPointOfLoss","OttoBotBoardStateObserver","WeakEnchantmintStrongFilamint","StrongPeppermint","StrongFilamint","WeakFilamint","NoFilamint","Boosterama","TreadmillGeneralZombie3MinModule","TreadmillGeneralZombie90sModule","ZmechGeneralZombie3MinModule","CaesarGeneralZombie3MinModule","CakeTankGeneralZombieModule","SeedPacketHalfTimeModule","BirthdaySongModule","SlowNonDarkPlantCooldown","VerySlowSunDropper","SlowSunDropper","DefaultSunDropper","FastSunDropper","VeryFastSunDropper","DefaultBoardTimer","DefaultZombossRiftPointOfLoss","RiftBeatTheLevelChallenge","ArenaScoreTiles"];
+
+
+    function seperateDataBanks(){
+        var input = document.getElementById('xml').value;
+        //document.getElementById('xml').value = input.replace(/\s/g, '');
+        //console.log(input);
+        //Modules
+        getModules(input);
+        //input = document.getElementById('xml').value;
+        //input = input.replace(/\s/g, '');
+        getObjects(input);
+        //console.log(input.replace(/\s/g, ''))
+        getZombies(input);
+
+        checkModules();
+    }
+
+    function getModules(input){
+        input = input.replace(/\s/g, '');
+        var moduleStart = input.indexOf("\"Modules\":[");
+        //if(moduleStart == -1){
+        //    moduleStart = input.indexOf("\"Modules\":[");
+        //}
+        //console.log(moduleStart);
+        input = input.substring((moduleStart + 11));
+        //console.log(input);
+        var moduleEnd = input.indexOf("]");
+        //console.log(moduleEnd);
+        input = input.substring(0, (moduleEnd));
+        console.log(input);
+
+        var rtidCount = (input.match(/RTID/g) || []).length;
+        //console.log(rtidCount);
+
+        var splitter = 0;
+        var splitterat = 0;
+        var splitterquote = 0;
+        var cutInput = input + "@";
+        for(var i=0; i<rtidCount; i++){
+            splitter = cutInput.indexOf("RTID");
+            //splitter2 = cutInput.indexOf("@");
+            //splitter3 = cutInput.indexOf(')"');
+            console.log(cutInput);
+            //console.log("[" + i + "] Splitter2: " + splitter2);
+            //console.log("[" + i + "] Splitter3: " + splitter3);
+            //if(splitter3 < splitter2){
+            //    alert('Error! Search for ' + cutInput.substring(0,splitter2));
+            //}
+            cutInput = cutInput.substring((splitter + 5));
+            splitter2 = cutInput.indexOf("@");
+            splitter3 = cutInput.indexOf(')"');
+            modules[i] = cutInput.substring(0,splitter2)
+            modulesloc[i] = cutInput.substring((splitter2 + 1),splitter3);
+            console.log("[" + i + "] Splitter2: " + splitter2);
+            console.log("[" + i + "] Splitter3: " + splitter3);
+            if(splitter3 < splitter2){
+                //alert('Error in Modules! Search for ' + cutInput.substring(0,splitter2));
+                modules[i] = cutInput.substring(0,splitter3);
+                modulesloc[i] = cutInput.substring(0,splitter3);
+                console.log('error module input: ' + modules[i]);
+            }
+            //console.log(cutInput);
+            //console.log(modules[i]);
+        }
+        console.log("LIST MODULES:");
+        for(var i=0;i<modules.length;i++){
+            console.log(modules[i]);
+            document.getElementById('moduleslist').value += modules[i] + "\n";
+            document.getElementById('modulesloclist').value += modulesloc[i] + "\n";
+            document.getElementById('modulesrtidlist').value += "\"RTID(" + modules[i] + "@" + modulesloc[i] + ")\"" + "\n";
+        }
+    }
+
+    function checkModules(){
+        for(var i=0;i<modules.length;i++){
+            var valid = false;
+            switch(modulesloc[i]){
+                case "LevelModules":
+                valid = false;
+                for(var x=0;x<levelmodules.length;x++){
+                    if(modules[i] == levelmodules[x]){
+                        valid = true;
+                    }
+                }
+                if(valid == false){
+                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! Did you typo? The module is not defined in the levelmodules.\n"
+                }
+                break;
+                case "CurrentLevel":
+                valid = false;
+                for(var n=0;n<objects.length;n++){
+                    if(modules[i] == objects[n]){
+                        valid = true;
+                    }
+                }
+                if(valid == false){
+                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module\""  + modules[i] + "\" is not defined in the level!\n"
+                }
+                break;
+                default:
+                document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" errors because the syntax is incorrect.\n"
+            }
+        }
+    }
+
+    function getObjects(input){
+        //var moduleStart = input.indexOf("\"Modules\": [");
+        //console.log(moduleStart);
+        //input = input.substring((moduleStart + 13));
+        //console.log(input);
+        //var moduleEnd = input.indexOf("]");
+        //console.log(moduleEnd);
+        //input = input.substring(0, (moduleEnd -16));
+       // console.log(input);
+        input = input.replace(/\s/g, '');
+        var objectCount = (input.match(/aliases/g) || []).length;
+        console.log(objectCount);
+
+        var splitter = 0;
+        var cutInput = input;
+        for(var i=0; i<objectCount; i++){
+            splitter = cutInput.indexOf('aliases":["');
+            //console.log(splitter);
+            cutInput = cutInput.substring((splitter + 11));
+            objects[i] = cutInput.substring(0,cutInput.indexOf('"'))
+            //console.log(cutInput);
+            //console.log(modules[i]);
+        }
+        console.log("LIST OBJECTS:");
+        for(var i=0;i<objects.length;i++){
+            console.log(objects[i])
+            document.getElementById('objectslist').value += objects[i] + "\n";
+        }
+    }
+
+    function getZombies(input){
+        input = input.replace(/\s/g, '');
+        var zombieStart = input.indexOf("\"Zombies\":[");
+        //console.log(moduleStart);
+        input = input.substring((zombieStart + 11));
+        console.log(input);
+        var zombieEnd = input.indexOf("]");
+        //console.log(moduleEnd);
+        input = input.substring(0, (zombieEnd - 1));
+        console.log(input);
+
+        var rtidCount = (input.match(/RTID/g) || []).length;
+        console.log(rtidCount);
+
+        
+        var splitter = 0;
+        var splitterat = 0;
+        var splitterquote = 0;
+        var cutInput = input + "@";
+        var zombieloc = "";
+        for(var i=0; i<rtidCount; i++){
+            splitter = cutInput.indexOf("RTID");
+            splitter2 = cutInput.indexOf("@");
+            splitter3 = cutInput.indexOf(')"');
+            console.log("[" + i + "] Splitter2: " + splitter2);
+            console.log("[" + i + "] Splitter3: " + splitter3);
+            //if(splitter3 < splitter2){
+            //    alert('Error! Search for ' + cutInput.substring(0,splitter2));
+            //}
+            console.log(cutInput);
+            //zombiesrtid[i] =  "\"RTID(" + cutInput.substring(0, (cutInput.indexOf(')"')+2));
+            cutInput = cutInput.substring((splitter + 5));
+            splitter2 = cutInput.indexOf("@");
+            splitter3 = cutInput.indexOf(')"');
+            zombies[i] = cutInput.substring(0,splitter2);
+            zombiesloc[i] = cutInput.substring((splitter2 + 1),splitter3);
+            if(splitter3 < splitter2){
+                alert('Error in Zombies! Search for ' + cutInput.substring(0,splitter2));
+            }
+            //console.log(cutInput);
+            //console.log(modules[i]);
+        }
+        console.log("LIST ZOMBIES:");
+        for(var i=0;i<zombies.length;i++){
+            console.log(zombies[i]);
+            document.getElementById('zombieslist').value += zombies[i] + "\n";
+            document.getElementById('zombiesloclist').value += zombiesloc[i] + "\n";
+            document.getElementById('zombiesrtidlist').value += "\"RTID(" + zombies[i] + "@" + zombiesloc[i] + ")\"" + "\n";
+        }
+    }
+
+    function CompileLevelXML() {
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
+        document.getElementById("output").value += str;
+	}
+
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body></html>

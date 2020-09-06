@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body background="../Images/InfoPattern.png">
+</style>
+<div>
+    <div style="margin-top: 15px">
+        <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
+    </p></div>
+    <style type="text/css">
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; font-size: 20px; font-weight: bold;
+}
+	</style>
+  </select>
+
+    <p> Zombie Typenames: </p>
+    <textarea id="xml" rows="20" cols="50"></textarea> 
+     <p> </p>
+    <button onclick="AddSwordSkill()">Add Sword Skill</button>
+    <p> </p>
+    <!--<textarea id="output" rows="20" cols="50"></textarea> -->
+    <p> HTML: </p>
+    <textarea id="output_necro_html" rows="20" cols="50"></textarea> 
+    <p> Variables: </p>
+    <textarea id="output_necro_variables" rows="20" cols="50"></textarea> 
+    <p> Ifs: </p>
+    <textarea id="output_necro_ifs" rows="20" cols="50"></textarea> 
+    <!--<p> Storms HTML: </p>
+    <textarea id="output_storms_html" rows="20" cols="50"></textarea> 
+    <p> Storms Variables: </p>
+    <textarea id="output_storms_variables" rows="20" cols="50"></textarea> 
+    <p> Storms Ifs: </p>
+    <textarea id="output_storms_ifs" rows="20" cols="50"></textarea>-->
+    <script type="text/javascript">
+
+    document.getElementById("xml").value = "";
+    var zamount = 0;
+    var zombies = [];
+
+    function AddSwordSkill(){
+        var text = document.getElementById("xml").value + ",";
+        zombies = [];
+        var first;
+        var last;
+        zamount = 0;
+        for(var i=0; i<text.length;i++) {
+            if (text[i] === ","){ 
+                zamount++;
+            }
+        }
+
+        for(var i = 0; i<zamount; i++){
+            splitter = text.indexOf(",");
+            console.log(splitter);
+            zombies.push(text.substring(0, splitter));
+            text = text.substring(splitter + 1)
+        }
+        for(var i = 0; i<zamount;i++){
+            console.log("[" + i + "] " + zombies[i]);
+        }
+        necromancyHTML();
+        necromancyVar();
+        necromancyIfs();
+        //stormsHTML();
+        //stormsVar();
+        //stormsIfs();
+    }
+
+    function necromancyHTML(){
+        document.getElementById("output_necro_html").value = "";
+        for(var i=0; i<zamount;i++){
+        document.getElementById("output_necro_html").value += "<img src=\"./PVZ2GRIDITEMS_files/packets_zombies/" + zombies[i] + ".png\" style=\"width: 50px; height: 78px\">\n";
+        document.getElementById("output_necro_html").value += "<input type=\"text\" id=\"" + zombies[i] + "\" style=\"width: 3%\" value=\"0\">\n";
+        }
+    }
+
+    function necromancyVar(){
+        document.getElementById("output_necro_variables").value = "";
+        for(var i=0; i<zamount;i++){
+        document.getElementById("output_necro_variables").value += "var " + zombies[i] + " = document.getElementById(\"" + zombies[i] + "\").value;\n";
+        }
+    }
+
+    function necromancyIfs(){
+        document.getElementById("output_necro_ifs").value = "";
+        for(var i=0; i<zamount;i++){
+        document.getElementById("output_necro_ifs").value += "if(" + zombies[i] + " != 0){\n            for(x=0; x < " + zombies[i] + "; x++) {\n            document.getElementById(\"xml\").value += (document.getElementById(\"xml\").value.endsWith(\"}\") ? \",\\n\" : \"\") + next + \"" + zombies[i] + "\" + after;\n        }\n    }\n";
+        }
+    }
+
+    function stormsHTML(){
+        document.getElementById("output_storms_html").value = "";
+        for(var i=0; i<zamount;i++){
+        document.getElementById("output_storms_html").value += "<img src=\"./PVZ2GRIDITEMS_files/packets_zombies/" + zombies[i] + ".png\" style=\"width: 50px; height: 78px\">\n";
+        document.getElementById("output_storms_html").value += "<input type=\"text\" id=\"" + zombies[i] + "\" style=\"width: 3%\" value=\"0\">\n";
+        }
+    }
+
+    function stormsVar(){
+
+    }
+
+    function stormsIfs(){
+
+    }
+
+    function CompileLevelXML() {
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
+        document.getElementById("output").value += str;
+	}
+
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body></html>
