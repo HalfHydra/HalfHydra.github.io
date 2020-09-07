@@ -1,0 +1,870 @@
+{
+    "#comment": "Eighties 27",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_EIGHTIES]",
+                "LevelNumber": 27,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(EightiesMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)"
+                ],
+                "Name": "[EIGHTIES_LEVEL_NAME]",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(EightiesStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "concealmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "ailmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "armamint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "bombardmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "containmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "concealmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "ailmint"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "armamint"
+                    }
+                ],
+                "SelectionMethod": "preset"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": -79,
+                        "StartingPoints": -199,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -49,
+                        "StartingPoints": -199,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -19,
+                        "StartingPoints": -199,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {},
+                    {
+                        "PointIncrementPerWave": 20,
+                        "StartingPoints": 100,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 40,
+                        "StartingPoints": 200,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 60,
+                        "StartingPoints": 400,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 5,
+                "WaveCount": 10,
+                "WaveSpendingPointIncrement": 150,
+                "WaveSpendingPoints": 200,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_punk"
+                ],
+                "Zombies": [
+                    {
+        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_juggler@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+},
+{
+        "Type": "RTID(pharaoh@ZombieTypes)"
+},
+{
+        "Type": "RTID(explorer@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_troglobite@ZombieTypes)"
+},
+{
+        "Type": "RTID(cannon@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_imp@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+        "Type": "RTID(dino_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(west_bull@ZombieTypes)"
+},
+{
+        "Type": "RTID(ra@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_hunter@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_bully@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+        "Type": "RTID(newspaper_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(egypt_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(swashbuckler@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_octopus@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+        "Type": "RTID(prospector@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_excavator@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_bug@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(football_mech@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_armor2@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_armor3@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_armor3@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_glitter@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_surfer@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_flag@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_pop"
+                ],
+                "Zombies": [
+                    {
+        "Type": "RTID(beach_surfer@ZombieTypes)"
+},
+{
+        "Type": "RTID(pelican@ZombieTypes)"
+},
+{
+        "Type": "RTID(vase_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(egypt_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_8bit@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(west_bullrider@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_armor1@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+        "Type": "RTID(lostcity_impporter@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_weasel@ZombieTypes)"
+},
+{
+        "Type": "RTID(cannon@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_mc@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_captain@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_8bit"
+                ],
+                "Zombies": [
+                    {
+        "Type": "RTID(lostcity_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(pharaoh@ZombieTypes)"
+},
+{
+        "Type": "RTID(seagull@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_boombox@ZombieTypes)"
+},
+{
+        "Type": "RTID(pelican@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "NotificationEvents": [
+                    "jam_rap"
+                ],
+                "Zombies": [
+                   {
+        "Type": "RTID(lostcity_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(pharaoh@ZombieTypes)"
+},
+{
+        "Type": "RTID(seagull@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_boombox@ZombieTypes)"
+},
+{
+        "Type": "RTID(pelican@ZombieTypes)"
+}
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+        "Type": "RTID(explorer@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(camel_manyhump@ZombieTypes)"
+},
+{
+        "Type": "RTID(chicken@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_armor3@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_jetpack_disco@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(modern_allstar@ZombieTypes)"
+},
+{
+        "Type": "RTID(vase_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark@ZombieTypes)"
+},
+{
+        "Type": "RTID(football_mech@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_punk@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_bully@ZombieTypes)"
+},
+{
+        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(mech_cone@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_wizard@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_hunter@ZombieTypes)"
+},
+{
+        "Type": "RTID(egypt_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(prospector@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+},
+{
+        "Type": "RTID(cannon@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_flag_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_excavator@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_glitter@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_arcade@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(chicken@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fisherman@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity@ZombieTypes)"
+},
+{
+        "Type": "RTID(swashbuckler@ZombieTypes)"
+},
+{
+        "Type": "RTID(chicken@ZombieTypes)"
+},
+{
+        "Type": "RTID(modern_balloon@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_octopus@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_snorkel@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_glitter@ZombieTypes)"
+},
+{
+        "Type": "RTID(mummy_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_boombox@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_8bit@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_armor2@ZombieTypes)"
+},
+{
+        "Type": "RTID(modern_balloon@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(ra@ZombieTypes)"
+},
+{
+        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_armor3@ZombieTypes)"
+},
+{
+        "Type": "RTID(dark_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_dodo@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties_punk@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+},
+{
+        "Type": "RTID(explorer_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(pirate_gargantuar@ZombieTypes)"
+},
+{
+        "Type": "RTID(eighties@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_impporter@ZombieTypes)"
+},
+{
+        "Type": "RTID(future_armor1@ZombieTypes)"
+},
+{
+        "Type": "RTID(beach_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(dino_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(egypt_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_imp@ZombieTypes)"
+},
+{
+        "Type": "RTID(explorer@ZombieTypes)"
+},
+{
+        "Type": "RTID(lostcity_flag@ZombieTypes)"
+},
+{
+        "Type": "RTID(modern_balloon@ZombieTypes)"
+},
+{
+        "Type": "RTID(iceage_weasel@ZombieTypes)"
+},
+{
+        "Type": "RTID(explorer_veteran@ZombieTypes)"
+},
+{
+        "Type": "RTID(tutorial_armor2@ZombieTypes)"
+}
+                ]
+            }
+        }
+    ],
+    "version": 1
+}
