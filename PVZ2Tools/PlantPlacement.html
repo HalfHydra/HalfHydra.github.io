@@ -163,7 +163,30 @@
 textarea {
  width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+@font-face {
+            font-family: pvz2;
+            src: url('./Assets/pvz2.ttf');
+            }
+#fireinput {
+            -webkit-appearance: none;
+            width: 30px;
+            height: 30px;
+            background: #34547F;
+            border-radius: 5px;
+            border: 2px solid #2B466A;
+        }
+        
+#fireinput:checked {
+            background: url('./Assets/UI/Checked.png');
+            background-size: 47px 47px;
+        }
     </style>
+    <div style="background-image:url('./Assets/UI/InfoPattern.png');border-radius:5px;border:2px solid #2B466A; width: 400px; height: 95px;margin-top: 10px;">
+    	<p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 380px; height: 77px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/fire.png" style="margin-left:10px;margin-right:5px;width: 60px; height: 80px;vertical-align:middle" class="inline" align="top">&nbsp;Set plants ON FIRE.  
+            <input type="checkbox" id="changefire" class="fireinput" oninput="changefire()" style="vertical-align:middle;float: right;margin-right: 20px;margin-top: 15px;width: 50px;height: 50px;" onclick="">
+        </p>
+    </div>
+    <p> </p>
     <textarea id="xml" rows="20" cols="50"></textarea> 
      <p> </p>
     <button onclick="CompileLevelXML()">Finished</button>
@@ -174,6 +197,7 @@ textarea {
         var version = 1.0;
         var eraser = 547;
         var iceblock = 548;
+        var isFire = false;
         var array = new Array();
         document.getElementById('output').style.display = "none";   
         document.getElementById("xml").value = "";
@@ -321,16 +345,29 @@ textarea {
      }
 function toggleoutputvisibility() {
         var display = document.getElementById('output').style.display;
-        if(display == "none")
+        if(display == "none"){
               document.getElementById('output').style.display = "block";
         }
+    }
+        function changefire(){
+        var on = document.getElementById('changefire');
+        if(on.checked == true){
+            isFire = true;
+        } else {
+            isFire = false;
+        }
+    }
         function CompileLevelXML() {
     document.getElementById("output").value = "###Don't forget to add### \"RTID\(FrozenPlantPlacement\@CurrentLevel\)\"\n\n";
     var str = document.getElementById("xml").value;
     toggleoutputvisibility();
         document.getElementById("output").value += "        \{\n            \"aliases\"\: \[\n                \"FrozenPlantPlacement\"\n            \],\n            \"objclass\"\: \"InitialPlantProperties\",\n            \"objdata\"\: {\n                \"InitialPlantPlacements\"\: \[\n"
         document.getElementById("output").value += str;
-        document.getElementById("output").value += "\n                \]\n            \}\n        \},";
+        document.getElementById("output").value += "\n                \]"
+        if(isFire == true){
+        	document.getElementById("output").value += ",\n                \"IsInitialIntensiveCarrotPlacements\": true";
+        }
+        document.getElementById("output").value += "\n            \}\n        \},";
         console.log(allAddedItems);
         }
     </script>
