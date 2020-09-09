@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <body background="./Assets/UI/InfoPattern.png">
+<body background="./Assets/UI/InfoPattern.png">
 </style>
 <div>
     <div style="margin-top: 15px">
-        <p id="p1" class="paragraph1"></p>
-        <p id="p2" class="paragraph1"></p>
-    </div>
+        <p id="p1" class="paragraph1"></p><p id="p2" class="paragraph1">
+    </p></div>
     <style type="text/css">
-        textarea {
-            width: 410px;
-            height: 250px;
-            font-size: 12px;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-        }
-
-        p {
-            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        @font-face {
+textarea {
+ width: 410px; height: 250px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; font-size: 20px; font-weight: bold;
+}
+@font-face {
             font-family: pvz2;
             src: url('./Assets/pvz2.ttf');
-        }
-
-        input[type='checkbox'] {
+            }
+input[type='checkbox'] {
             -webkit-appearance: none;
             width: 30px;
             height: 30px;
@@ -34,33 +25,30 @@
             border-radius: 5px;
             border: 2px solid #2B466A;
         }
-
+        
         input[type='checkbox']:checked {
             background: url('./Assets/UI/Checked.png');
             background-size: 25px 25px;
         }
-    </style>
-</select>
-<!-- change to 484px when it's time-->
-<p style="font-family:pvz2;font-size: 48px;margin-top:10px;margin-left:10px;margin-bottom: 10px;">Syntax Checker </p>
-<div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 390px; height: 304px;margin-top: 10px;">
-    <p style="font-family:pvz2;font-size: 36px;color: black;margin-top:10px;margin-left:10px;margin-bottom: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;">Extra Settings </p>
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
-        <img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">
-        &nbsp;[Recommended] Read Me
+	</style>
+  </select>
+  <!-- change to 484px when it's time-->
+  <p style="font-family:pvz2;font-size: 48px;margin-top:10px;margin-left:10px;margin-bottom: 10px;"> Syntax Checker </p>
+  <div style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 390px; height: 304px;margin-top: 10px;">
+    <p style="font-family:pvz2;font-size: 36px;color: black;margin-top:10px;margin-left:10px;margin-bottom: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;"> Extra Settings </p>
+
+    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;[Recommended] Read Me
             <input type="checkbox" id="help" oninput="changehelp()" style="vertical-align:middle;float: right;" onclick="">
-    </p>
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
-        <img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">
-        &nbsp;Input LevelModules.json
+        </p>
+
+    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input LevelModules.json
             <input type="checkbox" id="levelmodulesjsonimp" oninput="changelevelmodules()" style="vertical-align:middle;float: right;" onclick="">
-    </p>
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
-        <img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">
-        &nbsp;Input ZombieTypes.json
+        </p>
+
+    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input ZombieTypes.json
             <input type="checkbox" id="zombietypesjsonimp" oninput="changezombietypes()" style="vertical-align:middle;float: right;" onclick="">
-    </p>
-    <!--
+        </p>
+<!--
     <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input GridItemTypes.json
             <input type="checkbox" id="griditemtypesjsonimp" oninput="changegriditemtypes()" style="vertical-align:middle;float: right;" onclick="">
         </p>
@@ -69,83 +57,83 @@
             <input type="checkbox" id="planttypesjsonimp" oninput="changeplanttypes()" style="vertical-align:middle;float: right;" onclick="">
         </p>
 -->
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
-        <img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">
-        &nbsp;Input Custom LevelModules
+        <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input Custom LevelModules
             <input type="checkbox" id="customlevelmodulesimp" oninput="changecustomlevelmodules()" style="vertical-align:middle;float: right;" onclick="">
-    </p>
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
-        <img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">
-        &nbsp;Input Custom ZombieTypes
+        </p>
+
+        <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input Custom ZombieTypes
             <input type="checkbox" id="customzombietypesimp" oninput="changecustomzombietypes()" style="vertical-align:middle;float: right;" onclick="">
-    </p>
-    <!--<p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input Custom GridItemTypes
+        </p>
+
+        <!--<p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input Custom GridItemTypes
             <input type="checkbox" id="customgriditemtypesimp" oninput="changecustomgriditemtypes()" style="vertical-align:middle;float: right;" onclick="">
         </p>
 
         <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 350px; height: 37px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;"><img src="./Assets/UI/Written.png" style="margin-left:10px;margin-right:5px;width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Input Custom PlantTypes
             <input type="checkbox" id="customplanttypesimp" oninput="changecustomplanttypes()" style="vertical-align:middle;float: right;" onclick="">
         </p>-->
-</div>
-<div id="setting1" style="display:none;background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 584px;margin-top: 10px;">
-    <p style="font-family:pvz2;font-size: 36px;color: black;margin-top:10px;margin-left:10px;margin-bottom: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;">Extra Settings Help: </p>
-    <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 570px; height: 500px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">All of these settings are optional. All objects defined in the level do not need to be defined, as the tool will check for objects within the CurrentLevel. The importing json options are for when the game updates ABOVE 8.3.1, meaning the default lists inside the tool will become outdated. The importing json options can also be used for if you have custom modules/zombies
-    <!--/griditems/plants-->
-    defined in those jsons as part of a larger mod. The custom import options are for ease of use, if you have any zombies that you want to be defined and not error when the tool doesn't recognize them, add those there. If you don't want to extract/don't have the jsons for the latest update, add the new objects to the custom lists instead. For actual functional uses of the custom (non json) inputs, seperate each typename onto seperate lines without commas, or anything between the names. I hope this helps! -Hydra
+
+    </div>
+    <div id="setting1" style="display:none;background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 584px;margin-top: 10px;">
+        <p style="font-family:pvz2;font-size: 36px;color: black;margin-top:10px;margin-left:10px;margin-bottom: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;"> Extra Settings Help: </p>
+        <p style="font-family:pvz2;font-size: 28px;color: white;background:#4A75B2;width: 570px; height: 500px;margin-top: 10px;margin-left: 7px;margin-bottom:10px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;border-radius:5px;">
+            All of these settings are optional. All objects defined in the level do not need to be defined, as the tool will check for objects within the CurrentLevel. The importing json options are for when the game updates ABOVE 8.3.1, meaning the default lists inside the tool will become outdated. The importing json options can also be used for if you have custom modules/zombies<!--/griditems/plants--> defined in those jsons as part of a larger mod. The custom import options are for ease of use, if you have any zombies that you want to be defined and not error when the tool doesn't recognize them, add those there. If you don't want to extract/don't have the jsons for the latest update, add the new objects to the custom lists instead. For actual functional uses of the custom (non json) inputs, seperate each typename onto seperate lines without commas, or anything between the names. I hope this helps! -Hydra
         </p>
-</div>
-<div id="setting2" style="display:none">
-    <p>Input LevelModules JSON </p>
+    </div>
+
+    <div id="setting2" style="display:none">
+    <p> Input LevelModules JSON </p>
     <textarea id="modulesjsonlist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting3" style="display:none">
-    <p>Input ZombieTypes JSON: </p>
+    <p> Input ZombieTypes JSON: </p>
     <textarea id="zombietypesjsonlist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting4" style="display:none">
-    <p>Input GridItemTypes JSON: </p>
+    <p> Input GridItemTypes JSON: </p>
     <textarea id="griditemtypesjsonlist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting5" style="display:none">
-    <p>Input PlantTypes JSON: </p>
+    <p> Input PlantTypes JSON: </p>
     <textarea id="planttypesjsonlist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting6" style="display:none">
-    <p>Input Custom Modules: </p>
+    <p> Input Custom Modules: </p>
     <textarea id="custommoduleslist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting7" style="display:none">
-    <p>Input Custom Zombies: </p>
+    <p> Input Custom Zombies: </p>
     <textarea id="customzombieslist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting8" style="display:none">
-    <p>Input Custom Grid Items: </p>
+    <p> Input Custom Grid Items: </p>
     <textarea id="customgriditemslist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
 <div id="setting9" style="display:none">
-    <p>Input Custom Plants: </p>
+    <p> Input Custom Plants: </p>
     <textarea id="customplantslist" rows="20" style="resize: vertical;width: 315px"></textarea>
 </div>
-<p>Input Level JSON: </p>
-<textarea id="xml" rows="20" style="resize: vertical;width: 700px;height:425px;"></textarea>
-<p></p>
-<button onclick="seperateDataBanks()">Process JSONs</button>
-<p id='logtitle'>Output Log: </p>
-<textarea id="log" rows="20" style="resize: vertical;width: 700px"></textarea>
-<p></p>
-<!--<textarea id="output" rows="20" cols="50"></textarea> -->
-<p>Modules List: </p>
-<textarea id="moduleslist" rows="20" style="resize: vertical;width: 215px"></textarea>
-<textarea id="modulesloclist" rows="20" style="resize: vertical;width: 135px"></textarea>
-<textarea id="modulesrtidlist" rows="20" style="resize: vertical;width: 325px"></textarea>
-<p>Objects List: </p>
-<textarea id="objectslist" rows="20" style="resize: vertical;width: 215px"></textarea>
-<p>Zombies List: </p>
-<textarea id="zombieslist" rows="20" style="resize: vertical;width: 300px"></textarea>
-<textarea id="zombiesloclist" rows="20" style="resize: vertical;width: 215px"></textarea>
-<p>Zombies RTID List: </p>
-<textarea id="zombiesrtidlist" rows="20" style="resize: vertical;width: 400px"></textarea>
-<script type="text/javascript">
+
+    <p> Input Level JSON: </p>
+    <textarea id="xml" rows="20" style="resize: vertical;width: 700px;height:425px;"></textarea> 
+     <p> </p>
+    <button onclick="seperateDataBanks()">Process JSONs</button>
+    <p id='logtitle'> Output Log: </p>
+    <textarea id="log" rows="20"  style="resize: vertical;width: 700px"></textarea> 
+    <p> </p>
+    <!--<textarea id="output" rows="20" cols="50"></textarea> -->
+    <p> Modules List: </p>
+    <textarea id="moduleslist" rows="20" style="resize: vertical;width: 215px"></textarea>
+    <textarea id="modulesloclist" rows="20" style="resize: vertical;width: 135px"></textarea>
+    <textarea id="modulesrtidlist" rows="20" style="resize: vertical;width: 325px"></textarea>   
+    <p> Objects List: </p>
+    <textarea id="objectslist" rows="20" style="resize: vertical;width: 215px"></textarea> 
+    <p> Zombies List: </p>
+    <textarea id="zombieslist" rows="20" style="resize: vertical;width: 300px"></textarea> 
+    <textarea id="zombiesloclist" rows="20" style="resize: vertical;width: 215px"></textarea> 
+    <p> Zombies RTID List: </p>
+    <textarea id="zombiesrtidlist" rows="20" style="resize: vertical;width: 400px"></textarea> 
+    <script type="text/javascript">
 
     document.getElementById("xml").value = "";
 
@@ -161,99 +149,99 @@
     var zombiesobjlocarray = [];
     var zombiesolc = 0;
     var zombiesCount = 0;
-    var zombiesobjnames = [];
+    var zombiesobjnames =  [];
     //DEFAULTS ARE FROM 8.3.1
     var levelmodules = [];
     var zombietypes = [];
     var griditems = [];
     var planttypes = [];
-    var defaultlevelmodules = ["TutorialStage", "JoustStage", "JoustDarkMowers", "TutorialMowers", "EgyptTutorialMowers", "HeroesStage", "RiftStage", "RiftPirateStage", "RiftStageZcorp", "RiftStageScore", "FrontLawnStage", "FrontLawnMowers", "EgyptStage", "EgyptStageNoPowerUps", "EgyptMowers", "PirateStage", "PirateMowers", "WestStage", "WestMowers", "FutureStage", "FutureMowers", "DarkStage", "DarkMowers", "BeachStage", "BeachStageNoPowerUps", "BeachMowers", "LostCityStage", "LostCityStageNoPowerUps", "LostCityNightsStage", "LostCityMowers", "IceageStage", "IceageStageNoPowerUps", "IceageMowers", "IceageZombossMowers", "EightiesStage", "MusicalJams", "EightiesMowers", "EightiesZombossMowers", "DinoStage", "DinoMowers", "ModernStage", "ModernStageNoPowerUps", "ModernMowers", "StandardIntro", "StandardRiftIntro", "ZombossIntro", "EightiesZombossIntro", "LevelOfTheDayIntro", "BeghouledIntro", "BeghouledRiftIntro", "DefaultSeedBank", "ZombiesDeadWinCon", "TutorialPeashooterDeath", "DangerRoomModule", "LevelOfTheDayModule", "DefaultZombieWinCondition", "JoustZombieWinCondition", "FadeWithMessageFailureOutro", "ZombiesAteYourBrainsOutro", "VictoryOutro", "ZombossVictoryOutro", "LevelOfTheDayOutro", "SaveMowers", "SunBombs", "SpeedyZombies", "IntroCinemaModule", "DefaultLoot", "WhackLoot", "NoLoot", "DangerRoomLoot", "DefaultLootTable", "SpawnGravestoneZombiesOnFlagWaves", "RevertedSunDropper", "RevertedWaveManagerProperties", "DefaultNotifications", "LeprechaunCoinOverride", "VaseBreakerFlow", "VaseBreakerArcade", "BeghouledArcade", "CoreLoopRewardsLevelModule", "LevelGenSandstorm_1Wave", "LevelGenSandstorm_2Waves", "LevelGenSandstorm_3Waves", "LevelGenSandstorm_4Waves", "LevelGenSandstorm_5Waves", "LevelGenSandstorm_6Waves", "LevelGenGravestoneEvent", "LevelGenRaidingParty_1Wave", "LevelGenRaidingParty_2Waves", "LevelGenRaidingParty_3Waves", "LevelGenRaidingParty_4Waves", "LevelGenSpiderRain_1Wave", "LevelGenSpiderRain_2Waves", "LevelGenSpiderRain_3Waves", "LevelGenSpiderRain_4Waves", "LevelGenSpiderRain_5Waves", "LevelGenParachuteRain_1Wave", "LevelGenParachuteRain_2Waves", "LevelGenParachuteRain_3Waves", "LevelGenParachuteRain_4Waves", "LevelGenParachuteRain_5Waves", "LevelGenFreezingWind", "LevelGenFreezingWind_2to4Lanes", "LevelGenFreezingWind_3Lanes", "LevelGenDinos", "LevelGenPortals", "LevelGenPlanks", "LevelGenPlanks_2to5", "LevelGenPlanks_2to3", "LevelGenTide", "LevelGenJams", "LevelGenGravestones", "LevelGenRailcarts", "LevelGenPowerTiles", "LevelGenPlantIceBlocks", "LevelGenZombieIceBlocks", "LevelGenIceFloes", "LevelGenKiddiePools", "LevelGenTraps", "TrapsPattern1", "TrapsPattern2", "LevelGenGoldTiles", "GoldTilesPattern1", "GoldTilesPattern2", "GoldTilesPattern3", "GoldTilesPattern4", "GoldTilesPattern5", "GoldTilesPattern6", "GoldTilesPattern7", "GoldTilesPattern8", "GoldTilesPattern9", "GoldTilesPattern10", "GoldTilesPattern11", "GoldTilesPattern12", "GoldTilesPattern13", "GoldTilesPattern14", "LevelGenMoldChallenge", "LevelGenZombieDistanceChallenge", "LevelGenProtectThePlantsChallenge", "DefaultSecurityGourds", "JoustOutro", "RiftOutro", "DefaultPointOfLoss", "JoustPointOfLoss", "OttoBotBoardStateObserver", "WeakEnchantmintStrongFilamint", "StrongPeppermint", "StrongFilamint", "WeakFilamint", "NoFilamint", "Boosterama", "TreadmillGeneralZombie3MinModule", "TreadmillGeneralZombie90sModule", "ZmechGeneralZombie3MinModule", "CaesarGeneralZombie3MinModule", "CakeTankGeneralZombieModule", "SeedPacketHalfTimeModule", "BirthdaySongModule", "SlowNonDarkPlantCooldown", "VerySlowSunDropper", "SlowSunDropper", "DefaultSunDropper", "FastSunDropper", "VeryFastSunDropper", "DefaultBoardTimer", "DefaultZombossRiftPointOfLoss", "RiftBeatTheLevelChallenge", "ArenaScoreTiles"];
-    var defaultzombietypes = ["tutorial", "tutorial_armor1", "tutorial_armor2", "tutorial_armor4", "tutorial_balloon", "tutorial_flag", "tutorial_flag_veteran", "mummy", "mummy_armor1", "mummy_armor2", "mummy_armor4", "mummy_flag", "mummy_flag_veteran", "camel_almanac", "camel_onehump", "camel_twohump", "camel_manyhump", "camel_segment", "camel_onehump_touch", "camel_twohump_touch", "camel_manyhump_touch", "camel_segment_touch", "pharaoh", "ra", "tomb_raiser", "explorer", "explorer_veteran", "pirate", "pirate_armor1", "pirate_armor2", "pirate_armor4", "pirate_flag", "pirate_flag_veteran", "barrelroller", "cannon", "pirate_imp", "seagull", "pelican", "pirate_captain", "pirate_captain_parrot", "swashbuckler", "pirate_barrel", "cowboy", "cowboy_armor1", "cowboy_armor2", "cowboy_armor4", "cowboy_flag", "cowboy_flag_veteran", "prospector", "west_bullrider", "west_bull", "west_bull_veteran", "poncho", "poncho_no_plate", "poncho_plate", "piano", "chicken_farmer", "chicken", "chicken_battlez", "mech_cone", "mech_cone_veteran", "football_mech", "disco_mech", "future", "future_armor1", "future_armor2", "future_armor4", "future_flag", "future_flag_veteran", "future_jetpack", "future_jetpack_veteran", "future_jetpack_disco", "future_gargantuar", "future_imp", "tutorial_gargantuar", "tutorial_imp", "egypt_gargantuar", "egypt_imp", "pirate_gargantuar", "cowboy_gargantuar", "future_protector", "future_protector_veteran", "zombossmech_modern1", "zombossmech_future", "zombossmech_future2", "zombossmech_future_battlez", "zombossmech_future_rift", "zombossmech_egypt", "zombossmech_egypt2", "zombossmech_egypt_battlez", "zombossmech_egypt_rift", "zombossmech_cowboy", "zombossmech_cowboy2", "zombossmech_cowboy_battlez", "zombossmech_cowboy_rift", "zombossmech_pirate", "zombossmech_pirate_battlez", "zombossmech_pirate_rift", "zombossmech_pirate2", "zombossmech_dark", "zombossmech_dark2", "zombossmech_dark_battlez", "zombossmech_dark_rift", "zombossmech_beach", "zombossmech_beach_rift", "zombossmech_beach2", "zombossmech_iceage", "zombossmech_iceage2", "zombossmech_iceage_battlez", "zombossmech_iceage_battlez2", "zombossmech_iceage_rift", "zombossmech_lostcity", "zombossmech_lostcity2", "zombossmech_lostcity_battlez", "zombossmech_lostcity_rift", "zombossmech_eighties", "zombossmech_eighties2", "zombossmech_eighties_rift", "zombossmech_dino", "zombossmech_dino2", "zombossmech_dino_battlez", "zombossmech_dino_rift", "zombossmech_modern_egypt", "zombossmech_modern_pirate", "zombossmech_modern_cowboy", "zombossmech_modern_future", "zombossmech_modern_dark", "zombossmech_modern_beach", "zombossmech_modern_iceage", "zombossmech_modern_lostcity", "zombossmech_modern_eighties", "zombossmech_modern_dino", "cleopatra", "treasureyeti", "joustyeti", "dark", "dark_armor1", "dark_armor2", "dark_flag", "dark_flag_veteran", "dark_armor3", "dark_armor4", "dark_imp", "dark_imp_dragon", "dark_gargantuar", "dark_wizard", "dark_wizard_veteran", "dark_juggler", "dark_king", "holiday_gargantuar", "holiday_imp", "leprachaun_imp", "spring", "spring_armor1", "spring_armor2", "spring_flag", "spring_camel_onehump", "spring_camel_twohump", "spring_camel_manyhump", "spring_camel_segment", "spring_poncho", "spring_wizard", "spring_gargantuar", "spring_gargantuar_af", "spring_imp", "spring_imp_af", "halloween", "halloween_armor1", "halloween_armor2", "halloween_flag", "halloween_gargantuar", "halloween_imp", "halloween_camel_twohump", "foodfight", "foodfight_armor1", "foodfight_armor2", "foodfight_flag", "foodfight_chefster", "foodfight_gobbler_king", "foodfight_turkey", "foodfight_turkey_battlez", "feastivus", "feastivus_armor1", "feastivus_armor2", "feastivus_flag", "feastivus_gargantuar", "feastivus_imp", "feastivus_camel_onehump", "feastivus_camel_twohump", "feastivus_camel_manyhump", "feastivus_camel_segment", "feastivus_swashbuckler", "feastivus_poncho", "feastivus_piano", "easter_troglobite", "easter_troglobite_1block", "easter_troglobite_2block", "feastivus_troglobite", "feastivus_troglobite_1block", "feastivus_troglobite_2block", "pet", "beach", "beach_armor1", "beach_armor2", "beach_flag", "beach_fem", "beach_fem_armor1", "beach_fem_armor2", "beach_snorkel", "beach_surfer", "beach_fastswimmer", "beach_imp", "beach_gargantuar", "beach_fisherman", "beach_octopus", "iceage", "iceage_armor1", "iceage_armor2", "iceage_armor3", "iceage_flag", "iceage_imp", "iceage_gargantuar", "iceage_hunter", "iceage_dodo", "iceage_weaselhoarder", "iceage_weasel", "iceage_troglobite", "iceage_troglobite_2block", "iceage_troglobite_1block", "lostcity_impporter", "lostcity_excavator", "lostcity", "lostcity_armor1", "lostcity_armor2", "lostcity_flag", "lostcity_jane", "lostcity_lostpilot", "lostcity_bug", "lostcity_bug_armor1", "lostcity_bug_armor2", "lostcity_crystalskull", "lostcity_imp", "lostcity_gargantuar", "lostcity_relichunter", "eighties", "eighties_armor1", "eighties_armor2", "eighties_8bit", "eighties_8bit_armor1", "eighties_8bit_armor2", "eighties_flag", "eighties_imp", "eighties_gargantuar", "eighties_punk", "eighties_mc", "eighties_breakdancer", "eighties_glitter", "eighties_boombox", "eighties_arcade", "dino", "dino_armor1", "dino_armor2", "dino_armor3", "dino_armor4", "dino_bully", "dino_bully_veteran", "dino_flag", "dino_flag_veteran", "dino_imp", "dino_gargantuar", "modern_newspaper", "newspaper_veteran", "modern_balloon", "modern_allstar", "modern_superfanimp", "vase_gargantuar", "hamster_ball", "valentines", "valentines_armor1", "valentines_armor2", "valentines_flag", "valentines_gargantuar", "valentines_imp", "leprachaun_dodo", "stpatrick", "stpatrick_armor1", "stpatrick_armor2", "birthday", "birthday_flag", "birthday_barrel", "birthday_gargantuar", "birthday_pharaoh", "birthday_juggler", "birthday_troglobite", "birthday_troglobite_2block", "birthday_troglobite_1block", "birthday_jetpack", "summer_basic", "summer_armor1", "summer_armor2", "summer_flag", "summer_bug", "summer_bug_armor1", "summer_bug_armor2", "summer_gargantuar", "summer_imp", "beghouled", "beghouled_armor1", "beghouled_armor2", "beghouled_newspaper", "beghouled_mummy", "beghouled_mummy_armor1", "beghouled_mummy_armor2", "beghouled_pirate", "beghouled_pirate_armor1", "beghouled_pirate_armor2", "beghouled_cowboy", "beghouled_cowboy_armor1", "beghouled_cowboy_armor2", "beghouled_future", "beghouled_future_armor1", "beghouled_future_armor2", "beghouled_dark", "beghouled_dark_armor1", "beghouled_dark_armor2", "beghouled_beach", "beghouled_beach_armor1", "beghouled_beach_armor2", "beghouled_beach_fem", "beghouled_beach_fem_armor1", "beghouled_beach_fem_armor2", "beghouled_iceage", "beghouled_iceage_armor1", "beghouled_iceage_armor2", "beghouled_lostcity", "beghouled_lostcity_armor1", "beghouled_lostcity_armor2", "hero_electricboogaloo", "hero_impfinity", "hero_rustbolt", "hero_smash", "hero_superbrainz", "hero_barrelroller", "hero_barrel", "bighead_allstar", "bighead_balloon", "bighead_newspaper", "bighead_superfan", "bighead_flag", "bighead", "bighead_armor1", "bighead_armor2", "bighead_gargantuar", "bighead_imp", "bighead_barrelroller", "bighead_barrel", "general_treadmill_phase1", "general_treadmill_phase2", "general_treadmill_phase3", "general_zmech_phase1", "general_zmech_phase2", "general_zmech_phase3", "zoybeanpod_gargantuar", "zoybeanpod_basic", "zoybeanpod_armor1", "zoybeanpod_armor2", "caketank", "imppear_imp", "roman", "roman_armor1", "roman_armor2", "roman_armor3", "roman_armor4", "roman_flag", "roman_healer", "roman_shield_almanac", "roman_shield_triad", "roman_shield_pair", "roman_segment", "roman_shield_top", "roman_gargantuar", "roman_imp", "roman_ballista", "gum", "general_caesar_phase1", "general_caesar_phase2", "general_caesar_phase3", "roman_medusa", "zombie_statue", "zcorp_gargantuar", "zcorp_imp", "zcorp", "zcorp_armor1", "zcorp_armor2", "zcorp_fem", "zcorp_fem_armor1", "zcorp_fem_armor2", "zcorp_flag"];
-    var defaultgriditems = ["gravestone_egypt", "gravestone_battlez", "gravestone_battlez_sun", "gravestone_tutorial", "gravestone_pirate", "gravestone_cowboy", "gravestone_future", "gravestone_dark", "gravestoneSunOnDestruction", "gravestoneZombieOnDestruction", "gravestoneZombieTimeSpawner", "gravestoneZombieTimeSpawner_cone", "gravestoneZombieTimeSpawner_bucket", "gravestoneShortcut", "gravestonePlantfoodOnDestruction", "gravestone_beach", "gravestone_dino", "gravestone_iceage", "gravestone_eighties", "gravestone_lostcity", "railcart_tutorial", "railcart_egypt", "railcart_pirate", "railcart_cowboy", "railcart_future", "powertile_alpha", "powertile_beta", "powertile_gamma", "powertile_delta", "powertile_epsilon", "zombiepotion_speed", "zombiepotion_toughness", "lilypad", "vase", "vase_egg", "vase_firework", "surfboard", "tent", "backpack", "planttarget_squid", "planttarget_sauce", "planttarget_iceblock", "zombietarget_iceblock", "zombietarget_birthday_present", "zombietarget_stoneblock", "slider_up", "slider_down", "slider_up_modern", "slider_down_modern", "sap", "plantfoodsap", "lava", "wisp", "whack_puddle", "zomboss_iceage_glacier_block", "boulder_trap_falling_forward", "zomboss_boulder_trap_falling_forward", "flame_spreader_trap", "crater", "crater_timed", "speaker", "speaker_zomboss", "eightiesarcadecabinet", "dusklobberflower", "bombegranateseeds", "zombieportal_rome", "zombieportal_eighties", "zombieportal_dino", "zombieportal_lostcity", "zombieportal_iceage", "zombieportal_beach", "zombieportal_dark", "zombieportal_future", "zombieportal_future_2", "zombieportal_west", "zombieportal_pirate", "zombieportal_egypt", "zombieportal_egypt_2", "zombieportal_modern", "zombieportal_dangerroom_egypt", "zombieportal_dangerroom_pirate", "zombieportal_dangerroom_west", "zombieportal_dangerroom_future", "zombieportal_dangerroom_dark", "zombieportal_dangerroom_beach", "zombieportal_dangerroom_iceage", "zombieportal_dangerroom_lostcity", "zombieportal_dangerroom_eighties", "zombieportal_dangerroom_dino", "poison_tile", "score_2x_tile", "score_3x_tile", "score_5x_tile", "test_damage_object", "test_damage_object", "test_damage_object", "roman_healer_staff", "oil"];
-    var defaultplanttypes = ["sunflower", "peashooter", "wallnut", "tallnut", "explodeonut", "bonkchoy", "cabbagepult", "melonpult", "cherry_bomb", "coconutcannon", "gravebuster", "iceburg", "laser_bean", "potatomine", "repeater", "snapdragon", "spikeweed", "threepeater", "torchwood", "kernelpult", "springbean", "snowpea", "chilibean", "splitpea", "lightningreed", "peapod", "magnifyinggrass", "bloomerang", "holonut", "empea", "blover", "starfruit", "imitater", "jalapeno", "wintermelon", "twinsunflower", "marigold", "spikerock", "powerlily", "squash", "citron", "powerplant", "sunshroom", "puffshroom", "fumeshroom", "sunbean", "magnetshroom", "hypnoshroom", "peanut", "firepeashooter", "lilypad", "bowlingbulb", "homingthistle", "banana", "chomper", "guacodile", "tanglekelp", "ghostpepper", "sweetpotato", "sapfling", "hurrikale", "xshot", "chardguard", "pepperpult", "kiwibeast", "hotpotato", "stunion", "sprout", "dandelion", "sunpod", "redstinger", "goldleaf", "sungun", "akee", "lavaguava", "toadstool", "endurian", "stallia", "strawburst", "cactus", "phatbeet", "thymewarp", "celerystalker", "electricblueberry", "sporeshroom", "garlic", "intensivecarrot", "jackolantern", "primalpeashooter", "grapeshot", "primalwallnut", "perfumeshroom", "coldsnapdragon", "primalsunflower", "primalpotatomine", "shrinkingviolet", "moonflower", "nightshade", "shadowshroom", "bloominghearts", "escaperoot", "grimrose", "dusklobber", "goldbloom", "electriccurrant", "aloe", "wasabiwhip", "applemortar", "bombegranate", "missiletoe", "parsnip", "witchhazel", "hotdate", "caulipower", "solartomato", "electricpeashooter", "hollyknight", "hollyshield", "hollybarrierleafplantfood", "filamint", "peppermint", "wintermint", "enlightenmint", "reinforcemint", "bombardmint", "ailmint", "enchantmint", "containmint", "enforcemint", "armamint", "concealmint", "spearmint", "shadowpeashooter", "poisonpeashooter", "slingpea", "appeasemint", "minipeashooter", "snappea", "burnade", "zoybeanpod", "dazeychain", "electricitea", "blastberry", "pokra", "imppear", "pumpkin", "pyrevine", "icebloom", "dartichoke", "ultomato", "gumnut", "shinevine", "tumbleweed", "murkadamia", "puffball", "olivepit", "explodeovine"];
+    var defaultlevelmodules = ["TutorialStage","JoustStage","JoustDarkMowers","TutorialMowers","EgyptTutorialMowers","HeroesStage","RiftStage","RiftPirateStage","RiftStageZcorp","RiftStageScore","FrontLawnStage","FrontLawnMowers","EgyptStage","EgyptStageNoPowerUps","EgyptMowers","PirateStage","PirateMowers","WestStage","WestMowers","FutureStage","FutureMowers","DarkStage","DarkMowers","BeachStage","BeachStageNoPowerUps","BeachMowers","LostCityStage","LostCityStageNoPowerUps","LostCityNightsStage","LostCityMowers","IceageStage","IceageStageNoPowerUps","IceageMowers","IceageZombossMowers","EightiesStage","MusicalJams","EightiesMowers","EightiesZombossMowers","DinoStage","DinoMowers","ModernStage","ModernStageNoPowerUps","ModernMowers","StandardIntro","StandardRiftIntro","ZombossIntro","EightiesZombossIntro","LevelOfTheDayIntro","BeghouledIntro","BeghouledRiftIntro","DefaultSeedBank","ZombiesDeadWinCon","TutorialPeashooterDeath","DangerRoomModule","LevelOfTheDayModule","DefaultZombieWinCondition","JoustZombieWinCondition","FadeWithMessageFailureOutro","ZombiesAteYourBrainsOutro","VictoryOutro","ZombossVictoryOutro","LevelOfTheDayOutro","SaveMowers","SunBombs","SpeedyZombies","IntroCinemaModule","DefaultLoot","WhackLoot","NoLoot","DangerRoomLoot","DefaultLootTable","SpawnGravestoneZombiesOnFlagWaves","RevertedSunDropper","RevertedWaveManagerProperties","DefaultNotifications","LeprechaunCoinOverride","VaseBreakerFlow","VaseBreakerArcade","BeghouledArcade","CoreLoopRewardsLevelModule","LevelGenSandstorm_1Wave","LevelGenSandstorm_2Waves","LevelGenSandstorm_3Waves","LevelGenSandstorm_4Waves","LevelGenSandstorm_5Waves","LevelGenSandstorm_6Waves","LevelGenGravestoneEvent","LevelGenRaidingParty_1Wave","LevelGenRaidingParty_2Waves","LevelGenRaidingParty_3Waves","LevelGenRaidingParty_4Waves","LevelGenSpiderRain_1Wave","LevelGenSpiderRain_2Waves","LevelGenSpiderRain_3Waves","LevelGenSpiderRain_4Waves","LevelGenSpiderRain_5Waves","LevelGenParachuteRain_1Wave","LevelGenParachuteRain_2Waves","LevelGenParachuteRain_3Waves","LevelGenParachuteRain_4Waves","LevelGenParachuteRain_5Waves","LevelGenFreezingWind","LevelGenFreezingWind_2to4Lanes","LevelGenFreezingWind_3Lanes","LevelGenDinos","LevelGenPortals","LevelGenPlanks","LevelGenPlanks_2to5","LevelGenPlanks_2to3","LevelGenTide","LevelGenJams","LevelGenGravestones","LevelGenRailcarts","LevelGenPowerTiles","LevelGenPlantIceBlocks","LevelGenZombieIceBlocks","LevelGenIceFloes","LevelGenKiddiePools","LevelGenTraps","TrapsPattern1","TrapsPattern2","LevelGenGoldTiles","GoldTilesPattern1","GoldTilesPattern2","GoldTilesPattern3","GoldTilesPattern4","GoldTilesPattern5","GoldTilesPattern6","GoldTilesPattern7","GoldTilesPattern8","GoldTilesPattern9","GoldTilesPattern10","GoldTilesPattern11","GoldTilesPattern12","GoldTilesPattern13","GoldTilesPattern14","LevelGenMoldChallenge","LevelGenZombieDistanceChallenge","LevelGenProtectThePlantsChallenge","DefaultSecurityGourds","JoustOutro","RiftOutro","DefaultPointOfLoss","JoustPointOfLoss","OttoBotBoardStateObserver","WeakEnchantmintStrongFilamint","StrongPeppermint","StrongFilamint","WeakFilamint","NoFilamint","Boosterama","TreadmillGeneralZombie3MinModule","TreadmillGeneralZombie90sModule","ZmechGeneralZombie3MinModule","CaesarGeneralZombie3MinModule","CakeTankGeneralZombieModule","SeedPacketHalfTimeModule","BirthdaySongModule","SlowNonDarkPlantCooldown","VerySlowSunDropper","SlowSunDropper","DefaultSunDropper","FastSunDropper","VeryFastSunDropper","DefaultBoardTimer","DefaultZombossRiftPointOfLoss","RiftBeatTheLevelChallenge","ArenaScoreTiles"];
+    var defaultzombietypes = ["tutorial","tutorial_armor1","tutorial_armor2","tutorial_armor4","tutorial_balloon","tutorial_flag","tutorial_flag_veteran","mummy","mummy_armor1","mummy_armor2","mummy_armor4","mummy_flag","mummy_flag_veteran","camel_almanac","camel_onehump","camel_twohump","camel_manyhump","camel_segment","camel_onehump_touch","camel_twohump_touch","camel_manyhump_touch","camel_segment_touch","pharaoh","ra","tomb_raiser","explorer","explorer_veteran","pirate","pirate_armor1","pirate_armor2","pirate_armor4","pirate_flag","pirate_flag_veteran","barrelroller","cannon","pirate_imp","seagull","pelican","pirate_captain","pirate_captain_parrot","swashbuckler","pirate_barrel","cowboy","cowboy_armor1","cowboy_armor2","cowboy_armor4","cowboy_flag","cowboy_flag_veteran","prospector","west_bullrider","west_bull","west_bull_veteran","poncho","poncho_no_plate","poncho_plate","piano","chicken_farmer","chicken","chicken_battlez","mech_cone","mech_cone_veteran","football_mech","disco_mech","future","future_armor1","future_armor2","future_armor4","future_flag","future_flag_veteran","future_jetpack","future_jetpack_veteran","future_jetpack_disco","future_gargantuar","future_imp","tutorial_gargantuar","tutorial_imp","egypt_gargantuar","egypt_imp","pirate_gargantuar","cowboy_gargantuar","future_protector","future_protector_veteran","zombossmech_modern1","zombossmech_future","zombossmech_future2","zombossmech_future_battlez","zombossmech_future_rift","zombossmech_egypt","zombossmech_egypt2","zombossmech_egypt_battlez","zombossmech_egypt_rift","zombossmech_cowboy","zombossmech_cowboy2","zombossmech_cowboy_battlez","zombossmech_cowboy_rift","zombossmech_pirate","zombossmech_pirate_battlez","zombossmech_pirate_rift","zombossmech_pirate2","zombossmech_dark","zombossmech_dark2","zombossmech_dark_battlez","zombossmech_dark_rift","zombossmech_beach","zombossmech_beach_rift","zombossmech_beach2","zombossmech_iceage","zombossmech_iceage2","zombossmech_iceage_battlez","zombossmech_iceage_battlez2","zombossmech_iceage_rift","zombossmech_lostcity","zombossmech_lostcity2","zombossmech_lostcity_battlez","zombossmech_lostcity_rift","zombossmech_eighties","zombossmech_eighties2","zombossmech_eighties_rift","zombossmech_dino","zombossmech_dino2","zombossmech_dino_battlez","zombossmech_dino_rift","zombossmech_modern_egypt","zombossmech_modern_pirate","zombossmech_modern_cowboy","zombossmech_modern_future","zombossmech_modern_dark","zombossmech_modern_beach","zombossmech_modern_iceage","zombossmech_modern_lostcity","zombossmech_modern_eighties","zombossmech_modern_dino","cleopatra","treasureyeti","joustyeti","dark","dark_armor1","dark_armor2","dark_flag","dark_flag_veteran","dark_armor3","dark_armor4","dark_imp","dark_imp_dragon","dark_gargantuar","dark_wizard","dark_wizard_veteran","dark_juggler","dark_king","holiday_gargantuar","holiday_imp","leprachaun_imp","spring","spring_armor1","spring_armor2","spring_flag","spring_camel_onehump","spring_camel_twohump","spring_camel_manyhump","spring_camel_segment","spring_poncho","spring_wizard","spring_gargantuar","spring_gargantuar_af","spring_imp","spring_imp_af","halloween","halloween_armor1","halloween_armor2","halloween_flag","halloween_gargantuar","halloween_imp","halloween_camel_twohump","foodfight","foodfight_armor1","foodfight_armor2","foodfight_flag","foodfight_chefster","foodfight_gobbler_king","foodfight_turkey","foodfight_turkey_battlez","feastivus","feastivus_armor1","feastivus_armor2","feastivus_flag","feastivus_gargantuar","feastivus_imp","feastivus_camel_onehump","feastivus_camel_twohump","feastivus_camel_manyhump","feastivus_camel_segment","feastivus_swashbuckler","feastivus_poncho","feastivus_piano","easter_troglobite","easter_troglobite_1block","easter_troglobite_2block","feastivus_troglobite","feastivus_troglobite_1block","feastivus_troglobite_2block","pet","beach","beach_armor1","beach_armor2","beach_flag","beach_fem","beach_fem_armor1","beach_fem_armor2","beach_snorkel","beach_surfer","beach_fastswimmer","beach_imp","beach_gargantuar","beach_fisherman","beach_octopus","iceage","iceage_armor1","iceage_armor2","iceage_armor3","iceage_flag","iceage_imp","iceage_gargantuar","iceage_hunter","iceage_dodo","iceage_weaselhoarder","iceage_weasel","iceage_troglobite","iceage_troglobite_2block","iceage_troglobite_1block","lostcity_impporter","lostcity_excavator","lostcity","lostcity_armor1","lostcity_armor2","lostcity_flag","lostcity_jane","lostcity_lostpilot","lostcity_bug","lostcity_bug_armor1","lostcity_bug_armor2","lostcity_crystalskull","lostcity_imp","lostcity_gargantuar","lostcity_relichunter","eighties","eighties_armor1","eighties_armor2","eighties_8bit","eighties_8bit_armor1","eighties_8bit_armor2","eighties_flag","eighties_imp","eighties_gargantuar","eighties_punk","eighties_mc","eighties_breakdancer","eighties_glitter","eighties_boombox","eighties_arcade","dino","dino_armor1","dino_armor2","dino_armor3","dino_armor4","dino_bully","dino_bully_veteran","dino_flag","dino_flag_veteran","dino_imp","dino_gargantuar","modern_newspaper","newspaper_veteran","modern_balloon","modern_allstar","modern_superfanimp","vase_gargantuar","hamster_ball","valentines","valentines_armor1","valentines_armor2","valentines_flag","valentines_gargantuar","valentines_imp","leprachaun_dodo","stpatrick","stpatrick_armor1","stpatrick_armor2","birthday","birthday_flag","birthday_barrel","birthday_gargantuar","birthday_pharaoh","birthday_juggler","birthday_troglobite","birthday_troglobite_2block","birthday_troglobite_1block","birthday_jetpack","summer_basic","summer_armor1","summer_armor2","summer_flag","summer_bug","summer_bug_armor1","summer_bug_armor2","summer_gargantuar","summer_imp","beghouled","beghouled_armor1","beghouled_armor2","beghouled_newspaper","beghouled_mummy","beghouled_mummy_armor1","beghouled_mummy_armor2","beghouled_pirate","beghouled_pirate_armor1","beghouled_pirate_armor2","beghouled_cowboy","beghouled_cowboy_armor1","beghouled_cowboy_armor2","beghouled_future","beghouled_future_armor1","beghouled_future_armor2","beghouled_dark","beghouled_dark_armor1","beghouled_dark_armor2","beghouled_beach","beghouled_beach_armor1","beghouled_beach_armor2","beghouled_beach_fem","beghouled_beach_fem_armor1","beghouled_beach_fem_armor2","beghouled_iceage","beghouled_iceage_armor1","beghouled_iceage_armor2","beghouled_lostcity","beghouled_lostcity_armor1","beghouled_lostcity_armor2","hero_electricboogaloo","hero_impfinity","hero_rustbolt","hero_smash","hero_superbrainz","hero_barrelroller","hero_barrel","bighead_allstar","bighead_balloon","bighead_newspaper","bighead_superfan","bighead_flag","bighead","bighead_armor1","bighead_armor2","bighead_gargantuar","bighead_imp","bighead_barrelroller","bighead_barrel","general_treadmill_phase1","general_treadmill_phase2","general_treadmill_phase3","general_zmech_phase1","general_zmech_phase2","general_zmech_phase3","zoybeanpod_gargantuar","zoybeanpod_basic","zoybeanpod_armor1","zoybeanpod_armor2","caketank","imppear_imp","roman","roman_armor1","roman_armor2","roman_armor3","roman_armor4","roman_flag","roman_healer","roman_shield_almanac","roman_shield_triad","roman_shield_pair","roman_segment","roman_shield_top","roman_gargantuar","roman_imp","roman_ballista","gum","general_caesar_phase1","general_caesar_phase2","general_caesar_phase3","roman_medusa","zombie_statue","zcorp_gargantuar","zcorp_imp","zcorp","zcorp_armor1","zcorp_armor2","zcorp_fem","zcorp_fem_armor1","zcorp_fem_armor2","zcorp_flag"];
+    var defaultgriditems = ["gravestone_egypt","gravestone_battlez","gravestone_battlez_sun","gravestone_tutorial","gravestone_pirate","gravestone_cowboy","gravestone_future","gravestone_dark","gravestoneSunOnDestruction","gravestoneZombieOnDestruction","gravestoneZombieTimeSpawner","gravestoneZombieTimeSpawner_cone","gravestoneZombieTimeSpawner_bucket","gravestoneShortcut","gravestonePlantfoodOnDestruction","gravestone_beach","gravestone_dino","gravestone_iceage","gravestone_eighties","gravestone_lostcity","railcart_tutorial","railcart_egypt","railcart_pirate","railcart_cowboy","railcart_future","powertile_alpha","powertile_beta","powertile_gamma","powertile_delta","powertile_epsilon","zombiepotion_speed","zombiepotion_toughness","lilypad","vase","vase_egg","vase_firework","surfboard","tent","backpack","planttarget_squid","planttarget_sauce","planttarget_iceblock","zombietarget_iceblock","zombietarget_birthday_present","zombietarget_stoneblock","slider_up","slider_down","slider_up_modern","slider_down_modern","sap","plantfoodsap","lava","wisp","whack_puddle","zomboss_iceage_glacier_block","boulder_trap_falling_forward","zomboss_boulder_trap_falling_forward","flame_spreader_trap","crater","crater_timed","speaker","speaker_zomboss","eightiesarcadecabinet","dusklobberflower","bombegranateseeds","zombieportal_rome","zombieportal_eighties","zombieportal_dino","zombieportal_lostcity","zombieportal_iceage","zombieportal_beach","zombieportal_dark","zombieportal_future","zombieportal_future_2","zombieportal_west","zombieportal_pirate","zombieportal_egypt","zombieportal_egypt_2","zombieportal_modern","zombieportal_dangerroom_egypt","zombieportal_dangerroom_pirate","zombieportal_dangerroom_west","zombieportal_dangerroom_future","zombieportal_dangerroom_dark","zombieportal_dangerroom_beach","zombieportal_dangerroom_iceage","zombieportal_dangerroom_lostcity","zombieportal_dangerroom_eighties","zombieportal_dangerroom_dino","poison_tile","score_2x_tile","score_3x_tile","score_5x_tile","test_damage_object","test_damage_object","test_damage_object","roman_healer_staff","oil"];
+    var defaultplanttypes = ["sunflower","peashooter","wallnut","tallnut","explodeonut","bonkchoy","cabbagepult","melonpult","cherry_bomb","coconutcannon","gravebuster","iceburg","laser_bean","potatomine","repeater","snapdragon","spikeweed","threepeater","torchwood","kernelpult","springbean","snowpea","chilibean","splitpea","lightningreed","peapod","magnifyinggrass","bloomerang","holonut","empea","blover","starfruit","imitater","jalapeno","wintermelon","twinsunflower","marigold","spikerock","powerlily","squash","citron","powerplant","sunshroom","puffshroom","fumeshroom","sunbean","magnetshroom","hypnoshroom","peanut","firepeashooter","lilypad","bowlingbulb","homingthistle","banana","chomper","guacodile","tanglekelp","ghostpepper","sweetpotato","sapfling","hurrikale","xshot","chardguard","pepperpult","kiwibeast","hotpotato","stunion","sprout","dandelion","sunpod","redstinger","goldleaf","sungun","akee","lavaguava","toadstool","endurian","stallia","strawburst","cactus","phatbeet","thymewarp","celerystalker","electricblueberry","sporeshroom","garlic","intensivecarrot","jackolantern","primalpeashooter","grapeshot","primalwallnut","perfumeshroom","coldsnapdragon","primalsunflower","primalpotatomine","shrinkingviolet","moonflower","nightshade","shadowshroom","bloominghearts","escaperoot","grimrose","dusklobber","goldbloom","electriccurrant","aloe","wasabiwhip","applemortar","bombegranate","missiletoe","parsnip","witchhazel","hotdate","caulipower","solartomato","electricpeashooter","hollyknight","hollyshield","hollybarrierleafplantfood","filamint","peppermint","wintermint","enlightenmint","reinforcemint","bombardmint","ailmint","enchantmint","containmint","enforcemint","armamint","concealmint","spearmint","shadowpeashooter","poisonpeashooter","slingpea","appeasemint","minipeashooter","snappea","burnade","zoybeanpod","dazeychain","electricitea","blastberry","pokra","imppear","pumpkin","pyrevine","icebloom","dartichoke","ultomato","gumnut","shinevine","tumbleweed","murkadamia","puffball","olivepit","explodeovine"];
 
-    function changehelp() {
+    function changehelp(){
         var on = document.getElementById('setting1').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting1').style.display = "block";
         } else {
             document.getElementById('setting1').style.display = "none";
         }
     }
 
-    function changelevelmodules() {
+    function changelevelmodules(){
         var on = document.getElementById('setting2').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting2').style.display = "block";
         } else {
             document.getElementById('setting2').style.display = "none";
         }
     }
 
-    function changezombietypes() {
+    function changezombietypes(){
         var on = document.getElementById('setting3').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting3').style.display = "block";
         } else {
             document.getElementById('setting3').style.display = "none";
         }
     }
 
-    function changegriditemtypes() {
+    function changegriditemtypes(){
         var on = document.getElementById('setting4').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting4').style.display = "block";
         } else {
             document.getElementById('setting4').style.display = "none";
         }
     }
 
-    function changeplanttypes() {
+    function changeplanttypes(){
         var on = document.getElementById('setting5').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting5').style.display = "block";
         } else {
             document.getElementById('setting5').style.display = "none";
         }
     }
 
-    function changecustomlevelmodules() {
+    function changecustomlevelmodules(){
         var on = document.getElementById('setting6').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting6').style.display = "block";
         } else {
             document.getElementById('setting6').style.display = "none";
         }
     }
 
-    function changecustomzombietypes() {
+    function changecustomzombietypes(){
         var on = document.getElementById('setting7').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting7').style.display = "block";
         } else {
             document.getElementById('setting7').style.display = "none";
         }
     }
 
-    function changecustomgriditemtypes() {
+    function changecustomgriditemtypes(){
         var on = document.getElementById('setting8').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting8').style.display = "block";
         } else {
             document.getElementById('setting8').style.display = "none";
         }
     }
 
-    function changecustomplanttypes() {
+    function changecustomplanttypes(){
         var on = document.getElementById('setting9').style.display;
-        if (on == "none") {
+        if(on == "none"){
             document.getElementById('setting9').style.display = "block";
         } else {
             document.getElementById('setting9').style.display = "none";
         }
     }
 
-    function clearInputs() {
+    function clearInputs(){
         document.getElementById('log').value = "";
         document.getElementById('moduleslist').value = "";
         document.getElementById('modulesloclist').value = "";
@@ -273,21 +261,21 @@
         zombiesolc = 0;
         zombiesCount = 0;
         zombiesobjnames.splice(0, zombiesobjnames.length);
-        for (let i = 0; i < defaultlevelmodules.length; i++) {
+        for(let i=0;i<defaultlevelmodules.length;i++){
             levelmodules.push(defaultlevelmodules[i]);
         }
-        for (let i = 0; i < defaultzombietypes.length; i++) {
+        for(let i=0;i<defaultzombietypes.length;i++){
             zombietypes.push(defaultzombietypes[i]);
         }
-        for (let i = 0; i < defaultgriditems.length; i++) {
+        for(let i=0;i<defaultgriditems.length;i++){
             griditems.push(defaultgriditems[i]);
         }
-        for (let i = 0; i < defaultplanttypes.length; i++) {
+        for(let i=0;i<defaultplanttypes.length;i++){
             planttypes.push(defaultplanttypes[i]);
         }
     }
 
-    function seperateDataBanks() {
+    function seperateDataBanks(){
         clearInputs();
         checkcount++;
         document.getElementById('logtitle').innerHTML = "[" + checkcount + "] Output Log:";
@@ -318,100 +306,102 @@
         printZombies();
 
         var log = document.getElementById('log').value;
-        if (!log.match(/\S/)) {
+        if(!log.match(/\S/)){
             document.getElementById('log').value += "[" + checkcount + "] No log entries generated.";
         }
     }
 
-    function inputZombiesJson(input) {
+    function inputZombiesJson(input){
         input = input.replace(/\s/g, '');
         var impZombieCount = (input.match(/aliases/g) || []).length;
-        if (impZombieCount != 0) {
-            zombietypes.splice(0, zombietypes.length)
-            var splitter = 0;
-            var cutInput = input;
-            for (var i = 0; i < impZombieCount; i++) {
-                splitter = cutInput.indexOf('aliases":["');
-                cutInput = cutInput.substring((splitter + 11));
-                zombietypes[i] = cutInput.substring(0, cutInput.indexOf('"'))
-            }
+        if(impZombieCount != 0){
+        zombietypes.splice(0, zombietypes.length)
+        var splitter = 0;
+        var cutInput = input;
+        for(var i=0; i<impZombieCount; i++){
+            splitter = cutInput.indexOf('aliases":["');
+            cutInput = cutInput.substring((splitter + 11));
+            zombietypes[i] = cutInput.substring(0,cutInput.indexOf('"'))
         }
     }
+    }
 
-    function inputModulesJson(input) {
+    function inputModulesJson(input){
         input = input.replace(/\s/g, '');
         var impModuleCount = (input.match(/aliases/g) || []).length;
-        if (impModuleCount != 0) {
-            levelmodules.splice(0, levelmodules.length)
-            var splitter = 0;
-            var cutInput = input;
-            for (var i = 0; i < impModuleCount; i++) {
-                splitter = cutInput.indexOf('aliases":["');
-                cutInput = cutInput.substring((splitter + 11));
-                levelmodules[i] = cutInput.substring(0, cutInput.indexOf('"'))
-            }
+        if(impModuleCount != 0){
+        levelmodules.splice(0, levelmodules.length)
+        var splitter = 0;
+        var cutInput = input;
+        for(var i=0; i<impModuleCount; i++){
+            splitter = cutInput.indexOf('aliases":["');
+            cutInput = cutInput.substring((splitter + 11));
+            levelmodules[i] = cutInput.substring(0,cutInput.indexOf('"'))
         }
     }
+    }
 
-    function inputGridItemsJson(input) {
+
+    function inputGridItemsJson(input){
         input = input.replace(/\s/g, '');
         var impGridItemCount = (input.match(/aliases/g) || []).length;
-        if (impGridItemCount != 0) {
-            griditems.splice(0, griditems.length)
-            var splitter = 0;
-            var cutInput = input;
-            for (var i = 0; i < impGridItemsCount; i++) {
-                splitter = cutInput.indexOf('aliases":["');
-                cutInput = cutInput.substring((splitter + 11));
-                griditems[i] = cutInput.substring(0, cutInput.indexOf('"'))
-            }
+        if(impGridItemCount != 0){
+        griditems.splice(0, griditems.length)
+        var splitter = 0;
+        var cutInput = input;
+        for(var i=0; i<impGridItemsCount; i++){
+            splitter = cutInput.indexOf('aliases":["');
+            cutInput = cutInput.substring((splitter + 11));
+            griditems[i] = cutInput.substring(0,cutInput.indexOf('"'))
         }
     }
+    }
 
-    function inputPlantsJson(input) {
+    function inputPlantsJson(input){
         input = input.replace(/\s/g, '');
         var impPlantCount = (input.match(/aliases/g) || []).length;
-        if (impPlantCount != 0) {
-            planttypes.splice(0, planttypes.length)
-            var splitter = 0;
-            var cutInput = input;
-            for (var i = 0; i < impPlantCount; i++) {
-                splitter = cutInput.indexOf('aliases":["');
-                cutInput = cutInput.substring((splitter + 11));
-                planttypes[i] = cutInput.substring(0, cutInput.indexOf('"'))
-            }
+        if(impPlantCount != 0){
+        planttypes.splice(0, planttypes.length)
+        var splitter = 0;
+        var cutInput = input;
+        for(var i=0; i<impPlantCount; i++){
+            splitter = cutInput.indexOf('aliases":["');
+            cutInput = cutInput.substring((splitter + 11));
+            planttypes[i] = cutInput.substring(0,cutInput.indexOf('"'))
         }
     }
+    }
 
-    function inputCustomModules(input) {
+    function inputCustomModules(input){
         var arrayOfLines = input.split("\n");
-        for (var i = 0; i < arrayOfLines.length; i++) {
+        for(var i =0;i<arrayOfLines.length;i++){
             levelmodules.push(arrayOfLines[i]);
         }
     }
 
-    function inputCustomZombies(input) {
+    function inputCustomZombies(input){
         var arrayOfLines = input.split("\n");
-        for (var i = 0; i < arrayOfLines.length; i++) {
+        for(var i =0;i<arrayOfLines.length;i++){
             zombietypes.push(arrayOfLines[i]);
         }
     }
 
-    function inputCustomGridItems(input) {
+    function inputCustomGridItems(input){
         var arrayOfLines = input.split("\n");
-        for (var i = 0; i < arrayOfLines.length; i++) {
+        for(var i =0;i<arrayOfLines.length;i++){
             griditems.push(arrayOfLines[i]);
         }
     }
 
-    function inputCustomPlants(input) {
+    function inputCustomPlants(input){
         var arrayOfLines = input.split("\n");
-        for (var i = 0; i < arrayOfLines.length; i++) {
+        for(var i =0;i<arrayOfLines.length;i++){
             planttypes.push(arrayOfLines[i]);
         }
     }
 
-    function getModules(input) {
+
+    function getModules(input){
         input = input.replace(/\s/g, '');
         var moduleStart = input.indexOf("\"Modules\":[");
         //if(moduleStart == -1){
@@ -432,20 +422,20 @@
         var splitterat = 0;
         var splitterquote = 0;
         var cutInput = input + "@";
-        for (var i = 0; i < rtidCount; i++) {
+        for(var i=0; i<rtidCount; i++){
             splitter = cutInput.indexOf("RTID");
             cutInput = cutInput.substring((splitter + 5));
             splitter2 = cutInput.indexOf("@");
             splitter3 = cutInput.indexOf(')"');
-            modules[i] = cutInput.substring(0, splitter2)
-            modulesloc[i] = cutInput.substring((splitter2 + 1), splitter3);
-            if (splitter3 < splitter2) {
-                modules[i] = cutInput.substring(0, splitter3);
-                modulesloc[i] = cutInput.substring(0, splitter3);
+            modules[i] = cutInput.substring(0,splitter2)
+            modulesloc[i] = cutInput.substring((splitter2 + 1),splitter3);
+            if(splitter3 < splitter2){
+                modules[i] = cutInput.substring(0,splitter3);
+                modulesloc[i] = cutInput.substring(0,splitter3);
             }
         }
         //console.log("LIST MODULES:");
-        for (var i = 0; i < modules.length; i++) {
+        for(var i=0;i<modules.length;i++){
             //console.log(modules[i]);
             document.getElementById('moduleslist').value += modules[i] + "\n";
             document.getElementById('modulesloclist').value += modulesloc[i] + "\n";
@@ -453,126 +443,126 @@
         }
     }
 
-    function checkModules() {
-        for (var i = 0; i < modules.length; i++) {
+    function checkModules(){
+        for(var i=0;i<modules.length;i++){
             var valid = false;
-            switch (modulesloc[i]) {
-            case "LevelModules":
+            switch(modulesloc[i]){
+                case "LevelModules":
                 valid = false;
-                for (var x = 0; x < levelmodules.length; x++) {
-                    if (modules[i] == levelmodules[x]) {
+                for(var x=0;x<levelmodules.length;x++){
+                    if(modules[i] == levelmodules[x]){
                         valid = true;
                     }
                 }
-                if (valid == false) {
-                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! Did you typo? The module " + modules[i] + " is not defined in the levelmodules.\n"
+                if(valid == false){
+                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! Did you typo? The module " +  modules[i] + " is not defined in the levelmodules.\n"
                 }
                 break;
-            case "CurrentLevel":
+                case "CurrentLevel":
                 valid = false;
-                for (var n = 0; n < objects.length; n++) {
-                    if (modules[i] == objects[n]) {
+                for(var n=0;n<objects.length;n++){
+                    if(modules[i] == objects[n]){
                         valid = true;
                     }
                 }
-                if (valid == false) {
-                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \"" + modules[i] + "\" is not defined in the level!\n"
+                if(valid == false){
+                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" is not defined in the level!\n"
                 }
                 break;
-            default:
-                document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \"" + modules[i] + "\" errors because the syntax is incorrect.\n"
+                default:
+                document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" errors because the syntax is incorrect.\n"
             }
         }
     }
 
-    function getObjects(input) {
+    function getObjects(input){
         input = input.replace(/\s/g, '');
         var objectCount = (input.match(/aliases/g) || []).length;
         var splitter = 0;
         var cutInput = input;
-        for (var i = 0; i < objectCount; i++) {
+        for(var i=0; i<objectCount; i++){
             splitter = cutInput.indexOf('aliases":["');
             cutInput = cutInput.substring((splitter + 11));
-            objects[i] = cutInput.substring(0, cutInput.indexOf('"'))
+            objects[i] = cutInput.substring(0,cutInput.indexOf('"'))
         }
-        for (var i = 0; i < objects.length; i++) {
+        for(var i=0;i<objects.length;i++){
             document.getElementById('objectslist').value += objects[i] + "\n";
         }
     }
 
-    function getZombies(input) {
+    function getZombies(input){
         input = input.replace(/\s/g, '');
         var totalInput = input;
         //console.log(totalInput);
         zombiesCount = (input.match(/"Zombies":/g) || []).length;
         //console.log('ZOMBIES COUNT' + zombiesCount);
 
-        for (var a = 0; a < zombiesCount; a++) {
-            //document.getElementById('zombieslist').value += "[" + zombiesobjnames[a] + "]\n";
-            //document.getElementById('zombiesloclist').value += "[" + zombiesobjnames[a] + "]\n";
-            //document.getElementById('zombiesrtidlist').value += "[" + zombiesobjnames[a] + "]\n";
-            //console.log(zombiesobjnames[a]);
-            var zombieStart = totalInput.indexOf("\"Zombies\":[");
-            input = totalInput.substring((zombieStart + 11));
-            //console.log(input);
-            var zombieEnd = input.indexOf("]");
-            input = input.substring(0, (zombieEnd - 1)) + "@";
-            //console.log(input);
-            //console.log(totalInput);
-            //console.log("spacer!!!");
-            var rtidCount = (input.match(/RTID/g) || []).length;
-            var splitter = 0;
-            var splitterat = 0;
-            var splitterquote = 0;
-            var cutInput = input + "@";
-            var zombieloc = "";
-            for (var i = 0; i < rtidCount; i++) {
-                splitter = cutInput.indexOf("RTID");
-                //console.log("[" + i + "] Splitter2: " + splitter2);
-                //console.log("[" + i + "] Splitter3: " + splitter3);
-                //if(splitter3 < splitter2){
-                //    alert('Error! Search for ' + cutInput.substring(0,splitter2));
-                //}
-                //console.log(cutInput);
-                //zombiesrtid[i] =  "\"RTID(" + cutInput.substring(0, (cutInput.indexOf(')"')+2));
-                cutInput = cutInput.substring((splitter + 5));
-                splitter2 = cutInput.indexOf("@");
-                splitter3 = cutInput.indexOf(')"');
-                zombies[zombieCount] = cutInput.substring(0, splitter2);
-                zombiesloc[zombieCount] = cutInput.substring((splitter2 + 1), splitter3);
-                if (splitter3 < splitter2) {
-                    //alert('Error in Zombies! Search for ' + cutInput.substring(0,splitter2));
-                    zombies[zombieCount] = cutInput.substring(0, splitter3);
-                    zombiesloc[zombieCount] = "INVALID";
-                }
-                zombieCount++;
-                //console.log(cutInput);
-                //console.log(modules[i]);
+        for(var a=0;a<zombiesCount;a++){
+        //document.getElementById('zombieslist').value += "[" + zombiesobjnames[a] + "]\n";
+        //document.getElementById('zombiesloclist').value += "[" + zombiesobjnames[a] + "]\n";
+        //document.getElementById('zombiesrtidlist').value += "[" + zombiesobjnames[a] + "]\n";
+        //console.log(zombiesobjnames[a]);
+        var zombieStart = totalInput.indexOf("\"Zombies\":[");
+        input = totalInput.substring((zombieStart + 11));
+        //console.log(input);
+        var zombieEnd = input.indexOf("]");
+        input = input.substring(0, (zombieEnd - 1)) + "@";
+        //console.log(input);
+        //console.log(totalInput);
+        //console.log("spacer!!!");
+        var rtidCount = (input.match(/RTID/g) || []).length;
+        var splitter = 0;
+        var splitterat = 0;
+        var splitterquote = 0;
+        var cutInput = input + "@";
+        var zombieloc = "";
+        for(var i=0; i<rtidCount; i++){
+            splitter = cutInput.indexOf("RTID");
+            //console.log("[" + i + "] Splitter2: " + splitter2);
+            //console.log("[" + i + "] Splitter3: " + splitter3);
+            //if(splitter3 < splitter2){
+            //    alert('Error! Search for ' + cutInput.substring(0,splitter2));
+            //}
+            //console.log(cutInput);
+            //zombiesrtid[i] =  "\"RTID(" + cutInput.substring(0, (cutInput.indexOf(')"')+2));
+            cutInput = cutInput.substring((splitter + 5));
+            splitter2 = cutInput.indexOf("@");
+            splitter3 = cutInput.indexOf(')"');
+            zombies[zombieCount] = cutInput.substring(0,splitter2);
+            zombiesloc[zombieCount] = cutInput.substring((splitter2 + 1),splitter3);
+            if(splitter3 < splitter2){
+                //alert('Error in Zombies! Search for ' + cutInput.substring(0,splitter2));
+                zombies[zombieCount] = cutInput.substring(0,splitter3);
+                zombiesloc[zombieCount] = "INVALID";
             }
-
-            totalInput = totalInput.substring(zombieStart);
-            totalInput = totalInput.substring(zombieEnd);
+            zombieCount++;
+            //console.log(cutInput);
+            //console.log(modules[i]);
+        }
+        
+        totalInput = totalInput.substring(zombieStart);
+        totalInput = totalInput.substring(zombieEnd);
         }
     }
 
-    function getZombiesObjectLocation(input) {
+    function getZombiesObjectLocation(input){
         input = input.replace(/\s/g, '');
         var tempinput = "";
         var object1 = 0;
         var object2 = 0;
-        for (var i = 0; i < objects.length; i++) {
+        for(var i=0;i<objects.length;i++){
             object1 = input.indexOf('"aliases":["' + objects[i]);
-            object2 = input.indexOf('"aliases":["' + objects[i + 1]);
-            if (object2 == -1) {
+            object2 = input.indexOf('"aliases":["' + objects[i+1]);
+            if(object2 == -1){
                 object2 = input.length;
             }
             tempinput = input.substring(object1, object2);
-            if (tempinput.includes('"Zombies":[')) {
+            if(tempinput.includes('"Zombies":[')){
                 var rtidCount = (tempinput.match(/RTID/g) || []).length;
                 var seriously = objects[i];
                 zombiesobjnames.push(seriously);
                 //console.log(zombiesobjnames);
-                for (var b = 0; b < rtidCount; b++) {
+                for(var b=0;b<rtidCount;b++){
                     zombiesobjlocarray[zombiesolc] = objects[i];
                     //console.log(objects[i]);
                     //console.log(zombiesobjlocarray[zombiesolc]);
@@ -582,40 +572,40 @@
         }
     }
 
-    function checkZombies() {
-        for (var i = 0; i < zombies.length; i++) {
+    function checkZombies(){
+        for(var i=0;i<zombies.length;i++){
             var valid = false;
-            switch (zombiesloc[i]) {
-            case "ZombieTypes":
+            switch(zombiesloc[i]){
+                case "ZombieTypes":
                 valid = false;
-                for (var x = 0; x < zombietypes.length; x++) {
-                    if (zombies[i] == zombietypes[x]) {
+                for(var x=0;x<zombietypes.length;x++){
+                    if(zombies[i] == zombietypes[x]){
                         valid = true;
                     }
                 }
-                if (valid == false) {
+                if(valid == false){
                     document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! Did you typo? The zombie is not defined in the zombietypes.\n"
                 }
                 break;
-            case "CurrentLevel":
+                case "CurrentLevel":
                 valid = false;
-                for (var n = 0; n < objects.length; n++) {
-                    if (zombies[i] == objects[n]) {
+                for(var n=0;n<objects.length;n++){
+                    if(zombies[i] == objects[n]){
                         valid = true;
                     }
                 }
-                if (valid == false) {
-                    document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! The zombie \"" + zombies[i] + "\" is not defined in the level!\n"
+                if(valid == false){
+                    document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! The zombie \""  + zombies[i] + "\" is not defined in the level!\n"
                 }
                 break;
-            default:
-                document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! The zombie \"" + zombies[i] + "\" errors because the syntax is incorrect.\n"
+                default:
+                document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! The zombie \""  + zombies[i] + "\" errors because the syntax is incorrect.\n"
             }
         }
     }
 
-    function printZombies() {
-        for (var i = 0; i < zombies.length; i++) {
+    function printZombies(){
+        for(var i=0;i<zombies.length;i++){
             //console.log(zombies[i]);
             document.getElementById('zombieslist').value += "[" + zombiesobjlocarray[i] + "] " + zombies[i] + "\n";
             document.getElementById('zombiesloclist').value += "[" + zombiesobjlocarray[i] + "] " + zombiesloc[i] + "\n";
@@ -624,25 +614,24 @@
     }
 
     function CompileLevelXML() {
-        var str = document.getElementById("xml").value;
-        toggleoutputvisibility();
+    var str = document.getElementById("xml").value;
+    toggleoutputvisibility();
         document.getElementById("output").value += str;
-    }
-</script>
-<style>
-    p {
-        color: Blue;
-    }
+	}
 
-    .paragraph1 {
-        font-size: 12px;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        line-height: 2px;
-    }
-
-    .paragraph2 {
-        font-size: 13px;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-    }
-</style>
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+        .paragraph1 {
+            font-size: 12px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+        .paragraph2 {
+            font-size: 13px;
+             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
 </body></html>
