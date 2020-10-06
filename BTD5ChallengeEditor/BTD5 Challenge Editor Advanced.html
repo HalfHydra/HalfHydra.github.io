@@ -385,7 +385,7 @@
                 <p style="background:#4A75B2;width: 578px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Text.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Challenge Description:
                     <input type="text" id="description" style="background-color: #436FA8;width: 300px;" oninput="changedescription()" value="Description"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;margin-left: 3px;" class="inline" align="top" onclick="promptinfo('For anyone who actually wants to use this challenge in game, just a standard description will not work. You need to add a LOC_MIS_[ID]_DESC title to \'English.xml\'.')">
                 </p>
-                <p style="background:#4A75B2;width: 212px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RankRequired.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Rank Required:
+                <p style="background:#4A75B2;width: 215px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/RankRequired.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Rank Required:
                     <input type="text" id="rank" style="background-color: #436FA8;width: 30px;" oninput="changerank()" value="20">
                 </p>
                 <p style="background:#4A75B2;width: 167px; height: 37px;margin-left: 7px;"><img src="./Images/UI/Save.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Save:
@@ -425,7 +425,7 @@
                     <p style="width: 255px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Lives.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Starting Lives:
                         <input type="text" id="startlives" oninput="changestartlives()" style="width: 75px" value="DEFAULT">
                     </p>
-                    <p style="width: 238px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Play.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Start Round:
+                    <p style="width: 242px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Play.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Start Round:
                         <input type="text" id="startround" oninput="changestartround()" style="width: 75px" value="1">
                     </p>
                     <p style="width: 228px; height: 37px;line-height:37px;margin-top: 10px;"><img src="./Images/UI/Buttons/Race.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;End Round:
@@ -462,7 +462,7 @@
         </div>
         <div id="towersection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 820px;margin-top: 10px;">
             <!-- was 680 -->
-            <p style="width: 245px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
+            <p style="width: 250px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Monkey.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Max Monkeys:
                 <input type="text" id="maxmonkeys" style="width: 30px " oninput="updatemaxmonkeys()" value="-1">
                 <img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used to limit the amount of towers you can have placed at once.')">
             </p>
@@ -489,7 +489,7 @@
         <div id="moneysection" style="background:#34547F;border-radius:5px;border:2px solid #2B466A; width: 590px; height: 400px;margin-top: 10px;">
             <p style="background:#4A75B2;width: 260px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Can Earn Money:
                 <input oninput="changecanearnmoney()" type="checkbox" checked id="CanEarnMoney" style="vertical-align:middle" onclick=""><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Deflation mode. This disables all possible ways to earn money that aren\'t related to towers.')"></p>
-            <p style="width: 320px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 15px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Money Per Round:
+            <p style="width: 328px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 15px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Money Per Round:
                 <input oninput="updatemoneyperround()" type="text" id="MoneyPerRound" style="width: 75px" value="DEFAULT"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in a special mission. This is used to change the amount of money you recieve at the end of round, it essentially adds to the regular value. A value of 100 will add to the default 100 + round number. A value of -100 will give you the round number.')">
             </p>
             <p style="width: 290px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Price Modifier:
@@ -498,7 +498,7 @@
             <p style="width: 340px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Per Pop Modifier:
                 <input oninput="updatecashperpopmod()" type="text" id="CashPerPopModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in Mastery mode and it multiplies the amount of cash you get from popping a bloon.')">
             </p>
-            <p style="width: 300px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/SellPriceModifier.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Sell Price Modifier:
+            <p style="width: 310px; height: 37px;line-height:37px;height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/SellPriceModifier.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Sell Price Modifier:
                 <input oninput="updatesellpricemod()" type="text" id="SellPriceModifier" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in difficulties. This multiples the amonunt of money of towers and upgardes cost by a value. Default value is 0.8. I think it overrides the lab upgrade.')">
             </p>
             <p style="background:#4A75B2;width: 305px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Money.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Cash Round Modifiers:
@@ -532,10 +532,10 @@
             <p style="width: 285px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Timer:
                 <input oninput="updateloselivestimer()" type="text" id="LoseLivesTimer" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This enables the No Escape gimmick and is configured by the other \'Lose Lives\' options.')">
             </p>
-            <p style="width: 300px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Amount:
+            <p style="width: 310px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Amount:
                 <input oninput="updateloselivesamount()" type="text" id="LoseLivesAmount" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is how many lives are lost every time the LoseLivesTimer reaches it time.')">
             </p>
-            <p style="width: 345px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Grace Period:
+            <p style="width: 350px; height: 37px;line-height:37px;margin-top: 10px;margin-left: 7px;"><img src="./Images/UI/Buttons/Stopwatch.png" style="width: 30px; height: 30px;vertical-align:middle" class="inline" align="top">&nbsp;Lose Lives Grace Period:
                 <input oninput="updateloselivesgraceperiod()" type="text" id="LoseLivesGracePeriod" style="width: 50px" value="NONE"><img src="./Images/UI/Info.png" style="width: 30px; height: 30px;vertical-align:middle;" class="inline" align="top" onclick="promptinfo('This is used in the No Escape special mission. This is the amount of time before the Lose Lives Timer begins running.')">
             </p>
         </div>
