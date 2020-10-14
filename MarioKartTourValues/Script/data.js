@@ -316,6 +316,9 @@ let makeDataFields = ()=>{
 
 var enableditems = [];
 function enableItem(item, type) {
+    if(!isDataEntered){
+        isDataEntered = true;
+    }
     switch (type) {
     case 1:
         if (document.getElementById(`itemenabledbox${item}`).checked) {
@@ -381,6 +384,9 @@ function enableItem(item, type) {
 }
 
 function changeLevel(item, level, type) {
+    if(!isDataEntered){
+        isDataEntered = true;
+    }
     switch (type) {
     case 1:
         document.getElementById(`invcharpanel${item}`).className = "datackgpanelenabled"
@@ -547,8 +553,6 @@ document.getElementById('inputsavedata').addEventListener('change', function() {
     reader.onload = function() {
         savedata = JSON.parse(this.result);
         document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
-        //temp = (encode(decode(array)));
-        //console.log([...array]);
         makeCourseList();
         courseListMade = true;
         calcMissingValues();

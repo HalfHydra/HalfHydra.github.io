@@ -2,7 +2,6 @@ function missingCourses(){
       document.getElementById('missingcourses').innerHTML = "";
       let output = document.getElementById('missingcourses');
       let missingcourses = [];
-
       switch(missingmode) {
         case 0:
         missingcourses = missingcoursesd;
@@ -351,6 +350,9 @@ function missingCourses(){
 }
 
 function calcMissingValues(){
+      missingcoursesd = [];
+      missingcoursesk = [];
+      missingcoursesg = [];
        let courses = Object.keys(coursedata.Courses);
 
        courses.forEach((t,i)=>{
@@ -406,9 +408,6 @@ function calcMissingValues(){
               });
               break;
               }  
-       //console.log(tempOwned);
-       //console.log(tempNotOwned);
-
        if(tempOwned.length == 0){
               switch(topshelfmode){
                 case 0:
@@ -424,9 +423,8 @@ function calcMissingValues(){
        }
 
        
-       
+      
        topshelves = tempOwned.concat(tempNotOwned);
-       //console.log(topshelves);
 
        }
      }
