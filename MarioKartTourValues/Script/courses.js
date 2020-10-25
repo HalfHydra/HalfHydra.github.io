@@ -11,24 +11,42 @@ function generateCourseList() {
         coursedata.Courses[t] = {};
         coursedata.Courses[t].moreGoodAt = {};
         coursedata.Courses[t].goodAt = {};
+        coursedata.Courses[t].unlock3 = {};
+        coursedata.Courses[t].unlock6 = {};
         coursedata.Courses[t].moreGoodAt.Drivers = [];
         coursedata.Courses[t].moreGoodAt.Karts = [];
         coursedata.Courses[t].moreGoodAt.Gliders = [];
         coursedata.Courses[t].goodAt.Drivers = [];
         coursedata.Courses[t].goodAt.Karts = [];
         coursedata.Courses[t].goodAt.Gliders = [];
+        coursedata.Courses[t].unlock3.Drivers = [];
+        coursedata.Courses[t].unlock3.Karts = [];
+        coursedata.Courses[t].unlock3.Gliders = [];
+        coursedata.Courses[t].unlock6.Drivers = [];
+        coursedata.Courses[t].unlock6.Karts = [];
+        coursedata.Courses[t].unlock6.Gliders = [];
         coursedataeng.Courses[t] = {};
         coursedataeng.Courses[t].moreGoodAt = {};
         coursedataeng.Courses[t].goodAt = {};
+        coursedataeng.Courses[t].unlock3 = {};
+        coursedataeng.Courses[t].unlock6 = {};
         coursedataeng.Courses[t].moreGoodAt.Drivers = [];
         coursedataeng.Courses[t].moreGoodAt.Karts = [];
         coursedataeng.Courses[t].moreGoodAt.Gliders = [];
         coursedataeng.Courses[t].goodAt.Drivers = [];
         coursedataeng.Courses[t].goodAt.Karts = [];
         coursedataeng.Courses[t].goodAt.Gliders = [];
+        coursedataeng.Courses[t].unlock3.Drivers = [];
+        coursedataeng.Courses[t].unlock3.Karts = [];
+        coursedataeng.Courses[t].unlock3.Gliders = [];
+        coursedataeng.Courses[t].unlock6.Drivers = [];
+        coursedataeng.Courses[t].unlock6.Karts = [];
+        coursedataeng.Courses[t].unlock6.Gliders = [];
         characterid.forEach((charid,i)=>{
             let moreGoodAt = values[charid].moreGoodAt;
             let goodAt = values[charid].goodAt;
+            let unlock3 = values[charid].unlock3;
+            let unlock6 = values[charid].unlock6;
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedata.Courses[t].moreGoodAt['Drivers'].push(charid);
@@ -41,6 +59,20 @@ function generateCourseList() {
                 }
             }
             );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock3['Drivers'].push(charid);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock6['Drivers'].push(charid);
+                }
+            }
+            );
+
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedataeng.Courses[t].moreGoodAt['Drivers'].push(values[charid].nameEng);
@@ -53,11 +85,26 @@ function generateCourseList() {
                 }
             }
             );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock3['Drivers'].push(values[charid].nameEng);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock6['Drivers'].push(values[charid].nameEng);
+                }
+            }
+            );
         }
         );
         kartid.forEach((karid,i)=>{
             let moreGoodAt = values[karid].moreGoodAt;
             let goodAt = values[karid].goodAt;
+            let unlock3 = values[karid].unlock3;
+            let unlock6 = values[karid].unlock6;
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedata.Courses[t].moreGoodAt['Karts'].push(karid);
@@ -70,6 +117,20 @@ function generateCourseList() {
                 }
             }
             );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock3['Karts'].push(karid);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock6['Karts'].push(karid);
+                }
+            }
+            );
+
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedataeng.Courses[t].moreGoodAt['Karts'].push(values[karid].nameEng);
@@ -82,11 +143,26 @@ function generateCourseList() {
                 }
             }
             );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock3['Karts'].push(values[karid].nameEng);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock6['Karts'].push(values[karid].nameEng);
+                }
+            }
+            );
         }
         );
         gliderid.forEach((glidid,i)=>{
             let moreGoodAt = values[glidid].moreGoodAt;
             let goodAt = values[glidid].goodAt;
+            let unlock3 = values[glidid].unlock3;
+            let unlock6 = values[glidid].unlock6;
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedata.Courses[t].moreGoodAt['Gliders'].push(glidid);
@@ -99,6 +175,20 @@ function generateCourseList() {
                 }
             }
             );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock3['Gliders'].push(glidid);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedata.Courses[t].unlock6['Gliders'].push(glidid);
+                }
+            }
+            );
+
             moreGoodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedataeng.Courses[t].moreGoodAt['Gliders'].push(values[glidid].nameEng);
@@ -108,6 +198,19 @@ function generateCourseList() {
             goodAt.forEach((courseid,i)=>{
                 if (courseid == t) {
                     coursedataeng.Courses[t].goodAt['Gliders'].push(values[glidid].nameEng);
+                }
+            }
+            );
+
+            unlock3.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock3['Gliders'].push(values[glidid].nameEng);
+                }
+            }
+            );
+            unlock6.forEach((courseid,i)=>{
+                if(courseid == t){
+                  coursedataeng.Courses[t].unlock6['Gliders'].push(values[glidid].nameEng);
                 }
             }
             );
@@ -325,13 +428,13 @@ function specificitemcourses(){
         let topimg = document.createElement('img');
         switch (charrarity[i]) {
         case "1":
-            topimg.src = `./Images/UI/outlinenormal.png`;
+            topimg.src = `./Images/UI/outlinenormalchar.png`;
             break;
         case "2":
-            topimg.src = `./Images/UI/outlinerare.png`;
+            topimg.src = `./Images/UI/outlinerarechar.png`;
             break;
         case "3":
-            topimg.src = `./Images/UI/outlinehighend.png`;
+            topimg.src = `./Images/UI/outlinehighendchar.png`;
             break;
         }
         topimg.className = 'topimg';
@@ -550,6 +653,7 @@ function specificchoicemade(t, type, rarity, item) {
        combTS2.className = 'combTS'
 
        let topshelves = [];
+       let topshelvestypes = [];
 
        for(var m = 0; m<2;m++){
        for(var x = 0; x<3;x++){
@@ -560,21 +664,65 @@ function specificchoicemade(t, type, rarity, item) {
        }
 
        topshelves.splice(0,topshelves.length);
+       topshelvestypes.splice(0,topshelvestypes.length);
+       if(!isDataEntered){
        if(m == 0){
        switch(x){
               case 0:
               coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 1:
               coursedata.Courses[t].moreGoodAt.Karts.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 2:
               coursedata.Courses[t].moreGoodAt.Gliders.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
               });
               break;
        }
@@ -598,10 +746,146 @@ function specificchoicemade(t, type, rarity, item) {
               break;
               }
        }
+       
+     }
+     if(isDataEntered){
+      if(m == 0){
+        switch(x){
+              case 0:
+              coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].moreGoodAt.Karts.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].moreGoodAt.Gliders.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+       }
+     }
+     if(m == 1){
+              switch(x){
+              case 0:
+              coursedata.Courses[t].goodAt.Drivers.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].goodAt.Karts.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].goodAt.Gliders.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+       }
+       }
        let tempOwned = [];
        let tempNotOwned = [];
-       if(isDataEntered){
-              if(m == 0){
+       let temp3Owned = [];
+       let temp6Owned = [];
+       let temp3NotLeveled = [];
+       let temp6NotLeveled = [];
+       let temp3NotOwned = [];
+       let temp6NotOwned = [];
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
+       if(m == 0){
             switch(x){
               case 0:
               coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
@@ -631,9 +915,78 @@ function specificchoicemade(t, type, rarity, item) {
               });
               break;
               }  
-       }
 
-              if(m == 1){
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+       }
+      }
+      if(m == 1){
               tempOwned.splice(0,tempOwned.length);
               tempNotOwned.splice(0,tempNotOwned.length);
               switch(x){
@@ -665,14 +1018,48 @@ function specificchoicemade(t, type, rarity, item) {
               });
               break;
               }
-              }
-       /*if(tempOwned.length == 0){
-              missingCourses.push(t);
-       }*/
+            }
 
-       topshelves = tempOwned.concat(tempNotOwned);
 
-       }
+
+
+       topshelves.splice(0,topshelves.length);
+       topshelvestypes.splice(0,topshelvestypes.length);
+       //topshelves = tempOwned.concat(tempNotOwned);
+       topshelves = tempOwned.concat(temp3Owned);
+       topshelves = topshelves.concat(temp6Owned);
+       topshelves = topshelves.concat(tempNotOwned);
+       topshelves = topshelves.concat(temp3NotOwned);
+       topshelves = topshelves.concat(temp6NotOwned);
+       console.log(topshelves);
+       //console.log(topshelvestypes);
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
+       tempOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('0');
+       });
+       temp3Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('1');
+       });
+       temp6Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('2');
+       });
+       tempNotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('3');
+       });
+       temp3NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('4');
+       });
+       temp6NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('5');
+       });
+       console.log(topshelvestypes);
+     }//isdataentered
+
 
        topshelves.forEach((t,i)=>{ 
        var panel = document.createElement('div');
@@ -748,13 +1135,13 @@ function specificchoicemade(t, type, rarity, item) {
         case 0:
         switch (charrarity[characterid.indexOf(t)]) {
         case "1":
-            topimg.src = `./Images/UI/outlinenormal.png`;
+            topimg.src = `./Images/UI/outlinenormalchar.png`;
             break;
         case "2":
-            topimg.src = `./Images/UI/outlinerare.png`;
+            topimg.src = `./Images/UI/outlinerarechar.png`;
             break;
         case "3":
-            topimg.src = `./Images/UI/outlinehighend.png`;
+            topimg.src = `./Images/UI/outlinehighendchar.png`;
             break;
         }
         break;
@@ -822,7 +1209,8 @@ function specificchoicemade(t, type, rarity, item) {
               itemlvl = savedata.Items.Gliders[t];
               break;
         }
-        if (itemlvl != null && isDataEntered) {
+        if(m == 0){
+          if (itemlvl != null && isDataEntered && topshelvestypes[i] == 0) {
             let levelicon = document.createElement('img');
             levelicon.src = `./Images/UI/${itemlvl}.png`;
             levelicon.className = 'levelicon';
@@ -839,7 +1227,208 @@ function specificchoicemade(t, type, rarity, item) {
 
         if(!isDataEntered){
               panel.className = 'ckgpanel';
+              switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+              }
         }
+
+        if(isDataEntered){
+          switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            panel.className = 'ckgpanel';
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            panel.className = 'ckgpanel';
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+                case "3":
+                break;
+                case "4":
+            let lockimg3 = document.createElement('img');
+            lockimg3.src = `./Images/UI/lock.png`;
+            lockimg3.className = 'courselockimgts';
+            lockimg3.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg3);
+
+            let levelicon3 = document.createElement('img');
+            levelicon3.src = `./Images/UI/3.png`;
+            levelicon3.className = 'leveliconunlockts';
+            levelicon3.style.filter = "grayscale(0%)";
+            levelicon3.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon3);
+
+            let lvicon3 = document.createElement('img');
+            lvicon3.src = './Images/UI/lv.png';
+            lvicon3.className = 'lviconunlockts';
+            lvicon3.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon3);
+                break;
+                case "5":
+            let lockimg4 = document.createElement('img');
+            lockimg4.src = `./Images/UI/lock.png`;
+            lockimg4.className = 'courselockimgts';
+            lockimg4.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg4);
+
+            let levelicon4 = document.createElement('img');
+            levelicon4.src = `./Images/UI/6.png`;
+            levelicon4.className = 'leveliconunlockts';
+            levelicon4.style.filter = "grayscale(0%)";
+            levelicon4.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon4);
+
+            let lvicon4 = document.createElement('img');
+            lvicon4.src = './Images/UI/lv.png';
+            lvicon4.className = 'lviconunlockts';
+            lvicon4.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon4);
+                break;
+              }
+        }//isdatanetered
+        }
+        if(m == 1){
+        if (itemlvl != null && isDataEntered) {
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/${itemlvl}.png`;
+            levelicon.className = 'levelicon';
+            levelicon.id = `coursets_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lvicon';
+            panel.appendChild(lvicon);
+        } else {
+              panel.className = 'ckgpaneldisabled';
+        }
+      
+
+        if(!isDataEntered){
+              panel.className = 'ckgpanel';
+              switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+              }
+        }
+      }
 
         topShelfPanel.appendChild(panel);
               });
@@ -880,13 +1469,13 @@ function makeTopShelfPreview() {
        let courseimg = document.createElement('img');
        courseimg.src = `./Images/Course Image/${t}.png`;
        courseimg.className = 'courseimgtopshelf';
-       courseimg.style.zoom = "90%"
+       //courseimg.style.zoom = "90%"
        coursePanel.appendChild(courseimg);
 
        let coursetxt = document.createElement('p');
        coursetxt.innerHTML = coursenames[t];
        coursetxt.className = 'coursetxttopshelf';
-       coursetxt.style.zoom = "90%"
+       //coursetxt.style.zoom = "90%"
        coursePanel.appendChild(coursetxt);
 
        var topShelfPanel = document.createElement('div');
@@ -896,26 +1485,98 @@ function makeTopShelfPreview() {
        }
 
 
-       let topshelves = [];
+let topshelves = [];
+let topshelvestypes = [];
+//0 = Owned
+//1 = Owned Unlock 3
+//2 = Owned Unlock 6
+//3 = Not Owned
+//4 = Not Owned Unlock 3
+//5 = Not Owned Unlock 6
+
+let unlock3topshelves = [];
+let unlock6topshelves = [];
+
+       //Data Not Entered
        switch(topshelfmode){
               case 0:
               coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 1:
               coursedata.Courses[t].moreGoodAt.Karts.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 2:
               coursedata.Courses[t].moreGoodAt.Gliders.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
        }
+
+       switch(topshelfmode){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+       }
+
+
+
+
+
+
        let tempOwned = [];
        let tempNotOwned = [];
+       let temp3Owned = [];
+       let temp6Owned = [];
+       let temp3NotLeveled = [];
+       let temp6NotLeveled = [];
+       let temp3NotOwned = [];
+       let temp6NotOwned = [];
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
        if(isDataEntered){
             switch(topshelfmode){
               case 0:
@@ -947,11 +1608,113 @@ function makeTopShelfPreview() {
               break;
               }  
 
+       switch(topshelfmode){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+       }       
 
 
-       topshelves = tempOwned.concat(tempNotOwned);
-
-       }
+       topshelves.splice(0,topshelves.length);
+       topshelvestypes.splice(0,topshelvestypes.length);
+       //topshelves = tempOwned.concat(tempNotOwned);
+       topshelves = tempOwned.concat(temp3Owned);
+       topshelves = topshelves.concat(temp6Owned);
+       topshelves = topshelves.concat(tempNotOwned);
+       topshelves = topshelves.concat(temp3NotOwned);
+       topshelves = topshelves.concat(temp6NotOwned);
+       console.log(topshelves);
+       //console.log(topshelvestypes);
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
+       tempOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('0');
+       });
+       temp3Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('1');
+       });
+       temp6Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('2');
+       });
+       tempNotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('3');
+       });
+       temp3NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('4');
+       });
+       temp6NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('5');
+       });
+       console.log(topshelvestypes);
+      }
 
        topshelves.forEach((t,i)=>{ 
        var panel = document.createElement('div');
@@ -1027,13 +1790,13 @@ function makeTopShelfPreview() {
         case 0:
         switch (charrarity[characterid.indexOf(t)]) {
         case "1":
-            topimg.src = `./Images/UI/outlinenormal.png`;
+            topimg.src = `./Images/UI/outlinenormalchar.png`;
             break;
         case "2":
-            topimg.src = `./Images/UI/outlinerare.png`;
+            topimg.src = `./Images/UI/outlinerarechar.png`;
             break;
         case "3":
-            topimg.src = `./Images/UI/outlinehighend.png`;
+            topimg.src = `./Images/UI/outlinehighendchar.png`;
             break;
         }
         break;
@@ -1101,7 +1864,7 @@ function makeTopShelfPreview() {
               itemlvl = savedata.Items.Gliders[t];
               break;
         }
-        if (itemlvl != null && isDataEntered) {
+        if (itemlvl != null && isDataEntered && topshelvestypes[i] == 0) {
             let levelicon = document.createElement('img');
             levelicon.src = `./Images/UI/${itemlvl}.png`;
             levelicon.className = 'levelicon';
@@ -1118,6 +1881,141 @@ function makeTopShelfPreview() {
 
         if(!isDataEntered){
               panel.className = 'ckgpanel';
+              switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+              }
+        }
+
+        if(isDataEntered){
+          switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            panel.className = 'ckgpanel';
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            panel.className = 'ckgpanel';
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+                case "3":
+                break;
+                case "4":
+            let lockimg3 = document.createElement('img');
+            lockimg3.src = `./Images/UI/lock.png`;
+            lockimg3.className = 'courselockimgts';
+            lockimg3.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg3);
+
+            let levelicon3 = document.createElement('img');
+            levelicon3.src = `./Images/UI/3.png`;
+            levelicon3.className = 'leveliconunlockts';
+            levelicon3.style.filter = "grayscale(0%)";
+            levelicon3.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon3);
+
+            let lvicon3 = document.createElement('img');
+            lvicon3.src = './Images/UI/lv.png';
+            lvicon3.className = 'lviconunlockts';
+            lvicon3.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon3);
+                break;
+                case "5":
+            let lockimg4 = document.createElement('img');
+            lockimg4.src = `./Images/UI/lock.png`;
+            lockimg4.className = 'courselockimgts';
+            lockimg4.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg4);
+
+            let levelicon4 = document.createElement('img');
+            levelicon4.src = `./Images/UI/6.png`;
+            levelicon4.className = 'leveliconunlockts';
+            levelicon4.style.filter = "grayscale(0%)";
+            levelicon4.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon4);
+
+            let lvicon4 = document.createElement('img');
+            lvicon4.src = './Images/UI/lv.png';
+            lvicon4.className = 'lviconunlockts';
+            lvicon4.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon4);
+                break;
+              }
         }
 
         topShelfPanel.appendChild(panel);
@@ -1143,7 +2041,7 @@ function makeTopShelfPreview() {
        let courseimg = document.createElement('img');
        courseimg.src = `./Images/Course Image/${t}.png`;
        courseimg.className = 'courseimgslc';
-       courseimg.style.zoom = "90%"
+       //courseimg.style.zoom = "90%"
        courseimg.addEventListener('click', function() {
             selectCourse(t);
         });
@@ -1152,7 +2050,7 @@ function makeTopShelfPreview() {
        let coursetxt = document.createElement('p');
        coursetxt.innerHTML = coursenames[t];
        coursetxt.className = 'coursetxtslc';
-       coursetxt.style.zoom = "90%"
+       //coursetxt.style.zoom = "90%"
        coursePanel.appendChild(coursetxt);
 
        let combTS = document.createElement('div');
@@ -1162,6 +2060,7 @@ function makeTopShelfPreview() {
        combTS2.className = 'combTS'
 
        let topshelves = [];
+       let topshelvestypes = [];
 
        for(var m = 0; m<2;m++){
        for(var x = 0; x<3;x++){
@@ -1172,21 +2071,65 @@ function makeTopShelfPreview() {
        }
 
        topshelves.splice(0,topshelves.length);
+       topshelvestypes.splice(0,topshelvestypes.length);
+       if(!isDataEntered){
        if(m == 0){
        switch(x){
               case 0:
               coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 1:
               coursedata.Courses[t].moreGoodAt.Karts.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
               });
               break;
               case 2:
               coursedata.Courses[t].moreGoodAt.Gliders.forEach((t,i)=>{ 
               topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
               });
               break;
        }
@@ -1210,10 +2153,146 @@ function makeTopShelfPreview() {
               break;
               }
        }
+       
+     }
+     if(isDataEntered){
+      if(m == 0){
+        switch(x){
+              case 0:
+              coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].moreGoodAt.Karts.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].moreGoodAt.Gliders.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+       }
+     }
+     if(m == 1){
+              switch(x){
+              case 0:
+              coursedata.Courses[t].goodAt.Drivers.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].goodAt.Karts.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].goodAt.Gliders.forEach((t,i)=>{ 
+              topshelves.push(t)
+              topshelvestypes.push('0');
+              });
+              break;
+       }
+
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+              //unlock3topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+              //unlock6topshelves.push(t)
+              topshelves.push(t)
+              topshelvestypes.push('2');
+              });
+              break;
+       }
+       }
        let tempOwned = [];
        let tempNotOwned = [];
-       if(isDataEntered){
-              if(m == 0){
+       let temp3Owned = [];
+       let temp6Owned = [];
+       let temp3NotLeveled = [];
+       let temp6NotLeveled = [];
+       let temp3NotOwned = [];
+       let temp6NotOwned = [];
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
+       if(m == 0){
             switch(x){
               case 0:
               coursedata.Courses[t].moreGoodAt.Drivers.forEach((t,i)=>{ 
@@ -1243,9 +2322,78 @@ function makeTopShelfPreview() {
               });
               break;
               }  
-       }
 
-              if(m == 1){
+       switch(x){
+              case 0:
+              coursedata.Courses[t].unlock3.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Drivers.forEach((t,i)=>{ 
+                if(savedata.Items.Drivers[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 1:
+              coursedata.Courses[t].unlock3.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Karts.forEach((t,i)=>{ 
+                if(savedata.Items.Karts[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+              case 2:
+              coursedata.Courses[t].unlock3.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp3Owned.push(t)
+                } else {
+                     temp3NotOwned.push(t)       
+                }
+              //unlock3topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('1');
+              });
+              coursedata.Courses[t].unlock6.Gliders.forEach((t,i)=>{ 
+                if(savedata.Items.Gliders[t] != null){
+                     temp6Owned.push(t)
+                } else {
+                     temp6NotOwned.push(t)       
+                }
+              //unlock6topshelves.push(t)
+              //topshelves.push(t)
+              //topshelvestypes.push('2');
+              });
+              break;
+       }
+      }
+      if(m == 1){
               tempOwned.splice(0,tempOwned.length);
               tempNotOwned.splice(0,tempNotOwned.length);
               switch(x){
@@ -1277,14 +2425,48 @@ function makeTopShelfPreview() {
               });
               break;
               }
-              }
-       /*if(tempOwned.length == 0){
-              missingCourses.push(t);
-       }*/
+            }
 
-       topshelves = tempOwned.concat(tempNotOwned);
 
-       }
+
+
+       topshelves.splice(0,topshelves.length);
+       topshelvestypes.splice(0,topshelvestypes.length);
+       //topshelves = tempOwned.concat(tempNotOwned);
+       topshelves = tempOwned.concat(temp3Owned);
+       topshelves = topshelves.concat(temp6Owned);
+       topshelves = topshelves.concat(tempNotOwned);
+       topshelves = topshelves.concat(temp3NotOwned);
+       topshelves = topshelves.concat(temp6NotOwned);
+       console.log(topshelves);
+       //console.log(topshelvestypes);
+       //0 = Owned
+       //1 = Owned Unlock 3
+       //2 = Owned Unlock 6
+       //3 = Not Owned
+       //4 = Not Owned Unlock 3
+       //5 = Not Owned Unlock 6
+       tempOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('0');
+       });
+       temp3Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('1');
+       });
+       temp6Owned.forEach((t,i)=>{ 
+          topshelvestypes.push('2');
+       });
+       tempNotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('3');
+       });
+       temp3NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('4');
+       });
+       temp6NotOwned.forEach((t,i)=>{ 
+          topshelvestypes.push('5');
+       });
+       console.log(topshelvestypes);
+     }//isdataentered
+
 
        topshelves.forEach((t,i)=>{ 
        var panel = document.createElement('div');
@@ -1360,13 +2542,13 @@ function makeTopShelfPreview() {
         case 0:
         switch (charrarity[characterid.indexOf(t)]) {
         case "1":
-            topimg.src = `./Images/UI/outlinenormal.png`;
+            topimg.src = `./Images/UI/outlinenormalchar.png`;
             break;
         case "2":
-            topimg.src = `./Images/UI/outlinerare.png`;
+            topimg.src = `./Images/UI/outlinerarechar.png`;
             break;
         case "3":
-            topimg.src = `./Images/UI/outlinehighend.png`;
+            topimg.src = `./Images/UI/outlinehighendchar.png`;
             break;
         }
         break;
@@ -1434,7 +2616,8 @@ function makeTopShelfPreview() {
               itemlvl = savedata.Items.Gliders[t];
               break;
         }
-        if (itemlvl != null && isDataEntered) {
+        if(m == 0){
+          if (itemlvl != null && isDataEntered && topshelvestypes[i] == 0) {
             let levelicon = document.createElement('img');
             levelicon.src = `./Images/UI/${itemlvl}.png`;
             levelicon.className = 'levelicon';
@@ -1451,7 +2634,208 @@ function makeTopShelfPreview() {
 
         if(!isDataEntered){
               panel.className = 'ckgpanel';
+              switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+              }
         }
+
+        if(isDataEntered){
+          switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            panel.className = 'ckgpanel';
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            panel.className = 'ckgpanel';
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+                case "3":
+                break;
+                case "4":
+            let lockimg3 = document.createElement('img');
+            lockimg3.src = `./Images/UI/lock.png`;
+            lockimg3.className = 'courselockimgts';
+            lockimg3.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg3);
+
+            let levelicon3 = document.createElement('img');
+            levelicon3.src = `./Images/UI/3.png`;
+            levelicon3.className = 'leveliconunlockts';
+            levelicon3.style.filter = "grayscale(0%)";
+            levelicon3.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon3);
+
+            let lvicon3 = document.createElement('img');
+            lvicon3.src = './Images/UI/lv.png';
+            lvicon3.className = 'lviconunlockts';
+            lvicon3.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon3);
+                break;
+                case "5":
+            let lockimg4 = document.createElement('img');
+            lockimg4.src = `./Images/UI/lock.png`;
+            lockimg4.className = 'courselockimgts';
+            lockimg4.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg4);
+
+            let levelicon4 = document.createElement('img');
+            levelicon4.src = `./Images/UI/6.png`;
+            levelicon4.className = 'leveliconunlockts';
+            levelicon4.style.filter = "grayscale(0%)";
+            levelicon4.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon4);
+
+            let lvicon4 = document.createElement('img');
+            lvicon4.src = './Images/UI/lv.png';
+            lvicon4.className = 'lviconunlockts';
+            lvicon4.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon4);
+                break;
+              }
+        }//isdatanetered
+        }
+        if(m == 1){
+        if (itemlvl != null && isDataEntered) {
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/${itemlvl}.png`;
+            levelicon.className = 'levelicon';
+            levelicon.id = `coursets_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lvicon';
+            panel.appendChild(lvicon);
+        } else {
+              panel.className = 'ckgpaneldisabled';
+        }
+      
+
+        if(!isDataEntered){
+              panel.className = 'ckgpanel';
+              switch(topshelvestypes[i]){
+                case "0":
+                break;
+                case "1":
+            let lockimg = document.createElement('img');
+            lockimg.src = `./Images/UI/lock.png`;
+            lockimg.className = 'courselockimgts';
+            lockimg.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg);
+
+            let levelicon = document.createElement('img');
+            levelicon.src = `./Images/UI/3.png`;
+            levelicon.className = 'leveliconunlockts';
+            levelicon.style.filter = "grayscale(0%)";
+            levelicon.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon);
+
+            let lvicon = document.createElement('img');
+            lvicon.src = './Images/UI/lv.png';
+            lvicon.className = 'lviconunlockts';
+            lvicon.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon);
+                break;
+                case "2":
+            let lockimg2 = document.createElement('img');
+            lockimg2.src = `./Images/UI/lock.png`;
+            lockimg2.className = 'courselockimgts';
+            lockimg2.style.filter = "grayscale(0%)";
+            panel.appendChild(lockimg2);
+
+            let levelicon2 = document.createElement('img');
+            levelicon2.src = `./Images/UI/6.png`;
+            levelicon2.className = 'leveliconunlockts';
+            levelicon2.style.filter = "grayscale(0%)";
+            levelicon2.id = `inv_levelnumber${t}`;
+            panel.appendChild(levelicon2);
+
+            let lvicon2 = document.createElement('img');
+            lvicon2.src = './Images/UI/lv.png';
+            lvicon2.className = 'lviconunlockts';
+            lvicon2.style.filter = "grayscale(0%)";
+            panel.appendChild(lvicon2);
+                break;
+              }
+        }
+      }
 
         topShelfPanel.appendChild(panel);
               });
