@@ -469,6 +469,17 @@ input[type='checkbox'] {
                     document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" is not defined in the level!\n"
                 }
                 break;
+                case ".":
+                valid = false;
+                for(var n=0;n<objects.length;n++){
+                    if(modules[i] == objects[n]){
+                        valid = true;
+                    }
+                }
+                if(valid == false){
+                    document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" is not defined in the level!\n"
+                }
+                break;
                 default:
                 document.getElementById('log').value += "[Module " + (i + 1) + "] Error! The module \""  + modules[i] + "\" errors because the syntax is incorrect.\n"
             }
@@ -588,6 +599,17 @@ input[type='checkbox'] {
                 }
                 break;
                 case "CurrentLevel":
+                valid = false;
+                for(var n=0;n<objects.length;n++){
+                    if(zombies[i] == objects[n]){
+                        valid = true;
+                    }
+                }
+                if(valid == false){
+                    document.getElementById('log').value += "[Zombie in " + zombiesobjlocarray[i] + "] Error! The zombie \""  + zombies[i] + "\" is not defined in the level!\n"
+                }
+                break;
+                case ".":
                 valid = false;
                 for(var n=0;n<objects.length;n++){
                     if(zombies[i] == objects[n]){
