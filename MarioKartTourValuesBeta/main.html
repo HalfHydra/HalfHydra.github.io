@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-   		<link rel="stylesheet" href="./Script/style.css">
+         <link rel="stylesheet" href="./Script/style.css">
       <style>
          @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
          /*@font-face {font-family: headername;src: url('./Font/nintendoP_NTLG-NR-UB_003.ttf');}*/
@@ -22,7 +22,8 @@
       </div>
 
       </div>
-      <div style="width:100%;background-image: url('./Images/UI/Background/BlackPattern.png');background-size: 194px auto;padding:10px;margin-top: -8px;margin-left: -12px;">
+      <div style="width:100%;background-image: url('./Images/UI/Background/BlackPattern.png');background-size: 194px auto;padding:10px;margin-top: -8px;margin-left: -12px;position: sticky;
+    top: 0;z-index:9999">
       <div style="margin: 0px auto;width: 940px;right: 0;left: 0;">
          <div style="width: 160px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(1)">
             <img src="./Images/UI/Icon/Manual.png" style="width: 40px;height: 52px;">
@@ -53,7 +54,7 @@
          </div>
       </div>
    </div>
-      <div class="stripedbg" style="margin: 0px auto;width: auto; max-width: 1000px;height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;*/border: 5px solid #b5ceff;" id="content">
+      <div class="stripedbg" style="margin: 0px auto;width: auto; max-width: 1000px;height:auto;min-height: calc(100vh - 100px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;*/border: 5px solid #b5ceff;" id="content">
          <div id="intro" style="height: auto;">
             <h3 class="blackoutline"style="font-family: tour;font-size: 36px;text-align: center;">Landing Page</h3>
             <div> </div>
@@ -75,7 +76,7 @@
 
          </div>
          <div id="data" style="height: auto;display:none;">
-         	<div class="stripedbg"  style="position: sticky;top: 0;z-index: 30/*;background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/"> 
+            <div class="stripedbg"  style="position: sticky;top: 75px;z-index: 30/*;background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/"> 
             <h3 style="font-family: tour;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 60px;">Data</h3>
             <div style="background-color: rgba(0, 0, 0, 0.3);padding:10px;">
                <input type="file" id="inputsavedata" style="height: 30px;"><button style="float: right;width: 150px;height: 30px;" onclick="downloadsavedata()">Download Save Data</button>
@@ -107,9 +108,9 @@
             </div>
          </div>
          <div id="inventory" style="height: auto;display:none;">
-            <div class="stripedbg"  style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+            <div class="stripedbg"  style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 75px;z-index: 30;">
                <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Inventory</h3>
-               <div id="itembtns" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 525px;">
+               <div id="itembtns" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 525px;line-height: 23px;">
                   <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
                      <img id='alldkgbtn' src="./Images/UI/coursedkgbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changeckg(3)">
                      <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> All </p>
@@ -137,7 +138,7 @@
             </div>
          </div>
          <div id="courses" style="height: auto;display:none;">
-         	<div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;padding-bottom: 15px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;padding-bottom: 15px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;/*border: 5px solid #b5ceff;*/position: sticky;top: 75px;z-index: 30;">
                <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Courses</h3>
 
                <div id="courseitembtnscourses" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 200px;">
@@ -205,21 +206,21 @@
             <!--<h3>Courses</h3>-->
             <div style="position: relative;">
                   <div id="selectcourses" style="margin-left: 50px;">
-                  	<!--<h3>Select Courses</h3>-->
+                     <!--<h3>Select Courses</h3>-->
                   </div>
                   <div id="topshelfpreview">
-                  	
+                     
                   </div>
                   <div id="selectedcourses">
 
                   </div>
                   <div id="itemspecificcourses">
-                  	
+                     
                   </div>
                </div>
          </div>
          <div id="missing" style="height: auto;display:none;">
-            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;/*border: 5px solid #b5ceff;*/position: sticky;top: 75px;z-index: 30;">
                <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 300px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Missing Courses</h3>
                <div id="courseitembtnsmissing" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 400px;">
                   <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
@@ -244,7 +245,7 @@
             
          </div>
          <div id="ranked" style="display: none;">
-            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*?padding-top:10px;display:block;width: 100%;height: 160px;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*?padding-top:10px;display:block;width: 100%;height: 160px;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 75px;z-index: 30;">
                <h3 class='whiteoutline' style="font-family: tour;font-size: 18px;width: 300px;display: inline-block;position: absolute;margin-left: 10px;">Current Ranked Cup </h3>
             <div style="display: inline-block;position: absolute;margin-left:270px;">
                <img src="./Images/UI/cupranked.png" style="width: 100px;height: 100px;">
@@ -287,7 +288,7 @@
          <div id="settings" style="height:auto;display:none;">
             <h3 style="font-family: tour;font-size: 28px;text-align: center;margin-left: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;">Settings</h3>
             <!--<div id='general' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;">-->
-            	<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">General</h3>
+               <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">General</h3>
                <div style="text-align: center;">
                  <a href="https://forms.gle/bLeTSX3y77kYw5rS9"> <button style="vertical-align:middle;margin-left: 10px;margin-top: -3px;width: auto;height: 30px;font-size:20px">Send Feedback</button>
                </a>
@@ -297,11 +298,11 @@
             <h4 style="display:inline-block;margin-bottom: 0px;">Disable Data Usage After Entered</h4>
             <input type="checkbox" id="changeusedata"  oninput="changeusedata()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>-->
-        	<!--</div>-->
-        	<!--<div id='inventory' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;">-->
-        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Inventory</h3>
+         <!--</div>-->
+         <!--<div id='inventory' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;">-->
+            <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Inventory</h3>
             <div style="text-align: center;">
-        		<h4 style="display:inline-block;margin-bottom: 0px;">Disable City Tracks in Value Count</h4>
+            <h4 style="display:inline-block;margin-bottom: 0px;">Disable City Tracks in Value Count</h4>
             <input type="checkbox" id="changecityvalue"  oninput="changecityvalue()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>
          <div style="text-align: center;">
@@ -314,14 +315,14 @@
             <h4 style="display:inline-block;margin-bottom: 0px;">[OLD] Enable Multiple Panels in Inventory</h4>
             <input type="checkbox" id="changemultiplepanelvalue"  oninput="changemultiplepanelvalue()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>-->
-        	<!--</div>-->
-        	<!--<div id='courses' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
-        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Courses</h3>
+         <!--</div>-->
+         <!--<div id='courses' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
+            <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Courses</h3>
             <div style="text-align: center;">
-        		<h4 style="display:inline-block;margin-bottom: 0px;">Only Show Owned Items in Specific Items</h4>
+            <h4 style="display:inline-block;margin-bottom: 0px;">Only Show Owned Items in Specific Items</h4>
             <input type="checkbox" id="changeowneditems"  oninput="changeowneditems()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>
-        	<!--</div>-->
+         <!--</div>-->
          <!--<div id='courses' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-top: 5px;">-->
             <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Courses</h3>
             <div style="text-align: center;">
@@ -329,10 +330,10 @@
             <input type="checkbox" id="changecitymissing"  oninput="changecitymissing()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>
          <!--</div>-->
-        	<!--<div id='JSON' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
-        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">JSON</h3>
+         <!--<div id='JSON' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
+            <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">JSON</h3>
             <!--<div style="text-align: center;">
-        		<h4 style="display:inline-block;margin-bottom: 0px;">Debug Save Data Viewer</h4>
+            <h4 style="display:inline-block;margin-bottom: 0px;">Debug Save Data Viewer</h4>
             <input type="checkbox" id="changedebugsave"  oninput="changedebugsave()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
          </div>-->
          <div style="text-align: center;">
@@ -352,7 +353,7 @@
          <h4 style="display:inline-block;text-align:center;margin-bottom: 30px;font-size: 20px;">Special Thanks to tryso and spotlight for assisting in providing the jsons initially. Additional thanks to demogorgon, hack_nug, and Ampere for some suggestions. And lastly, HUGE THANKS to everyone who helped me test this out and provide feedback, as well as how to make the design more accurate to the game.</h4>
          </div>
 
-        	<!--</div>-->
+         <!--</div>-->
          </div>
       </div>
       <div id="debugsave" style="display: none;">
@@ -379,12 +380,12 @@
                      {
                          var allText = rawFile.responseText;
                          switch(unit){
-                         	case 1:
-                         	values = JSON.parse(allText);
-                         	break;
-                         	case 2:
-                         	coursenames = JSON.parse(allText);
-                         	break;
+                           case 1:
+                           values = JSON.parse(allText);
+                           break;
+                           case 2:
+                           coursenames = JSON.parse(allText);
+                           break;
                          }
                      }
                  }
