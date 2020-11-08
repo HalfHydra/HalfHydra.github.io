@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   		<link rel="stylesheet" href="./Script/style.css">
+      <style>
+         @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
+         /*@font-face {font-family: headername;src: url('./Font/nintendoP_NTLG-NR-UB_003.ttf');}*/
+         @font-face {font-family: 'headername';src: url('/Font/nintendoP_NTLG-NR-UB_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+         @font-face {font-family: 'headername2';src: url('/Font/nintendop_ntlg-nr-db_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+      </style>
+      <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
+      <div> 
+   </head>
+   <body class="main" style="height: 100%" id="bigbody">
+      <img id="loadingimg" src="./Images/UI/Loading.png" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
+      <div id="inventorymodal" class="inventorymodal">
+  <!-- Modal content -->
+      <div id="singleinv" class="inventorymodal-content stripedbg">
+      <!--<span class="inventorymodalclose">&times;</span>
+      <p>Some text in the Modal..</p>-->
+
+      </div>
+
+      </div>
+      <div style="width:100%;background-image: url('./Images/UI/Background/BlackPattern.png');background-size: 194px auto;padding:10px;margin-top: -8px;margin-left: -12px;">
+      <div style="margin: 0px auto;width: 940px;right: 0;left: 0;">
+         <div style="width: 160px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(1)">
+            <img src="./Images/UI/Icon/Manual.png" style="width: 40px;height: 52px;">
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Enter Data </p>
+         </div>
+         <div style="width: 150px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(2)">
+            <img src="./Images/UI/Icon/Inventory.png" style="width: 46px;height: 50px;">
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Inventory </p>
+         </div>
+         <div style="width: 155px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(3)">
+            <img src="./Images/UI/Icon/Course.png" style="width: 62px;height: 52px;">
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Courses </p>
+         </div>
+         <div style="width: 150px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(4)">
+            <img src="./Images/UI/Icon/Missing.png" style="width: 62px;height: 52px;">
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Missing </p>
+         </div>
+         <div style="width: 150px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(6)">
+         <div style="width:50px;height:50px;display:inline-block;transform: scale(1.2);">
+            <img src="./Images/UI/cupranked.png" style="width: 50px;height: 50px;/*filter: brightness(30%);*/">
+            <img id="rankcupimg" style="width: 30px;height: 30px;position: absolute;margin-left: -40px;margin-top: 10px;display:none;" onclick="changemode(6)">
+         </div>
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 10px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Ranked </p>
+         </div>
+         <div style="width: 150px;height: 52px;display: inline-block;cursor: pointer;" onclick="changemode(5)">
+            <img src="./Images/UI/Icon/Setting.png" style="width: 52px;height: 52px;">
+            <p class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Settings </p>
+         </div>
+      </div>
+   </div>
+      <div class="stripedbg" style="margin: 0px auto;width: auto; max-width: 1000px;height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;*/border: 5px solid #b5ceff;" id="content">
+         <div id="intro" style="height: auto;">
+            <h3 class="blackoutline"style="font-family: tour;font-size: 36px;text-align: center;">Landing Page</h3>
+            <div> </div>
+            <p class="landingpagetxt" style="text-align: center;">Welcome!</p>
+            <p class="landingpagetxt" style="text-align: center;">The functions of the site break down into the 6 tabs at the top: </p>
+            <p class="landingpagetxt">1. Enter Data</p>
+            <p class="landingpagetxt">This tab is optional, but entering your levels from your game will help you get a better representation of what’s going to be better for you, as well as help you figure out what courses you are missing top shelves on. Entering your data will save upon reloading the page or exiting the browser, but I advise you to save a copy of your data if you plan to switch browsers or clear your browsing data.</p>
+            <p class="landingpagetxt">2. Inventory</p>
+            <p class="landingpagetxt">Here you can click on the Drivers Karts and Gliders to check values similarly to how you would in game. </p>
+            <p class="landingpagetxt">3. Courses</p>
+            <p class="landingpagetxt">This section allows you to view the top shelves of courses, and if you enter your data, you can compare with just the characters you own. You can also specify an item to reveal all of the courses for.</p>
+            <p class="landingpagetxt">4. Missing</p>
+            <p class="landingpagetxt">This option is separate because it focuses on everything that you are missing, and only shows that in a simple place.</p>
+            <p class="landingpagetxt">5. Ranked</p>
+            <p class="landingpagetxt">This option is specifically made for ranked, and will show the newest ranked cup, as well as a countdown timer depending on when the tool is updated to reflect the new tour.</p>
+            <p class="landingpagetxt">6. Settings</p>
+            <p class="landingpagetxt">These are for options such as disabling city tracks in the value count, or showing only items that you own in various parts of the tool.</p>
+            <p class="landingpagetxt" style="text-align: center;">Hope this helps!</p>
+
+         </div>
+         <div id="data" style="height: auto;display:none;">
+         	<div class="stripedbg"  style="position: sticky;top: 0;z-index: 30/*;background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/"> 
+            <h3 style="font-family: tour;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 60px;">Data</h3>
+            <div style="background-color: rgba(0, 0, 0, 0.3);padding:10px;">
+               <input type="file" id="inputsavedata" style="height: 30px;"><button style="float: right;width: 150px;height: 30px;" onclick="downloadsavedata()">Download Save Data</button>
+            </div>
+            <div id="dataitembtns" style="display: inline-block;position: absolute;margin-top: -95px;margin-left: 639px;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='alldkgbtndata' src="./Images/UI/coursedkgbtnselected.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changedatackg(3)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> All </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 75px;">
+                     <img id='driversbtndata' src="./Images/UI/invcharbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changedatackg(0)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Drivers </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 150px;">
+                     <img id='kartsbtndata' src="./Images/UI/invkartbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changedatackg(1)"> 
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Karts </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 225px;">
+                     <img id='glidersbtndata' src="./Images/UI/invglidebtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changedatackg(2)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Gliders </p>
+                  </div>
+               </div>
+        </div>
+        <div id="driversdata"> 
+            </div>
+            <div id="kartsdata"> 
+            </div>
+            <div id="glidersdata"> 
+            </div>
+         </div>
+         <div id="inventory" style="height: auto;display:none;">
+            <div class="stripedbg"  style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+               <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Inventory</h3>
+               <div id="itembtns" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 525px;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='alldkgbtn' src="./Images/UI/coursedkgbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changeckg(3)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> All </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 75px;">
+                     <img id='driversbtn' src="./Images/UI/invcharbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changeckg(0)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Drivers </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 150px;">
+                     <img id='kartsbtn' src="./Images/UI/invkartbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changeckg(1)"> 
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Karts </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 225px;">
+                     <img id='glidersbtn' src="./Images/UI/invglidebtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changeckg(2)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Gliders </p>
+                  </div>
+               </div>
+            </div>
+            <div style="position: relative;margin-left: 10px;">
+                  <div id="inventorychar" style=""></div>
+                  <div id="inventorykart"></div>
+                  <div id="inventoryglider"></div>
+               </div>
+            <div id="inventoryshelves" style="display:block;width: auto;text-align: center;background-color: rgba(0, 0, 0, 0.3);padding:0px;">
+            </div>
+         </div>
+         <div id="courses" style="height: auto;display:none;">
+         	<div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;padding-bottom: 15px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+               <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 100px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Courses</h3>
+
+               <div id="courseitembtnscourses" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 200px;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='coursedriversbtn' src="./Images/UI/invcharbtnselected.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecourseckg(0)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Drivers </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 75px;">
+                     <img id='coursekartsbtn' src="./Images/UI/invkartbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecourseckg(1)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Karts </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 150px;">
+                     <img id='courseglidersbtn' src="./Images/UI/invglidebtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecourseckg(2)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Gliders </p>
+                  </div>
+               </div>
+
+               <div id="removeselected" style="width: 90px;height: 120px;display: inline-block;position:absolute;margin-left: 160px;margin-top: -90px">
+                     <img id='deleteall' src="./Images/UI/xbtn.png" style="width: 50px;height: 50px;display: inline-block;margin-left: 20px" onclick="removeselected()">
+                     <p style="margin-top: -5px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;line-height: 20px;"> Delete All Selected </p>
+                  </div>
+
+               <div id="specificitem"> 
+               </div>
+
+               <div id="coursebtns" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 320px;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='courseselectbtn' src="./Images/UI/courseselectbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecoursemode(0)"> 
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;line-height: 20px;"> Select Courses</p>
+                  </div>
+                  <div style="width: 95px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 70px;">
+                     <img id='coursetopshelfbtn' src="./Images/UI/coursetopshelfbtn.png" style="width: 75px;height: 75px;display: inline-block;margin-left: 15px;" onclick="changecoursemode(1)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;line-height: 20px;"> Top Shelf Preview</p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 170px;">
+                     <img id='courseselectedbtn' src="./Images/UI/courseselectedbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecoursemode(2)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;line-height: 20px;"> Selected Courses</p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 255px;">
+                     <img id='coursedkgbtn' src="./Images/UI/coursedkgbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changecoursemode(3)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;line-height: 20px;"> Item Specific</p>
+                  </div>
+               </div>
+               <img id="items3barslc" src="./Images/UI/3itemsbar.png" class="items3barslc">
+               <img id="items2barslc" src="./Images/UI/2itemsbar.png" class="items2barslc">
+               <div id="courseitemspecificbtnscourses" class="courseitemspecificbtnscourses" style="display: none;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='alldkgbtnspc' src="./Images/UI/coursedkgbtnselected.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changespcckg(3)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> All </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 75px;">
+                     <img id='coursedriversbtnspc' src="./Images/UI/invcharbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changespcckg(0)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Drivers </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 150px;">
+                     <img id='coursekartsbtnspc' src="./Images/UI/invkartbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changespcckg(1)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Karts </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 225px;">
+                     <img id='courseglidersbtnspc' src="./Images/UI/invglidebtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changespcckg(2)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Gliders </p>
+                  </div>
+               </div>
+           </div>
+            <!--<h3>Courses</h3>-->
+            <div style="position: relative;">
+                  <div id="selectcourses" style="margin-left: 50px;">
+                  	<!--<h3>Select Courses</h3>-->
+                  </div>
+                  <div id="topshelfpreview">
+                  	
+                  </div>
+                  <div id="selectedcourses">
+
+                  </div>
+                  <div id="itemspecificcourses">
+                  	
+                  </div>
+               </div>
+         </div>
+         <div id="missing" style="height: auto;display:none;">
+            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/padding-top:10px;display:block;width: 100%;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+               <h3 class='whiteoutline' style="font-family: tour;font-size: 24px;width: 300px;display: inline-block;margin-left: 10px;margin-bottom: 30px;">Missing Courses</h3>
+               <div id="courseitembtnsmissing" style="display: inline-block;position: relative;margin-top: -10px;margin-left: 400px;">
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;">
+                     <img id='missingdriversbtn' src="./Images/UI/invcharbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changemissingckg(0)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Drivers </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 75px;">
+                     <img id='missingkartsbtn' src="./Images/UI/invkartbtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changemissingckg(1)">
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Karts </p>
+                  </div>
+                  <div style="width: 75px;height: 120px;display: inline-block;position:absolute;margin-top: -60px;margin-left: 150px;">
+                     <img id='missingglidersbtn' src="./Images/UI/invglidebtn.png" style="width: 75px;height: 75px;display: inline-block;" onclick="changemissingckg(2)"> 
+                     <p style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;color: white;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"> Gliders </p>
+                  </div>
+               </div>
+               <img id="items3barslc" src="./Images/UI/3itemsbar.png" class="items3barslc">
+               <img id="items2barslc" src="./Images/UI/2itemsbar.png" class="items2barslc">
+            </div>
+            <div id="missingcourses">
+
+                  </div>
+            
+         </div>
+         <div id="ranked" style="display: none;">
+            <div class="stripedbg" style="/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*?padding-top:10px;display:block;width: 100%;height: 160px;right: 0;left: 0;margin: 0px auto;margin-bottom: 10px;/*border: 5px solid #b5ceff;*/position: sticky;top: 0;z-index: 30;">
+               <h3 class='whiteoutline' style="font-family: tour;font-size: 18px;width: 300px;display: inline-block;position: absolute;margin-left: 10px;">Current Ranked Cup </h3>
+            <div style="display: inline-block;position: absolute;margin-left:270px;">
+               <img src="./Images/UI/cupranked.png" style="width: 100px;height: 100px;">
+               <div style="position: absolute;
+    margin-left: 100px;
+    margin-top: -124px;">
+               <img src="./Images/UI/RankedHeaderLeaf.png" style="width: 200px;height: 100px;margin-left: -150px;margin-top: 20px;position: absolute;">
+               <img id="rankcupimgranked" style="width: 60px;height: 60px;margin-left: -80px;margin-top: 40px;position: absolute;">
+               </div>
+            </div>
+            <div style="position: absolute;margin-left: 167px;margin-top: 130px;">
+               <p id="cupnamecurrent" class='whiteoutline' style="margin-top: -10px;font-family: headername;font-size: 15px;text-align: center;width: 305px;"> Baby Rosalina Cup </p>
+            </div>
+            <div id=timer style="position: absolute;width: 180px;height: 84px;margin-top: 55px;margin-left: 15px;background-image: url(./Images/UI/TimerBG.png);background-size: cover;border: 5px solid #FFF;"> 
+
+               <p id="timertxt" style="    font-size: 17px;color: white;font-family: 'tour';margin-top: 30px;text-align: center;"> Loading... </p>
+            </div>
+            <div style="display: inline-block;margin-left: 420px;">
+               <div style="display: inline-block;vertical-align: top;height: 170px;">
+               <img id="rankcourseimg1" class="rankedcourseimg">
+               <p class="rankedcoursetxt" id="rankedcoursetxt1">Maple Treeway R</p>
+               </div>
+               <div style="display: inline-block;vertical-align: top;height: 170px;">
+               <img id="rankcourseimg2" class="rankedcourseimg">
+               <p class="rankedcoursetxt" id="rankedcoursetxt2">Maple Treeway</p>
+               </div>
+               <div style="display: inline-block;vertical-align: top;height: 170px;">
+               <img id="rankcourseimg3" class="rankedcourseimg">
+               <p class="rankedcoursetxt" id="rankedcoursetxt3">Maple Treeway R/T</p>
+               </div>
+            </div>
+         </div>
+         <div id="rankedcourses">
+
+                  </div>
+      </div>
+         <!--<div id="pipe">
+            <h3>Pipe</h3>
+            </div>-->
+         <div id="settings" style="height:auto;display:none;">
+            <h3 style="font-family: tour;font-size: 28px;text-align: center;margin-left: 10px;text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;">Settings</h3>
+            <!--<div id='general' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;">-->
+            	<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">General</h3>
+               <div style="text-align: center;">
+                 <a href="https://forms.gle/bLeTSX3y77kYw5rS9"> <button style="vertical-align:middle;margin-left: 10px;margin-top: -3px;width: auto;height: 30px;font-size:20px">Send Feedback</button>
+               </a>
+            </div>
+            <!--
+               <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Disable Data Usage After Entered</h4>
+            <input type="checkbox" id="changeusedata"  oninput="changeusedata()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>-->
+        	<!--</div>-->
+        	<!--<div id='inventory' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;">-->
+        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Inventory</h3>
+            <div style="text-align: center;">
+        		<h4 style="display:inline-block;margin-bottom: 0px;">Disable City Tracks in Value Count</h4>
+            <input type="checkbox" id="changecityvalue"  oninput="changecityvalue()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>
+         <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Only Show Owned Items in Inventory</h4>
+            <input type="checkbox" id="changeowneditemsinv"  oninput="changeowneditemsinv()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>
+            <!--<h4 style="display:inline-block;margin-bottom: 0px;">Disable Character Panel in Values Menu</h4>
+            <input type="checkbox" id="changecharpanelvalue"  oninput="changecharpanelvalue()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">-->
+            <!--<div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">[OLD] Enable Multiple Panels in Inventory</h4>
+            <input type="checkbox" id="changemultiplepanelvalue"  oninput="changemultiplepanelvalue()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>-->
+        	<!--</div>-->
+        	<!--<div id='courses' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
+        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Courses</h3>
+            <div style="text-align: center;">
+        		<h4 style="display:inline-block;margin-bottom: 0px;">Only Show Owned Items in Specific Items</h4>
+            <input type="checkbox" id="changeowneditems"  oninput="changeowneditems()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>
+        	<!--</div>-->
+         <!--<div id='courses' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-top: 5px;">-->
+            <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">Courses</h3>
+            <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Hide City Courses from Missing</h4>
+            <input type="checkbox" id="changecitymissing"  oninput="changecitymissing()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>
+         <!--</div>-->
+        	<!--<div id='JSON' style="width: 480px;height: 280px;vertical-align: top;display: inline-block;background-color: rgb(78 188 255 / 29%);padding:0px;margin-left: 10px;margin-top: 5px;">-->
+        		<h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;">JSON</h3>
+            <!--<div style="text-align: center;">
+        		<h4 style="display:inline-block;margin-bottom: 0px;">Debug Save Data Viewer</h4>
+            <input type="checkbox" id="changedebugsave"  oninput="changedebugsave()" style="vertical-align:middle;margin-top: -3px;width: 30px;height: 30px;">
+         </div>-->
+         <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Download Course Data [Item IDs]</h4>
+            <button onclick="downloadcoursejson(0)" style="vertical-align:middle;margin-left: 10px;margin-top: -3px;width: auto;height: 30px;">Download</button>
+         </div>
+         <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Download Course Data [Item Names]</h4>
+            <button onclick="downloadcoursejson(1)" style="vertical-align:middle;margin-left: 10px;margin-top: -3px;width: auto;height: 30px;">Download</button>
+         </div>
+         <div style="text-align: center;">
+            <h4 style="display:inline-block;margin-bottom: 0px;">Download Values Data [Reformatted]</h4>
+            <button onclick="downloadcoursejson(2)" style="vertical-align:middle;margin-left: 10px;margin-top: -3px;width: auto;height: 30px;">Download</button>
+         </div>
+         <h3 style="font-family: tour;font-size: 20px;text-align: center;margin-left: 10px;margin-bottom: 0px;">Credits</h3>
+         <div style="text-align: center;width: 600px;margin: 0 auto;">
+         <h4 style="display:inline-block;text-align:center;margin-bottom: 30px;font-size: 20px;">Special Thanks to tryso and spotlight for assisting in providing the jsons initially. Additional thanks to demogorgon, hack_nug, and Ampere for some suggestions. And lastly, HUGE THANKS to everyone who helped me test this out and provide feedback, as well as how to make the design more accurate to the game.</h4>
+         </div>
+
+        	<!--</div>-->
+         </div>
+      </div>
+      <div id="debugsave" style="display: none;">
+         <button style="z-index: 2;position: fixed; float:left; left:0%; top:0%;" onclick="updatesavedata()">Refresh</button>
+         <textarea style="position: fixed; float:left; left:0%; top:0%;margin-top: 35px" id="json" rows="60" cols="41"></textarea>
+      </div>
+      <script type="text/javascript" src="./Script/global.js"></script>
+      <script type="text/javascript" src="./Script/convert.js"></script>
+      <script type="text/javascript" src="./Script/data.js"></script>
+      <script type="text/javascript" src="./Script/inventory.js"></script>
+      <script type="text/javascript" src="./Script/courses.js"></script>
+      <script type="text/javascript" src="./Script/missing.js"></script>
+      <script type="text/javascript" src="./Script/ranked.js"></script>
+      <script>
+         function readTextFile(file, unit)
+         {
+             var rawFile = new XMLHttpRequest();
+             rawFile.open("GET", file, false);
+             rawFile.onreadystatechange = function ()
+             {
+                 if(rawFile.readyState === 4)
+                 {
+                     if(rawFile.status === 200 || rawFile.status == 0)
+                     {
+                         var allText = rawFile.responseText;
+                         switch(unit){
+                         	case 1:
+                         	values = JSON.parse(allText);
+                         	break;
+                         	case 2:
+                         	coursenames = JSON.parse(allText);
+                         	break;
+                         }
+                     }
+                 }
+             }
+             rawFile.send(null);
+         }
+         //readTextFile("./Data/1st_anniversary_tour_preferred_courses.json", 1);
+         //readTextFile("./Data/1st_anniversary_tour_courses_v2.6.0_update.json", 1);
+         //readTextFile("./Data/halloween_tour_courses_v2.6.0_update_hh.json", 1);
+         readTextFile("./Data/Sunset_Tour_courses.json", 1);
+         readTextFile("./Data/course_names.json", 2);
+         convertToUsable();
+         makeDataFields();
+         if(localStorage.getItem("MKTVSaveData") != null){
+        savedata = JSON.parse(localStorage.getItem("MKTVSaveData"));
+        document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
+        makeCourseList();
+        courseListMade = true;
+        calcMissingValues();
+        isDataEntered = true;
+
+        let savedrivers = [];
+        savedrivers = Object.keys(savedata.Items.Drivers);
+        let savedriverslvl = [];
+        savedriverslvl = Object.values(savedata.Items.Drivers);
+        savedrivers.forEach((t,i)=>{
+            changeLevel(t, parseInt(savedriverslvl[i]), 1);
+        }
+        );
+
+        let savekarts = [];
+        savekarts = Object.keys(savedata.Items.Karts);
+        let savekartslvl = [];
+        savekartslvl = Object.values(savedata.Items.Karts);
+        savekarts.forEach((t,i)=>{
+            changeLevel(t, parseInt(savekartslvl[i]), 2);
+        }
+        );
+
+        let savegliders = [];
+        savegliders = Object.keys(savedata.Items.Gliders);
+        let savegliderslvl = [];
+        savegliderslvl = Object.values(savedata.Items.Gliders);
+        savegliders.forEach((t,i)=>{
+            changeLevel(t, parseInt(savegliderslvl[i]), 3);
+        }
+        );
+
+        resettingCourses = true;
+         }
+      if(localStorage.getItem("MKTVSettingData") != null){
+         settingsavedata = JSON.parse(localStorage.getItem("MKTVSettingData"));
+      } 
+      getCurrentRanked();
+      window.onbeforeunload = function(){
+         document.getElementById('loadingimg').style.display = "block";
+      }
+      window.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('rankcupimg').src = `./Images/Cups/${currentseasoncup} Cup.png`;
+      document.getElementById('rankcupimg').style.display = "inline-block";
+      applyLocalSettings();
+      });
+      window.onload = function() {
+         document.getElementById('loadingimg').style.display = "none";
+      }
+
+  var countDownDate = new Date(currentendtime * 1000).getTime();
+  var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  //if()
+  document.getElementById("timertxt").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timertxt").innerHTML = "Finished";
+  }
+}, 1000);
+      </script>
+   </body>
+</html>
