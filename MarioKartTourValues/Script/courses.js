@@ -301,7 +301,14 @@ function selectCourse(course) {
               document.getElementById(`coursemissing_${course}`).className = `coursepanelslc`;
               }
        }
+       document.getElementById('countertxt').innerHTML = settingsavedata.Settings.selectedcourses.length;
+       if(coursesmode == 2){
        selectedCourses();
+       } else {
+       if(upToDateSections.includes("slc")){
+            upToDateSections.splice(upToDateSections.indexOf("slc", 3));
+       }
+      }
        updateLocalSettingData();
 }
 
@@ -765,6 +772,7 @@ function specificchoicemade(t, type, rarity, item) {
        startToggle = false;
        selectspecificitem();
        document.getElementById('courseitemspecificbtnscourses').style.display = "none";
+       document.getElementById('countertxt').innerHTML = courses.length;
        courses.forEach((t,i)=>{ 
                      var coursePanel = document.createElement('div');
        if(settingsavedata.Settings.selectedcourses.includes(t)){
@@ -2319,7 +2327,6 @@ let unlock6topshelves = [];
        function selectedCourses(){
               document.getElementById('selectedcourses').innerHTML = "";
        let output = document.getElementById('selectedcourses');
-
               selectedcourses.forEach((t,i)=>{ 
                 document.getElementById(`selectcourse_${t}`).className = "coursepanelselected";
                      var coursePanel = document.createElement('div');

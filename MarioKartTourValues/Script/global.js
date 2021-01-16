@@ -14,10 +14,10 @@ var resettingCourses = false;
 
 var isMissingCalculated = false;
 var startToggle = true;
-var currentspecificitem = 0;
+var currentspecificitem = 25;
 var currentitemtype = 0;
 var currentitemrarity = 0;
-var currentitemitem = 0;
+var currentitemitem = 22;
 
 var topshelfmode = 0;
 var missingmode = 0;
@@ -30,6 +30,8 @@ var missingcoursesk = [];
 var missingcoursesg = [];
 
 var missingcourses = [];
+
+var missingcoursescitycount = 0;
 
 var viewshelvechar = [];
 
@@ -61,6 +63,15 @@ var cityCourses = ["New_Gmob_NewYork1", "New_Gmob_NewYork1X", "New_Gmob_NewYork1
 ];
 
 var disableDataUsage = false;
+
+var upToDateSections = [];
+//List of Values
+//inv
+//tsp
+//slc
+//mis
+//bpc
+//rnk
 
 let savedata = {
     Items: {
@@ -125,6 +136,10 @@ function changemode(mode) {
         break;
     case 2:
         hideAllBesidesOne('inventory');
+        if(!upToDateSections.includes("inv")){
+            changeckg(settingsavedata.Settings.currentmode);
+            upToDateSections.push("inv");
+        }
         break;
     case 3:
         hideAllBesidesOne('courses');
@@ -138,9 +153,12 @@ function changemode(mode) {
         break;
     case 4:
         hideAllBesidesOne('bonuspoints');
+        if(!upToDateSections.includes("bpc")){
         makeCalcCharacters();
         makeCalcKarts();
         makeCalcGliders();
+        upToDateSections.push("bpc");
+        }
         break;
     case 5:
         hideAllBesidesOne('settings');
@@ -148,7 +166,11 @@ function changemode(mode) {
     case 6:
         hideAllBesidesOne('ranked');
         getCurrentRanked();
-        updateRanked();
+        if(!upToDateSections.includes("rnk")){
+           updateRanked(); 
+           upToDateSections.push("rnk");
+        }
+        
         //alert('Ranked Review and Bonus Points Calculator - Coming Soon!');
         break;
     }
@@ -185,6 +207,10 @@ function changecoursemode(mode) {
         document.getElementById('courseitemspecificbtnscourses').style.display = "none";
         document.getElementById('courseitembtnsmissing').style.display = "none";
         document.getElementById('coursesoptionpanel').style.height = "110px";
+        document.getElementById('countertxt').innerHTML = settingsavedata.Settings.selectedcourses.length;
+        document.getElementById('coursecounter').style.display = "inline-block";
+        document.getElementById('coursecounter').style.marginTop = "55px";
+        document.getElementById('coursecounter').style.marginLeft = "-425px";
 
         document.getElementById('courseselectbtn').src = './Images/UI/courseselectbtnselected.png';
         document.getElementById('coursetopshelfbtn').src = './Images/UI/coursetopshelfbtn.png';
@@ -199,7 +225,10 @@ function changecoursemode(mode) {
         topShelfPreviewMade = true;
         document.getElementById('coursedriversbtn').src = "./Images/UI/invcharbtnselected.png";
         }*/
-        makeTopShelfPreview();
+        if(!upToDateSections.includes("tsp")){
+            makeTopShelfPreview();
+            upToDateSections.push("tsp");
+        }
         document.getElementById('selectcourses').style.display = "none";
         document.getElementById('topshelfpreview').style.display = "block";
         document.getElementById('selectedcourses').style.display = "none";
@@ -214,6 +243,7 @@ function changecoursemode(mode) {
         document.getElementById('courseitemspecificbtnscourses').style.display = "none";
         document.getElementById('courseitembtnsmissing').style.display = "none";
         document.getElementById('coursesoptionpanel').style.height = "110px";
+        document.getElementById('coursecounter').style.display = "none";
 
         document.getElementById('courseselectbtn').src = './Images/UI/courseselectbtn.png';
         document.getElementById('coursetopshelfbtn').src = './Images/UI/coursetopshelfbtnselected.png';
@@ -237,7 +267,14 @@ function changecoursemode(mode) {
         document.getElementById('courseitemspecificbtnscourses').style.display = "none";
         document.getElementById('courseitembtnsmissing').style.display = "none";
         document.getElementById('coursesoptionpanel').style.height = "140px";
-        selectedCourses();
+        document.getElementById('coursecounter').style.display = "inline-block";
+        document.getElementById('coursecounter').style.marginTop = "";
+        document.getElementById('coursecounter').style.marginLeft = "";
+        if(!upToDateSections.includes("slc")){
+         selectedCourses();
+         upToDateSections.push("slc")   
+        }
+        document.getElementById('countertxt').innerHTML = settingsavedata.Settings.selectedcourses.length;
 
         document.getElementById('courseselectbtn').src = './Images/UI/courseselectbtn.png';
         document.getElementById('coursetopshelfbtn').src = './Images/UI/coursetopshelfbtn.png';
@@ -248,6 +285,9 @@ function changecoursemode(mode) {
         break;
     case 3:
         selectspecificitem();
+        if(settingsavedata.Settings.currentspecificitem != 0){
+        document.getElementById('countertxt').innerHTML = Object.keys(values[settingsavedata.Settings.currentspecificitem].moreGoodAt).length + Object.keys(values[settingsavedata.Settings.currentspecificitem].unlock3).length + Object.keys(values[settingsavedata.Settings.currentspecificitem].unlock6).length;
+        }
         document.getElementById('selectcourses').style.display = "none";
         document.getElementById('topshelfpreview').style.display = "none";
         document.getElementById('selectedcourses').style.display = "none";
@@ -264,6 +304,15 @@ function changecoursemode(mode) {
         }
         document.getElementById('courseitembtnsmissing').style.display = "none";
         document.getElementById('coursesoptionpanel').style.height = "140px";
+        document.getElementById('coursecounter').style.display = "inline-block";
+        document.getElementById('coursecounter').style.marginTop = "";
+        document.getElementById('coursecounter').style.marginLeft = "";
+        if(settingsavedata.Settings.currentspecificitem != 0){
+            if(!upToDateSections.includes("sic")){
+             specificchoicemade(settingsavedata.Settings.currentspecificitem,settingsavedata.Settings.currentitemtype,settingsavedata.Settings.currentitemrarity,settingsavedata.Settings.currentitemitem);
+            upToDateSections.push("sic");
+            }
+        }
 
         document.getElementById('courseselectbtn').src = './Images/UI/courseselectbtn.png';
         document.getElementById('coursetopshelfbtn').src = './Images/UI/coursetopshelfbtn.png';
@@ -287,14 +336,21 @@ function changecoursemode(mode) {
         document.getElementById('courseitemspecificbtnscourses').style.display = "none";
         document.getElementById('courseitembtnsmissing').style.display = "inline-block";
         document.getElementById('coursesoptionpanel').style.height = "140px";
+        document.getElementById('coursecounter').style.display = "inline-block";
+        document.getElementById('coursecounter').style.marginTop = "";
+        document.getElementById('coursecounter').style.marginLeft = "";
+        updateMissingCourseCount();
         /*if(!courseListMade){
                 makeCourseList();
                 courseListMade = true;
         }*/
         //changemissingckg(missingmode);
         if(isDataEntered && localStorage.getItem("MKTVSaveData") != null){
-        calcMissingValues();
-        missingCourses();
+            if(!upToDateSections.includes("mis")){
+            calcMissingValues();
+            missingCourses();
+            upToDateSections.push("mis");
+            }
         }
         if(!isDataEntered && !document.getElementById('changeusedata').checked){
             alert('You need to enter your data first before this tab works! Be sure that the disable data usage is unchecked in the settings if you have entered your data.');
@@ -603,7 +659,27 @@ function changemissingckg(mode) {
             missingCourses();
         break;
     }
+    updateMissingCourseCount();
     updateLocalSettingData();
+}
+
+function updateMissingCourseCount(){
+    let missingcount = 0;
+        switch(missingmode){
+            case 0:
+            missingcount = missingcoursesd.length;
+            break;
+            case 1:
+            missingcount = missingcoursesk.length;
+            break;
+            case 2:
+            missingcount = missingcoursesg.length;
+            break;
+        }
+        document.getElementById('countertxt').innerHTML = missingcount;
+        if(settingsavedata.Settings.missingIncludesCityCourses == false){
+        document.getElementById('countertxt').innerHTML = missingcoursescitycount;
+        }
 }
 
 function updatesavedata() {
@@ -709,6 +785,9 @@ function changecitymissing(){
         missingIncludesCityCourses = true;
         settingsavedata.Settings.missingIncludesCityCourses = true;
     }
+    if(upToDateSections.includes("mis")){
+    upToDateSections.splice(upToDateSections.indexOf("mis", 3));
+    }
     updateLocalSettingData();
 }
 
@@ -726,6 +805,9 @@ function removeselected(){
     delete settingsavedata.Settings.selectedcourses; 
     settingsavedata.Settings.selectedcourses = [];
     selectedcourses = settingsavedata.Settings.selectedcourses;
+    if(settingsavedata.Settings.coursesmode == 2){
+    document.getElementById('countertxt').innerHTML = 0;
+    }
     updateLocalSettingData();
     makeCourseList();
     selectedCourses();
@@ -737,6 +819,12 @@ function updateLocalSaveData(){
 
 function updateLocalSettingData(){
     localStorage.setItem("MKTVSettingData",JSON.stringify(settingsavedata, null, 2));
+}
+
+function deleteLocalSaveData(){
+    localStorage.removeItem("MKTVSaveData");
+    localStorage.removeItem("MKTVSettingData");
+    alert('Deleted Save File. This option is VERY unstable and may require you to clear your browser cache or restart your browser to function properly.')
 }
 
 function applyLocalSettings(){
