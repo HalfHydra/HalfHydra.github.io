@@ -104,8 +104,6 @@ var season45week2cup = "Daisy";
 var season45week2cupname = "Daisy Cup";
 var season45week2endtime = season45week1endtime + 604800;
 var season45week2courses = ["Remix_Grsfc_ChocoIsland2X","Classic_G3ds_DaisyHillsX","Classic_Gsfc_ChocoIsland1R"];
-
->>>>>>> Stashed changes
 //Current Season
 var currentseason = "Season45";
 var currentweek = "Week1";
