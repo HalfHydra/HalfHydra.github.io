@@ -361,6 +361,14 @@
             <img id="items3barslc" src="./Images/UI/3itemsbar.png" class="items3barslc">
                <img id="items2barslc" src="./Images/UI/2itemsbar.png" class="items2barslc">
          </div>
+
+
+
+         <div id="pipe" style="width: 608px;height: 1080px;margin:0 auto;border: 5px solid #b5ceff;position: relative;overflow:hidden;">
+            <img src="./Images/Pipe/Background/animated.png" style="pointer-events: none;"> </img>
+            <img src="./Images/Pipe/PipeBottom/PipeUltra00.png" style="display:block;position: absolute;bottom:0;pointer-events: none;"> </img>
+            <img id="pullypipe" src="./Images/Pipe/Pipe/PipeUltra00.png" style="display:block;position: absolute;bottom:190px;margin-left:180px;pointer-events: auto;object-fit: fill;width: 250px;height:205px;"> </img>
+         </div>
          <div id="rankedcourses">
 
                   </div>
@@ -451,6 +459,37 @@
          <button style="z-index: 2;position: fixed; float:left; left:0%; top:0%;" onclick="updatesavedata()">Refresh</button>
          <textarea style="position: fixed; float:left; left:0%; top:0%;margin-top: 35px" id="json" rows="60" cols="41"></textarea>
       </div>
+
+      <!--
+      <audio id="PipeGo">
+      <source src="./Images/Pipe/Sound/SinglePulledThePipe.wav" type="audio/wav">
+      </audio>  
+      <audio id="PipeGoGold">
+      <source src="./Images/Pipe/Sound/MultiPulledThePipe.wav" type="audio/wav">
+      </audio>  
+      <audio id="HoldPipe">
+      <source src="./Images/Pipe/Sound/HoldPipe.wav" type="audio/wav">
+      </audio>   
+      <audio id="PipeAmbience">
+      <source src="./Images/Pipe/Sound/PipeAmbience.wav" type="audio/wav">
+      </audio>  
+      <audio id="GetHighEnd">
+      <source src="./Images/Pipe/Sound/GetItemHighEnd.wav" type="audio/wav">
+      </audio>   
+      <audio id="GetSuper">
+      <source src="./Images/Pipe/Sound/GetItemRare.wav" type="audio/wav">
+      </audio>   
+      <audio id="GetNormal">
+      <source src="./Images/Pipe/Sound/GetItemNormal.wav" type="audio/wav">
+      </audio> 
+      <audio id="PipeFire">
+      <source src="./Images/Pipe/Sound/PipeFire.wav" type="audio/wav">
+      </audio>  
+      <audio id="PipeFireStar">
+      <source src="./Images/Pipe/Sound/PipeFireStar.wav" type="audio/wav">
+      </audio>   
+   -->
+
       <script type="text/javascript" src="./Script/global.js"></script>
       <script type="text/javascript" src="./Script/convert.js"></script>
       <script type="text/javascript" src="./Script/data.js"></script>
@@ -459,6 +498,7 @@
       <script type="text/javascript" src="./Script/missing.js"></script>
       <script type="text/javascript" src="./Script/calculator.js"></script>
       <script type="text/javascript" src="./Script/ranked.js"></script>
+      <!--<script type="text/javascript" src="./Script/pipe.js"></script>-->
       <script type = "text/javascript" 
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
       </script>
@@ -496,7 +536,7 @@
          //readTextFile("./Data/1st_anniversary_tour_preferred_courses.json", 1);
          //readTextFile("./Data/1st_anniversary_tour_courses_v2.6.0_update.json", 1);
          //readTextFile("./Data/halloween_tour_courses_v2.6.0_update_hh.json", 1);
-         readTextFile("./Data/Yoshi_Tour_2021_Courses_New_Format.json", 1);
+         readTextFile("./Data/Sydney_Tour_Courses_Extended.json", 1);
          generateArrays();
          readTextFile("./Data/course_names.json", 2);
          readTextFile("./Data/course_image.json", 3);
@@ -616,6 +656,19 @@ $(document).on('click', '.cupbtn', function () {
     }
     }, 1000);
 });
+
+/*var mouseDown = 0;
+document.body.onmousedown = function() { 
+  console.log("mousedown!");
+  ++mouseDown;
+  document.getElementById('pullypipe').addEventListener("ondragstart",mouseMoveFunction);
+}
+document.body.onmouseup = function() {
+  --mouseDown;
+  console.log('removed!');
+  document.getElementById('pullypipe').removeEventListener("mousedown",mouseMoveFunction);
+}*/
+
       </script>
    </body>
 </html>

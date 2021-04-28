@@ -3,8 +3,14 @@ var convertedData = {};
 function convertToUsable() {
 	console.log(Object.keys(values));
 	Object.keys(values).forEach((t,i)=>{
+		if(t == "Courses"){
+			return;
+		}
 		convertedData[t] = {};
 		convertedData[t].nameEng = values[t].nameEng;
+		convertedData[t].rarityId = values[t].rarityId;
+		convertedData[t].itemTypeId = values[t].itemTypeId;
+		convertedData[t].sortId = values[t].sortId;
 		convertedData[t].moreGoodAt = [];
 		convertedData[t].goodAt = [];
 		convertedData[t].unlock3 = [];
