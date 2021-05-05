@@ -402,7 +402,7 @@ function selectspecificitem(){
               break;
               case 1:
               newItem.className = 'newKart';
-              newItem.src = `./Images/Kart Icon/${currentspecificitem}.png`;
+              newItem.src = `./Images/ItemIcon/${currentspecificitem}.png`;
               break;
               case 2:
               newItem.className = 'newGlider';
@@ -614,7 +614,7 @@ function specificitemcourses(){
 
         let newCharacter = document.createElement('img');
         newCharacter.className = 'newKart';
-        newCharacter.src = `./Images/Kart Icon/${t}.png`;
+        newCharacter.src = `./Images/ItemIcon/${t}.png`;
         panel.appendChild(newCharacter);
 
         let topimg = document.createElement('img');
