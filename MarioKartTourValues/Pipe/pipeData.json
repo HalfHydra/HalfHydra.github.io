@@ -61,7 +61,7 @@
 	},
 	"51_2": {
 		"Icon": "./Images/Pipe/Banner/51_2.png",
-		"Name": "[ESTIMATED] Team Bowser Pipe",
+		"Name": "[GUESS] Team Bowser Pipe",
 		"Type": "Official",
 		"Notes": "This is my best guess of what will be in the pipe. This will be updated if incorrect when the pipe releases.",
 		"InitialAmount": 50,
@@ -112,7 +112,7 @@
 	},
 	"51_3": {
 		"Icon": "./Images/Pipe/Banner/51_3.png",
-		"Name": "[ESTIMATED] Team Donkey Kong Pipe",
+		"Name": "[GUESS] Team Donkey Kong Pipe",
 		"Type": "Official",
 		"Notes": "This is my best guess of what will be in the pipe. This will be updated if incorrect when the pipe releases.",
 		"InitialAmount": 50,
