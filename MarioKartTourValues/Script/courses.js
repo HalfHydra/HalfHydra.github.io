@@ -1330,7 +1330,7 @@ function specificchoicemade(t, type, rarity, item) {
               break;
               case 1:
               newItem.className = 'newKart';
-              newItem.src = `./Images/Kart Icon/${t}.png`;
+              newItem.src = `./Images/ItemIcon/${t}.png`;
               break;
               case 2:
               newItem.className = 'newGlider';
@@ -2045,7 +2045,7 @@ let unlock6topshelves = [];
               break;
               case 1:
               newItem.className = 'newKart';
-              newItem.src = `./Images/Kart Icon/${t}.png`;
+              newItem.src = `./Images/ItemIcon/${t}.png`;
               break;
               case 2:
               newItem.className = 'newGlider';
@@ -2880,7 +2880,7 @@ let unlock6topshelves = [];
               break;
               case 1:
               newItem.className = 'newKart';
-              newItem.src = `./Images/Kart Icon/${t}.png`;
+              newItem.src = `./Images/ItemIcon/${t}.png`;
               break;
               case 2:
               newItem.className = 'newGlider';
