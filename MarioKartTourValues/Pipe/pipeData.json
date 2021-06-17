@@ -433,7 +433,7 @@
 	"51_4": {
 		"Icon": "./Images/Pipe/Banner/51_4.png",
 		"Name": "Bowser vs. DK Pipe 2",
-		"Type": "Official",
+		"Type": "Previous",
 		"InitialAmount": 100,
 		"Spotlights": [
     		28,
