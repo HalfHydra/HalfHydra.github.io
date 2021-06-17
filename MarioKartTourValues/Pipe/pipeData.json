@@ -61,9 +61,12 @@
 		"Notes": "This is my best guess. I have never seen a 30 pipe with more than 1 type of item, there is no way to guesstimate.",
 		"InitialAmount": 30,
 		"Spotlights": [
-    		77,
-    		70100,
-    		30355
+    		67,
+    		63,
+    		68,
+    		70137,
+    		70133,
+    		70138
 		],
 		"Items": [
 			1,
