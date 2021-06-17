@@ -500,6 +500,10 @@
          {
             "name":"Classic_Gn64_KoopaTroopaBeachX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -1576,6 +1580,10 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -2176,6 +2184,10 @@
          {
             "name":"New_Gmob_London2",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -2244,6 +2256,10 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -2293,6 +2309,10 @@
          },
          {
             "name":"New_Gmob_NinjaMansionR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -3226,6 +3246,10 @@
          {
             "name":"Classic_Gsfc_GhostValley1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -3291,6 +3315,10 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -3742,6 +3770,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -3805,6 +3837,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ],
@@ -3875,6 +3911,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -4009,6 +4049,10 @@
          },
          {
             "name":"New_Gmob_Berlin2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -4581,6 +4625,10 @@
          },
          {
             "name":"New_Gmob_Sydney1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_GhostValley1RX",
             "promotionLevel":0
          }
       ],
@@ -5218,6 +5266,10 @@
          {
             "name":"Classic_Gwii_DKSummit",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -5257,6 +5309,14 @@
          },
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KoopaTroopaBeachRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
             "promotionLevel":0
          }
       ],
@@ -5303,6 +5363,26 @@
          },
          {
             "name":"Classic_Gsfc_VanillaLake1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_YoshiCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -5490,6 +5570,22 @@
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowland",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -5531,6 +5627,14 @@
          },
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_YoshiCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
             "promotionLevel":0
          }
       ]
@@ -5686,6 +5790,22 @@
          {
             "name":"Classic_Gwii_MapleTreewayR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -5723,6 +5843,22 @@
          },
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
             "promotionLevel":0
          }
       ]
@@ -5846,6 +5982,56 @@
          {
             "name":"New_Gmob_Paris1RX",
             "promotionLevel":0
+         }
+      ]
+   },
+   "77":{
+      "nameEng":"Luigi (Painter)",
+      "rarityId":2,
+      "sortId":131046100,
+      "itemTypeId":"Item0022",
+      "moreGoodAt":[
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain2X",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":6
          }
       ]
    },
@@ -5987,6 +6173,14 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanetR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -6133,6 +6327,10 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ]
@@ -6300,6 +6498,10 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -6353,6 +6555,10 @@
          },
          {
             "name":"Classic_Gwii_DKSummitX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ]
@@ -6548,6 +6754,22 @@
          {
             "name":"New_Gmob_Sydney1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -6614,6 +6836,14 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -6665,6 +6895,14 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
             "promotionLevel":0
          }
       ],
@@ -6719,6 +6957,18 @@
          },
          {
             "name":"New_Gmob_Sydney1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -6795,6 +7045,14 @@
          },
          {
             "name":"New_Gmob_NinjaMansionX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ],
@@ -6877,6 +7135,10 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -7564,6 +7826,22 @@
          {
             "name":"Classic_Gds_WaluigiPinballRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -7597,6 +7875,22 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -7898,6 +8192,10 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -7959,6 +8257,10 @@
          },
          {
             "name":"New_Gmob_NinjaMansion",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -8252,6 +8554,34 @@
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -8289,6 +8619,14 @@
          },
          {
             "name":"Classic_Gn64_PeachCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1R",
             "promotionLevel":0
          }
       ]
@@ -8727,6 +9065,68 @@
          }
       ]
    },
+   "123":{
+      "nameEng":"Mario (Tuxedo)",
+      "rarityId":2,
+      "sortId":131045100,
+      "itemTypeId":"Item0058",
+      "moreGoodAt":[
+         {
+            "name":"Classic_Gn64_PeachCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuit",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_MarioCircuit",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1X",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         }
+      ]
+   },
    "126":{
       "nameEng":"Shy Guy (Pastry Chef)",
       "rarityId":2,
@@ -8945,6 +9345,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreeway",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ],
@@ -9260,6 +9664,10 @@
          {
             "name":"Classic_Gwii_DKSummitR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -9311,6 +9719,10 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ],
@@ -9398,6 +9810,10 @@
          {
             "name":"Remix_Grsfc_RainbowRoad2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -9478,6 +9894,10 @@
          {
             "name":"Classic_Gn64_KoopaTroopaBeachX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9539,6 +9959,96 @@
          },
          {
             "name":"Classic_Gwii_DKSummitX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "135":{
+      "nameEng":"Builder Toadette",
+      "rarityId":2,
+      "sortId":131044100,
+      "itemTypeId":"Item0047",
+      "moreGoodAt":[
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_WaluigiPinballRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit1RX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -9761,6 +10271,10 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ],
@@ -10140,6 +10654,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -10234,6 +10752,10 @@
          {
             "name":"Classic_G3ds_RosettaPlanet",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -10293,6 +10815,10 @@
          },
          {
             "name":"New_Gmob_Berlin2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ],
@@ -10671,6 +11197,10 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -11584,6 +12114,14 @@
          {
             "name":"Classic_Gds_LuigiMansionX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -11657,6 +12195,10 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
             "promotionLevel":0
          }
       ]
@@ -12030,6 +12572,10 @@
          {
             "name":"New_Gmob_NewYork3",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -12322,6 +12868,22 @@
          {
             "name":"Classic_Gds_KillerShipX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoad",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -12355,6 +12917,22 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -12598,6 +13176,10 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -12667,6 +13249,14 @@
          },
          {
             "name":"Classic_Gn64_PeachCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -13170,6 +13760,10 @@
          {
             "name":"Classic_Gn64_PeachCircuitR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -13215,6 +13809,18 @@
          },
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -13354,6 +13960,10 @@
          {
             "name":"Classic_Gsfc_GhostValley1",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -13434,6 +14044,10 @@
          {
             "name":"New_Gmob_Tokyo4R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -13508,6 +14122,14 @@
          {
             "name":"New_Gmob_Tokyo4",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -13576,6 +14198,14 @@
          {
             "name":"New_Gmob_Sydney1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -13621,6 +14251,10 @@
          },
          {
             "name":"New_Gmob_Sydney1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -13674,6 +14308,30 @@
          {
             "name":"Classic_Gds_KillerShipR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_GhostValley1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -13715,6 +14373,26 @@
          },
          {
             "name":"Classic_Gds_KillerShipX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_NeoBowserCityRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
             "promotionLevel":0
          }
       ]
@@ -14064,6 +14742,10 @@
          {
             "name":"Remix_Grsfc_RainbowRoad1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -14125,6 +14807,10 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -14552,6 +15238,10 @@
          {
             "name":"Remix_Grsfc_RainbowRoad1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -14841,6 +15531,10 @@
          },
          {
             "name":"New_Gmob_NewYork3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -15358,6 +16052,14 @@
          {
             "name":"Classic_Gsfc_MarioCircuit3R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -15391,6 +16093,14 @@
          },
          {
             "name":"Classic_Gn64_PeachCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -15912,6 +16622,10 @@
       "itemTypeId":"Item0002",
       "moreGoodAt":[
          {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
             "name":"Classic_Ggc_DinoDinoJungle",
             "promotionLevel":0
          },
@@ -15988,7 +16702,15 @@
             "promotionLevel":0
          },
          {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
             "name":"Classic_G3ds_NeoBowserCityR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ],
@@ -16654,6 +17376,10 @@
          {
             "name":"Classic_Gn64_ChocoMountainR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -17224,6 +17950,10 @@
          {
             "name":"Classic_G3ds_ToadCircuitRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -17700,6 +18430,10 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -17814,6 +18548,10 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -17916,6 +18654,14 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -17983,6 +18729,10 @@
          },
          {
             "name":"New_Gmob_Sydney1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ],
@@ -18090,6 +18840,10 @@
          {
             "name":"New_Gmob_Berlin2RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -18163,6 +18917,14 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -18395,6 +19157,14 @@
          },
          {
             "name":"New_Gmob_Berlin2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -18940,6 +19710,14 @@
          {
             "name":"Classic_Gagb_BowserCastle2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -19017,6 +19795,14 @@
          },
          {
             "name":"New_Gmob_NewYork3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -19223,6 +20009,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ],
@@ -19776,6 +20566,18 @@
          {
             "name":"New_Gmob_Tokyo4",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -20276,6 +21078,10 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -20657,6 +21463,10 @@
          },
          {
             "name":"New_Gmob_Berlin2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -21396,6 +22206,14 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -21453,6 +22271,14 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain2R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -22488,6 +23314,22 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -22525,6 +23367,14 @@
          },
          {
             "name":"New_Gmob_Tokyo4R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ]
@@ -22932,6 +23782,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -23085,6 +23939,10 @@
          },
          {
             "name":"Classic_G3ds_RockRockMountainR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -23428,6 +24286,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -23456,6 +24318,30 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -23478,6 +24364,18 @@
          {
             "name":"Classic_Gwii_DKSummitR",
             "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -23600,6 +24498,18 @@
          {
             "name":"New_Gmob_NinjaMansion",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -23667,6 +24577,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ],
@@ -23737,6 +24651,10 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -24164,6 +25082,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2R",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -24239,6 +25161,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ],
@@ -24378,6 +25304,18 @@
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -24427,6 +25365,10 @@
          },
          {
             "name":"Classic_Gsfc_VanillaLake1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
             "promotionLevel":0
          }
       ]
@@ -24922,6 +25864,10 @@
          {
             "name":"New_Gmob_Sydney1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -24971,6 +25917,10 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ]
@@ -25418,6 +26368,10 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -25616,6 +26570,10 @@
          {
             "name":"Classic_G3ds_CheepCheepLagoonRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -25694,6 +26652,10 @@
          {
             "name":"New_Gmob_NinjaMansionX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -25722,6 +26684,30 @@
          {
             "name":"Classic_Gds_KillerShipX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainR",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -25744,6 +26730,18 @@
          {
             "name":"Classic_Gwii_MapleTreeway",
             "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountain",
+            "promotionLevel":0
          }
       ]
    },
@@ -26064,6 +27062,10 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26138,6 +27140,10 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -26198,6 +27204,22 @@
          {
             "name":"Classic_Gsfc_KoopaTroopaBeach2X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KoopaTroopaBeachRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26243,6 +27265,14 @@
          },
          {
             "name":"New_Gmob_Sydney1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -26292,6 +27322,18 @@
          {
             "name":"Classic_Gds_KillerShipR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26321,6 +27363,22 @@
          },
          {
             "name":"Classic_Gds_KillerShipX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KalimariDesertRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
             "promotionLevel":0
          }
       ]
@@ -26394,6 +27452,18 @@
          {
             "name":"New_Gmob_Sydney1",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26451,6 +27521,14 @@
          },
          {
             "name":"New_Gmob_Sydney1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -26512,6 +27590,22 @@
          {
             "name":"New_Gmob_Sydney1",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26566,6 +27660,14 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ]
    },
@@ -26618,6 +27720,14 @@
          {
             "name":"New_Gmob_NinjaMansion",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26663,6 +27773,18 @@
          },
          {
             "name":"New_Gmob_NinjaMansionR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -26715,6 +27837,22 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
             "promotionLevel":0
          }
       ],
@@ -26810,6 +27948,26 @@
          {
             "name":"Classic_Gn64_KalimariDesert2X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26848,6 +28006,14 @@
          {
             "name":"Classic_Gn64_KalimariDesert2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -26884,6 +28050,26 @@
          {
             "name":"Classic_Gds_KillerShipR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KoopaTroopaBeachRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26910,6 +28096,138 @@
          {
             "name":"Classic_Gsfc_VanillaLake1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "30355":{
+      "nameEng":"Glinting Glider",
+      "rarityId":2,
+      "sortId":531045100,
+      "itemTypeId":"Item0014",
+      "moreGoodAt":[
+         {
+            "name":"Classic_G3ds_MarioCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_MarioCircuit",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuit",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "30365":{
+      "nameEng":"Flying Easel",
+      "rarityId":2,
+      "sortId":531046100,
+      "itemTypeId":"Item0006",
+      "moreGoodAt":[
+         {
+            "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":6
          }
       ]
    },
@@ -27314,6 +28632,14 @@
          {
             "name":"New_Gmob_NewYork3R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -27517,6 +28843,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -27837,6 +29167,10 @@
          },
          {
             "name":"New_Gmob_Tokyo3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -28546,6 +29880,10 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -28613,6 +29951,10 @@
          },
          {
             "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ],
@@ -28829,6 +30171,10 @@
          },
          {
             "name":"Classic_Gds_DKPass",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ]
@@ -29846,6 +31192,10 @@
          {
             "name":"New_Gmob_NewYork3R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30322,6 +31672,10 @@
          {
             "name":"Classic_Gwii_MapleTreewayR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30364,6 +31718,56 @@
          {
             "name":"Classic_Gagb_SunsetWildsRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "70100":{
+      "nameEng":"Paintster",
+      "rarityId":2,
+      "sortId":331046100,
+      "itemTypeId":"DashPanel",
+      "moreGoodAt":[
+         {
+            "name":"Classic_Gagb_SunsetWilds",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":3
          }
       ]
    },
@@ -30884,6 +32288,10 @@
          {
             "name":"New_Gmob_Paris1X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30933,6 +32341,14 @@
          },
          {
             "name":"New_Gmob_Paris1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -31770,6 +33186,18 @@
          {
             "name":"New_Gmob_Tokyo4",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -31987,6 +33415,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -32258,6 +33690,14 @@
          {
             "name":"Remix_Grsfc_ChocoIsland1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -32315,6 +33755,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -32589,6 +34033,48 @@
          }
       ]
    },
+   "70133":{
+      "nameEng":"Blue Turbo Yoshi",
+      "rarityId":1,
+      "sortId":321046300,
+      "itemTypeId":"SlipStream",
+      "moreGoodAt":[
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountain",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainR",
+            "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":6
+         }
+      ]
+   },
    "70137":{
       "nameEng":"Red Turbo Yoshi",
       "rarityId":1,
@@ -32680,6 +34166,14 @@
          {
             "name":"New_Gmob_Paris1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -32728,6 +34222,22 @@
          {
             "name":"Classic_Gsfc_VanillaLake1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_YoshiCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -32773,6 +34283,14 @@
          },
          {
             "name":"Classic_Gn64_PeachCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -33332,6 +34850,10 @@
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -33512,6 +35034,22 @@
          {
             "name":"Classic_Gn64_KalimariDesert2R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -33538,6 +35076,18 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -34524,6 +36074,10 @@
          {
             "name":"New_Gmob_Berlin2R",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -34588,6 +36142,10 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle2RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -34641,6 +36199,14 @@
          },
          {
             "name":"Classic_G3ds_MarioCircuitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ]
@@ -35032,6 +36598,14 @@
          {
             "name":"New_Gmob_Sydney1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -35154,6 +36728,10 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -35199,6 +36777,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain2R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
             "promotionLevel":0
          }
       ]
@@ -35374,6 +36956,30 @@
          {
             "name":"Classic_Gn64_KalimariDesert2X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -35419,6 +37025,18 @@
          },
          {
             "name":"Classic_Gn64_KalimariDesert2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
             "promotionLevel":0
          }
       ]
@@ -36496,6 +38114,10 @@
          {
             "name":"New_Gmob_Paris2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -36618,6 +38240,10 @@
          {
             "name":"Classic_Gn64_ChocoMountainX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -36667,6 +38293,10 @@
          },
          {
             "name":"New_Gmob_HillClimbX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
             "promotionLevel":0
          }
       ]
@@ -37240,6 +38870,10 @@
          {
             "name":"Remix_Grsfc_RainbowRoad1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -37438,6 +39072,42 @@
          {
             "name":"Classic_Gwii_DKSummitR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -37460,6 +39130,22 @@
          {
             "name":"Classic_Gwii_DKSummitX",
             "promotionLevel":6
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -37708,6 +39394,10 @@
          {
             "name":"Classic_Gagb_SunsetWilds",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -37768,6 +39458,10 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -37817,6 +39511,10 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
             "promotionLevel":0
          }
       ]
@@ -38204,6 +39902,10 @@
          {
             "name":"New_Gmob_Tokyo4X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ]
    },
@@ -38439,6 +40141,10 @@
          },
          {
             "name":"Classic_Gwii_DKSummitR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -38806,6 +40512,14 @@
          {
             "name":"New_Gmob_HillClimbR",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -39041,6 +40755,10 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -41060,6 +42778,10 @@
          {
             "name":"New_Gmob_NinjaMansionR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -41109,6 +42831,10 @@
          },
          {
             "name":"New_Gmob_Tokyo4X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -41271,6 +42997,10 @@
          },
          {
             "name":"New_Gmob_NinjaMansionR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -41894,6 +43624,10 @@
          {
             "name":"New_Gmob_Sydney1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -41963,6 +43697,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1",
             "promotionLevel":0
          }
       ]
@@ -42113,6 +43851,10 @@
          },
          {
             "name":"New_Gmob_Sydney1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
          }
       ]
@@ -42296,6 +44038,18 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42402,6 +44156,14 @@
          {
             "name":"New_Gmob_NinjaMansion",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42492,6 +44254,14 @@
          {
             "name":"New_Gmob_Sydney1",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42537,6 +44307,10 @@
          },
          {
             "name":"New_Gmob_Sydney1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
             "promotionLevel":0
          }
       ]
@@ -42594,6 +44368,10 @@
          {
             "name":"Classic_Gn64_PeachCircuitR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42639,6 +44417,10 @@
          },
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_YoshiCircuitRX",
             "promotionLevel":0
          }
       ]
@@ -42696,6 +44478,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42737,6 +44527,10 @@
          },
          {
             "name":"New_Gmob_NinjaMansionR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
             "promotionLevel":0
          }
       ]
@@ -42797,6 +44591,22 @@
          },
          {
             "name":"Classic_Gsfc_MarioCircuit3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ],
@@ -42884,6 +44694,34 @@
          {
             "name":"Classic_Ggc_DinoDinoJungleX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RockRockMountainX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -42918,6 +44756,10 @@
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KoopaTroopaBeachRX",
+            "promotionLevel":0
          }
       ]
    },
@@ -42927,6 +44769,10 @@
       "sortId":332041200,
       "itemTypeId":"DashPanel",
       "moreGoodAt":[
+         {
+            "name":"Classic_G3ds_NeoBowserCityRX",
+            "promotionLevel":0
+         },
          {
             "name":"New_Gmob_NinjaMansionX",
             "promotionLevel":0
@@ -42965,6 +44811,22 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
          }
       ],
@@ -43007,6 +44869,22 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
             "promotionLevel":0
          }
       ]
@@ -43056,6 +44934,18 @@
          {
             "name":"Classic_Gwii_MapleTreewayX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -43098,6 +44988,18 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_NeoBowserCityRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -43126,6 +45028,14 @@
          {
             "name":"Classic_Gsfc_VanillaLake1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -43151,6 +45061,14 @@
          },
          {
             "name":"Classic_Gds_WaluigiPinballRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
             "promotionLevel":0
          }
       ]
@@ -43192,6 +45110,26 @@
          {
             "name":"Classic_Gds_KillerShipR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_KoopaTroopaBeachRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_KillerShipRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowland",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -43214,105 +45152,205 @@
          {
             "name":"Classic_Gds_KillerShipX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_YoshiCircuitRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_VanillaLake1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":0
          }
       ]
    },
-   "Courses":{
-      "Cup_0":{
-         "cupIcon":"HoneKoopaCup",
-         "courses":[
-            "Classic_Gds_KillerShipX",
-            "Classic_Ggc_DinoDinoJungle",
-            "Classic_Gwii_MapleTreeway"
-         ]
-      },
-      "Cup_1":{
-         "cupIcon":"KinopioCup",
-         "courses":[
-            "Classic_Gagb_BowserCastle2",
-            "Classic_G3ds_RosettaPlanet",
-            "Classic_Gwii_DKSummitX"
-         ]
-      },
-      "Cup_2":{
-         "cupIcon":"FunkyKongCup",
-         "courses":[
-            "Classic_Gn64_PeachCircuitR",
-            "Classic_Gsfc_VanillaLake1X",
-            "Classic_Gsfc_DonutsPlain2X"
-         ]
-      },
-      "Cup_3":{
-         "cupIcon":"YoshiCup",
-         "courses":[
-            "Classic_Gagb_BowserCastle2R",
-            "Classic_Ggc_DinoDinoJungleR",
-            "Classic_Gds_KillerShip"
-         ]
-      },
-      "Cup_4":{
-         "cupIcon":"CatherineCup",
-         "courses":[
-            "Classic_Gwii_DKSummitR",
-            "Classic_Gsfc_DonutsPlain2R",
-            "Classic_Gwii_MapleTreewayX"
-         ]
-      },
-      "Cup_5":{
-         "cupIcon":"BrosFireCup",
-         "courses":[
-            "Classic_G3ds_RosettaPlanetX",
-            "Classic_Gn64_KalimariDesert2X",
-            "Classic_Gds_KillerShipX"
-         ]
-      },
-      "Cup_6":{
-         "cupIcon":"KinopeachCup",
-         "courses":[
-            "Classic_Gsfc_DonutsPlain2",
-            "Classic_Gn64_PeachCircuit",
-            "Classic_Ggc_DinoDinoJungleX"
-         ]
-      },
-      "Cup_7":{
-         "cupIcon":"WaluigiCup",
-         "courses":[
-            "Classic_Gn64_KalimariDesert2",
-            "Classic_Gagb_BowserCastle2X",
-            "Classic_Gds_KillerShipR"
-         ]
-      },
-      "Cup_8":{
-         "cupIcon":"LuigiCup",
-         "courses":[
-            "Classic_Gwii_MapleTreewayR",
-            "Classic_Gsfc_VanillaLake1",
-            "Classic_G3ds_RosettaPlanetR"
-         ]
-      },
-      "Cup_9":{
-         "cupIcon":"PeachCup",
-         "courses":[
-            "Classic_Gds_KillerShip",
-            "Classic_Gn64_PeachCircuitRX",
-            "Classic_Gn64_KalimariDesert2R"
-         ]
-      },
-      "Cup_10":{
-         "cupIcon":"BrosHammerCup",
-         "courses":[
-            "Classic_Gsfc_VanillaLake1R",
-            "Classic_Gwii_DKSummit",
-            "Classic_Gsfc_MarioCircuit3RX"
-         ]
-      },
-      "Cup_11":{
-         "cupIcon":"WendyCup",
-         "courses":[
-            "Classic_Gn64_PeachCircuitX",
-            "Classic_Gds_KillerShipR",
-            "Classic_Gds_WaluigiPinballRX"
-         ]
-      }
+   "70294":{
+      "nameEng":"Pink Dozer",
+      "rarityId":2,
+      "sortId":331044100,
+      "itemTypeId":"JumpAction",
+      "moreGoodAt":[
+         {
+            "name":"Remix_Grsfc_RainbowRoad1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_MarioCircuit1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_BowserCastle1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_FrappeSnowlandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_DaisyHillsRX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoadRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gagb_SunsetWildsRX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitRX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_MarioCircuitX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "70295":{
+      "nameEng":"Grand Badwagon",
+      "rarityId":2,
+      "sortId":331045100,
+      "itemTypeId":"SlipStream",
+      "moreGoodAt":[
+         {
+            "name":"Classic_Gn64_ChocoMountainRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuit",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_MarioCircuit",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_G3ds_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1X",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain1R",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitR",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "70296":{
+      "nameEng":"Lime Tea Coupe",
+      "rarityId":2,
+      "sortId":331046200,
+      "itemTypeId":"MiniTurbo",
+      "moreGoodAt":[
+         {
+            "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_Paris3",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_ChocoIsland1",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gn64_PeachCircuitX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gsfc_DonutsPlain2R",
+            "promotionLevel":6
+         }
+      ]
    }
 }
