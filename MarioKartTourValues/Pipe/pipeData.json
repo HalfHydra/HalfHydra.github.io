@@ -387,7 +387,7 @@
 		}
 	},
 	"52_1": {
-		"Icon": "./Images/Pipe/Banner/51_1.png",
+		"Icon": "./Images/Pipe/Banner/52_1.png",
 		"Name": "Trick Pipe 1",
 		"Type": "Previous",
 		"InitialAmount": 100,
@@ -493,7 +493,7 @@
 		}
 	},
 	"52_3": {
-		"Icon": "./Images/Pipe/Banner/51_3.png",
+		"Icon": "./Images/Pipe/Banner/52_3.png",
 		"Name": "Trick Pipe 2",
 		"Type": "Previous",
 		"InitialAmount": 100,
