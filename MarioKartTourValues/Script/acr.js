@@ -716,7 +716,7 @@ function updateCompleted(yon, index, cup, course){
     document.getElementById(`tour_summary_completedin${index}`).checked = yon;
 
     document.getElementById(`tour_summary_panel${index}`).value = yon;
-    (yon ? document.getElementById(`tour_summary_panel${index}`).style.backgroundImage = `url('../Images/UI/Tour/panelbgcompleted.png')` : document.getElementById(`tour_summary_panel${index}`).style.backgroundImage = `url('../Images/UI/Tour/panelbg.png')`)
+    (yon ? document.getElementById(`tour_summary_panel${index}`).style.backgroundImage = `url('./Images/UI/Tour/panelbgcompleted.png')` : document.getElementById(`tour_summary_panel${index}`).style.backgroundImage = `url('./Images/UI/Tour/panelbg.png')`)
     updateLocalSaveData();
 }
 
