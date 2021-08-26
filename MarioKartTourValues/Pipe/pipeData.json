@@ -3,7 +3,7 @@
 	"61_1": {
 		"Icon": "./Images/Pipe/Banner/61_1.png",
 		"Name": "Kamek Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [56, 70304, 30316],
 		"Items": [
@@ -53,8 +53,8 @@
 	"61_2":{
 		"Icon": "./Images/Pipe/Banner/61_2.png",
 		"Name": "Bowser's Minions Pipe",
-		"Type": "Previous",
-		"Note": "This one is my best guess.",
+		"Type": "Official",
+		"Notes": "This one is my best guess.",
 		"InitialAmount": 50,
 		"Spotlights": [],
 		"Items": [
@@ -104,7 +104,7 @@
 	"61_3": {
 		"Icon": "./Images/Pipe/Banner/61_3.png",
 		"Name": "Kamek Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [145, 12, 145, 12, 70245, 70305, 30203, 30097],
 		"Items": [
@@ -454,7 +454,7 @@
 		}
 	},
 	"57_4": {
-		"Icon": "./Images/Pipe/Banner/47_4.png",
+		"Icon": "./Images/Pipe/Banner/57_4.png",
 		"Name": "Mario Vs. Peach Pipe 2",
 		"Type": "Previous",
 		"InitialAmount": 100,
@@ -824,7 +824,7 @@
 	"54_1": {
 		"Icon": "./Images/Pipe/Banner/54_1.png",
 		"Name": "Paris Pipe 1",
-		"Type": "Official",
+		"Type": "Previous",
 		"InitialAmount": 100,
 		"Spotlights": [
     		77,
@@ -878,7 +878,7 @@
 	"54_2": {
 		"Icon": "./Images/Pipe/Banner/54_2.png",
 		"Name": "Tricolor Pipe",
-		"Type": "Official",
+		"Type": "Previous",
 		"Notes": "This is my best guess. I have never seen a 30 pipe with more than 1 type of item, there is no way to guesstimate.",
 		"InitialAmount": 30,
 		"Spotlights": [
@@ -936,7 +936,7 @@
 	"54_3":{
 		"Icon": "./Images/Pipe/Banner/54_3.png",
 		"Name": "Pull-Ahead Pipe",
-		"Type": "Official",
+		"Type": "Previous",
 		"Notes": "This is my best guess based on previous pipes.",
 		"InitialAmount": 50,
 		"Spotlights": [
@@ -988,7 +988,7 @@
 	"54_4": {
 		"Icon": "./Images/Pipe/Banner/54_4.png",
 		"Name": "Paris Pipe 2",
-		"Type": "Official",
+		"Type": "Previous",
 		"InitialAmount": 100,
 		"Spotlights": [
     		46,
