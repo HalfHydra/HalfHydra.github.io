@@ -1906,7 +1906,7 @@
 		"Name": "All Items",
 		"Type": "Custom",
 		"Notes": "This pipe is a pipe with every single item in the game. They are all spotlights. See which ones you get first! This was last updated for the Kamek Tour.",
-		"InitialAmount": 389,
+		"InitialAmount": 419,
 		"Spotlights": [
 			25,
 			26,
