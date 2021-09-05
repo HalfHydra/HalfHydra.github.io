@@ -1,0 +1,11 @@
+{
+"News": {
+	"1": {
+		"Name": "Welcome!",
+		"Icon": "./Pipe/news/welcome.png",
+		"Type": "Welcome",
+		"Date": "9/4/2021",
+		"Message": "Greetings and welcome to Hydra's Pipe Simulator! I have spent an unimaginable amount of time working on this project, so I really do hope that you enjoy it. I manually update this every tour, and am always finding ways to improve this."
+	}
+}
+}
