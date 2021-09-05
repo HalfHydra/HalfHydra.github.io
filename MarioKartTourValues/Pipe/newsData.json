@@ -13,6 +13,13 @@
 		"Type": "Important",
 		"Date": "9/5/2021 (Sun)",
 		"Message": "The 2.0.0 update is rolling out!<br>You can get the new update from <br>https://github.com/HalfHydra/Pipe-Simulator/releases<br> This update includes many many new features including <br>- The news section! You can now easily check for updates to the simulator, see what's new, and more!<br>- Inventory Section! Now the game keeps track of what is and what is not new, as well as how many of each item you've received.<br>- An easter egg! Can you find the special way to pull the entire rest of the pipe? <br>- Voice clips! Drivers now have their voice clips included in the simulator.<br><br>Thanks for using the simulator! I hope you enjoy it."
+	},
+	"3": {
+		"Name": "The Kamek Tour has been added!",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/season_61.png",
+		"Type": "Tour",
+		"Date": "8/27/2021 (Fri)",
+		"Message": "The Kamek Tour pipes have been added! Please note that any 50 pipes are the best guess, and will be updated when their true value amounts are revealed."
 	}
 }
 }
