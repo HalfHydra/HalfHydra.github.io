@@ -2,10 +2,17 @@
 "News": {
 	"1": {
 		"Name": "Welcome!",
-		"Icon": "./Pipe/news/welcome.png",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/welcome.png",
 		"Type": "Welcome",
-		"Date": "9/4/2021",
+		"Date": "9/4/2021 (Sat)",
 		"Message": "Greetings and welcome to Hydra's Pipe Simulator! I have spent an unimaginable amount of time working on this project, so I really do hope that you enjoy it. I manually update this every tour, and am always finding ways to improve this."
+	},
+	"2": {
+		"Name": "Update Info - 2.0.0",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/update_yoshi.png",
+		"Type": "Important",
+		"Date": "9/5/2021 (Sun)",
+		"Message": "The 2.0.0 update is rolling out!<br>You can get the new update from <br>https://github.com/HalfHydra/Pipe-Simulator/releases<br> This update includes many many new features including <br>- The news section! You can now easily check for updates to the simulator, see what's new, and more!<br>- Inventory Section! Now the game keeps track of what is and what is not new, as well as how many of each item you've received.<br>- An easter egg! Can you find the special way to pull the entire rest of the pipe? <br>- Voice clips! Drivers now have their voice clips included in the simulator.<br><br>Thanks for using the simulator! I hope you enjoy it."
 	}
 }
 }
