@@ -1,0 +1,44 @@
+{
+"Groups": {
+	"61": {
+		"Name": "Kamek Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/61.png"
+	},
+	"58": {
+		"Name": "Frost Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/58.png"
+	},
+	"57": {
+		"Name": "Mario vs. Peach Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/57.png"
+	},
+	"56": {
+		"Name": "Los Angeles Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/56.png"
+	},
+	"55": {
+		"Name": "Summer Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/55.png"
+	},
+	"54": {
+		"Name": "Paris Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/54.png"
+	},
+	"53": {
+		"Name": "Wedding Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/53.png"
+	},
+	"52": {
+		"Name": "Trick Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/52.png"
+	},
+	"51": {
+		"Name": "Bowser vs. Donkey Kong Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/51.png"
+	},
+	"50": {
+		"Name": "Sydney Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/50.png"
+	}
+}
+}
