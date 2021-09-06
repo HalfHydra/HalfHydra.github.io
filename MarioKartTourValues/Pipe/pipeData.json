@@ -604,7 +604,7 @@
 	"58_1": {
 		"Icon": "./Images/Pipe/Banner/58_1.png",
 		"Name": "Frost Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [208, 70275, 30298],
 		"Items": [
@@ -654,7 +654,7 @@
 	"58_2":{
 		"Icon": "./Images/Pipe/Banner/58_2.png",
 		"Name": "Red-Hot Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [],
 		"Items": [
@@ -704,7 +704,7 @@
 	"58_3": {
 		"Icon": "./Images/Pipe/Banner/58_3.png",
 		"Name": "Frost Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [122, 87, 70277, 70278, 30255, 30108],
 		"Items": [
@@ -754,7 +754,7 @@
 	"57_1": {
 		"Icon": "./Images/Pipe/Banner/57_1.png",
 		"Name": "Mario vs. Peach Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [192, 120, 70289, 70030, 30183, 30284],
 		"Items": [
@@ -804,7 +804,7 @@
 	"57_2": {
 		"Icon": "./Images/Pipe/Banner/57_2.png",
 		"Name": "Team Mario Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This was corrected to be the accurate amount of items in this pipe. Bless be Nintendo!",
 		"InitialAmount": 50,
 		"Spotlights": [],
@@ -855,7 +855,7 @@
 	"57_3": {
 		"Icon": "./Images/Pipe/Banner/57_3.png",
 		"Name": "Team Peach Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This was corrected to be the accurate amount of items in this pipe. Bless be Nintendo!",
 		"InitialAmount": 50,
 		"Spotlights": [],
@@ -906,7 +906,7 @@
 	"57_4": {
 		"Icon": "./Images/Pipe/Banner/57_4.png",
 		"Name": "Mario Vs. Peach Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [193, 179, 70286, 70251, 30327, 30262],
 		"Items": [
@@ -956,7 +956,7 @@
 	"56_1": {
 		"Icon": "./Images/Pipe/Banner/56_1.png",
 		"Name": "Los Angeles Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [125, 70298, 30358],
 		"Items": [
@@ -1009,7 +1009,7 @@
 	"56_2":{
 		"Icon": "./Images/Pipe/Banner/56_2.png",
 		"Name": "Gold Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [30366],
 		"Items": [
@@ -1059,7 +1059,7 @@
 	"56_3": {
 		"Icon": "./Images/Pipe/Banner/56_3.png",
 		"Name": "Los Angeles Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [121, 128, 70252, 70292, 30208, 30341],
 		"Items": [
@@ -1109,7 +1109,7 @@
 	"55_1": {
 		"Icon": "./Images/Pipe/Banner/55_1.png",
 		"Name": "Summer Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
 			151,
@@ -1166,7 +1166,7 @@
 	"55_2":{
 		"Icon": "./Images/Pipe/Banner/55_2.png",
 		"Name": "Pirate Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [
 		],
@@ -1217,7 +1217,7 @@
 	"55_3": {
 		"Icon": "./Images/Pipe/Banner/55_3.png",
 		"Name": "Summer Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
 			155,
@@ -1274,7 +1274,7 @@
 	"54_1": {
 		"Icon": "./Images/Pipe/Banner/54_1.png",
 		"Name": "Paris Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		77,
@@ -1328,7 +1328,7 @@
 	"54_2": {
 		"Icon": "./Images/Pipe/Banner/54_2.png",
 		"Name": "Tricolor Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This is my best guess. I have never seen a 30 pipe with more than 1 type of item, there is no way to guesstimate.",
 		"InitialAmount": 30,
 		"Spotlights": [
@@ -1386,7 +1386,7 @@
 	"54_3":{
 		"Icon": "./Images/Pipe/Banner/54_3.png",
 		"Name": "Pull-Ahead Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This is my best guess based on previous pipes.",
 		"InitialAmount": 50,
 		"Spotlights": [
@@ -1438,7 +1438,7 @@
 	"54_4": {
 		"Icon": "./Images/Pipe/Banner/54_4.png",
 		"Name": "Paris Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		46,
@@ -1495,7 +1495,7 @@
 	"53_1": {
 		"Icon": "./Images/Pipe/Banner/53_1.png",
 		"Name": "Wedding Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		123, 
@@ -1549,7 +1549,7 @@
 	"53_2":{
 		"Icon": "./Images/Pipe/Banner/53_2.png",
 		"Name": "Pull-Ahead Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [
 		],
@@ -1600,7 +1600,7 @@
 	"53_3": {
 		"Icon": "./Images/Pipe/Banner/53_3.png",
 		"Name": "Wedding Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		144, 
@@ -1660,7 +1660,7 @@
 	"52_1": {
 		"Icon": "./Images/Pipe/Banner/52_1.png",
 		"Name": "Trick Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		135, 
@@ -1715,7 +1715,7 @@
 	"52_2":{
 		"Icon": "./Images/Pipe/Banner/52_2.png",
 		"Name": "Hanafuda Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [
 		],
@@ -1766,7 +1766,7 @@
 	"52_3": {
 		"Icon": "./Images/Pipe/Banner/52_3.png",
 		"Name": "Trick Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		82, 
@@ -1821,7 +1821,7 @@
 	"51_1": {
 		"Icon": "./Images/Pipe/Banner/51_1.png",
 		"Name": "Bowser vs. DK Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		12,
@@ -1880,7 +1880,7 @@
 	"51_2": {
 		"Icon": "./Images/Pipe/Banner/51_2.png",
 		"Name": "Team Bowser Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This was corrected to be the accurate amount of items in this pipe. Bless be Nintendo!",
 		"InitialAmount": 50,
 		"Spotlights": [],
@@ -1931,7 +1931,7 @@
 	"51_3": {
 		"Icon": "./Images/Pipe/Banner/51_3.png",
 		"Name": "Team Donkey Kong Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"Notes": "This was corrected to be the accurate amount of items in this pipe. Bless be Nintendo!",
 		"InitialAmount": 50,
 		"Spotlights": [],
@@ -1982,7 +1982,7 @@
 	"51_4": {
 		"Icon": "./Images/Pipe/Banner/51_4.png",
 		"Name": "Bowser vs. DK Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
     		28,
@@ -2039,7 +2039,7 @@
 	"50_1": {
 		"Icon": "./Images/Pipe/Banner/50_1.png",
 		"Name": "Sydney Pipe 1",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
 			118,
@@ -2093,7 +2093,7 @@
 	"50_2": {
 		"Icon": "./Images/Pipe/Banner/50_2.png",
 		"Name": "Ocean Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [],
 		"Items": [
@@ -2143,7 +2143,7 @@
 	"50_3": {
 		"Icon": "./Images/Pipe/Banner/50_3.png",
 		"Name": "Sydney Pipe 2",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 100,
 		"Spotlights": [
 			155,
@@ -2200,7 +2200,7 @@
 	"49_2": {
 		"Icon": "./Images/Pipe/Banner/49_2.png",
 		"Name": "Gold Pipe",
-		"Type": "Previous",
+		"Type": "Official",
 		"InitialAmount": 50,
 		"Spotlights": [
 			167
