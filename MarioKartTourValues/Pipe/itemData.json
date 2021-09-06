@@ -226,5 +226,11 @@
 		"HighEnd": "Greatly increases Mini-Turbo boost time and points earned for performing one.",
 		"Super": "Further increases Mini-Turbo boost time and points earned for performing one.",
 		"Normal": "Increases Mini-Turbo boost time and points earned for performing one."
+	},
+	"oin": {
+		"Name": "Coin Vacuum",
+		"HighEnd": "Vacuum up nearby coins while racing on favored courses.",
+		"Super": "Vacuum up nearby coins while racing on favored courses.",
+		"Normal": "Vacuum up nearby coins while racing on favored courses."
 	}
 }
