@@ -3051,10 +3051,10 @@
 		}
 	},
 	"NormalSpotlightTest": {
-		"Icon": "./Images/Pipe/Banner/NormalSpotlightTestWarning.png",
-		"Name": "Regular Pipe",
+		"Icon": "./Images/Pipe/Banner/NormalSpotlightTest.png",
+		"Name": "Normal Spotlight Test",
 		"Type": "Custom",
-		"Notes": "Testing to make sure that Normal Spotlights work. There has never been one in any of these pipes, so I need to make sure it's correct",
+		"Notes": "Testing to make sure that Normal Spotlights work. There has never been one in any of these pipes, so I need to make sure it's correct. Update: Seems to be!",
 		"InitialAmount": 100,
 		"Spotlights": [25, 26, 23, 27, 24],
 		"Items": [
