@@ -2483,14 +2483,11 @@
 		"Type": "Custom",
 		"Notes": "This pipe simulates an all clear pipe when pulling. In order for the best results, reset the pipe after firing one time. Otherwise, scroll down to see how it is set up. This was last updated for the Bowser vs Donkey Kong Tour.",
 		"InitialAmount": 64,
-		"Spotlights": [],
+		"Spotlights": [12, 18, 57, 41, 19, 122, 161, 62, 28, 128, 127, 45, 52, 104,70011, 70061, 70098, 70109, 70097, 70155, 70159, 70178, 70202, 70176, 70192, 70224, 70259, 70054, 70106, 70017, 70013, 70062, 70210, 70207, 70193, 70240, 70241, 70219, 70244, 70263, 70278, 70167, 70179,30029, 30145, 30171, 30109, 30192, 30054, 30159, 30190, 30257, 30156, 30196, 30241, 30152, 30216, 30010, 30019, 30239, 30284, 30097, 30203, 30255],
 		"Items": [
 			0,
 			0,
 			0,
-			14,
-			29,
-			21,
 			0,
 			0,
 			0,
@@ -2503,7 +2500,10 @@
 			0,
 			0,
 			0,
-			0
+			0,
+			0,
+			0,
+			64
 		],
 		"ExtraHE": {
 			"Drivers": [],
