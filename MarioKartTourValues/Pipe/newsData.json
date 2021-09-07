@@ -1,6 +1,7 @@
 {
 "Version": "2.0.0",
 "CurrentBadge": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonbadge/61.png",
+"Order": ["1", "4", "2", "3"],
 "News": {
 	"1": {
 		"Name": "Welcome to the Simulator!",
@@ -8,13 +9,6 @@
 		"Type": "Welcome",
 		"Date": "9/4/2021 (Sat)",
 		"Message": "Greetings and welcome to Hydra's Pipe Simulator! I have spent an unimaginable amount of time working on this project, so I really do hope that you enjoy it. I manually update this every tour, and am always finding ways to improve this. Every pipe functions exactly as it would in the game.<br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Pipe/news/1_2.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br><br>Important: You do not need to redownload the pipe simulator every tour! Content is added automatically whenever you launch it. It fetches the latest information from my github site always. If an update is ever required for something, the app will let you know.<br><br>I'll give a basic description of what each tab is for in the simulator:<img src=\"https://halfhydra.github.io/MarioKartTourValues/Pipe/news/1_1.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br>-News Tab -> used for viewing the latest about content updates to the simulator!<br>-Tour Tab -> used to select specific tours' pipes to show on the selection screen<br>-Pipes Tab -> where you can pull the pipe and view details!<br>-Inventory Tab -> used to view everything you've pulled! It also has a coin count for if you have an item higher level than the max.<br>-Settings Tab -> used to change settings such as if you can skip the star animation, or disable the shop music.<br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/AllItems.gif\" style=\"width:400px;\" class=\"newswhiteborder\"><br>New pipes will be added as soon as I am able to dump their data! It is my goal to keep this as up to date as possible. If you ever have any suggestions or problems, please send me a message on Discord at Justin#4917. I hope you enjoy the simulator!<img src=\"https://halfhydra.github.io/MarioKartTourValues/Pipe/news/1_3.png\" style=\"width:400px;\" class=\"newswhiteborder\">"
-	},
-	"4": {
-		"Name": "The Custom Gold Mario Pipe is here!",
-		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/GoldMario.png",
-		"Type": "New",
-		"Date": "9/6/2021 (Sun)",
-		"Message": "The Custom Gold Mario Pipe is here! Gold Mario and the Gold Standard debut in the spotlight! <br><br>They're in the spotlight!<br><br>Can't find the pipe? Be sure to enable the 'Custom Pipes' option in settings to view it! <br><br>This pipe is not official. Please do not claim it is. It is an exclusive to this simulator."
 	},
 	"2": {
 		"Name": "Update Info - 2.0.0",
@@ -29,6 +23,13 @@
 		"Type": "Tour",
 		"Date": "8/27/2021 (Fri)",
 		"Message": "The Kamek Tour pipes have been added! Please note that any special pipes are the best guess, and will be updated when their true value amounts are revealed."
+	},
+	"4": {
+		"Name": "The Custom Gold Mario Pipe is here!",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/GoldMario.png",
+		"Type": "New",
+		"Date": "9/6/2021 (Sun)",
+		"Message": "The Custom Gold Mario Pipe is here! Gold Mario and the Gold Standard debut in the spotlight! <br><br>They're in the spotlight!<br><br>Can't find the pipe? Be sure to enable the 'Custom Pipes' option in settings to view it! <br><br>This pipe is not official. Please do not claim it is. It is an exclusive to this simulator."
 	}
 }
 }
