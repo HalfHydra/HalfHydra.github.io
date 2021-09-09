@@ -1,0 +1,16 @@
+{
+    "3": {
+		"Name": "The Kamek Tour has been added!",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/season_61.png",
+		"Type": "Tour",
+		"Date": "8/27/2021 (Fri)",
+		"Message": "The Kamek Tour pipes have been added! Please note that any special pipes are the best guess, and will be updated when their true value amounts are revealed."
+	},
+    "4": {
+		"Name": "The Custom Gold Mario Pipe is here!",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/GoldMario.png",
+		"Type": "New",
+		"Date": "9/6/2021 (Sun)",
+		"Message": "The Custom Gold Mario Pipe is here! Gold Mario and the Gold Standard debut in the spotlight! <br><br>They're in the spotlight!<br><br>Can't find the pipe? Be sure to enable the 'Custom Pipes' option in settings to view it! <br><br>This pipe is not official. Please do not claim it is. It is an exclusive to this simulator."
+	}
+}

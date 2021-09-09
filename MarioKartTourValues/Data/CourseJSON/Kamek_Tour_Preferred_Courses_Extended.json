@@ -250,10 +250,6 @@
          {
             "name":"Remix_Grsfc_RainbowRoad1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -910,10 +906,6 @@
          {
             "name":"Classic_Gagb_CheepCheepIslandX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ]
    },
@@ -1307,14 +1299,6 @@
          },
          {
             "name":"Classic_G3ds_NeoBowserCityR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -2308,10 +2292,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -2990,10 +2970,6 @@
          {
             "name":"Classic_G3ds_RosettaPlanetX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -3329,10 +3305,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ],
@@ -4008,14 +3980,6 @@
          {
             "name":"New_Gmob_Paris3R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -4161,14 +4125,6 @@
          },
          {
             "name":"New_Gmob_LosAngeles3X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -4900,18 +4856,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_ChocoIsland2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -4937,10 +4881,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -5149,14 +5089,6 @@
          },
          {
             "name":"New_Gmob_Vancouver1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -5650,48 +5582,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         }
-      ]
-   },
-   "66":{
-      "nameEng":"Pink Yoshi",
-      "rarityId":1,
-      "sortId":121052200,
-      "itemTypeId":"Item0045",
-      "moreGoodAt":[
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_ChocoIsland2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":3
-         },
-         {
-            "name":"Remix_Grsfc_RainbowRoad2X",
-            "promotionLevel":6
          }
       ]
    },
@@ -5913,14 +5803,6 @@
          },
          {
             "name":"Classic_Gds_DKPass",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ],
@@ -6462,14 +6344,6 @@
          {
             "name":"Classic_Gds_LuigiMansionR",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -6531,10 +6405,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -7080,10 +6950,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -7163,10 +7029,6 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ],
@@ -7334,10 +7196,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -7423,10 +7281,6 @@
          },
          {
             "name":"New_Gmob_Tokyo3RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -7661,10 +7515,6 @@
          },
          {
             "name":"Classic_Gagb_CheepCheepIslandX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ],
@@ -8108,10 +7958,6 @@
          {
             "name":"New_Gmob_NinjaMansion",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -8246,10 +8092,6 @@
          {
             "name":"Classic_Gagb_CheepCheepIslandX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -8315,10 +8157,6 @@
          },
          {
             "name":"New_Gmob_LosAngeles3R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ]
@@ -8521,10 +8359,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ],
@@ -8896,10 +8730,6 @@
          {
             "name":"New_Gmob_Paris3R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9022,10 +8852,6 @@
          {
             "name":"Classic_Gds_LuigiMansionX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9071,14 +8897,6 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -9432,14 +9250,6 @@
          {
             "name":"Classic_Gsfc_MarioCircuit1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9502,60 +9312,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         }
-      ]
-   },
-   "119":{
-      "nameEng":"Yoshi (Kangaroo)",
-      "rarityId":2,
-      "sortId":131052100,
-      "itemTypeId":"Item0031",
-      "moreGoodAt":[
-         {
-            "name":"Classic_Gds_WaluigiPinballX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_VanillaLake1",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2R",
-            "promotionLevel":6
-         },
-         {
-            "name":"Remix_Grsfc_ChocoIsland2",
-            "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":3
          }
       ]
    },
@@ -10098,10 +9854,6 @@
          {
             "name":"Classic_Gsfc_RainbowRoadRX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -10160,18 +9912,6 @@
          {
             "name":"New_Gmob_NinjaMansionRX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinball",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ]
    },
@@ -10224,18 +9964,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -10277,18 +10005,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -11237,14 +10953,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ],
@@ -12394,10 +12102,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -12820,18 +12524,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -12873,10 +12565,6 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ]
@@ -15936,18 +15624,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -15981,10 +15657,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -16196,14 +15868,6 @@
          {
             "name":"Remix_Grsfc_RainbowRoad2X",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuitX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -16229,10 +15893,6 @@
          },
          {
             "name":"Classic_Gsfc_ChocoIsland2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3X",
             "promotionLevel":0
          }
       ]
@@ -17982,14 +17642,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ]
    },
@@ -18666,10 +18318,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ]
    },
@@ -19124,10 +18772,6 @@
          {
             "name":"Classic_Gagb_CheepCheepIslandX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -19193,10 +18837,6 @@
          },
          {
             "name":"Classic_Gagb_CheepCheepIslandR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -20689,10 +20329,6 @@
          },
          {
             "name":"New_Gmob_Paris3RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ],
@@ -22498,10 +22134,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ]
    },
@@ -23390,10 +23022,6 @@
          {
             "name":"New_Gmob_Berlin2X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -24028,10 +23656,6 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ]
    },
@@ -24088,14 +23712,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -24129,10 +23745,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -24982,14 +24594,6 @@
          {
             "name":"New_Gmob_LosAngeles3R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -25500,10 +25104,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -25561,10 +25161,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -26576,10 +26172,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26633,10 +26225,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
             "promotionLevel":0
          }
       ]
@@ -26791,14 +26379,6 @@
          },
          {
             "name":"New_Gmob_LosAngeles3X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -27210,56 +26790,6 @@
          {
             "name":"Classic_Gn64_PeachCircuitRX",
             "promotionLevel":0
-         }
-      ]
-   },
-   "30229":{
-      "nameEng":"Ship's Wheel",
-      "rarityId":2,
-      "sortId":531052200,
-      "itemTypeId":"Item0011",
-      "moreGoodAt":[
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_RainbowRoad2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Ggc_YoshiCircuitX",
-            "promotionLevel":6
-         },
-         {
-            "name":"Remix_Grsfc_RainbowRoad2X",
-            "promotionLevel":6
-         },
-         {
-            "name":"Remix_Grsfc_VanillaLake1",
-            "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":3
          }
       ]
    },
@@ -27692,10 +27222,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -27837,10 +27363,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ],
@@ -28264,18 +27786,6 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -28313,10 +27823,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -28962,10 +28468,6 @@
          {
             "name":"New_Gmob_NinjaMansionRX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -29286,14 +28788,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -29347,10 +28841,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3X",
             "promotionLevel":0
          }
       ]
@@ -29644,22 +29134,6 @@
          {
             "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballR",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_ChocoIsland2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -29682,14 +29156,6 @@
          {
             "name":"Classic_Gagb_SunsetWilds",
             "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2",
-            "promotionLevel":0
          }
       ]
    },
@@ -30196,10 +29662,6 @@
          {
             "name":"New_Gmob_LosAngeles3R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30658,10 +30120,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30703,18 +30161,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -30942,10 +30388,6 @@
          {
             "name":"Classic_Gds_DKPassR",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31020,68 +30462,6 @@
          {
             "name":"Classic_Gds_DKPass",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         }
-      ]
-   },
-   "30343":{
-      "nameEng":"Silver Surf Master",
-      "rarityId":2,
-      "sortId":531052100,
-      "itemTypeId":"Item0006",
-      "moreGoodAt":[
-         {
-            "name":"Classic_Gds_WaluigiPinballX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_VanillaLake1",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_VanillaLake1X",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
-            "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_VanillaLake1R",
-            "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":6
          }
       ]
    },
@@ -31170,10 +30550,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31239,10 +30615,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -31316,14 +30688,6 @@
          {
             "name":"Remix_Grsfc_RainbowRoad1RX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31382,10 +30746,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ]
    },
@@ -31442,14 +30802,6 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31495,18 +30847,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -31580,14 +30920,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31650,14 +30982,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -31718,18 +31042,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31767,10 +31079,6 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -31828,14 +31136,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31889,14 +31189,6 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -32467,10 +31759,6 @@
          },
          {
             "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ],
@@ -35520,10 +34808,6 @@
          {
             "name":"Classic_Gds_LuigiMansionR",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -35581,10 +34865,6 @@
          },
          {
             "name":"Classic_Gds_LuigiMansion",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -37258,14 +36538,6 @@
          {
             "name":"New_Gmob_NinjaMansionRX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -37924,14 +37196,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -38164,10 +37428,6 @@
          {
             "name":"Classic_Gds_DKPassR",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -38233,10 +37493,6 @@
          },
          {
             "name":"Classic_Gds_DKPass",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ]
@@ -39068,10 +38324,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -39129,10 +38381,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -40228,10 +39476,6 @@
          {
             "name":"Classic_Gagb_CheepCheepIsland",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -41163,10 +40407,6 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -43278,10 +42518,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -43335,10 +42571,6 @@
          },
          {
             "name":"Classic_Gds_DKPassX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -45208,10 +44440,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -45297,10 +44525,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -45424,10 +44648,6 @@
          {
             "name":"Classic_Gagb_CheepCheepIslandR",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ]
    },
@@ -45492,10 +44712,6 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -45545,10 +44761,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -45606,10 +44818,6 @@
          {
             "name":"Classic_Gwii_DKSummitX",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -45647,10 +44855,6 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanet",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -48172,10 +47376,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -48472,10 +47672,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -48537,10 +47733,6 @@
          },
          {
             "name":"New_Gmob_LosAngeles3R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -48846,10 +48038,6 @@
          {
             "name":"New_Gmob_LosAngeles3",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -48911,10 +48099,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -49134,10 +48318,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -49199,10 +48379,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ]
@@ -49682,10 +48858,6 @@
          {
             "name":"New_Gmob_Tokyo1R",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -49743,10 +48915,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ]
@@ -49828,14 +48996,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -49885,14 +49045,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
          }
       ]
@@ -49954,10 +49106,6 @@
          {
             "name":"New_Gmob_Tokyo2X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50015,10 +49163,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -50154,10 +49298,6 @@
          {
             "name":"Classic_Gds_LuigiMansion",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ]
    },
@@ -50225,10 +49365,6 @@
          },
          {
             "name":"Classic_Gds_LuigiMansionX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ],
@@ -50339,14 +49475,6 @@
          },
          {
             "name":"Classic_Gsfc_ChocoIsland2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
             "promotionLevel":0
          }
       ],
@@ -50470,18 +49598,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_MarioCircuit3X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50523,14 +49639,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
             "promotionLevel":0
          }
       ]
@@ -50575,18 +49683,6 @@
          },
          {
             "name":"Classic_Gsfc_RainbowRoadRX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuit",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Ggc_YoshiCircuitR",
             "promotionLevel":0
          }
       ],
@@ -50642,10 +49738,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
          }
       ]
    },
@@ -50694,14 +49786,6 @@
          {
             "name":"Classic_Gagb_SunsetWildsX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gsfc_ChocoIsland2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50743,10 +49827,6 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
          }
       ]
@@ -50794,14 +49874,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1X",
             "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
          }
       ]
    },
@@ -50826,18 +49898,6 @@
          {
             "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballR",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50860,14 +49920,6 @@
          {
             "name":"Remix_Grsfc_VanillaLake1",
             "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ]
    },
@@ -50892,18 +49944,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinball",
-            "promotionLevel":0
-         },
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50926,114 +49966,6 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         }
-      ]
-   },
-   "70306":{
-      "nameEng":"Green Double-Decker",
-      "rarityId":2,
-      "sortId":331052100,
-      "itemTypeId":"SlipStream",
-      "moreGoodAt":[
-         {
-            "name":"Classic_Gsfc_DonutsPlain2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2RX",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Gds_LuigiMansionX",
-            "promotionLevel":3
-         },
-         {
-            "name":"Classic_Gsfc_DonutsPlain2X",
-            "promotionLevel":3
-         },
-         {
-            "name":"Remix_Grsfc_ChocoIsland2R",
-            "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney1R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2X",
-            "promotionLevel":6
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         }
-      ]
-   },
-   "70310":{
-      "nameEng":"Black Cat Cruiser",
-      "rarityId":2,
-      "sortId":331052200,
-      "itemTypeId":"DashPanel",
-      "moreGoodAt":[
-         {
-            "name":"Classic_Gsfc_ChocoIsland2RX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_ChocoIsland2",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_ChocoIsland2X",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney2R",
-            "promotionLevel":0
-         },
-         {
-            "name":"New_Gmob_Sydney1X",
-            "promotionLevel":0
-         }
-      ],
-      "goodAt":[
-         {
-            "name":"Classic_Gds_LuigiMansionR",
-            "promotionLevel":6
-         },
-         {
-            "name":"Classic_Gds_WaluigiPinballX",
-            "promotionLevel":3
-         },
-         {
-            "name":"Classic_Gagb_SunsetWildsRX",
-            "promotionLevel":0
-         },
-         {
-            "name":"Remix_Grsfc_ChocoIsland2R",
-            "promotionLevel":3
-         },
-         {
-            "name":"New_Gmob_Sydney2",
-            "promotionLevel":6
          }
       ]
    }
