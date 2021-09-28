@@ -1,0 +1,111 @@
+{
+   "Title":"2nd Anniversary Tour",
+   "Cup_1":{
+      "cupLabel":"Baby Luigi Cup",
+      "cupIcon":"BbLuigiCup",
+      "courses":[
+         "New_Gmob_NewYork4",
+         "New_Gmob_Tokyo1X",
+         "New_Gmob_Paris2R"
+      ]
+   },
+   "Cup_2":{
+      "cupLabel":"Hammer Bro Cup",
+      "cupIcon":"BrosHammerCup",
+      "courses":[
+         "New_Gmob_Vancouver1X",
+         "New_Gmob_Sydney1",
+         "New_Gmob_LosAngeles1X"
+      ]
+   },
+   "Cup_3":{
+      "cupLabel":"Pink Gold Peach Cup",
+      "cupIcon":"MetalPeachCup",
+      "courses":[
+         "New_Gmob_NewYork4RX",
+         "New_Gmob_Berlin2R",
+         "New_Gmob_London1"
+      ]
+   },
+   "Cup_4":{
+      "cupLabel":"Daisy Cup",
+      "cupIcon":"DaisyCup",
+      "courses":[
+         "New_Gmob_LosAngeles1",
+         "New_Gmob_London2",
+         "New_Gmob_Paris2"
+      ]
+   },
+   "Cup_5":{
+      "cupLabel":"Lakitu Cup",
+      "cupIcon":"JugemCup",
+      "courses":[
+         "New_Gmob_Vancouver1R",
+         "New_Gmob_Berlin2X",
+         "New_Gmob_Tokyo1"
+      ]
+   },
+   "Cup_6":{
+      "cupLabel":"Peach Cup",
+      "cupIcon":"PeachCup",
+      "courses":[
+         "New_Gmob_Sydney1R",
+         "New_Gmob_Paris1",
+         "New_Gmob_London1X"
+      ]
+   },
+   "Cup_7":{
+      "cupLabel":"Yoshi Cup",
+      "cupIcon":"YoshiCup",
+      "courses":[
+         "New_Gmob_London2R",
+         "New_Gmob_Vancouver1RX",
+         "New_Gmob_NewYork4R"
+      ]
+   },
+   "Cup_8":{
+      "cupLabel":"Ludwig Cup",
+      "cupIcon":"LudwigCup",
+      "courses":[
+         "New_Gmob_Paris1RX",
+         "New_Gmob_Berlin2",
+         "New_Gmob_Sydney1RX"
+      ]
+   },
+   "Cup_9":{
+      "cupLabel":"Luigi Cup",
+      "cupIcon":"LuigiCup",
+      "courses":[
+         "New_Gmob_Paris2X",
+         "New_Gmob_LosAngeles1RX",
+         "New_Gmob_Tokyo1R"
+      ]
+   },
+   "Cup_10":{
+      "cupLabel":"Mario Cup",
+      "cupIcon":"MarioCup",
+      "courses":[
+         "New_Gmob_London1R",
+         "New_Gmob_NewYork4X",
+         "New_Gmob_Paris1X"
+      ]
+   },
+   "Cup_11":{
+      "cupLabel":"Rosalina Cup",
+      "cupIcon":"RosettaCup",
+      "courses":[
+         "New_Gmob_LosAngeles1R",
+         "New_Gmob_Sydney1X",
+         "New_Gmob_Vancouver1"
+      ]
+   },
+   "Cup_12":{
+      "cupLabel":"Toad Cup",
+      "cupIcon":"KinopioCup",
+      "courses":[
+         "New_Gmob_Paris1R",
+         "New_Gmob_London2X",
+         "New_Gmob_NewYork4RX"
+      ]
+   }
+}
