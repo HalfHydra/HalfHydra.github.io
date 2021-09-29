@@ -24,12 +24,12 @@
 		"Date": "9/29/2021 (Wed)",
 		"Message": "The 2nd Anniversary Tour pipes have been added! <br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/63_1.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/63_2.png\" style=\"width:400px;\" class=\"newswhiteborder\"><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/63_3.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/63_4.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br>I hope you continue to enjoy the simulator!"
 	},
-	"6": {
+	"8": {
 		"Name": "Regarding Known Issues",
 		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/issues.png",
 		"Type": "Important",
-		"Date": "9/8/2021 (Wed)",
-		"Message": "Updated: 9/8/2021<br><br>1. Gold Mario and the Gold Standard do not show up in the Inventory Screen.<br>This will be fixed in the next update.<br>2. The Coin Vacuum image has a strange border on both sides.<br>This will be fixed in the next update.<br>3. Overlapping text in the News and Details section<br>This will be fixed in next update.<br>4. News entry ordering does not work.<br>That is why this notice is at the bottom, I messed up the priority system. This will be fixed in the next update."
+		"Date": "9/29/2021 (Wed)",
+		"Message": "Updated: 9/29/2021<br><br>1. Gold Mario and the Gold Standard do not show up in the Inventory Screen.<br>This will be fixed in the next update.<br>2. The Coin Vacuum image has a strange border on both sides.<br>This will be fixed in the next update.<br>3. Overlapping text in the News and Details section<br>This will be fixed in next update.<br>4. News entry ordering does not work.<br>That is why this notice is at the bottom, I messed up the priority system. This will be fixed in the next update.<br>5. The Super Spotlight breaks the details section. This will be fixed in the next update."
 	}
 }
 }
