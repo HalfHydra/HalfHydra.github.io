@@ -1,5 +1,9 @@
 {
 "Groups": {
+	"63": {
+		"Name": "2nd Anniversary Tour",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/63.png"
+	},
 	"62": {
 		"Name": "Sydney Tour",
 		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonicon/62.png"
