@@ -131,6 +131,12 @@
 		"Super": "Further increases your chances of getting a Super Horn. Using one will get you more points.",
 		"Normal": "Increases your chances of getting a Super Horn. Using one will get you more points."
 	},
+	"Item0040": {
+		"Name": "Super Leaf",
+		"HighEnd": "Swing the fluffy tail to knock over nearby opponents!",
+		"Super": "Swing the fluffy tail to knock over nearby opponents!",
+		"Normal": "Swing the fluffy tail to knock over nearby opponents!"
+	},
 	"Item0044": {
 		"Name": "Triple Mushrooms",
 		"HighEnd": "Gives you three Mushrooms to use in one go for a long-lasting boost.",
