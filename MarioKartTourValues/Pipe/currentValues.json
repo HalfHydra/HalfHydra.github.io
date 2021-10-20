@@ -1088,6 +1088,10 @@
          {
             "name":"Remix_Grsfc_ChocoIsland2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -1422,6 +1426,10 @@
          },
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ],
@@ -1933,6 +1941,10 @@
          },
          {
             "name":"New_Gmob_NewYork3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -3020,6 +3032,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -3042,6 +3062,10 @@
          {
             "name":"Classic_Gagb_SunsetWilds",
             "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -4626,6 +4650,10 @@
          {
             "name":"New_Gmob_London2X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -4691,6 +4719,10 @@
          },
          {
             "name":"Classic_Gwii_DKSummit",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ],
@@ -4781,6 +4813,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -5190,6 +5226,14 @@
          {
             "name":"New_Gmob_LosAngeles1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -5326,6 +5370,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -5352,6 +5404,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -5422,6 +5478,14 @@
          {
             "name":"Classic_G3ds_RainbowRoadX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -5475,6 +5539,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -6281,6 +6349,10 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -6310,6 +6382,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ],
@@ -6438,6 +6514,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ],
@@ -7241,6 +7321,10 @@
          {
             "name":"New_Gmob_LosAngeles1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -7917,6 +8001,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -8363,6 +8451,10 @@
          {
             "name":"New_Gmob_Vancouver1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -8557,6 +8649,14 @@
          {
             "name":"Classic_Gagb_CheepCheepIslandR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -8633,6 +8733,10 @@
          },
          {
             "name":"New_Gmob_Berlin2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -8712,6 +8816,14 @@
          {
             "name":"New_Gmob_NewYork4RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -8786,6 +8898,10 @@
          },
          {
             "name":"New_Gmob_London2R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ],
@@ -8877,6 +8993,10 @@
          {
             "name":"New_Gmob_NewYork4",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -8948,6 +9068,10 @@
          {
             "name":"New_Gmob_Sydney2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9009,6 +9133,10 @@
          },
          {
             "name":"New_Gmob_NinjaMansionR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ],
@@ -9395,6 +9523,10 @@
          {
             "name":"New_Gmob_Berlin2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9493,6 +9625,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9522,6 +9662,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ],
@@ -9843,6 +9987,10 @@
          {
             "name":"New_Gmob_Sydney2X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -9908,6 +10056,10 @@
          },
          {
             "name":"New_Gmob_Paris3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ],
@@ -10041,6 +10193,14 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -10312,6 +10472,14 @@
          {
             "name":"Classic_Gds_KillerShipR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -10552,6 +10720,18 @@
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -10585,6 +10765,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1X",
             "promotionLevel":0
          }
       ],
@@ -11266,6 +11450,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -11359,6 +11547,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -11428,6 +11624,14 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -11679,6 +11883,10 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -12016,6 +12224,14 @@
          {
             "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "tagIds":[
@@ -12166,6 +12382,14 @@
          },
          {
             "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -12452,6 +12676,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -13161,6 +13389,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -13258,6 +13490,10 @@
          },
          {
             "name":"New_Gmob_Paris3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -14150,6 +14386,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -14207,6 +14447,10 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -14277,6 +14521,14 @@
          },
          {
             "name":"New_Gmob_NewYork4",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -15729,6 +15981,10 @@
          {
             "name":"New_Gmob_Berlin2",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -15802,6 +16058,10 @@
          },
          {
             "name":"New_Gmob_London1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -17279,6 +17539,62 @@
          24
       ]
    },
+   "188":{
+      "nameEng":"Waluigi (Vampire)",
+      "nameInternal":"WaluigiVampire",
+      "rarityId":2,
+      "sortId":132055100,
+      "itemTypeId":"Item0051",
+      "moreGoodAt":[
+         {
+            "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gwii_MapleTreeway",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gwii_MapleTreewayX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":6
+         }
+      ],
+      "tagIds":[
+         3,
+         12,
+         24
+      ]
+   },
    "189":{
       "nameEng":"Pauline (Rose)",
       "nameInternal":"PaulineHeart",
@@ -17861,6 +18177,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain2RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadX",
             "promotionLevel":0
          }
       ],
@@ -20173,6 +20493,10 @@
          {
             "name":"Classic_Gagb_SunsetWildsR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ]
    },
@@ -20559,6 +20883,10 @@
          {
             "name":"Classic_Gwii_DKSummitR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -20652,6 +20980,10 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -22476,6 +22808,10 @@
          {
             "name":"New_Gmob_London2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -22521,6 +22857,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -22734,6 +23074,10 @@
          {
             "name":"Classic_Gagb_SunsetWilds",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -22771,6 +23115,10 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -24259,6 +24607,10 @@
          {
             "name":"Classic_Gwii_MapleTreeway",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -25330,6 +25682,10 @@
          {
             "name":"New_Gmob_NewYork4RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ]
    },
@@ -25464,6 +25820,14 @@
          },
          {
             "name":"Remix_Grsfc_RainbowRoad2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -25963,6 +26327,10 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26004,6 +26372,10 @@
          },
          {
             "name":"New_Gmob_Paris1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -26057,6 +26429,10 @@
          },
          {
             "name":"New_Gmob_Sydney1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -26148,6 +26524,14 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -26225,6 +26609,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -26290,6 +26682,10 @@
          },
          {
             "name":"New_Gmob_Paris3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -27405,6 +27801,10 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -27470,6 +27870,10 @@
          },
          {
             "name":"New_Gmob_NewYork4R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -29204,6 +29608,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -29241,6 +29653,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -30289,6 +30705,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaar",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30342,6 +30766,14 @@
          },
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -30400,6 +30832,10 @@
          {
             "name":"Classic_Gds_KillerShipRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -30453,6 +30889,10 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -31020,6 +31460,10 @@
          {
             "name":"New_Gmob_London2R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31098,6 +31542,65 @@
          {
             "name":"New_Gmob_LosAngeles3X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "30289":{
+      "nameEng":"Magic Parasol",
+      "nameInternal":"Wing_PParasol_BlackOrange",
+      "rarityId":2,
+      "sortId":531055300,
+      "itemTypeId":"Item0001",
+      "moreGoodAt":[
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gwii_MapleTreeway",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":6
          }
       ]
    },
@@ -31493,6 +31996,10 @@
          {
             "name":"New_Gmob_Tokyo4X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31705,6 +32212,104 @@
          }
       ]
    },
+   "30312":{
+      "nameEng":"Golden Wings",
+      "nameInternal":"Wing_DevilW_DragonGolden",
+      "rarityId":2,
+      "sortId":532055200,
+      "itemTypeId":"Item0014",
+      "moreGoodAt":[
+         {
+            "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_ShyGuyBazaar",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Ggc_DinoDinoJungleX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoad",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "30313":{
+      "nameEng":"Vampire Wings",
+      "nameInternal":"Wing_DevilW_Red",
+      "rarityId":2,
+      "sortId":532055100,
+      "itemTypeId":"Item0003",
+      "moreGoodAt":[
+         {
+            "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarX",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1R",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gwii_MapleTreewayR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         }
+      ]
+   },
    "30316":{
       "nameEng":"Dream Glider",
       "nameInternal":"Wing_KBroom_Blue",
@@ -31767,6 +32372,10 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadR",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -31816,6 +32425,14 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -32425,6 +33042,10 @@
          {
             "name":"Remix_Grsfc_VanillaLake1",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -32522,6 +33143,10 @@
          {
             "name":"New_Gmob_NewYork4R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -32607,6 +33232,10 @@
          },
          {
             "name":"Remix_Grsfc_VanillaLake1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -33003,6 +33632,10 @@
          {
             "name":"New_Gmob_NewYork4",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -33317,6 +33950,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -33354,6 +33991,14 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -33778,6 +34423,10 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -33847,6 +34496,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -34116,6 +34769,10 @@
          {
             "name":"Classic_G3ds_RainbowRoad",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -34173,6 +34830,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1X",
             "promotionLevel":0
          }
       ]
@@ -34246,6 +34907,10 @@
          },
          {
             "name":"Classic_Gn64_KalimariDesert2R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -34325,6 +34990,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -34345,6 +35018,18 @@
          },
          {
             "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ],
@@ -34372,6 +35057,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ]
    },
@@ -34392,6 +35085,18 @@
          },
          {
             "name":"Classic_G3ds_RainbowRoadX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -34419,6 +35124,10 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":6
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ]
    },
@@ -37875,6 +38584,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -37896,6 +38613,18 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -38197,6 +38926,10 @@
          {
             "name":"New_Gmob_NinjaMansionRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -38246,6 +38979,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -38351,6 +39088,10 @@
          {
             "name":"Classic_G3ds_RainbowRoadX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -38424,6 +39165,10 @@
          },
          {
             "name":"New_Gmob_London2X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -38583,6 +39328,10 @@
          {
             "name":"New_Gmob_NewYork4R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -38668,6 +39417,14 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -40511,6 +41268,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -40580,6 +41345,10 @@
          },
          {
             "name":"Classic_Gagb_CheepCheepIslandX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -41359,6 +42128,10 @@
          {
             "name":"New_Gmob_LosAngeles3R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -41420,6 +42193,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -41697,6 +42474,10 @@
          {
             "name":"New_Gmob_Sydney1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -41778,6 +42559,14 @@
          },
          {
             "name":"New_Gmob_Sydney1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -44327,6 +45116,10 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaar",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -44352,6 +45145,10 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -50361,6 +51158,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50426,6 +51231,10 @@
          },
          {
             "name":"Classic_Gsfc_GhostValley1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -50499,6 +51308,10 @@
          {
             "name":"Remix_Grsfc_GhostValley1R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50568,6 +51381,10 @@
          },
          {
             "name":"New_Gmob_Sydney1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -50653,6 +51470,10 @@
          {
             "name":"New_Gmob_Paris3X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -50706,6 +51527,14 @@
          },
          {
             "name":"New_Gmob_Paris3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -53659,6 +54488,10 @@
          {
             "name":"New_Gmob_Paris1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -53724,6 +54557,10 @@
          },
          {
             "name":"New_Gmob_NewYork4X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -53804,6 +54641,10 @@
          },
          {
             "name":"New_Gmob_NewYork4X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ],
@@ -53886,6 +54727,10 @@
          },
          {
             "name":"New_Gmob_NewYork4R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
             "promotionLevel":0
          }
       ]
@@ -53979,6 +54824,10 @@
          {
             "name":"New_Gmob_NewYork4X",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -54040,6 +54889,10 @@
          },
          {
             "name":"New_Gmob_Paris1RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -54195,6 +55048,10 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ]
    },
@@ -54287,6 +55144,14 @@
          {
             "name":"New_Gmob_NewYork4R",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -54352,6 +55217,10 @@
          },
          {
             "name":"Classic_Gsfc_DonutsPlain1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -54495,6 +55364,14 @@
          {
             "name":"New_Gmob_NewYork4R",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -54567,6 +55444,10 @@
          {
             "name":"Classic_G3ds_RosettaPlanetR",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -54624,6 +55505,10 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
             "promotionLevel":0
          }
       ]
@@ -54779,6 +55664,18 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -54828,6 +55725,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -54901,6 +55802,14 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -54942,6 +55851,10 @@
          },
          {
             "name":"Classic_Gwii_MapleTreewayRX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
             "promotionLevel":0
          }
       ]
@@ -54995,6 +55908,14 @@
          {
             "name":"Classic_Gsfc_ChocoIsland1RX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55040,6 +55961,14 @@
          },
          {
             "name":"Remix_Grsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
             "promotionLevel":0
          }
       ]
@@ -55097,6 +56026,14 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55139,6 +56076,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaar",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
          }
       ]
    },
@@ -55174,6 +56119,10 @@
          },
          {
             "name":"Classic_G3ds_RosettaPlanetR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gds_DKPassRX",
             "promotionLevel":0
          }
       ],
@@ -55233,6 +56182,14 @@
          {
             "name":"Classic_Ggc_DinoDinoJungleR",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55290,6 +56247,18 @@
          },
          {
             "name":"Classic_G3ds_RainbowRoadX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoad",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1R",
             "promotionLevel":0
          }
       ],
@@ -55349,6 +56318,14 @@
          {
             "name":"Remix_Grsfc_ChocoIsland1R",
             "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_ChocoIsland1R",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55371,6 +56348,14 @@
          {
             "name":"New_Gmob_Vancouver1R",
             "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ]
    },
@@ -55407,6 +56392,14 @@
          {
             "name":"Remix_Grsfc_GhostValley1X",
             "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55429,6 +56422,10 @@
          {
             "name":"New_Gmob_Berlin2X",
             "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
          }
       ]
    },
@@ -55464,6 +56461,18 @@
          },
          {
             "name":"Classic_Gagb_SunsetWildsR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_MarioCircuit1",
             "promotionLevel":0
          }
       ],
@@ -55519,6 +56528,18 @@
          {
             "name":"Classic_Gwii_MapleTreewayRX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
          }
       ],
       "goodAt":[
@@ -55545,6 +56566,156 @@
          {
             "name":"Classic_Gwii_MapleTreewayX",
             "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         }
+      ]
+   },
+   "70321":{
+      "nameEng":"Vampire Flyer",
+      "bodyId":10569,
+      "tireId":20218,
+      "nameInternalBody":"BodyK_VampireK_Black",
+      "nameInternalTire":"TireK_SlimSpoke_BlackRed",
+      "rarityId":2,
+      "sortId":332055100,
+      "itemTypeId":"JumpAction",
+      "moreGoodAt":[
+         {
+            "name":"Classic_G3ds_RosettaPlanetX",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoad",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gwii_MapleTreewayX",
+            "promotionLevel":3
+         }
+      ]
+   },
+   "70322":{
+      "nameEng":"Gold Pumpkin Kart",
+      "bodyId":10586,
+      "tireId":20104,
+      "nameInternalBody":"BodyK_Apple_PumpkinGold",
+      "nameInternalTire":"TireK_Wood8_Gold",
+      "rarityId":2,
+      "sortId":331055200,
+      "itemTypeId":"RocketStart",
+      "moreGoodAt":[
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"New_Gmob_London3X",
+            "promotionLevel":0
+         },
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":3
+         },
+         {
+            "name":"Classic_Gsfc_RainbowRoadX",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":6
+         },
+         {
+            "name":"Classic_Gwii_MapleTreeway",
+            "promotionLevel":3
+         }
+      ]
+   },
+   "70324":{
+      "nameEng":"Red Crawly Kart",
+      "bodyId":10588,
+      "tireId":20227,
+      "nameInternalBody":"BodyK_Spider_Red",
+      "nameInternalTire":"TireK_Std_PurpleRed",
+      "rarityId":2,
+      "sortId":332055300,
+      "itemTypeId":"DashPanel",
+      "moreGoodAt":[
+         {
+            "name":"Classic_Gsfc_RainbowRoadR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1R",
+            "promotionLevel":0
+         },
+         {
+            "name":"New_Gmob_London3R",
+            "promotionLevel":0
+         }
+      ],
+      "goodAt":[
+         {
+            "name":"Classic_G3ds_ShyGuyBazaarR",
+            "promotionLevel":0
+         },
+         {
+            "name":"Remix_Grsfc_RainbowRoad1R",
+            "promotionLevel":3
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1",
+            "promotionLevel":6
+         },
+         {
+            "name":"Remix_Grsfc_GhostValley1X",
+            "promotionLevel":3
+         },
+         {
+            "name":"New_Gmob_London3RX",
+            "promotionLevel":6
          }
       ]
    }

@@ -1,7 +1,7 @@
 {
 "Version": "2.1.0",
-"CurrentBadge": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonbadge/64.png",
-"Order": ["1", "9", "12", "11", "10", "8", "7", "6", "5", "4", "3", "2"],
+"CurrentBadge": "https://halfhydra.github.io/MarioKartTourValues/Pipe/seasonbadge/65.png",
+"Order": ["1", "13", "9", "12", "11", "10", "8", "7", "6", "5", "4", "3", "2"],
 "News": {
 	"1": {
 		"Name": "Welcome to the Simulator!",
@@ -86,6 +86,13 @@
 		"Type": "Tour",
 		"Date": "10/17/2021 (Sun)",
 		"Message": "Autumn Pipe 2 has been added! Apologies for how late this is. The pipes for the Halloween Tour will be added as soon as possible.<br>I hope you continue to enjoy the simulator!"
+	},
+	"13": {
+		"Name": "The Halloween Tour has been added!",
+		"Icon": "https://halfhydra.github.io/MarioKartTourValues/Pipe/news/season_65.png",
+		"Type": "Tour",
+		"Date": "10/6/2021 (Wed)",
+		"Message": "The first Halloween Tour pipe has been added as well as the items included in the new tour. The other pipes will be added as they are available.<br><img src=\"https://halfhydra.github.io/MarioKartTourValues/Images/Pipe/Banner/65_1.png\" style=\"width:400px;\" class=\"newswhiteborder\"><br>I hope you continue to enjoy the simulator!"
 	}
 }
 }
