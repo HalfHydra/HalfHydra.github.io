@@ -316,7 +316,7 @@
                         convertedvalues[t].moreGoodAt[i] = "3DS Rainbow Road R"
                         break;
                         case "Classic_G3ds_RainbowRoadRX":
-                        convertedvalues[t].moreGoodAt[i] = "3DS Rainbow Road RT"
+                        convertedvalues[t].moreGoodAt[i] = "3DS Rainbow Road R/T"
                         break;
                         case "Classic_Gsfc_RainbowRoad":
                         convertedvalues[t].moreGoodAt[i] = "SNES Rainbow Road"
@@ -328,7 +328,7 @@
                         convertedvalues[t].moreGoodAt[i] = "SNES Rainbow Road R"
                         break;
                         case "Classic_Gsfc_RainbowRoadRX":
-                        convertedvalues[t].moreGoodAt[i] = "SNES Rainbow Road RT"
+                        convertedvalues[t].moreGoodAt[i] = "SNES Rainbow Road R/T"
                         break;
                     }
                 });
@@ -345,7 +345,7 @@
                         convertedvalues[t].goodAt[i] = "3DS Rainbow Road R"
                         break;
                         case "Classic_G3ds_RainbowRoadRX":
-                        convertedvalues[t].goodAt[i] = "3DS Rainbow Road RT"
+                        convertedvalues[t].goodAt[i] = "3DS Rainbow Road R/T"
                         break;
                         case "Classic_Gsfc_RainbowRoad":
                         convertedvalues[t].goodAt[i] = "SNES Rainbow Road"
@@ -357,7 +357,7 @@
                         convertedvalues[t].goodAt[i] = "SNES Rainbow Road R"
                         break;
                         case "Classic_Gsfc_RainbowRoadRX":
-                        convertedvalues[t].goodAt[i] = "SNES Rainbow Road RT"
+                        convertedvalues[t].goodAt[i] = "SNES Rainbow Road R/T"
                         break;
                     }
                 });
@@ -374,7 +374,7 @@
                         convertedvalues[t].unlock3[i] = "3DS Rainbow Road R"
                         break;
                         case "Classic_G3ds_RainbowRoadRX":
-                        convertedvalues[t].unlock3[i] = "3DS Rainbow Road RT"
+                        convertedvalues[t].unlock3[i] = "3DS Rainbow Road R/T"
                         break;
                         case "Classic_Gsfc_RainbowRoad":
                         convertedvalues[t].unlock3[i] = "SNES Rainbow Road"
@@ -386,7 +386,7 @@
                         convertedvalues[t].unlock3[i] = "SNES Rainbow Road R"
                         break;
                         case "Classic_Gsfc_RainbowRoadRX":
-                        convertedvalues[t].unlock3[i] = "SNES Rainbow Road RT"
+                        convertedvalues[t].unlock3[i] = "SNES Rainbow Road R/T"
                         break;
                     }
                 });
@@ -403,7 +403,7 @@
                         convertedvalues[t].unlock6[i] = "3DS Rainbow Road R"
                         break;
                         case "Classic_G3ds_RainbowRoadRX":
-                        convertedvalues[t].unlock6[i] = "3DS Rainbow Road RT"
+                        convertedvalues[t].unlock6[i] = "3DS Rainbow Road R/T"
                         break;
                         case "Classic_Gsfc_RainbowRoad":
                         convertedvalues[t].unlock6[i] = "SNES Rainbow Road"
@@ -415,7 +415,7 @@
                         convertedvalues[t].unlock6[i] = "SNES Rainbow Road R"
                         break;
                         case "Classic_Gsfc_RainbowRoadRX":
-                        convertedvalues[t].unlock6[i] = "SNES Rainbow Road RT"
+                        convertedvalues[t].unlock6[i] = "SNES Rainbow Road R/T"
                         break;
                     }
                 });
@@ -554,7 +554,7 @@
                     output.value += `, , `;
                 }
                 if(item.unlock3.length == 1){
-                    output.value += ` ,`;
+                    output.value += `, `;
                 }
                 item.unlock3.forEach((a, i) => {
                     output.value += a + `, `;
@@ -563,21 +563,21 @@
                     output.value += `, `;
                 }
                 item.unlock6.forEach((a, i) => {
-                    output.value += a + `,`;
+                    output.value += a + `, `;
                 })
-                output.value = output.value.slice(0,-1)
+                output.value = output.value.slice(0,-2)
                 output.value += `",`;
                 output.value += `"`;
                 item.moreGoodAt.forEach((a, i) => {
                     output.value += `${a}, `;
                 })
-                output.value = output.value.slice(0,-1)
+                output.value = output.value.slice(0,-2)
                 output.value += `",`;
                 output.value += `"`;
                 item.goodAt.forEach((a, i) => {
                     output.value += `${a}, `;
                 })
-                output.value = output.value.slice(0,-1)
+                output.value = output.value.slice(0,-2)
                 output.value += `"`;
                 output.value += `\n`;
             });
@@ -634,7 +634,7 @@
             rawFile.send(null);
         }
 
-        readTextFile("../Data/course_names.json", 4);
+        readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 4);
 
         function downloadsavedata(which) {
             var data = document.getElementById(`outputdata`).value;
