@@ -14,13 +14,13 @@ function generateKartList(){
         faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/ItemIcon/${savedata.Karts[t].id}.png`;
         switch(values[savedata.Karts[t].id].rarityId){
             case 0:
-                faceEntry.style.backgroundImage = `url('../Images/UI/Background/kgnormal.png')`
+                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/kgnormal.png')`
                 break;
             case 1:
-                faceEntry.style.backgroundImage = `url('../Images/UI/Background/kgrare.png')`
+                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/kgrare.png')`
                 break;
             case 2:
-                faceEntry.style.backgroundImage = `url('../Images/UI/Background/kghighend.png')`
+                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/kghighend.png')`
                 break;
         }
         driverDiv.appendChild(faceEntry);
