@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <style>
+        p {
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            font-size: 20px;
+            border-radius: 7px;
+            border: 2px solid #5A8FD5;
+        }
+
+        input {
+            /*text-align-last: center;*/
+            background-color: #436FA8;
+
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: #5A8FD5;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        textarea {
+            color: white;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            background: #4A75B2;
+            border-radius: 7px;
+            border: 2px solid #5A8FD5;
+            width: 60%;
+            height: 60%;
+        }
+
+        div {
+            margin: 0 auto
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Hydra's Profile Statistics</h1>
+        <p>Step 1. Enter the data json given to you</p>
+        <input type="file" id="file">
+        <br>
+        <p>Step 2. Choose the statistics mode</p>
+        <div>
+        <div style="width: 400px; display:inline-block">
+        <input type="button" value="Type 1: Similar to the Game" onclick="location.href = 'type1.html';" style="width: 100%;;height: 40px;margin-bottom: 5px;">
+        <img src="./Images/UI/Input/Type1.png" style="max-width: 400px;display:block">
+        </div>
+        <div style="width: 400px; display: inline-block;">
+            <input type="button" value="Type 2: Interactive and Informative" onclick="location.href = 'type2.html';" style="width: 100%;;height: 40px;margin-bottom: 5px;">
+            <img src="./Images/UI/Input/Type2.png" style="max-width: 400px;display:block">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('file').addEventListener('change', function () {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var data = this.result;
+                localStorage.setItem("MKTS_Data", data)
+            }
+            reader.readAsText(this.files[0]);
+        });
+    </script>
+</body>
+
+</html>

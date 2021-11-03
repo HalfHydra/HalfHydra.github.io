@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <link rel="stylesheet" href="./Style/reset.css">
+   		<link rel="stylesheet" href="./Style/generic.css">
+         <link rel="stylesheet" href="./Style/header.css">
+      <style>
+         @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
+         @font-face {font-family: 'headername';src: url('./Font/nintendoP_NTLG-NR-UB_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+         @font-face {font-family: 'headername2';src: url('./Font/nintendop_ntlg-nr-db_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+      </style>
+      <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
+      <div> 
+   </head>
+   <body class="main stripedbg" style="height: 100%;overflow: overlay;" id="bigbody">
+      <img id="loadingimg" src="./Images/UI/Loading.png" style="width:96px;height:96px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
+      <div id="content" style="margin: 0px auto;width: auto;max-width: 1056px;height:auto;min-height: calc(100vh - 10px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;*/border: 5px solid #b5ceff;">
+         <div id="stats" style="height: auto;">
+            <p class="landingpagetxt" style="text-align: center;margin-bottom: 100px">This section is a WIP and will be a new, and more visual, introduction + guide.</p>
+         </div>
+         <div id="drivers" style="height: auto;display:none;">
+         	<div class="stripedbg"  style="position: sticky;top: 75px;z-index: 30/*;background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/"> 
+        </div>
+         <div id="karts" style="height: auto;display:none;">
+         </div>
+         <div id="gliders" style="height: auto;display:none;">
+         </div>
+         <div id="badges" style="height: auto;display:none;">
+         </div>
+         <div id="items" style="display: none;">
+         </div>
+      </div>
+
+      <script type="text/javascript" src="./Script/global.js"></script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+      <script>
+         function readTextFile(file, unit)
+         {
+             var rawFile = new XMLHttpRequest();
+             rawFile.open("GET", file, false);
+             rawFile.onreadystatechange = function ()
+             {
+                 if(rawFile.readyState === 4)
+                 {
+                     if(rawFile.status === 200 || rawFile.status == 0)
+                     {
+                         var allText = rawFile.responseText;
+                         switch(unit){
+                         	case 1:
+                         	values = JSON.parse(allText);
+                         	break;
+                         	case 2:
+                         	coursenames = JSON.parse(allText);
+                         	break;
+                           case 3:
+                           courseimages = JSON.parse(allText);
+                           break;
+                           case 4:
+                           season = JSON.parse(allText);
+                           break;
+                         }
+                     }
+                 }
+             }
+             rawFile.send(null);
+         }
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Pipe/currentValues.json", 1);
+         generateArrays();
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 2);
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_image.json", 3);
+
+      if(localStorage.getItem("MKTSSaveData") != null){
+        savedata = JSON.parse(localStorage.getItem("MKTVSaveData"));
+        document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
+        makeCourseList();
+        courseListMade = true;
+        calcMissingValues();
+        isDataEntered = true;
+
+        let savedrivers = [];
+        savedrivers = Object.keys(savedata.Items.Drivers);
+        let savedriverslvl = [];
+        savedriverslvl = Object.values(savedata.Items.Drivers);
+        savedrivers.forEach((t,i)=>{
+            changeLevel(t, parseInt(savedriverslvl[i]), 1);
+        }
+        );
+
+        let savekarts = [];
+        savekarts = Object.keys(savedata.Items.Karts);
+        let savekartslvl = [];
+        savekartslvl = Object.values(savedata.Items.Karts);
+        savekarts.forEach((t,i)=>{
+            changeLevel(t, parseInt(savekartslvl[i]), 2);
+        }
+        );
+
+        let savegliders = [];
+        savegliders = Object.keys(savedata.Items.Gliders);
+        let savegliderslvl = [];
+        savegliderslvl = Object.values(savedata.Items.Gliders);
+        savegliders.forEach((t,i)=>{
+            changeLevel(t, parseInt(savegliderslvl[i]), 3);
+        }
+        );
+
+        resettingCourses = true;
+      }
+      if(localStorage.getItem("MKTVSettingData") != null){
+         //settingsavedata = JSON.parse(localStorage.getItem("MKTVSettingData"));
+      } 
+
+      window.onbeforeunload = function(){
+         document.getElementById('loadingimg').style.display = "block";
+      }
+      window.addEventListener('DOMContentLoaded', (event) => {
+      // document.getElementById('rankcupimg').src = `./Images/Cups/${currentseasoncup} Cup.png`;
+      // document.getElementById('rankcupimg').style.display = "inline-block";
+      // applyLocalSettings();
+      });
+      window.onload = function() {
+         document.getElementById('loadingimg').style.display = "none";
+      }
+
+
+$(document).ready(function() {
+
+/*$(document).on('click', '.topimg', function () {
+    $(".target").effect( "highlight", {color:"#669966"}, 1000 );
+    console.log('targetted');
+});
+});*/
+/*$(".topimg").click(function(){
+   $(".ckgpanel").effect( "highlight", {color:"#669966"}, 1000 );
+   console.log('targetted');
+});
+$(document).click(function(){
+  var helement = document.elementFromPoint(event.clientX, event.clientY).target;
+  helement.effect( "highlight", {color:"#669966"}, 1000 );
+})*/
+});
+$(document).on('click', '.ckgpanel', function () {
+    var element = this;
+    if(!element.classList.contains("hover13")){
+    element.classList.add("hover13");
+    }
+    setTimeout(function() {
+    if(element.classList.contains("hover13")){
+    element.classList.remove("hover13");
+    }
+    }, 1000);
+});
+$(document).on('click', '.cupbtn', function () {
+    var element = this;
+    if(!element.classList.contains("hover13")){
+    element.classList.add("hover13");
+    }
+    setTimeout(function() {
+    if(element.classList.contains("hover13")){
+    element.classList.remove("hover13");
+    }
+    }, 1000);
+});
+
+/*var mouseDown = 0;
+document.body.onmousedown = function() { 
+  console.log("mousedown!");
+  ++mouseDown;
+  document.getElementById('pullypipe').addEventListener("ondragstart",mouseMoveFunction);
+}
+document.body.onmouseup = function() {
+  --mouseDown;
+  console.log('removed!');
+  document.getElementById('pullypipe').removeEventListener("mousedown",mouseMoveFunction);
+}*/
+
+      </script>
+   </body>
+</html>

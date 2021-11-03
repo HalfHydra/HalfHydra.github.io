@@ -1,0 +1,19 @@
+.headerImg {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.headerDiv {
+    width: auto;
+    height: 52px;
+    cursor: pointer;
+    display:inline-block;
+    margin-left: 15px
+}
+
+.headerContainer {
+    position: relative;
+    width: 1030px;
+    margin: 0 auto;
+}

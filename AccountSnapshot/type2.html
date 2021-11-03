@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <link rel="stylesheet" href="./Style/reset.css">
+   		<link rel="stylesheet" href="./Style/generic.css">
+         <link rel="stylesheet" href="./Style/header.css">
+         <link rel="stylesheet" href="./Style/lists.css">
+      <style>
+         @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
+         @font-face {font-family: 'headername';src: url('./Font/nintendoP_NTLG-NR-UB_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+         @font-face {font-family: 'headername2';src: url('./Font/nintendop_ntlg-nr-db_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
+      </style>
+      <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
+      <div> 
+   </head>
+   <body class="main" style="height: 100%;overflow: overlay;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
+      <img id="loadingimg" src="./Images/UI/Loading.png" style="width:96px;height:96px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
+      <div style="width:calc(100% - 10px);background-image: url('./Images/UI/Background/BlackPattern.png');background-size: 194px auto;padding:10px;margin-top: -8px;margin-left: -12px;position: sticky;
+    top: 0;z-index:9999">
+      <div class="headerContainer">
+         <div class="headerDiv" onclick="switchTab(0)">
+            <img src="./Images/UI/Header/Stats.png" class="headerImg">
+            <p id="text_mode0" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Profile Stats </p>
+         </div>
+         <div class="headerDiv" onclick="switchTab(1)">
+            <img src="./Images/UI/Header/Driver.png" class="headerImg">
+            <p id="text_mode1" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Driver List </p>
+         </div>
+         <div class="headerDiv" onclick="switchTab(2)">
+            <img src="./Images/UI/Header/Kart.png" class="headerImg">
+            <p id="text_mode2" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Kart List </p>
+         </div>
+         <div class="headerDiv" onclick="switchTab(3)">
+            <img src="./Images/UI/Header/Glider.png" class="headerImg">
+            <p id="text_mode3" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Glider List </p>
+         </div>
+         <div class="headerDiv" onclick="switchTab(4)">
+            <img src="./Images/UI/Header/Badge.png" class="headerImg">
+            <p id="text_mode4" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Badge List </p>
+         </div>
+         <div class="headerDiv" onclick="switchTab(5)">
+            <img src="./Images/UI/Header/Inventory.png" class="headerImg">
+            <p id="text_mode6" class='whiteoutline' style="margin-top: -30px;margin-left: 10px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Inventory </p>
+         </div>
+      </div>
+   </div>
+      <div id="content" style="margin: 0px auto;width: auto;max-width: 1200px;height:auto;min-height: calc(100vh - 100px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;*/border: 5px solid #b5ceff;">
+         <div id="stats" style="height: auto;">
+            <p class="landingpagetxt" style="text-align: center;margin-bottom: 100px">This is a work in progress. Only the Driver List, Kart List, and Glider List work for now.</p>
+         </div>
+         <div id="drivers" style="height: auto;display:none;">
+         	<div class="stripedbg"  style="position: sticky;top: 75px;z-index: 30/*;background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png');background-size: 394px auto;*/"> 
+        </div>
+        </div>
+         <div id="karts" style="height: auto;display:none;">
+         </div>
+         <div id="gliders" style="height: auto;display:none;">
+         </div>
+         <div id="badges" style="height: auto;display:none;">
+         </div>
+         <div id="items" style="display: none;">
+         </div>
+      </div>
+
+      <script type="text/javascript" src="./Script/global.js"></script>
+      <script type="text/javascript" src="./Script/driverlist.js"></script>
+      <script type="text/javascript" src="./Script/kartlist.js"></script>
+      <script type="text/javascript" src="./Script/gliderlist.js"></script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+      <script>
+         function readTextFile(file, unit)
+         {
+             var rawFile = new XMLHttpRequest();
+             rawFile.open("GET", file, false);
+             rawFile.onreadystatechange = function ()
+             {
+                 if(rawFile.readyState === 4)
+                 {
+                     if(rawFile.status === 200 || rawFile.status == 0)
+                     {
+                         var allText = rawFile.responseText;
+                         switch(unit){
+                         	case 1:
+                         	values = JSON.parse(allText);
+                         	break;
+                         	case 2:
+                         	coursenames = JSON.parse(allText);
+                         	break;
+                           case 3:
+                           courseimages = JSON.parse(allText);
+                           break;
+                           case 4:
+                           season = JSON.parse(allText);
+                           break;
+                         }
+                     }
+                 }
+             }
+             rawFile.send(null);
+         }
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Pipe/currentValues.json", 1);
+         generateArrays();
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 2);
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_image.json", 3);
+
+      if(localStorage.getItem("MKTS_Data") != null){
+        savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
+        generateDriverList();
+        generateKartList();
+        generateGliderList();
+        //document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
+      }
+
+      if(localStorage.getItem("MKTVSettingData") != null){
+         //settingsavedata = JSON.parse(localStorage.getItem("MKTVSettingData"));
+      } 
+
+      window.onbeforeunload = function(){
+         document.getElementById('loadingimg').style.display = "block";
+      }
+      window.addEventListener('DOMContentLoaded', (event) => {
+      // document.getElementById('rankcupimg').src = `./Images/Cups/${currentseasoncup} Cup.png`;
+      // document.getElementById('rankcupimg').style.display = "inline-block";
+      // applyLocalSettings();
+      });
+      window.onload = function() {
+         document.getElementById('loadingimg').style.display = "none";
+      }
+
+
+$(document).ready(function() {
+
+});
+$(document).on('click', '.ckgpanel', function () {
+    var element = this;
+    if(!element.classList.contains("hover13")){
+    element.classList.add("hover13");
+    }
+    setTimeout(function() {
+    if(element.classList.contains("hover13")){
+    element.classList.remove("hover13");
+    }
+    }, 1000);
+});
+$(document).on('click', '.cupbtn', function () {
+    var element = this;
+    if(!element.classList.contains("hover13")){
+    element.classList.add("hover13");
+    }
+    setTimeout(function() {
+    if(element.classList.contains("hover13")){
+    element.classList.remove("hover13");
+    }
+    }, 1000);
+});
+
+/*var mouseDown = 0;
+document.body.onmousedown = function() { 
+  console.log("mousedown!");
+  ++mouseDown;
+  document.getElementById('pullypipe').addEventListener("ondragstart",mouseMoveFunction);
+}
+document.body.onmouseup = function() {
+  --mouseDown;
+  console.log('removed!');
+  document.getElementById('pullypipe').removeEventListener("mousedown",mouseMoveFunction);
+}*/
+
+      </script>
+   </body>
+</html>
