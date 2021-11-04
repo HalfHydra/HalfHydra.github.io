@@ -11,18 +11,18 @@ function generateDriverList(){
         //generateFaceEntry
         let faceEntry = document.createElement('img');
         faceEntry.className = "faceEntry";
-        faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/FaceEntry/${values[savedata.Drivers[t].id].nameInternal}FaceEntry.png`;
         switch(values[savedata.Drivers[t].id].rarityId){
             case 0:
-                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/dnormal.png')`
+                faceEntry.style.backgroundImage = `url('./Images/UI/Background/dnormal.png')`
                 break;
             case 1:
-                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/drare.png')`
+                faceEntry.style.backgroundImage = `url('./Images/UI/Background/drare.png')`
                 break;
             case 2:
-                faceEntry.style.backgroundImage = `url('https://halfhydra.github.io/AccountSnapshot/Images/UI/Background/dhighend.png')`
+                faceEntry.style.backgroundImage = `url('./Images/UI/Background/dhighend.png')`
                 break;
         }
+        faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/FaceEntry/${values[savedata.Drivers[t].id].nameInternal}FaceEntry.png`;
         driverDiv.appendChild(faceEntry);
 
         let driverTextDiv = document.createElement('div');
