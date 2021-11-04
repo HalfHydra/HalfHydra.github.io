@@ -190,3 +190,84 @@
     letter-spacing: -1px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.badgeDiv {
+    width: 220px;
+    height: 260px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    background-image: url('../Images/UI/Background/BigButtonBadge.png');
+    background-repeat: no-repeat;
+}
+
+.badgeName {
+    height: 30px;
+    width: 220px;
+    text-align: center;
+    font-family: 'tour';
+    font-size: 20px;
+    color: white;
+    letter-spacing: -1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.badgeImg {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding-top: 10px;
+}
+
+.badgeTextDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 62px;
+}
+
+.badgeReceived {
+    color:rgb(151, 151, 151);
+    font-family: tour;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 12px;
+    line-height: 24px;
+}
+
+.itemDiv {
+    width: 220px;
+    height: 260px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    background-image: url('../Images/UI/Background/BigButtonItem.png');
+    background-repeat: no-repeat;
+}
+
+.itemName {
+    font-family: 'tour';
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 0px;
+    line-height: 28px;
+    padding-left: 2px;
+}
+
+.itemCount {
+    height: 30px;
+    width: 220px;
+    text-align: center;
+    font-family: 'tour';
+    font-size: 27px;
+    color: white;
+    letter-spacing: -1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

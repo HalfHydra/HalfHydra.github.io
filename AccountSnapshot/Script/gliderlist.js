@@ -4,7 +4,7 @@ function generateGliderList(){
 
     Object.keys(savedata.Gliders).forEach((t,i)=>{
         let driverDiv = document.createElement('div');
-        driverDiv.id = `kart_${t}`;
+        driverDiv.id = `glider_${t}`;
         driverDiv.className = "driverDiv";
         output.appendChild(driverDiv);
 
