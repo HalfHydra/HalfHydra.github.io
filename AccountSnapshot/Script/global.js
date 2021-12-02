@@ -210,6 +210,7 @@ function switchTab(tab){
             hideAllTabsButOne('items');
             break;
     }
+    zoomOutMobile();
 }
 
 function hideAllTabsButOne(tab){
