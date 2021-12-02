@@ -61,7 +61,21 @@ div {
 .headerBtn {
     width: 200px;
     height: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 10px;
+}
+
+.headerSpacer {
+    margin-bottom: 80px;
+}
+
+.header-nocontent {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-image: url('../Images/UI/Background/BlackPattern.png');background-size: 194px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 4px;
 }

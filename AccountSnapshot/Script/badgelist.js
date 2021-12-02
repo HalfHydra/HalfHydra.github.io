@@ -1,8 +1,77 @@
-function generateBadgeList(){
-
+function generateNavBarBadge(){
     let output = document.getElementById('badges');
 
-    Object.keys(savedata.Badges).forEach((t,i)=>{
+    let header = document.createElement('div');
+    header.className = "header";
+    output.appendChild(header); 
+
+    let descendDR = document.createElement('img');
+    descendDR.src = "./Images/UI/Header/DateReceivedD.png";
+    descendDR.className = "headerBtn";
+    descendDR.addEventListener('click', function () {
+        generateBadgeList(0);
+    });
+    header.appendChild(descendDR);
+
+    let ascendDR = document.createElement('img');
+    ascendDR.src = "./Images/UI/Header/DateReceivedA.png";
+    ascendDR.className = "headerBtn";
+    ascendDR.addEventListener('click', function () {
+        generateBadgeList(1);
+    });
+    header.appendChild(ascendDR);
+
+    let inGame = document.createElement('img');
+    inGame.src = "./Images/UI/Header/InGame.png";
+    inGame.className = "headerBtn";
+    inGame.addEventListener('click', function () {
+        generateBadgeList(2);
+    });
+    header.appendChild(inGame);
+
+    let returnTop = document.createElement('img');
+    returnTop.src = "./Images/UI/Header/ReturnToTop.png";
+    returnTop.className = "returnTop";
+    returnTop.addEventListener('click', function () {
+        ReturnToTop();
+    });
+    header.appendChild(returnTop);
+
+    let backBtn = document.createElement('img');
+    backBtn.src = "./Images/UI/Header/Back.png";
+    backBtn.className = "backBtn";
+    backBtn.addEventListener('click', function () {
+        switchTab(0);
+    });
+    header.appendChild(backBtn);
+}
+
+function generateBadgeList(type){
+
+    let output = document.getElementById('badges');
+    output.innerHTML = "";
+
+    generateNavBarBadge();
+
+    let items = [];
+
+    switch(type){
+        case 0:
+            items = Object.keys(savedata.Badges)
+            break;
+        case 1:
+            items = Object.keys(savedata.Badges)
+            items.reverse();
+            break;
+        case 2:
+            items = Object.keys(savedata.Badges)
+            items.sort(function (a, b) {
+                return savedata.Badges[a].sortId - savedata.Badges[b].sortId;
+            });
+            break;
+    }
+
+    items.forEach((t,i)=>{
         let badgeDiv = document.createElement('div');
         badgeDiv.id = `badge_${t}`;
         badgeDiv.className = "badgeDiv";

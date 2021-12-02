@@ -65,6 +65,18 @@
                <img src="./Images/UI/Header/Kart.png" class="headerImg">
                <p id="text_mode2" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Kart List </p>
             </div>
+            <div class="headerDiv" onclick="switchTab(3)">
+               <img src="./Images/UI/Header/Glider.png" class="headerImg">
+               <p id="text_mode3" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Glider List </p>
+            </div>
+            <div class="headerDiv" onclick="switchTab(4)">
+               <img src="./Images/UI/Header/Badge.png" class="headerImg">
+               <p id="text_mode4" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Badge List </p>
+            </div>
+            <div class="headerDiv" onclick="switchTab(5)">
+               <img src="./Images/UI/Header/Inventory.png" class="headerImg">
+               <p id="text_mode6" class='whiteoutline' style="margin-top: -30px;margin-left: 10px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Items </p>
+            </div>
          </div>
          <div id="drivers" style="height: auto;margin-top:10px;display:none;">
          </div>
@@ -140,9 +152,9 @@
         savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
         console.log(isMobile);
         generateDriverList(0);
-        generateKartList();
-        generateGliderList();
-        generateBadgeList();
+        generateKartList(0);
+        generateGliderList(0);
+        generateBadgeList(0);
         generateItemList();
         //document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
       }

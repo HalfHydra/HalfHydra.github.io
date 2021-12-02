@@ -1,8 +1,78 @@
-function generateKartList(){
-
+function generateNavBarKart(){
     let output = document.getElementById('karts');
 
-    Object.keys(savedata.Karts).forEach((t,i)=>{
+    let header = document.createElement('div');
+    header.className = "header";
+    output.appendChild(header); 
+
+    let descendDR = document.createElement('img');
+    descendDR.src = "./Images/UI/Header/DateReceivedD.png";
+    descendDR.className = "headerBtn";
+    descendDR.addEventListener('click', function () {
+        generateKartList(0);
+    });
+    header.appendChild(descendDR);
+
+    let ascendDR = document.createElement('img');
+    ascendDR.src = "./Images/UI/Header/DateReceivedA.png";
+    ascendDR.className = "headerBtn";
+    ascendDR.addEventListener('click', function () {
+        generateKartList(1);
+    });
+    header.appendChild(ascendDR);
+
+    let inGame = document.createElement('img');
+    inGame.src = "./Images/UI/Header/InGame.png";
+    inGame.className = "headerBtn";
+    inGame.addEventListener('click', function () {
+        generateKartList(2);
+    });
+    header.appendChild(inGame);
+
+    let returnTop = document.createElement('img');
+    returnTop.src = "./Images/UI/Header/ReturnToTop.png";
+    returnTop.className = "returnTop";
+    returnTop.addEventListener('click', function () {
+        ReturnToTop();
+    });
+    header.appendChild(returnTop);
+
+    let backBtn = document.createElement('img');
+    backBtn.src = "./Images/UI/Header/Back.png";
+    backBtn.className = "backBtn";
+    backBtn.addEventListener('click', function () {
+        switchTab(0);
+    });
+    header.appendChild(backBtn);
+}
+
+function generateKartList(type){
+
+    let output = document.getElementById('karts');
+    output.innerHTML = "";
+
+    generateNavBarKart();
+
+    let items = [];
+
+    switch(type){
+        case 0:
+            items = Object.keys(savedata.Karts);
+            break;
+        case 1:
+            items = Object.keys(savedata.Karts);
+            items.reverse();
+            break;
+        case 2:
+            items = Object.keys(savedata.Karts);
+            items.sort(function (a, b) {
+                return values[`${savedata.Karts[a].id}`].sortId - values[`${savedata.Karts[b].id}`].sortId;
+            });
+            break;
+    }
+
+
+    items.forEach((t,i)=>{
         let driverDiv = document.createElement('div');
         driverDiv.id = `kart_${t}`;
         driverDiv.className = "driverDiv";
