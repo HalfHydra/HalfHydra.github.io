@@ -1,22 +1,27 @@
 .driverDiv {
     max-width: 750px;
     height: 250px;
-    border: 2px solid #FFF;
-    background-image: url('../Images/UI/Background/frame.png');
-    background-size: 100% 125px;
+    background-image: url(../Images/UI/Background/framemobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3px;
 }
 
 .faceEntry {
-    display: block;
     width: 224px;
     height: 100px;
     object-fit: contain;
     background-size: cover;
-    margin-left:24px;
-    margin-top: 10px;
+    margin-left: 19px;
+    margin-top: 70px;
     display: inline-block;
+    border: 2px solid #FFF;
 }
-
 .driverTextDiv {
     width: 500px;
     height: 120px;
@@ -46,29 +51,32 @@
     width: 144px;
     height: 80px;
     vertical-align: top;
-    margin-left: 5px;
-    margin-top: 21px;
     display: inline-block;
     background-size: cover;
+    transform: scale(1.2);
+    margin-left: 276px;
+    margin-right: 12px;
+    margin-top: -40px;
 }
 
 .boxLevel {
     width: 144px;
     height: 80px;
     vertical-align: top;
-    margin-left: 5px;
-    margin-top: 21px;
     display: inline-block;
     background-size: cover;
+    transform: scale(1.2);
+    margin-top: -40px;
 }
 
 .boxCap {
     width: 100px;
     height: 80px;
     vertical-align: top;
-    margin-left: 5px;
-    margin-top: 21px;
     display: inline-block;
+    transform: scale(1.2);
+    margin-top: -40px;
+    margin-right: 12px;
 }
 
 .ticketImg {
@@ -300,4 +308,19 @@
     height: 100px;
     object-fit: contain;
     padding-top: 10px;
+}
+
+.returnTop {
+    position: fixed;
+    bottom: 0;
+    right: 2px;
+    z-index: 100;
+}
+
+.backBtn {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    z-index: 100;
+    width: 50px;
 }

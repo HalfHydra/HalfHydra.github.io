@@ -124,6 +124,10 @@ function generateArrays(){
 //     document.getElementById('singleinv').innerHTML = "";
 //   }
 // }
+function ReturnToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
 
 function updatesavedata() {
     generateCourseList();

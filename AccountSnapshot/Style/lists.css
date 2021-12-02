@@ -134,11 +134,8 @@
 }
 
 .listlevelprogress::-moz-progress-bar {
-    background-color: #000;
-}
-
-.listlevelprogress::-moz-progress-value {
-    background-color: -moz-linear-gradient(90deg, rgba(249,220,74,1) 0%, rgba(236,111,45,1) 35%);
+    background-image: url('../Images/UI/Lists/levelProgressGradient.png');
+    background-size: contain;
 }
 
 .listlevelprogresstext {
@@ -186,14 +183,9 @@
 }
 
 .listpointprogress::-moz-progress-bar {
-    background-color: #000;
-}
-
-.listpointprogress::-moz-progress-value {
     background-image: url('../Images/UI/Lists/pointProgressGradient.png');
     background-size: contain;
 }
-
 
 .listpointprogresstext {
     position: absolute;
@@ -299,4 +291,19 @@
     height: 100px;
     object-fit: contain;
     padding-top: 10px;
+}
+
+.returnTop {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 100;
+}
+
+.backBtn {
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    margin-left: -566px;
+    margin-top: 10px;
 }

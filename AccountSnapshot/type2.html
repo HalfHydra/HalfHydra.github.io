@@ -5,8 +5,8 @@
          <link rel="stylesheet" href="./Style/reset.css">
    		<link rel="stylesheet" href="./Style/generic.css">
          <link rel="stylesheet" href="./Style/header.css">
-         <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./Style/lists.css">
-         <link rel="stylesheet" media="screen and (max-device-width: 800px)" href="./Style/lists_mobile.css">
+         <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="./Style/lists.css">
+         <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="./Style/lists_mobile.css">
       <style>
          @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
          @font-face {font-family: 'headername';src: url('./Font/nintendoP_NTLG-NR-UB_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
@@ -47,11 +47,23 @@
       </div>
    </div> -->
       <div id="content" style="margin: 0px auto;width: auto;max-width: 1200px;height:auto;min-height: calc(100vh - 100px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;border: 5px solid #b5ceff;*/">
+         <!-- <div class="header_accsnap">
+            <a href="#default" class="logo">CompanyLogo</a>
+            <div class="header_accsnap-right">
+              <a class="active" href="#home">Home</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+          </div> -->
          <div id="stats" style="height: auto;width:750px">
             <p class="landingpagetxt" style="text-align: center;margin-bottom: 100px">This is a work in progress. All tabs except this one work as of now.</p>
             <div class="headerDiv" onclick="switchTab(1)">
                <img src="./Images/UI/Header/Driver.png" class="headerImg">
                <p id="text_mode1" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Driver List </p>
+            </div>
+            <div class="headerDiv" onclick="switchTab(2)">
+               <img src="./Images/UI/Header/Kart.png" class="headerImg">
+               <p id="text_mode2" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Kart List </p>
             </div>
          </div>
          <div id="drivers" style="height: auto;margin-top:10px;display:none;">
@@ -127,7 +139,7 @@
       if(localStorage.getItem("MKTS_Data") != null){
         savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
         console.log(isMobile);
-        generateDriverListMobile();
+        generateDriverList(0);
         generateKartList();
         generateGliderList();
         generateBadgeList();

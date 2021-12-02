@@ -43,3 +43,25 @@ h4 {
 div {
     display: block;
 }
+
+.header {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-image: url('../Images/UI/Background/BlackPattern.png');background-size: 194px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 4px;
+}
+
+.header a {
+    padding: 14px 16px;
+}
+
+.headerBtn {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
