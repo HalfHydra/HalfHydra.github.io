@@ -1,3 +1,5 @@
+var isMobile = false;
+
 var currentCup = 0;
 var isDataEntered = false;
 var values;
