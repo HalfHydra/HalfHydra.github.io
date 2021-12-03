@@ -58,7 +58,7 @@ function generateProfile(){
       }
       rankNums.appendChild(number);
     });
-    rankImg.src = `./Images/UI/Rank/UserRank${charoutput.at(-1)}.png`;
+    rankImg.src = `./Images/UI/Rank/UserRank${charoutput.pop()}.png`;
     rankDiv.appendChild(rankNums);
 
     //Tier

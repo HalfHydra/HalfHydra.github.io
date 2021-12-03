@@ -204,6 +204,7 @@ function switchTab(tab){
         case 1:
             currentScroll = window.scrollY;
             hideAllTabsButOne('drivers');
+            ReturnToTop();
             break;
         case 2:
             currentScroll = window.scrollY;
@@ -227,7 +228,6 @@ function switchTab(tab){
             break;
     }
     zoomOutMobile();
-    //ReturnToTop();
 }
 
 function hideAllTabsButOne(tab){
