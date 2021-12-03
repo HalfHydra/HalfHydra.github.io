@@ -4,7 +4,7 @@ function generateNavBarItem(){
     let output = document.getElementById('items');
 
     let header = document.createElement('div');
-    header.className = "nocontent";
+    header.className = "header-nocontent";
     output.appendChild(header); 
 
     let returnTop = document.createElement('img');
@@ -34,11 +34,13 @@ function generateItemList(){
 
     generateNavBarItem();
 
+    let badges3 = document.createElement('div');
+
     itemsOrdered.forEach((t,i)=>{
         let badgeDiv = document.createElement('div');
         badgeDiv.id = `badge_${t}`;
         badgeDiv.className = "itemDiv";
-        output.appendChild(badgeDiv);
+        badges3.appendChild(badgeDiv);
 
         //generateBadge
         let badgeImg = document.createElement('img');
@@ -61,6 +63,12 @@ function generateItemList(){
         badgeCount.className = "itemCount";
         badgeCount.innerHTML = `${savedata.Items[t].count.toLocaleString()}`;
         badgeDiv.appendChild(badgeCount);
+
+        if((i+1) % 3 == 0){
+            badges3.style.textAlign = "center";
+            output.appendChild(badges3);
+            badges3 = document.createElement('div');
+        }
     })
 
 }

@@ -5,6 +5,14 @@ function generateNavBarBadge(){
     header.className = "header";
     output.appendChild(header); 
 
+    let inGame = document.createElement('img');
+    inGame.src = "./Images/UI/Header/InGame.png";
+    inGame.className = "headerBtn";
+    inGame.addEventListener('click', function () {
+        generateBadgeList(2);
+    });
+    header.appendChild(inGame);
+
     let descendDR = document.createElement('img');
     descendDR.src = "./Images/UI/Header/DateReceivedD.png";
     descendDR.className = "headerBtn";
@@ -20,14 +28,6 @@ function generateNavBarBadge(){
         generateBadgeList(1);
     });
     header.appendChild(ascendDR);
-
-    let inGame = document.createElement('img');
-    inGame.src = "./Images/UI/Header/InGame.png";
-    inGame.className = "headerBtn";
-    inGame.addEventListener('click', function () {
-        generateBadgeList(2);
-    });
-    header.appendChild(inGame);
 
     let returnTop = document.createElement('img');
     returnTop.src = "./Images/UI/Header/ReturnToTop.png";
@@ -102,7 +102,7 @@ function generateBadgeList(type){
         //generateDateReceived
         let driverReceived = document.createElement('p');
         driverReceived.className = "badgeReceived";
-        console.log(savedata.Badges[t].received_epoch);
+        //console.log(savedata.Badges[t].received_epoch);
         driverReceived.innerHTML = `First Received: ${new Date(savedata.Badges[t].received_epoch * 1000).toLocaleString()}`;
         badgeTextDiv.appendChild(driverReceived);
     })

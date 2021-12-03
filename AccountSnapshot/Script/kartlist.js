@@ -108,7 +108,7 @@ function generateKartList(type){
         //generateDateReceived
         let driverReceived = document.createElement('p');
         driverReceived.className = "driverReceived";
-        console.log(savedata.Karts[t].received_epoch);
+        //console.log(savedata.Karts[t].received_epoch);
         driverReceived.innerHTML = `Received: ${new Date(savedata.Karts[t].received_epoch * 1000).toLocaleString()}`;
         driverTextDiv.appendChild(driverReceived);
 
@@ -187,7 +187,7 @@ function generatePointsBox(itemType, points, progress, capLevel, rarity, index){
     boxPoints.appendChild(pointsCount);
 
     let converted = calcPoints(savedata.Karts[`${index}`].total_xp, rarity, 0);
-    console.log(converted)
+    //console.log(converted)
 
     if(boxPoints.style.backgroundImage.includes('DriverProgress')){
             let listlevelpanel = document.createElement('div');
@@ -227,7 +227,7 @@ function generateLevelBox(itemType, level, progress, index){
     boxLevel.appendChild(number);
 
     let converted = convertToLevel(savedata.Karts[`${index}`].totalCount, values[`${savedata.Karts[`${index}`].id}`].rarityId);
-    console.log(converted)
+    //console.log(converted)
 
     if(level != 7){
     let listlevelpanel = document.createElement('div');

@@ -5,6 +5,7 @@
          <link rel="stylesheet" href="./Style/reset.css">
    		<link rel="stylesheet" href="./Style/generic.css">
          <link rel="stylesheet" href="./Style/header.css">
+         <link rel="stylesheet" href="./Style/profile.css">
          <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="./Style/lists.css">
          <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="./Style/lists_mobile.css">
       <style>
@@ -55,8 +56,8 @@
               <a href="#about">About</a>
             </div>
           </div> -->
-         <div id="stats" style="height: auto;width:750px">
-            <p class="landingpagetxt" style="text-align: center;margin-bottom: 100px">This is a work in progress. All tabs except this one work as of now.</p>
+         <div id="stats" style="height: auto;width:750px;margin: 0 auto;">
+            <!-- <p class="landingpagetxt" style="text-align: center;margin-bottom: 100px">This is a work in progress. Press the buttons to see the lists.</p>
             <div class="headerDiv" onclick="switchTab(1)">
                <img src="./Images/UI/Header/Driver.png" class="headerImg">
                <p id="text_mode1" class='whiteoutline' style="margin-top: -30px;margin-left: 5px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Driver List </p>
@@ -76,7 +77,7 @@
             <div class="headerDiv" onclick="switchTab(5)">
                <img src="./Images/UI/Header/Inventory.png" class="headerImg">
                <p id="text_mode6" class='whiteoutline' style="margin-top: -30px;margin-left: 10px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Items </p>
-            </div>
+            </div> -->
          </div>
          <div id="drivers" style="height: auto;margin-top:10px;display:none;">
          </div>
@@ -84,18 +85,20 @@
          </div>
          <div id="gliders" style="height: auto;margin-top:10px;display:none;">
          </div>
-         <div id="badges" style="height: auto;margin-top:10px;display:none;">
+         <div id="badges" style="height: auto;margin-top:10px;text-align: center;display:none;">
          </div>
-         <div id="items" style="margin:0 auto;max-width:710px;margin-top:10px;display: none;">
+         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;display: none;">
          </div>
       </div>
 
       <script type="text/javascript" src="./Script/global.js"></script>
+      <script type="text/javascript" src="./Script/profile.js"></script>
       <script type="text/javascript" src="./Script/driverlist.js"></script>
       <script type="text/javascript" src="./Script/kartlist.js"></script>
       <script type="text/javascript" src="./Script/gliderlist.js"></script>
       <script type="text/javascript" src="./Script/badgelist.js"></script>
       <script type="text/javascript" src="./Script/itemlist.js"></script>
+      <script type="text/javascript" src="./Script/stats.js"></script>
       <script type = "text/javascript" 
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
       </script>
@@ -151,10 +154,11 @@
       if(localStorage.getItem("MKTS_Data") != null){
         savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
         console.log(isMobile);
+        generateProfile();
         generateDriverList(0);
         generateKartList(0);
         generateGliderList(0);
-        generateBadgeList(0);
+        generateBadgeList(2);
         generateItemList();
         //document.getElementById('json').innerHTML = JSON.stringify(savedata, null, 2);
       }

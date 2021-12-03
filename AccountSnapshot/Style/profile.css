@@ -1,0 +1,245 @@
+.wipText {
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.listBtnTxt {
+    margin-top: -23px;
+    margin-left: 22px;
+    font-family: headername2;
+    font-size: 37px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.titletxt {
+    width: 100%;
+    font-family: headername2;
+    font-size: 48px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 0px;
+}
+
+.sectionDiv {
+    background-color: rgba(0,0,0,0.5);
+    width: 632px;
+    /* height: 500px; */
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.nameDiv {
+    width: 600px;
+    height: 372px;
+    background-image: url("../Images/UI/Profile/NameCard.png");
+    background-size: contain;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 6px white);
+}
+
+.nametxt {
+    width: 100%;
+    font-family: headername2;
+    font-size: 36px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px 0px;
+    margin-top: 298px;
+}
+
+.takentxt {
+    width: 100%;
+    font-family: headername2;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px 0px;
+    color: #ececec;
+}
+
+.badgeRank {
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.badgeImgProf {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tierDiv {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 22px;
+}
+
+.tierImg {
+    width: 90px;
+}
+
+.tierNums{
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 12px;
+    text-align: center;
+    width: 60px;
+}
+
+.tierNum {
+    width: 30px;
+    display: inline-block;
+    margin-right: -3px;
+}
+
+.rankDiv {
+    display: inline-block;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.rankImg {
+    width: 90px;
+}
+
+.rankNums{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 3px;
+    text-align: center;
+    width: 84px;
+}
+
+.rankNum {
+    width: 26px;
+    height: 31px;
+    object-fit: contain;
+    object-position: right;
+    display: inline-block;
+    /* margin-right: -3px; */
+}
+
+.multiImg {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    transform: scale(1.3);
+}
+
+/* Panel */
+.dkgPanel {
+    width:150px;
+    height: 194px;
+    position: relative;
+    display: inline-block;
+}
+
+.favDriver {
+    margin: 8px;
+}
+
+.bgImg {
+    display: inline-block;
+    width:100%;
+    position: absolute;
+}
+
+.newDriver {
+    width: 100%;
+    height: 87%;
+    position: absolute;
+    object-fit: contain;
+    transform-origin: top left;
+}
+
+.frameImg {
+    width:100%;
+    position: absolute;
+}
+
+.pointsPanel {
+    margin-top: 23px;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+}
+
+.levelNum {
+    position: absolute;
+    width: 36px;
+    bottom: 44px;
+    right: -2px;
+}
+
+.lvImg {
+    position: absolute;
+    bottom: 46px;
+    right: 31px;
+    width: 38px;
+}
+
+.itemImgPanel {
+    position: absolute;
+    bottom: 9px;
+    left: 4px;
+    width: 41px;
+}
+
+.sectionbardiv {
+    /* margin: 0 auto;
+    margin-top: 13px;
+    width: 445px;
+    height: 28px;
+    background-image: url(../Images/UI/Profile/Header.png); */
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 676px;
+    height: 43px;
+    background-image: url(../Images/UI/Profile/Header.png);
+    background-size: contain;
+}
+
+.sectionbartxt {
+    width: 400px;
+    height: 34px;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 5px;
+    text-align: left;
+    font-family: 'tour';
+    color: white;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.favDiv {
+    width: 666px;
+    height: 424px;
+    margin: 0 auto;
+}
+
+.totalPoints {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.scoreNumberTP {
+    height: 64px;
+}
+
+.scoreCommaTP {
+    height: 22px;
+}
