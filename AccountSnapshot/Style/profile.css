@@ -243,3 +243,37 @@
 .scoreCommaTP {
     height: 22px;
 }
+
+.recordsDiv {
+    width:640px;
+    margin: 0 auto;
+}
+
+.recordDiv {
+    width: 640px;
+}
+
+.leftSide {
+    display: inline-block;
+    width: 320px;
+    text-align: right;
+    font-family: 'tour';
+    color: lightgrey;
+    font-size: 24px;
+    margin: 10px 0;
+    right: 10px;
+    position: relative;
+}
+
+.rightSide {
+    display: inline-block;
+    width: 320px;
+    text-align: left;
+    font-family: 'tour';
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    /* letter-spacing: -0.05em; */
+    left: 10px;
+    position: relative;
+}

@@ -126,6 +126,12 @@ function generateArrays(){
 //     document.getElementById('singleinv').innerHTML = "";
 //   }
 // }
+
+function openPastTourStats(){
+    getSeasonKey();
+    location.href = `https://support.mariokarttour.com/en-US/players/${savedata.Profile.playerId}/season_summaries/${seasonKey.substring(6)}`;
+}
+
 function ReturnToTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 

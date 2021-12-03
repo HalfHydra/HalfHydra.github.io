@@ -222,7 +222,58 @@ function generateProfile(){
         useDiv.appendChild(generateDKGPanel(convertNameToId(t), true));
     })
 
-    //output.appendChild(generateSectionBar(`Records`));
+    output.appendChild(generateSectionBar(`Records`));
+
+    let recordsDiv = document.createElement('div')
+    recordsDiv.className = "recordsDiv";
+    output.appendChild(recordsDiv);
+
+    recordsDiv.appendChild(generateRecord("Drivers", savedata.Profile.driver_count))
+
+    recordsDiv.appendChild(generateRecord("Karts", savedata.Profile.kart_count))
+
+    recordsDiv.appendChild(generateRecord("Gliders", savedata.Profile.glider_count))
+
+    recordsDiv.appendChild(generateRecord("Badges", savedata.Profile.badge_count))
+
+    recordsDiv.appendChild(generateRecord("Highest Score", savedata.Profile.all_time_best_course_score.toLocaleString()))
+
+    recordsDiv.appendChild(generateRecord("Standard Race Wins", savedata.Profile.standard_race_wins))
+
+    recordsDiv.appendChild(generateRecord("Gold Race Wins", savedata.Profile.gold_race_wins))
+
+    recordsDiv.appendChild(generateRecord("Highest Grade", savedata.Profile.highest_multiplayer_rank))
+
+    recordsDiv.appendChild(generateRecord("Highest Tier", savedata.Profile.highest_tier))
+
+    recordsDiv.appendChild(generateRecord("Achieved Kart Pro", savedata.Profile.kart_pro_achieved))
+
+    recordsDiv.appendChild(generateRecord("Current Multiplayer XP", savedata.Profile.current_multiplayer_rate.toLocaleString()))
+
+    recordsDiv.appendChild(generateRecord("Highest Multiplayer XP", savedata.Profile.highest_multiplayer_rate.toLocaleString()))
+
+    recordsDiv.appendChild(generateRecord("User Rank", savedata.Profile.user_rank))
+
+    recordsDiv.appendChild(generateRecord("User Rank XP", savedata.Profile.total_rank_xp.toLocaleString()))
+
+    output.appendChild(generateSectionBar(`Open Past Tour Stats`));
+
+    let btnPTS = document.createElement('div');
+    btnPTS.className = "headerDiv";
+    btnPTS.addEventListener('click', function () {
+        openPastTourStats();
+    });
+    output.appendChild(btnPTS);
+
+    let btnPTS_img = document.createElement('img');
+    btnPTS_img.src = "./Images/UI/Header/PastTourStats.png";
+    btnPTS_img.className = "headerImg";
+    btnPTS.appendChild(btnPTS_img);
+
+    let btnPTS_txt = document.createElement('p');
+    btnPTS_txt.className = "whiteoutline listBtnTxt"
+    btnPTS_txt.innerHTML = "Past Tour Stats";
+    btnPTS.appendChild(btnPTS_txt);
 
     let wiptext = document.createElement('p');
     wiptext.className = "landingpagetxt wipText";
@@ -342,4 +393,21 @@ function generateSectionBar(text) {
     sectionbardiv.appendChild(sectionbartxt);
 
     return sectionbardiv;
+}
+
+function generateRecord(key, value){
+    let recordDiv = document.createElement('div');
+    recordDiv.className = "recordDiv"
+
+    let leftSide = document.createElement('p')
+    leftSide.className = "leftSide";
+    leftSide.innerHTML = key;
+    recordDiv.appendChild(leftSide)
+
+    let rightSide = document.createElement('p');
+    rightSide.className = "rightSide";
+    rightSide.innerHTML = value;
+    recordDiv.appendChild(rightSide)
+
+    return recordDiv;
 }

@@ -722,7 +722,7 @@ function createUserCourseData() {
 }
 
 function getSeasonKey(){
-    Object.keys(saveJSON).forEach(key => {
+    Object.keys(savedata).forEach(key => {
         if(key.substring(0,6).normalize() == "Season".normalize()){
             seasonKey = key;
         }
