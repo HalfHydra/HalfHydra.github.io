@@ -23,9 +23,9 @@ function generateNavBarItem(){
     });
     header.appendChild(backBtn);
 
-    let headerSpacer = document.createElement('div');
-    headerSpacer.className = "headerSpacer";
-    header.appendChild(headerSpacer); 
+    // let headerSpacer = document.createElement('div');
+    // headerSpacer.className = "headerSpacer";
+    // header.appendChild(headerSpacer); 
 }
 
 function generateItemList(){

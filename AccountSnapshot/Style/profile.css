@@ -50,6 +50,8 @@
     vertical-align: middle;
     margin: 20px 0px;
     margin-top: 298px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .takentxt {
@@ -60,7 +62,7 @@
     display: inline-block;
     vertical-align: middle;
     margin: 20px 0px;
-    color: #ececec;
+    color: white;
 }
 
 .badgeRank {
@@ -164,6 +166,15 @@
     transform-origin: top left;
 }
 
+.newKartPart {
+    width: 80%;
+    height: 100%;
+    margin-left: 14px;
+    position: absolute;
+    object-fit: contain;
+    transform-origin: top left;
+}
+
 .frameImg {
     width:100%;
     position: absolute;
@@ -175,18 +186,20 @@
     position: absolute;
     bottom: 8px;
     right: 6px;
+    width: 100%;
+    text-align: right;
 }
 
 .levelNum {
     position: absolute;
     width: 36px;
-    bottom: 44px;
+    bottom: 42px;
     right: -2px;
 }
 
 .lvImg {
     position: absolute;
-    bottom: 46px;
+    bottom: 44px;
     right: 31px;
     width: 38px;
 }
@@ -227,7 +240,6 @@
 
 .favDiv {
     width: 666px;
-    height: 424px;
     margin: 0 auto;
 }
 
@@ -245,8 +257,13 @@
 }
 
 .recordsDiv {
-    width:640px;
-    margin: 0 auto;
+    /* width:640px;
+    margin: 0 auto; */
+    width: 640px;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,0.36);
+    border-radius: 30px;
+    padding: 18px;
 }
 
 .recordDiv {
@@ -258,11 +275,12 @@
     width: 320px;
     text-align: right;
     font-family: 'tour';
-    color: lightgrey;
-    font-size: 24px;
+    color: #dedede;
+    font-size: 22px;
     margin: 10px 0;
     right: 10px;
     position: relative;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .rightSide {
@@ -276,4 +294,135 @@
     /* letter-spacing: -0.05em; */
     left: 10px;
     position: relative;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+.coinWorthImg {
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 19px;
+    width: 700px;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.tutorialDiv {
+    width: 366px;
+    margin: 0 auto;
+}
+
+.topNum {
+    width: 170px;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lastUsed {
+    color: rgb(235, 235, 235);
+    font-family: tour;
+    vertical-align: top;
+    font-size: 26px;
+    line-height: 40px;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.lastUseDiv {
+    /* width: 316px;
+    display: inline-block;
+    vertical-align: top; */
+
+    width: 316px;
+    /* height: 203px; */
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.neglectDiv {
+    height:220px;
+}
+
+.usedCapsDiv {
+    width:500px;
+    height:500px;
+    background-color: rgba(0,0,0,0.36);
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+.usedCapText {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'tour';
+    padding: 24px;
+    padding-bottom:0px;
+}
+
+.ticketDiv {
+    display: inline-block;
+    width: 164px;
+    text-align: center;
+}
+
+.ticketCount {
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    font-family: 'tour';
+    font-size: 27px;
+    color: white;
+    letter-spacing: -1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ticketCapImg {
+    width: 100px;
+    height: 87px;
+    transform: scale(1.25);
+    object-fit: contain;
+    padding-top: 10px;
+}
+
+.badgeMostImg {
+    width: 150px;
+    object-fit: contain;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
+
+.quickStartBadgeDiv {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badgeDisplayImg {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.noneYetText {
+    font-family: Tahoma;
+    margin: 10px auto;
+    font-size: 38px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

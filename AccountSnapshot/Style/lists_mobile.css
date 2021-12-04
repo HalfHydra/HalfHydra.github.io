@@ -99,7 +99,7 @@
 }
 
 .scoreNumber {
-    height: 32px;
+    height: 30px;
 }
 
 .scoreComma {
@@ -315,12 +315,13 @@
     bottom: 0;
     right: 2px;
     z-index: 100;
+    width: 276px;
 }
 
 .backBtn {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     left: 2px;
     z-index: 100;
-    width: 64px;
+    width: 236px;
 }

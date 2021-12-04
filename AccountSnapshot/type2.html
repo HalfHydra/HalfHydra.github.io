@@ -14,6 +14,8 @@
          @font-face {font-family: 'headername2';src: url('./Font/nintendop_ntlg-nr-db_003.otf') format('opentype');font-display: swap;font-style: normal;font-weight: bold;}
       </style>
       <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
+      <link rel="preload" href="./Images/UI/Profile/Logo.png" as="image">
+      <link rel="preload" href="./Images/UI/Profile/NameCard.png" as="image">
       <div> 
    </head>
    <body class="main" style="height: 100%;overflow: overlay;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
@@ -79,15 +81,15 @@
                <p id="text_mode6" class='whiteoutline' style="margin-top: -30px;margin-left: 10px;font-family: headername2;font-size: 15px;text-align: center;display: inline-block;vertical-align: middle;"> Items </p>
             </div> -->
          </div>
-         <div id="drivers" style="height: auto;margin-top:10px;display:none;">
+         <div id="drivers" style="height: auto;margin-top:10px;margin-bottom: 64px;display:none;">
          </div>
-         <div id="karts" style="height: auto;margin-top:10px;display:none;">
+         <div id="karts" style="height: auto;margin-top:10px;margin-bottom: 64px;display:none;">
          </div>
-         <div id="gliders" style="height: auto;margin-top:10px;display:none;">
+         <div id="gliders" style="height: auto;margin-top:10px;margin-bottom: 64px;display:none;">
          </div>
-         <div id="badges" style="height: auto;margin-top:10px;text-align: center;display:none;">
+         <div id="badges" style="height: auto;margin-top:10px;margin-bottom: 64px;text-align: center;display:none;">
          </div>
-         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;display: none;">
+         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;margin-bottom: 64px;display: none;">
          </div>
       </div>
 
@@ -154,6 +156,7 @@
       if(localStorage.getItem("MKTS_Data") != null){
         savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
         console.log(isMobile);
+        calcValuesStats();
         generateProfile();
         generateDriverList(0);
         generateKartList(0);

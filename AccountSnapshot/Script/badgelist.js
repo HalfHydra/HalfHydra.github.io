@@ -81,6 +81,7 @@ function generateBadgeList(type){
         let badgeImg = document.createElement('img');
         badgeImg.className = "badgeImg";
         badgeImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Badges/${savedata.Badges[t].key}.png`;
+        badgeImg.loading = "lazy";
         badgeDiv.appendChild(badgeImg);
 
         let badgeTextDiv = document.createElement('div');

@@ -426,11 +426,11 @@ function buildStats(){
     gliderBasePoints();
     totalBasePoints();
     getTutorialDrivers();
-    firstXItems(10);
-    firstXHighEnds(10);
-    mostNeglectedDrivers(10);
-    mostNeglectedKarts(10);
-    mostNeglectedGliders(10);
+    firstXItems(12);
+    firstXHighEnds(12);
+    mostNeglectedDrivers(100);
+    mostNeglectedKarts(5);
+    mostNeglectedGliders(5);
     getLevel7DKG();
     getSingleCappedDKG();
     getDoubleCappedDKG();
@@ -452,7 +452,7 @@ function buildStats(){
     simulateCoinWorth();
     simulateRubiesSpent();
     //console.log(statsJSON);
-    //convertStatsJSONEnglish();
+    convertStatsJSONEnglish();
     //console.log(statsJSONEnglish);
 }
 
@@ -833,7 +833,7 @@ function mostNeglectedGliders(count){
 }
 
 function getLevel7DKG(){
-    allItems.forEach((t,i)=>{
+    allItemsSort.forEach((t,i)=>{
         let level = t.level;
         if(level == 7){
             statsJSON.level_7_dkg.push(t.id);
@@ -842,7 +842,7 @@ function getLevel7DKG(){
 }
 
 function getSingleCappedDKG(){
-    allItems.forEach((t,i)=>{
+    allItemsSort.forEach((t,i)=>{
         let pointCapLevel = t.pointCapLevel;
         if(pointCapLevel == 1){
             statsJSON.single_capped_dkg.push(t.id);
@@ -851,7 +851,7 @@ function getSingleCappedDKG(){
 }
 
 function getDoubleCappedDKG(){
-    allItems.forEach((t,i)=>{
+    allItemsSort.forEach((t,i)=>{
         let pointCapLevel = t.pointCapLevel;
         if(pointCapLevel == 2){
             statsJSON.double_capped_dkg.push(t.id);
@@ -860,7 +860,7 @@ function getDoubleCappedDKG(){
 }
 
 function getTripleCappedDKG(){
-    allItems.forEach((t,i)=>{
+    allItemsSort.forEach((t,i)=>{
         let pointCapLevel = t.pointCapLevel;
         if(pointCapLevel == 3){
             statsJSON.triple_capped_dkg.push(t.id);
@@ -869,7 +869,7 @@ function getTripleCappedDKG(){
 }
 
 function getMaxedDKG(){
-    allItems.forEach((t,i)=>{
+    allItemsSort.forEach((t,i)=>{
         let level = t.level;
         let pointCapLevel = t.pointCapLevel;
         if(level == 7 && pointCapLevel == 3){
@@ -1133,10 +1133,10 @@ function simulateCoinWorth(){
     let totalWorth = 0;
     //Add coins
     totalWorth = saveJSON.Items[`90001`].count;
-    console.log(totalWorth);
+    //console.log(totalWorth);
     //Add DKG
     allItems.forEach(t => {
-        console.log(totalWorth);
+        //console.log(totalWorth);
         let multiplier = 0;
         let type = 0;
         if(`${t.id}`.length == 5 && Math.floor(t.id / 1000) == 70){ type = 1 }
@@ -1183,7 +1183,7 @@ function simulateCoinWorth(){
             break;
         }
         totalWorth += t.totalCount * multiplier;
-        console.log(`[${t.id}] ${type} ${new_values[t.id].rarityId} ${multiplier}`);
+        //console.log(`[${t.id}] ${type} ${new_values[t.id].rarityId} ${multiplier}`);
     })
     //Add DKG Caps
     statsJSON.used_cap_ticket_nums.forEach((t,i) => {

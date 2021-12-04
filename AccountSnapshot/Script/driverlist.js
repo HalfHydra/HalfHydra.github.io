@@ -93,6 +93,7 @@ function generateDriverList(type){
                 break;
         }
         faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/FaceEntry/${values[savedata.Drivers[t].id].nameInternal}FaceEntry.png`;
+        faceEntry.loading = "lazy";
         driverDiv.appendChild(faceEntry);
 
         let driverTextDiv = document.createElement('div');

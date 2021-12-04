@@ -1,8 +1,11 @@
 .landingpagetxt {
-   font-family: Tahoma;
-   margin-left: 10px;
-   font-size: 20px;
-   color: white;
+    font-family: Tahoma;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 

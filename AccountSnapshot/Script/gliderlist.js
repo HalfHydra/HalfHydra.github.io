@@ -93,6 +93,7 @@ function generateGliderList(type){
                 break;
         }
         faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/ItemIcon/${savedata.Gliders[t].id}.png`;
+        faceEntry.loading = "lazy";
         driverDiv.appendChild(faceEntry);
 
         let driverTextDiv = document.createElement('div');
