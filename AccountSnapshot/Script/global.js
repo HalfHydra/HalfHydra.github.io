@@ -6,6 +6,7 @@ var values;
 var itemData;
 var coursenames;
 var courseimages;
+var seasonJSON;
 
 var startToggle = true;
 
@@ -22,6 +23,8 @@ let savedata = {
         Gliders: {}
     }
 }
+
+let createdMenus = [0,0,0,0,0];
 
 var characterid = [];
 var charrarity = [];
@@ -128,8 +131,11 @@ function generateArrays(){
 // }
 
 function openPastTourStats(){
-    getSeasonKey();
-    location.href = `https://support.mariokarttour.com/en-US/players/${savedata.Profile.playerId}/season_summaries/${seasonKey.substring(6)}`;
+    location.href = `https://support.mariokarttour.com/en-US/players/${savedata.Profile.playerId}/season_summaries/${parseInt(seasonKey.substring(6)) - 1}`;
+}
+
+function openAllCupRanking(){
+    location.href = `https://mariokarttour.com/en-US/ranking/allcup/backnumbers/detail?seasonKey=${parseInt(seasonKey.substring(6))}`;
 }
 
 function ReturnToTop(){
@@ -209,26 +215,47 @@ function switchTab(tab){
             break;
         case 1:
             currentScroll = window.scrollY;
+            if(!createdMenus[0]){
+                console.log("created");
+                generateDriverList(0);
+                createdMenus[0] = 1;
+            }
             hideAllTabsButOne('drivers');
             ReturnToTop();
             break;
         case 2:
             currentScroll = window.scrollY;
+            if(!createdMenus[1]){
+                generateKartList(0);
+                createdMenus[1] = 1;
+            }
             hideAllTabsButOne('karts');
             ReturnToTop();
             break;
         case 3:
             currentScroll = window.scrollY;
+            if(!createdMenus[2]){
+                generateGliderList(0);
+                createdMenus[2] = 1;
+            }
             hideAllTabsButOne('gliders');
             ReturnToTop();
             break;
         case 4:
             currentScroll = window.scrollY;
+            if(!createdMenus[3]){
+                generateBadgeList(2);
+                createdMenus[3] = 1;
+            }
             hideAllTabsButOne('badges');
             ReturnToTop();
             break;
         case 5:
             currentScroll = window.scrollY;
+            if(!createdMenus[4]){
+                generateItemList();
+                createdMenus[4] = 1;
+            }
             hideAllTabsButOne('items');
             ReturnToTop();
             break;
@@ -358,4 +385,287 @@ function calcPoints(input, rarity, type) {
             break;
     }
     return [points, remainder];
+}
+
+function generateDKGPanel(itemId, scale, isFav, hideUI){
+    let itemTypeId = 0;
+    if (itemId.toString().length < 5) {
+        itemTypeId = 0
+    }
+    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 30) {
+        itemTypeId = 2
+    }
+    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
+        itemTypeId = 1
+    }
+
+    let rarityId = values[`${itemId}`].rarityId;
+    
+    var dkgPanel = document.createElement('div');
+    dkgPanel.className = 'dkgPanel';
+    if(scale != 1.0){
+        dkgPanel.style.width = `${150 * scale}px`;
+        dkgPanel.style.height = `${194 * scale}px`;
+    }
+
+    let bgImg = document.createElement('img');
+    bgImg.src = `./Images/UI/Panel/bg${rarityId}_${itemTypeId}.png`;
+    bgImg.className = 'bgImg';
+    dkgPanel.appendChild(bgImg);
+
+    let newKartPart;
+
+    switch(itemTypeId){
+        case 0:
+            let newDriver = document.createElement('img');
+            newDriver.className = 'newDriver';
+            newDriver.src = `https://halfhydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`;
+            newDriver.loading = "lazy";
+            //newDriver.src = `C:/Users/justi/Documents/GitHub/HalfHydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`
+            dkgPanel.appendChild(newDriver);
+            break;
+        case 1:
+            newKartPart = document.createElement('img');
+            newKartPart.className = 'newKartPart';
+            newKartPart.loading = "lazy";
+            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Machine/Machine_${itemId}_Large.png`;
+            dkgPanel.appendChild(newKartPart);
+            break;
+        case 2:
+            newKartPart = document.createElement('img');
+            newKartPart.className = 'newKartPart';
+            newKartPart.loading = "lazy";
+            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Wing/${values[itemId].nameInternal}_Large.png`;
+            dkgPanel.appendChild(newKartPart);
+            break;
+    }
+
+    let frameImg = document.createElement('img');
+    frameImg.src = `./Images/UI/Panel/frame${rarityId}_${itemTypeId}.png`;
+    frameImg.className = 'frameImg';
+    dkgPanel.appendChild(frameImg);
+
+    let pointsCount = document.createElement('div');
+    pointsCount.className = "pointsPanel";
+
+    let points = 0;
+    let level = 0;
+    switch (itemTypeId) {
+        case 0:
+            Object.keys(savedata.Drivers).forEach(t => {
+                if (savedata.Drivers[t].id == itemId) {
+                    points = savedata.Drivers[t].basepoints
+                    level = savedata.Drivers[t].level
+                }
+            })
+            break;
+        case 1:
+            Object.keys(savedata.Karts).forEach(t => {
+                if (savedata.Karts[t].id == itemId) {
+                    points = savedata.Karts[t].basepoints
+                    level = savedata.Karts[t].level
+                }
+            })
+            break;
+        case 2:
+            Object.keys(savedata.Gliders).forEach(t => {
+                if (savedata.Gliders[t].id == itemId) {
+                    points = savedata.Gliders[t].basepoints
+                    level = savedata.Gliders[t].level
+                }
+            })
+            break;
+    }
+
+    if (points == 0 || level == 0) {
+        dkgPanel.className = "dkgPanelUnowned"
+    } else if(hideUI) {
+        //Do Nothing
+    } else {
+        var charoutput = [];
+        for (var i = 0; i < points.toLocaleString().length; i++) {
+            charoutput.push(points.toLocaleString().charAt(i));
+        }
+        charoutput.forEach((t, i) => {
+            var number = document.createElement('img');
+            number.className = `scoreNumber`;
+            if (t == ",") {
+                number.className = `scoreComma`;
+            }
+            if(scale != 1.0){
+                number.style.height = `${30 * scale}px`;
+                if (t == ",") {
+                    number.style.height = `${11 * scale}px`;
+                }
+            }
+            number.src = `./Images/UI/Number/${t}.png`
+            pointsCount.appendChild(number);
+        });
+        dkgPanel.appendChild(pointsCount);
+
+        let levelNum = document.createElement('img');
+        levelNum.src = `./Images/UI/LeftNum/${level}.png`;
+        levelNum.className = 'levelNum';
+        dkgPanel.appendChild(levelNum);
+
+        let lvImg = document.createElement('img');
+        lvImg.src = './Images/UI/LeftNum/lv.png';
+        lvImg.className = 'lvImg';
+        dkgPanel.appendChild(lvImg);
+
+        let itemImg = document.createElement('img');
+        itemImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Items/${values[itemId].itemTypeId}.png`;
+        itemImg.className = 'itemImgPanel';
+        dkgPanel.appendChild(itemImg);
+
+        if(scale != 1.0){
+            pointsCount.style.bottom = `${8 * scale}px`;
+            pointsCount.style.right = `${6 * scale}px`;
+
+            lvImg.style.width = `${38 * scale}px`;
+            lvImg.style.right = `${31 * scale}px`;
+            lvImg.style.bottom = `${44 * scale}px`;
+
+            levelNum.style.width = `${36 * scale}px`;
+            levelNum.style.right = `${-2 * scale}px`;
+            levelNum.style.bottom = `${42 * scale}px`;
+
+            itemImg.style.width = `${41 * scale}px`;
+            itemImg.style.left = `${4 * scale}px`;
+            itemImg.style.bottom = `${9 * scale}px`;
+        }
+    }
+
+    if(isFav){
+        dkgPanel.classList.add('favDriver');
+    }
+
+    return dkgPanel;
+}
+
+function generateDKGPanelSpecial(itemId, points, level, scale, isFav, hideUI){
+    let itemTypeId = 0;
+    if (itemId.toString().length < 5) {
+        itemTypeId = 0
+    }
+    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 30) {
+        itemTypeId = 2
+    }
+    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
+        itemTypeId = 1
+    }
+
+    let rarityId = values[`${itemId}`].rarityId;
+    
+    var dkgPanel = document.createElement('div');
+    dkgPanel.className = 'dkgPanel';
+    if(scale != 1.0){
+        dkgPanel.style.width = `${150 * scale}px`;
+        dkgPanel.style.height = `${194 * scale}px`;
+    }
+
+    let bgImg = document.createElement('img');
+    bgImg.src = `./Images/UI/Panel/bg${rarityId}_${itemTypeId}.png`;
+    bgImg.className = 'bgImg';
+    dkgPanel.appendChild(bgImg);
+
+    let newKartPart;
+
+    switch(itemTypeId){
+        case 0:
+            let newDriver = document.createElement('img');
+            newDriver.className = 'newDriver';
+            newDriver.src = `https://halfhydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`;
+            newDriver.loading = "lazy";
+            //newDriver.src = `C:/Users/justi/Documents/GitHub/HalfHydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`
+            dkgPanel.appendChild(newDriver);
+            break;
+        case 1:
+            newKartPart = document.createElement('img');
+            newKartPart.className = 'newKartPart';
+            newKartPart.loading = "lazy";
+            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Machine/Machine_${itemId}_Large.png`;
+            dkgPanel.appendChild(newKartPart);
+            break;
+        case 2:
+            newKartPart = document.createElement('img');
+            newKartPart.className = 'newKartPart';
+            newKartPart.loading = "lazy";
+            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Wing/${values[itemId].nameInternal}_Large.png`;
+            dkgPanel.appendChild(newKartPart);
+            break;
+    }
+
+    let frameImg = document.createElement('img');
+    frameImg.src = `./Images/UI/Panel/frame${rarityId}_${itemTypeId}.png`;
+    frameImg.className = 'frameImg';
+    dkgPanel.appendChild(frameImg);
+
+    let pointsCount = document.createElement('div');
+    pointsCount.className = "pointsPanel";
+
+    if (points == 0 || level == 0) {
+        dkgPanel.className = "dkgPanelUnowned"
+    } else if(hideUI) {
+        //Do Nothing
+    } else {
+        var charoutput = [];
+        for (var i = 0; i < points.toLocaleString().length; i++) {
+            charoutput.push(points.toLocaleString().charAt(i));
+        }
+        charoutput.forEach((t, i) => {
+            var number = document.createElement('img');
+            number.className = `scoreNumber`;
+            if (t == ",") {
+                number.className = `scoreComma`;
+            }
+            if(scale != 1.0){
+                number.style.height = `${30 * scale}px`;
+                if (t == ",") {
+                    number.style.height = `${11 * scale}px`;
+                }
+            }
+            number.src = `./Images/UI/Number/${t}.png`
+            pointsCount.appendChild(number);
+        });
+        dkgPanel.appendChild(pointsCount);
+
+        let levelNum = document.createElement('img');
+        levelNum.src = `./Images/UI/LeftNum/${level}.png`;
+        levelNum.className = 'levelNum';
+        dkgPanel.appendChild(levelNum);
+
+        let lvImg = document.createElement('img');
+        lvImg.src = './Images/UI/LeftNum/lv.png';
+        lvImg.className = 'lvImg';
+        dkgPanel.appendChild(lvImg);
+
+        let itemImg = document.createElement('img');
+        itemImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Items/${values[itemId].itemTypeId}.png`;
+        itemImg.className = 'itemImgPanel';
+        dkgPanel.appendChild(itemImg);
+
+        if(scale != 1.0){
+            pointsCount.style.bottom = `${8 * scale}px`;
+            pointsCount.style.right = `${6 * scale}px`;
+
+            lvImg.style.width = `${38 * scale}px`;
+            lvImg.style.right = `${31 * scale}px`;
+            lvImg.style.bottom = `${44 * scale}px`;
+
+            levelNum.style.width = `${36 * scale}px`;
+            levelNum.style.right = `${-2 * scale}px`;
+            levelNum.style.bottom = `${42 * scale}px`;
+
+            itemImg.style.width = `${41 * scale}px`;
+            itemImg.style.left = `${4 * scale}px`;
+            itemImg.style.bottom = `${9 * scale}px`;
+        }
+    }
+
+    if(isFav){
+        dkgPanel.classList.add('favDriver');
+    }
+
+    return dkgPanel;
 }

@@ -7,6 +7,7 @@ function generateNavBarDriver(){
 
     let descendDR = document.createElement('img');
     descendDR.src = "./Images/UI/Header/DateReceivedD.png";
+    descendDR.loading = "lazy";
     descendDR.className = "headerBtn";
     descendDR.addEventListener('click', function () {
         generateDriverList(0);
@@ -16,6 +17,7 @@ function generateNavBarDriver(){
     let ascendDR = document.createElement('img');
     ascendDR.src = "./Images/UI/Header/DateReceivedA.png";
     ascendDR.className = "headerBtn";
+    ascendDR.loading = "lazy";
     ascendDR.addEventListener('click', function () {
         generateDriverList(1);
     });
@@ -24,6 +26,7 @@ function generateNavBarDriver(){
     let inGame = document.createElement('img');
     inGame.src = "./Images/UI/Header/InGame.png";
     inGame.className = "headerBtn";
+    inGame.loading = "lazy";
     inGame.addEventListener('click', function () {
         generateDriverList(2);
     });

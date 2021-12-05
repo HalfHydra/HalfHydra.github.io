@@ -2,6 +2,7 @@
 
 <head>
     <style>
+        @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
         p {
             color: white;
             text-shadow:
@@ -9,7 +10,8 @@
                 1px -1px 0 #000,
                 -1px 1px 0 #000,
                 1px 1px 0 #000;
-            font-size: 20px;
+            font-family: tour, Tahoma, sans-serif;
+            font-size: 24px;
             border-radius: 7px;
             border: 2px solid #5A8FD5;
         }
@@ -35,50 +37,48 @@
             font-family: sans-serif;
             text-align: center;
         }
+        
 
-        a {
-            text-decoration: none;
-            color: white;
+        .notReady {
+            display: none;
         }
 
-        textarea {
-            color: white;
-            text-shadow:
-                -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;
-            background: #4A75B2;
-            border-radius: 7px;
-            border: 2px solid #5A8FD5;
-            width: 60%;
-            height: 60%;
+        .ready {
+            display: block;
+            margin: 20px auto;
+            width: 264px;
+            cursor: pointer;
+            animation: pulse 1.25s infinite;
         }
 
-        div {
-            margin: 0 auto
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.95);
+            }
         }
     </style>
 </head>
 
 <body>
+    <audio id="Select">
+        <source src="./Sound/MK8Select.wav">
+      </audio>
     <div>
-        <h1>Hydra's Profile Statistics</h1>
-        <p>Step 1. Enter the data json given to you</p>
+        <!-- <h1>Hydra's Account Snapshot</h1> -->
+        <img src="./Images/UI/Profile/Logo.png">
+        <p>Select the .json file with your data</p>
+        <p>If you don't have one, join my Discord server to find out how to get one: <br> discord.gg/UeJZDXxzun</p>
         <input type="file" id="file">
-        <br>
-        <p>Step 2. Choose the statistics mode</p>
-        <div>
-        <div style="width: 400px; display:inline-block">
-        <input type="button" value="Type 1: Similar to the Game" onclick="location.href = 'type1.html';" style="width: 100%;;height: 40px;margin-bottom: 5px;">
-        <img src="./Images/UI/Input/Type1_soon.png" onclick="location.href = 'type1.html';" style="max-width: 400px;display:block">
-        </div>
-        <div style="width: 400px; display: inline-block;">
-            <input type="button" value="Type 2: Interactive and Informative" onclick="location.href = 'type2.html';" style="width: 100%;;height: 40px;margin-bottom: 5px;">
-            <img src="./Images/UI/Input/Type2.png" onclick="location.href = 'type2.html';" style="max-width: 400px;display:block;cursor:pointer">
-        </div>
+        <img id="go" src="./Images/UI/Input/LetsGo.png" onclick="location.href = 'accountsnapshot.html'" class="notReady">
     </div>
-
     <script>
         document.getElementById('file').addEventListener('change', function () {
             var reader = new FileReader();
@@ -87,6 +87,9 @@
                 localStorage.setItem("MKTS_Data", data)
             }
             reader.readAsText(this.files[0]);
+
+            document.getElementById('go').className = "ready";
+            //document.getElementById('Select').play();
         });
     </script>
 </body>

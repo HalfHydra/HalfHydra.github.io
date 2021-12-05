@@ -487,7 +487,7 @@ function getAllItemsInOrder(){
     }
     return 0;
     });
-    console.log(allItems);
+    //console.log(allItems);
 }
 
 function getAllItemsInUseOrder(){
@@ -512,7 +512,7 @@ function getAllItemsInUseOrder(){
     }
     return 0;
     });
-    console.log(allItemsNeglected);
+    //console.log(allItemsNeglected);
 }
 
 function generateBadgesInOrder(){
@@ -732,7 +732,7 @@ function getSeasonKey(){
 function driverBasePoints(){
     //count, level
     Object.keys(saveJSON.Drivers).forEach((t,i) => {
-        console.log(saveJSON.Drivers[t]);
+        //console.log(saveJSON.Drivers[t]);
         switch(new_values[saveJSON.Drivers[t].id].rarityId){
             case 0:
             statsJSON.total_base_points_d += saveJSON.Drivers[t].basepoints - 400
@@ -750,7 +750,7 @@ function driverBasePoints(){
 function kartBasePoints(){
     //count, level
     Object.keys(saveJSON.Karts).forEach((t,i) => {
-        console.log(saveJSON.Karts[t]);
+        //console.log(saveJSON.Karts[t]);
         switch(new_values[saveJSON.Karts[t].id].rarityId){
             case 0:
             statsJSON.total_base_points_k += saveJSON.Karts[t].basepoints - 200
@@ -768,7 +768,7 @@ function kartBasePoints(){
 function gliderBasePoints(){
     //count, level
     Object.keys(saveJSON.Gliders).forEach((t,i) => {
-        console.log(saveJSON.Gliders[t]);
+        //console.log(saveJSON.Gliders[t]);
         switch(new_values[saveJSON.Gliders[t].id].rarityId){
             case 0:
             statsJSON.total_base_points_g += saveJSON.Gliders[t].basepoints - 200
@@ -1081,7 +1081,7 @@ function calcCourseRatingArray(){
         let rating = calcCourseRating(saveJSON[seasonKey][t].courseName);
         ratingArray.push(rating);
     })
-    console.log(ratingArray);
+    //console.log(ratingArray);
     statsJSON.courseRatingArray = ratingArray;
 }
 
@@ -1187,7 +1187,7 @@ function simulateCoinWorth(){
     })
     //Add DKG Caps
     statsJSON.used_cap_ticket_nums.forEach((t,i) => {
-        console.log(totalWorth);
+        //console.log(totalWorth);
         switch(i){
             case 0:
             totalWorth += t * coinWorth.Items[`90305`]
@@ -1218,17 +1218,17 @@ function simulateCoinWorth(){
             break;
         }
     });
-    console.log(totalWorth);
+    //console.log(totalWorth);
     //Add Items
     Object.keys(saveJSON.Items).forEach(t =>{
-        console.log(totalWorth);
+        //console.log(totalWorth);
         if(coinWorth.Items.hasOwnProperty(`${t}`)){
         let multiplier = coinWorth.Items[t]
         totalWorth += saveJSON.Items[t].count * multiplier;
-        console.log(`[${t}] ${multiplier}`);
+        //console.log(`[${t}] ${multiplier}`);
         }
     })
-    console.log(totalWorth);
+    //console.log(totalWorth);
     statsJSON.total_coin_worth = totalWorth;
 }
 
@@ -1283,7 +1283,7 @@ function mostItemUsesCourses(){
     // usedJSON.sort(function(a, b) {
     //     return a - b;
     // });
-    console.log(usedJSON);
+    //console.log(usedJSON);
 }
 
 function missingCourseCoverage(){
@@ -1306,9 +1306,9 @@ function missingCourseCoverage(){
             top_shelf_glider_missing.push(t);
         }
     })
-    console.log(top_shelf_driver_missing);
-    console.log(top_shelf_kart_missing);
-    console.log(top_shelf_glider_missing);
+    //console.log(top_shelf_driver_missing);
+    //console.log(top_shelf_kart_missing);
+    //console.log(top_shelf_glider_missing);
 }
 
 function convertStatsJSONEnglish(){
@@ -1350,10 +1350,10 @@ function convertStatsJSONEnglish(){
 
 function generateCourseList() {
     Object.keys(coursedata.Courses).forEach((t, i) => {
-        console.log(t);
+        //console.log(t);
         courseList.push(t);
     });
-    console.log(courseList);
+    //console.log(courseList);
 }
 
 function convertNameToId(input) {

@@ -6,7 +6,7 @@
 .listBtnTxt {
     margin-top: -23px;
     margin-left: 22px;
-    font-family: headername2;
+    font-family: tour;
     font-size: 37px;
     text-align: center;
     display: inline-block;
@@ -15,7 +15,7 @@
 
 .titletxt {
     width: 100%;
-    font-family: headername2;
+    font-family: tour;
     font-size: 48px;
     text-align: center;
     display: inline-block;
@@ -43,7 +43,7 @@
 
 .nametxt {
     width: 100%;
-    font-family: headername2;
+    font-family: tour;
     font-size: 36px;
     text-align: center;
     display: inline-block;
@@ -56,7 +56,7 @@
 
 .takentxt {
     width: 100%;
-    font-family: headername2;
+    font-family: tour;
     font-size: 28px;
     text-align: center;
     display: inline-block;
@@ -152,65 +152,6 @@
     margin: 8px;
 }
 
-.bgImg {
-    display: inline-block;
-    width:100%;
-    position: absolute;
-}
-
-.newDriver {
-    width: 100%;
-    height: 87%;
-    position: absolute;
-    object-fit: contain;
-    transform-origin: top left;
-}
-
-.newKartPart {
-    width: 80%;
-    height: 100%;
-    margin-left: 14px;
-    position: absolute;
-    object-fit: contain;
-    transform-origin: top left;
-}
-
-.frameImg {
-    width:100%;
-    position: absolute;
-}
-
-.pointsPanel {
-    margin-top: 23px;
-    text-align: center;
-    position: absolute;
-    bottom: 8px;
-    right: 6px;
-    width: 100%;
-    text-align: right;
-}
-
-.levelNum {
-    position: absolute;
-    width: 36px;
-    bottom: 42px;
-    right: -2px;
-}
-
-.lvImg {
-    position: absolute;
-    bottom: 44px;
-    right: 31px;
-    width: 38px;
-}
-
-.itemImgPanel {
-    position: absolute;
-    bottom: 9px;
-    left: 4px;
-    width: 41px;
-}
-
 .sectionbardiv {
     /* margin: 0 auto;
     margin-top: 13px;
@@ -222,7 +163,7 @@
     width: 676px;
     height: 43px;
     background-image: url(../Images/UI/Profile/Header.png);
-    background-size: contain;
+    background-size: 685px;
 }
 
 .sectionbartxt {

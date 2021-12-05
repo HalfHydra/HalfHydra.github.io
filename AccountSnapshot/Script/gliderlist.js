@@ -92,7 +92,7 @@ function generateGliderList(type){
                 faceEntry.style.backgroundImage = `url('./Images/UI/Background/kghighend.png')`
                 break;
         }
-        faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/ItemIcon/${savedata.Gliders[t].id}.png`;
+        faceEntry.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Wing/${values[savedata.Gliders[t].id].nameInternal}_Large.png`;
         faceEntry.loading = "lazy";
         driverDiv.appendChild(faceEntry);
 
@@ -126,7 +126,7 @@ function generateGliderList(type){
 function generatePointsBox(itemType, points, progress, capLevel, rarity, index){
     let boxPoints = document.createElement('div')
     boxPoints.className = "boxPoints";
-    if(points == 700 && rarity == 2 || points == 450 && rarity == 1 || points == 280 && rarity == 0){
+    if(points == 700 && rarity == 2 || points == 450 && rarity == 1 || points == 380 && rarity == 0){
         boxPoints.style.backgroundImage = "url(./Images/UI/Lists/DriverMax.png)";
     } else {
         boxPoints.style.backgroundImage = "url(./Images/UI/Lists/DriverProgress.png)";

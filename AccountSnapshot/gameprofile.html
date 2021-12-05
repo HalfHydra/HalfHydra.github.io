@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=760px, initial-scale=1">
+         <link rel="stylesheet" href="./Style/reset.css">
+   		 <link rel="stylesheet" href="./Style/generic.css">
+         <link rel="stylesheet" href="./Style/gameprofile.css">
+      <style>
+         @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
+      </style>
+      <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
+      <div> 
+   </head>
+   <body class="main" style="height: 100%;overflow: overlay;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
+      <img id="loadingimg" src="./Images/UI/Loading.png" style="width:96px;height:96px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
+      <div id="content" style="/*background-image: url('./Images/UI/Profile/Mock.png');background-size: cover;*/margin: 0px auto;width: auto;max-width: 750px;height: calc(100vh - 140px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;border: 5px solid #b5ceff;*/">
+         <div id="nodata" style="display:none">
+            <p class="landingpagetxt">Your data has not been found! Please re-enter your data on the input page:</p>
+            <button class="nodatabtn" onclick="location.href = 'input.html';">Input Data</button>
+         </div>
+         <div id="stats" style="height: auto;width:750px;margin: 0 auto;">
+         </div>
+         <div id="drivers" style="height: auto;margin-top:10px;display:none;">
+         </div>
+         <div id="karts" style="height: auto;margin-top:10px;display:none;">
+         </div>
+         <div id="gliders" style="height: auto;margin-top:10px;display:none;">
+         </div>
+         <div id="badges" style="height: auto;margin-top:10px;margin-bottom: 64px;text-align: center;display:none;">
+         </div>
+         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;margin-bottom: 64px;display: none;">
+         </div>
+      </div>
+
+      <script type="text/javascript" src="./Script/global.js"></script>
+      <script type="text/javascript" src="./Script/stats.js"></script>
+      <script type="text/javascript" src="./Script/gameprofile.js"></script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+      <script>
+         function zoomOutMobile() {
+            var viewport = document.querySelector('meta[name="viewport"]');
+            if ( viewport ) {
+               viewport.content = "initial-scale=0.1";
+               viewport.content = "width=760";
+            }
+         }
+
+         zoomOutMobile();
+         function readTextFile(file, unit)
+         {
+             var rawFile = new XMLHttpRequest();
+             rawFile.open("GET", file, false);
+             rawFile.onreadystatechange = function ()
+             {
+                 if(rawFile.readyState === 4)
+                 {
+                     if(rawFile.status === 200 || rawFile.status == 0)
+                     {
+                         var allText = rawFile.responseText;
+                         switch(unit){
+                         	case 1:
+                         	values = JSON.parse(allText);
+                         	break;
+                         	case 2:
+                         	coursenames = JSON.parse(allText);
+                         	break;
+                           case 3:
+                           courseimages = JSON.parse(allText);
+                           break;
+                           case 4:
+                           seasonJSON = JSON.parse(allText);
+                           break;
+                         }
+                     }
+                 }
+             }
+             rawFile.send(null);
+         }
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Pipe/currentValues.json", 1);
+         generateArrays();
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 2);
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_image.json", 3);
+
+      if(localStorage.getItem("MKTS_Data") != null){
+        savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
+        console.log(isMobile);
+        calcValuesStats();
+        getSeasonKey();
+        readTextFile(`https://halfhydra.github.io/MarioKartTourValues/Data/SeasonCup/${seasonKey}.json`, 4);
+        generateProfile();
+      } else {
+         document.getElementById('nodata').style.display = "block";
+      }
+
+      window.onbeforeunload = function(){
+         document.getElementById('loadingimg').style.display = "block";
+      }
+      window.onload = function() {
+         document.getElementById('loadingimg').style.display = "none";
+      }
+      
+      </script>
+   </body>
+</html>

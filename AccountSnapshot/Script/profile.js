@@ -276,7 +276,6 @@ function generateProfile(){
 
     let playtime = generateRecord("Account Creation Date", new Date(parseInt(`${statsJSON.first_play_time}000`)).toLocaleString());
     playtime.childNodes[1].style.fontSize = "21px";
-    console.log(playtime);
     ErecordsDiv.appendChild(playtime);
 
     ErecordsDiv.appendChild(generateRecord("Total Unique D/K/G", statsJSON.dkg_count.toLocaleString()))
@@ -682,25 +681,25 @@ function generateProfile(){
 
     let lastText = document.createElement('p');
     lastText.className = "landingpagetxt";
-    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server at discord.gg/UeJZDXxzun<br><br>One last surprise, tap this button here to access your past tour stats!";
+    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server at discord.gg/UeJZDXxzun<br><br>One last surprise, tap this button here to access your profile in a form similar to the game! You can access your driver, kart, and glider list from there, as well as your tour records which have not been presented here!";
     output.appendChild(lastText);
 
-    let btnPTS = document.createElement('div');
-    btnPTS.className = "headerDiv";
-    btnPTS.addEventListener('click', function () {
-        openPastTourStats();
+    let btnType1 = document.createElement('div');
+    btnType1.className = "headerDiv";
+    btnType1.addEventListener('click', function () {
+        location.href = "gameprofile.html"
     });
-    output.appendChild(btnPTS);
+    output.appendChild(btnType1);
 
-    let btnPTS_img = document.createElement('img');
-    btnPTS_img.src = "./Images/UI/Header/PastTourStats.png";
-    btnPTS_img.className = "headerImg";
-    btnPTS.appendChild(btnPTS_img);
+    let btnType1_img = document.createElement('img');
+    btnType1_img.src = "./Images/UI/Profile/MenuWappen01.png";
+    btnType1_img.className = "headerImg";
+    btnType1.appendChild(btnType1_img);
 
-    let btnPTS_txt = document.createElement('p');
-    btnPTS_txt.className = "whiteoutline listBtnTxt"
-    btnPTS_txt.innerHTML = "Past Tour Stats";
-    btnPTS.appendChild(btnPTS_txt);
+    let btnType1_txt = document.createElement('p');
+    btnType1_txt.className = "whiteoutline listBtnTxt"
+    btnType1_txt.innerHTML = "Game Version";
+    btnType1.appendChild(btnType1_txt);
 
     let wiptext = document.createElement('p');
     wiptext.className = "landingpagetxt wipText";
@@ -708,162 +707,6 @@ function generateProfile(){
     output.appendChild(wiptext);
 
 
-}
-
-function generateDKGPanel(itemId, scale, isFav, hideUI){
-    console.log(itemId);
-    let itemTypeId = 0;
-    if (itemId.toString().length < 5) {
-        itemTypeId = 0
-    }
-    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 30) {
-        itemTypeId = 2
-    }
-    if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
-        itemTypeId = 1
-    }
-
-    let rarityId = values[`${itemId}`].rarityId;
-    
-    var dkgPanel = document.createElement('div');
-    dkgPanel.className = 'dkgPanel';
-    if(isFav){
-        dkgPanel.className = 'dkgPanel favDriver';
-    }
-    if(scale != 1.0){
-        dkgPanel.style.width = `${150 * scale}px`;
-        dkgPanel.style.height = `${194 * scale}px`;
-    }
-
-    let bgImg = document.createElement('img');
-    bgImg.src = `./Images/UI/Panel/bg${rarityId}_${itemTypeId}.png`;
-    bgImg.className = 'bgImg';
-    dkgPanel.appendChild(bgImg);
-
-    let newKartPart;
-
-    switch(itemTypeId){
-        case 0:
-            let newDriver = document.createElement('img');
-            newDriver.className = 'newDriver';
-            newDriver.src = `https://halfhydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`;
-            newDriver.loading = "lazy";
-            //newDriver.src = `C:/Users/justi/Documents/GitHub/HalfHydra.github.io/MarioKartTourValues/Images/UpperBody/${values[itemId].nameInternal}UpperBody.png`
-            dkgPanel.appendChild(newDriver);
-            break;
-        case 1:
-            newKartPart = document.createElement('img');
-            newKartPart.className = 'newKartPart';
-            newKartPart.loading = "lazy";
-            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Machine/Machine_${itemId}_Large.png`;
-            dkgPanel.appendChild(newKartPart);
-            break;
-        case 2:
-            newKartPart = document.createElement('img');
-            newKartPart.className = 'newKartPart';
-            newKartPart.loading = "lazy";
-            newKartPart.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Wing/${values[itemId].nameInternal}_Large.png`;
-            dkgPanel.appendChild(newKartPart);
-            break;
-    }
-
-    let frameImg = document.createElement('img');
-    frameImg.src = `./Images/UI/Panel/frame${rarityId}_${itemTypeId}.png`;
-    frameImg.className = 'frameImg';
-    dkgPanel.appendChild(frameImg);
-
-    let pointsCount = document.createElement('div');
-    pointsCount.className = "pointsPanel";
-
-    let points = 0;
-    let level = 0;
-    switch (itemTypeId) {
-        case 0:
-            Object.keys(savedata.Drivers).forEach(t => {
-                if (savedata.Drivers[t].id == itemId) {
-                    points = savedata.Drivers[t].basepoints
-                    level = savedata.Drivers[t].level
-                }
-            })
-            break;
-        case 1:
-            Object.keys(savedata.Karts).forEach(t => {
-                if (savedata.Karts[t].id == itemId) {
-                    points = savedata.Karts[t].basepoints
-                    level = savedata.Karts[t].level
-                }
-            })
-            break;
-        case 2:
-            Object.keys(savedata.Gliders).forEach(t => {
-                if (savedata.Gliders[t].id == itemId) {
-                    points = savedata.Gliders[t].basepoints
-                    level = savedata.Gliders[t].level
-                }
-            })
-            break;
-    }
-
-    if (points == 0) {
-        dkgPanel.style.filter = "brightness(0.36)"
-    } else if(hideUI) {
-        //Do Nothing
-    } else {
-        var charoutput = [];
-        for (var i = 0; i < points.toLocaleString().length; i++) {
-            charoutput.push(points.toLocaleString().charAt(i));
-        }
-        charoutput.forEach((t, i) => {
-            var number = document.createElement('img');
-            number.className = `scoreNumber`;
-            if (t == ",") {
-                number.className = `scoreComma`;
-            }
-            if(scale != 1.0){
-                number.style.height = `${30 * scale}px`;
-                if (t == ",") {
-                    number.style.height = `${11 * scale}px`;
-                }
-            }
-            number.src = `./Images/UI/Number/${t}.png`
-            pointsCount.appendChild(number);
-        });
-        dkgPanel.appendChild(pointsCount);
-
-        let levelNum = document.createElement('img');
-        levelNum.src = `./Images/UI/LeftNum/${level}.png`;
-        levelNum.className = 'levelNum';
-        dkgPanel.appendChild(levelNum);
-
-        let lvImg = document.createElement('img');
-        lvImg.src = './Images/UI/LeftNum/lv.png';
-        lvImg.className = 'lvImg';
-        dkgPanel.appendChild(lvImg);
-
-        let itemImg = document.createElement('img');
-        itemImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/Items/${values[itemId].itemTypeId}.png`;
-        itemImg.className = 'itemImgPanel';
-        dkgPanel.appendChild(itemImg);
-
-        if(scale != 1.0){
-            pointsCount.style.bottom = `${8 * scale}px`;
-            pointsCount.style.right = `${6 * scale}px`;
-
-            lvImg.style.width = `${38 * scale}px`;
-            lvImg.style.right = `${31 * scale}px`;
-            lvImg.style.bottom = `${44 * scale}px`;
-
-            levelNum.style.width = `${36 * scale}px`;
-            levelNum.style.right = `${-2 * scale}px`;
-            levelNum.style.bottom = `${42 * scale}px`;
-
-            itemImg.style.width = `${41 * scale}px`;
-            itemImg.style.left = `${4 * scale}px`;
-            itemImg.style.bottom = `${9 * scale}px`;
-        }
-    }
-
-    return dkgPanel;
 }
 
 function generateSectionBar(text) {
