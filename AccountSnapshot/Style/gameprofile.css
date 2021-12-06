@@ -169,7 +169,7 @@
 
 .contentDiv {
     width: 100%;
-    height: calc(100vh - 190px);
+    /* height: calc(100vh - 190px); */
     overflow-y: scroll;
     scrollbar-width: thin;
     padding-top: 10px;
@@ -335,11 +335,11 @@
 
 .tabRecords {
     display: none;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
 }
 
 .tabProfile {
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
 }
 
 .pastTourStats {
