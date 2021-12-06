@@ -1,10 +1,11 @@
 .titleDiv {
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 0;
     height: 150px;
     border-bottom: 3px solid #FFF;
     padding-top: 20px;
+    z-index: 99;
 }
 
 .badgeImg {
@@ -169,7 +170,7 @@
 
 .contentDiv {
     width: 100%;
-    height: calc(100vh - 190px);
+    /* height: calc(100vh - 190px); */
     overflow-y: scroll;
     scrollbar-width: thin;
     padding-top: 10px;
@@ -190,7 +191,7 @@
 }
 
 .listHeaderDiv {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     height: 120px;
     border-bottom: 3px solid #FFF;
@@ -237,17 +238,18 @@
 .listDiv {
     width:673px;
     margin: 0px auto;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
     overflow-y: scroll;
     scrollbar-width: thin;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .backBtn {
     position: fixed;
-    top: 60px;
+    top: 6px;
     left: 50%;
     transform: translate(-375px, 0);
     z-index: 100;
@@ -261,7 +263,7 @@
 
 .ownedDiv{
     position: fixed;
-    top: 62px;
+    top: 8px;
     right: 50%;
     transform: translate(372px, 0);
     z-index: 100;
@@ -335,11 +337,11 @@
 
 .tabRecords {
     display: none;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
 }
 
 .tabProfile {
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
 }
 
 .pastTourStats {
