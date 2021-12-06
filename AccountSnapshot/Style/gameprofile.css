@@ -6,8 +6,8 @@
     border-bottom: 3px solid #FFF;
     padding-top: 20px;
     background-image: url(../Images/UI/Background/gradient.png);
-    /* background-size: contain;
-    background-attachment: fixed; */
+    background-size: contain;
+    background-attachment: fixed;
     z-index: 999;
 }
 
@@ -198,10 +198,10 @@
     top: 0;
     height: 120px;
     border-bottom: 3px solid #FFF;
-    background-image: url(../Images/UI/Background/gradient.png);
-    /* background-size: contain;
-    background-attachment: fixed; */
-    z-index: 999;
+    /* background-image: url(../Images/UI/Background/gradient.png);
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: 999; */
     padding-bottom: 10px;
 }
 
