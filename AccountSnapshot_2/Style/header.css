@@ -1,0 +1,24 @@
+.headerImg {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    object-fit: contain;
+}
+
+.headerDiv {
+    width: 450px;
+    height: 80px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerContainer {
+    position: relative;
+    width: 1030px;
+    margin: 0 auto;
+}

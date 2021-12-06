@@ -1,0 +1,488 @@
+.titleDiv {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 150px;
+    border-bottom: 3px solid #FFF;
+    padding-top: 20px;
+}
+
+.badgeImg {
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    cursor: pointer;
+    height: 150px;
+    object-fit: contain;
+}
+
+.profileText {
+    font-size: 26px;
+    font-family: tour;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    letter-spacing: .025em;
+    user-select: none;
+}
+
+.nameText {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 32px;
+    font-family: tour;
+    color: white;
+    width: auto;
+    margin: 0 auto;
+    border-bottom: 3px solid #FFF;
+    padding: 6px;
+    padding-bottom: 8px;
+    letter-spacing: .025em;
+}
+
+
+.textDiv {
+    width:100%;
+}
+
+.tierDiv {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 22px;
+    position: relative;
+}
+
+.tierImg {
+    width: 90px;
+}
+
+.tierNums{
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 12px;
+    text-align: center;
+    width: 60px;
+}
+
+.tierNum {
+    width: 30px;
+    display: inline-block;
+    margin-right: -3px;
+}
+
+.rankDiv {
+    display: inline-block;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.rankImg {
+    width: 90px;
+}
+
+.rankNums{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 3px;
+    text-align: center;
+    width: 84px;
+}
+
+.rankNum {
+    width: 26px;
+    height: 31px;
+    object-fit: contain;
+    object-position: right;
+    display: inline-block;
+    /* margin-right: -3px; */
+}
+
+.multiImg {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    transform: scale(1.3);
+    margin-right: 20px;
+}
+
+.ranksDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.tabGrid {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #FFF;
+    border-radius: 12px;
+    width: 666px;
+    margin: 0 auto;
+}
+
+.gridText {
+    width: 297px;
+    font-family: tour;
+    font-size: 28px;
+    color: white;
+    display: inline-block;
+    padding: 17px;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+}
+
+.tabDiv {
+    cursor: pointer;
+}
+
+.subheading {
+    color: #fff;
+    /* font-size: 12px; */
+    font-family: 'tour';
+    font-size: 1.8rem;
+    line-height: 0px;
+    border-left: 10px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 1px 12px;
+    margin: 20px 40px 12px;
+}
+
+.subheadingText {
+    margin: 24px auto;
+    user-select: none;
+}
+
+.favDiv {
+    width: 666px;
+    margin: 0 auto;
+}
+
+.contentDiv {
+    width: 100%;
+    height: calc(100vh - 190px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding-top: 10px;
+}
+
+.driverList {
+    font-family: 'tour';
+    color: white;
+    font-size: 26px;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 20px 36px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.36);
+    margin: 10px 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.listHeaderDiv {
+    position: sticky;
+    top: 0;
+    height: 120px;
+    border-bottom: 3px solid #FFF;
+}
+
+.listHeaderTxt {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 32px;
+    font-family: tour;
+    color: white;
+    width: auto;
+    margin-top: 60px;
+    letter-spacing: .025em;
+    user-select: none;
+}
+
+.badgeHeaderTxt {
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    font-family: tour;
+    color: white;
+    width: auto;
+    margin-top: 20px;
+    letter-spacing: .025em;
+    user-select: none;
+}
+
+.badgeCountTxt {
+    display: block;
+    position: relative;
+    font-size: 25px;
+    font-family: tour;
+    color: white;
+    width: auto;
+    margin-top: -9px;
+    letter-spacing: .025em;
+    user-select: none;
+}
+
+.listDiv {
+    width:673px;
+    margin: 0px auto;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.backBtn {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translate(-375px, 0);
+    z-index: 100;
+    width: 236px;
+}
+
+.listBtns {
+    margin: 0 auto;
+    width: 730px;
+}
+
+.ownedDiv{
+    position: fixed;
+    top: 62px;
+    right: 50%;
+    transform: translate(372px, 0);
+    z-index: 100;
+    width: 245px;
+    height: 58px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    align-items: center;
+}
+
+.ownedText {
+    display: inline-block;
+    font-family: 'tour';
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    margin: 16px;
+}
+
+.ownedInput {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.recordsDiv {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+.recordDiv {
+    width: 640px;
+    margin: 10px auto;
+}
+
+.leftSide {
+    display: inline-block;
+    width: 320px;
+    text-align: right;
+    font-family: 'tour';
+    color: #dedede;
+    font-size: 26px;
+    margin: 10px 0;
+    right: 10px;
+    position: relative;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+.rightSide {
+    display: inline-block;
+    width: 320px;
+    text-align: left;
+    font-family: 'tour';
+    color: white;
+    font-size: 28px;
+    margin: 10px 0;
+    /* letter-spacing: -0.05em; */
+    left: 10px;
+    position: relative;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+.badgeList {
+    width: 116px;
+    height: 116px;
+    padding: 8px;
+    object-fit: contain;
+}
+
+.tabRecords {
+    display: none;
+    height: calc(100vh - 150px);
+}
+
+.tabProfile {
+    height: calc(100vh - 150px);
+}
+
+.pastTourStats {
+    width: 360px;
+    margin: 20px auto;
+    display: block;
+}
+
+.pastTourText {
+    position: absolute;
+    margin-top: -63px;
+    margin-left: 254px;
+    font-size: 30px;
+    font-family: 'tour';
+    color: white;
+    user-select: none;
+}
+
+.acrDiv {
+    height: 60px;
+    display: inline-block;
+    border-bottom: 4px solid white;
+    margin: 28px auto;
+    cursor: pointer;
+}
+
+.acrImg {
+    display: inline-block;
+    width: 50px;
+    vertical-align: bottom;
+    margin: 0 10px;
+}
+
+.acrText {
+    display: inline-block;
+    font-family: 'tour';
+    font-size: 36px;
+    color: white;
+    margin: 4px auto;
+    user-select: none;
+}
+
+.acrCenter {
+    text-align: center;
+}
+
+.totalPoints {
+    text-align: center;
+}
+
+.scoreNumberC {
+    height: 64px;
+}
+
+.scoreCommaC {
+    height: 22px;
+}
+
+.scoreNumberT {
+    height: 48px;
+    width: 38px;
+    object-fit: contain;
+}
+
+.scoreCommaT {
+    height: 16.5px;
+}
+
+.scoreNumberTP {
+    height: 80px;
+}
+
+.scoreCommaTP {
+    height: 27.5px;
+}
+
+.cupDiv {
+    width: 700px;
+    margin: 0 auto;
+    border-bottom: 5px solid white;
+    padding-bottom: 24px;
+}
+
+.cupName {
+    font-family: 'tour';
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    user-select: none;
+}
+
+.cupDataDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursePoints {
+    width: 240px;
+    text-align: center;
+}
+
+.noRecord {
+    font-family: 'tour';
+    font-size: 28px;
+    color: lightgrey;
+    text-align: center;
+    margin: 32px auto;
+    user-select: none;
+}
+
+.advantageDKGPanel {
+    width: 140px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.advantageImg {
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey; */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }
