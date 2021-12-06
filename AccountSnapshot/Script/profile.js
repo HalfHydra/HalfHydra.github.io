@@ -410,6 +410,9 @@ function generateProfile(){
         let driverReceived = document.createElement('p');
         driverReceived.className = "lastUsed";
         driverReceived.innerHTML = `Last Used: ${new Date(neglect * 1000).toLocaleString()}`;
+        if(neglect == 0){
+            driverReceived.innerHTML = `Last Used: <br>Never!`;
+        }
         driverTextDiv.appendChild(driverReceived);
     })
 
