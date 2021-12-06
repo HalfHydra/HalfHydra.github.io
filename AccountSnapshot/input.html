@@ -75,7 +75,6 @@
         <!-- <h1>Hydra's Account Snapshot</h1> -->
         <img src="./Images/UI/Profile/Logo.png">
         <p>Select the .json file with your data</p>
-        <p>If you don't have one, join my Discord server to find out how to get one: <br> discord.gg/UeJZDXxzun</p>
         <input type="file" id="file">
         <img id="go" src="./Images/UI/Input/LetsGo.png" onclick="location.href = 'accountsnapshot.html'" class="notReady">
     </div>
@@ -89,7 +88,7 @@
             reader.readAsText(this.files[0]);
 
             document.getElementById('go').className = "ready";
-            //document.getElementById('Select').play();
+            document.getElementById('Select').play();
         });
     </script>
 </body>

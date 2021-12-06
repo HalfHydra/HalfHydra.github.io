@@ -8,9 +8,11 @@
 
 .badgeImg {
     display: inline-block;
-    width:150px;
+    width: 150px;
     position: absolute;
     cursor: pointer;
+    height: 150px;
+    object-fit: contain;
 }
 
 .profileText {
@@ -233,7 +235,7 @@
 
 .listDiv {
     width:673px;
-    margin: 10px auto;
+    margin: 0px auto;
     height: calc(100vh - 150px);
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -332,6 +334,11 @@
 
 .tabRecords {
     display: none;
+    height: calc(100vh - 150px);
+}
+
+.tabProfile {
+    height: calc(100vh - 150px);
 }
 
 .pastTourStats {

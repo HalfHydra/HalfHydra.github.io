@@ -681,7 +681,7 @@ function generateProfile(){
 
     let lastText = document.createElement('p');
     lastText.className = "landingpagetxt";
-    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server at discord.gg/UeJZDXxzun<br><br>One last surprise, tap this button here to access your profile in a form similar to the game! You can access your driver, kart, and glider list from there, as well as your tour records which have not been presented here!";
+    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server.<br><br>One last surprise, tap this button here to access your profile in a form similar to the game! You can access your driver, kart, glider, and badge list from there similar to the game, as well as your tour records which have not been presented here!";
     output.appendChild(lastText);
 
     let btnType1 = document.createElement('div');
