@@ -1,0 +1,406 @@
+{
+	"Important":[
+		{
+			"name": "Disable Analytics",
+			"type": "checkbox",
+			"functionName": "disableAnalytics",
+			"params": []
+		},
+		{
+			"name": "Disable Ranked Cup",
+			"type": "checkbox",
+			"functionName": "totalCupClearCount",
+			"params": []
+		},
+		{
+			"name": "Disable Team Rally",
+			"type": "checkbox",
+			"functionName": "disableTeamRally",
+			"params": []
+		}
+	],
+	"Hacks":[
+		{
+			"name": "Always Glider",
+			"type": "checkbox",
+			"functionName": "alwaysGlider",
+			"params": []
+		},
+		{
+			"name": "All Ramps Trigger Glider",
+			"type": "checkbox",
+			"functionName": "allRampsCauseGlide",
+			"params": []
+		},
+		{
+			"name": "Back-to-Back Frenzies",
+			"type": "checkbox",
+			"functionName": "backToBackFrenzy",
+			"params": []
+		},
+		{
+			"name": "Battle Mode Kart",
+			"type": "checkbox",
+			"functionName": "kartBattleMode",
+			"params": []
+		},
+		{
+			"name": "Change All Items Top Shelf Level",
+			"type": "input",
+			"functionName": "changeEverythingShelfLevel",
+			"width":3,
+			"params": ["Level"]
+		},
+		{
+			"name": "Change Dropped Coin Amount",
+			"type": "input",
+			"functionName": "avoidCoinDrop",
+			"width":3,
+			"params": ["Amount"]
+		},
+		{
+			"name": "Change Frenzy Probablity",
+			"type": "input",
+			"functionName": "changeFrenzyProbability",
+			"width":3,
+			"params": ["Chance"]
+		},
+		{
+			"name": "Change Gravity",
+			"type": "input",
+			"functionName": "changeGravity",
+			"width":3,
+			"params": ["Value"]
+		},
+		{
+			"name": "Constant Lightning",
+			"type": "checkbox",
+			"functionName": "constantLightning",
+			"params": []
+		},
+		{
+			"name": "Cycle Frenzy",
+			"type": "input",
+			"functionName": "cycleFrenzyFull",
+			"width":3,
+			"params": ["Start Index"]
+		},
+		{
+			"name": "Cycle Items",
+			"type": "input",
+			"functionName": "cycleItemsFull",
+			"width":3,
+			"params": ["Mode", "Start Index"]
+		},
+		{
+			"name": "Disable Driver Rendering",
+			"type": "checkbox",
+			"functionName": "disableDriverRender",
+			"params": []
+		},
+		{
+			"name": "Disable Error Popup",
+			"type": "checkbox",
+			"functionName": "disableErrorPopup",
+			"params": []
+		},
+		{
+			"name": "Disable Respawn Check",
+			"type": "checkbox",
+			"functionName": "displayTimer",
+			"params": []
+		},
+		{
+			"name": "End Race Immediately",
+			"type": "checkbox",
+			"functionName": "endChallengeQuickly",
+			"params": []
+		},
+		{
+			"name": "Enhanced Glide",
+			"type": "input",
+			"functionName": "enhancedGlide",
+			"width":3,
+			"params": ["Level"]
+		},
+		{
+			"name": "Exploration",
+			"type": "checkbox",
+			"functionName": "ExplorationHelper",
+			"params": []
+		},
+		{
+			"name": "Fast Item Roulette",
+			"type": "checkbox",
+			"functionName": "quickItemSlots",
+			"params": []
+		},
+		{
+			"name": "First Person Camera",
+			"type": "checkbox",
+			"functionName": "firstPersonCamera",
+			"params": []
+		},
+		{
+			"name": "Freeze CPUs",
+			"type": "checkbox",
+			"functionName": "freezeCPU",
+			"params": []
+		},
+		{
+			"name": "Ghost Mode",
+			"type": "input",
+			"functionName": "teresa",
+			"width":3,
+			"params": ["Visual Effect"]
+		},
+		{
+			"name": "Item Boxes Give One Item Per Box",
+			"type": "checkbox",
+			"functionName": "boxesGiveOneItem",
+			"params": []
+		},
+		{
+			"name": "Invisible CPUs",
+			"type": "checkbox",
+			"functionName": "invisibleCPU",
+			"params": []
+		},
+		{
+			"name": "Kart Balloons",
+			"type": "checkbox",
+			"functionName": "enableKartBalloons",
+			"params": []
+		},
+		{
+			"name": "Kart Speed",
+			"type": "input",
+			"functionName": "speedUp",
+			"width":3,
+			"params": ["Speed Multiplier"]
+		},
+		{
+			"name": "Manual Driving",
+			"type": "checkbox",
+			"functionName": "manualDrive",
+			"params": []
+		},
+		{
+			"name": "Manually Use Coins",
+			"type": "checkbox",
+			"functionName": "manualCoinUse",
+			"params": []
+		},
+		{
+			"name": "Maximum Frenzy Limit",
+			"type": "input",
+			"functionName": "maxFeverCount",
+			"width":3,
+			"params": ["Count"]
+		},
+		{
+			"name": "No Item Mode",
+			"type": "checkbox",
+			"functionName": "noItems",
+			"params": []
+		},
+		{
+			"name": "Thunder To Star",
+			"type": "checkbox",
+			"functionName": "thunderToStar",
+			"params": []
+		},
+		{
+			"name": "Unlock 200cc",
+			"type": "checkbox",
+			"functionName": "unlock200CC",
+			"params": []
+		},
+		{
+			"name": "Unused Lenses",
+			"type": "checkbox",
+			"functionName": "unusedLenses",
+			"params": []
+		},
+		{
+			"name": "Zoom Out Camera",
+			"type": "input",
+			"functionName": "zoomOutCamera",
+			"width": 3,
+			"params": ["Zoom"]
+		}
+	],
+	"Inventory":[
+		{
+			"name": "Change Amount",
+			"type": "input",
+			"functionName": "changeAmount",
+			"width":3,
+			"params": ["Amount"]
+		},
+		{
+			"name": "Change Cost",
+			"type": "input",
+			"functionName": "changeCost",
+			"width":3,
+			"params": ["Cost"]
+		},
+		{
+			"name": "Change Item ID",
+			"type": "input",
+			"functionName": "changeItemId",
+			"width":3,
+			"params": ["ID"]
+		},
+		{
+			"name": "Enable Free Pipes",
+			"type": "checkbox",
+			"functionName": "enableFreePipes",
+			"params": []
+		},
+		{
+			"name": "Change Free Pipes",
+			"type": "input",
+			"functionName": "changeFreePipes",
+			"width":15,
+			"params": ["Pipe ID"]
+		},
+		{
+			"name": "Give All Items in the Game",
+			"type": "checkbox",
+			"functionName": "giveItems",
+			"params": []
+		},
+		{
+			"name": "Complete All Challenge Cards",
+			"type": "checkbox",
+			"functionName": "completeChallenges",
+			"params": []
+		},
+		{
+			"name": "Reveal Hidden Premium Challenges",
+			"type": "checkbox",
+			"functionName": "hiddenPremiumSheets",
+			"params": []
+		}
+	],
+	"Course":[
+		{
+			"name": "Change Map Object Size",
+			"type": "input",
+			"functionName": "mapObjectsSize",
+			"width":3,
+			"params": ["Scale"]
+		},
+		{
+			"name": "Change Map Object Speed",
+			"type": "input",
+			"functionName": "mapObjectsSpeed",
+			"width":3,
+			"params": ["Speed"]
+		},
+		{
+			"name": "Random Course",
+			"type": "checkbox",
+			"functionName": "courseRandomizer",
+			"params": []
+		},
+		{
+			"name": "Tour Cup Course Swap",
+			"type": "input",
+			"functionName": "tourCupCourseSwap",
+			"width":25,
+			"params": ["Course"]
+		}
+	],
+	"UI":[
+		{
+			"name": "Disable Coin Count",
+			"type": "checkbox",
+			"functionName": "disableCoinCountUI",
+			"params": []
+		},
+		{
+			"name": "Disable Item Slots",
+			"type": "checkbox",
+			"functionName": "disableItemSlotsUI",
+			"params": []
+		},
+		{
+			"name": "Disable Item Ticket Button",
+			"type": "checkbox",
+			"functionName": "disableItemTicketUI",
+			"params": []
+		},
+		{
+			"name": "Disable Lap Counter",
+			"type": "checkbox",
+			"functionName": "disableLapCountUI",
+			"params": []
+		},
+		{
+			"name": "Disable Minimap",
+			"type": "checkbox",
+			"functionName": "disableMapUI",
+			"params": []
+		},
+		{
+			"name": "Disable Race Rank",
+			"type": "checkbox",
+			"functionName": "displayPlacementUI",
+			"params": []
+		},
+		{
+			"name": "Disable Steer Button",
+			"type": "checkbox",
+			"functionName": "disableSteerButton",
+			"params": []
+		},
+		{
+			"name": "Display Timer",
+			"type": "checkbox",
+			"functionName": "displayTimer",
+			"params": []
+		}
+	],
+	"Fun":[
+		{
+			"name": "Drivers Throw Animation Persist",
+			"type": "checkbox",
+			"functionName": "makeDriversHoldOutLeftArm",
+			"params": []
+		}
+	],
+	"Information":[
+		{
+			"name": "Dump Challenge JSON",
+			"type": "checkbox",
+			"functionName": "dumpEventJSON",
+			"params": []
+		},
+		{
+			"name": "Log Analytics",
+			"type": "checkbox",
+			"functionName": "logAnalytics",
+			"params": []
+		},
+		{
+			"name": "Output NABE Paths",
+			"type": "checkbox",
+			"functionName": "outputNabePaths",
+			"params": []
+		},
+		{
+			"name": "Output Pipe Weights at Launch",
+			"type": "checkbox",
+			"functionName": "outputNabePaths",
+			"params": []
+		},
+		{
+			"name": "Print Pipe Details Information",
+			"type": "checkbox",
+			"functionName": "printInjectionString",
+			"params": []
+		}
+	]
+}

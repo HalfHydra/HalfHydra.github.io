@@ -68,9 +68,9 @@
 </head>
 
 <body>
-    <audio id="Select">
+    <!-- <audio id="Select">
         <source src="./Sound/MK8Select.wav">
-      </audio>
+      </audio> -->
     <div>
         <!-- <h1>Hydra's Account Snapshot</h1> -->
         <img src="./Images/UI/Profile/Logo.png">
@@ -86,9 +86,8 @@
                 localStorage.setItem("MKTS_Data", data)
             }
             reader.readAsText(this.files[0]);
-
             document.getElementById('go').className = "ready";
-            document.getElementById('Select').play();
+            //document.getElementById('Select').play();
         });
     </script>
 </body>

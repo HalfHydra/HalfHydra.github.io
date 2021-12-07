@@ -10,9 +10,8 @@
          @font-face {font-family: tour;src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');}
       </style>
       <link rel="preload" href="./Images/UI/Loading.png" as="image"> 
-      <div> 
    </head>
-   <body class="main" style="height: 100%;overflow: overlay;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
+   <body class="main" style="height: 100%;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
       <img id="loadingimg" src="./Images/UI/Loading.png" style="width:96px;height:96px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
       <div id="content" style="/*background-image: url('./Images/UI/Profile/Mock.png');background-size: cover;*/margin: 0px auto;width: auto;max-width: 750px;height: calc(100vh - 140px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;border: 5px solid #b5ceff;*/">
          <div id="nodata" style="display:none">
@@ -33,15 +32,11 @@
          </div>
       </div>
 
-      <script type="text/javascript" src="./Script/global.js"></script>
-      <script type="text/javascript" src="./Script/stats.js"></script>
-      <script type="text/javascript" src="./Script/gameprofile.js"></script>
-      <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-      </script>
-      <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-      </script>
+      <script src="./Script/global.js"></script>
+      <script src="./Script/stats.js"></script>
+      <script src="./Script/gameprofile.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
       <script>
          function zoomOutMobile() {
             var viewport = document.querySelector('meta[name="viewport"]');
@@ -94,6 +89,10 @@
         getSeasonKey();
         readTextFile(`https://halfhydra.github.io/MarioKartTourValues/Data/SeasonCup/${seasonKey}.json`, 4);
         generateProfile();
+        generateGameDriverList();
+        generateGameKartList();
+        generateGameGliderList();
+        generateGameBadgeList();
       } else {
          document.getElementById('nodata').style.display = "block";
       }

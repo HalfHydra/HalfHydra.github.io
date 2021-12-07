@@ -390,31 +390,31 @@ function openList(list){
     document.getElementById('stats').style.display = "none";
     switch(list){
         case 0:
-            if(!createdLists[0]){
-                generateDriverList();
-                createdLists[0] = 1;
-            }
+            // if(!createdLists[0]){
+            //     generateGameDriverList();
+            //     createdLists[0] = 1;
+            // }
             document.getElementById('drivers').style.display = "block";
             break;
         case 1:
-            if(!createdLists[1]){
-                generateKartList();
-                createdLists[1] = 1;
-            }
+            // if(!createdLists[1]){
+            //     generateGameKartList();
+            //     createdLists[1] = 1;
+            // }
             document.getElementById('karts').style.display = "block";
             break;
         case 2:
-            if(!createdLists[2]){
-                generateGliderList();
-                createdLists[2] = 1;
-            }
+            // if(!createdLists[2]){
+            //     generateGameGliderList();
+            //     createdLists[2] = 1;
+            // }
             document.getElementById('gliders').style.display = "block";
             break;
         case 3:
-            if(!createdLists[3]){
-                generateBadgeList();
-                createdLists[3] = 1;
-            }
+            // if(!createdLists[3]){
+            //     generateGameBadgeList();
+            //     createdLists[3] = 1;
+            // }
             document.getElementById('badges').style.display = "block";
             break;
     }
@@ -425,7 +425,7 @@ function returnToMain(current){
     document.getElementById('stats').style.display = "block";
 }
 
-function generateDriverList(){
+function generateGameDriverList(){
     let output = document.getElementById('drivers')
 
     let titleDiv = document.createElement('div');
@@ -484,7 +484,7 @@ function generateDriverList(){
     })
 }
 
-function generateKartList(){
+function generateGameKartList(){
     let output = document.getElementById('karts')
 
     let titleDiv = document.createElement('div');
@@ -546,7 +546,7 @@ function generateKartList(){
     })
 }
 
-function generateGliderList(){
+function generateGameGliderList(){
     let output = document.getElementById('gliders')
 
     let titleDiv = document.createElement('div');
@@ -605,7 +605,7 @@ function generateGliderList(){
     })
 }
 
-function generateBadgeList(){
+function generateGameBadgeList(){
     let output = document.getElementById('badges')
 
     let titleDiv = document.createElement('div');

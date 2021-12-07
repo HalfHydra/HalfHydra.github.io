@@ -16,9 +16,8 @@
       <link rel="preload" href="./Images/UI/Profile/Logo.png" as="image">
       <link rel="preload" href="./Images/UI/Profile/NameCard.png" as="image">
       <link rel="preload" href="./Images/UI/Profile/Header.png" as="image">
-      <div> 
    </head>
-   <body class="main" style="overflow-y: scroll;height: 100%;overflow: overlay;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
+   <body class="main" style="overflow-y: scroll;height: 100%;background-image: url('./Images/UI/Background/gradient.png');background-size: contain;background-attachment: fixed;" id="bigbody">
       <img id="loadingimg" src="./Images/UI/Loading.png" style="width:96px;height:96px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
       <div id="content" style="margin: 0px auto;width: auto;max-width: 1200px;height:auto;min-height: calc(100vh - 100px);/*height: calc(100vh - 100px);overflow-y: auto;overflow-x: auto;*/right: 0;left: 0;/*background-image: linear-gradient(to bottom, rgba(168, 207, 255, 0.9) 0%, rgba(3, 65, 202, 0.9) 100%), url('./Images/UI/fixedmktbg.png'); background-size: 394px auto;border: 5px solid #b5ceff;*/">
          <div id="nodata" style="display:none">
@@ -39,20 +38,16 @@
          </div>
       </div>
 
-      <script type="text/javascript" src="./Script/global.js"></script>
-      <script type="text/javascript" src="./Script/profile.js"></script>
-      <script type="text/javascript" src="./Script/driverlist.js"></script>
-      <script type="text/javascript" src="./Script/kartlist.js"></script>
-      <script type="text/javascript" src="./Script/gliderlist.js"></script>
-      <script type="text/javascript" src="./Script/badgelist.js"></script>
-      <script type="text/javascript" src="./Script/itemlist.js"></script>
-      <script type="text/javascript" src="./Script/stats.js"></script>
-      <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-      </script>
-      <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-      </script>
+      <script src="./Script/global.js"></script>
+      <script src="./Script/profile.js"></script>
+      <script src="./Script/driverlist.js"></script>
+      <script src="./Script/kartlist.js"></script>
+      <script src="./Script/gliderlist.js"></script>
+      <script src="./Script/badgelist.js"></script>
+      <script src="./Script/itemlist.js"></script>
+      <script src="./Script/stats.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
       <script>
          function zoomOutMobile() {
             var viewport = document.querySelector('meta[name="viewport"]');

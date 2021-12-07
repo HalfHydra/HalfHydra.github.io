@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<body background="./InfoPattern.png">
+    </style>
+    <div>
+        <div style="margin-top: 15px">
+            <p id="p1" class="paragraph1"></p>
+            <p id="p2" class="paragraph1">
+            </p>
+        </div>
+        <style type="text/css">
+            textarea {
+                width: 410px;
+                height: 250px;
+                font-size: 12px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+
+            p {
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                user-select: none;
+            }
+
+            .folder {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                cursor: pointer;
+            }
+
+            .hackDiv {
+                width: auto;
+                padding: 16px;
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin-top: 5px;
+            }
+
+            .hackDiv_name {
+                display: inline-block;
+                font-size: 18px;
+                margin: 0;
+                vertical-align: middle;
+            }
+
+            .hackDiv_params {
+                display: inline-block;
+                font-size: 16px;
+                margin: 0;
+                margin-left: 10px;
+                vertical-align: middle;
+                color:rgb(56, 119, 255)
+            }
+
+            .checkbox {
+                vertical-align: middle;
+                width: 21px;
+                height: 21px;
+            }
+
+            .input {
+                vertical-align: middle;
+                margin-left: 8px;
+                text-align: center;
+            }
+
+            .hiddenDiv {
+                display: none
+            }
+        </style>
+        </select>
+
+        <p> MKT Hacks: </p>
+    </div>
+    <script>
+        let hacks = {}
+        let outputJSON = {};
+        let output = document.getElementsByTagName("body")[0];
+        function generateHacks() {
+            Object.keys(hacks).forEach(t => {
+                let folder = document.createElement('p')
+                folder.innerHTML = `+ ${t}`;
+                folder.id = `${t}_header`
+                folder.className = "folder"
+                folder.addEventListener('click', function () {
+                    toggleDiv(t);
+                })
+                output.appendChild(folder);
+
+                let hacksDiv = document.createElement('div')
+                hacksDiv.id = t;
+                hacksDiv.style.display = "none";
+                //hackDiv.className = "hiddenDiv"
+                output.appendChild(hacksDiv)
+
+                hacks[t].forEach(a => {
+                    let hackDiv = document.createElement('div');
+                    hackDiv.className = "hackDiv"
+                    hacksDiv.appendChild(hackDiv);
+
+                    let name = document.createElement('p');
+                    name.className = "hackDiv_name";
+                    name.innerHTML = a.name;
+                    hackDiv.appendChild(name);
+
+                    switch (a.type) {
+                        case "checkbox":
+                            let box = document.createElement('input');
+                            box.type = "checkbox";
+                            box.className = "checkbox";
+                            box.id = `${a.functionName}_box`;
+                            box.oninput = function () { changeProperty(a.functionName, document.getElementById(`${a.functionName}_box`).checked) };
+                            hackDiv.appendChild(box);
+                            break;
+                        case "input":
+                            a.params.forEach((t, i) => {
+                                let box = document.createElement('input');
+                                box.type = "text";
+                                box.className = "input";
+                                box.id = `${a.functionName}_param_${i}`;
+                                if (a.hasOwnProperty("width")) {
+                                    box.size = a.width;
+                                }
+                                box.oninput = function () { changePropertyInput(a.functionName, document.getElementById(`${a.functionName}_param_${i}`).value, i) };
+                                hackDiv.appendChild(box);
+                            })
+                            let params = document.createElement('p');
+                            params.className = "hackDiv_params";
+                            params.innerHTML = a.params.join(', ');
+                            hackDiv.appendChild(params);
+                            break;
+                    }
+                    let p = document.createElement('div');
+                    hacksDiv.appendChild(p);
+                })
+            })
+
+            let folder = document.createElement('p')
+            folder.innerHTML = `+ Output`;
+            folder.id = `Output_header`
+            folder.className = "folder"
+            folder.addEventListener('click', function () {
+                toggleDiv("Output");
+            })
+            output.appendChild(folder);
+
+            let hacksDiv = document.createElement('div')
+            hacksDiv.id = "Output";
+            hacksDiv.style.display = "none";
+            //hackDiv.className = "hiddenDiv"
+            output.appendChild(hacksDiv)
+
+            let textBox = document.createElement('textarea');
+            textBox.style.width = "300px";
+            textBox.style.height = "500px";
+            textBox.id = `output_textarea`;
+            hacksDiv.appendChild(textBox);
+        }
+        function toggleDiv(type) {
+            (document.getElementById(`${type}`).style.display == "none") ? document.getElementById(`${type}`).style.display = "block" : document.getElementById(`${type}`).style.display = "none";
+            (document.getElementById(`${type}_header`).innerHTML.charAt(0) == "+") ? document.getElementById(`${type}_header`).innerHTML = `- ${type}` : document.getElementById(`${type}_header`).innerHTML = `+ ${type}`;
+        }
+
+        function changeProperty(name, checked) {
+            outputJSON[`${name}`] = checked;
+            compileHacks();
+        }
+
+        function changePropertyInput(name, value, index) {
+            if (!outputJSON.hasOwnProperty(`${name}`)) {
+                outputJSON[`${name}`] = [];
+            }
+            if (isNaN(parseInt(value))) {
+                value = `"${value}"`
+            } else if (value == '1') {
+                value = 1;
+            }
+            outputJSON[`${name}`][index] = value;
+            compileHacks();
+        }
+
+        function compileHacks() {
+            let output = document.getElementById('output_textarea');
+            output.innerHTML = "";
+            Object.keys(outputJSON).forEach(t => {
+
+                if (Array.isArray(outputJSON[t])) {
+                    output.innerHTML += `${t}(${outputJSON[t]})\n`;
+                } else if (outputJSON[t] == true) {
+                    output.innerHTML += `${t}()\n`;
+                }
+
+            })
+        }
+
+        function readTextFile(file, unit) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4) {
+                    if (rawFile.status === 200 || rawFile.status == 0) {
+                        var allText = rawFile.responseText;
+                        switch (unit) {
+                            case 1:
+                                hacks = JSON.parse(allText);
+                                break;
+                        }
+                    }
+                }
+            }
+            rawFile.send(null);
+        }
+        readTextFile("./MKTHacks.json", 1);
+        generateHacks();
+    </script>
+    <style>
+        p {
+            color: Blue;
+        }
+
+        .paragraph1 {
+            font-size: 12px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 2px;
+        }
+
+        .paragraph2 {
+            font-size: 13px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</body>
+
+</html>
