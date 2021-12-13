@@ -1,11 +1,15 @@
 .titleDiv {
-    /* position: -webkit-sticky;
-    position: sticky; */
     top: 0;
     height: 150px;
     border-bottom: 3px solid #FFF;
     padding-top: 20px;
     z-index: 99;
+    background-image: url(../Images/UI/Background/gradient.png),url(../Images/UI/Background/gradient2.png);
+    background-repeat: repeat-x, repeat;
+    background-position: left top, center;
+    background-size: 7px 814px, 7px;
+    background-attachment: fixed;
+    position: sticky;
 }
 
 .badgeImg {
@@ -195,6 +199,14 @@
     top: 0;
     height: 120px;
     border-bottom: 3px solid #FFF;
+    background-image: url(../Images/UI/Background/gradient.png),url(../Images/UI/Background/gradient2.png);
+    background-repeat: repeat-x, repeat;
+    background-position: left top, center;
+    background-size: 7px 814px, 7px;
+    background-attachment: fixed;
+    position: sticky;
+    z-index: 99;
+    margin-top: -10px;
 }
 
 .listHeaderTxt {

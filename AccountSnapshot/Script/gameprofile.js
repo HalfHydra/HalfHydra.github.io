@@ -390,31 +390,31 @@ function openList(list){
     document.getElementById('stats').style.display = "none";
     switch(list){
         case 0:
-            // if(!createdLists[0]){
-            //     generateGameDriverList();
-            //     createdLists[0] = 1;
-            // }
+            if(!createdLists[0]){
+                generateGameDriverList();
+                createdLists[0] = 1;
+            }
             document.getElementById('drivers').style.display = "block";
             break;
         case 1:
-            // if(!createdLists[1]){
-            //     generateGameKartList();
-            //     createdLists[1] = 1;
-            // }
+            if(!createdLists[1]){
+                generateGameKartList();
+                createdLists[1] = 1;
+            }
             document.getElementById('karts').style.display = "block";
             break;
         case 2:
-            // if(!createdLists[2]){
-            //     generateGameGliderList();
-            //     createdLists[2] = 1;
-            // }
+            if(!createdLists[2]){
+                generateGameGliderList();
+                createdLists[2] = 1;
+            }
             document.getElementById('gliders').style.display = "block";
             break;
         case 3:
-            // if(!createdLists[3]){
-            //     generateGameBadgeList();
-            //     createdLists[3] = 1;
-            // }
+            if(!createdLists[3]){
+                generateGameBadgeList();
+                createdLists[3] = 1;
+            }
             document.getElementById('badges').style.display = "block";
             break;
     }
@@ -479,7 +479,50 @@ function generateGameDriverList(){
         return 0;
     });
 
+    let itemDivider = document.createElement('div');
+    itemDivider.id = "item50";
+    listDiv.appendChild(itemDivider);
+
+    let moreBtn = document.createElement('img');
+    moreBtn.src = "./Images/UI/Header/Back.png";
+    moreBtn.className = "moreBtn";
+    moreBtn.addEventListener('click', function () {
+        document.getElementById('item100').style.display = "block";
+    });
+    //itemDivider.appendChild(moreBtn);
+
+    let itemDivider2 = document.createElement('div');
+    itemDivider2.id = "item100";
+    itemDivider2.style.display = "none";
+    listDiv.appendChild(itemDivider2);
+
+    let moreBtn2 = document.createElement('img');
+    moreBtn2.src = "./Images/UI/Header/Back.png";
+    moreBtn2.className = "moreBtn";
+    moreBtn2.addEventListener('click', function () {
+        document.getElementById('item150').style.display = "block";
+    });
+
+    let itemDivider3 = document.createElement('div');
+    itemDivider3.id = "item150";
+    itemDivider3.style.display = "none";
+    listDiv.appendChild(itemDivider3);
+
     driverTableSort.forEach((t,i)=>{
+        switch(i){
+            case 0:
+                listDiv = document.getElementById('item50');
+                break;
+            case 48:
+                listDiv.appendChild(moreBtn);
+                listDiv = document.getElementById('item100');
+                break;
+            case 96:
+                listDiv.appendChild(moreBtn2);
+                listDiv = document.getElementById('item150');
+                break;
+        }
+
         listDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
 }
