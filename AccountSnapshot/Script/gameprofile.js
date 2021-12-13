@@ -509,10 +509,10 @@ function generateGameDriverList(){
     // listDiv.appendChild(itemDivider3);
 
     let currentDiv;
-    let pageCount = 24;
+    let pageCount = 20;
 
     let itemDividerFirst = document.createElement('div');
-    itemDividerFirst.id = `item0`;
+    itemDividerFirst.id = `itemD0`;
     //itemDividerFirst.className = "itemDividerClassFirst";
     listDiv.appendChild(itemDividerFirst);
     currentDiv = itemDividerFirst;
@@ -525,15 +525,17 @@ function generateGameDriverList(){
     rightBtn.src = "./Images/UI/Lists/GoRight.png";
     rightBtn.className = "rightBtn";
     rightBtn.addEventListener('click', function () {
-        document.getElementById(`item${pageCount}`).style.display = "block";
-        document.getElementById(`item0`).style.display = "none";
+        document.getElementById(`itemD${pageCount}`).style.display = "block";
+        document.getElementById(`itemD0`).style.display = "none";
     });
     navDivFirst.appendChild(rightBtn)
+
+    let lastRight;
 
     driverTableSort.forEach((t,i)=>{
         if(i % pageCount == 0 && i != 0) {
             itemDivider = document.createElement('div');
-            itemDivider.id = `item${i}`;
+            itemDivider.id = `itemD${i}`;
             itemDivider.style.display = "none";
             //itemDivider.className = "itemDividerClass";
             listDiv.appendChild(itemDivider);
@@ -547,8 +549,8 @@ function generateGameDriverList(){
             leftBtn.src = "./Images/UI/Lists/GoLeft.png";
             leftBtn.className = "leftBtn";
             leftBtn.addEventListener('click', function () {
-                document.getElementById(`item${i-pageCount}`).style.display = "block";
-                document.getElementById(`item${i}`).style.display = "none";
+                document.getElementById(`itemD${i-pageCount}`).style.display = "block";
+                document.getElementById(`itemD${i}`).style.display = "none";
             });
             navDiv.appendChild(leftBtn)
 
@@ -556,13 +558,15 @@ function generateGameDriverList(){
             rightBtn.src = "./Images/UI/Lists/GoRight.png";
             rightBtn.className = "rightBtn";
             rightBtn.addEventListener('click', function () {
-                document.getElementById(`item${i+pageCount}`).style.display = "block";
-                document.getElementById(`item${i}`).style.display = "none";
+                document.getElementById(`itemD${i+pageCount}`).style.display = "block";
+                document.getElementById(`itemD${i}`).style.display = "none";
             });
             navDiv.appendChild(rightBtn)
+            lastRight = rightBtn;
         }
         currentDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
+    lastRight.style.display = "none";
 }
 
 function generateGameKartList(){
@@ -619,12 +623,68 @@ function generateGameKartList(){
         return 0;
     });
 
+    let currentDiv;
+    let pageCount = 20;
+
+    let itemDividerFirst = document.createElement('div');
+    itemDividerFirst.id = `itemM0`;
+    //itemDividerFirst.className = "itemDividerClassFirst";
+    listDiv.appendChild(itemDividerFirst);
+    currentDiv = itemDividerFirst;
+
+    let navDivFirst = document.createElement('div');
+    navDivFirst.className = "itemDividerClassFirst";
+    currentDiv.appendChild(navDivFirst);
+
+    let rightBtn = document.createElement('img');
+    rightBtn.src = "./Images/UI/Lists/GoRight.png";
+    rightBtn.className = "rightBtn";
+    rightBtn.addEventListener('click', function () {
+        document.getElementById(`itemM${pageCount}`).style.display = "block";
+        document.getElementById(`itemM0`).style.display = "none";
+    });
+    navDivFirst.appendChild(rightBtn)
+
+    let lastRight;
+
     machineTableSort.forEach((t,i)=>{
-        listDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
+        if(i % pageCount == 0 && i != 0) {
+            itemDivider = document.createElement('div');
+            itemDivider.id = `itemM${i}`;
+            itemDivider.style.display = "none";
+            //itemDivider.className = "itemDividerClass";
+            listDiv.appendChild(itemDivider);
+            currentDiv = itemDivider;
+        
+            let navDiv = document.createElement('div');
+            navDiv.className = "itemDividerClass";
+            currentDiv.appendChild(navDiv);
+        
+            let leftBtn = document.createElement('img');
+            leftBtn.src = "./Images/UI/Lists/GoLeft.png";
+            leftBtn.className = "leftBtn";
+            leftBtn.addEventListener('click', function () {
+                document.getElementById(`itemM${i-pageCount}`).style.display = "block";
+                document.getElementById(`itemM${i}`).style.display = "none";
+            });
+            navDiv.appendChild(leftBtn)
+        
+            let rightBtn = document.createElement('img');
+            rightBtn.src = "./Images/UI/Lists/GoRight.png";
+            rightBtn.className = "rightBtn";
+            rightBtn.addEventListener('click', function () {
+                document.getElementById(`itemM${i+pageCount}`).style.display = "block";
+                document.getElementById(`itemM${i}`).style.display = "none";
+            });
+            navDiv.appendChild(rightBtn)
+            lastRight = rightBtn;
+        }
+        currentDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
         // if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
         //     listDiv.appendChild(generateDKGPanel(itemId, 1.0, true, false));
         // }
     })
+    lastRight.style.display = "none";
 }
 
 function generateGameGliderList(){
@@ -681,9 +741,65 @@ function generateGameGliderList(){
         return 0;
     });
 
+    let currentDiv;
+    let pageCount = 20;
+
+    let itemDividerFirst = document.createElement('div');
+    itemDividerFirst.id = `itemG0`;
+    //itemDividerFirst.className = "itemDividerClassFirst";
+    listDiv.appendChild(itemDividerFirst);
+    currentDiv = itemDividerFirst;
+
+    let navDivFirst = document.createElement('div');
+    navDivFirst.className = "itemDividerClassFirst";
+    currentDiv.appendChild(navDivFirst);
+
+    let rightBtn = document.createElement('img');
+    rightBtn.src = "./Images/UI/Lists/GoRight.png";
+    rightBtn.className = "rightBtn";
+    rightBtn.addEventListener('click', function () {
+        document.getElementById(`itemG${pageCount}`).style.display = "block";
+        document.getElementById(`itemG0`).style.display = "none";
+    });
+    navDivFirst.appendChild(rightBtn)
+
+    let lastRight;
+
     wingTableSort.forEach((t,i)=>{
-        listDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
+        if(i % pageCount == 0 && i != 0) {
+            itemDivider = document.createElement('div');
+            itemDivider.id = `itemG${i}`;
+            itemDivider.style.display = "none";
+            //itemDivider.className = "itemDividerClass";
+            listDiv.appendChild(itemDivider);
+            currentDiv = itemDivider;
+        
+            let navDiv = document.createElement('div');
+            navDiv.className = "itemDividerClass";
+            currentDiv.appendChild(navDiv);
+        
+            let leftBtn = document.createElement('img');
+            leftBtn.src = "./Images/UI/Lists/GoLeft.png";
+            leftBtn.className = "leftBtn";
+            leftBtn.addEventListener('click', function () {
+                document.getElementById(`itemG${i-pageCount}`).style.display = "block";
+                document.getElementById(`itemG${i}`).style.display = "none";
+            });
+            navDiv.appendChild(leftBtn)
+        
+            let rightBtn = document.createElement('img');
+            rightBtn.src = "./Images/UI/Lists/GoRight.png";
+            rightBtn.className = "rightBtn";
+            rightBtn.addEventListener('click', function () {
+                document.getElementById(`itemG${i+pageCount}`).style.display = "block";
+                document.getElementById(`itemG${i}`).style.display = "none";
+            });
+            navDiv.appendChild(rightBtn)
+            lastRight = rightBtn;
+        }
+        currentDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
+    lastRight.style.display = "none";
 }
 
 function generateGameBadgeList(){
