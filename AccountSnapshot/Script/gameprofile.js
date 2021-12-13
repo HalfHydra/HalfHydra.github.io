@@ -513,11 +513,11 @@ function generateGameDriverList(){
             case 0:
                 listDiv = document.getElementById('item50');
                 break;
-            case 48:
+            case 60:
                 listDiv.appendChild(moreBtn);
                 listDiv = document.getElementById('item100');
                 break;
-            case 96:
+            case 108:
                 listDiv.appendChild(moreBtn2);
                 listDiv = document.getElementById('item150');
                 break;
