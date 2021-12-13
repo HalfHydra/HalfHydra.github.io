@@ -479,51 +479,89 @@ function generateGameDriverList(){
         return 0;
     });
 
-    let itemDivider = document.createElement('div');
-    itemDivider.id = "item50";
-    listDiv.appendChild(itemDivider);
+    // let itemDivider = document.createElement('div');
+    // itemDivider.id = "item50";
+    // listDiv.appendChild(itemDivider);
 
-    let moreBtn = document.createElement('img');
-    moreBtn.src = "./Images/UI/Header/Back.png";
-    moreBtn.className = "moreBtn";
-    moreBtn.addEventListener('click', function () {
-        document.getElementById('item100').style.display = "block";
-    });
+    // let moreBtn = document.createElement('img');
+    // moreBtn.src = "./Images/UI/Header/Back.png";
+    // moreBtn.className = "moreBtn";
+    // moreBtn.addEventListener('click', function () {
+    //     document.getElementById('item100').style.display = "block";
+    // });
     //itemDivider.appendChild(moreBtn);
 
-    let itemDivider2 = document.createElement('div');
-    itemDivider2.id = "item100";
-    itemDivider2.style.display = "none";
-    listDiv.appendChild(itemDivider2);
+    // let itemDivider2 = document.createElement('div');
+    // itemDivider2.id = "item100";
+    // itemDivider2.style.display = "none";
+    // listDiv.appendChild(itemDivider2);
 
-    let moreBtn2 = document.createElement('img');
-    moreBtn2.src = "./Images/UI/Header/Back.png";
-    moreBtn2.className = "moreBtn";
-    moreBtn2.addEventListener('click', function () {
-        document.getElementById('item150').style.display = "block";
+    // let moreBtn2 = document.createElement('img');
+    // moreBtn2.src = "./Images/UI/Header/Back.png";
+    // moreBtn2.className = "moreBtn";
+    // moreBtn2.addEventListener('click', function () {
+    //     document.getElementById('item150').style.display = "block";
+    // });
+
+    // let itemDivider3 = document.createElement('div');
+    // itemDivider3.id = "item150";
+    // itemDivider3.style.display = "none";
+    // listDiv.appendChild(itemDivider3);
+
+    let currentDiv;
+    let pageCount = 36;
+
+    let itemDividerFirst = document.createElement('div');
+    itemDividerFirst.id = `item0`;
+    //itemDividerFirst.className = "itemDividerClassFirst";
+    listDiv.appendChild(itemDividerFirst);
+    currentDiv = itemDividerFirst;
+
+    let navDivFirst = document.createElement('div');
+    navDivFirst.className = "itemDividerClassFirst";
+    currentDiv.appendChild(navDivFirst);
+
+    let rightBtn = document.createElement('img');
+    rightBtn.src = "./Images/UI/Lists/GoRight.png";
+    rightBtn.className = "rightBtn";
+    rightBtn.addEventListener('click', function () {
+        document.getElementById(`item${pageCount}`).style.display = "block";
+        document.getElementById(`item0`).style.display = "none";
     });
-
-    let itemDivider3 = document.createElement('div');
-    itemDivider3.id = "item150";
-    itemDivider3.style.display = "none";
-    listDiv.appendChild(itemDivider3);
+    navDivFirst.appendChild(rightBtn)
 
     driverTableSort.forEach((t,i)=>{
-        switch(i){
-            case 0:
-                listDiv = document.getElementById('item50');
-                break;
-            case 60:
-                listDiv.appendChild(moreBtn);
-                listDiv = document.getElementById('item100');
-                break;
-            case 108:
-                listDiv.appendChild(moreBtn2);
-                listDiv = document.getElementById('item150');
-                break;
-        }
+        if(i % pageCount == 0 && i != 0) {
+            itemDivider = document.createElement('div');
+            itemDivider.id = `item${i}`;
+            itemDivider.style.display = "none";
+            //itemDivider.className = "itemDividerClass";
+            listDiv.appendChild(itemDivider);
+            currentDiv = itemDivider;
 
-        listDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
+            let navDiv = document.createElement('div');
+            navDiv.className = "itemDividerClass";
+            currentDiv.appendChild(navDiv);
+
+            let leftBtn = document.createElement('img');
+            leftBtn.src = "./Images/UI/Lists/GoLeft.png";
+            leftBtn.className = "leftBtn";
+            leftBtn.addEventListener('click', function () {
+                document.getElementById(`item${i-pageCount}`).style.display = "block";
+                document.getElementById(`item${i}`).style.display = "none";
+            });
+            navDiv.appendChild(leftBtn)
+
+            let rightBtn = document.createElement('img');
+            rightBtn.src = "./Images/UI/Lists/GoRight.png";
+            rightBtn.className = "rightBtn";
+            rightBtn.addEventListener('click', function () {
+                document.getElementById(`item${i+pageCount}`).style.display = "block";
+                document.getElementById(`item${i}`).style.display = "none";
+            });
+            navDiv.appendChild(rightBtn)
+        }
+        currentDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
 }
 

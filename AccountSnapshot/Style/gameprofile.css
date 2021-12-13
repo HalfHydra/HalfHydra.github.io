@@ -478,6 +478,24 @@
     position: relative;
 }
 
+.itemDividerClassFirst {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.itemDividerClass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftBtn {
+    width: 220px;
+}
+
+.rightBtn {
+    width: 220px;
+}
+
 /*SCROLLBAR*/
 /* width */
 ::-webkit-scrollbar {
