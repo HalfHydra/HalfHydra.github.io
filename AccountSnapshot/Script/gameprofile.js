@@ -509,7 +509,7 @@ function generateGameDriverList(){
     // listDiv.appendChild(itemDivider3);
 
     let currentDiv;
-    let pageCount = 36;
+    let pageCount = 24;
 
     let itemDividerFirst = document.createElement('div');
     itemDividerFirst.id = `item0`;
