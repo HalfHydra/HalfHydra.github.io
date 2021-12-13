@@ -20,15 +20,15 @@
          </div>
          <div id="stats" style="height: auto;width:750px;margin: 0 auto;">
          </div>
-         <div id="drivers" style="height: auto;margin-top:10px;display:none;">
+         <div id="drivers" style="height: auto;margin-top:10px;">
          </div>
-         <div id="karts" style="height: auto;margin-top:10px;display:none;">
+         <div id="karts" style="height: auto;margin-top:10px;">
          </div>
-         <div id="gliders" style="height: auto;margin-top:10px;display:none;">
+         <div id="gliders" style="height: auto;margin-top:10px;">
          </div>
-         <div id="badges" style="height: auto;margin-top:10px;margin-bottom: 64px;text-align: center;display:none;">
+         <div id="badges" style="height: auto;margin-top:10px;margin-bottom: 64px;text-align: center;">
          </div>
-         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;margin-bottom: 64px;display: none;">
+         <div id="items" style="margin:0 auto;background-color: rgba(0,0,0,0.3);margin-top:10px;margin-bottom: 64px;">
          </div>
       </div>
 
@@ -89,6 +89,10 @@
         getSeasonKey();
         readTextFile(`https://halfhydra.github.io/MarioKartTourValues/Data/SeasonCup/${seasonKey}.json`, 4);
         generateProfile();
+        generateGameDriverList();
+        generateGameKartList();
+        generateGameGliderList();
+        generateGameBadgeList();
       } else {
          document.getElementById('nodata').style.display = "block";
       }
