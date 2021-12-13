@@ -175,7 +175,7 @@
 .contentDiv {
     width: 100%;
     /* height: calc(100vh - 190px); */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scrollbar-width: thin;
     padding-top: 10px;
 }
@@ -251,7 +251,7 @@
     width:673px;
     margin: 0px auto;
     /* height: calc(100vh - 150px); */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scrollbar-width: thin;
     display: flex;
     flex-direction: row;
