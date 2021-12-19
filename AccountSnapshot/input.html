@@ -30,6 +30,22 @@
             cursor: pointer;
         }
 
+        input[type=file]::file-selector-button {
+            /* border: 2px solid #6c5ce7;
+            padding: .2em .4em;
+            border-radius: .2em;
+            background-color: #a29bfe;
+            transition: 1s; */
+            width: 50%;
+            height: 100%;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+        }
+
+
         body {
             margin: 0 auto;
             background-color: #5A8FD5;
@@ -75,7 +91,7 @@
         <!-- <h1>Hydra's Account Snapshot</h1> -->
         <img src="./Images/UI/Profile/Logo.png">
         <p>Select the .json file with your data</p>
-        <input type="file" id="file">
+        <input type="file" id="file" style="width: 600px;height: 50px;">
         <img id="go" src="./Images/UI/Input/LetsGo.png" onclick="location.href = 'accountsnapshot.html'" class="notReady">
     </div>
     <script>
@@ -83,7 +99,8 @@
             var reader = new FileReader();
             reader.onload = function () {
                 var data = this.result;
-                localStorage.setItem("MKTS_Data", data)
+                localStorage.setItem("MKTS_Data", data);
+                document.getElementById('id').value = this.files[0].className
             }
             reader.readAsText(this.files[0]);
             document.getElementById('go').className = "ready";

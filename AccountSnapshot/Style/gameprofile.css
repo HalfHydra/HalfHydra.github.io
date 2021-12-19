@@ -491,10 +491,12 @@
 
 .leftBtn {
     width: 220px;
+    user-select: none;
 }
 
 .rightBtn {
     width: 220px;
+    user-select: none;
 }
 
 /*SCROLLBAR*/

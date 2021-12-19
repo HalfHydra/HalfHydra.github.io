@@ -367,3 +367,31 @@
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.acrDiv {
+    height: 60px;
+    display: inline-block;
+    border-bottom: 4px solid white;
+    margin: 12px auto;
+    cursor: pointer;
+}
+
+.acrImg {
+    display: inline-block;
+    width: 50px;
+    vertical-align: bottom;
+    margin: 0 10px;
+}
+
+.acrText {
+    display: inline-block;
+    font-family: 'tour';
+    font-size: 36px;
+    color: white;
+    margin: 4px auto;
+    user-select: none;
+}
+
+.acrCenter {
+    text-align: center;
+}

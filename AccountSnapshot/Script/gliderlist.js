@@ -254,6 +254,15 @@ function generateLevelBox(itemType, level, progress, index){
 }
 
 function generateCapLevel(itemType, rarity, level){
+    switch(level) {
+        case 2:
+            level = 6;
+            break;
+        case 3:
+            level = 16;
+            break;
+    }
+
     let boxCap = document.createElement('div');
     boxCap.className = "boxCap";
 

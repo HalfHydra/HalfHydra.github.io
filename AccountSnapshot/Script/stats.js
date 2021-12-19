@@ -1017,6 +1017,9 @@ function teamRallyBadges(){
 function getMostObtainedBadges(x){
     //Self Explanitory
     let most_obtained = [];
+    if(badgesInCountOrder.length < x){
+        x = badgesInCountOrder.length
+    }
     for(let i=0; i<x; i++){
         most_obtained[i] = badgesInCountOrder[i].key;
     }

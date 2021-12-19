@@ -183,7 +183,7 @@ function generateProfile(){
 
     recordsDiv.appendChild(generateRecord("Gliders", savedata.Profile.glider_count))
 
-    recordsDiv.appendChild(generateRecord("Badges", savedata.Profile.badge_count))
+    // recordsDiv.appendChild(generateRecord("Badges", savedata.Profile.badge_count))
 
     recordsDiv.appendChild(generateRecord("Highest Score", savedata.Profile.all_time_best_course_score.toLocaleString()))
 

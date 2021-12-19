@@ -77,16 +77,16 @@
              }
              rawFile.send(null);
          }
-         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Pipe/currentValues.json", 1);
-         generateArrays();
-         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 2);
-         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_image.json", 3);
 
       if(localStorage.getItem("MKTS_Data") != null){
         savedata = JSON.parse(localStorage.getItem("MKTS_Data"));
         console.log(isMobile);
-        calcValuesStats();
         getSeasonKey();
+         readTextFile(`https://halfhydra.github.io/MarioKartTourValues/Data/DataJSON/${seasonKey}.json`, 1);
+         generateArrays();
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_names.json", 2);
+         readTextFile("https://halfhydra.github.io/MarioKartTourValues/Data/course_image.json", 3);
+        calcValuesStats();
         readTextFile(`https://halfhydra.github.io/MarioKartTourValues/Data/SeasonCup/${seasonKey}.json`, 4);
         generateProfile();
       } else {

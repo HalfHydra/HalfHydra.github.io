@@ -97,6 +97,27 @@ function generateProfile(){
     multiImg.className = "multiImg";
     badgerank.appendChild(multiImg);
 
+    let acrCenter = document.createElement('div');
+    acrCenter.className = "acrCenter";
+    output.appendChild(acrCenter);
+
+    let acrDiv = document.createElement('div');
+    acrDiv.className = "acrDiv";
+    acrDiv.addEventListener('click', function () {
+        openAllCupRanking();
+    });
+    acrCenter.appendChild(acrDiv);
+
+    let acrImg = document.createElement('img');
+    acrImg.src = `./Images/UI/Records/IconAllCupRanking00.png`;
+    acrImg.className = "acrImg";
+    acrDiv.appendChild(acrImg);
+
+    let acrText = document.createElement('p');
+    acrText.className = "acrText";
+    acrText.innerHTML = `${seasonJSON.Title}`;
+    acrDiv.appendChild(acrText);
+
     //Total Points
     let totalPoints = document.createElement('div');
     totalPoints.className = 'totalPoints';
@@ -543,7 +564,7 @@ function generateProfile(){
     });
     if(statsJSON.rally_badges.length == 0){
         let noneText = document.createElement('p');
-        noneText.className = "landingpagetxt";
+        noneText.className = "noneYetText";
         noneText.innerHTML = "None Yet!";
         rallyBadgeDiv.appendChild(noneText);
     }
@@ -561,7 +582,7 @@ function generateProfile(){
     });
     if(statsJSON.expert_badges.length == 0){
         let noneText = document.createElement('p');
-        noneText.className = "landingpagetxt";
+        noneText.className = "noneYetText";
         noneText.innerHTML = "None Yet!";
         expertBadgeDiv.appendChild(noneText);
     }
@@ -580,10 +601,11 @@ function generateProfile(){
     });
     if(statsJSON.todays_challenge_badges.length == 0){
         let noneText = document.createElement('p');
-        noneText.className = "landingpagetxt";
+        noneText.className = "noneYetText";
         noneText.innerHTML = "None Yet!";
         quickStartBadgeDiv.appendChild(noneText);
     }
+
 
     output.appendChild(generateSectionBar(`All Cup Ranking Badges`));
 
@@ -613,6 +635,16 @@ function generateProfile(){
         maxDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
 
+    if(statsJSON.completely_maxed_dkg.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None Yet!";
+        maxDiv.appendChild(noneText);
+
+        maxDiv.className = "quickStartBadgeDiv";
+    }
+
+
     output.appendChild(generateSectionBar(`Triple Capped D/K/G`));
 
     let cap3Div = document.createElement('div');
@@ -623,6 +655,15 @@ function generateProfile(){
         cap3Div.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
 
+    if(statsJSON.triple_capped_dkg.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None Yet!";
+        cap3Div.appendChild(noneText);
+
+        cap3Div.className = "quickStartBadgeDiv";
+    }
+
     output.appendChild(generateSectionBar(`Double Capped D/K/G`));
 
     let cap2Div = document.createElement('div');
@@ -632,6 +673,15 @@ function generateProfile(){
     statsJSON.double_capped_dkg.forEach((t,i)=>{
         cap2Div.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
+
+    if(statsJSON.double_capped_dkg.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None Yet!";
+        cap2Div.appendChild(noneText);
+
+        cap2Div.className = "quickStartBadgeDiv";
+    }
 
     // output.appendChild(generateSectionBar(`Single Capped D/K/G`));
 
@@ -652,6 +702,15 @@ function generateProfile(){
     statsJSON.level_7_dkg.forEach((t,i)=>{
         level7Div.appendChild(generateDKGPanel(t, 1.0, true, false));
     })
+
+    if(statsJSON.level_7_dkg.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None Yet!";
+        level7Div.appendChild(noneText);
+
+        level7Div.className = "quickStartBadgeDiv";
+    }
 
     output.appendChild(generateSectionBar(`Account Worth`));
 
@@ -684,7 +743,7 @@ function generateProfile(){
 
     let lastText = document.createElement('p');
     lastText.className = "landingpagetxt";
-    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server.<br><br>One last surprise, tap this button here to access your profile in a form similar to the game! You can access your driver, kart, glider, and badge list from there similar to the game, as well as your tour records which have not been presented here!<br><br>Version 1.2.0";
+    lastText.innerHTML = "That's all for now! I hope you enjoyed this site! More may be added in the future involving courses. I spent a very long time trying to get this right, and look amazing while doing so. <br><br>If you have any feedback, please feel free to reach out to me - the easiest way is via my Discord server.<br><br>One last surprise, tap this button here to access your profile in a form similar to the game! You can access your driver, kart, glider, and badge list from there similar to the game, as well as your tour records which have not been presented here!<br><br>Version 1.3.1";
     output.appendChild(lastText);
 
     let btnType1 = document.createElement('div');
