@@ -856,6 +856,10 @@ function toggleOwned(source) {
 }
 
 function generateRecord(key, value){
+    if(value == -1){
+        value = "None"
+    }
+
     let recordDiv = document.createElement('div');
     recordDiv.className = "recordDiv"
 

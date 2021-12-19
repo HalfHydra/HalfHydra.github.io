@@ -209,7 +209,7 @@
     height: 260px;
     display: inline-block;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     background-image: url('../Images/UI/Background/BigButtonBadge.png');
     background-repeat: no-repeat;
 }
