@@ -795,12 +795,18 @@ function getTutorialDrivers(){
 }
 
 function firstXItems(x){
+    if(allItems.length < x){
+        x = allItems.length - 4
+    }
     for(let i = 4; i<(x+4);i++){
         statsJSON.first_10_dkg.push(allItems[i].id)
     }
 }
 
 function firstXHighEnds(x){
+    if(allItems.length < x){
+        x = allItems.length - 4
+    }
     allItems.forEach((t,i)=>{
         if(new_values[t.id].rarityId == 2 && statsJSON.first_10_high_ends.length < x){
             statsJSON.first_10_high_ends.push(allItems[i].id)
