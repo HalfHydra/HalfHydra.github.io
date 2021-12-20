@@ -875,10 +875,12 @@ function getTripleCappedDKG(){
 }
 
 function getMaxedDKG(){
+    let maxedPointsCounts = [1400, 975, 760, 380, 450, 700];
     allItemsSort.forEach((t,i)=>{
         let level = t.level;
         let pointCapLevel = t.pointCapLevel;
-        if(level == 7 && pointCapLevel == 3){
+        let basePoints = t.basepoints;
+        if(level == 7 && pointCapLevel == 3 && maxedPointsCounts.includes(basePoints)){
             statsJSON.completely_maxed_dkg.push(t.id);
         }
     });

@@ -255,10 +255,13 @@ function generateProfile(){
     nums.forEach((t, i) => {
         let number = document.createElement('img');
         number.className = `scoreNumberTP`;
-        if (t == ",") {
+        if (t == "," || t == ".") {
             number.className = `scoreCommaTP`;
         }
         number.src = `./Images/UI/Number/${t}.png`
+        if(t == "."){
+            number.src = `./Images/UI/Number/period.png`
+        }
         totalPoints.appendChild(number);
     });
     tabRecords.appendChild(totalPoints);
@@ -292,10 +295,13 @@ function generateProfile(){
         cupNums.forEach((t, i) => {
             let numberCup = document.createElement('img');
             numberCup.className = `scoreNumberC`;
-            if (t == ",") {
+            if (t == "," || t == ".") {
                 numberCup.className = `scoreCommaC`;
             }
             numberCup.src = `./Images/UI/Number/${t}.png`
+            if(t == "."){
+                number.src = `./Images/UI/Number/period.png`
+            }
             cupPoints.appendChild(numberCup);
         });
         cupDiv.appendChild(cupPoints);
@@ -349,10 +355,13 @@ function generateProfile(){
                 courseNums.forEach((t, i) => {
                     let numberCourse = document.createElement('img');
                     numberCourse.className = `scoreNumberT`;
-                    if (t == ",") {
+                    if (t == "," || t == ".") {
                         numberCourse.className = `scoreCommaT`;
                     }
                     numberCourse.src = `./Images/UI/Number/${t}.png`
+                    if(t == "."){
+                        number.src = `./Images/UI/Number/period.png`
+                    }
                     coursePoints.appendChild(numberCourse);
                 });
                 cupDataDiv.appendChild(coursePoints);

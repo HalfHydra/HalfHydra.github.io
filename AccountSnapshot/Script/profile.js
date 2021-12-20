@@ -128,10 +128,13 @@ function generateProfile(){
     nums.forEach((t, i) => {
         var number = document.createElement('img');
         number.className = `scoreNumberTP`;
-        if (t == ",") {
+        if (t == "," || t == ".") {
             number.className = `scoreCommaTP`;
         }
         number.src = `./Images/UI/Number/${t}.png`
+        if(t == "."){
+            number.src = `./Images/UI/Number/period.png`
+        }
         totalPoints.appendChild(number);
     });
     output.appendChild(totalPoints);
@@ -475,6 +478,9 @@ function generateProfile(){
         let driverReceived = document.createElement('p');
         driverReceived.className = "lastUsed";
         driverReceived.innerHTML = `Last Used: ${new Date(neglect * 1000).toLocaleString()}`;
+        if(neglect == 0){
+            driverReceived.innerHTML = `Last Used: <br>Never!`;
+        }
         driverTextDiv.appendChild(driverReceived);
     })
 
