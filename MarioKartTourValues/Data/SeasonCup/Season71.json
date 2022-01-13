@@ -1,0 +1,111 @@
+{
+   "Title": "Singapore Tour",
+   "Cup_1": {
+      "cupLabel": "Luigi Cup",
+      "cupIcon": "LuigiCup",
+      "courses": [
+         "New_Gmob_Singapore1X",
+         "Classic_Gds_WaluigiPinballRX",
+         "New_Gmob_Singapore1R"
+      ]
+   },
+   "Cup_2": {
+      "cupLabel": "Daisy Cup",
+      "cupIcon": "DaisyCup",
+      "courses": [
+         "Classic_Gsfc_ChocoIsland2",
+         "Classic_G3ds_BowserCastle",
+         "Classic_G3ds_ToadCircuit"
+      ]
+   },
+   "Cup_3": {
+      "cupLabel": "Kamek Cup",
+      "cupIcon": "KameckCup",
+      "courses": [
+         "New_Gmob_Singapore1",
+         "Classic_Gagb_SunsetWilds",
+         "New_Gmob_Singapore1RX"
+      ]
+   },
+   "Cup_4": {
+      "cupLabel": "Funky Kong Cup",
+      "cupIcon": "FunkyKongCup",
+      "courses": [
+         "Classic_G3ds_BowserCastleX",
+         "Classic_Ggc_DinoDinoJungleX",
+         "Remix_Grsfc_VanillaLake1"
+      ]
+   },
+   "Cup_5": {
+      "cupLabel": "Lemmy Cup",
+      "cupIcon": "LemmyCup",
+      "courses": [
+         "Classic_Gsfc_ChocoIsland2X",
+         "New_Gmob_Singapore1R",
+         "Classic_Gagb_SunsetWildsR"
+      ]
+   },
+   "Cup_6": {
+      "cupLabel": "Yoshi Cup",
+      "cupIcon": "YoshiCup",
+      "courses": [
+         "Classic_G3ds_ToadCircuitR",
+         "Classic_G3ds_NeoBowserCityX",
+         "Classic_Gds_DKPassR"
+      ]
+   },
+   "Cup_7": {
+      "cupLabel": "Pink Gold Peach Cup",
+      "cupIcon": "MetalPeachCup",
+      "courses": [
+         "Classic_Gsfc_MarioCircuit1X",
+         "Remix_Grsfc_VanillaLake1X",
+         "New_Gmob_Singapore1"
+      ]
+   },
+   "Cup_8": {
+      "cupLabel": "Bowser Jr. Cup",
+      "cupIcon": "KoopaJrCup",
+      "courses": [
+         "Classic_Ggc_DinoDinoJungle",
+         "Classic_Gds_DKPassX",
+         "Classic_Gsfc_ChocoIsland2R"
+      ]
+   },
+   "Cup_9": {
+      "cupLabel": "Baby Luigi Cup",
+      "cupIcon": "BbLuigiCup",
+      "courses": [
+         "Classic_G3ds_NeoBowserCityR",
+         "New_Gmob_Singapore1X",
+         "Classic_Gsfc_DonutsPlain1RX"
+      ]
+   },
+   "Cup_10": {
+      "cupLabel": "Monty Mole Cup",
+      "cupIcon": "ChoropooCup",
+      "courses": [
+         "Classic_Ggc_DinoDinoJungleR",
+         "Classic_Gsfc_MarioCircuit1",
+         "Classic_G3ds_BowserCastleR"
+      ]
+   },
+   "Cup_11": {
+      "cupLabel": "Hammer Bro Cup",
+      "cupIcon": "BrosHammerCup",
+      "courses": [
+         "Classic_Gagb_SunsetWildsX",
+         "Classic_Gds_DKPass",
+         "Classic_G3ds_ToadCircuitX"
+      ]
+   },
+   "Cup_12": {
+      "cupLabel": "Pauline Cup",
+      "cupIcon": "PaulineCup",
+      "courses": [
+         "Classic_Gsfc_MarioCircuit1R",
+         "Classic_G3ds_NeoBowserCity",
+         "Remix_Grsfc_VanillaLake1R"
+      ]
+   }
+}
