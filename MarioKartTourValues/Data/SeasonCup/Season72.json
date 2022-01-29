@@ -1,0 +1,111 @@
+{
+   "Title": "Wario vs. Waluigi Tour",
+   "Cup_1": {
+      "cupLabel": "Wario Cup",
+      "cupIcon": "WarioCup",
+      "courses": [
+         "Classic_G3ds_WarioShip",
+         "Classic_G3ds_BowserCastleX",
+         "Classic_Gsfc_VanillaLake1RX"
+      ]
+   },
+   "Cup_2": {
+      "cupLabel": "Baby Mario Cup",
+      "cupIcon": "BbMarioCup",
+      "courses": [
+         "Remix_Grsfc_ChocoIsland1X",
+         "Classic_Gsfc_VanillaLake2R",
+         "Classic_Gds_DKPass"
+      ]
+   },
+   "Cup_3": {
+      "cupLabel": "Waluigi Cup",
+      "cupIcon": "WaluigiCup",
+      "courses": [
+         "Remix_Grsfc_RainbowRoad1",
+         "Classic_G3ds_WarioShipX",
+         "Classic_G3ds_NeoBowserCityR"
+      ]
+   },
+   "Cup_4": {
+      "cupLabel": "Peach Cup",
+      "cupIcon": "PeachCup",
+      "courses": [
+         "Classic_G3ds_MarioCircuitR",
+         "Remix_Grsfc_GhostValley1RX",
+         "Classic_Gds_DKPassR"
+      ]
+   },
+   "Cup_5": {
+      "cupLabel": "Rosalina Cup",
+      "cupIcon": "RosettaCup",
+      "courses": [
+         "Remix_Grsfc_RainbowRoad1R",
+         "Classic_G3ds_WarioShipR",
+         "Remix_Grsfc_ChocoIsland1"
+      ]
+   },
+   "Cup_6": {
+      "cupLabel": "Pauline Cup",
+      "cupIcon": "PaulineCup",
+      "courses": [
+         "Classic_G3ds_NeoBowserCity",
+         "Classic_Gagb_CheepCheepIslandX",
+         "Classic_G3ds_MarioCircuitX"
+      ]
+   },
+   "Cup_7": {
+      "cupLabel": "Funky Kong Cup",
+      "cupIcon": "FunkyKongCup",
+      "courses": [
+         "Classic_Gn64_KalimariDesert2X",
+         "Classic_Gds_DKPassX",
+         "Classic_G3ds_WarioShip"
+      ]
+   },
+   "Cup_8": {
+      "cupLabel": "Diddy Kong Cup",
+      "cupIcon": "DiddyKongCup",
+      "courses": [
+         "Classic_Gsfc_VanillaLake2X",
+         "Remix_Grsfc_RainbowRoad1X",
+         "Classic_G3ds_BowserCastle"
+      ]
+   },
+   "Cup_9": {
+      "cupLabel": "Iggy Cup",
+      "cupIcon": "IggyCup",
+      "courses": [
+         "Classic_Gagb_CheepCheepIslandR",
+         "Classic_Gn64_KalimariDesert2",
+         "Classic_G3ds_NeoBowserCityX"
+      ]
+   },
+   "Cup_10": {
+      "cupLabel": "Mario Cup",
+      "cupIcon": "MarioCup",
+      "courses": [
+         "Classic_G3ds_MarioCircuit",
+         "Remix_Grsfc_RainbowRoad2RX",
+         "Classic_G3ds_WarioShipX"
+      ]
+   },
+   "Cup_11": {
+      "cupLabel": "Fire Bro Cup",
+      "cupIcon": "BrosFireCup",
+      "courses": [
+         "Remix_Grsfc_ChocoIsland1R",
+         "Classic_G3ds_BowserCastleR",
+         "Classic_Gn64_KalimariDesert2R"
+      ]
+   },
+   "Cup_12": {
+      "cupLabel": "Daisy Cup",
+      "cupIcon": "DaisyCup",
+      "courses": [
+         "Classic_G3ds_WarioShipR",
+         "Classic_Gsfc_VanillaLake2",
+         "Classic_Gagb_CheepCheepIsland"
+      ]
+   }
+}
