@@ -146,10 +146,16 @@ function generateProfile(){
     favDiv.className = "favDiv";
     output.appendChild(favDiv);
 
-    savedata.Profile.favorite_drivers.forEach((t,i)=>{
-        favDiv.appendChild(generateDKGPanel(convertNameToId(t), 1.0, true, false));
-    })
 
+    if(savedata.Profile.hasOwnProperty("favorite_drivers_ids")){
+        savedata.Profile.favorite_drivers_ids.forEach((t,i)=>{
+            favDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
+        })
+    } else {
+      savedata.Profile.favorite_drivers.forEach((t,i)=>{
+            favDiv.appendChild(generateDKGPanel(convertNameToId(t), 1.0, true, false));
+        })  
+    }
     // driverTable.forEach((t,i)=>{
     //     favDiv.appendChild(generateDKGPanel(t));
     // })
@@ -247,10 +253,15 @@ function generateProfile(){
     useDiv.className = "favDiv";
     output.appendChild(useDiv);
 
-    savedata.Profile.most_used_drivers_current_tour.forEach((t,i)=>{
-        useDiv.appendChild(generateDKGPanel(convertNameToId(t), 1.0, true, false));
-    })
-
+    if(savedata.Profile.hasOwnProperty("most_used_drivers_current_tour_ids")){
+        savedata.Profile.most_used_drivers_current_tour_ids.forEach((t,i)=>{
+            useDiv.appendChild(generateDKGPanel(t, 1.0, true, false));
+        })
+    } else {
+      savedata.Profile.most_used_drivers_current_tour.forEach((t,i)=>{
+            useDiv.appendChild(generateDKGPanel(convertNameToId(t), 1.0, true, false));
+        })  
+    }
     output.appendChild(generateSectionBar(`Records`));
 
     let recordsDiv = document.createElement('div')
