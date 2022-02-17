@@ -1,0 +1,111 @@
+{
+   "Title": "Los Angeles Tour",
+   "Cup_1": {
+      "cupLabel": "Mario Cup",
+      "cupIcon": "MarioCup",
+      "courses": [
+         "New_Gmob_LosAngeles2X",
+         "Remix_Grsfc_RainbowRoad2RX",
+         "New_Gmob_LosAngeles2R"
+      ]
+   },
+   "Cup_2": {
+      "cupLabel": "Ice Bro Cup",
+      "cupIcon": "BrosIceCup",
+      "courses": [
+         "New_Gmob_LosAngeles3",
+         "Classic_Gagb_CheepCheepIsland",
+         "Classic_Gsfc_MarioCircuit3R"
+      ]
+   },
+   "Cup_3": {
+      "cupLabel": "Dixie Kong Cup",
+      "cupIcon": "DixieKongCup",
+      "courses": [
+         "New_Gmob_LosAngeles2",
+         "Classic_Gwii_MapleTreewayR",
+         "New_Gmob_LosAngeles2RX"
+      ]
+   },
+   "Cup_4": {
+      "cupLabel": "Wario Cup",
+      "cupIcon": "WarioCup",
+      "courses": [
+         "Classic_Gagb_CheepCheepIslandX",
+         "Classic_G3ds_WarioShipX",
+         "Remix_Grsfc_RainbowRoad1"
+      ]
+   },
+   "Cup_5": {
+      "cupLabel": "Toad Cup",
+      "cupIcon": "KinopioCup",
+      "courses": [
+         "New_Gmob_LosAngeles3R",
+         "New_Gmob_LosAngeles2R",
+         "Classic_Gwii_MapleTreeway"
+      ]
+   },
+   "Cup_6": {
+      "cupLabel": "Roy Cup",
+      "cupIcon": "RoyCup",
+      "courses": [
+         "Classic_Gsfc_MarioCircuit3",
+         "Classic_Gn64_FrappeSnowlandX",
+         "Remix_Grsfc_ChocoIsland1R"
+      ]
+   },
+   "Cup_7": {
+      "cupLabel": "Bowser Cup",
+      "cupIcon": "KoopaCup",
+      "courses": [
+         "Classic_Gwii_DKSummitX",
+         "Remix_Grsfc_RainbowRoad1X",
+         "Classic_Gwii_MapleTreewayX"
+      ]
+   },
+   "Cup_8": {
+      "cupLabel": "Monty Mole Cup",
+      "cupIcon": "ChoropooCup",
+      "courses": [
+         "Classic_G3ds_WarioShip",
+         "Remix_Grsfc_ChocoIsland1X",
+         "New_Gmob_LosAngeles3X"
+      ]
+   },
+   "Cup_9": {
+      "cupLabel": "Peach Cup",
+      "cupIcon": "PeachCup",
+      "courses": [
+         "Classic_Gn64_FrappeSnowlandR",
+         "New_Gmob_LosAngeles2X",
+         "Classic_G3ds_RosettaPlanetRX"
+      ]
+   },
+   "Cup_10": {
+      "cupLabel": "Funky Kong Cup",
+      "cupIcon": "FunkyKongCup",
+      "courses": [
+         "Classic_G3ds_WarioShipR",
+         "Classic_Gwii_DKSummit",
+         "Classic_Gagb_CheepCheepIslandR"
+      ]
+   },
+   "Cup_11": {
+      "cupLabel": "Donkey Kong Cup",
+      "cupIcon": "DKCup",
+      "courses": [
+         "Classic_Gsfc_MarioCircuit3X",
+         "Remix_Grsfc_ChocoIsland1",
+         "New_Gmob_LosAngeles2"
+      ]
+   },
+   "Cup_12": {
+      "cupLabel": "Waluigi Cup",
+      "cupIcon": "WaluigiCup",
+      "courses": [
+         "Classic_Gwii_DKSummitR",
+         "Classic_Gn64_FrappeSnowland",
+         "Remix_Grsfc_RainbowRoad1R"
+      ]
+   }
+}
