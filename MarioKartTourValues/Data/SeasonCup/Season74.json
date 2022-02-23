@@ -1,0 +1,111 @@
+{
+   "Title": "Sky Tour",
+   "Cup_1": {
+      "cupLabel": "Mario Cup",
+      "cupIcon": "MarioCup",
+      "courses": [
+         "Classic_Gagb_SkyGarden",
+         "Classic_Ggc_YoshiCircuitRX",
+         "Classic_Gn64_KalimariDesert2RX"
+      ]
+   },
+   "Cup_2": {
+      "cupLabel": "Morton Cup",
+      "cupIcon": "MortonCup",
+      "courses": [
+         "Classic_Gsfc_MarioCircuit2R",
+         "Remix_Grsfc_MarioCircuit1R",
+         "Classic_Gwii_DKSummit"
+      ]
+   },
+   "Cup_3": {
+      "cupLabel": "Wario Cup",
+      "cupIcon": "WarioCup",
+      "courses": [
+         "Classic_G3ds_RockRockMountainX",
+         "Classic_Gagb_SkyGardenX",
+         "Remix_Grsfc_GhostValley1RX"
+      ]
+   },
+   "Cup_4": {
+      "cupLabel": "Toadette Cup",
+      "cupIcon": "KinopicoCup",
+      "courses": [
+         "Classic_Gwii_MapleTreewayR",
+         "Classic_Gn64_FrappeSnowlandR",
+         "Classic_Gwii_DKSummitR"
+      ]
+   },
+   "Cup_5": {
+      "cupLabel": "Bowser Cup",
+      "cupIcon": "KoopaCup",
+      "courses": [
+         "Classic_G3ds_RockRockMountainR",
+         "Classic_Gagb_SkyGardenR",
+         "Remix_Grsfc_GhostValley1"
+      ]
+   },
+   "Cup_6": {
+      "cupLabel": "Cat Peach Cup",
+      "cupIcon": "CatPeachCup",
+      "courses": [
+         "Classic_Gwii_MapleTreeway",
+         "Classic_Gwii_DKSummitX",
+         "Classic_Ggc_YoshiCircuit"
+      ]
+   },
+   "Cup_7": {
+      "cupLabel": "Baby Rosalina Cup",
+      "cupIcon": "BbRosettaCup",
+      "courses": [
+         "Classic_Gds_LuigiMansionX",
+         "Remix_Grsfc_GhostValley1X",
+         "Classic_Gagb_SkyGarden"
+      ]
+   },
+   "Cup_8": {
+      "cupLabel": "Daisy Cup",
+      "cupIcon": "DaisyCup",
+      "courses": [
+         "Classic_Gn64_FrappeSnowlandX",
+         "Classic_Ggc_YoshiCircuitX",
+         "Classic_Gsfc_MarioCircuit2"
+      ]
+   },
+   "Cup_9": {
+      "cupLabel": "Baby Luigi Cup",
+      "cupIcon": "BbLuigiCup",
+      "courses": [
+         "Remix_Grsfc_GhostValley1R",
+         "Classic_Gds_LuigiMansion",
+         "Classic_Gwii_MapleTreewayX"
+      ]
+   },
+   "Cup_10": {
+      "cupLabel": "Dry Bowser Cup",
+      "cupIcon": "HoneKoopaCup",
+      "courses": [
+         "Classic_Gagb_SkyGardenX",
+         "Classic_Gn64_FrappeSnowland",
+         "Remix_Grsfc_MarioCircuit1X"
+      ]
+   },
+   "Cup_11": {
+      "cupLabel": "Lemmy Cup",
+      "cupIcon": "LemmyCup",
+      "courses": [
+         "Classic_Ggc_YoshiCircuitR",
+         "Classic_Gsfc_MarioCircuit2X",
+         "Classic_Gds_LuigiMansionR"
+      ]
+   },
+   "Cup_12": {
+      "cupLabel": "Ice Mario Cup",
+      "cupIcon": "MarioIceCup",
+      "courses": [
+         "Classic_Gagb_SkyGardenR",
+         "Remix_Grsfc_MarioCircuit1",
+         "Classic_G3ds_RockRockMountain"
+      ]
+   }
+}
