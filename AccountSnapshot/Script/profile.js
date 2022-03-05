@@ -729,6 +729,58 @@ function generateProfile(){
         level7Div.className = "quickStartBadgeDiv";
     }
 
+    output.appendChild(generateSectionBar(`Missing Top Shelves`));
+
+    let missingDiv = document.createElement('div')
+    missingDiv.className = "missingDiv";
+    output.appendChild(missingDiv);
+
+    //debug all courses
+    // Object.values(coursenames).forEach((t,i) => {
+    //     missingDiv.appendChild(generateCoursePanel(courseReverse[t], 1.0, null))
+    // })
+
+    if(statsJSON.missing_courses_d.length != 0){
+        let driversTxt = document.createElement('p');
+        driversTxt.className = "subheaderTxt";
+        driversTxt.innerHTML = "Drivers";
+        missingDiv.appendChild(driversTxt);
+
+        statsJSON.missing_courses_d.forEach((t,i) => {
+            missingDiv.appendChild(generateCoursePanel(courseReverse[t], 1.0, null))
+        })
+    }
+
+    if(statsJSON.missing_courses_k.length != 0){
+        let kartsTxt = document.createElement('p');
+        kartsTxt.className = "subheaderTxt";
+        kartsTxt.innerHTML = "Karts";
+        missingDiv.appendChild(kartsTxt);
+
+        statsJSON.missing_courses_k.forEach((t,i) => {
+            missingDiv.appendChild(generateCoursePanel(courseReverse[t], 1.0, null))
+        })
+    }
+
+    if(statsJSON.missing_courses_g.length != 0){
+        let glidersTxt = document.createElement('p');
+        glidersTxt.className = "subheaderTxt";
+        glidersTxt.innerHTML = "Gliders";
+        missingDiv.appendChild(glidersTxt);
+    
+        statsJSON.missing_courses_g.forEach((t,i) => {
+            missingDiv.appendChild(generateCoursePanel(courseReverse[t], 1.0, null))
+        })
+    }
+
+    if(statsJSON.missing_courses_d.length == 0 && statsJSON.missing_courses_k.length == 0 && statsJSON.missing_courses_g.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None! Wow, congratulations!";
+        noneText.style.padding = "10px";
+        missingDiv.appendChild(noneText);
+    }
+
     output.appendChild(generateSectionBar(`Account Worth`));
 
     let coinWorthImg = document.createElement('img');
@@ -754,7 +806,6 @@ function generateProfile(){
     output.appendChild(RWrecordsDiv);
 
     RWrecordsDiv.appendChild(generateRecord("Account Ruby Worth", statsJSON.total_ruby_worth.toLocaleString()))
-    
 
     output.appendChild(generateSectionBar(`Final Word`));
 
@@ -785,7 +836,88 @@ function generateProfile(){
     wiptext.innerHTML = "Created by HalfHydra";
     output.appendChild(wiptext);
 
+    output.appendChild(generateSectionBar(`"Secret" Bonus Section`));
 
+    let dataText = document.createElement('p');
+    dataText.className = "landingpagetxt";
+    dataText.innerHTML = `It has been requested that I make a way for you to convert your account snapshots into a csv format of your items and level data. Here it is.<br><br> There are 2 presets, the first one is a generic one with only the most useful or interesting information, and the second one being a csv you can copy directly into a Bam and Gerbs style spreadsheet! Click or tap the buttons to download the respective types.<br><br>After those two, you have the option of making a customized spreadsheet too with only the information you want in it. Check the boxes of the data you want, then click the custom format button to download it.`;
+    output.appendChild(dataText);
+
+    let presetTxt = document.createElement('p');
+    presetTxt.className = "subheaderTxt";
+    presetTxt.innerHTML = "Preset";
+    output.appendChild(presetTxt);
+
+    let btnBGCSV = document.createElement('div');
+    btnBGCSV.className = "headerDiv";
+    btnBGCSV.addEventListener('click', function () {
+        downloadDataCSV(0);
+    });
+    output.appendChild(btnBGCSV);
+
+    let btnBGCSV_img = document.createElement('img');
+    btnBGCSV_img.src = "./Images/UI/Header/Inventory.png";
+    btnBGCSV_img.className = "headerImg";
+    btnBGCSV.appendChild(btnBGCSV_img);
+
+    let btnBGCSV_txt = document.createElement('p');
+    btnBGCSV_txt.className = "whiteoutline listBtnTxt"
+    btnBGCSV_txt.innerHTML = "Item Levels Generic";
+    btnBGCSV.appendChild(btnBGCSV_txt);
+
+    let btnDataCSV = document.createElement('div');
+    btnDataCSV.className = "headerDiv";
+    btnDataCSV.addEventListener('click', function () {
+        downloadDataCSV(1);
+    });
+    output.appendChild(btnDataCSV);
+
+    let btnDataCSV_img = document.createElement('img');
+    btnDataCSV_img.src = "./Images/UI/Header/Inventory.png";
+    btnDataCSV_img.className = "headerImg";
+    btnDataCSV.appendChild(btnDataCSV_img);
+
+    let btnDataCSV_txt = document.createElement('p');
+    btnDataCSV_txt.className = "whiteoutline listBtnTxt"
+    btnDataCSV_txt.innerHTML = "Bam & Gerbs Format";
+    btnDataCSV.appendChild(btnDataCSV_txt);
+
+    let customDataDiv = document.createElement('div');
+    customDataDiv.className = "customDataDiv";
+    output.appendChild(customDataDiv);
+
+    let customTxt = document.createElement('p');
+    customTxt.className = "subheaderTxt";
+    customTxt.innerHTML = "Custom";
+    customDataDiv.appendChild(customTxt);
+
+    customDataDiv.appendChild(generateToggle("flag_1","Name"));
+    document.getElementById(`flag_1`).checked = true;
+    customDataDiv.appendChild(generateToggle("flag_2","Base Points"));
+    customDataDiv.appendChild(generateToggle("flag_3","BP Progress"));
+    customDataDiv.appendChild(generateToggle("flag_4","Level"));
+    customDataDiv.appendChild(generateToggle("flag_5","Level Progress"));
+    customDataDiv.appendChild(generateToggle("flag_6","Points Cap"));
+    customDataDiv.appendChild(generateToggle("flag_7","Total Copies"));
+    customDataDiv.appendChild(generateToggle("flag_8","Received"));
+    customDataDiv.appendChild(generateToggle("flag_9","Last Used"));
+
+    let btnCustomCSV = document.createElement('div');
+    btnCustomCSV.className = "headerDiv wipText";
+    btnCustomCSV.addEventListener('click', function () {
+        downloadDataCSV(2);
+    });
+    output.appendChild(btnCustomCSV);
+
+    let btnCustomCSV_img = document.createElement('img');
+    btnCustomCSV_img.src = "./Images/UI/Header/Inventory.png";
+    btnCustomCSV_img.className = "headerImg";
+    btnCustomCSV.appendChild(btnCustomCSV_img);
+
+    let btnCustomCSV_txt = document.createElement('p');
+    btnCustomCSV_txt.className = "whiteoutline listBtnTxt"
+    btnCustomCSV_txt.innerHTML = "Custom Format";
+    btnCustomCSV.appendChild(btnCustomCSV_txt);
 }
 
 function generateSectionBar(text) {
@@ -819,4 +951,18 @@ function generateRecord(key, value){
     recordDiv.appendChild(rightSide)
 
     return recordDiv;
+}
+
+function generateToggle(id, text){
+    let toggle = document.createElement('p');
+    toggle.innerHTML = text;
+    toggle.className = `toggle`;
+
+    let toggleInput = document.createElement("input");
+    toggleInput.id = `${id}`;
+    toggleInput.className = "toggleInput";
+    toggleInput.type = "checkbox";
+    toggle.appendChild(toggleInput);
+
+    return toggle;
 }

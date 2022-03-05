@@ -1,5 +1,5 @@
 var isMobile = false;
-let version = "1.3.4";
+let version = "1.4.0";
 
 var currentCup = 0;
 var isDataEntered = false;
@@ -159,37 +159,38 @@ function deleteLocalSaveData(){
     alert('Deleted Save File. This option is VERY unstable and may require you to clear your browser cache or restart your browser to function properly.')
 }
 
-function downloadcoursejson(mode){
-    generateCourseList();
-    courseListMade = true;
+function downloadDataCSV(type){
     var data = "";
-    switch(mode){
-    case 0:
-    data = JSON.stringify(coursedata, null, 2);
-    break;
-    case 1:
-    data = JSON.stringify(coursedataeng, null, 2);
-    break;
-    case 2:
-    data = JSON.stringify(values, null, 2);
-    break;
-    }
-    var filename = "";
-    switch(mode){
+    switch(type){
         case 0:
-        filename = "MKTCoursesIDs" + currentTourFileName + ".json";
+        data = generateLevelsCSV();
         break;
         case 1:
-        filename = "MKTCoursesNames" + currentTourFileName + ".json";
+        data = generateBGCSV();
         break;
         case 2:
-        filename = "MKTValuesList" + currentTourFileName + ".json";
+        let flags = [];
+        for(let i = 1; i<10;i++){
+            (document.getElementById(`flag_${i}`).checked) ? flags.push(1) : flags.push(0);
+        }
+        data = generateCustomCSV(flags);
         break;
     }
-    var type = "text";
+    var filename = "";
+    switch(type){
+        case 0:
+        filename = `itemDataCSV_${new Date().toLocaleDateString()}.csv`;
+        break;
+        case 1:
+        filename = `B&G_CSV_${new Date().toLocaleDateString()}.csv`;
+        break;
+        case 2:
+        filename = `customItemDataCSV_${new Date().toLocaleDateString()}.csv`;
+        break;
+    }
     var a = document.createElement("a")
       , file = new Blob([data],{
-        type: type
+        type: "text"
     });
     if (window.navigator.msSaveOrOpenBlob)
         // IE10+
@@ -669,4 +670,43 @@ function generateDKGPanelSpecial(itemId, points, level, scale, isFav, hideUI){
     }
 
     return dkgPanel;
+}
+
+function generateCoursePanel(course, scale, txtColor){
+
+    let courseName = coursenames[course];
+
+    course = course.replace('Classic_','');
+    course = course.replace('New_','');
+    course = course.replace('Remix_','');
+
+    let coursePanel = document.createElement('div');
+    coursePanel.className = 'coursePanel';
+    if(scale != 1.0){
+        coursePanel.style.width = `${300 * scale}px`;
+        coursePanel.style.height = `${130 * scale}px`;
+    }
+
+    let courseImg = document.createElement('img');
+    courseImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/CourseIcons/${course}_sub.png`;
+    courseImg.className = 'courseImg';
+    if(scale != 1.0){
+        courseImg.style.width = `${300 * scale}px`;
+        courseImg.style.height = `${130 * scale}px`;
+    }
+    coursePanel.appendChild(courseImg);
+
+    let courseTxt = document.createElement('p');
+    courseTxt.innerHTML = `${courseName}`;
+    courseTxt.className = 'courseTxt';
+    if(scale != 1.0){
+        courseTxt.style.width = `${300 * scale}px`;
+        courseTxt.style.height = `${30 * scale}px`;
+    }
+    if(txtColor != null){
+        courseTxt.style.color = txtColor;
+    }
+    coursePanel.appendChild(courseTxt);
+
+    return coursePanel;
 }

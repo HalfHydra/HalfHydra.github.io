@@ -33,11 +33,13 @@ let badgesInSortOrder = [];
 
 let coinWorth = { "DKG": { "Drivers": { "HighEnd": 12000, "Super": 3000, "Common": 800 }, "Karts": { "HighEnd": 10000, "Super": 2000, "Common": 500 }, "Gliders": { "HighEnd": 10000, "Super": 2000, "Common": 500 } }, "Items": { "90001": 1, "90005": 50, "90006": 100, "90007": 1000, "90305": 800, "90306": 3000, "90307": 12000, "90309": 500, "90310": 2000, "90311": 10000, "90313": 500, "90314": 2000, "90315": 10000, "90404": 100, "90408": 100, "90412": 100, "90500": 800, "90605": 2000, "90606": 5000, "90607": 20000, "90609": 2000, "90610": 5000, "90611": 20000, "90613": 2000, "90614": 5000, "90615": 20000 } };
 
+let courseReverse = {};
 
 function calcValuesStats() {
     inputData();
     convertToUsable();
     convertCourseNames();
+    createCourseReverseDict();
     //generateItemArrays(); Already done
     convertInternalCourseValues();
     createCourseData();
@@ -119,6 +121,16 @@ function convertCourseNames(){
                 coursenames[t] = "SNES Rainbow Road R/T"
                 break;
             }
+    });
+    //Making sure only courses that were in that time period are here
+    stringJSON = JSON.stringify(new_values);
+    Object.keys(coursenames).forEach((t, i) => {
+        if(stringJSON.includes(t)){
+            courseList.push(t);
+            //console.log(`The courses does have ${coursenames[t]}`)
+        } else {
+            delete coursenames[t];
+        }
     });
 }
 
@@ -401,6 +413,9 @@ function initializeProperties(){
     statsJSON.rally_badges = [];
     statsJSON.nearly_maxed_courses = [];
     statsJSON.maxed_courses = [];
+    statsJSON.missing_courses_d = [];
+    statsJSON.missing_courses_k = [];
+    statsJSON.missing_courses_g = [];
     statsJSON.courseRatingArray = [];
     statsJSON.total_coin_worth = 0;
     statsJSON.total_ruby_worth = 0;
@@ -448,6 +463,7 @@ function buildStats(){
     getMostObtainedBadges(10);
     calcMaxCourses(27);
     mostItemUsesCourses();
+    missingCourseCoverage();
     calcCourseRatingArray();
     simulateCoinWorth();
     simulateRubiesSpent();
@@ -1299,27 +1315,21 @@ function mostItemUsesCourses(){
 
 function missingCourseCoverage(){
     //loops usercoursedata 3 times for d/k/g, creates 3 arrays for missing top shelf d/k/g
-    let top_shelf_driver_missing = [];
-    let top_shelf_kart_missing = [];
-    let top_shelf_glider_missing = [];
     Object.keys(usercoursedata.Courses).forEach(t =>{
         if(usercoursedata.Courses[t].moreGoodAt.Drivers.length == 0){
-            top_shelf_driver_missing.push(t);
+            statsJSON.missing_courses_d.push(t);
         }
     })
     Object.keys(usercoursedata.Courses).forEach(t =>{
         if(usercoursedata.Courses[t].moreGoodAt.Karts.length == 0){
-            top_shelf_kart_missing.push(t);
+            statsJSON.missing_courses_k.push(t);
         }
     })
     Object.keys(usercoursedata.Courses).forEach(t =>{
         if(usercoursedata.Courses[t].moreGoodAt.Gliders.length == 0){
-            top_shelf_glider_missing.push(t);
+            statsJSON.missing_courses_g.push(t);
         }
     })
-    //console.log(top_shelf_driver_missing);
-    //console.log(top_shelf_kart_missing);
-    //console.log(top_shelf_glider_missing);
 }
 
 function convertStatsJSONEnglish(){
@@ -1375,4 +1385,65 @@ function convertNameToId(input) {
         }
     });
     return itemId;
+}
+
+function createCourseReverseDict(){
+    Object.keys(coursenames).forEach((t,i)=>{
+        courseReverse[coursenames[t]] = t;
+    })
+}
+
+function generateLevelsCSV(){
+    let CSV = "D/K/G, Points Cap, Level, Level Progress, Received\n";
+    Object.keys(allItemsSort).forEach((t,i)=>{
+        let item = allItemsSort[t];
+        CSV += `${item.name}, ${item.pointCapLevel}, ${item.level}, ${item.progress}, ${new Date(item.received_epoch * 1000).toLocaleDateString()}\n`;
+    })
+    Object.keys(new_values).forEach((t,i)=>{
+        if(!allItemsIds.includes(parseInt(t)) && parseInt(t) != 29 && parseInt(t) != 70057){
+            CSV += `${new_values[t].nameEng}, 0, 0, 0, 0\n`;
+        }
+    })
+    return CSV
+}
+
+
+function generateBGCSV(){
+    let CSV = "D/K/G, Type, Level, Points Cap\n";
+    Object.keys(allItemsSort).forEach((t,i)=>{
+        let item = allItemsSort[t];
+        CSV += `${convertAccents(item.name)}, ${getItemType(item.id, "DKG")}, ${item.level}, ${item.pointCapLevel},\n`;
+    })
+    return CSV;
+}
+
+function generateCustomCSV(flags){
+    let CSV = `${(flags[0])? "D/K/G, ": ""}${(flags[1])? "Base Points, ": ""}${(flags[2])? "Base Points Progress, ": ""}${(flags[3])? "Level, ": ""}${(flags[4])? "Level Progress, ": ""}${(flags[5])? "Points Cap, ": ""}${(flags[6])? "Total Copies, ": ""}${(flags[7])? "Received, ": ""}${(flags[8])? "Last Used, ": ""}\n`;
+    Object.keys(allItemsSort).forEach((t,i)=>{
+        let item = allItemsSort[t];
+        //CSV += `${item.name}, ${item.pointCapLevel}, ${item.level}, ${item.progress}, ${item.received_epoch}\n`;
+        CSV += `${(flags[0])? `${item.name}, `: ""}${(flags[1])? `${item.basepoints}, `: ""}${(flags[2])? `${item.basepointsprogress}/${item.basepointsrangetotal}, `: ""}${(flags[3])? `${item.level}, `: ""}${(flags[4])? `${item.progress}, `: ""}${(flags[5])? `${item.pointCapLevel}, `: ""}${(flags[6])? `${item.totalCount}, `: ""}${(flags[7])? `${new Date(item.received_epoch * 1000).toLocaleDateString()} ${new Date(item.received_epoch * 1000).toLocaleTimeString()}, `: ""}${(flags[8])? `${new Date(item.last_used_epoch * 1000).toLocaleDateString()} ${new Date(item.last_used_epoch * 1000).toLocaleTimeString()}, `: ""}\n`;
+    })
+    return CSV;
+}
+
+function convertAccents(input) {
+    return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function getItemType(id, outputType){
+    let type = null;
+    switch(outputType){
+        case "012":
+            type = 0;
+            if(`${id}`.length == 5 && Math.floor(id / 1000) == 70){ type = 1}
+            if(`${id}`.length == 5 && Math.floor(id / 1000) == 30){ type = 2}
+            break;
+        case "DKG":
+            type = "D";
+            if(`${id}`.length == 5 && Math.floor(id / 1000) == 70){ type = "K"}
+            if(`${id}`.length == 5 && Math.floor(id / 1000) == 30){ type = "G"}
+            break;
+    }
+    return type;
 }
