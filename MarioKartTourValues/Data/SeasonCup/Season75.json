@@ -1,0 +1,111 @@
+{
+   "Title": "Mii Tour",
+   "Cup_1": {
+      "cupLabel": "Mii Cup",
+      "cupIcon": "MiiCup",
+      "courses": [
+         "Classic_Gwii_MushroomGorge",
+         "Remix_Grsfc_GhostValley1X",
+         "Remix_Grsfc_RainbowRoad1RX"
+      ]
+   },
+   "Cup_2": {
+      "cupLabel": "Diddy Kong Cup",
+      "cupIcon": "DiddyKongCup",
+      "courses": [
+         "Classic_Gagb_SkyGardenR",
+         "Remix_Grsfc_MarioCircuit1R",
+         "Classic_G3ds_BowserCastle"
+      ]
+   },
+   "Cup_3": {
+      "cupLabel": "Waluigi Cup",
+      "cupIcon": "WaluigiCup",
+      "courses": [
+         "Classic_Gagb_CheepCheepIsland",
+         "Classic_Gn64_KalimariDesert2R",
+         "Classic_Gwii_MushroomGorgeX"
+      ]
+   },
+   "Cup_4": {
+      "cupLabel": "Wario Cup",
+      "cupIcon": "WarioCup",
+      "courses": [
+         "Classic_Ggc_YoshiCircuitR",
+         "Classic_Gsfc_VanillaLake2R",
+         "Classic_G3ds_BowserCastleR"
+      ]
+   },
+   "Cup_5": {
+      "cupLabel": "Toad Cup",
+      "cupIcon": "KinopioCup",
+      "courses": [
+         "Remix_Grsfc_MarioCircuit1X",
+         "Classic_Gwii_MushroomGorgeR",
+         "Classic_Gds_WaluigiPinball"
+      ]
+   },
+   "Cup_6": {
+      "cupLabel": "Rosalina Cup",
+      "cupIcon": "RosettaCup",
+      "courses": [
+         "Classic_Ggc_YoshiCircuit",
+         "Classic_Gsfc_VanillaLake2X",
+         "Classic_Gagb_CheepCheepIslandR"
+      ]
+   },
+   "Cup_7": {
+      "cupLabel": "Kamek Cup",
+      "cupIcon": "KameckCup",
+      "courses": [
+         "Classic_Gds_KillerShipRX",
+         "Classic_G3ds_BowserCastleX",
+         "Classic_Gwii_MushroomGorge"
+      ]
+   },
+   "Cup_8": {
+      "cupLabel": "Luigi Cup",
+      "cupIcon": "LuigiCup",
+      "courses": [
+         "Classic_Gagb_SkyGarden",
+         "Classic_Gds_WaluigiPinballR",
+         "Classic_Gn64_KalimariDesert2X"
+      ]
+   },
+   "Cup_9": {
+      "cupLabel": "Daisy Cup",
+      "cupIcon": "DaisyCup",
+      "courses": [
+         "Classic_Gsfc_VanillaLake2",
+         "Remix_Grsfc_GhostValley1R",
+         "Classic_Gagb_CheepCheepIslandX"
+      ]
+   },
+   "Cup_10": {
+      "cupLabel": "Bowser Cup",
+      "cupIcon": "KoopaCup",
+      "courses": [
+         "Classic_Gn64_KalimariDesert2",
+         "Classic_Gwii_MushroomGorgeX",
+         "Classic_Ggc_YoshiCircuitX"
+      ]
+   },
+   "Cup_11": {
+      "cupLabel": "Hammer Bro Cup",
+      "cupIcon": "BrosHammerCup",
+      "courses": [
+         "Classic_Gds_WaluigiPinballX",
+         "Classic_Gagb_SkyGardenX",
+         "Remix_Grsfc_MarioCircuit1"
+      ]
+   },
+   "Cup_12": {
+      "cupLabel": "Mario Cup",
+      "cupIcon": "MarioCup",
+      "courses": [
+         "Classic_Gwii_MushroomGorgeR",
+         "Remix_Grsfc_GhostValley1",
+         "Classic_Gsfc_ChocoIsland1RX"
+      ]
+   }
+}
