@@ -171,6 +171,10 @@ function generatePointsBox(itemType, points, progress, capLevel, rarity, index){
             break;
     }
 
+    if(isMiiSuit(savedata.Drivers[`${index}`].id)){
+        points += 10;
+    }
+
     let pointsCount = document.createElement('div');
     pointsCount.id = `pointsCount_${points}`;
     pointsCount.className = "pointsContainer";
@@ -219,7 +223,7 @@ function generatePointsBox(itemType, points, progress, capLevel, rarity, index){
 function generateLevelBox(itemType, level, progress, index){
     let boxLevel = document.createElement('div')
     boxLevel.className = "boxLevel";
-    if(level == 7){
+    if(level == 8){
         boxLevel.style.backgroundImage = "url(./Images/UI/Lists/DriverLevelMaxed.png)";
     } else {
         boxLevel.style.backgroundImage = "url(./Images/UI/Lists/DriverLevelProgress.png)";
@@ -233,7 +237,7 @@ function generateLevelBox(itemType, level, progress, index){
     let converted = convertToLevel(savedata.Drivers[`${index}`].totalCount, values[`${savedata.Drivers[`${index}`].id}`].rarityId);
     //console.log(converted)
 
-    if(level != 7){
+    if(level != 8){
     let listlevelpanel = document.createElement('div');
     listlevelpanel.id = `listlevelpanel`
     listlevelpanel.className = `listlevelpanel`;

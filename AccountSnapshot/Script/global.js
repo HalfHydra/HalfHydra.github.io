@@ -1,5 +1,5 @@
 var isMobile = false;
-let version = "1.5.0";
+let version = "1.5.1";
 
 var currentCup = 0;
 var isDataEntered = false;
@@ -52,6 +52,7 @@ let currentScroll = [];
     let kartsS = { "0": 220, "6": 224, "13": 228, "21": 232, "30": 236, "40": 240, "51": 244, "63": 248, "76": 252, "90": 256, "105": 260, "121": 264, "138": 268, "156": 272, "175": 276, "195": 280, "216": 285, "238": 290, "261": 295, "285": 300, "311": 305, "339": 310, "369": 315, "401": 320, "435": 325, "471": 330, "509": 336, "548": 342, "588": 348, "629": 354, "671": 360, "714": 366, "758": 372, "803": 378, "849": 384, "896": 390, "944": 396, "993": 402, "1043": 408, "1094": 414, "1146": 420, "1199": 426, "1253": 432, "1308": 438, "1364": 444, "1421": 450 };
     let kartsH = { "0": 250, "6": 256, "13": 262, "21": 268, "30": 274, "40": 280, "51": 286, "63": 292, "76": 298, "90": 304, "105": 310, "121": 316, "138": 322, "156": 328, "175": 334, "195": 340, "216": 346, "238": 352, "261": 358, "285": 364, "311": 370, "339": 376, "369": 382, "401": 388, "435": 394, "471": 400, "509": 415, "548": 430, "588": 445, "629": 460, "671": 475, "714": 490, "758": 505, "803": 520, "849": 535, "896": 550, "944": 565, "993": 580, "1043": 595, "1094": 610, "1146": 625, "1199": 640, "1253": 655, "1308": 670, "1364": 685, "1421": 700 };
 
+let courseReverse = {};
 
 function generateArrays(){
 
@@ -278,7 +279,7 @@ function hideAllTabsButOne(tab){
 function convertToLevel(input, rarity){
     let level = 0;
     let remainder = input;
-    let levels = {"2":[1,1,1,2,2,3,5],"1":[1,1,2,3,4,5,8],"0":[1,2,5,8,11,14,20]};
+    let levels = {"2":[1,1,1,2,2,3,5,8],"1":[1,1,2,3,4,5,8,16],"0":[1,2,5,8,11,14,20,40]};
     let required = 0;
     while(remainder - levels[rarity][level] >= 0){
       remainder -= levels[rarity][level];
@@ -709,4 +710,91 @@ function generateCoursePanel(course, scale, txtColor){
     coursePanel.appendChild(courseTxt);
 
     return coursePanel;
+}
+
+function generateCoursePanelSpecial(course, scale, txtColor, promotionLevel, shelf){
+
+    let courseName = coursenames[course];
+
+    course = course.replace('Classic_','');
+    course = course.replace('New_','');
+    course = course.replace('Remix_','');
+
+    let coursePanel = document.createElement('div');
+    coursePanel.className = 'coursePanel';
+    if(scale != 1.0){
+        coursePanel.style.width = `${300 * scale}px`;
+        coursePanel.style.height = `${130 * scale}px`;
+    }
+
+    let courseImg = document.createElement('img');
+    courseImg.src = `https://halfhydra.github.io/MarioKartTourValues/Images/CourseIcons/${course}_sub.png`;
+    courseImg.className = 'courseImg';
+    if(scale != 1.0){
+        courseImg.style.width = `${300 * scale}px`;
+        courseImg.style.height = `${130 * scale}px`;
+    }
+    coursePanel.appendChild(courseImg);
+
+    let courseTxt = document.createElement('p');
+    courseTxt.innerHTML = `${courseName}`;
+    courseTxt.className = 'courseTxt';
+    if(scale != 1.0){
+        courseTxt.style.width = `${300 * scale}px`;
+        courseTxt.style.height = `${30 * scale}px`;
+    }
+    if(txtColor != null){
+        courseTxt.style.color = txtColor;
+    }
+    if(promotionLevel != 0){
+        courseTxt.style.color = "gold";
+    }
+    coursePanel.appendChild(courseTxt);
+
+    if(promotionLevel > 0){
+        let lockedLvlDiv = document.createElement('div');
+        lockedLvlDiv.className = "lockedLvlDiv";
+        coursePanel.appendChild(lockedLvlDiv);
+
+        let lockImg = document.createElement('img');
+        lockImg.src = './Images/UI/Profile/lock.png';
+        lockImg.className = 'lockImg';
+        lockedLvlDiv.appendChild(lockImg);
+
+        let levelNum = document.createElement('img');
+        levelNum.src = `./Images/UI/LeftNum/${promotionLevel}.png`;
+        levelNum.className = 'levelNumPL';
+        lockedLvlDiv.appendChild(levelNum);
+
+        let lvImg = document.createElement('img');
+        lvImg.src = './Images/UI/LeftNum/lv.png';
+        lvImg.className = 'lvImgPL';
+        lockedLvlDiv.appendChild(lvImg);
+
+        courseImg.style.filter = "brightness(36%)";
+
+        let shelfLvlDiv = document.createElement('div');
+        shelfLvlDiv.className = "shelfLvlDiv";
+        coursePanel.appendChild(shelfLvlDiv);
+        let shelfImg = document.createElement('img');
+        shelfImg.className = 'shelfImg';
+        shelfImg.src = './Images/UI/Records/2_kp.png';
+        switch(shelf){
+            case 2:
+                shelfImg.src = './Images/UI/Records/2_kp.png';
+                break;
+            case 3:
+                shelfImg.src = './Images/UI/Records/3_kp.png';
+                break;
+        }
+        shelfLvlDiv.appendChild(shelfImg);
+    }
+
+    return coursePanel;
+}
+
+function createCourseReverseDict(){
+    Object.keys(coursenames).forEach((t,i)=>{
+        courseReverse[coursenames[t]] = t;
+    })
 }
