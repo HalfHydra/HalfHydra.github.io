@@ -396,6 +396,7 @@ function initializeProperties(){
     statsJSON.most_neglected_gliders = [];
     statsJSON.used_cap_ticket_nums = [0,0,0,0,0,0,0,0,0];
     statsJSON.level_7_dkg = [];
+    statsJSON.level_8_dkg = [];
     statsJSON.single_capped_dkg = [];
     statsJSON.double_capped_dkg = [];
     statsJSON.triple_capped_dkg = [];
@@ -447,6 +448,7 @@ function buildStats(){
     mostNeglectedKarts(5);
     mostNeglectedGliders(5);
     getLevel7DKG();
+    getLevel8DKG();
     getSingleCappedDKG();
     getDoubleCappedDKG();
     getTripleCappedDKG();
@@ -863,6 +865,15 @@ function getLevel7DKG(){
     });
 }
 
+function getLevel8DKG(){
+    allItemsSort.forEach((t,i)=>{
+        let level = t.level;
+        if(level == 8){
+            statsJSON.level_8_dkg.push(t.id);
+        }
+    });
+}
+
 function getSingleCappedDKG(){
     allItemsSort.forEach((t,i)=>{
         let pointCapLevel = t.pointCapLevel;
@@ -896,7 +907,7 @@ function getMaxedDKG(){
         let level = t.level;
         let pointCapLevel = t.pointCapLevel;
         let basePoints = t.basepoints;
-        if(level == 7 && pointCapLevel == 3 && maxedPointsCounts.includes(basePoints)){
+        if(level == 8 && pointCapLevel == 3 && maxedPointsCounts.includes(basePoints)){
             statsJSON.completely_maxed_dkg.push(t.id);
         }
     });

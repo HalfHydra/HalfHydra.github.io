@@ -661,7 +661,6 @@ function generateProfile(){
         maxDiv.className = "quickStartBadgeDiv";
     }
 
-
     output.appendChild(generateSectionBar(`Triple Capped D/K/G`));
 
     let cap3Div = document.createElement('div');
@@ -709,6 +708,25 @@ function generateProfile(){
     // statsJSON.single_capped_dkg.forEach((t,i)=>{
     //     cap1Div.appendChild(generateDKGPanel(t, 1.0, true, false));
     // })
+
+    output.appendChild(generateSectionBar(`Level 8 D/K/G`));
+
+    let level8Div = document.createElement('div');
+    level8Div.className = "favDiv";
+    output.appendChild(level8Div);
+
+    statsJSON.level_8_dkg.forEach((t,i)=>{
+        level8Div.appendChild(generateDKGPanel(t, 1.0, true, false));
+    })
+
+    if(statsJSON.level_8_dkg.length == 0){
+        let noneText = document.createElement('p');
+        noneText.className = "noneYetText";
+        noneText.innerHTML = "None Yet!";
+        level8Div.appendChild(noneText);
+
+        level8Div.className = "quickStartBadgeDiv";
+    }
 
     output.appendChild(generateSectionBar(`Level 7 D/K/G`));
 

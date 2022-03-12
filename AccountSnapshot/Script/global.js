@@ -1,5 +1,5 @@
 var isMobile = false;
-let version = "1.4.0";
+let version = "1.5.0";
 
 var currentCup = 0;
 var isDataEntered = false;
