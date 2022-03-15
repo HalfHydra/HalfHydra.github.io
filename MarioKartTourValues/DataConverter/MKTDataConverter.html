@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MKT Data Converter</title>
+        <style>
+            body {
+                background-image: url("./InfoPattern.png");
+            }
+
+            div {
+                text-align: center;
+            }
+
+            textarea {
+                width: 410px;
+                height: 250px;
+                font-size: 12px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+
+            p {
+                color: Blue;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .paragraph1 {
+                font-size: 12px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                line-height: 2px;
+            }
+
+            .paragraph2 {
+                font-size: 13px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p> MKT Data JSON Converter</p>
+
+            <p> Season Key:</p>
+            <textarea id="seasonkey" style="width: 100px;height:25px">Season</textarea>
+
+            <p> Old Data JSON:</p>
+            <textarea id="oldvalues"></textarea>
+
+            <p> New Data JSON:</p>
+            <textarea id="newvalues"></textarea>
+
+            <p> Season Cup Data JSON: </p>
+            <textarea id="seasondata"></textarea>
+
+            <p> Course Name Data JSON:</p>
+            <textarea id="coursenamedata"></textarea>
+
+            <p><button onclick="generateZip()">Download Season Data</button></p>
+        </div>
+        <script src="./FileSaver.js"></script>
+        <script src="./jszip.js"></script>
+        <script>
+            let seasonKey = "SeasonXX";
+            let oldValues = {};
+            let newValues = {};
+            let seasonJSON = {};
+            let coursenames = {};
+
+            let outputData = [];
+
+            function generateZip(){
+                //Input
+                seasonKey = document.getElementById('seasonkey').value;
+                oldValues = JSON.parse(document.getElementById('oldvalues').value);
+                newValues = JSON.parse(document.getElementById('newvalues').value);
+                seasonJSON = JSON.parse(document.getElementById('seasondata').value);
+                coursenames = JSON.parse(document.getElementById('coursenamedata').value);
+                //Perform
+                outputData[0] = newValues;
+                outputData[1] = dataChangesJson();
+                let userFriendly = userFriendlyOutput(outputData[1]);
+                outputData[2] = userFriendly[0];
+                outputData[3] = userFriendly[1];
+                outputData[4] = convertValuesDataRei(newValues);
+                outputData[5] = convertValuesDataRei(outputData[1]);
+                let csvArrayFull = convertValuesDataBen(newValues)
+                let csvArrayChanges = convertValuesDataBen(outputData[1])
+                outputData[6] = csvArrayFull[0];
+                outputData[7] = csvArrayFull[1];
+                outputData[8] = csvArrayChanges[0];
+                outputData[9] = csvArrayChanges[1];
+
+                var zip = new JSZip();
+                // var MKTV = zip.folder(`Mario-Kart-Tour-Values`);
+                // var MKTV_Data = MKTV.folder(`Data`);
+                // var MKTV_Data_SeasonCup = MKTV_Data.folder(`SeasonCup`);
+                // var MKTV_Data_DataJSON = MKTV_Data.folder(`DataJSON`);
+                // MKTV_Data.file(`course_names.json`, JSON.stringify(coursenames, null, 3));
+                // MKTV_Data_SeasonCup.file(`${seasonKey}.json`, JSON.stringify(seasonJSON, null, 3));
+                // MKTV_Data_DataJSON.file(`${seasonKey}.json`, JSON.stringify(newValues, null, 3));
+                var Preferred = zip.folder(`Preferred Courses Dump`);
+                let prefix = seasonJSON.Title.replace(/\s+/g, '');
+                Preferred.file(`${prefix}_Data_Extended.json`, JSON.stringify(outputData[0], null, 3));
+                Preferred.file(`${prefix}_Data_Changes.json`, JSON.stringify(outputData[1], null, 3));
+                Preferred.file(`${prefix}_Data_User_Friendly.json`, JSON.stringify(outputData[2], null, 3));
+                Preferred.file(`${prefix}_Data_Changes_Generic.csv`, outputData[3]);
+                Preferred.file(`${prefix}_Data_Rei_Complete.csv`, outputData[4]);
+                Preferred.file(`${prefix}_Data_Rei_Changes.csv`, outputData[5]);
+                Preferred.file(`${prefix}_Data_Ben_B&G_Complete.csv`, outputData[6]);
+                Preferred.file(`${prefix}_Data_Ben_Normal_Complete.csv`, outputData[7]);
+                Preferred.file(`${prefix}_Data_Ben_B&G_Changes.csv`, outputData[8]);
+                Preferred.file(`${prefix}_Data_Ben_Normal_Changes.csv`, outputData[9]);
+
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    // Force down of the Zip file
+                    saveAs(content, `${seasonKey}Data.zip`);
+                });
+            }
+
+            function dataChangesJson(){
+                let old_values = convertToUsable(oldValues)
+                let new_values = convertToUsable(newValues)
+                clonevalues = JSON.parse(JSON.stringify(new_values));
+                Object.keys(new_values).forEach((t, i) => {
+                    if(old_values[t] == undefined){
+                        return;
+                    }
+                    clonevalues[t].moreGoodAt.forEach((a, i) => {
+                        if(old_values[t].moreGoodAt.includes(a)){
+                            new_values[t].moreGoodAt.splice(new_values[t].moreGoodAt.indexOf(a), 1);
+                        }
+                    });
+                    clonevalues[t].goodAt.forEach((a, i) => {
+                        if(old_values[t].goodAt.includes(a)){
+                            new_values[t].goodAt.splice(new_values[t].goodAt.indexOf(a), 1);
+                        }
+                    });
+                    delete new_values[t].rarityId
+                    delete new_values[t].itemTypeId
+                });
+                Object.keys(new_values).forEach((t, i) => {
+                    if(old_values[t] == undefined){
+                        return;
+                    }
+                    if(new_values[t].moreGoodAt.length == 0 && new_values[t].goodAt.length == 0){
+                        delete new_values[t];
+                    }
+                });
+                Object.keys(new_values).forEach((t, i) => {
+                    let moreGoodAt = [];
+                    new_values[t].moreGoodAt.forEach((a, i) => {
+                        moreGoodAt.push({ "name": a, "promotionLevel": 0 })
+                    });
+                    new_values[t].moreGoodAt = moreGoodAt;
+                    let goodAt = [];
+                    new_values[t].goodAt.forEach((a, i) => {
+                        let promotionLevel = 0;
+                        if(new_values[t].unlock3.includes(a)){
+                            promotionLevel = 3;
+                        }
+                        if(new_values[t].unlock6.includes(a)){
+                            promotionLevel = 6;
+                        }
+                        if(new_values[t].unlock8.includes(a)){
+                            promotionLevel = 8;
+                        }
+                        goodAt.push({ "name": a, "promotionLevel": promotionLevel })
+                    });
+                    new_values[t].goodAt = goodAt;
+                    delete new_values[t].unlock3
+                    delete new_values[t].unlock6
+                    delete new_values[t].unlock8
+                });
+                return new_values
+            }
+
+            function userFriendlyOutput(userfriendlyvalues){
+                userfriendlyvalues = convertToUsable(userfriendlyvalues)
+                let userfriendlychanges = {};
+                Object.keys(userfriendlyvalues).forEach((t, i) => {
+                    userfriendlyvalues[t].moreGoodAt.forEach((a, i) => {
+                        userfriendlyvalues[t].moreGoodAt[i] = convertCollisionName(`${a}`, false);
+                    });
+                    userfriendlyvalues[t].goodAt.forEach((a, i) => {
+                        userfriendlyvalues[t].goodAt[i] = convertCollisionName(`${a}`, false);
+                    });
+                    userfriendlyvalues[t].unlock3.forEach((a, i) => {
+                        userfriendlyvalues[t].unlock3[i] = convertCollisionName(`${a}`,false);
+                    });
+                    userfriendlyvalues[t].unlock6.forEach((a, i) => {
+                        userfriendlyvalues[t].unlock6[i] = convertCollisionName(`${a}`,false);
+                    });
+                    userfriendlyvalues[t].unlock8.forEach((a, i) => {
+                        userfriendlyvalues[t].unlock8[i] = convertCollisionName(`${a}`,false);
+                    });
+                    // delete userfriendlyvalues[t].unlock3
+                    // delete userfriendlyvalues[t].unlock6
+                    // delete userfriendlyvalues[t].unlock8
+                });
+                let itemArrays = generateItemArraysUser(userfriendlyvalues);
+                let sortedArrays = sortItemsUser(itemArrays);
+                sortedArrays[1].forEach((t,i) => {
+                    userfriendlychanges[`${t}`] = {};
+                    userfriendlychanges[`${t}`].TopShelf = userfriendlyvalues[sortedArrays[0][i]].moreGoodAt
+                    userfriendlychanges[`${t}`].MiddleShelf = userfriendlyvalues[sortedArrays[0][i]].goodAt
+                    if(userfriendlyvalues[sortedArrays[0][i]].unlock3 != undefined){
+                        userfriendlychanges[`${t}`].UnlockLevel3 = userfriendlyvalues[sortedArrays[0][i]].unlock3
+                        userfriendlychanges[`${t}`].UnlockLevel6 = userfriendlyvalues[sortedArrays[0][i]].unlock6
+                        userfriendlychanges[`${t}`].UnlockLevel8 = userfriendlyvalues[sortedArrays[0][i]].unlock8
+                    }
+                });
+                let outputsheet = "";
+                sortedArrays[1].forEach((t,i) => {
+                    if(userfriendlychanges[`${t}`].TopShelf.length > 0){
+                    outputsheet += `${t},`;
+                    outputsheet += `TopShelf,`;
+                    }
+                    userfriendlychanges[`${t}`].TopShelf.forEach((a,i) => {
+                        outputsheet += `${a},`;
+                    });
+                    if(userfriendlychanges[`${t}`].TopShelf.length > 0){
+                        outputsheet += `\n`;
+                    }
+
+                    if(userfriendlychanges[`${t}`].MiddleShelf.length > 0){
+                        outputsheet += `${t},`;
+                        outputsheet += `MiddleShelf,`;
+                    }
+                    userfriendlychanges[`${t}`].MiddleShelf.forEach((a,i) => {
+                        outputsheet += `${a},`;
+                    });
+                    if(userfriendlychanges[`${t}`].MiddleShelf.length > 0){
+                        outputsheet += `\n`;
+                    }
+
+                    //LEVEL 8 MEASURE
+                    // if(!(userfriendlychanges[`${t}`].MiddleShelf.length == 1 && userfriendlychanges[`${t}`].UnlockLevel8.length == 1)){
+                    // if(userfriendlychanges[`${t}`].MiddleShelf.length > 0){
+                    //     outputsheet += `${t},`;
+                    //     outputsheet += `MiddleShelf,`;
+                    // }
+                    // userfriendlychanges[`${t}`].MiddleShelf.forEach((a,i) => {
+                    //     if(userfriendlychanges[`${t}`].UnlockLevel8.length != 0 && userfriendlychanges[`${t}`].UnlockLevel6.length == 0){
+                    //         if(a === userfriendlychanges[`${t}`].UnlockLevel8[0]){
+                    //             //console.log(`${a} == ${userfriendlychanges[`${t}`].UnlockLevel8[0]}`)
+                    //             return;
+                    //         }
+                    //     }
+                    //     outputsheet += `${a},`;
+                    // });
+                    // if(userfriendlychanges[`${t}`].MiddleShelf.length > 0){
+                    //     outputsheet += `\n`;
+                    // }
+                    // }
+
+                    if(userfriendlychanges[`${t}`].UnlockLevel3.length != 0){
+                        outputsheet += `${t},`;
+                        outputsheet += `Unlock3,`;
+                        userfriendlychanges[`${t}`].UnlockLevel3.forEach((a,i) => {
+                            outputsheet += `${a},`;
+                        });
+                        outputsheet += `\n`;
+                        outputsheet += `${t},`;
+                        outputsheet += `Unlock6,`;
+                        userfriendlychanges[`${t}`].UnlockLevel6.forEach((a,i) => {
+                            outputsheet += `${a},`;
+                        });
+                        outputsheet += `\n`;
+                    }
+
+                    if(userfriendlychanges[`${t}`].UnlockLevel8.length != 0){
+                        outputsheet += `${t},`;
+                        outputsheet += `Unlock8,`;
+                        userfriendlychanges[`${t}`].UnlockLevel8.forEach((a,i) => {
+                            outputsheet += `${a},`;
+                        });
+                        outputsheet += `\n`;
+                    }
+                });
+                return [userfriendlychanges, outputsheet]
+            }
+
+            function convertValuesDataRei(reiInput) {
+                let new_values = {};
+
+                let csv = "";
+
+                new_values = convertToUsable(reiInput); //convert new_values into convertedvalues
+                let itemArrays = generateItemArraysUser(new_values); //generate item arrays
+                new_values = convertInternalCourseValues(new_values, true); //converts internal to coursenames from new_values into convertedvalues
+                new_values = removeForwardSlashRTValues(new_values);  //removes forward slashes from new_values into convertedvalues
+                let alphabeticalItems = createItemsListAlpha(itemArrays); //create alphabetical items list
+                generateItemValuesCSV(); //generate the csv
+
+                function generateItemArrays() {
+                    Object.keys(new_values).forEach(itemId => {
+                        if (itemId != 29 && itemId != 70057) {
+                            if (itemId.toString().length < 5) {
+                                driverTable.push(itemId);
+                            }
+                            if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 30) {
+                                wingTable.push(itemId);
+                            }
+                            if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
+                                machineTable.push(itemId);
+                            }
+                        }
+
+                    });
+                }
+
+                function convertNameToId(input) {
+                    let itemId = 0;
+                    Object.keys(new_values).forEach((t, i) => {
+                        if (input === new_values[t].nameEng) {
+                            itemId = t;
+                        }
+                    });
+                    return itemId;
+                }
+
+                function generateItemValuesCSV() {
+                    alphabeticalItems.forEach((t, i) => {
+                        let item = new_values[convertNameToId(t)];
+                        item.unlock8.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,,,${a}\n`;
+                        })
+                        item.unlock6.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,,${a},\n`;
+                        })
+                        item.unlock3.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,${a},,\n`;
+                        })
+                        item.moreGoodAt.forEach((a, i) => {
+                            csv += `${convertAccents(t)},${a},,,\n`;
+                        })
+                    });
+                }
+
+                return csv;
+            }
+
+            function convertValuesDataBen(benInput){
+                let new_values = {};
+
+                let driverTable = [];
+                let machineTable = [];
+                let wingTable = [];
+
+                let csvArray = [];
+
+                new_values = convertToUsable(benInput); //convert new_values into convertedvalues
+                new_values = convertInternalCourseValues(new_values, false); //converts internal to coursenames from new_values into convertedvalues
+
+                let itemArrays = generateItemArraysUser(new_values);
+                let sortedArrays = sortItemsUser(itemArrays);
+
+                let alphabeticalItems = createItemsListAlpha(itemArrays); //create alphabetical items list
+                generateItemValuesCSV(); //generate the csv
+
+                generateItemValuesCSVNormal(new_values, sortedArrays);
+
+                function convertNameToId(input) {
+                    let itemId = 0;
+                    Object.keys(new_values).forEach((t, i) => {
+                        if (input === new_values[t].nameEng) {
+                            itemId = t;
+                        }
+                    });
+                    return itemId;
+                }
+
+                function generateItemValuesCSV() {
+                    let csv = "";
+                    csv += `Name,Top Shelf,Unlock 3,Unlock 6,Unlock 8,Middle Shelf\n`;
+                    alphabeticalItems.forEach((t, i) => {
+                        let item = new_values[convertNameToId(t)];
+                        item.unlock8.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,,,${a},\n`;
+                        })
+                        item.unlock6.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,,${a},,\n`;
+                        })
+                        item.unlock3.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,${a},,,\n`;
+                        })
+                        item.moreGoodAt.forEach((a, i) => {
+                            csv += `${convertAccents(t)},${a},,,,\n`;
+                        })
+                        item.goodAt.forEach((a, i) => {
+                            csv += `${convertAccents(t)},,,,,${a}\n`;
+                        })
+                    });
+                    csvArray.push(csv);
+                }
+
+                function generateItemValuesCSVNormal(new_values,sortedArrays) {
+                    let csv = "";
+                    csv += `Name,Locked,Top Shelf,Middle Shelf,Sort ID\n`;
+                    sortedArrays[0].forEach((t, i) => {
+                        let item = new_values[t];
+                        csv += `${convertAccents(sortedArrays[1][i])},`;
+                        csv += `"`;
+                        if(item.unlock3.length == 0){
+                            csv += `, , `;
+                        }
+                        if(item.unlock3.length == 1){
+                            csv += `, `;
+                        }
+                        item.unlock3.forEach((a, i) => {
+                            csv += a + `, `;
+                        });
+                        if(item.unlock3.length == 1){
+                            csv += `, `;
+                        }
+                        item.unlock6.forEach((a, i) => {
+                            csv += a + `, `;
+                        })
+                        item.unlock8.forEach((a, i) => {
+                            csv += a + `, `;
+                        })
+                        csv = csv.slice(0,-2)
+                        csv += `",`;
+                        csv += `"`;
+                        item.moreGoodAt.forEach((a, i) => {
+                            csv += `${a}, `;
+                        })
+                        csv = csv.slice(0,-2)
+                        csv += `",`;
+                        csv += `"`;
+                        item.goodAt.forEach((a, i) => {
+                            csv += `${a}, `;
+                        })
+                        csv = csv.slice(0,-2)
+                        csv += `", ${newValues[t].sortId}`;
+                        csv += `\n`;
+                    });
+                    csvArray.push(csv);
+                }
+
+                return csvArray;
+            }
+            //Global
+            function convertToUsable(inputValues) {
+                var convertedData = {};
+                Object.keys(inputValues).forEach((t, i) => {
+                    if (t == "Courses") {
+                        return;
+                    }
+                    convertedData[t] = {};
+                    convertedData[t].nameEng = inputValues[t].nameEng;
+                    convertedData[t].rarityId = inputValues[t].rarityId;
+                    convertedData[t].itemTypeId = inputValues[t].itemTypeId;
+                    convertedData[t].sortId = inputValues[t].sortId;
+                    convertedData[t].moreGoodAt = [];
+                    convertedData[t].goodAt = [];
+                    convertedData[t].unlock3 = [];
+                    convertedData[t].unlock6 = [];
+                    convertedData[t].unlock8 = [];
+
+                    Object.values(inputValues[t].moreGoodAt).forEach((y, i) => {
+                        convertedData[t].moreGoodAt.push(y.name);
+                    });
+
+                    Object.values(inputValues[t].goodAt).forEach((y, i) => {
+                        switch (y.promotionLevel) {
+                            case 0:
+                                convertedData[t].goodAt.push(y.name);
+                                break;
+                            case 3:
+                                convertedData[t].goodAt.push(y.name);
+                                convertedData[t].unlock3.push(y.name);
+                                break;
+                            case 6:
+                                convertedData[t].goodAt.push(y.name);
+                                convertedData[t].unlock6.push(y.name);
+                                break;
+                            case 8:
+                                convertedData[t].goodAt.push(y.name);
+                                convertedData[t].unlock8.push(y.name);
+                                break;
+                        }
+                    });
+
+                });
+                return convertedData;
+            }
+
+            function convertInternalCourseValues(convertedvalues, rei) {
+                Object.keys(convertedvalues).forEach((t, i) => {
+                    convertedvalues[t].moreGoodAt.forEach((a, i) => {
+                        convertedvalues[t].moreGoodAt[i] = convertCollisionName(`${a}`, rei)
+                    });
+                    convertedvalues[t].goodAt.forEach((a, i) => {
+                        convertedvalues[t].goodAt[i] = convertCollisionName(`${a}`, rei)
+                    });
+                    convertedvalues[t].unlock3.forEach((a, i) => {
+                        convertedvalues[t].unlock3[i] = convertCollisionName(`${a}`, rei)
+                    });
+                    convertedvalues[t].unlock6.forEach((a, i) => {
+                        convertedvalues[t].unlock6[i] = convertCollisionName(`${a}`, rei)
+                    });
+                    convertedvalues[t].unlock8.forEach((a, i) => {
+                        convertedvalues[t].unlock8[i] = convertCollisionName(`${a}`, rei)
+                    });
+                });
+                return convertedvalues;
+            }
+
+            function removeForwardSlashRTValues(convertedvalues) {
+                Object.keys(convertedvalues).forEach((t, i) => {
+                    convertedvalues[t].moreGoodAt.forEach((a, i) => {
+                        let name = convertedvalues[t].moreGoodAt[i];
+                        if (name == undefined) {
+                            return;
+                        }
+                        if (name.includes("/")) {
+                            convertedvalues[t].moreGoodAt[i] = convertedvalues[t].moreGoodAt[i].replaceAll('/', '')
+                        }
+                    });
+                    convertedvalues[t].goodAt.forEach((a, i) => {
+                        let name = convertedvalues[t].goodAt[i];
+                        if (name == undefined) {
+                            return;
+                        }
+                        if (name.includes("/")) {
+                            convertedvalues[t].goodAt[i] = convertedvalues[t].goodAt[i].replaceAll('/', '')
+                        }
+                    });
+                    convertedvalues[t].unlock3.forEach((a, i) => {
+                        let name = convertedvalues[t].unlock3[i];
+                        if (name == undefined) {
+                            return;
+                        }
+                        if (name.includes("/")) {
+                            convertedvalues[t].unlock3[i] = convertedvalues[t].unlock3[i].replaceAll('/', '')
+                        }
+                    });
+                    convertedvalues[t].unlock6.forEach((a, i) => {
+                        let name = convertedvalues[t].unlock6[i];
+                        if (name == undefined) {
+                            return;
+                        }
+                        if (name.includes("/")) {
+                            convertedvalues[t].unlock6[i] = convertedvalues[t].unlock6[i].replaceAll('/', '')
+                        }
+                    });
+                    convertedvalues[t].unlock8.forEach((a, i) => {
+                        let name = convertedvalues[t].unlock8[i];
+                        if (name == undefined) {
+                            return;
+                        }
+                        if (name.includes("/")) {
+                            convertedvalues[t].unlock8[i] = convertedvalues[t].unlock8[i].replaceAll('/', '')
+                        }
+                    });
+                });
+                return convertedvalues;
+            }
+
+            function convertAccents(input) {
+                return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            }
+
+            function generateItemArraysUser(userfriendlyvalues) {
+                let userDriverTable = [];
+                let userWingTable = [];
+                let userMachineTable = [];
+                Object.keys(userfriendlyvalues).forEach(itemId => {
+                    if (itemId != 29 && itemId != 70057) {
+                        if (itemId.toString().length < 5) {
+                            userDriverTable.push(itemId);
+                        }
+                        if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 30) {
+                            userWingTable.push(itemId);
+                        }
+                        if (itemId.toString().length == 5 && Math.round(itemId / 1000) == 70) {
+                            userMachineTable.push(itemId);
+                        }
+                    }
+                });
+                return [userDriverTable, userWingTable, userMachineTable]
+            }
+
+            function sortItemsUser(itemArrays){
+                let sortInGameItems = [];
+                let sortInGameItemsNames = [];
+                itemArrays[0].forEach((t, i) => {
+                    sortInGameItems.push(t);
+                });
+                itemArrays[1].forEach((t, i) => {
+                    sortInGameItems.push(t);
+                });
+                itemArrays[2].forEach((t, i) => {
+                    sortInGameItems.push(t);
+                });
+                sortInGameItems.sort(function (a, b) {
+                    return newValues[`${a}`].sortId - newValues[`${b}`].sortId;
+                });
+                sortInGameItemsNames = [...sortInGameItems];
+                sortInGameItemsNames.forEach((t, i) => {
+                    sortInGameItemsNames[i] = newValues[t].nameEng;
+                });
+                return [sortInGameItems, sortInGameItemsNames]
+            }
+
+            function createItemsListAlpha(itemArrays) {
+                let alphabeticalItems = [];
+                itemArrays[0].forEach((t, i) => {
+                    alphabeticalItems.push(newValues[t].nameEng);
+                });
+                itemArrays[1].forEach((t, i) => {
+                    alphabeticalItems.push(newValues[t].nameEng);
+                });
+                itemArrays[2].forEach((t, i) => {
+                    alphabeticalItems.push(newValues[t].nameEng);
+                });
+                alphabeticalItems.sort();
+                return alphabeticalItems;
+            }
+
+            function convertCollisionName(input, noSlash){
+                switch(input){
+                    case "Classic_G3ds_RainbowRoad":
+                    return "3DS Rainbow Road"
+                    case "Classic_G3ds_RainbowRoadX":
+                    return "3DS Rainbow Road T"
+                    case "Classic_G3ds_RainbowRoadR":
+                    return "3DS Rainbow Road R"
+                    case "Classic_G3ds_RainbowRoadRX":
+                    return (noSlash) ? "3DS Rainbow Road RT" : "3DS Rainbow Road R/T"
+                    case "Classic_Gsfc_RainbowRoad":
+                    return "SNES Rainbow Road"
+                    case "Classic_Gsfc_RainbowRoadX":
+                    return "SNES Rainbow Road T"
+                    case "Classic_Gsfc_RainbowRoadR":
+                    return "SNES Rainbow Road R"
+                    case "Classic_Gsfc_RainbowRoadRX":
+                    return (noSlash) ? "SNES Rainbow Road RT" : "SNES Rainbow Road R/T"
+                }
+                return coursenames[input];
+            }
+            
+        </script>
+    </body>
+</html>
