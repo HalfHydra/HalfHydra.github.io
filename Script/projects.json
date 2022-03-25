@@ -1,0 +1,32 @@
+{
+    "AccSnap": {
+        "Name": "AccSnap",
+        "Langauge": "JavaScript",
+        "Description": "Using a given file dump of your Mario Kart Tour profile, you can see various stats and the full snapshot of your profile!",
+        "LongDescription": "",
+        "Link": "./AccountSnapshot/input.html",
+        "Icon": "./Images/AccSnap.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505"
+    },
+    "MKTV": {
+        "Name": "Mario Kart Tour Values",
+        "Langauge": "JavaScript",
+        "Description": "A simple tool to help you compare your most valuable items and their high level courses visually!",
+        "LongDescription": "",
+        "Link": "./MarioKartTourValues/main.html",
+        "Icon": "./Images/MKTV.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505"
+    },
+    "PeaceAndTranquil": {
+        "Name": "Peace and Tranquilility",
+        "Langauge": "JavaScript",
+        "Description": "No one is around to help.",
+        "LongDescription": "",
+        "Link": "./PeaceAndTranquility/main.html",
+        "Icon": "./Images/PeaceAndTranquility.gif",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505"
+    }
+}
