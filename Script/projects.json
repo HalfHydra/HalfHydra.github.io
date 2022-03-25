@@ -1,32 +1,35 @@
 {
     "AccSnap": {
-        "Name": "AccSnap",
+        "Name": "Mario Kart Tour Account Snapshot",
         "Langauge": "JavaScript",
-        "Description": "Using a given file dump of your Mario Kart Tour profile, you can see various stats and the full snapshot of your profile!",
-        "LongDescription": "",
-        "Link": "./AccountSnapshot/input.html",
-        "Icon": "./Images/AccSnap.png",
+        "Description": "Using a given file dump of your Mario Kart Tour profile, you can see various stats and the full snapshot of your profile! This is no longer being supported as of the Samurai Tour.",
+        "LongDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Icon": "./Images/Icon/AccSnap.png",
         "LabelColor": "#60bcff",
-        "BackgroundColor": "#FF0505"
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/MKT-Profile-Stats",
+        "Link": "./AccountSnapshot/input.html"
     },
     "MKTV": {
-        "Name": "Mario Kart Tour Values",
+        "Name": "Mario Kart Tour Item Values",
         "Langauge": "JavaScript",
-        "Description": "A simple tool to help you compare your most valuable items and their high level courses visually!",
+        "Description": "A retired tool to help you compare your most valuable items and their high level courses visually!",
         "LongDescription": "",
         "Link": "./MarioKartTourValues/main.html",
-        "Icon": "./Images/MKTV.png",
+        "Icon": "./Images/Icon/MKTV.png",
         "LabelColor": "#60bcff",
-        "BackgroundColor": "#FF0505"
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/Mario-Kart-Tour-Values"
     },
     "PeaceAndTranquil": {
         "Name": "Peace and Tranquilility",
         "Langauge": "JavaScript",
         "Description": "No one is around to help.",
         "LongDescription": "",
-        "Link": "./PeaceAndTranquility/main.html",
-        "Icon": "./Images/PeaceAndTranquility.gif",
+        "Link": "./PeaceAndTranquility/PeaceAndTranquility.html",
+        "Icon": "./Images/Icon/PeaceAndTranquility.gif",
         "LabelColor": "#60bcff",
-        "BackgroundColor": "#FF0505"
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/HalfHydra.github.io/tree/master/PeaceAndTranquility"
     }
 }
