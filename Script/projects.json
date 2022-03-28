@@ -1,4 +1,14 @@
 {
+    "Win10BGDump": {
+        "Name": "Windows 10 Spotlight Background Dumper",
+        "Langauge": "C#",
+        "Description": "Quick tool to locate the CDN cache of the Windows 10 Spotlight backgrounds, retrieve them, and sort them.",
+        "LongDescription": "",
+        "Icon": "./Images/Icon/Win10BGDump.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/Win10SpotlightBackgroundDump"
+    },
     "AccSnap": {
         "Name": "Mario Kart Tour Account Snapshot",
         "Langauge": "JavaScript",
@@ -9,6 +19,16 @@
         "BackgroundColor": "#FF0505",
         "Source": "https://github.com/HalfHydra/MKT-Profile-Stats",
         "Link": "./AccountSnapshot/input.html"
+    },
+    "PipeSim": {
+        "Name": "Mario Kart Tour Pipe Simulator",
+        "Langauge": "Electron",
+        "Description": "A discontinued electron app to simulate pulling the pipe from Mario Kart Tour! A lot of effort was put in to get as close to the original as possible.",
+        "LongDescription": "",
+        "Icon": "./Images/Icon/PipeSim.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/Pipe-Simulator"
     },
     "BTD6InstaTracker": {
         "Name": "Bloons TD 6 Instant Monkey Tracker",
