@@ -10,6 +10,16 @@
         "Source": "https://github.com/HalfHydra/MKT-Profile-Stats",
         "Link": "./AccountSnapshot/input.html"
     },
+    "BTD6InstaTracker": {
+        "Name": "Bloons TD 6 Instant Monkey Tracker",
+        "Langauge": "JavaScript",
+        "Description": "Intended to become an Instant Monkey manager for the game Bloons TD 6, but was retired after I shifted my focus elsewhere.",
+        "LongDescription": "",
+        "Icon": "./Images/Icon/Insta.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/BTD6-Insta-Tracker"
+    },
     "MKTV": {
         "Name": "Mario Kart Tour Item Values",
         "Langauge": "JavaScript",
@@ -47,7 +57,7 @@
         "Name": "Peace and Tranquilility",
         "Langauge": "JavaScript",
         "Description": "No one is around to help.",
-        "LongDescription": "This is based on this YouTube video and portion of the game A Hat in Time.<br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/SHvhps47Lmc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br> This was one of the first things I made, and it was fun to try and recreate the effects of the text and background.",
+        "LongDescription": "This is based on this YouTube video and portion of the game A Hat in Time.<br><iframe class=\"youtube_embed\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/SHvhps47Lmc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br> This was one of the first things I made, and it was fun to try and recreate the effects of the text and background.",
         "Link": "./PeaceAndTranquility/PeaceAndTranquility.html",
         "Icon": "./Images/Icon/PeaceAndTranquility.gif",
         "LabelColor": "#60bcff",

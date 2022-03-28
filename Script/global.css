@@ -109,7 +109,7 @@ html {
 }
 
 .project_module {
-    max-width: 800px;
+    max-width: 1200px;
     background-color: var(--secondary);
     border: 1px solid var(--primary_red);
     padding: 10px;
@@ -164,6 +164,7 @@ html {
     line-height: 24px;
     user-select: none;
     display: inline-block;
+    width: calc(100% - 20px);
 }
 
 button {
@@ -229,6 +230,19 @@ button {
     line-height: 24px;
     user-select: none;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--tertiary);
+    width: calc(100% - 30px);
+}
+
+.project_module_long_desc_text {
+    padding: 0px;
+}
+
+.youtube_embed {
+    width: 100%;
+    max-width: 560px;
+    max-height: 315px;
+    background-color: var(--tertiary);
+    margin: 10px 0;
 }

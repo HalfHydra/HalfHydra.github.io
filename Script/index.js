@@ -160,7 +160,7 @@ let makeProjectModules = () => {
 
         let module_long_desc = document.createElement('span');
         module_long_desc.innerHTML = projectObj.LongDescription;
-        module_long_desc.className = 'project_module_long_desc';
+        module_long_desc.className = 'project_module_long_desc_text';
         module_div_4.appendChild(module_long_desc);
 
 
