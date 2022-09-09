@@ -13,9 +13,24 @@ window.mobileCheck = function() {
 };
 
 window.addEventListener('load', () => {
-    readTextFile("./Script/projects.json", 1);
-    readTextFile("./Script/settings.json", 2);
+    fetch("./Script/archived_projects.json")
+        .then(response => {
+            return response.json();
+        })
+        .then(jsondata => {
+            projects = jsondata;
+            return fetch("./Script/settings.json");
+        })
+        .then(response => {
+            return response.json();
+        })
+        .then(jsondata => {
+            settings = jsondata;
+            generatePage();
+        })
+});
 
+let generatePage = () => {
     let headers = makeHeaders();
     headers.forEach(header => {
         header_container.appendChild(header);
@@ -34,7 +49,7 @@ window.addEventListener('load', () => {
     })
 
     changeTab(settings.Default_Tab);
-});
+}
 
 let makeHeaders = () => {
     let headers = [];
@@ -185,25 +200,4 @@ let openTab = (url) => {
 
 let openInfo = (project) => {
     (document.getElementById(`${project}_long_desc`).className == 'inactive') ? document.getElementById(`${project}_long_desc`).className = 'project_module_long_desc' : document.getElementById(`${project}_long_desc`).className = 'inactive';
-}
-
-async function readTextFile(file, a) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status == 0) {
-                var allText = rawFile.responseText;
-                switch (a) {
-                    case 1:
-                        projects = JSON.parse(allText);
-                        break;
-                    case 2:
-                        settings = JSON.parse(allText);
-                        break;
-                }
-            }
-        }
-    }
-    rawFile.send(null);
 }
