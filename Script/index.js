@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         container.appendChild(node);
     })
 
-    let project_container = document.getElementById('Projects_content');
+    let project_container = document.getElementById('Archived Projects_content');
 
     let projectModules = makeProjectModules();
     projectModules.forEach(project => {

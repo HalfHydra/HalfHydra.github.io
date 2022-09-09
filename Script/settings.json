@@ -1,10 +1,11 @@
 {
     "Version": "0.7.0",
     "Tabs": [
-        "Projects",
+        "Current Projects",
+        "Archived Projects",
         "History",
         "YouTube",
         "About"
     ],
-    "Default_Tab": "Projects"
+    "Default_Tab": "Current Projects"
 }

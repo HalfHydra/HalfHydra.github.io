@@ -2,7 +2,7 @@
     "Win10BGDump": {
         "Name": "Windows 10 Spotlight Background Dumper",
         "Langauge": "C#",
-        "Description": "Quick tool to locate the CDN cache of the Windows 10 Spotlight backgrounds, retrieve them, and sort them.",
+        "Description": "Quick tool to locate the CDN cache of the Windows 10 assets including Spotlight backgrounds, retrieve them, and sort them.",
         "LongDescription": "",
         "Icon": "./Images/Icon/Win10BGDump.png",
         "LabelColor": "#60bcff",
@@ -13,7 +13,7 @@
         "Name": "Mario Kart Tour Account Snapshot",
         "Langauge": "JavaScript",
         "Description": "Using a given file dump of your Mario Kart Tour profile, you can see various stats and the full snapshot of your profile! This is no longer being supported as of the Samurai Tour.",
-        "LongDescription": "A little while ago I discovered that by adding someone as a friend in the game Mario Kart Tour, more data was sent to my game than was revealed in the menus. I wanted to find a way to use this to present and preserve the data, thus, the Account Snapshot project was created! Sadly, it seemed to be too difficult for people to be able to use the script to dump their data themselves, so I ended up making a system where others could join my Discord server and then request for one. I would give them a JSON file, which has all of the data of their profile I could access, and then have them upload that file to this project website hosted on my GitHub site, giving a visual and much prettier version of their profile. It also included various calculations made on the data as well.",
+        "LongDescription": "A little while ago I discovered that by adding someone as a friend in the game Mario Kart Tour, more data was sent to my game than was revealed in the menus. I wanted to find a way to use this to present and preserve the data, thus, the Account Snapshot project was created! Sadly, it seemed to be too difficult for people to be able to use the script to dump their data themselves, so I ended up making a system where others could join my Discord server and then request for one. I would give them a JSON file, which has all of the data of their profile I could access, and then have them upload that file to this project website hosted on my GitHub site, giving a visual and much prettier version of their profile. It also included various calculations made on the data as well. Over 425 people were given a snapshot at one time, and I'm proud of that number considering the manual system that had to be used.",
         "Icon": "./Images/Icon/AccSnap.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
@@ -52,9 +52,9 @@
         "Source": "https://github.com/HalfHydra/Mario-Kart-Tour-Values"
     },
     "BTD5ChallengeEditor": {
-        "Name": "BTD5 Challenge Editor",
+        "Name": "Bloons TD 5 Challenge Editor",
         "Langauge": "JavaScript",
-        "Description": "A tool made to create challenge jsons for Bloons TD 5! Styled after Bloons TD 6's challenge editor.",
+        "Description": "A tool made to create challenge jsons for Bloons TD 5 (Steam)! Styled after Bloons TD 6's challenge editor.",
         "LongDescription": "",
         "Link": "./BTD5ChallengeEditor/BTD5 Challenge Editor Advanced.html",
         "Icon": "./Images/Icon/BTD5ChallengeEditor.png",

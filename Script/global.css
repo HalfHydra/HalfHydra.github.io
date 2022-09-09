@@ -27,6 +27,7 @@ html {
     padding: 10px;
     border-bottom: 1px solid var(--primary_red);
 }
+
 /* Old Colors
 .header_tab {
     background-color: #F5F5F5;
@@ -53,6 +54,10 @@ html {
     user-select: none;
 }
 */
+
+.scrollbar-hack {
+    padding-left: calc(100vw - 100%);
+}
 
 .header_tab {
     background-color:  var(--secondary);
