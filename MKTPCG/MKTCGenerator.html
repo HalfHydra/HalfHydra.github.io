@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>MKT Panel Generator</title>
+   <link rel="stylesheet" href="./src/reset.css">
+   <link rel="stylesheet" href="./src/style.css">
+   <style>
+      @font-face {
+         font-family: tour;
+         src: url('./Font/nintendoP_NTLG-NR-DB_003.ttf');
+      }
+
+      @font-face {
+         font-family: tour_bold;
+         src: url('./Font/nintendoP_NTLG-NR-UB_003.ttf');
+      }
+   </style>
+</head>
+
+<div id="editModal" class="modal" style="display:none;">
+   <div class="modal-content gradient-stripedbg fadeIn">
+      <div id="editModalContainer" class="modal-container">
+         <span onclick="document.getElementById('editModal').style.display='none'" class="exit-button">&times;</span>
+      </div>
+   </div>
+</div>
+</div>
+
+<body class="background" id="bigbody">
+   <img id="loadingimg" src="./Images/UI/Loading.png"
+      style="width:96px;height:96px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
+   <div id="content">
+      <div id="items" class="items">
+         <div id="settings_drivers" class="dkgSettings">
+         </div>
+         <div id="drivers" class="dkgContainer">
+         </div>
+         <div id="settings_karts" class="dkgSettings">
+         </div>
+         <div id="karts" class="dkgContainer">
+         </div>
+         <div id="settings_gliders" class="dkgSettings">
+         </div>
+         <div id="gliders" class="dkgContainer">
+         </div>
+         <div id="settings_final" class="dkgContainer">
+         </div>
+         <div id="secret_processor" class="dkgContainer" style="display:none">
+         </div>
+      </div>
+
+      <script src="./src/main.js"></script>
+      <script src="./src/drag&drop.js"></script>
+      <script src="./src/html2canvas.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+      <script>
+         window.onbeforeunload = function () {
+            saveSettings()
+            updateLocalStorage();
+            document.getElementById('loadingimg').style.display = "block";
+         }
+
+         window.onload = function () {
+            document.getElementById('loadingimg').style.display = "none";
+            generateIntroModal();
+         }
+      </script>
+</body>
+
+</html>

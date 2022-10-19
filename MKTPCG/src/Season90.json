@@ -1,0 +1,1893 @@
+{
+    "countPerRow": [
+        5,
+        6,
+        5
+    ],
+    "drivers": {
+        "0": {
+            "origin": "Site",
+            "image": "MetalMario",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "-16",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "1": {
+            "origin": "Site",
+            "image": "Kinopeach",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "2": {
+            "origin": "Site",
+            "image": "Pauline",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "13",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "3": {
+            "origin": "Site",
+            "image": "MetalPeach",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "4": {
+            "origin": "Site",
+            "image": "PaulineParty",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "5": {
+            "origin": "Site",
+            "image": "KinopioParty",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "-21",
+            "type": 0,
+            "isNew": true
+        },
+        "6": {
+            "origin": "Site",
+            "image": "PeachWinter",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "7": {
+            "origin": "Site",
+            "image": "LuigiPenguin",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "8": {
+            "origin": "Site",
+            "image": "MarioIce",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "-17",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "9": {
+            "origin": "Site",
+            "image": "BbPeachCupid",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "10": {
+            "origin": "Site",
+            "image": "Mario_Classic",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "11": {
+            "origin": "Site",
+            "image": "Luigi_Classic",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "12": {
+            "origin": "Site",
+            "image": "Yoshi_Black",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "12",
+            "type": 0,
+            "isNew": false
+        },
+        "13": {
+            "origin": "Site",
+            "image": "KinopioBrigade",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "-17",
+            "type": 0,
+            "isNew": false
+        },
+        "14": {
+            "origin": "Site",
+            "image": "KinopicoExplorer",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "15": {
+            "origin": "Site",
+            "image": "PeachExplorer",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "16": {
+            "origin": "Site",
+            "image": "RosettaFire",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "17": {
+            "origin": "Site",
+            "image": "CatPeach",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "8",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "18": {
+            "origin": "Site",
+            "image": "KinopioCat",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "15",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "19": {
+            "origin": "Site",
+            "image": "PaulineHeart",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "20": {
+            "origin": "Site",
+            "image": "MarioRacer",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "21": {
+            "origin": "Site",
+            "image": "Yoshi_White",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "12",
+            "type": 0,
+            "isNew": false
+        },
+        "22": {
+            "origin": "Site",
+            "image": "DaisySwimwear",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "23": {
+            "origin": "Site",
+            "image": "TanukiMario",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "13",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "24": {
+            "origin": "Site",
+            "image": "RosettaTanuki",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "25": {
+            "origin": "Site",
+            "image": "RosettaCat",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "13",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "26": {
+            "origin": "Site",
+            "image": "MarioPilot",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "27": {
+            "origin": "Site",
+            "image": "DaisyFarmer",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "-14",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "28": {
+            "origin": "Site",
+            "image": "HoneKoopa",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "29": {
+            "origin": "Site",
+            "image": "HeyhoCook",
+            "rarity": "2",
+            "scale": "0.96",
+            "xOffset": "-20",
+            "yOffset": "-19",
+            "type": 0,
+            "isNew": true
+        },
+        "30": {
+            "origin": "Site",
+            "image": "NokonokoRace_Gold",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "31": {
+            "origin": "Site",
+            "image": "FK",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "32": {
+            "origin": "Site",
+            "image": "DixieKong",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "-28",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "33": {
+            "origin": "Site",
+            "image": "WarioGunman",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "34": {
+            "origin": "Site",
+            "image": "Totten",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "35": {
+            "origin": "Site",
+            "image": "KoopaJrPirate",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "36": {
+            "origin": "Site",
+            "image": "BombKing",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "37": {
+            "origin": "Site",
+            "image": "JugemParty",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        },
+        "38": {
+            "origin": "Site",
+            "image": "Catherine_Black",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "12",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "39": {
+            "origin": "Site",
+            "image": "Kameck",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "8",
+            "yOffset": "-13",
+            "type": 0,
+            "isNew": true
+        },
+        "40": {
+            "origin": "Site",
+            "image": "Bull",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "36",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": false
+        },
+        "41": {
+            "origin": "Site",
+            "image": "Catherine_White",
+            "rarity": "2",
+            "scale": "1",
+            "xOffset": "10",
+            "yOffset": "0",
+            "type": 0,
+            "isNew": true
+        }
+    },
+    "karts": {
+        "0": {
+            "origin": "Site",
+            "image": "70011",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "1": {
+            "origin": "Site",
+            "image": "70118",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "2": {
+            "origin": "Site",
+            "image": "70061",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "3": {
+            "origin": "Site",
+            "image": "70120",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "4": {
+            "origin": "Site",
+            "image": "70098",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "5": {
+            "origin": "Site",
+            "image": "70123",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "6": {
+            "origin": "Site",
+            "image": "70109",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "7": {
+            "origin": "Site",
+            "image": "70016",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "8": {
+            "origin": "Site",
+            "image": "70097",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "9": {
+            "origin": "Site",
+            "image": "70143",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "10": {
+            "origin": "Site",
+            "image": "70155",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "11": {
+            "origin": "Site",
+            "image": "70159",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "12": {
+            "origin": "Site",
+            "image": "70160",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "13": {
+            "origin": "Site",
+            "image": "70161",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "14": {
+            "origin": "Site",
+            "image": "70172",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "15": {
+            "origin": "Site",
+            "image": "70178",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "16": {
+            "origin": "Site",
+            "image": "70171",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "17": {
+            "origin": "Site",
+            "image": "70202",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "18": {
+            "origin": "Site",
+            "image": "70204",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "19": {
+            "origin": "Site",
+            "image": "70163",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "20": {
+            "origin": "Site",
+            "image": "70041",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "21": {
+            "origin": "Site",
+            "image": "70205",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "22": {
+            "origin": "Site",
+            "image": "70192",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "23": {
+            "origin": "Site",
+            "image": "70176",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "24": {
+            "origin": "Site",
+            "image": "70227",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "25": {
+            "origin": "Site",
+            "image": "70224",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "26": {
+            "origin": "Site",
+            "image": "70230",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "27": {
+            "origin": "Site",
+            "image": "70259",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "28": {
+            "origin": "Site",
+            "image": "70054",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "29": {
+            "origin": "Site",
+            "image": "70267",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "30": {
+            "origin": "Site",
+            "image": "70106",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "31": {
+            "origin": "Site",
+            "image": "70215",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "32": {
+            "origin": "Site",
+            "image": "70274",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "33": {
+            "origin": "Site",
+            "image": "70017",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "34": {
+            "origin": "Site",
+            "image": "70167",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "35": {
+            "origin": "Site",
+            "image": "70276",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "36": {
+            "origin": "Site",
+            "image": "70279",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "37": {
+            "origin": "Site",
+            "image": "70138",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "38": {
+            "origin": "Site",
+            "image": "70289",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "39": {
+            "origin": "Site",
+            "image": "70292",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "40": {
+            "origin": "Site",
+            "image": "70152",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "41": {
+            "origin": "Site",
+            "image": "70294",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "42": {
+            "origin": "Site",
+            "image": "70295",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "43": {
+            "origin": "Site",
+            "image": "70296",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "44": {
+            "origin": "Site",
+            "image": "70297",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "45": {
+            "origin": "Site",
+            "image": "70310",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "46": {
+            "origin": "Site",
+            "image": "70333",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "47": {
+            "origin": "Site",
+            "image": "70337",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "48": {
+            "origin": "Site",
+            "image": "70340",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "49": {
+            "origin": "Site",
+            "image": "70052",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "50": {
+            "origin": "Site",
+            "image": "70341",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "51": {
+            "origin": "Site",
+            "image": "70342",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "52": {
+            "origin": "Site",
+            "image": "70344",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "53": {
+            "origin": "Site",
+            "image": "70132",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "54": {
+            "origin": "Site",
+            "image": "70198",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "55": {
+            "origin": "Site",
+            "image": "70199",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "56": {
+            "origin": "Site",
+            "image": "70311",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "57": {
+            "origin": "Site",
+            "image": "70107",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "58": {
+            "origin": "Site",
+            "image": "70373",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "59": {
+            "origin": "Site",
+            "image": "70013",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "60": {
+            "origin": "Site",
+            "image": "70129",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "61": {
+            "origin": "Site",
+            "image": "70062",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "62": {
+            "origin": "Site",
+            "image": "70188",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "63": {
+            "origin": "Site",
+            "image": "70210",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "64": {
+            "origin": "Site",
+            "image": "70207",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "65": {
+            "origin": "Site",
+            "image": "70193",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "66": {
+            "origin": "Site",
+            "image": "70236",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "67": {
+            "origin": "Site",
+            "image": "70240",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "68": {
+            "origin": "Site",
+            "image": "70241",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "69": {
+            "origin": "Site",
+            "image": "70245",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "70": {
+            "origin": "Site",
+            "image": "70248",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "71": {
+            "origin": "Site",
+            "image": "70219",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "72": {
+            "origin": "Site",
+            "image": "70244",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "73": {
+            "origin": "Site",
+            "image": "70260",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        },
+        "74": {
+            "origin": "Site",
+            "image": "70263",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "75": {
+            "origin": "Site",
+            "image": "70266",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "76": {
+            "origin": "Site",
+            "image": "70278",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "77": {
+            "origin": "Site",
+            "image": "70179",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "78": {
+            "origin": "Site",
+            "image": "70304",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "79": {
+            "origin": "Site",
+            "image": "70321",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": false
+        },
+        "80": {
+            "origin": "Site",
+            "image": "70185",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 1,
+            "isNew": true
+        }
+    },
+    "gliders": {
+        "0": {
+            "origin": "Site",
+            "image": "Wing_Std_Gold",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "1": {
+            "origin": "Site",
+            "image": "Wing_Crepe_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "2": {
+            "origin": "Site",
+            "image": "Wing_Star_Yellow",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "3": {
+            "origin": "Site",
+            "image": "Wing_Parachute_SignKingdom",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "4": {
+            "origin": "Site",
+            "image": "Wing_Parachute_SignHanabi",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "5": {
+            "origin": "Site",
+            "image": "Wing_Orizuru_Red",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "6": {
+            "origin": "Site",
+            "image": "Wing_PParasol_Blue",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "7": {
+            "origin": "Site",
+            "image": "Wing_Kumo_LightBlue",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "8": {
+            "origin": "Site",
+            "image": "Wing_HeartBalloon_Valentine",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "9": {
+            "origin": "Site",
+            "image": "Wing_Star_Rainbow",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "10": {
+            "origin": "Site",
+            "image": "Wing_Flower8_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "11": {
+            "origin": "Site",
+            "image": "Wing_Paper_PinkGold",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "12": {
+            "origin": "Site",
+            "image": "Wing_ButterflyW_Orange",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "13": {
+            "origin": "Site",
+            "image": "Wing_Donut_Brown",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "14": {
+            "origin": "Site",
+            "image": "Wing_Crepe_Brown",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "15": {
+            "origin": "Site",
+            "image": "Wing_Donut_Pink",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "16": {
+            "origin": "Site",
+            "image": "Wing_WeddingBell_Silver",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "17": {
+            "origin": "Site",
+            "image": "Wing_Manta_Black",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "18": {
+            "origin": "Site",
+            "image": "Wing_Map_TreasureA",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "19": {
+            "origin": "Site",
+            "image": "Wing_ButterflyW_EmeraldGreen",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "20": {
+            "origin": "Site",
+            "image": "Wing_Sail_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "21": {
+            "origin": "Site",
+            "image": "Wing_DotStar_YellowFC",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "22": {
+            "origin": "Site",
+            "image": "Wing_Kumo_Pink",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "23": {
+            "origin": "Site",
+            "image": "Wing_Star_Silver",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "24": {
+            "origin": "Site",
+            "image": "Wing_ButterflyW_StainedRainbow",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "25": {
+            "origin": "Site",
+            "image": "Wing_WarioKite_SignSpacePlanet",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "26": {
+            "origin": "Site",
+            "image": "Wing_Nikukyu_Pink",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "27": {
+            "origin": "Site",
+            "image": "Wing_ParafoilCat_Calico",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "28": {
+            "origin": "Site",
+            "image": "Wing_Sail_Black",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "29": {
+            "origin": "Site",
+            "image": "Wing_Manta_Silver",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "30": {
+            "origin": "Site",
+            "image": "Wing_PParasol_Rose",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "31": {
+            "origin": "Site",
+            "image": "Wing_SnowCrystal_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "32": {
+            "origin": "Site",
+            "image": "Wing_Surfing_Blue",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "33": {
+            "origin": "Site",
+            "image": "Wing_Sail_Pink",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "34": {
+            "origin": "Site",
+            "image": "Wing_Nikukyu_Black",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "35": {
+            "origin": "Site",
+            "image": "Wing_Orizuru_Sakura",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "36": {
+            "origin": "Site",
+            "image": "Wing_Surfing_Silver",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "37": {
+            "origin": "Site",
+            "image": "Wing_ShipRudder_BrownGold",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "38": {
+            "origin": "Site",
+            "image": "Wing_ParafoilTanuki_Brown",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "39": {
+            "origin": "Site",
+            "image": "Wing_Asteroid_Gray",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "40": {
+            "origin": "Site",
+            "image": "Wing_Asteroid_PinkGold",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "41": {
+            "origin": "Site",
+            "image": "Wing_Candlestick_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "42": {
+            "origin": "Site",
+            "image": "Wing_ParafoilCat_Black",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "43": {
+            "origin": "Site",
+            "image": "Wing_ParafoilCat_Pink",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "44": {
+            "origin": "Site",
+            "image": "Wing_Parafoil_SignLuigiRw2",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "45": {
+            "origin": "Site",
+            "image": "Wing_BiWing_Red",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "46": {
+            "origin": "Site",
+            "image": "Wing_Book_Brown",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "47": {
+            "origin": "Site",
+            "image": "Wing_Candlestick_Cake",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "48": {
+            "origin": "Site",
+            "image": "Wing_Pretzels_Brown",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "49": {
+            "origin": "Site",
+            "image": "Wing_Basabasa_Blue",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "50": {
+            "origin": "Site",
+            "image": "Wing_Parachute_SignKiller",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "51": {
+            "origin": "Site",
+            "image": "Wing_Kumo_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "52": {
+            "origin": "Site",
+            "image": "Wing_Kumo_Gray",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "53": {
+            "origin": "Site",
+            "image": "Wing_DevilW_Purple",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "54": {
+            "origin": "Site",
+            "image": "Wing_PukuGlider_SignBanana",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "55": {
+            "origin": "Site",
+            "image": "Wing_BananaLeaf_Green",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "56": {
+            "origin": "Site",
+            "image": "Wing_DevilW_DragonGreen",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "57": {
+            "origin": "Site",
+            "image": "Wing_PukuGlider_SignGesso",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "58": {
+            "origin": "Site",
+            "image": "Wing_OmenPuku_ColorA",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "59": {
+            "origin": "Site",
+            "image": "Wing_Bangasa_SignKoopa",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": false
+        },
+        "60": {
+            "origin": "Site",
+            "image": "Wing_KBroom_Blue",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "61": {
+            "origin": "Site",
+            "image": "Wing_DevilW_Red",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "62": {
+            "origin": "Site",
+            "image": "Wing_PataW_White",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "63": {
+            "origin": "Site",
+            "image": "Wing_Devil_OrangePurple",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        },
+        "64": {
+            "origin": "Site",
+            "image": "Wing_PackunBalloon_Red",
+            "rarity": 2,
+            "scale": "1",
+            "xOffset": "0",
+            "yOffset": "0",
+            "type": 2,
+            "isNew": true
+        }
+    }
+}
