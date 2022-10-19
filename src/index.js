@@ -13,13 +13,13 @@ window.mobileCheck = function() {
 };
 
 window.addEventListener('load', () => {
-    fetch("./Script/archived_projects.json")
+    fetch("./src/projects.json")
         .then(response => {
             return response.json();
         })
         .then(jsondata => {
             projects = jsondata;
-            return fetch("./Script/settings.json");
+            return fetch("./src/settings.json");
         })
         .then(response => {
             return response.json();
@@ -41,11 +41,13 @@ let generatePage = () => {
         container.appendChild(node);
     })
 
-    let project_container = document.getElementById('Archived Projects_content');
+    let archived_container = document.getElementById('Archived Projects_content');
+    let project_container = document.getElementById('Current Projects_content');
 
     let projectModules = makeProjectModules();
     projectModules.forEach(project => {
-        project_container.appendChild(project);
+        console.log(project);
+        (project.getAttribute("archived") === "true") ? archived_container.appendChild(project) : project_container.appendChild(project);
     })
 
     changeTab(settings.Default_Tab);
@@ -108,6 +110,7 @@ let makeProjectModules = () => {
         let module = document.createElement('div');
         module.className = 'project_module';
         module.id = project;
+        module.setAttribute("archived", projectObj.Archived)
 
         let module_div_1 = document.createElement('div');
         module_div_1.className = 'project_module_div_1';

@@ -1,4 +1,15 @@
 {
+    "UNO": {
+        "Name": "UNO (Gameloft) Recreation",
+        "Langauge": "JavaScript",
+        "Description": "A personal project of a web based recreation of an older iPhone game.",
+        "LongDescription": "",
+        "Icon": "./Images/Icon/UNO.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/UNORemake",
+        "Archived": false
+    },
     "Win10BGDump": {
         "Name": "Windows 10 Spotlight Background Dumper",
         "Langauge": "C#",
@@ -7,7 +18,8 @@
         "Icon": "./Images/Icon/Win10BGDump.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/Win10SpotlightBackgroundDump"
+        "Source": "https://github.com/HalfHydra/Win10SpotlightBackgroundDump",
+        "Archived": false
     },
     "AccSnap": {
         "Name": "Mario Kart Tour Account Snapshot",
@@ -18,7 +30,8 @@
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
         "Source": "https://github.com/HalfHydra/MKT-Profile-Stats",
-        "Link": "./AccountSnapshot/input.html"
+        "Link": "./AccountSnapshot/input.html",
+        "Archived": true
     },
     "PipeSim": {
         "Name": "Mario Kart Tour Pipe Simulator",
@@ -28,7 +41,8 @@
         "Icon": "./Images/Icon/PipeSim.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/Pipe-Simulator"
+        "Source": "https://github.com/HalfHydra/Pipe-Simulator",
+        "Archived": true
     },
     "BTD6InstaTracker": {
         "Name": "Bloons TD 6 Instant Monkey Tracker",
@@ -38,7 +52,8 @@
         "Icon": "./Images/Icon/Insta.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/BTD6-Insta-Tracker"
+        "Source": "https://github.com/HalfHydra/BTD6-Insta-Tracker",
+        "Archived": true
     },
     "MKTV": {
         "Name": "Mario Kart Tour Item Values",
@@ -49,7 +64,8 @@
         "Icon": "./Images/Icon/MKTV.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/Mario-Kart-Tour-Values"
+        "Source": "https://github.com/HalfHydra/Mario-Kart-Tour-Values",
+        "Archived": true
     },
     "BTD5ChallengeEditor": {
         "Name": "Bloons TD 5 Challenge Editor",
@@ -60,7 +76,8 @@
         "Icon": "./Images/Icon/BTD5ChallengeEditor.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/BTD5ChallengeEditor"
+        "Source": "https://github.com/HalfHydra/BTD5ChallengeEditor",
+        "Archived": true
     },
     "PVZ2Tools": {
         "Name": "Plants vs. Zombies 2 Tools",
@@ -71,7 +88,8 @@
         "Icon": "./Images/Icon/Bloomerang.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/BTD5ChallengeEditor"
+        "Source": "https://github.com/HalfHydra/BTD5ChallengeEditor",
+        "Archived": true
     },
     "PeaceAndTranquil": {
         "Name": "Peace and Tranquilility",
@@ -82,6 +100,7 @@
         "Icon": "./Images/Icon/PeaceAndTranquility.gif",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/HalfHydra.github.io/tree/master/PeaceAndTranquility"
+        "Source": "https://github.com/HalfHydra/HalfHydra.github.io/tree/master/PeaceAndTranquility",
+        "Archived": true
     }
 }
