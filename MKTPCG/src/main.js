@@ -474,7 +474,7 @@ function generateOutputContainer() {
 
     let downloadButton = document.createElement('img');
     downloadButton.className = 'downloadButton';
-    downloadButton.src = "../Images/UI/Modal/Finished.png";
+    downloadButton.src = "./Images/UI/Modal/Finished.png";
     downloadButton.onclick = function () {
         generateSaveModal();
     }
