@@ -137,6 +137,30 @@ function generateItemsBox(output, type, scale) {
 
     let headerImg = document.createElement('img');
     headerImg.className = "headerImg";
+    headerImg.addEventListener("click", updateCounter, false);
+        var count = 0;
+        function updateCounter() {
+            count++;
+            if (count % 5 == 0) {
+                if (confirm(`THIS WILL OVERWRITE THE CURRENT SAVE. Do you want to remove all items in this category? Please save a backup of the file first so that you do not lose the current drivers karts and gliders!`)) {
+                    switch(type){
+                        case 0:
+                            settings.drivers = {};
+                            break;
+                        case 1:
+                            settings.karts = {};
+                            break;
+                        case 2:
+                            settings.gliders = {};
+                            break;
+                    }
+                    updateBoxes(type);
+                    count = 0;
+                } else {
+                    
+                }
+            }
+        }
     headerDiv.appendChild(headerImg);
 
 
@@ -482,6 +506,9 @@ function generateOutputContainer() {
 }
 
 function downloadContainer(type, scale) {
+    saveSettings();
+    exportLocalStorage();
+
     let downloadBtns = document.querySelectorAll('.itemBtn');
     downloadBtns.forEach(btn => {
         btn.setAttribute("disabled", "");
@@ -766,13 +793,25 @@ function generateIntroModal() {
     ribbonTxt.innerHTML = "Mario Kart Tour Panel\nContainer Generator";
     ribbonDiv.appendChild(ribbonTxt);
 
+    let centerBtns = document.createElement('div');
+    centerBtns.className = 'centerBtns';
+    panelEdit.appendChild(centerBtns);
+
+    let startFreshBtn = document.createElement('button');
+    startFreshBtn.className = 'startFresh';
+    startFreshBtn.innerHTML = "Start New";
+    startFreshBtn.onclick = function () {
+        startFresh();
+    }
+    centerBtns.appendChild(startFreshBtn);
+
     let toolGuide = document.createElement('button');
     toolGuide.className = 'toolGuide';
     toolGuide.innerHTML = "Continue";
     toolGuide.onclick = function () {
         loadFromLocalStorage();
     }
-    panelEdit.appendChild(toolGuide);
+    centerBtns.appendChild(toolGuide);
     if(localStorage.getItem("MKTPCG_Settings") == null){
         toolGuide.style.display = "none";
     }
@@ -825,6 +864,21 @@ function inputData() {
     }
 
     input.click();
+}
+
+function startFresh(){
+    settings = {
+        "countPerRow": [
+            5,
+            5,
+            5
+        ],
+        drivers: {},
+        karts: {},
+        gliders: {}
+    }
+    main();
+    document.getElementById("editModal").style.display = "none";
 }
 
 function loadFromLocalStorage(){
