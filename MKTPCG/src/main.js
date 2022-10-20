@@ -473,6 +473,7 @@ function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
 }
 
 function removeAllNew(type) {
+    saveSettings();
     switch (type) {
         case 0:
             Object.keys(settings.drivers).forEach(driver => {
