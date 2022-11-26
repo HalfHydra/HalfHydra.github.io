@@ -582,7 +582,7 @@ function generateEditModal(localSettings, item, type, id) {
     livePanel.className = 'livePanel';
     panelEdit.appendChild(livePanel);
 
-    livePanel.appendChild(generateEditDKGPanel(localSettings, item, type, 1, settings.isNew));
+    livePanel.appendChild(generateEditDKGPanel(localSettings, item, type, 1, localSettings.isNew));
 
     let panelSettings = document.createElement('div');
     panelSettings.className = 'panelSettings';
