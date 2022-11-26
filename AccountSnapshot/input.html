@@ -92,6 +92,8 @@
         <img src="./Images/UI/Profile/Logo.png">
         <p>Select the .json file with your data</p>
         <input type="file" id="file" style="width: 600px;height: 50px;">
+        <p>Or use a sample json file!</p>
+        <button id="sample" style="width: 200px;height: 50px;">Sample JSON</button>
         <img id="go" src="./Images/UI/Input/LetsGo.png" onclick="location.href = 'accountsnapshot.html'" class="notReady">
     </div>
     <script>
@@ -104,6 +106,17 @@
             }
             reader.readAsText(this.files[0]);
             document.getElementById('go').className = "ready";
+            //document.getElementById('Select').play();
+        });
+        document.getElementById('sample').addEventListener('click', function () {
+            fetch("./Sample/AccSnap_Sample_3-11-22.json")
+            .then(response => {
+                return response.text();
+            })
+            .then(jsondata => {
+                localStorage.setItem("MKTS_Data", jsondata);
+                document.getElementById('go').className = "ready";
+            })
             //document.getElementById('Select').play();
         });
     </script>
