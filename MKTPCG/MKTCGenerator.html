@@ -27,11 +27,22 @@
 </div>
 </div>
 
+<div id="itemModal" class="modal" style="display:none;">
+   <div class="modal-content gradient-stripedbg fadeIn">
+      <div id="itemModalContainer" class="modal-container">
+         <span onclick="document.getElementById('itemModal').style.display='none'" class="exit-button">&times;</span>
+      </div>
+   </div>
+</div>
+</div>
+
 <body class="background" id="bigbody">
    <img id="loadingimg" src="./Images/UI/Loading.png"
       style="width:96px;height:96px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 1000;">
    <div id="content">
       <div id="items" class="items">
+         <div id="tool_settings" class="">
+         </div>
          <div id="settings_drivers" class="dkgSettings">
          </div>
          <div id="drivers" class="dkgContainer">

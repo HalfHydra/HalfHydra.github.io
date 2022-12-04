@@ -13,17 +13,27 @@
             "xOffset": "-16",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": "1",
+            "points": "500",
+            "isUseItem": false,
+            "specialSkill": "Item0013"
         },
         "1": {
             "origin": "Site",
             "image": "Kinopeach",
-            "rarity": 2,
+            "rarity": "2",
             "scale": "1",
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": "1",
+            "points": "500",
+            "isUseItem": false,
+            "specialSkill": "Item0057"
         },
         "2": {
             "origin": "Site",
@@ -33,7 +43,12 @@
             "xOffset": "13",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": "1",
+            "points": "500",
+            "isUseItem": false,
+            "specialSkill": "Item0022"
         },
         "3": {
             "origin": "Site",
@@ -43,7 +58,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0058"
         },
         "4": {
             "origin": "Site",
@@ -53,7 +73,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0058"
         },
         "5": {
             "origin": "Site",
@@ -63,7 +88,12 @@
             "xOffset": "0",
             "yOffset": "-21",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0057"
         },
         "6": {
             "origin": "Site",
@@ -73,7 +103,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0016"
         },
         "7": {
             "origin": "Site",
@@ -83,7 +118,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0015"
         },
         "8": {
             "origin": "Site",
@@ -93,7 +133,12 @@
             "xOffset": "-17",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0015"
         },
         "9": {
             "origin": "Site",
@@ -103,7 +148,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0045"
         },
         "10": {
             "origin": "Site",
@@ -113,7 +163,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0044"
         },
         "11": {
             "origin": "Site",
@@ -123,7 +178,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0022"
         },
         "12": {
             "origin": "Site",
@@ -133,7 +193,12 @@
             "xOffset": "0",
             "yOffset": "12",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0050"
         },
         "13": {
             "origin": "Site",
@@ -143,7 +208,12 @@
             "xOffset": "0",
             "yOffset": "-17",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0047"
         },
         "14": {
             "origin": "Site",
@@ -153,7 +223,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0050"
         },
         "15": {
             "origin": "Site",
@@ -163,7 +238,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0051"
         },
         "16": {
             "origin": "Site",
@@ -173,7 +253,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0013"
         },
         "17": {
             "origin": "Site",
@@ -183,7 +268,12 @@
             "xOffset": "8",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0012"
         },
         "18": {
             "origin": "Site",
@@ -193,7 +283,12 @@
             "xOffset": "15",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0012"
         },
         "19": {
             "origin": "Site",
@@ -203,7 +298,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0013"
         },
         "20": {
             "origin": "Site",
@@ -213,7 +313,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0044"
         },
         "21": {
             "origin": "Site",
@@ -223,7 +328,12 @@
             "xOffset": "0",
             "yOffset": "12",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0044"
         },
         "22": {
             "origin": "Site",
@@ -233,7 +343,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0048"
         },
         "23": {
             "origin": "Site",
@@ -243,7 +358,12 @@
             "xOffset": "13",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0040"
         },
         "24": {
             "origin": "Site",
@@ -253,7 +373,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0040"
         },
         "25": {
             "origin": "Site",
@@ -263,7 +388,12 @@
             "xOffset": "13",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0012"
         },
         "26": {
             "origin": "Site",
@@ -273,7 +403,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0016"
         },
         "27": {
             "origin": "Site",
@@ -283,7 +418,12 @@
             "xOffset": "-14",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0047"
         },
         "28": {
             "origin": "Site",
@@ -293,7 +433,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0023"
         },
         "29": {
             "origin": "Site",
@@ -303,7 +448,12 @@
             "xOffset": "-20",
             "yOffset": "-19",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0057"
         },
         "30": {
             "origin": "Site",
@@ -313,7 +463,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0058"
         },
         "31": {
             "origin": "Site",
@@ -323,7 +478,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0052"
         },
         "32": {
             "origin": "Site",
@@ -333,7 +493,12 @@
             "xOffset": "-28",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0048"
         },
         "33": {
             "origin": "Site",
@@ -343,7 +508,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0013"
         },
         "34": {
             "origin": "Site",
@@ -353,7 +523,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0022"
         },
         "35": {
             "origin": "Site",
@@ -363,7 +538,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0051"
         },
         "36": {
             "origin": "Site",
@@ -373,7 +553,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0032"
         },
         "37": {
             "origin": "Site",
@@ -383,7 +568,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0022"
         },
         "38": {
             "origin": "Site",
@@ -393,7 +583,12 @@
             "xOffset": "12",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0051"
         },
         "39": {
             "origin": "Site",
@@ -403,7 +598,12 @@
             "xOffset": "8",
             "yOffset": "-13",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0058"
         },
         "40": {
             "origin": "Site",
@@ -413,7 +613,12 @@
             "xOffset": "36",
             "yOffset": "0",
             "type": 0,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0022"
         },
         "41": {
             "origin": "Site",
@@ -423,7 +628,12 @@
             "xOffset": "10",
             "yOffset": "0",
             "type": 0,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 500,
+            "isUseItem": false,
+            "specialSkill": "Item0044"
         }
     },
     "karts": {
@@ -435,7 +645,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "1": {
             "origin": "Site",
@@ -445,7 +660,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "2": {
             "origin": "Site",
@@ -455,7 +675,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "3": {
             "origin": "Site",
@@ -465,7 +690,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "4": {
             "origin": "Site",
@@ -475,7 +705,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "5": {
             "origin": "Site",
@@ -485,7 +720,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "6": {
             "origin": "Site",
@@ -495,7 +735,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "7": {
             "origin": "Site",
@@ -505,7 +750,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "8": {
             "origin": "Site",
@@ -515,7 +765,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "9": {
             "origin": "Site",
@@ -525,7 +780,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "10": {
             "origin": "Site",
@@ -535,7 +795,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "11": {
             "origin": "Site",
@@ -545,7 +810,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "12": {
             "origin": "Site",
@@ -555,7 +825,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "13": {
             "origin": "Site",
@@ -565,7 +840,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "14": {
             "origin": "Site",
@@ -575,7 +855,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "15": {
             "origin": "Site",
@@ -585,7 +870,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "16": {
             "origin": "Site",
@@ -595,7 +885,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "17": {
             "origin": "Site",
@@ -605,7 +900,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "18": {
             "origin": "Site",
@@ -615,7 +915,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "19": {
             "origin": "Site",
@@ -625,7 +930,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "20": {
             "origin": "Site",
@@ -635,7 +945,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "21": {
             "origin": "Site",
@@ -645,7 +960,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "22": {
             "origin": "Site",
@@ -655,7 +975,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "23": {
             "origin": "Site",
@@ -665,7 +990,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "24": {
             "origin": "Site",
@@ -675,7 +1005,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "25": {
             "origin": "Site",
@@ -685,7 +1020,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "26": {
             "origin": "Site",
@@ -695,7 +1035,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "27": {
             "origin": "Site",
@@ -705,7 +1050,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "28": {
             "origin": "Site",
@@ -715,7 +1065,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "29": {
             "origin": "Site",
@@ -725,7 +1080,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "30": {
             "origin": "Site",
@@ -735,7 +1095,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "31": {
             "origin": "Site",
@@ -745,7 +1110,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "32": {
             "origin": "Site",
@@ -755,7 +1125,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "33": {
             "origin": "Site",
@@ -765,7 +1140,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "34": {
             "origin": "Site",
@@ -775,7 +1155,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "35": {
             "origin": "Site",
@@ -785,7 +1170,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "36": {
             "origin": "Site",
@@ -795,7 +1185,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "37": {
             "origin": "Site",
@@ -805,7 +1200,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "38": {
             "origin": "Site",
@@ -815,7 +1215,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "39": {
             "origin": "Site",
@@ -825,7 +1230,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "40": {
             "origin": "Site",
@@ -835,7 +1245,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "41": {
             "origin": "Site",
@@ -845,7 +1260,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "42": {
             "origin": "Site",
@@ -855,7 +1275,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "43": {
             "origin": "Site",
@@ -865,7 +1290,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "44": {
             "origin": "Site",
@@ -875,7 +1305,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "45": {
             "origin": "Site",
@@ -885,7 +1320,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "46": {
             "origin": "Site",
@@ -895,7 +1335,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "47": {
             "origin": "Site",
@@ -905,7 +1350,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "48": {
             "origin": "Site",
@@ -915,7 +1365,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "49": {
             "origin": "Site",
@@ -925,7 +1380,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "50": {
             "origin": "Site",
@@ -935,7 +1395,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "51": {
             "origin": "Site",
@@ -945,7 +1410,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "52": {
             "origin": "Site",
@@ -955,7 +1425,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "53": {
             "origin": "Site",
@@ -965,7 +1440,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "54": {
             "origin": "Site",
@@ -975,7 +1455,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "55": {
             "origin": "Site",
@@ -985,7 +1470,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "56": {
             "origin": "Site",
@@ -995,7 +1485,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "57": {
             "origin": "Site",
@@ -1005,7 +1500,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "58": {
             "origin": "Site",
@@ -1015,7 +1515,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "59": {
             "origin": "Site",
@@ -1025,7 +1530,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "60": {
             "origin": "Site",
@@ -1035,7 +1545,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "61": {
             "origin": "Site",
@@ -1045,7 +1560,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "62": {
             "origin": "Site",
@@ -1055,7 +1575,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "63": {
             "origin": "Site",
@@ -1065,7 +1590,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "64": {
             "origin": "Site",
@@ -1075,7 +1605,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "65": {
             "origin": "Site",
@@ -1085,7 +1620,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "66": {
             "origin": "Site",
@@ -1095,7 +1635,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "67": {
             "origin": "Site",
@@ -1105,7 +1650,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "68": {
             "origin": "Site",
@@ -1115,7 +1665,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "69": {
             "origin": "Site",
@@ -1125,7 +1680,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "70": {
             "origin": "Site",
@@ -1135,7 +1695,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "71": {
             "origin": "Site",
@@ -1145,7 +1710,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "MiniTurbo"
         },
         "72": {
             "origin": "Site",
@@ -1155,7 +1725,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "73": {
             "origin": "Site",
@@ -1165,7 +1740,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "74": {
             "origin": "Site",
@@ -1175,7 +1755,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "75": {
             "origin": "Site",
@@ -1185,7 +1770,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         },
         "76": {
             "origin": "Site",
@@ -1195,7 +1785,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "DashPanel"
         },
         "77": {
             "origin": "Site",
@@ -1205,7 +1800,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "SlipStream"
         },
         "78": {
             "origin": "Site",
@@ -1215,7 +1815,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "79": {
             "origin": "Site",
@@ -1225,7 +1830,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "JumpAction"
         },
         "80": {
             "origin": "Site",
@@ -1235,7 +1845,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 1,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "RocketStart"
         }
     },
     "gliders": {
@@ -1247,7 +1862,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0014"
         },
         "1": {
             "origin": "Site",
@@ -1257,7 +1877,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "2": {
             "origin": "Site",
@@ -1267,7 +1892,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0014"
         },
         "3": {
             "origin": "Site",
@@ -1277,7 +1907,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "4": {
             "origin": "Site",
@@ -1287,7 +1922,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "5": {
             "origin": "Site",
@@ -1297,7 +1937,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "6": {
             "origin": "Site",
@@ -1307,7 +1952,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0033"
         },
         "7": {
             "origin": "Site",
@@ -1317,7 +1967,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "8": {
             "origin": "Site",
@@ -1327,7 +1982,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "9": {
             "origin": "Site",
@@ -1337,7 +1997,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0055"
         },
         "10": {
             "origin": "Site",
@@ -1347,7 +2012,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0033"
         },
         "11": {
             "origin": "Site",
@@ -1357,7 +2027,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "12": {
             "origin": "Site",
@@ -1367,7 +2042,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0055"
         },
         "13": {
             "origin": "Site",
@@ -1377,7 +2057,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "14": {
             "origin": "Site",
@@ -1387,7 +2072,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "15": {
             "origin": "Site",
@@ -1397,7 +2087,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0004"
         },
         "16": {
             "origin": "Site",
@@ -1407,7 +2102,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0033"
         },
         "17": {
             "origin": "Site",
@@ -1417,7 +2117,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "18": {
             "origin": "Site",
@@ -1427,7 +2132,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "19": {
             "origin": "Site",
@@ -1437,7 +2147,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "20": {
             "origin": "Site",
@@ -1447,7 +2162,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
         },
         "21": {
             "origin": "Site",
@@ -1457,7 +2177,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "22": {
             "origin": "Site",
@@ -1467,7 +2192,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
         },
         "23": {
             "origin": "Site",
@@ -1477,7 +2207,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "24": {
             "origin": "Site",
@@ -1487,7 +2222,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "25": {
             "origin": "Site",
@@ -1497,7 +2237,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "26": {
             "origin": "Site",
@@ -1507,7 +2252,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0055"
         },
         "27": {
             "origin": "Site",
@@ -1517,7 +2267,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0033"
         },
         "28": {
             "origin": "Site",
@@ -1527,7 +2282,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "29": {
             "origin": "Site",
@@ -1537,7 +2297,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "30": {
             "origin": "Site",
@@ -1547,7 +2312,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "31": {
             "origin": "Site",
@@ -1557,7 +2327,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0002"
         },
         "32": {
             "origin": "Site",
@@ -1567,7 +2342,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
         },
         "33": {
             "origin": "Site",
@@ -1577,7 +2357,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "34": {
             "origin": "Site",
@@ -1587,7 +2372,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "35": {
             "origin": "Site",
@@ -1597,7 +2387,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "36": {
             "origin": "Site",
@@ -1607,7 +2402,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "37": {
             "origin": "Site",
@@ -1617,7 +2417,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "38": {
             "origin": "Site",
@@ -1627,7 +2432,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0004"
         },
         "39": {
             "origin": "Site",
@@ -1637,7 +2447,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "40": {
             "origin": "Site",
@@ -1647,7 +2462,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "41": {
             "origin": "Site",
@@ -1657,7 +2477,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "42": {
             "origin": "Site",
@@ -1667,7 +2492,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "43": {
             "origin": "Site",
@@ -1677,7 +2507,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0002"
         },
         "44": {
             "origin": "Site",
@@ -1687,7 +2522,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "45": {
             "origin": "Site",
@@ -1697,7 +2537,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "46": {
             "origin": "Site",
@@ -1707,7 +2552,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "47": {
             "origin": "Site",
@@ -1717,7 +2567,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "48": {
             "origin": "Site",
@@ -1727,7 +2582,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0055"
         },
         "49": {
             "origin": "Site",
@@ -1737,7 +2597,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0005"
         },
         "50": {
             "origin": "Site",
@@ -1747,7 +2612,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0010"
         },
         "51": {
             "origin": "Site",
@@ -1757,7 +2627,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "52": {
             "origin": "Site",
@@ -1767,7 +2642,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "53": {
             "origin": "Site",
@@ -1777,7 +2657,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0033"
         },
         "54": {
             "origin": "Site",
@@ -1787,7 +2672,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
         },
         "55": {
             "origin": "Site",
@@ -1797,7 +2687,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
         },
         "56": {
             "origin": "Site",
@@ -1807,7 +2702,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0002"
         },
         "57": {
             "origin": "Site",
@@ -1817,7 +2717,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "58": {
             "origin": "Site",
@@ -1827,7 +2732,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0006"
         },
         "59": {
             "origin": "Site",
@@ -1837,7 +2747,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": false
+            "isNew": false,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0002"
         },
         "60": {
             "origin": "Site",
@@ -1847,7 +2762,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0011"
         },
         "61": {
             "origin": "Site",
@@ -1857,7 +2777,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "62": {
             "origin": "Site",
@@ -1867,7 +2792,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "63": {
             "origin": "Site",
@@ -1877,7 +2807,12 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0003"
         },
         "64": {
             "origin": "Site",
@@ -1887,7 +2822,186 @@
             "xOffset": "0",
             "yOffset": "0",
             "type": 2,
-            "isNew": true
+            "isNew": true,
+            "isExtended": false,
+            "level": 1,
+            "points": 400,
+            "isUseItem": false,
+            "specialSkill": "Item0001"
+        }
+    },
+    "specialSkills": {
+        "Item0000": {
+            "type": "all",
+            "storage": "link"
+        },
+        "Item0001": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0002": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0003": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0004": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0005": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0006": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0007": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0008": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0010": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0011": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0012": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0013": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0014": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0015": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0016": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0017": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0022": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0023": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0024": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0026": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0027": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0031": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0032": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0033": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0036": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0040": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0044": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0045": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0047": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0048": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0049": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0050": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0051": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0052": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0055": {
+            "type": "glider",
+            "storage": "link"
+        },
+        "Item0057": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "Item0058": {
+            "type": "driver",
+            "storage": "link"
+        },
+        "RocketStart": {
+            "type": "kart",
+            "storage": "link"
+        },
+        "SlipStream": {
+            "type": "kart",
+            "storage": "link"
+        },
+        "DashPanel": {
+            "type": "kart",
+            "storage": "link"
+        },
+        "JumpAction": {
+            "type": "kart",
+            "storage": "link"
+        },
+        "MiniTurbo": {
+            "type": "kart",
+            "storage": "link"
         }
     }
 }

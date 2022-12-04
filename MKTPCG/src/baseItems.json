@@ -1,0 +1,174 @@
+{
+    "Item0000": {
+        "type": "all",
+        "storage": "link"
+    },
+    "Item0001": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0002": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0003": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0004": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0005": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0006": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0007": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0008": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0010": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0011": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0012": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0013": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0014": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0015": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0016": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0017": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0022": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0023": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0024": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0026": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0027": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0031": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0032": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0033": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0036": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0040": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0044": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0045": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0047": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0048": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0049": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0050": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0051": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0052": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0055": {
+        "type": "glider",
+        "storage": "link"
+    },
+    "Item0057": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "Item0058": {
+        "type": "driver",
+        "storage": "link"
+    },
+    "RocketStart": {
+        "type": "kart",
+        "storage": "link"
+    },
+    "SlipStream": {
+        "type": "kart",
+        "storage": "link"
+    },
+    "DashPanel": {
+        "type": "kart",
+        "storage": "link"
+    },
+    "JumpAction": {
+        "type": "kart",
+        "storage": "link"
+    },
+    "MiniTurbo": {
+        "type": "kart",
+        "storage": "link"
+    }
+}

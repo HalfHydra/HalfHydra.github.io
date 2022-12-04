@@ -1,5 +1,7 @@
 let settings = {};
 
+let baseItems = {};
+
 function updateBoxes(type) {
     switch (type) {
         case 0:
@@ -39,6 +41,7 @@ function updateBoxes(type) {
 }
 
 function main() {
+    generateHeader();
     generateItemsBox(document.getElementById("drivers"), 0, 0.6);
     generateItemsBox(document.getElementById("karts"), 1, 0.6);
     generateItemsBox(document.getElementById("gliders"), 2, 0.6);
@@ -138,29 +141,29 @@ function generateItemsBox(output, type, scale) {
     let headerImg = document.createElement('img');
     headerImg.className = "headerImg";
     headerImg.addEventListener("click", updateCounter, false);
-        var count = 0;
-        function updateCounter() {
-            count++;
-            if (count % 5 == 0) {
-                if (confirm(`THIS WILL OVERWRITE THE CURRENT SAVE. Do you want to remove all items in this category? Please save a backup of the file first so that you do not lose the current drivers karts and gliders!`)) {
-                    switch(type){
-                        case 0:
-                            settings.drivers = {};
-                            break;
-                        case 1:
-                            settings.karts = {};
-                            break;
-                        case 2:
-                            settings.gliders = {};
-                            break;
-                    }
-                    updateBoxes(type);
-                    count = 0;
-                } else {
-                    
+    var count = 0;
+    function updateCounter() {
+        count++;
+        if (count % 5 == 0) {
+            if (confirm(`THIS WILL OVERWRITE THE CURRENT SAVE. Do you want to remove all items in this category? Please save a backup of the file first so that you do not lose the current drivers karts and gliders!`)) {
+                switch (type) {
+                    case 0:
+                        settings.drivers = {};
+                        break;
+                    case 1:
+                        settings.karts = {};
+                        break;
+                    case 2:
+                        settings.gliders = {};
+                        break;
                 }
+                updateBoxes(type);
+                count = 0;
+            } else {
+
             }
         }
+    }
     headerDiv.appendChild(headerImg);
 
 
@@ -208,14 +211,14 @@ function generateItemsBox(output, type, scale) {
     }
 }
 
-function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
-    let rarityId = settings.rarity;
+function generateDKGPanel(localSettings, id, image, itemTypeId, scale, isNew) {
+    let rarityId = localSettings.rarity;
 
     let dkgPanel = document.createElement('div');
     dkgPanel.id = `${id}_${itemTypeId}`;
     dkgPanel.className = 'dkgPanel';
     dkgPanel.addEventListener('click', function () {
-        generateEditModal(settings, image, itemTypeId, id);
+        generateEditModal(localSettings, image, itemTypeId, id);
     })
     dkgPanel.style.width = `${216 * scale}px`;
     dkgPanel.style.height = `${280 * scale}px`;
@@ -244,26 +247,26 @@ function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
         case 0:
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newDriver';
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/${image}UpperBody.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.width = `${newDKGKartPartImage.naturalWidth * scale}px`;
                         newDKGKartPartImage.style.height = `${newDKGKartPartImage.naturalHeight * scale}px`;
-                        newDKGKartPartImage.style.transform = `scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.width = `${newDKGKartPartImage.naturalWidth * scale}px`;
                         newDKGKartPartImage.style.height = `${newDKGKartPartImage.naturalHeight * scale}px`;
-                        newDKGKartPartImage.style.transform = `scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
@@ -273,23 +276,23 @@ function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newKartPart';
 
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/Machine_${image}_Large.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.left = `${25 * scale}px`;
-                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
-                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
+                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
                     newDKGKartPartImage.style.left = `${25 * scale}px`;
-                    newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                    newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                    newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                    newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                     newDKGBox.appendChild(newDKGKartPartImage);
                     break;
             }
@@ -298,23 +301,23 @@ function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newKartPart';
 
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/${image}_Large.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.left = `${25 * scale}px`;
-                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
-                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
+                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
                     newDKGKartPartImage.style.left = `${25 * scale}px`;
-                    newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                    newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                    newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                    newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                     newDKGBox.appendChild(newDKGKartPartImage);
                     break;
             }
@@ -325,7 +328,7 @@ function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
     frameImg.src = `./Images/UI/Panel/frame${rarityId}_${itemTypeId}.png`;
     frameImg.className = 'frameImg';
     dkgPanel.appendChild(frameImg);
-    if (settings.isNew) {
+    if (localSettings.isNew) {
         let newImg = document.createElement('img');
         newImg.src = `./Images/UI/Panel/New.png`;
         newImg.className = 'panelNewIcon';
@@ -335,11 +338,91 @@ function generateDKGPanel(settings, id, image, itemTypeId, scale, isNew) {
         dkgPanel.appendChild(newImg);
     }
 
+    if (localSettings.isExtended) {
+
+        let pointsCount = document.createElement('div');
+        pointsCount.className = "pointsPanel";
+
+        let points = parseInt(localSettings.points);
+        let charoutput = [];
+        for (let i = 0; i < points.toLocaleString().length; i++) {
+            charoutput.push(points.toLocaleString().charAt(i));
+        }
+        charoutput.forEach((t, i) => {
+            let number = document.createElement('img');
+            number.className = `scoreNumber`;
+            if (t == ",") {
+                number.className = `scoreComma`;
+            }
+            if (scale != 1.0) {
+                number.style.height = `${38 * scale}px`;
+                if (t == ",") {
+                    number.style.height = `${14 * scale}px`;
+                }
+            }
+            number.src = `./Images/UI/Number/${t}.png`
+            pointsCount.appendChild(number);
+        });
+        dkgPanel.appendChild(pointsCount);
+
+        let levelNum = document.createElement('img');
+        levelNum.src = `./Images/UI/LeftNum/${localSettings.level}.png`;
+        levelNum.className = 'levelNumber';
+        dkgPanel.appendChild(levelNum);
+
+        let lvImg = document.createElement('img');
+        lvImg.src = './Images/UI/LeftNum/lv.png';
+        lvImg.className = 'lvImg';
+        dkgPanel.appendChild(lvImg);
+
+        pointsCount.style.bottom = `${13 * scale}px`;
+        pointsCount.style.right = `${9 * scale}px`;
+
+        lvImg.style.width = `${42 * scale}px`;
+        lvImg.style.right = `${38 * scale}px`;
+        lvImg.style.bottom = `${60 * scale}px`;
+
+        if (localSettings.level == 1) {
+            lvImg.style.right = `${30 * scale}px`;
+        }
+
+        levelNum.style.width = `${40 * scale}px`;
+        levelNum.style.height = `${40 * scale}px`;
+        levelNum.style.right = `${2 * scale}px`;
+        levelNum.style.bottom = `${58 * scale}px`;
+
+    }
+
+    if (localSettings.isUseItem) {
+        let itemImg = document.createElement('img');
+        itemImg.className = 'itemImgPanel';
+        dkgPanel.appendChild(itemImg);
+
+        if (settings.specialSkills[localSettings.specialSkill] == null) {
+            console.log("Special Skill is null, replacing with Item0000");
+            console.log(localSettings)
+            localSettings.specialSkill = "Item0000";
+        }
+
+        switch (settings.specialSkills[localSettings.specialSkill].storage) {
+            case "link":
+                itemImg.src = `./Images/UI/Items/${localSettings.specialSkill}.png`;
+                break;
+            case "local":
+                itemImg.src = settings.specialSkills[localSettings.specialSkill].image;
+                break;
+        }
+
+        itemImg.style.width = `${67 * scale}px`;
+        itemImg.style.left = `${8 * scale}px`;
+        itemImg.style.bottom = `${17 * scale}px`;
+    }
+
     return dkgPanel;
 }
 
-function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
-    let rarityId = settings.rarity;
+function generateEditDKGPanel(localSettings, image, itemTypeId, scale, isNew) {
+    let rarityId = localSettings.rarity;
 
     let dkgPanel = document.createElement('div');
     dkgPanel.className = 'dkgPanel';
@@ -370,26 +453,26 @@ function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
         case 0:
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newDriver';
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/${image}UpperBody.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.width = `${newDKGKartPartImage.naturalWidth * scale}px`;
                         newDKGKartPartImage.style.height = `${newDKGKartPartImage.naturalHeight * scale}px`;
-                        newDKGKartPartImage.style.transform = `scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.width = `${newDKGKartPartImage.naturalWidth * scale}px`;
                         newDKGKartPartImage.style.height = `${newDKGKartPartImage.naturalHeight * scale}px`;
-                        newDKGKartPartImage.style.transform = `scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
@@ -399,23 +482,23 @@ function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newKartPart';
 
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/Machine_${image}_Large.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.left = `${25 * scale}px`;
-                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
-                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
+                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
                     newDKGKartPartImage.style.left = `${25 * scale}px`;
-                    newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                    newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                    newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                    newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                     newDKGBox.appendChild(newDKGKartPartImage);
                     break;
             }
@@ -424,23 +507,23 @@ function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
             newDKGKartPartImage = document.createElement('img');
             newDKGKartPartImage.className = 'newKartPart';
 
-            switch (settings.origin) {
+            switch (localSettings.origin) {
                 case "Site":
                     newDKGKartPartImage.src = `./Images/UI/Default/${image}_Large.png`;
                     newDKGKartPartImage.onload = function (event) {
                         newDKGKartPartImage.style.left = `${25 * scale}px`;
-                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
-                        newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                        newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                        newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
+                        newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                        newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                         newDKGBox.appendChild(newDKGKartPartImage);
                     }
                     break;
                 case "File":
-                    newDKGKartPartImage.src = `data:image/png;base64,${settings.image}`;
-                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${settings.scale})`;
+                    newDKGKartPartImage.src = `data:image/png;base64,${localSettings.image}`;
+                    newDKGKartPartImage.style.transform = `translate(0, -50%) scale(${localSettings.scale})`;
                     newDKGKartPartImage.style.left = `${25 * scale}px`;
-                    newDKGKartPartImage.style.marginLeft = `${settings.xOffset * scale}px`;
-                    newDKGKartPartImage.style.marginTop = `${settings.yOffset * scale}px`;
+                    newDKGKartPartImage.style.marginLeft = `${localSettings.xOffset * scale}px`;
+                    newDKGKartPartImage.style.marginTop = `${localSettings.yOffset * scale}px`;
                     newDKGBox.appendChild(newDKGKartPartImage);
                     break;
             }
@@ -464,10 +547,100 @@ function generateEditDKGPanel(settings, image, itemTypeId, scale, isNew) {
         newImg.style.display = "none";
     }
 
+    let pointsCount = document.createElement('div');
+    pointsCount.className = "pointsPanel";
+
+    let points = parseInt(localSettings.points);
+    let charoutput = [];
+    for (let i = 0; i < points.toLocaleString().length; i++) {
+        charoutput.push(points.toLocaleString().charAt(i));
+    }
+    charoutput.forEach((t, i) => {
+        let number = document.createElement('img');
+        number.className = `scoreNumber`;
+        if (t == ",") {
+            number.className = `scoreComma`;
+        }
+        number.style.height = `${38 * scale}px`;
+        if (t == ",") {
+            number.style.height = `${14 * scale}px`;
+        }
+        number.src = `./Images/UI/Number/${t}.png`
+        pointsCount.appendChild(number);
+    });
+    dkgPanel.appendChild(pointsCount);
+
+    let levelNum = document.createElement('img');
+    levelNum.src = `./Images/UI/LeftNum/${localSettings.level}.png`;
+    levelNum.className = 'levelNumber';
+    dkgPanel.appendChild(levelNum);
+
+    let lvImg = document.createElement('img');
+    lvImg.src = './Images/UI/LeftNum/lv.png';
+    lvImg.className = 'lvImg';
+    dkgPanel.appendChild(lvImg);
+
+    pointsCount.style.bottom = `${13 * scale}px`;
+    pointsCount.style.right = `${9 * scale}px`;
+
+    lvImg.style.width = `${42 * scale}px`;
+    lvImg.style.right = `${38 * scale}px`;
+    lvImg.style.bottom = `${60 * scale}px`;
+
+    if (localSettings.level == 1) {
+        lvImg.style.right = `${30 * scale}px`;
+    }
+
+    levelNum.style.width = `${40 * scale}px`;
+    levelNum.style.height = `${40 * scale}px`;
+    levelNum.style.right = `${2 * scale}px`;
+    levelNum.style.bottom = `${58 * scale}px`;
+
+    levelNum.id = "edit_level"
+    lvImg.id = "edit_level2"
+    pointsCount.id = "edit_points"
+
+    let itemImg = document.createElement('img');
+    itemImg.className = 'itemImgPanel';
+    itemImg.addEventListener('click', function () {
+        changeEditItem(localSettings);
+    });
+    dkgPanel.appendChild(itemImg);
+
+    if (settings.specialSkills[localSettings.specialSkill] == null) {
+        console.log("Special Skill is null, replacing with Item0000");
+        localSettings.specialSkill = "Item0000";
+    }
+
+    switch (settings.specialSkills[localSettings.specialSkill].storage) {
+        case "link":
+            itemImg.src = `./Images/UI/Items/${localSettings.specialSkill}.png`;
+            break;
+        case "local":
+            itemImg.src = settings.specialSkills[localSettings.specialSkill].image;
+            break;
+    }
+
+    itemImg.style.width = `${67 * scale}px`;
+    itemImg.style.left = `${8 * scale}px`;
+    itemImg.style.bottom = `${17 * scale}px`;
+
+    itemImg.id = "edit_item"
+
     bgImg.id = 'edit_bgImg';
     frameImg.id = "edit_frameImg"
     newImg.id = "edit_newImg"
     newDKGKartPartImage.id = "edit_newDKGKartPartImage"
+
+    if (!localSettings.isExtended) {
+        levelNum.style.display = "none";
+        lvImg.style.display = "none";
+        pointsCount.style.display = "none";
+    }
+
+    if (!localSettings.isUseItem) {
+        itemImg.style.display = "none";
+    }
 
     return dkgPanel;
 }
@@ -625,6 +798,21 @@ function generateEditModal(localSettings, item, type, id) {
     rarityOption0.innerHTML = "Normal";
     raritySelect.appendChild(rarityOption0);
 
+    // let rarityOption5 = document.createElement('option');
+    // rarityOption2.value = '5';
+    // rarityOption2.innerHTML = "Item High-End";
+    // raritySelect.appendChild(rarityOption5);
+
+    // let rarityOption4 = document.createElement('option');
+    // rarityOption1.value = '4';
+    // rarityOption1.innerHTML = "Item Super";
+    // raritySelect.appendChild(rarityOption4);
+
+    // let rarityOption3 = document.createElement('option');
+    // rarityOption0.value = '3';
+    // rarityOption0.innerHTML = "Item Normal";
+    // raritySelect.appendChild(rarityOption3);
+
     //since the indexes and order of the options are backwards, a little math is in order to make it proper...
     raritySelect.selectedIndex = Math.abs((localSettings.rarity - 4)) - 2;
     // (2) - 4 -> abs(-2) - 2 = 0
@@ -722,6 +910,78 @@ function generateEditModal(localSettings, item, type, id) {
     }
     flexBox.appendChild(resetSliders);
 
+    let extendDiv = document.createElement('div');
+    extendDiv.className = 'extendDiv';
+    modal.appendChild(extendDiv);
+
+    let extendToggleDiv = document.createElement('div');
+    extendToggleDiv.className = 'extendToggleDiv';
+    extendDiv.appendChild(extendToggleDiv);
+
+    let extendTxt = document.createElement('p');
+    extendTxt.className = 'extendTxt';
+    extendTxt.innerHTML = "Use Level and Points? ";
+    extendToggleDiv.appendChild(extendTxt);
+
+    let extendInput = document.createElement("input");
+    extendInput.className = "toggleInput";
+    extendInput.type = "checkbox";
+    extendInput.checked = localSettings.isExtended;
+    extendInput.onchange = function () {
+        //(extendInput.checked) ? document.getElementById(`edit_newImg`).style.display = "block" : document.getElementById(`edit_newImg`).style.display = "none"
+        localSettings.isExtended = extendInput.checked;
+        (extendInput.checked) ? document.getElementById(`edit_points`).style.display = "block" : document.getElementById(`edit_points`).style.display = "none";
+        (extendInput.checked) ? document.getElementById(`edit_level`).style.display = "block" : document.getElementById(`edit_level`).style.display = "none";
+        (extendInput.checked) ? document.getElementById(`edit_level2`).style.display = "block" : document.getElementById(`edit_level2`).style.display = "none";
+    }
+    extendToggleDiv.appendChild(extendInput);
+
+    let levelDiv = document.createElement('div');
+    levelDiv.className = 'levelEditDiv';
+    extendDiv.appendChild(levelDiv);
+
+    let levelImg = document.createElement('img');
+    levelImg.src = `./Images/UI/LeftNum/lv.png`;
+    levelImg.className = 'toggleNewImg';
+    levelDiv.appendChild(levelImg);
+
+    let levelInput = document.createElement("input");
+    levelInput.className = "levelInput";
+    // pointInput.type = "number";
+    levelInput.min = 1;
+    levelInput.max = 9;
+    levelInput.value = localSettings.level;
+    levelInput.onchange = function () {
+        // (toggleInput.checked) ? document.getElementById(`edit_newImg`).style.display = "block" : document.getElementById(`edit_newImg`).style.display = "none"
+        localSettings.level = levelInput.value;
+        changeEditModalLevel(levelInput.value)
+    }
+    levelDiv.appendChild(levelInput);
+
+    let pointsDiv = document.createElement('div');
+    pointsDiv.className = 'pointsEditDiv';
+    extendDiv.appendChild(pointsDiv);
+
+    let pointsImg = document.createElement('img');
+    pointsImg.src = `./Images/UI/Modal/Ticket.png`;
+    pointsImg.className = 'toggleNewImg';
+    pointsDiv.appendChild(pointsImg);
+
+    let pointInput = document.createElement("input");
+    pointInput.className = "pointsInput";
+    // pointInput.type = "number";
+    pointInput.min = 1;
+    pointInput.max = 9;
+    pointInput.value = localSettings.points;
+    pointInput.onchange = function () {
+        // (toggleInput.checked) ? document.getElementById(`edit_newImg`).style.display = "block" : document.getElementById(`edit_newImg`).style.display = "none"
+        localSettings.points = pointInput.value;
+        changeEditModalPoints(parseInt(pointInput.value))
+    }
+    pointsDiv.appendChild(pointInput);
+
+
+
     let footerDiv = document.createElement('div');
     footerDiv.className = 'footerDiv';
     modal.appendChild(footerDiv);
@@ -752,6 +1012,24 @@ function generateEditModal(localSettings, item, type, id) {
     }
     newToggleDiv.appendChild(toggleInput);
 
+    let itemToggleDiv = document.createElement('div');
+    itemToggleDiv.className = 'itemToggleDiv';
+    footerDiv.appendChild(itemToggleDiv);
+
+    let itemTxt = document.createElement('p');
+    itemTxt.className = 'itemToggleTxt';
+    itemTxt.innerHTML = "Use Item? ";
+    itemToggleDiv.appendChild(itemTxt);
+
+    let itemInput = document.createElement("input");
+    itemInput.className = "itemInput";
+    itemInput.type = "checkbox";
+    itemInput.checked = localSettings.isUseItem;
+    itemInput.onchange = function () {
+        (itemInput.checked) ? document.getElementById(`edit_item`).style.display = "block" : document.getElementById(`edit_item`).style.display = "none";
+    }
+    itemToggleDiv.appendChild(itemInput);
+
     let saveBtn = document.createElement('button');
     saveBtn.className = 'saveBtn';
     saveBtn.innerHTML = "Save";
@@ -761,6 +1039,11 @@ function generateEditModal(localSettings, item, type, id) {
         localSettings.xOffset = xOffsetInput.value;
         localSettings.yOffset = yOffsetInput.value;
         localSettings.isNew = toggleInput.checked;
+        localSettings.isExtended = extendInput.checked;
+        localSettings.level = levelInput.value;
+        localSettings.points = pointInput.value;
+        localSettings.isUseItem = itemInput.checked;
+        //localSettings.specialSkill = document.getElementById("edit_item").value;
         saveSettings();
         updateBoxes(type);
         document.getElementById("editModal").style.display = "none";
@@ -780,7 +1063,7 @@ function generateIntroModal() {
     modal.appendChild(panelEdit);
 
     let ribbonDiv = document.createElement('div');
-    ribbonDiv.className = 'ribbonDiv';  
+    ribbonDiv.className = 'ribbonDiv';
     panelEdit.appendChild(ribbonDiv);
 
     let newImg = document.createElement('img');
@@ -806,7 +1089,7 @@ function generateIntroModal() {
     centerBtns.appendChild(startFreshBtn);
 
     // temporarily disabled until I can find another solution for localStorage,  it turns out localStorage cannot exceed 5 mb which will quickly be reached if someone adds a lot of items.
-    
+
     // let toolGuide = document.createElement('button');
     // toolGuide.className = 'toolGuide';
     // toolGuide.innerHTML = "Continue";
@@ -835,18 +1118,28 @@ function generateIntroModal() {
     loadDefault.innerHTML = "Load Battle Tour";
     loadDefault.onclick = function () {
         fetch("./src/Season90.json")
-        .then(response => {
+            .then(response => {
                 return response.json();
-        })
-        .then(jsondata => settings = jsondata
-        )
-        .then(response => main()
-        )
+            })
+            .then(jsondata => {
+                settings = jsondata;
+                updateOlderSave();
+            })
+            .then(response => main()
+            )
         document.getElementById("editModal").style.display = "none";
     };
     inputBtns.appendChild(loadDefault);
 
     document.getElementById("editModal").style.display = "block";
+
+    fetch("./src/baseItems.json")
+        .then(response => {
+            return response.json();
+        })
+        .then(jsondata => {
+            baseItems = jsondata;
+        })
 }
 
 function inputData() {
@@ -859,6 +1152,7 @@ function inputData() {
         reader.onload = (e) => {
             let result = e.target.result;
             settings = JSON.parse(result);
+            updateOlderSave();
             main();
             document.getElementById("editModal").style.display = "none";
         }
@@ -868,7 +1162,7 @@ function inputData() {
     input.click();
 }
 
-function startFresh(){
+function startFresh() {
     settings = {
         "countPerRow": [
             5,
@@ -879,33 +1173,35 @@ function startFresh(){
         karts: {},
         gliders: {}
     }
+    updateOlderSave();
     main();
     document.getElementById("editModal").style.display = "none";
 }
 
-function loadFromLocalStorage(){
+function loadFromLocalStorage() {
     settings = JSON.parse(localStorage.getItem("MKTPCG_Settings"));
+    updateOlderSave();
     main();
     document.getElementById("editModal").style.display = "none";
 }
 
-function updateLocalStorage(){
+function updateLocalStorage() {
     localStorage.setItem("MKTPCG_Settings", JSON.stringify(settings));
 }
 
-function exportLocalStorage(){
+function exportLocalStorage() {
     let data = JSON.stringify(settings);
     let filename = `MKTPCG_${new Date().toLocaleDateString()}.json`;
     let a = document.createElement("a")
-      , file = new Blob([data],{
-        type: "text"
-    });
+        , file = new Blob([data], {
+            type: "text"
+        });
     let url = URL.createObjectURL(file);
     a.href = url;
     a.download = filename;
     document.body.appendChild(a);
     a.click();
-    setTimeout(function() {
+    setTimeout(function () {
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
     }, 0);
@@ -932,7 +1228,7 @@ function generateSaveModal() {
     let driverBtn = document.createElement('button');
     driverBtn.className = 'itemBtn';
     driverBtn.onclick = function () {
-        downloadContainer(0,1);
+        downloadContainer(0, 1);
     }
     dkgImgPanel.appendChild(driverBtn);
 
@@ -944,7 +1240,7 @@ function generateSaveModal() {
     let kartBtn = document.createElement('button');
     kartBtn.className = 'itemBtn';
     kartBtn.onclick = function () {
-        downloadContainer(1,1);
+        downloadContainer(1, 1);
     }
     dkgImgPanel.appendChild(kartBtn);
 
@@ -956,7 +1252,7 @@ function generateSaveModal() {
     let gliderBtn = document.createElement('button');
     gliderBtn.className = 'itemBtn';
     gliderBtn.onclick = function () {
-        downloadContainer(2,1);
+        downloadContainer(2, 1);
     }
     dkgImgPanel.appendChild(gliderBtn);
 
@@ -1020,7 +1316,10 @@ function addItem(dest) {
                     "yOffset": "0",
                     "type": 0,
                     "arrangement": 0,
-                    "isNew": false
+                    "isNew": false,
+                    "isExtended": false,
+                    "level": 1,
+                    "points": 500
                 }
                 console.log(newEntry);
                 switch (dest) {
@@ -1163,4 +1462,356 @@ function saveSettings() {
     settings = settingsCopy;
     // updateLocalStorage();
     return settingsCopy;
+}
+
+function generateHeader() {
+    let headerDiv = document.getElementById("tool_settings");
+    headerDiv.innerHTML = "";
+
+    let header = document.createElement('div');
+    header.id = "header";
+    header.className = "header";
+    header.innerHTML = `
+        <div class="tool_settings_header">Mario Kart Tour Panel Container Generator</div>
+    `;
+    headerDiv.appendChild(header);
+
+    let buttons = document.createElement('div');
+    buttons.id = "header_buttons";
+    buttons.className = "header";
+    buttons.innerHTML = `
+        <button class="settingAdd" onclick="generateIntroModal()">Main Menu</button>
+        <button class="settingAdd" onclick="flipItemUsage()">Toggle Special Items</button>
+        <button class="settingAdd" onclick="generateItemManagerModal()">Manage Special Items</button>
+        <button class="settingAdd" onclick="generateSaveModal()">Export</button>
+    `;
+    headerDiv.appendChild(buttons);
+}
+
+function generateItemManagerModal() {
+    let modal = document.getElementById('editModalContainer');
+    modal.innerHTML = "";
+
+    let itemPanel = document.createElement('div');
+    itemPanel.className = 'savePanel';
+    modal.appendChild(itemPanel);
+
+    let itemTxt = document.createElement('p');
+    itemTxt.className = 'saveTxt';
+    itemTxt.innerHTML = "Special Item Manager";
+    itemPanel.appendChild(itemTxt);
+
+    let itemButtonsDiv = document.createElement('div');
+    itemButtonsDiv.className = 'itemButtons';
+    itemPanel.appendChild(itemButtonsDiv);
+
+    let typeSelect = document.createElement('select');
+    typeSelect.className = 'typeSelect';
+    typeSelect.onchange = function () {
+        console.log(typeSelect.value);
+        makeSpecialItemsBox(typeSelect.value);
+    }
+    itemButtonsDiv.appendChild(typeSelect);
+
+    let typeDriver = document.createElement('option');
+    typeDriver.value = 'driver';
+    typeDriver.innerHTML = "Driver";
+    typeSelect.appendChild(typeDriver);
+
+    let typeKart = document.createElement('option');
+    typeKart.value = 'kart';
+    typeKart.innerHTML = "Kart";
+    typeSelect.appendChild(typeKart);
+
+    let typeGlider = document.createElement('option');
+    typeGlider.value = 'glider';
+    typeGlider.innerHTML = "Glider";
+    typeSelect.appendChild(typeGlider);
+
+    // button to add items to the list
+    let addItemButton = document.createElement('button');
+    addItemButton.className = 'typeSelect';
+    addItemButton.innerHTML = "Add Item";
+    addItemButton.onclick = function () {
+        addSpecialItem(typeSelect.value);
+    }
+    itemButtonsDiv.appendChild(addItemButton);
+
+    let restoreItemsButton = document.createElement('button');
+    restoreItemsButton.className = 'typeSelect';
+    restoreItemsButton.style.width = "105px"
+    restoreItemsButton.innerHTML = "Reset Item List";
+    restoreItemsButton.onclick = function () {
+        if (confirm('Are you sure you want to reset all items back to the list included with the tool? This will delete any images you have added.')) {
+            console.log('did the thing')
+            settings.specialSkills = JSON.parse(JSON.stringify(baseItems));
+            makeSpecialItemsBox(typeSelect.value);
+        }
+    }
+    itemButtonsDiv.appendChild(restoreItemsButton);
+
+
+    let specialItemDiv = document.createElement('div');
+    specialItemDiv.id = 'specialItemDiv';
+    specialItemDiv.className = 'specialItemDiv';
+    itemPanel.appendChild(specialItemDiv);
+
+    makeSpecialItemsBox("driver");
+
+    let footerDiv = document.createElement('div');
+    footerDiv.className = 'okDiv';
+    itemPanel.appendChild(footerDiv);
+
+    let okButton = document.createElement('button');
+    okButton.className = 'okButton';
+    okButton.innerHTML = "OK";
+    okButton.onclick = function () {
+        document.getElementById("editModal").style.display = "none";
+    }
+    footerDiv.appendChild(okButton);
+
+    document.getElementById("editModal").style.display = "block";
+}
+
+function updateOlderSave() {
+    if (!settings.hasOwnProperty('specialSkills')) {
+        settings.specialSkills = JSON.parse(JSON.stringify(baseItems));
+    }
+
+    Object.keys(settings.drivers).forEach((key) => {
+        if (!settings.drivers[key].hasOwnProperty('isExtended')) {
+            settings.drivers[key].isExtended = false;
+        }
+        if (!settings.drivers[key].hasOwnProperty('level')) {
+            settings.drivers[key].level = 1;
+        }
+        if (!settings.drivers[key].hasOwnProperty('points')) {
+            settings.drivers[key].points = 500;
+        }
+        if (!settings.drivers[key].hasOwnProperty('isUseItem')) {
+            settings.drivers[key].isUseItem = true;
+        }
+        if (!settings.drivers[key].hasOwnProperty('specialSkill')) {
+            settings.drivers[key].specialSkill = "Item0000";
+        }
+    });
+
+    Object.keys(settings.karts).forEach((key) => {
+        if (!settings.karts[key].hasOwnProperty('isExtended')) {
+            settings.karts[key].isExtended = false;
+        }
+        if (!settings.karts[key].hasOwnProperty('level')) {
+            settings.karts[key].level = 1;
+        }
+        if (!settings.karts[key].hasOwnProperty('points')) {
+            settings.karts[key].points = 500;
+        }
+        if (!settings.karts[key].hasOwnProperty('isUseItem')) {
+            settings.karts[key].isUseItem = true;
+        }
+        if (!settings.karts[key].hasOwnProperty('specialSkill')) {
+            settings.karts[key].specialSkill = "Item0000";
+        }
+    });
+
+    Object.keys(settings.gliders).forEach((key) => {
+        if (!settings.gliders[key].hasOwnProperty('isExtended')) {
+            settings.gliders[key].isExtended = false;
+        }
+        if (!settings.gliders[key].hasOwnProperty('level')) {
+            settings.gliders[key].level = 1;
+        }
+        if (!settings.gliders[key].hasOwnProperty('points')) {
+            settings.gliders[key].points = 500;
+        }
+        if (!settings.gliders[key].hasOwnProperty('isUseItem')) {
+            settings.gliders[key].isUseItem = true;
+        }
+        if (!settings.gliders[key].hasOwnProperty('specialSkill')) {
+            settings.gliders[key].specialSkill = "Item0000";
+        }
+    });
+}
+function makeSpecialItemsBox(type) {
+    let specialItemDiv = document.getElementById('specialItemDiv');
+    specialItemDiv.innerHTML = "";
+    Object.keys(settings.specialSkills).forEach((item) => {
+        if (settings.specialSkills[item].type === type) {
+            let itemDiv = document.createElement('div');
+            itemDiv.className = 'specialItem';
+            specialItemDiv.appendChild(itemDiv);
+            let itemImg = document.createElement('img');
+            itemImg.className = 'specialItemImage';
+            itemDiv.appendChild(itemImg);
+            switch (settings.specialSkills[item].storage) {
+                case "link":
+                    itemImg.src = `./Images/UI/Items/${item}.png`;
+                    break;
+                case "local":
+                    itemImg.src = settings.specialSkills[item].image;
+                    break;
+            }
+
+            let itemXbtn = document.createElement('img');
+            itemXbtn.className = 'specialItemX';
+            itemXbtn.src = './Images/UI/Items/Item9999.png';
+            itemXbtn.onclick = function () {
+                delete settings.specialSkills[item];
+                makeSpecialItemsBox(type);
+            }
+            itemDiv.appendChild(itemXbtn);
+        }
+    })
+}
+
+function addSpecialItem(dest) {
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.multiple = "multiple";
+
+    input.onchange = e => {
+        var files = e.target.files;
+        console.log(files);
+        Object.keys(files).forEach(i => {
+            const file = files[i];
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                var result = e.target.result;
+                let newEntry = {
+                    "type": dest,
+                    "storage": "local",
+                    "image": result
+                }
+                console.log(newEntry);
+                if (!settings.specialSkills.hasOwnProperty(file.name)) {
+                    settings.specialSkills[file.name] = newEntry;
+                }
+                makeSpecialItemsBox(dest);
+            }
+            reader.readAsDataURL(file);
+        })
+    }
+
+    input.click();
+}
+
+function changeEditModalPoints(points) {
+    let output = document.getElementById("edit_points");
+    output.innerHTML = "";
+
+    let charoutput = [];
+    for (let i = 0; i < points.toLocaleString().length; i++) {
+        charoutput.push(points.toLocaleString().charAt(i));
+    }
+    console.log(charoutput);
+    charoutput.forEach((t, i) => {
+        let number = document.createElement('img');
+        number.className = `scoreNumber`;
+        if (t == ",") {
+            number.className = `scoreComma`;
+        }
+        number.style.height = `${38}px`;
+        if (t == ",") {
+            number.style.height = `${14}px`;
+        }
+        number.src = `./Images/UI/Number/${t}.png`
+        output.appendChild(number);
+    });
+}
+
+function changeEditModalLevel(level) {
+    let output = document.getElementById("edit_level");
+    output.src = `./Images/UI/LeftNum/${level}.png`;
+
+    let output2 = document.getElementById("edit_level2");
+    output2.innerHTML = "";
+
+    if (level == 1) {
+        output2.style.right = `${30}px`;
+    } else {
+        output2.style.right = `${38}px`;
+    }
+}
+
+function changeEditItem(localSettings) {
+
+    let modal = document.getElementById('itemModalContainer');
+    modal.innerHTML = "";
+
+    let itemPanel = document.createElement('div');
+    itemPanel.className = 'savePanel';
+    modal.appendChild(itemPanel);
+
+    let itemTxt = document.createElement('p');
+    itemTxt.className = 'saveTxt';
+    itemTxt.innerHTML = "Choose a Special Skill:";
+    itemPanel.appendChild(itemTxt);
+
+    let specialItemDiv = document.createElement('div');
+    specialItemDiv.id = 'specialItemDiv';
+    specialItemDiv.className = 'selectItemDiv';
+    itemPanel.appendChild(specialItemDiv);
+    specialItemDiv.style.height = "340px";
+
+    let translatedType = 0;
+    switch (localSettings.type) {
+        case 0:
+            translatedType = "driver";
+            break;
+        case 1:
+            translatedType = "kart";
+            break;
+        case 2:
+            translatedType = "glider";
+            break;
+    }
+
+    Object.keys(settings.specialSkills).forEach((item) => {
+        if (settings.specialSkills[item].type === translatedType) {
+            let itemDiv = document.createElement('div');
+            itemDiv.className = 'specialItem';
+            specialItemDiv.appendChild(itemDiv);
+            let itemImg = document.createElement('img');
+            itemImg.className = 'specialItemImage';
+            itemDiv.appendChild(itemImg);
+            switch (settings.specialSkills[item].storage) {
+                case "link":
+                    itemImg.src = `./Images/UI/Items/${item}.png`;
+                    break;
+                case "local":
+                    itemImg.src = settings.specialSkills[item].image;
+                    break;
+            }
+            itemDiv.addEventListener('click', function () {
+                localSettings.specialSkill = item;
+                switch (settings.specialSkills[item].storage) {
+                    case "link":
+                        document.getElementById('edit_item').src = `./Images/UI/Items/${item}.png`;
+                        break;
+                    case "local":
+                        document.getElementById('edit_item').src = settings.specialSkills[item].image;
+                        break;
+                }
+                document.getElementById("itemModal").style.display = "none";
+            });
+        }
+    })
+
+    document.getElementById("itemModal").style.display = "block";
+
+}
+
+function flipItemUsage(){
+    Object.keys(settings.drivers).forEach((item) => {
+        settings.drivers[item].isUseItem = !settings.drivers[item].isUseItem;
+    });
+    Object.keys(settings.karts).forEach((item) => {
+        settings.karts[item].isUseItem = !settings.karts[item].isUseItem;
+    });
+    Object.keys(settings.gliders).forEach((item) => {
+        settings.gliders[item].isUseItem = !settings.gliders[item].isUseItem;
+    });
+    updateBoxes(0);
+    updateBoxes(1);
+    updateBoxes(2);
 }
