@@ -429,9 +429,35 @@ function generateDKGPanel(localSettings, id, image, itemTypeId, scale, isNew) {
                 break;
         }
 
-        itemImg.style.width = `${67 * scale}px`;
-        itemImg.style.left = `${8 * scale}px`;
+
+        itemImg.style.left = `${12 * scale}px`;
         itemImg.style.bottom = `${17 * scale}px`;
+        
+        //itemImg.style.width = `${67 * scale}px`;
+        itemImg.onload = function (event) {
+            console.log('onload fired')
+            console.log(`width: ${itemImg.naturalWidth}, height: ${itemImg.naturalHeight}`)
+            switch(itemTypeId){
+                case 1:
+                    itemImg.style.bottom = `${15 * scale}px`;
+                default:
+                if(itemImg.naturalWidth > itemImg.naturalHeight){
+                    console.log('1 fired')
+                    let sizeX = 67 * scale;
+                    itemImg.style.width = `${sizeX}px`;
+                    itemImg.style.height = `${ratioCalc(1, sizeX, 0, itemImg.naturalWidth, itemImg.naturalHeight)}px`;
+                    console.log(ratioCalc(1, sizeX, 0, itemImg.naturalWidth, itemImg.naturalHeight))
+                } else {
+                    console.log('2 fired')
+                    let sizeX = 67 * scale;
+                    itemImg.style.width = `${sizeX}px`;
+                    itemImg.style.width = `${ratioCalc(1, sizeX, 0, itemImg.naturalHeight, itemImg.naturalWidth)}px`;
+                    console.log(ratioCalc(1, sizeX, 0, itemImg.naturalHeight, itemImg.naturalWidth))
+                }
+                break;
+            }
+        }
+        // itemImg.style.width = `${67 * scale}px`;
     }
 
     return dkgPanel;
@@ -713,7 +739,7 @@ function downloadContainer(type, scale) {
     itemsDiv.style.position = "relative";
     itemsDiv.style.paddingTop = "12px";
     output.appendChild(itemsDiv);
-    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + (margin[1] * 2))}px`;
+    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + (settings.margin[1] * 2))}px`;
 
     switch (type) {
         case 0:
@@ -734,6 +760,11 @@ function downloadContainer(type, scale) {
                 itemsDiv.appendChild(generateDKGPanel(glider, i, glider.image, 2, 1, glider.isNew));
             })
             break;
+    }
+
+    let children = itemsDiv.children;
+    for (let i = 0; i < children.length; i++) {
+        children[i].style.margin = `${settings.margin[0]}px ${settings.margin[1]}px`;
     }
 
     document.getElementById('loadingimg').style.display = "block";
@@ -1850,3 +1881,21 @@ function flipItemUsage(){
     updateBoxes(1);
     updateBoxes(2);
 }
+
+function ratioCalc(unknown, x1, x2, y1, y2){
+    switch(unknown){
+        case 0:
+            // x1/x2 == y1/y2
+            return x2 * (y1/y2)
+        case 1:
+            // x1/x2 == y1/y2
+            return x1 * (y2/y1)
+        case 2:
+            // x1/x2 == y1/y2
+            return y2 * (x1/x2)
+        case 3:
+            // x1/x2 == y1/y2
+            return y1 * (x2/x1)
+    }
+}
+
