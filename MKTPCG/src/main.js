@@ -5,7 +5,7 @@ let baseItems = {};
 function updateBoxes(type) {
     switch (type) {
         case 0:
-            generateItemsBox(document.getElementById("drivers"), 0, 0.6);
+            generateItemsBox(document.getElementById("drivers"), 0, 0.6, settings.margin);
             let panels = document.getElementById("drivers").querySelectorAll('.dkgPanel');
             panels.forEach(function (item) {
                 item.addEventListener('dragstart', handleDragStart, false);
@@ -16,7 +16,7 @@ function updateBoxes(type) {
             });
             break;
         case 1:
-            generateItemsBox(document.getElementById("karts"), 1, 0.6);
+            generateItemsBox(document.getElementById("karts"), 1, 0.6, settings.margin);
             let panels2 = document.getElementById("karts").querySelectorAll('.dkgPanel');
             panels2.forEach(function (item) {
                 item.addEventListener('dragstart', handleDragStart, false);
@@ -27,7 +27,7 @@ function updateBoxes(type) {
             });
             break;
         case 2:
-            generateItemsBox(document.getElementById("gliders"), 2, 0.6);
+            generateItemsBox(document.getElementById("gliders"), 2, 0.6, settings.margin);
             let panels3 = document.getElementById("gliders").querySelectorAll('.dkgPanel');
             panels3.forEach(function (item) {
                 item.addEventListener('dragstart', handleDragStart, false);
@@ -42,9 +42,9 @@ function updateBoxes(type) {
 
 function main() {
     generateHeader();
-    generateItemsBox(document.getElementById("drivers"), 0, 0.6);
-    generateItemsBox(document.getElementById("karts"), 1, 0.6);
-    generateItemsBox(document.getElementById("gliders"), 2, 0.6);
+    generateItemsBox(document.getElementById("drivers"), 0, 0.6, settings.margin);
+    generateItemsBox(document.getElementById("karts"), 1, 0.6, settings.margin);
+    generateItemsBox(document.getElementById("gliders"), 2, 0.6, settings.margin);
     let items = document.querySelectorAll('.dkgPanel');
     items.forEach(function (item) {
         item.addEventListener('dragstart', handleDragStart, false);
@@ -108,6 +108,17 @@ function generateSettingsBox(output, type) {
     });
     settingDiv.appendChild(settingAdd);
 
+    let settingSpace = document.createElement('button');
+    settingSpace.className = "settingRemove";
+    settingSpace.innerHTML = "Change Spacing";
+    settingSpace.addEventListener('click', function () {
+        let xSpace = prompt("Enter the X spacing in pixels (number only). Default is 1.5.");
+        let ySpace = prompt("Enter the Y spacing in pixels (number only). Default is 1.5.");
+        settings.margin = [xSpace, ySpace];
+        updateBoxes(type)
+    });
+    settingDiv.appendChild(settingSpace);
+
     let settingRemove = document.createElement('button');
     settingRemove.className = "settingRemove";
     settingRemove.innerHTML = "Remove All New";
@@ -130,9 +141,9 @@ function generateSettingsBox(output, type) {
     }
 }
 
-function generateItemsBox(output, type, scale) {
+function generateItemsBox(output, type, scale, margin) {
     output.innerHTML = "";
-    output.style.width = `${(settings.countPerRow[type] * ((scale * 216) + 3) < 400 ? 500 : settings.countPerRow[type] * ((scale * 216) + 5))}px`;
+    output.style.width = `${(settings.countPerRow[type] * ((scale * 216) + (margin[1] * 2))  + settings.countPerRow[type] < 670 ? 670 : settings.countPerRow[type] * ((scale * 216) + (margin[1] * 2)))}px`;
 
     let headerDiv = document.createElement('div');
     headerDiv.className = 'header';
@@ -181,7 +192,7 @@ function generateItemsBox(output, type, scale) {
     itemsDiv.id = `${output.id}_items`;
     itemsDiv.className = 'itemsDiv';
     output.appendChild(itemsDiv);
-    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + 3)}px`;
+    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + (margin[1] * 2) )}px`;
 
     switch (type) {
         case 0:
@@ -208,6 +219,11 @@ function generateItemsBox(output, type, scale) {
                 itemsDiv.appendChild(generateDKGPanel(glider, i, glider.image, 2, 0.6, glider.isNew));
             })
             break;
+    }
+
+    let children = itemsDiv.children;
+    for (let i = 0; i < children.length; i++) {
+        children[i].style.margin = `${margin[0]}px ${margin[1]}px`;
     }
 }
 
@@ -697,7 +713,7 @@ function downloadContainer(type, scale) {
     itemsDiv.style.position = "relative";
     itemsDiv.style.paddingTop = "12px";
     output.appendChild(itemsDiv);
-    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + 3)}px`;
+    itemsDiv.style.width = `${settings.countPerRow[type] * ((scale * 216) + (margin[1] * 2))}px`;
 
     switch (type) {
         case 0:
@@ -1314,12 +1330,26 @@ function addItem(dest) {
                     "scale": "1",
                     "xOffset": "0",
                     "yOffset": "0",
-                    "type": 0,
+                    "type": dest,
                     "arrangement": 0,
                     "isNew": false,
                     "isExtended": false,
                     "level": 1,
                     "points": 500
+                }
+                switch(dest) {
+                    case 0:
+                        newEntry.type = dest;
+                        newEntry.points = 550;
+                        break;
+                    case 1:
+                        newEntry.type = dest;
+                        newEntry.points = 250;
+                        break;
+                    case 2:
+                        newEntry.type = dest;
+                        newEntry.points = 250;
+                        break;
                 }
                 console.log(newEntry);
                 switch (dest) {
@@ -1574,6 +1604,11 @@ function generateItemManagerModal() {
 }
 
 function updateOlderSave() {
+    if (!settings.hasOwnProperty('margin')) {
+        settings.margin = ["1.5", "1.5"];
+    }
+
+
     if (!settings.hasOwnProperty('specialSkills')) {
         settings.specialSkills = JSON.parse(JSON.stringify(baseItems));
     }
@@ -1604,7 +1639,7 @@ function updateOlderSave() {
             settings.karts[key].level = 1;
         }
         if (!settings.karts[key].hasOwnProperty('points')) {
-            settings.karts[key].points = 500;
+            settings.karts[key].points = 250;
         }
         if (!settings.karts[key].hasOwnProperty('isUseItem')) {
             settings.karts[key].isUseItem = true;
@@ -1622,7 +1657,7 @@ function updateOlderSave() {
             settings.gliders[key].level = 1;
         }
         if (!settings.gliders[key].hasOwnProperty('points')) {
-            settings.gliders[key].points = 500;
+            settings.gliders[key].points = 250;
         }
         if (!settings.gliders[key].hasOwnProperty('isUseItem')) {
             settings.gliders[key].isUseItem = true;
