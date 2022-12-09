@@ -1,13 +1,13 @@
 {
-    "youtube_header": "I occasionally post videos of various experiements and projects on my YouTube channel. Most of the more recent ones are related to the game Mario Kart Tour, but older videos are random games I've modified to do something interesting. The videos range from silly to informative. <br>Here are a few of my recent favorites:",
+    "youtube_header": "I occasionally post videos of various experiments and projects on my YouTube channel. Most of the more recent ones are related to modifying the game Mario Kart Tour, but older videos are random games I've modified to do something interesting. The videos range from silly to informative. <br>Here are a few of my recent favorites:",
     "about_header": "About Me",
-    "about_body": "I'm a developer who's trying to familiarize themselves with as much as possible in terms of web and app development. All of my projects involve a great deal of passion, and I go to great lengths to get my vision to come alive.",
-    "about_body_2": "Believe it or not, I got my start in the world of programming from video games. When I was younger I would play games such as Angry Birds, but thought to myself, \"I want to make the levels\". I eventually found that someone had developed a browser based level editor for Angry Birds that would generate the lua scripts that the game utilized to generate the play area of blocks and enemies for these levels.",
-    "about_body_3": "After getting some experience with web development, I was able to make similar editors for games instead of using someone elses. I eventually made tools for many games such as Plants vs. Zombies 2, Bloons TD 5, and more that assist with the creation of these levels to be imported into the game.",
-    "about_body_4": "After that, I began to branch out from level editors or game modifications and started to think of problems that I had or just think of systems that would make processes easier for me. My first major tool which could be falls under this was called Mario Kart Tour Values, and it was a tool for the game Mario Kart Tour which helped me cross referenced a bunch of information at once. To summarize, every item in that game has a few locations that they are higher scoring on, and the game does not have an easy way to see what else is on those areas. By showing every item that has a bonus on their areas, I could make better decisions about what I wanted to level up in the game.",
+    "about_body": "I'm a developer working to familiarize themselves with as much as possible in terms of web and app development.",
+    "about_body_2": "When I was very young I played the game Angry Birds. It was fun, but in the end I wanted to experiement with making my own levels. I eventually found that someone had developed a browser based level editor for Angry Birds that would generate the lua scripts that the game utilized to generate the play area of blocks and enemies for these levels.",
+    "about_body_3": "After getting some experience with web development, I was able to make similar editors for other games tuned to exactly what I needed instead of hoping someone else had created it. I eventually made tools for many games such as Plants vs. Zombies 2, Bloons TD 5, and more that assist with the creation of these levels to be imported into the game.",
+    "about_body_4": "After that, I began to branch out from level editors or game modifications and started to think of problems that I had or just think of ways that I could make certain tasks easier for me. My first major project which falls under this thinking was called Mario Kart Tour Values, and it was a tool for the game Mario Kart Tour which helped me cross reference a bunch of information at once about different items. To summarize, every item in that game has a few locations that they are higher scoring on, and the game does not have an easy way to see what else is on those areas. By showing every item that has a bonus on their areas and which ones overlap, I could make better decisions about what I wanted to level up in the game.",
     "about_body_5": "My next few projects over the next couple years were mostly related to Mario Kart Tour, and I made a variety of different apps including a simulator for the game's loot system, and a way to view more extensive information about your account.",
-    "about_body_6": "At this current moment in time, I'm occasionally working on a recreation of an old mobile adaption of UNO created by Gameloft which was a game I played a lot in my childhood. I challenged myself to develop the entire game from the actual base game's logic all the way down to the menus and other modes such as tournament mode entirely in HTML/JS/CSS.",
-    "about_langauges_header": "Experience with Programming Languages",
+    "about_body_6": "At this current moment in time, I occasionally work on a recreation of an old mobile adaption of UNO created by Gameloft which was another game I played a lot in my childhood. I challenged myself to develop the entire game from the actual base UNO game's logic all the way down to the menus and other modes such as tournament mode entirely in HTML/JS/CSS.",
+    "about_langauges_header": "Experience with Programming Languages/Engines",
     "img_about_1": "./Images/About/able.png",
     "img_about_2": "./Images/About/editors.png",
     "img_about_3": "./Images/About/mktv.png",
@@ -31,16 +31,16 @@
         },
         "C#": {
             "Icon": "devicon-csharp-plain",
-            "Time": "1 year",
-            "Description": ""
-        },
-        "sqlite": {
-            "Icon": "devicon-sqlite-plain",
-            "Time": "1 year",
+            "Time": "2 years",
             "Description": ""
         },
         "C": {
             "Icon": "devicon-c-plain",
+            "Time": "1 year",
+            "Description": ""
+        },
+        "SQLite": {
+            "Icon": "devicon-sqlite-plain",
             "Time": "1 year",
             "Description": ""
         }

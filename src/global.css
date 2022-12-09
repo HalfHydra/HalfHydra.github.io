@@ -26,6 +26,9 @@ html {
     background-color: var(--primary);
     padding: 10px;
     border-bottom: 1px solid var(--primary_red);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* Old Colors
@@ -397,13 +400,15 @@ button {
     width: 100px;
     height: 150px;
     display: inline-block;
+    border: 2px solid var(--secondary_grey);
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--primary_grey);
 }
 
 .languageIcon {
-    font-size: 98px;
-    line-height: 100px;
+    font-size: 100px;
     background-color: var(--tertiary)
-    
 }
 
 .languageTextDiv {
