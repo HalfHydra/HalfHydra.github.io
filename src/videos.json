@@ -1,0 +1,58 @@
+{
+    "0": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=tCz1s91-0mE",
+        "image": "./Images/Thumbnail/0.webp",
+        "title": "Unused DoubleTapJump",
+        "desc": "An unused setting in the game that allows you to perform a \"jump\". This doesn't fit the game at all, so it was a very interesting find."
+    },
+    "1": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=ZytSL4hydyg",
+        "image": "./Images/Thumbnail/2.jpg",
+        "title": "Self Boombox",
+        "desc": "In this game, a term used to refer to vacuuming up coins that are created from a coin box is called \"Boomboxing\", this video guarantees this happens every item box."
+    },
+    "2": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=PfwxKs9ySYY",
+        "image": "./Images/Thumbnail/3.jpg",
+        "title": "Sky Garden Soaring",
+        "desc": "Flying around a track instead of driving it by setting the kart to always be in the gliding state."
+    },
+    "3": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=fsBQl9t2tFs",
+        "image": "./Images/Thumbnail/4.jpg",
+        "title": "Red Heart - Custom Special Item",
+        "desc": "A custom special item using the existing heart item as a base."
+    },
+    "4": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=i64K0X_oGKM",
+        "image": "./Images/Thumbnail/1.webp",
+        "title": "Leftover Roads in Vancouver Velocity",
+        "desc": "Driving on roads that had not been used in a variant of the Vancouver Velocity track. Created when only 2 of the versions were released."
+    },
+    "5": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=fOckStufo7c",
+        "image": "./Images/Thumbnail/5.jpg",
+        "title": "Singapore Sidestreets - Unused Road Exploration",
+        "desc": "Another unused road exploration, created when only the first part of the Singapore track was released."
+    },
+    "6": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=iBpoL-uRY90",
+        "image": "./Images/Thumbnail/6.webp",
+        "title": "Unused Boo Item Functionality",
+        "desc": "Demonstration of some unused variables related to an unused Boo item in Mario Kart Tour."
+    },
+    "7": {
+        "Active": true,
+        "link": "https://www.youtube.com/watch?v=OCk5VLpszEg",
+        "image": "./Images/Thumbnail/7.jpg",
+        "title": "Myth: Are Red Coins Overwritten?",
+        "desc": "An empirical test of if event coins overwrite red coins in a coin box."
+    }
+}

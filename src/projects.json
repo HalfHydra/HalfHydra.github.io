@@ -1,20 +1,35 @@
 {
+    "MKTPCG": {
+        "Active": true,
+        "Name": "Mario Kart Tour Panel Container Generator",
+        "Langauge": "JavaScript",
+        "Description": "A project developed to help a community of Mario Kart Tour players create custom panels arrangements for their images focused around the game's items.",
+        "LongDescription": "This was made to solve the problem of generating an array of items related to Mario Kart, and how much effort it would take in an image editor like Photoshop and having to build all of the panels and such yourself. When it came to this tool, accuracy was key in the output. I needed a way to alter the game item images based on how they would be in the game in order to match the ingame panels. Since the images for the different icons were not always the entire panel size (204x256), they are sometimes \"anchored\" to a side of the rectangle. My solution for this was the make a way to upload images to generate these images and provide settings to alter them in numerous ways such as X and Y offsetting and scale. I implemented a way to drag and drop the panels to arrange them in any order that is preferred as well as change the amount of panels per row easily.",
+        "Icon": "./Images/Icon/MKTV.png",
+        "LabelColor": "#60bcff",
+        "BackgroundColor": "#FF0505",
+        "Source": "https://github.com/HalfHydra/MKT-Panel-Container-Generator",
+        "Link": "./MKTPCG/MKTCGenerator.html",
+        "Archived": false
+    },
     "UNO": {
+        "Active": true,
         "Name": "UNO (Gameloft) Recreation",
         "Langauge": "JavaScript",
-        "Description": "A personal project of a web based recreation of an older iPhone game.",
-        "LongDescription": "",
+        "Description": "A personal project of a web based recreation of an older iPhone game. Note: since most of the assets are copyrighted material and this is not changing much from the original game, the repository is private.",
+        "LongDescription": "This was developed in order to give myself experience with creating animations and developing game logic tied together with the audio and visual elements.<br><br>The following elements are planned:<br>- Creation of backend game logic<br>- Assets collected and fitted for my adaption<br>- Support for various game elements like achievements, game settings, etc<br>- Creation of all original source game animations and menus<br>- Advanced CPU player system involving MMR matchmaking and player skill levels, including smarter decisions as you rank up in player skill",
         "Icon": "./Images/Icon/UNO.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/UNORemake",
+        "Video": "",
         "Archived": false
     },
     "Win10BGDump": {
+        "Active": true,
         "Name": "Windows 10 Spotlight Background Dumper",
         "Langauge": "C#",
-        "Description": "Quick tool to locate the CDN cache of the Windows 10 assets including Spotlight backgrounds, retrieve them, and sort them.",
-        "LongDescription": "",
+        "Description": "Quick tool which locates the CDN cache of the Windows 10 assets including Spotlight backgrounds, retrieve them, and sort them.",
+        "LongDescription": "This was my one of my first experiences with C# and dotnet that weren't related to Unity. The concept wasn't that complicated, I had a specific task I wanted to perform and I wanted to use a quick script to do so. Since the backgrounds were always the same dimensions, I could filter the images to get rid of downloaded bloatware icons, and get the just the windows spotlight backgrounds for both the mobile and desktop aspect ratios.",
         "Icon": "./Images/Icon/Win10BGDump.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
@@ -22,6 +37,7 @@
         "Archived": false
     },
     "AccSnap": {
+        "Active": true,
         "Name": "Mario Kart Tour Account Snapshot",
         "Langauge": "JavaScript",
         "Description": "Using a given file dump of your Mario Kart Tour profile, you can see various stats and the full snapshot of your profile! This is no longer being supported as of the Samurai Tour.",
@@ -31,24 +47,27 @@
         "BackgroundColor": "#FF0505",
         "Source": "https://github.com/HalfHydra/MKT-Profile-Stats",
         "Link": "./AccountSnapshot/input.html",
-        "Archived": true
+        "Archived": false
     },
     "PipeSim": {
+        "Active": true,
         "Name": "Mario Kart Tour Pipe Simulator",
         "Langauge": "Electron",
         "Description": "A discontinued electron app to simulate pulling the pipe from Mario Kart Tour! A lot of effort was put in to get as close to the original as possible.",
-        "LongDescription": "",
+        "LongDescription": "This was a nice way for me to experiement with building an Electron app for the first time. The main reason for this was performance and assets that were rather large. The cool part about using an electron app was I built this in a way such that new content was hosted on my GitHub site, that way whenever the electron app was launched it would always reflect the latest data. The only time updating to the electron app was needed was whenever the way to handle incoming data needed to be updated.<br><br>Part of the way the pipe simulator works is that it uses videos of screen recorded animations from the game, with a few variations of them to represent different outcomes. I originally used gifs, but it was a much larger file size for a compressed looking quality. I also attempted to use the more recent apng file format, but that took up a lot of space too even though it looked better than gifs. I ended up just using the original videos since they were the best quality for the least filesize.<br><br>To talk more specifics of the app itself, it was originally just a flat simulator, but I planned to create an entire game out of it. I added the inventory system later to track all of what was collected, and styled it like the inventory system in the original game. I added a news system to keep track of updates and styled that after the game as well. There was a lot that I never ended up doing and moved on because I moved onto other projects.", 
         "Icon": "./Images/Icon/PipeSim.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
         "Source": "https://github.com/HalfHydra/Pipe-Simulator",
+        "Video": "",
         "Archived": true
     },
     "BTD6InstaTracker": {
+        "Active": false,
         "Name": "Bloons TD 6 Instant Monkey Tracker",
         "Langauge": "JavaScript",
         "Description": "Intended to become an Instant Monkey manager for the game Bloons TD 6, but was retired after I shifted my focus elsewhere.",
-        "LongDescription": "",
+        "LongDescription": "A friend of mine wrote a similar tool to this, which would fetch the challenge json using the game server. I wanted to turn this into a system where it would query the rewards for the current day, but unfortunately this turned out to be more effort than anticipated. I created the instant monkey menu from the game which would display all the collected ones. You would've been able to input which ones you currently had already, in order to see if the rewards from the current day would fill a hole in your collection of all the different types. This also became irrelevant after they updated the game to use a random instant monkey instead of a preset one, rendering this project irrelevant.",
         "Icon": "./Images/Icon/Insta.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
@@ -56,10 +75,11 @@
         "Archived": true
     },
     "MKTV": {
+        "Active": true,
         "Name": "Mario Kart Tour Item Values",
         "Langauge": "JavaScript",
-        "Description": "A retired tool to help you compare your most valuable items and their high level courses visually!",
-        "LongDescription": "This was my first encounter in making something for Mario Kart Tour. At the time of its creation, I wasn't satisfied with the spreadsheets available at the time. I wanted something more visual, it was a little difficult for me to visualize a bunch of numbers and rows. Thus, this project came to me. It allowed me to experiement with localStorage, saving your save data to a browser. No longer did I ever have to re-enter it like you would on spreadsheets. Needless to say, getting to see all of the courses on the game in a form that the game didn't allow you to visually was certainly helpful in choosing what to level up!",
+        "Description": "A retired tool for Mario Kart Tour that was made to help compare the most valuable items of your account and their high level courses visually",
+        "LongDescription": "This was my first encounter in making something for Mario Kart Tour. At the time of its creation, I wasn't satisfied with the spreadsheets available at the time. I wanted something more visual, it was a little difficult for me to visualize a bunch of numbers and rows. Thus, the idea for this project came to me. It allowed me to experiement with localStorage, or saving your save data to a browser. No longer did I ever have to re-enter it like you would on spreadsheets. Needless to say, getting to see all of the courses on the game in a form that the game didn't allow you to visually was certainly helpful in choosing what to level up!",
         "Link": "./MarioKartTourValues/main.html",
         "Icon": "./Images/Icon/MKTV.png",
         "LabelColor": "#60bcff",
@@ -68,10 +88,11 @@
         "Archived": true
     },
     "BTD5ChallengeEditor": {
+        "Active": true,
         "Name": "Bloons TD 5 Challenge Editor",
         "Langauge": "JavaScript",
         "Description": "A tool made to create challenge jsons for Bloons TD 5 (Steam)! Styled after Bloons TD 6's challenge editor.",
-        "LongDescription": "",
+        "LongDescription": "The idea came for this to me one day when I wanted to make a bunch of custom levels for this game. I ended up using this as a means to test out different javascript concepts. This was the first time I started to write functions which generated content for the site dynamically instead of having entirely html elements, which was a big step for me in my projects to come. I eventually added an option for the site to be compatible with a larger modding project for this game which added maps and towers to the game called BTD5 Expansion. Special thanks to a friend who helped me begin to be more dynamic with my code.",
         "Link": "./BTD5ChallengeEditor/BTD5 Challenge Editor Advanced.html",
         "Icon": "./Images/Icon/BTD5ChallengeEditor.png",
         "LabelColor": "#60bcff",
@@ -80,22 +101,24 @@
         "Archived": true
     },
     "PVZ2Tools": {
+        "Active": true,
         "Name": "Plants vs. Zombies 2 Tools",
         "Langauge": "JavaScript",
-        "Description": "A tool made to create challenge jsons for Bloons TD 5! Styled after Bloons TD 6's challenge editor.",
-        "LongDescription": "",
-        "Link": "./BTD5ChallengeEditor/BTD5 Challenge Editor Advanced.html",
+        "Description": "A collection of websites I used to help me visually create elements for custom level jsons of Plants vs Zombies 2.",
+        "LongDescription": "The first five were all based on an 5x9 grid placemment that would fit the play area of the game.<br>1. Starting Grid Items (objects that are entered before the level starts)<br>2. Midwave Grid Items (objects that appear during a level)<br>3. Mold Colonies (placement in the grid format)<br>4. Power Tiles (placement of the tiles in it's respective game module)<br>5. Plant Placement (placing plants in the play area before a level).<br><br>The next three are based on spawning events that occur during a level.<br>6. Grid Item Zombie Spawns (spawn events from a grid object during the level)<br>7. Ambush Events (events that aren't related to grid items)<br>8. Wave Events (other events that occur at the beginning of a wave)<br><br>The last one was an RTID syntax checker. RTID was the games method of referencing objects in the game, and other developers often had syntax errors in their levels. I made this to help find them. This includes errors such as incorrect syntax, typoed object names, and not issues of not having them defined within the level.",
+        "Link": "./PVZ2Tools/PVZ2Portal.html",
         "Icon": "./Images/Icon/Bloomerang.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Source": "https://github.com/HalfHydra/BTD5ChallengeEditor",
+        "Source": "https://github.com/HalfHydra/PVZ2-Tools",
         "Archived": true
     },
     "PeaceAndTranquil": {
+        "Active": false,
         "Name": "Peace and Tranquilility",
         "Langauge": "JavaScript",
         "Description": "No one is around to help.",
-        "LongDescription": "This is based on this YouTube video and portion of the game A Hat in Time.<br><iframe class=\"youtube_embed\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/SHvhps47Lmc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br> This was one of the first things I made, and it was fun to try and recreate the effects of the text and background.",
+        "LongDescription": "This is based on this YouTube video and portion of the game A Hat in Time.<br><iframe class=\"youtube_embed\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/SHvhps47Lmc\" title=\"YouTube video player\" frameborder=\"0\"></iframe><br> This was one of the first things I made, and it was fun to try and recreate the effects of the text and background.",
         "Link": "./PeaceAndTranquility/PeaceAndTranquility.html",
         "Icon": "./Images/Icon/PeaceAndTranquility.gif",
         "LabelColor": "#60bcff",
