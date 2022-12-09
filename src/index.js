@@ -366,7 +366,7 @@ let makeVideoModules = () => {
         
         let module_btn_view = document.createElement('button');
         module_btn_view.innerHTML = `Watch Video`;
-        module_btn_view.className = 'module_btn_view';
+        module_btn_view.className = 'module_btn_video';
         module_btn_view.addEventListener('click', () => {
             openTab(videoObj.link);
         })

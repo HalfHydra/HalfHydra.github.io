@@ -21,7 +21,7 @@
         "Icon": "./Images/Icon/UNO.png",
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
-        "Video": "",
+        "Video": "https://www.youtube.com/watch?v=-47hXDMpy4o",
         "Archived": false
     },
     "Win10BGDump": {
@@ -59,7 +59,7 @@
         "LabelColor": "#60bcff",
         "BackgroundColor": "#FF0505",
         "Source": "https://github.com/HalfHydra/Pipe-Simulator",
-        "Video": "",
+        "Video": "https://www.youtube.com/watch?v=3WqXFSu6XIA",
         "Archived": true
     },
     "BTD6InstaTracker": {
